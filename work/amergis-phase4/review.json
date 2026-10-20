@@ -1,0 +1,70 @@
+{
+  "as_of": "2026-10-20",
+  "scope": "Independent review of phase4 plan-core.json, portfolio.json and reconstruction.json against existing phase2/phase3 evidence.",
+  "status": "Pass for proposed product roadmap; no unresolved findings",
+  "deployment_status": "No implementation, connector, vendor access, procurement or live-operation validation was performed by this review.",
+  "files_reviewed": [
+    "work/amergis-phase4/plan-core.json",
+    "work/amergis-phase4/portfolio.json",
+    "work/amergis-phase4/reconstruction.json",
+    "outputs/amergis-api-reconstruction.json",
+    "outputs/amergis-blueprint.json"
+  ],
+  "checks": [
+    {
+      "check": "Single authoritative system per record class",
+      "result": "pass",
+      "detail": "ATS or minimal owned core is an explicit alternative; owned workflow/audit stores reference records and evidence. Contract-designated time and provider financial records retain authority."
+    },
+    {
+      "check": "Build versus establish",
+      "result": "pass",
+      "detail": "Twelve capability areas form three shared-platform experiences; specialist services are established, while workflow/policy, controlled actions and evidence are owned. ATS vendor selection remains conditional."
+    },
+    {
+      "check": "Evidence and reconstruction limits",
+      "result": "pass",
+      "detail": "Public observations, vendor documentation, proposed behavior and private unknowns are separated. No production schema, hidden data, working tenant connector or complete internal-clone claim."
+    },
+    {
+      "check": "Commercial and data provenance",
+      "result": "pass",
+      "detail": "Competitor jobs are market observations rather than own orders or candidate supply; public contracts and rates are examples rather than the new operator's binding terms."
+    },
+    {
+      "check": "Role authority and clinical scope",
+      "result": "pass",
+      "detail": "Clinical services and attestations retain qualified ownership; consequential employment and finance actions have named owners. Proposed human gates are not presented as universal law."
+    },
+    {
+      "check": "R3 and acceptance status",
+      "result": "pass",
+      "detail": "Release slices, tests, pilots and live delegation are explicitly future criteria. No observed automation ROI, headcount replacement or 100% autonomy conclusion."
+    },
+    {
+      "check": "Reference integrity",
+      "result": "pass",
+      "detail": "All portfolio and reconstruction source IDs resolve to phase3 sources. All portfolio/state-machine workflow IDs resolve to phase2 workflow stages."
+    }
+  ],
+  "findings": [
+    {
+      "id": "P4-REV01",
+      "severity": "low",
+      "status": "resolved",
+      "location": "reconstruction.json state_machines",
+      "detail": "Transition arrays are illustrative subsets, with some connecting and terminal transitions omitted. Label them as illustrative excerpts, not exhaustive or executable specifications, to match future specification work.",
+      "blocking": false,
+      "resolution": "Root added an explicit global state_machine_scope and a scope note on all four examples stating that transitions are illustrative, non-exhaustive and not executable specifications. Verified after edit."
+    }
+  ],
+  "counts": {
+    "products_reviewed": 12,
+    "reconstruction_areas_reviewed": 12,
+    "state_machine_examples_reviewed": 4,
+    "unknown_source_ids": 0,
+    "unknown_workflow_ids": 0,
+    "blocking_findings": 0,
+    "unresolved_findings": 0
+  }
+}

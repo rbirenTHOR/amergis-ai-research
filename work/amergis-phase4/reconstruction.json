@@ -1,0 +1,1062 @@
+{
+  "title": "Reconstruction feasibility and next evidence plan",
+  "as_of": "2026-10-20",
+  "basis": "Synthesis of existing phase2 and phase3 evidence; no new network calls or portal access in this work package.",
+  "conclusion": "We can build an independently designed staffing operating system from observed functions and public rules. Exact Amergis database, private workflow configuration, records and economics are not recoverable from this evidence. Vendor interoperability requires selecting products and proving their current tenant interfaces.",
+  "classification_legend": {
+    "public_now": "Extract published facts or design functional behavior now; distinguish observations from our implementation choices.",
+    "access_dependent": "Documented or marketed integrations need permitted, product/version-specific specifications and test evidence.",
+    "not_publicly_recoverable": "Private records, organization facts and economics require authorized evidence; establish our own business data and relationships."
+  },
+  "areas": [
+    {
+      "id": "RE01",
+      "area": "Public demand and site taxonomy",
+      "feasibility": "Public extraction possible now",
+      "priority": "P1",
+      "obtainable_artifacts": [
+        "Versioned job-listing snapshots with source URLs and retrieval time",
+        "Discipline, setting, geography, pay-unit and duration vocabulary",
+        "Published office/service directory",
+        "Separate mappings for feed ID, card position ID and URL slug ID"
+      ],
+      "missing_proof": [
+        "ATS-to-feed field mapping and lifecycle",
+        "Whether a listing is a live unfilled client order",
+        "Deleted/closed-job semantics and refresh guarantee",
+        "Rights to republish particular content"
+      ],
+      "method": "Extend the existing site-declared feeds and public CMS collections with bounded read-only refreshes; hash snapshots and retain uncertainty. Treat absence as not observed until lifecycle semantics are known.",
+      "boundary": "Use the public collection only. Do not use administrative/write endpoints or disallowed exports. Competitor listings are market observations, not orders that our company is authorized to staff; no candidate pool is supplied.",
+      "acceptance": [
+        "Reimport is idempotent",
+        "5519 historical observations remain labeled snapshot records, not unique vacancies",
+        "Same title/city but different IDs does not silently merge",
+        "Weekly pay remains weekly when guaranteed hours are unknown",
+        "Disappearance creates an observation event rather than a fabricated filled status"
+      ],
+      "references": [
+        {
+          "id": "PUB01",
+          "title": "Amergis WordPress REST index",
+          "url": "https://www.amergis.com/wp-json/"
+        },
+        {
+          "id": "PUB02",
+          "title": "Amergis public office collection",
+          "url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta"
+        },
+        {
+          "id": "PUB07",
+          "title": "Healthcare job-card feed",
+          "url": "https://www.amergis.com/wp-content/uploads/wmx-jobs/jobs.json"
+        },
+        {
+          "id": "PUB08",
+          "title": "Education job-card feed",
+          "url": "https://www.amergiseducation.com/wp-content/uploads/wmx-jobs/jobs.json"
+        },
+        {
+          "id": "PUB12",
+          "title": "Amergis public service taxonomy",
+          "url": "https://www.amergis.com/wp-json/wp/v2/services?per_page=100&_fields=id,name,slug,count,link"
+        }
+      ],
+      "source_ids": [
+        "PUB01",
+        "PUB02",
+        "PUB07",
+        "PUB08",
+        "PUB12"
+      ]
+    },
+    {
+      "id": "RE02",
+      "area": "Contract and commercial rule behavior",
+      "feasibility": "Public rule extraction possible now; independent configuration required",
+      "priority": "P0",
+      "obtainable_artifacts": [
+        "Source-linked contract clause register",
+        "Effective-date, client/worksite and rate-unit rule model",
+        "Invoice approval, due-trigger, holiday, conversion and cancellation test cases",
+        "Explicit unresolved-clause queue"
+      ],
+      "missing_proof": [
+        "Unpublished agreements and amendments",
+        "Our own executed client agreements, pay terms and costs",
+        "Which contract hierarchy governs every conflicting clause"
+      ],
+      "method": "Use the existing six public packets and pricing artifacts to draft a configurable rule engine. Capture page/row provenance, authority and effective dates. Validate with synthetic contract versions.",
+      "boundary": "Public rate ceilings are not worker wages or realized margins. A public Amergis agreement is not an agreement with our company. Leave ambiguous fee cells unresolved; obtain our own approved terms before live calculation.",
+      "acceptance": [
+        "Each applied rule resolves to a specific version and scoped agreement",
+        "Different client holidays produce different results",
+        "Missing fee values block that charge",
+        "Published ceilings never become default negotiated rates"
+      ],
+      "references": [
+        {
+          "id": "PART02",
+          "title": "June 2024 Amergis supplier proposal reproduced in 2026 El Dorado packet",
+          "url": "https://eldorado.legistar.com/View.ashx?M=F&ID=15807895&GUID=3997709B-28F6-4004-B8A8-F3B74414DF4B#page=30"
+        }
+      ],
+      "source_ids": [
+        "PART02"
+      ]
+    },
+    {
+      "id": "RE03",
+      "area": "ATS and relationship records",
+      "feasibility": "Generic object reconstruction now; selected-vendor compatibility access-dependent",
+      "priority": "P0",
+      "obtainable_artifacts": [
+        "Independent Candidate, Client, Requisition, Requirement, Application, Submission and Assignment schema",
+        "Synthetic records and alias mappings",
+        "Chosen-platform adapter contract and conformance tests",
+        "Version-matched connector after permitted tenant proof"
+      ],
+      "missing_proof": [
+        "Current Amergis Erecruit edition, modules, custom fields and API enablement",
+        "Our chosen system of record",
+        "Tenant field dictionary, permission scopes and transition semantics"
+      ],
+      "method": "Model the needed staffing entities independently using observed functions. Choose one ATS or own core. If selecting Erecruit, obtain agency/vendor-permitted test access and current tenant Swagger; exercise only agreed synthetic cases. Bullhorn REST is a separate optional product.",
+      "boundary": "No Amergis private schema or data is recovered. Vendor documentation does not establish Amergis connectivity. Do not code Bullhorn endpoints as if they were Erecruit. Resolve applicable AI integration conditions before tenant data is sent to an agent.",
+      "acceptance": [
+        "Every required domain field has an owner and canonical ID",
+        "Synthetic duplicate candidate handled without inappropriate merge",
+        "Versioned schema and enabled scopes are recorded",
+        "Create/read/update, pagination, retry, permissions and reconciliation pass in the selected test tenant before connector is called working"
+      ],
+      "references": [
+        {
+          "id": "PART02",
+          "title": "June 2024 Amergis supplier proposal reproduced in 2026 El Dorado packet",
+          "url": "https://eldorado.legistar.com/View.ashx?M=F&ID=15807895&GUID=3997709B-28F6-4004-B8A8-F3B74414DF4B#page=30"
+        },
+        {
+          "id": "er-overview",
+          "title": "WebAPI Overview",
+          "url": "https://kb.bullhorn.com/erecruit/Content/Erecruit/Topics/webAPIOverview.htm"
+        },
+        {
+          "id": "er-docs",
+          "title": "WebAPI Documentation",
+          "url": "https://kb.bullhorn.com/erecruit/Content/Erecruit/Topics/WebAPIDocumentation.html"
+        },
+        {
+          "id": "er-permissions",
+          "title": "Manage API Permissions",
+          "url": "https://kb.bullhorn.com/erecruit/Content/Erecruit/Topics/manageApiPermissions.htm"
+        },
+        {
+          "id": "er-testing",
+          "title": "WebAPI Testing",
+          "url": "https://kb.bullhorn.com/erecruit/Content/Erecruit/Topics/WebAPITesting.html"
+        },
+        {
+          "id": "er-usecase",
+          "title": "API v2 Use Cases",
+          "url": "https://kb.bullhorn.com/erecruit/Content/Erecruit/Topics/apiV2UseCases.htm"
+        },
+        {
+          "id": "bh-rest",
+          "title": "API Reference",
+          "url": "https://bullhorn.github.io/rest-api-docs/"
+        },
+        {
+          "id": "bh-policy",
+          "title": "API Fair Use Policy",
+          "url": "https://bullhorn.github.io/api-fair-use-policy/"
+        }
+      ],
+      "source_ids": [
+        "PART02",
+        "er-overview",
+        "er-docs",
+        "er-permissions",
+        "er-testing",
+        "er-usecase",
+        "bh-rest",
+        "bh-policy"
+      ]
+    },
+    {
+      "id": "RE04",
+      "area": "Client portal and worker self-service",
+      "feasibility": "Functional design possible now; exact screen and role behavior access-dependent",
+      "priority": "P1",
+      "obtainable_artifacts": [
+        "Independent client and worker journey maps",
+        "Own UX for requisitions, submission decisions, onboarding tasks, availability, shifts and time",
+        "Role-by-action-by-tenant permission matrix",
+        "Synthetic role-specific transition evidence if evaluation is permitted"
+      ],
+      "missing_proof": [
+        "MaxView authenticated role permissions",
+        "Current modules and exact state transitions",
+        "MaxView Jobs backend and Amergis Connect migration",
+        "Supported portal business API and export contracts"
+      ],
+      "method": "Design around public capabilities and our own operating model. Later use an expressly permitted demo/test environment with synthetic candidate, client, recruiter and admin roles; record normal paths and exceptions rather than infer behavior from branding.",
+      "boundary": "Login assets reveal identity clues, not business APIs or production schema. Stop at access boundaries without permitted credentials and evaluation scope. Do not reconstruct by copying proprietary implementation or assume historic roadmap features shipped.",
+      "acceptance": [
+        "Client sees only its worksites and candidates approved for disclosure",
+        "Worker sees only own documents and pay views",
+        "Submission rejection, withdrawal, cancellation and correction paths are explicit",
+        "Every action calls the shared workflow service rather than a second conflicting state machine"
+      ],
+      "references": [
+        {
+          "id": "PUB04",
+          "title": "MaxView portal",
+          "url": "https://mymaxview.com/"
+        },
+        {
+          "id": "PUB05",
+          "title": "MaxView public login bundle",
+          "url": "https://mymaxview.com/dist/clerklogin.67914ce2d11b3a10230a.js?v=PsD5QBZb98XYl85QoGcpiEEbFE6zB7LF3vXZr6InM7A"
+        },
+        {
+          "id": "PUB06",
+          "title": "MaxView cookie notice",
+          "url": "https://mymaxview.com/cookie"
+        },
+        {
+          "id": "PUB09",
+          "title": "MaxView Jobs app listing",
+          "url": "https://apps.apple.com/us/app/maxview-jobs-by-amergis/id1626499875"
+        },
+        {
+          "id": "PUB10",
+          "title": "MaxView product page",
+          "url": "https://www.amergis.com/workforce-solutions/maxview/"
+        },
+        {
+          "id": "PUB11",
+          "title": "Amergis homepage",
+          "url": "https://www.amergis.com/"
+        }
+      ],
+      "source_ids": [
+        "PUB04",
+        "PUB05",
+        "PUB06",
+        "PUB09",
+        "PUB10",
+        "PUB11"
+      ]
+    },
+    {
+      "id": "RE05",
+      "area": "Credentials, screening and employment verification",
+      "feasibility": "Workflow simulation possible now; authoritative verification requires established providers",
+      "priority": "P0",
+      "obtainable_artifacts": [
+        "Credential requirement bundles with version, expiry and jurisdiction",
+        "Order/status/result adapter boundary",
+        "Evidence freshness and exception handling rules",
+        "Vendor-specific adapters after provisioning and specification review"
+      ],
+      "missing_proof": [
+        "Selected Certiphi package, protocol, status codes and testing terms",
+        "Nursys institutional eligibility, enrolled population and current account-gated specification",
+        "Any required Equifax product, permitted purpose and contribution specification",
+        "Accountable clearance process for our operator"
+      ],
+      "method": "Build synthetic adapters and an evidence queue first. Obtain current specifications through provider onboarding. Nursys has no separate sandbox/sample nurses; agree an institution testing approach rather than assume one. Keep outbound employer contribution separate from applicant verification.",
+      "boundary": "No real person or license lookup is needed for design. Nursys institution API is not a general candidate search source. OCR/checklist completion does not clear a person for work. A qualified owner resolves restrictions, identity mismatch and clinical fitness; agent records the decision.",
+      "acceptance": [
+        "Expiry between approval and booking blocks readiness",
+        "Missing consent prevents a screening order",
+        "Provider timeout or unknown status never becomes cleared",
+        "Adverse or disputed results go to designated reviewer with the original evidence",
+        "Source, timestamp, jurisdiction, identity match and scope are retained"
+      ],
+      "references": [
+        {
+          "id": "PART02",
+          "title": "June 2024 Amergis supplier proposal reproduced in 2026 El Dorado packet",
+          "url": "https://eldorado.legistar.com/View.ashx?M=F&ID=15807895&GUID=3997709B-28F6-4004-B8A8-F3B74414DF4B#page=30"
+        },
+        {
+          "id": "PART10",
+          "title": "Equifax Talent Report Employment Staffing",
+          "url": "https://developer.equifax.com/products/apiproducts/talent-report-employment-staffing"
+        },
+        {
+          "id": "PART11",
+          "title": "Equifax developer Documentation",
+          "url": "https://developer.equifax.com/documentation"
+        },
+        {
+          "id": "PART14",
+          "title": "Certiphi ATS Toolbox",
+          "url": "https://www.certiphi.com/why/vs-products/ats-toolbox/"
+        },
+        {
+          "id": "PART16",
+          "title": "NCSBN: How do I get access to the Nursys API?",
+          "url": "https://ncsbn.zendesk.com/hc/en-us/articles/18773555273367-How-do-I-get-access-to-the-Nursys-API"
+        },
+        {
+          "id": "PART17",
+          "title": "NCSBN: What is available via the Nursys API?",
+          "url": "https://ncsbn.zendesk.com/hc/en-us/articles/18773959621399-What-is-available-via-the-Nursys-API"
+        },
+        {
+          "id": "PART18",
+          "title": "NCSBN: Can I use the API to look up any license?",
+          "url": "https://ncsbn.zendesk.com/hc/en-us/articles/29992058514839-Can-I-use-the-API-to-look-up-any-license-on-the-Nursys-com-website"
+        },
+        {
+          "id": "PART19",
+          "title": "NCSBN: Is there a testing environment for the API?",
+          "url": "https://ncsbn.zendesk.com/hc/en-us/articles/29992835863831-Is-there-a-testing-environment-for-the-API"
+        }
+      ],
+      "source_ids": [
+        "PART02",
+        "PART10",
+        "PART11",
+        "PART14",
+        "PART16",
+        "PART17",
+        "PART18",
+        "PART19"
+      ]
+    },
+    {
+      "id": "RE06",
+      "area": "Scheduling, shift coverage and attendance",
+      "feasibility": "Independent behavioral reconstruction possible now",
+      "priority": "P0",
+      "obtainable_artifacts": [
+        "Proposed shift and reservation state machines",
+        "Availability, timezone, conflict and hour-limit constraints",
+        "Atomic reservation and cancellation rules",
+        "Synthetic concurrent-booking and stale-clearance fixtures"
+      ],
+      "missing_proof": [
+        "Amergis scheduling algorithms, precedence and exception thresholds",
+        "Client-specific service and cancellation obligations",
+        "Our live worker consent, availability and owned orders"
+      ],
+      "method": "Use documented client/worker capabilities as requirements, then implement our own deterministic scheduling invariants. Later compare outcomes in a permitted synthetic demonstration if vendor compatibility is needed.",
+      "boundary": "Published automatic scheduling for existing compliant applicants does not disclose every eligibility rule. AI cannot invent worker consent, client authority, clearance or cancellation fees. An open competitor listing is not our shift inventory.",
+      "acceptance": [
+        "At most one live assignment per worker for overlapping times unless an explicitly valid policy permits it",
+        "Two concurrent reservations cannot overfill one slot",
+        "Clearance revalidated at booking and relevant scheduled checkpoints",
+        "Cancellation preserves who authorized it and triggers the correct configured replacement path"
+      ],
+      "references": [
+        {
+          "id": "PUB09",
+          "title": "MaxView Jobs app listing",
+          "url": "https://apps.apple.com/us/app/maxview-jobs-by-amergis/id1626499875"
+        },
+        {
+          "id": "PUB10",
+          "title": "MaxView product page",
+          "url": "https://www.amergis.com/workforce-solutions/maxview/"
+        }
+      ],
+      "source_ids": [
+        "PUB09",
+        "PUB10"
+      ]
+    },
+    {
+      "id": "RE07",
+      "area": "Time, payroll and billing",
+      "feasibility": "Independent ledger and rules possible now; money-system integration access-dependent",
+      "priority": "P0",
+      "obtainable_artifacts": [
+        "Original time plus correction ledger",
+        "Separate payroll eligibility and customer billability states",
+        "Payroll preparation and invoice/receivable contracts",
+        "ADP adapter after product and entitlement choice",
+        "Batch idempotency and reconciliation harness"
+      ],
+      "missing_proof": [
+        "Amergis ADP edition and actual payroll architecture",
+        "Our earning/deduction codes, tax setup and pay policies",
+        "Accepted payroll interface and release permissions",
+        "Client-specific time source and invoice acknowledgements"
+      ],
+      "method": "Model worked time once and derive payroll and billability through separate approved rules. Establish a payroll provider and finance system; obtain product-specific test credentials/specification. Use synthetic payroll and invoice batches before any live release.",
+      "boundary": "ADP self-service links do not reveal an entire payroll stack. Client invoice approval is not a universal gate for paying compensable work. Payroll owner resolves pay disputes and approves release under the proposed launch policy; the model does not directly move money.",
+      "acceptance": [
+        "Client approval missing: invoice held, worker-pay review stays active",
+        "Payroll and bill rates remain distinct",
+        "Correction after approval invalidates affected calculation/approval",
+        "Replayed successful batch does not pay or bill twice",
+        "Totals and acknowledgements reconcile to authoritative provider outputs"
+      ],
+      "references": [
+        {
+          "id": "PART01",
+          "title": "Amergis Help Center",
+          "url": "https://www.amergis.com/help-center/"
+        },
+        {
+          "id": "PART03",
+          "title": "ADP Developer Resources",
+          "url": "https://developers.adp.com/"
+        },
+        {
+          "id": "PART05",
+          "title": "ADP Marketplace Partner Development Learning Guide",
+          "url": "https://marketplace-cdn-iat.adp.com/dev-portal/pdf/ADP_Marketplace_Partner_Development_Learning_Guide"
+        },
+        {
+          "id": "PART06",
+          "title": "ADP Workforce Now Worker Management API guide, chapter 2",
+          "url": "https://developers.adp.com/articles/preview/guide-worker-management-api-guide-for-adp-workforce-now-1?chapter=2"
+        },
+        {
+          "id": "PART07",
+          "title": "ADP Payroll Data Input API guide",
+          "url": "https://developers.adp.com/articles/preview/guide-payroll-data-input-api--guide-for-adp-workforce-now-0?chapter=1"
+        },
+        {
+          "id": "PART08",
+          "title": "ADP Event APIs and Event Notification Guide / Webhooks",
+          "url": "https://marketplace-cdn.adp.com/dev-portal/pdf/Webhooks"
+        },
+        {
+          "id": "PART23",
+          "title": "ADP API Central Quick Start Guide",
+          "url": "https://marketplace-cdn.adp.com/dev-portal/pdf/API_Central_Quick_Start_Guide"
+        }
+      ],
+      "source_ids": [
+        "PART01",
+        "PART03",
+        "PART05",
+        "PART06",
+        "PART07",
+        "PART08",
+        "PART23"
+      ]
+    },
+    {
+      "id": "RE08",
+      "area": "MSP, supplier and client VMS programs",
+      "feasibility": "Independent program design now; vendor interoperability and exact rules access-dependent",
+      "priority": "P2",
+      "obtainable_artifacts": [
+        "Client-program configuration model",
+        "Supplier qualification, order distribution and submission interfaces",
+        "Consolidated invoice and program-report specifications",
+        "Chosen VMS adapter after permitted documentation/testing"
+      ],
+      "missing_proof": [
+        "Each program actual VMS and enabled channels",
+        "Supplier access, distribution priorities, fee agreements and SLA definitions",
+        "MatterWorx executable API specification, event semantics and scoped permission"
+      ],
+      "method": "Treat MSP as client-specific configuration above a replaceable adapter. Begin with one selected client program only when needed. Use published features to design independently; obtain written permitted evaluation/integration scope and synthetic fixtures for vendor tests.",
+      "boundary": "Sunburst does not imply one universal VMS. MatterWorx advertises an API but no public executable contract was recovered. Its published competitive-use restrictions make an ordinary demo login insufficient proof of permitted reconstruction scope.",
+      "acceptance": [
+        "Supplier cannot see competitors confidential submissions",
+        "Distribution respects approved eligibility and program rules",
+        "Vendor retries do not duplicate submissions",
+        "Consolidated invoice totals reconcile by supplier, fee and client",
+        "Client-specific connector changes do not change canonical objects"
+      ],
+      "references": [
+        {
+          "id": "VMS-S01",
+          "title": "Implementation & Integrations",
+          "url": "https://matterworx.com/implementation-integrations/"
+        },
+        {
+          "id": "VMS-S05",
+          "title": "Contact Support",
+          "url": "https://matterworx.com/contact-support/"
+        },
+        {
+          "id": "VMS-S09",
+          "title": "SaaS End User Agreement / Terms of Use",
+          "url": "https://matterworx.com/terms-of-use/"
+        },
+        {
+          "id": "VMS-S10",
+          "title": "Sunburst Vendor Management System",
+          "url": "https://www.sunburstworkforce.com/vendor-management-system/"
+        },
+        {
+          "id": "VMS-S11",
+          "title": "Sunburst Education Workforce Solutions",
+          "url": "https://www.sunburstworkforce.com/education-workforce-solutions/"
+        }
+      ],
+      "source_ids": [
+        "VMS-S01",
+        "VMS-S05",
+        "VMS-S09",
+        "VMS-S10",
+        "VMS-S11"
+      ]
+    },
+    {
+      "id": "RE09",
+      "area": "Teletherapy and clinical administration",
+      "feasibility": "Administrative capability design now; clinical service and platform integration require separate establishment",
+      "priority": "P3",
+      "obtainable_artifacts": [
+        "Room/session scheduling, waiting and administrative activity model",
+        "Role-specific clinician/admin journeys",
+        "Session-minute and completion reconciliation requirements",
+        "Selected telehealth vendor/export boundary"
+      ],
+      "missing_proof": [
+        "ATP underlying provider and executable API",
+        "What activity is retained despite session-data-storage wording",
+        "Licensed assessment/resource agreements",
+        "Our clinical service model, authorized professionals and retention requirements"
+      ],
+      "method": "Defer until teletherapy is in launch scope. Define administration independently, then select a suitable established service and inspect permitted synthetic sessions/export examples. Reconcile scheduled duration, actual activity and approved billable service separately.",
+      "boundary": "No private room/session entry or collection is needed. Public features do not reveal clinical records or licensed assessment content. AI can assist scheduling, completeness and routing; clinical assessment, treatment and professional attestation retain qualified ownership.",
+      "acceptance": [
+        "Clinical administration cannot impersonate a clinician or attest service delivery",
+        "Activity report mismatches route to a clinical owner",
+        "Retention and access are explicit for each record type",
+        "Licensed content is supplied through appropriate licensed channels"
+      ],
+      "references": [
+        {
+          "id": "VMS-S12",
+          "title": "Amergis Teletherapy Platform",
+          "url": "https://www.amergiseducation.com/teletherapy-platform/"
+        },
+        {
+          "id": "VMS-S13",
+          "title": "About Amergis Education",
+          "url": "https://www.amergiseducation.com/about/"
+        }
+      ],
+      "source_ids": [
+        "VMS-S12",
+        "VMS-S13"
+      ]
+    },
+    {
+      "id": "RE10",
+      "area": "AI operations, permissions and audit",
+      "feasibility": "Independent design possible now; operating effectiveness must be measured",
+      "priority": "P0",
+      "obtainable_artifacts": [
+        "Task-to-agent capability registry",
+        "A/B/C authority policy for each action",
+        "Approval records bound to exact payload versions",
+        "Exception queues, audit events, connector replay and role-isolation tests",
+        "Pilot measurement plan"
+      ],
+      "missing_proof": [
+        "Actual task volumes, handling time and exception frequency",
+        "Observed business outcome quality and acceptable thresholds",
+        "Named accountable owners and delegated limits for our operator"
+      ],
+      "method": "Implement an explicit workflow engine with deterministic gates and narrow tool permissions; let agents extract, draft and coordinate within those gates. Run synthetic tests, then a supervised pilot on our own authorized business data before expanding write authority.",
+      "boundary": "Public research does not prove a 100% autonomous staffing company or automation ROI. Prompt wording alone is not an authorization layer. Consequential employment, clinical and finance authority must be assigned explicitly; these are proposed launch controls, not a universal legal claim.",
+      "acceptance": [
+        "Agent lacks tools or permissions outside its grant",
+        "Changed approved payload requires fresh approval",
+        "Missing evidence produces an owned exception, not a confident fabricated completion",
+        "Denied and allowed actions both record actor, policy version, evidence and outcome",
+        "Dedicated event queue avoids consuming another integration events"
+      ],
+      "references": [
+        {
+          "id": "er-permissions",
+          "title": "Manage API Permissions",
+          "url": "https://kb.bullhorn.com/erecruit/Content/Erecruit/Topics/manageApiPermissions.htm"
+        },
+        {
+          "id": "bh-events",
+          "title": "Bullhorn REST API event subscriptions",
+          "url": "https://bullhorn.github.io/REST-API-Event-Subscriptions/"
+        },
+        {
+          "id": "bh-policy",
+          "title": "API Fair Use Policy",
+          "url": "https://bullhorn.github.io/api-fair-use-policy/"
+        }
+      ],
+      "source_ids": [
+        "er-permissions",
+        "bh-events",
+        "bh-policy"
+      ]
+    },
+    {
+      "id": "RE11",
+      "area": "Workforce roles, SOPs and performance analytics",
+      "feasibility": "Role/task hypotheses available now; full organization and economics unavailable",
+      "priority": "P1",
+      "obtainable_artifacts": [
+        "Role/task map tied to public job descriptions and process claims",
+        "RACI draft and exception routing",
+        "Explicit metric dictionary for fill rate, time to fill, payroll errors and invoice acceptance",
+        "Pilot instrumentation for task time, rework and overrides"
+      ],
+      "missing_proof": [
+        "Amergis actual reporting lines, headcount, staffing ratios and SOP versions",
+        "Task volumes, labor effort, failure rates and realized margins",
+        "Unpublished KPIs and metric denominator definitions"
+      ],
+      "method": "Use the existing 20 role families and 63 tasks as a starting taxonomy. Validate our own workflows through a staged operator walkthrough and measure actual pilot activity. Mark job-ad duties and inferred processes separately.",
+      "boundary": "Open job counts are not employee headcount; advertised duties are not a complete internal SOP. Do not calculate savings or automation coverage percentages from task counts alone.",
+      "acceptance": [
+        "Every operational task has a named owner and escalation route",
+        "Each KPI specifies numerator, denominator, event timestamps and exclusions",
+        "Pilot metrics distinguish suggested actions, approved actions and executed outcomes",
+        "Unverified organization relationships remain unknown"
+      ],
+      "references": [
+        {
+          "id": "PUB07",
+          "title": "Healthcare job-card feed",
+          "url": "https://www.amergis.com/wp-content/uploads/wmx-jobs/jobs.json"
+        },
+        {
+          "id": "PUB08",
+          "title": "Education job-card feed",
+          "url": "https://www.amergiseducation.com/wp-content/uploads/wmx-jobs/jobs.json"
+        },
+        {
+          "id": "PUB10",
+          "title": "MaxView product page",
+          "url": "https://www.amergis.com/workforce-solutions/maxview/"
+        },
+        {
+          "id": "PART02",
+          "title": "June 2024 Amergis supplier proposal reproduced in 2026 El Dorado packet",
+          "url": "https://eldorado.legistar.com/View.ashx?M=F&ID=15807895&GUID=3997709B-28F6-4004-B8A8-F3B74414DF4B#page=30"
+        }
+      ],
+      "source_ids": [
+        "PUB07",
+        "PUB08",
+        "PUB10",
+        "PART02"
+      ]
+    },
+    {
+      "id": "RE12",
+      "area": "Private database, commercial relationships and historical records",
+      "feasibility": "Unrecoverable from current public evidence; establish our own operational data",
+      "priority": "P0",
+      "obtainable_artifacts": [
+        "An independent operational schema and synthetic fixture set",
+        "Our own consented worker profiles and applications",
+        "Our own client accounts, signed orders, contracts and assignment history",
+        "Permitted migration/import mapping if a future lawful data source is supplied"
+      ],
+      "missing_proof": [
+        "Amergis candidate database, customer roster, negotiated terms and active order book",
+        "Private transactions, placement history, identity keys and custom configuration",
+        "Internal source code, complete architecture and actual decision policies"
+      ],
+      "method": "Build or license a system of record and populate it through our own acquisition, onboarding, contracts and authorized migrations. Use public research for product requirements and market analysis only.",
+      "boundary": "No public API index, portal JavaScript, directory or job feed grants access to private business records or produces the commercial rights required to fulfill those jobs. Exact replication of Amergis internal database is not supported by the evidence.",
+      "acceptance": [
+        "Every live candidate/client/order has a legitimate acquisition source, owner and relevant consent/authority",
+        "Synthetic and production records are clearly separated",
+        "No public competitor listing is represented as an owned client order",
+        "No claim of recovered Amergis database or live connector without direct evidence"
+      ],
+      "references": [
+        {
+          "id": "PUB01",
+          "title": "Amergis WordPress REST index",
+          "url": "https://www.amergis.com/wp-json/"
+        },
+        {
+          "id": "PUB02",
+          "title": "Amergis public office collection",
+          "url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta"
+        },
+        {
+          "id": "PUB07",
+          "title": "Healthcare job-card feed",
+          "url": "https://www.amergis.com/wp-content/uploads/wmx-jobs/jobs.json"
+        },
+        {
+          "id": "PUB08",
+          "title": "Education job-card feed",
+          "url": "https://www.amergiseducation.com/wp-content/uploads/wmx-jobs/jobs.json"
+        },
+        {
+          "id": "PART02",
+          "title": "June 2024 Amergis supplier proposal reproduced in 2026 El Dorado packet",
+          "url": "https://eldorado.legistar.com/View.ashx?M=F&ID=15807895&GUID=3997709B-28F6-4004-B8A8-F3B74414DF4B#page=30"
+        }
+      ],
+      "source_ids": [
+        "PUB01",
+        "PUB02",
+        "PUB07",
+        "PUB08",
+        "PART02"
+      ]
+    }
+  ],
+  "state_machines": [
+    {
+      "id": "SM01",
+      "name": "Application and client submission",
+      "status": "Proposed independent workflow, not recovered Amergis state machine",
+      "workflow_ids": [
+        "W04",
+        "W05",
+        "W06"
+      ],
+      "states": [
+        "received",
+        "facts_pending",
+        "review_ready",
+        "submission_approved",
+        "submitted",
+        "client_decision_pending",
+        "offer_accepted",
+        "withdrawn",
+        "not_selected",
+        "exception"
+      ],
+      "transitions": [
+        {
+          "from": "received",
+          "to": "facts_pending",
+          "actor": "agent",
+          "guard": "Record source, person identity and consent scope; ask only needed missing facts"
+        },
+        {
+          "from": "facts_pending",
+          "to": "review_ready",
+          "actor": "agent",
+          "guard": "Required factual evidence assembled; no unsupported competency inference"
+        },
+        {
+          "from": "review_ready",
+          "to": "submission_approved",
+          "actor": "authorized recruiter/reviewer",
+          "guard": "Approve exact packet and job-related criteria; candidate agrees to disclosure"
+        },
+        {
+          "from": "submission_approved",
+          "to": "submitted",
+          "actor": "agent",
+          "guard": "Packet unchanged, correct client/program scope, no duplicate submission"
+        },
+        {
+          "from": "client_decision_pending",
+          "to": "offer_accepted",
+          "actor": "client and candidate",
+          "guard": "Distinct client selection and worker acceptance recorded; onboarding can still remain incomplete"
+        }
+      ],
+      "exceptions": [
+        "Disputed identity, accommodation or background flag routes to authorized reviewer, not automatic rejection",
+        "Worker withdrawal removes pending submission authority",
+        "Any packet change invalidates its previous approval"
+      ],
+      "acceptance": [
+        "A recruiter approval cannot manufacture client acceptance",
+        "A selected applicant is not automatically cleared for work"
+      ],
+      "scope": "Illustrative transition excerpt; not exhaustive or executable."
+    },
+    {
+      "id": "SM02",
+      "name": "Credential readiness and shift booking",
+      "status": "Proposed independent workflow; public evidence supports eligible-existing versus recruiter-review branch only",
+      "workflow_ids": [
+        "W06",
+        "W07"
+      ],
+      "states": [
+        "requirements_pending",
+        "verification_pending",
+        "review_required",
+        "cleared_for_scope",
+        "suspended_or_expired",
+        "shift_open",
+        "reserved",
+        "confirmed",
+        "completed",
+        "canceled"
+      ],
+      "transitions": [
+        {
+          "from": "verification_pending",
+          "to": "review_required",
+          "actor": "agent",
+          "guard": "Verification evidence collected with source, freshness, jurisdiction, restrictions and person-match status"
+        },
+        {
+          "from": "review_required",
+          "to": "cleared_for_scope",
+          "actor": "authorized credential/clinical owner",
+          "guard": "Owner records clearance scope, validity and any restrictions"
+        },
+        {
+          "from": "cleared_for_scope",
+          "to": "suspended_or_expired",
+          "actor": "rules service/authorized owner",
+          "guard": "Expiry, restriction alert or unresolved contradictory evidence prevents reliance on prior clearance"
+        },
+        {
+          "from": "shift_open",
+          "to": "reserved",
+          "actor": "agent through booking service",
+          "guard": "Atomic reservation; current scoped clearance, worker consent, availability, client-approved shift and hour/conflict checks pass"
+        },
+        {
+          "from": "reserved",
+          "to": "confirmed",
+          "actor": "workflow service",
+          "guard": "Revalidate state versions and record required acknowledgements; reservation expiry releases slot"
+        }
+      ],
+      "exceptions": [
+        "Unknown candidate enters onboarding rather than automatic rejection",
+        "Conflicting or unavailable verification never implies clearance",
+        "Clinical fitness and disputed credential restrictions go to qualified owner"
+      ],
+      "acceptance": [
+        "Expire credential between approval and booking; no confirmed assignment",
+        "Race two booking requests; exactly one reservation succeeds",
+        "Worker receives no unrelated medical documents through the scheduling interface"
+      ],
+      "scope": "Illustrative transition excerpt; not exhaustive or executable."
+    },
+    {
+      "id": "SM03",
+      "name": "One time ledger, separate payroll and invoice lifecycles",
+      "status": "Proposed independent workflow, not recovered financial implementation",
+      "workflow_ids": [
+        "W08",
+        "W09",
+        "W10"
+      ],
+      "states_by_object": {
+        "TimeEntry": [
+          "captured",
+          "worker_attested",
+          "review_pending",
+          "corrected",
+          "resolved"
+        ],
+        "PayrollBatch": [
+          "draft",
+          "reconciled",
+          "approval_pending",
+          "approved",
+          "submitted",
+          "acknowledged",
+          "exception"
+        ],
+        "Invoice": [
+          "draft",
+          "client_approval_pending",
+          "billable",
+          "issued",
+          "disputed",
+          "credited",
+          "paid"
+        ]
+      },
+      "transitions": [
+        {
+          "from": "TimeEntry.captured",
+          "to": "TimeEntry.review_pending",
+          "actor": "agent",
+          "guard": "Preserve original record; validate source and flag overlap or missing evidence"
+        },
+        {
+          "from": "PayrollBatch.reconciled",
+          "to": "PayrollBatch.approved",
+          "actor": "payroll owner",
+          "guard": "Resolve payable hours and rates; bind approval to batch hash and pay period"
+        },
+        {
+          "from": "PayrollBatch.approved",
+          "to": "PayrollBatch.submitted",
+          "actor": "narrowly authorized integration",
+          "guard": "Approved immutable payload, unique idempotency key and provider acknowledgement tracking"
+        },
+        {
+          "from": "Invoice.client_approval_pending",
+          "to": "Invoice.billable",
+          "actor": "authorized client approver/workflow rules",
+          "guard": "Contract-specific billing prerequisites satisfied; does not determine worker wage obligations"
+        }
+      ],
+      "exceptions": [
+        "Missing client billing approval keeps payroll review active",
+        "Rejected/disputed time remains in the ledger for resolution",
+        "Post-approval edits create a revision and invalidate affected approvals",
+        "Uncertain provider outcome triggers reconcile-before-retry"
+      ],
+      "acceptance": [
+        "No duplicate payment or invoice under replay",
+        "Client dispute cannot silently erase or defer compensable hours",
+        "Payroll and invoice totals reconcile independently to their own source and provider records"
+      ],
+      "scope": "Illustrative transition excerpt; not exhaustive or executable."
+    },
+    {
+      "id": "SM04",
+      "name": "Incident and consequential exception handling",
+      "status": "Proposed independent workflow, not recovered clinical SOP",
+      "workflow_ids": [
+        "W05",
+        "W06",
+        "W12"
+      ],
+      "states": [
+        "received",
+        "triaged",
+        "assigned",
+        "investigation_open",
+        "decision_recorded",
+        "action_tracked",
+        "closed"
+      ],
+      "transitions": [
+        {
+          "from": "received",
+          "to": "triaged",
+          "actor": "agent",
+          "guard": "Capture reported facts, urgency indicators and minimal routing data; do not diagnose or decide credibility"
+        },
+        {
+          "from": "triaged",
+          "to": "assigned",
+          "actor": "agent",
+          "guard": "Send urgent safety concerns immediately to staffed clinical/HR route with receipt tracking"
+        },
+        {
+          "from": "investigation_open",
+          "to": "decision_recorded",
+          "actor": "qualified/authorized human owner",
+          "guard": "Owner conducts substantive investigation and records clinical, HR or employment determination"
+        },
+        {
+          "from": "decision_recorded",
+          "to": "action_tracked",
+          "actor": "agent",
+          "guard": "Track explicitly authorized actions and deadlines; preserve access restrictions"
+        }
+      ],
+      "exceptions": [
+        "Unacknowledged urgent case escalates through defined staffed backup",
+        "Agent uncertainty never closes the case",
+        "Conflicting evidence retained without invented resolution"
+      ],
+      "acceptance": [
+        "Urgent case gets a named owner and acknowledged route",
+        "Only authorized owner can enter substantive determination",
+        "Restricted case evidence does not leak into generic recruitment search or public chat"
+      ],
+      "scope": "Illustrative transition excerpt; not exhaustive or executable."
+    }
+  ],
+  "research_plan": [
+    {
+      "id": "DISC01",
+      "priority": "P0",
+      "deliverable": "Launch slice and decision register",
+      "work": "Choose one service line, one client/worksite pattern and one assignment type; determine own-core versus chosen-ATS system of record. Use the 12-stage blueprint but defer MSP and teletherapy unless in launch scope.",
+      "input": "Existing public evidence plus operator decisions",
+      "acceptance": "Written in/out scope, named accountable owners, essential vendor shortlist and one synthetic candidate-to-invoice journey",
+      "depends_on": []
+    },
+    {
+      "id": "DISC02",
+      "priority": "P0",
+      "deliverable": "Canonical contracts, state machines and fixtures",
+      "work": "Specify the independent schemas, status enums, versioned client rules, identity aliases and A/B/C action grants. Create synthetic normal and exception fixtures.",
+      "input": "Blueprint domains/tasks, public contracts, role and platform evidence",
+      "acceptance": "Source-linked requirements and executable tests cover duplicate IDs, stale clearance, concurrent booking, changed approvals, payroll/billing separation and retry",
+      "depends_on": [
+        "DISC01"
+      ]
+    },
+    {
+      "id": "DISC03",
+      "priority": "P0",
+      "deliverable": "Provider access and conformance pack",
+      "work": "For only the chosen ATS/payroll/screening/license providers, obtain permitted access scope, current specification, field/status dictionary, authentication/scopes, sample fixtures and event/import/export behavior. Confirm product-specific terms before evaluation.",
+      "input": "Vendor agreements and approved test arrangements",
+      "acceptance": "Each adapter marked simulated, documented, tested or production-enabled; absence of a sandbox handled explicitly. No unsupported Amergis connectivity assertion.",
+      "depends_on": [
+        "DISC01"
+      ]
+    },
+    {
+      "id": "DISC04",
+      "priority": "P1",
+      "deliverable": "Role walkthrough and exception evidence",
+      "work": "Run worker, recruiter, client, credentialing and finance journeys in our prototype; use third-party synthetic demo only when evaluation scope permits. Record allowed actions, side effects and failed transitions.",
+      "input": "Prototype fixtures and role matrix; selected permitted demos if relevant",
+      "acceptance": "One complete role-isolated journey plus withdraw/cancel/correct/reject paths, with zero cross-tenant leakage in tests",
+      "depends_on": [
+        "DISC02",
+        "DISC03"
+      ]
+    },
+    {
+      "id": "DISC05",
+      "priority": "P1",
+      "deliverable": "Observed operating pilot",
+      "work": "Run a supervised pilot on our own clients, worker supply and approved business data. Measure task time, exception frequency, reviewer overrides, errors and connector reconciliation before expanding authority.",
+      "input": "Real operating relationships, vendor integrations, named owners and predefined success thresholds",
+      "acceptance": "Documented outcomes support or reject each automation grant; measured evidence replaces speculative savings and task-count percentages",
+      "depends_on": [
+        "DISC04"
+      ]
+    },
+    {
+      "id": "DISC06",
+      "priority": "P2/P3",
+      "deliverable": "MSP and teletherapy extension packs",
+      "work": "Add program-specific supplier/VMS and clinical administrative integrations only when an actual customer and operating model require them.",
+      "input": "Executed program/service scope and permitted vendor testing",
+      "acceptance": "Separate configuration, roles, retained data and professional handoffs validated end to end",
+      "depends_on": [
+        "DISC05"
+      ]
+    }
+  ],
+  "authority": {
+    "A": "Agent executes explicitly delegated routine action only after deterministic prerequisites and scoped permissions pass.",
+    "B": "Agent prepares; named owner approves the exact action version before execution.",
+    "C": "Qualified/authorized person leads judgment or attestation; agent handles logistics and documentation.",
+    "boundary_note": "These are proposed operating controls, not a claim every human gate is mandated by law everywhere. Clinical service, adverse employment decisions, professional attestations and material finance exceptions require specifically assigned authority."
+  },
+  "unsupported_claims_to_avoid": [
+    "Recovered Amergis database, source code or complete current organization chart",
+    "Vendor API availability proves Amergis uses those endpoints",
+    "Public job listings are our client orders or supply a candidate pool",
+    "Public wage/rate advertisements reveal realized margin",
+    "API integration or a task-count split proves a 100% autonomous staffing company or a savings percentage"
+  ],
+  "review": {
+    "reviewed_by": "Independent subagent boundary_review",
+    "method": "Read-only challenge of existing phase2/phase3 JSON",
+    "findings_applied": [
+      "Clearance recheck and restricted evidence visibility",
+      "Separate client selection, candidate consent and work readiness",
+      "Payroll independent of billing with idempotent replay",
+      "Tenant-specific connector conformance before working-status claims",
+      "Role isolation and version-bound approvals"
+    ]
+  },
+  "state_machine_scope": "Illustrative transition excerpts only; these are not exhaustive state graphs or executable specifications. Full transitions and negative cases are future implementation work."
+}

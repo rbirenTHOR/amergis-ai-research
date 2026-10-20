@@ -1,0 +1,498 @@
+{
+  "title": "Independent digital product portfolio",
+  "status": "Recommended future operator design, not recovered Amergis architecture or a completed implementation",
+  "as_of": "2026-10-20",
+  "design_position": "One shared staffing platform with three role-based experiences. The 12 portfolio entries below are capability areas, not 12 separate applications. Establish specialist services; own workflow policy, controlled agent actions and operational evidence.",
+  "initial_slice": {
+    "scope": "One staffing specialty, one jurisdiction and one client/worksite group; healthcare versus education remains undecided.",
+    "journey": "Client order \u2192 candidate consent and application \u2192 evidenced match \u2192 recorded human clearance and client decision \u2192 assignment \u2192 worked time \u2192 payroll preparation \u2192 invoice and reconciliation.",
+    "record_ownership": "Choose a compatible ATS/CRM as authoritative owner of candidate, client, requisition, submission and placement records, or build a minimal owned core if no shortlisted system passes the integration gate. Never maintain two editable masters.",
+    "experiences": 3,
+    "minimum_live_conditions": [
+      "Operator-owned customer demand and consented worker supply",
+      "Approved requirement and contract rule pack",
+      "Selected services with permitted integration and test access",
+      "Named owners for employment, clinical, commercial and financial exceptions"
+    ],
+    "deferred": [
+      "Native mobile apps",
+      "Multi-vendor MSP business",
+      "Teletherapy delivery",
+      "Enterprise ATS replacement",
+      "Predictive staffing forecasts",
+      "Multi-state and multi-specialty expansion"
+    ]
+  },
+  "products": [
+    {
+      "id": "D01",
+      "name": "Worker experience and public jobs",
+      "layer": "User experiences",
+      "decision": "build",
+      "recommendation": "One responsive web experience with public discovery and authenticated worker self-service; use established hosting/CMS where useful.",
+      "minimum_scope": [
+        "Service pages and operator-owned job catalog",
+        "Application, consent and contact preferences",
+        "Availability and onboarding checklist",
+        "Secure document submission and status",
+        "Assignment details, time submission handoff and support requests"
+      ],
+      "dependencies": [
+        "D04",
+        "D07",
+        "D09",
+        "D10"
+      ],
+      "phase": "R1 intake/onboarding; R2 assignment/time; R3 live delegation",
+      "mvp": true,
+      "ai_scope": "Normalize intake, explain missing information, send approved reminders and route worker requests.",
+      "human_boundary": "Workers control consent and acceptance. Agents do not attest professional competence or clear a worker on their own.",
+      "source_ids": [
+        "PUB07",
+        "PUB08",
+        "PUB09",
+        "PART01"
+      ],
+      "workflow_ids": [
+        "W03",
+        "W04",
+        "W06",
+        "W07",
+        "W08"
+      ],
+      "evidence_note": "Published job and app features establish comparable user needs; the future user experience is our design. Competitor listings are research data, not the new operator's fillable orders."
+    },
+    {
+      "id": "D02",
+      "name": "Client experience",
+      "layer": "User experiences",
+      "decision": "build",
+      "recommendation": "A client role in the shared application with access scoped to the relevant organization and worksite.",
+      "minimum_scope": [
+        "Staffing request and requisition status",
+        "Review approved candidate submissions",
+        "Record client decisions and assignment confirmations",
+        "Time approvals or links to contract-designated timekeeping",
+        "Invoice evidence, service requests and basic reporting"
+      ],
+      "dependencies": [
+        "D04",
+        "D05",
+        "D07",
+        "D08",
+        "D10"
+      ],
+      "phase": "R1 order/submission; R2 time/invoice; R3 live delegation",
+      "mvp": true,
+      "ai_scope": "Complete intake, prepare submission evidence, chase missing approvals and explain status.",
+      "human_boundary": "The client makes assigned candidate and time approvals; agents cannot manufacture approval or override contract-specific processes.",
+      "source_ids": [
+        "PUB10",
+        "PART02"
+      ],
+      "workflow_ids": [
+        "W01",
+        "W03",
+        "W05",
+        "W07",
+        "W08",
+        "W10"
+      ],
+      "evidence_note": "MaxView marketing provides feature-level evidence; exact authenticated screens, permissions and current transition semantics remain unverified."
+    },
+    {
+      "id": "D03",
+      "name": "Operations and exception console",
+      "layer": "User experiences",
+      "decision": "build",
+      "recommendation": "One internal role-based workspace for recruiting, credentialing, account operations, finance and accountable reviewers.",
+      "minimum_scope": [
+        "Owned work queues with deadlines",
+        "Evidence and proposed action side by side",
+        "Approve, reject, request correction and escalate",
+        "Credential and incident cases with restricted access",
+        "Reconciliation and intervention metrics"
+      ],
+      "dependencies": [
+        "D04",
+        "D05",
+        "D06",
+        "D07",
+        "D10"
+      ],
+      "phase": "R1 essential; expanded through R2\u2013R3",
+      "mvp": true,
+      "ai_scope": "Assemble records, recommend actions, prioritize by approved policy and track follow-through.",
+      "human_boundary": "Accountable reviewers own employment, clinical, disciplinary, contractual and financial decisions allocated to them. Approval binds to the exact action version.",
+      "source_ids": [
+        "er-admin32",
+        "PUB10",
+        "PART02"
+      ],
+      "workflow_ids": [
+        "W01",
+        "W02",
+        "W03",
+        "W04",
+        "W05",
+        "W06",
+        "W07",
+        "W08",
+        "W09",
+        "W10",
+        "W12"
+      ],
+      "evidence_note": "Public roles and workflows support the functions; a unified AI approval console is an independent operating recommendation."
+    },
+    {
+      "id": "D04",
+      "name": "Workflow and agent execution core",
+      "layer": "Owned operating core",
+      "decision": "build",
+      "recommendation": "Own durable workflow states, approved domain commands and task-scoped agents; orchestrate the chosen record system through adapters.",
+      "minimum_scope": [
+        "Requisition-to-placement state transitions",
+        "Requirement and readiness gates",
+        "Assignment and shift transitions with atomic reservation",
+        "Permission-scoped action validation",
+        "Timers, retries, approval version binding and exception routing"
+      ],
+      "dependencies": [
+        "D07 record ownership decision",
+        "D06",
+        "D10",
+        "Approved pilot policies"
+      ],
+      "phase": "R0 specification; R1 placement; R2 assignment/finance; R3 bounded execution",
+      "mvp": true,
+      "ai_scope": "Extract, summarize, draft and choose permitted next administrative actions; deterministic guards enforce rules.",
+      "human_boundary": "The model cannot invent missing rules, approve its own restricted action or treat uncertain verification as clearance.",
+      "source_ids": [
+        "er-overview",
+        "er-admin32",
+        "PUB10",
+        "PUB09"
+      ],
+      "workflow_ids": [
+        "W01",
+        "W02",
+        "W03",
+        "W04",
+        "W05",
+        "W06",
+        "W07",
+        "W08",
+        "W09",
+        "W10",
+        "W12"
+      ],
+      "evidence_note": "Public API entities and workflow evidence guide the boundaries, not a recovered database schema. The workflow store contains references, evidence and action state rather than competing candidate/job masters."
+    },
+    {
+      "id": "D05",
+      "name": "Contract, time and financial preparation module",
+      "layer": "Owned operating core",
+      "decision": "build",
+      "recommendation": "Own effective-dated contract rules and preparation/reconciliation logic; establish payroll and accounting settlement services.",
+      "minimum_scope": [
+        "Approved contract clauses, rates, units and precedence",
+        "Original time source references and amendment history",
+        "Separate pay eligibility and client bill approval",
+        "Pay-input and invoice drafts",
+        "Variance queues, credit/rebill evidence and provider reconciliation",
+        "Expense and reimbursement preparation when included in the selected service model"
+      ],
+      "dependencies": [
+        "D04",
+        "D06",
+        "D08",
+        "Contract-designated time source",
+        "Approved finance rules and owners"
+      ],
+      "phase": "R0 rule pack; R2 complete; R3 controlled execution",
+      "mvp": true,
+      "ai_scope": "Extract draft rules, identify anomalies, explain variances and assemble approval packages.",
+      "human_boundary": "Authorized owners approve rule interpretation and financial release. Deterministic calculations use approved rules; customer invoice disputes do not automatically suppress earned-pay processing.",
+      "source_ids": [
+        "PART02",
+        "PART01",
+        "PART07"
+      ],
+      "workflow_ids": [
+        "W02",
+        "W08",
+        "W09",
+        "W10"
+      ],
+      "evidence_note": "Public contracts show customer-specific variation. New contracts supply the production rules; published ceilings are not assumed negotiated prices or wages."
+    },
+    {
+      "id": "D06",
+      "name": "Integration, evidence and audit layer",
+      "layer": "Owned operating core",
+      "decision": "build",
+      "recommendation": "Build thin versioned adapters and an owned action/event ledger over established infrastructure.",
+      "minimum_scope": [
+        "ID aliases and one owner per record type",
+        "Schema mapping and scoped service identities",
+        "Durable event checkpoints and idempotency",
+        "Restricted document evidence with provenance and freshness",
+        "Reconciliation, replay, audit and action outcome metrics"
+      ],
+      "dependencies": [
+        "D07\u2013D10 current interface specifications",
+        "D10 infrastructure",
+        "Synthetic fixture pack"
+      ],
+      "phase": "R0 contracts; R1 first adapters; R2 reconciliation; R3 operating telemetry",
+      "mvp": true,
+      "ai_scope": "Classify and extract documents, explain integration errors and prepare remediation proposals.",
+      "human_boundary": "Vendor outages, missing fields or stale events create explicit unknown states. AI does not invent transaction acknowledgements.",
+      "source_ids": [
+        "er-permissions",
+        "er-docs",
+        "er-testing",
+        "bh-events",
+        "PART08",
+        "PART17"
+      ],
+      "workflow_ids": [
+        "W03",
+        "W05",
+        "W06",
+        "W07",
+        "W08",
+        "W09",
+        "W10"
+      ],
+      "evidence_note": "API documentation proves product capabilities, not Amergis-specific mappings or entitlement. Implement only selected, permitted operator integrations."
+    },
+    {
+      "id": "D07",
+      "name": "Staffing records and CRM",
+      "layer": "Established vendor services",
+      "decision": "hybrid",
+      "recommendation": "Default to establishing an ATS/CRM only if its current API, AI-use terms, data scope, test approach and export pass the pilot gate. Otherwise build one minimal owned staffing core.",
+      "minimum_scope": [
+        "Candidate and client records",
+        "Requisition and application/submission records",
+        "Placement and assignment records",
+        "Contact/consent history and attachment references",
+        "Read/write transitions, export and incremental reconciliation"
+      ],
+      "dependencies": [
+        "R0 vendor fit and commercial review",
+        "Single source-of-record decision",
+        "Permitted integration/test access"
+      ],
+      "phase": "R0 decide; R1 establish or implement minimum fallback",
+      "mvp": true,
+      "ai_scope": "Read and write permitted records through D04/D06; prepare evidence-based matches and follow-ups.",
+      "human_boundary": "No duplicate editable candidate/job/placement masters. Historical Amergis use does not select a vendor for the new company.",
+      "source_ids": [
+        "PART02",
+        "er-overview",
+        "er-permissions",
+        "er-admin32",
+        "bh-rest",
+        "bh-access",
+        "bh-policy"
+      ],
+      "workflow_ids": [
+        "W01",
+        "W03",
+        "W04",
+        "W05",
+        "W06",
+        "W07"
+      ],
+      "evidence_note": "Erecruit is a historical Amergis lead; Bullhorn ATS REST is a different interface. Neither product has been selected or procured."
+    },
+    {
+      "id": "D08",
+      "name": "Payroll, HR administration and accounting services",
+      "layer": "Established vendor services",
+      "decision": "establish",
+      "recommendation": "Establish suitable payroll, tax, benefits/HR and accounting services, with clear ownership of employee setup, settlement and ledgers.",
+      "minimum_scope": [
+        "Employer and worker payroll setup",
+        "Earnings/deduction codes and time inputs",
+        "Pay statements and tax documents",
+        "Approved payroll release and reconciliation",
+        "Accounting postings, invoices, receipts and banking permissions"
+      ],
+      "dependencies": [
+        "Operator entity/employer setup",
+        "Selected product edition and API entitlement",
+        "D05",
+        "Named payroll and finance owners"
+      ],
+      "phase": "R0 provider decision/setup; R2 integration; R3 live processing",
+      "mvp": true,
+      "ai_scope": "Prepare inputs, compare results, flag inconsistencies and route service requests.",
+      "human_boundary": "Separate preparation from release. Do not build a bespoke payroll-tax or funds-settlement engine for the pilot.",
+      "source_ids": [
+        "PART01",
+        "PART03",
+        "PART04",
+        "PART06",
+        "PART07",
+        "PART08"
+      ],
+      "workflow_ids": [
+        "W08",
+        "W09",
+        "W10"
+      ],
+      "evidence_note": "ADP is documented in Amergis support materials; Amergis edition and entitlements remain unknown. Accounting and other service choices are independent recommendations."
+    },
+    {
+      "id": "D09",
+      "name": "Screening and credential verification services",
+      "layer": "Established vendor services",
+      "decision": "establish",
+      "recommendation": "Contract suitable screening and authoritative verification channels for the chosen profession and jurisdiction; build checklist orchestration in D04.",
+      "minimum_scope": [
+        "Applicable requirement bundles and worker consent",
+        "Screening orders, statuses and results",
+        "Authoritative license/credential evidence",
+        "Expiry/change alerts",
+        "Human readiness clearance and exception records"
+      ],
+      "dependencies": [
+        "Selected specialty and jurisdiction",
+        "Vendor/institution eligibility and permitted purpose",
+        "D04",
+        "D06",
+        "Qualified clearance owner"
+      ],
+      "phase": "R0 access/requirements; R1 onboarding; R3 live monitoring",
+      "mvp": true,
+      "ai_scope": "Check completeness, organize evidence, reconcile vendor status and notify owners of changes.",
+      "human_boundary": "OCR is not verification. Clinical suitability, adverse-result decisions and final work-readiness clearance remain with accountable people.",
+      "source_ids": [
+        "PART02",
+        "PART14",
+        "PART15",
+        "PART16",
+        "PART17",
+        "PART18",
+        "PART19"
+      ],
+      "workflow_ids": [
+        "W05",
+        "W06",
+        "W07",
+        "W12"
+      ],
+      "evidence_note": "Certiphi and Nursys are research leads, not selected services. Nursys covers enrolled nurse licenses; education, therapy and other professions require their own applicable sources and test approaches."
+    },
+    {
+      "id": "D10",
+      "name": "Identity, communications and platform foundations",
+      "layer": "Established vendor services",
+      "decision": "establish",
+      "recommendation": "Use established identity, messaging, e-signature, secure storage and infrastructure services; configure the operator's permissions and data handling.",
+      "minimum_scope": [
+        "Role and organization-scoped identity",
+        "Email/SMS and communication preferences",
+        "E-signature and signed-document evidence",
+        "Restricted storage, secrets and backups",
+        "Monitoring, incident response and recoverability"
+      ],
+      "dependencies": [
+        "Operator-owned domains/accounts",
+        "Approved access and retention policies",
+        "Provider terms appropriate to selected data/workflows"
+      ],
+      "phase": "R0 establish; R1 access and documents; R3 operational readiness",
+      "mvp": true,
+      "ai_scope": "Send delegated messages, route support and prepare access/incident work with scoped credentials.",
+      "human_boundary": "Security administration, sensitive access changes and incident accountability retain named owners. Do not assume a competitor's authentication vendor is the required choice.",
+      "source_ids": [
+        "PUB04",
+        "PUB05",
+        "er-permissions"
+      ],
+      "workflow_ids": [
+        "W01",
+        "W04",
+        "W06",
+        "W12"
+      ],
+      "evidence_note": "Public login evidence demonstrates identity as a platform boundary. The service bundle and operating controls are our recommended foundations, not an inventory of Amergis vendors."
+    },
+    {
+      "id": "D11",
+      "name": "MSP and supplier management extension",
+      "layer": "Optional vertical products",
+      "decision": "later",
+      "recommendation": "Add only if the company chooses an MSP business. Integrate a permitted client VMS or evaluate a new VMS; add supplier roles to the shared platform.",
+      "minimum_scope": [
+        "Program-specific supplier onboarding",
+        "Requisition distribution rules",
+        "Vendor submissions and assignment status",
+        "Supplier time/invoice reconciliation",
+        "Program fees, reporting and exceptions"
+      ],
+      "dependencies": [
+        "Selected MSP business and client program",
+        "Supplier agreements",
+        "D04\u2013D06",
+        "Permitted VMS integration"
+      ],
+      "phase": "R4 conditional",
+      "mvp": false,
+      "ai_scope": "Distribute approved orders, track responses, reconcile program records and prepare service reports.",
+      "human_boundary": "Supplier qualification, disputed allocation and contractual changes retain program owners.",
+      "source_ids": [
+        "VMS-S01",
+        "VMS-S05",
+        "VMS-S09",
+        "VMS-S10",
+        "VMS-S11"
+      ],
+      "workflow_ids": [
+        "W11"
+      ],
+      "evidence_note": "Sunburst describes client-dependent VMS selection; MatterWorx is named for education. Public features support an independent design, not a universal Amergis VMS reconstruction."
+    },
+    {
+      "id": "D12",
+      "name": "Teletherapy administration extension",
+      "layer": "Optional vertical products",
+      "decision": "later",
+      "recommendation": "If remote clinical services are selected, establish suitable video/session services and licensed content; build scheduling, access and reporting around them.",
+      "minimum_scope": [
+        "Session scheduling and consent",
+        "Role-based room access and waiting workflow",
+        "Attendance/minute reporting",
+        "Clinician documentation handoffs",
+        "Service exceptions and resource-license tracking"
+      ],
+      "dependencies": [
+        "Selected clinical service model",
+        "Licensed clinicians and accountable clinical owner",
+        "Permitted technology/content agreements",
+        "Resolved data-retention model",
+        "D01\u2013D06"
+      ],
+      "phase": "R4 conditional",
+      "mvp": false,
+      "ai_scope": "Schedule, remind, check documentation completeness and reconcile authorized activity records.",
+      "human_boundary": "Licensed clinicians deliver treatment and assessments; AI administration is not autonomous clinical delivery.",
+      "source_ids": [
+        "VMS-S12",
+        "VMS-S13"
+      ],
+      "workflow_ids": [
+        "W06",
+        "W07",
+        "W12"
+      ],
+      "evidence_note": "Public ATP capabilities exist, but its API and underlying provider are unknown. Do not infer or copy licensed assessment content."
+    }
+  ],
+  "source_reference_system": "All source_ids refer to sources in outputs/amergis-api-reconstruction.json. Workflow IDs refer to outputs/amergis-blueprint.json. Recommendations extend the observed capabilities and are not assertions of Amergis internal design.",
+  "acceptance_position": "A product is not ready because its UI exists. Demonstrate the complete synthetic journey, negative/exception cases and cross-system reconciliation before delegated live actions. No automation ROI or headcount replacement estimate is supported by the current evidence."
+}

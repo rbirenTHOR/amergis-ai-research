@@ -1,0 +1,49 @@
+{
+  "as_of": "2026-10-20",
+  "title": "Digital product roadmap and reconstruction feasibility",
+  "status": "Proposed independent product design; no platform implementation or vendor procurement in this phase",
+  "recommendation": "Build one AI-operated staffing platform with three role-based experiences. Own workflow decisions, policy versions and audit evidence; establish specialist services and choose one authoritative staffing record system.",
+  "planning_assumption": "Start with one staffing service line, one specialty, one jurisdiction and one client/worksite group. This is a scope recommendation, not a claim the market or client has been selected.",
+  "operating_limit": "AI can operate delegated administrative tasks. Licensed healthcare and education services, accountable employment/clinical decisions, contractual exceptions and financial release still need the relevant professionals and owners. The current research does not establish a zero-human company.",
+  "architecture": [
+    {"layer":"Experiences", "components":["Worker portal and public jobs", "Client portal", "Operations and exception console"], "rule":"Use one application with role-specific access initially; a native mobile app is optional later."},
+    {"layer":"Owned operating layer", "components":["Durable workflow states", "Versioned contract and eligibility rules", "Agent action gateway", "Approvals, audit and reconciliation"], "rule":"Agents propose or execute permitted actions through validated domain commands. The model is not the authority for payroll totals or credentials."},
+    {"layer":"Records and adapters", "components":["Selected ATS/CRM or minimal owned staffing core", "Credential evidence store", "Time and billing preparation", "Vendor adapters and event ledger"], "rule":"Assign one authoritative system per record class. Vendor IDs map to internal IDs; duplicate masters are not an acceptable integration design."},
+    {"layer":"Established services", "components":["Identity and permissions", "Communications and e-signature", "Screening and licensing", "Payroll, accounting and payments", "Storage, monitoring and backups"], "rule":"Provision the new operator's accounts and permitted integration scope. Amergis's accounts and datasets are not available inputs."}
+  ],
+  "system_of_record_decisions": [
+    {"records":"Candidate, client, requisition, submission, placement", "owner":"Selected ATS/CRM by default; minimal owned core only if vendor criteria fail", "boundary":"Choose before implementation. Own workflow store holds IDs, state evidence and action history rather than a competing editable master."},
+    {"records":"Contract rules, requirement versions, approval policy", "owner":"Owned versioned policy service", "boundary":"Store source, effective dates, unit, applicability, precedence and approved interpretation. An unresolved rate or rule stays unresolved."},
+    {"records":"Credential documents and verification evidence", "owner":"Restricted evidence store plus external issuing/screening sources", "boundary":"Document extraction is not verification; readiness uses person match, jurisdiction, status and freshness."},
+    {"records":"Worked time", "owner":"Contract-designated time system", "boundary":"Preserve originals and amendments. Internal normalized entries reference source records and approval state."},
+    {"records":"Payroll settlement and accounting ledger", "owner":"Established payroll/accounting providers", "boundary":"Owned software prepares, checks and reconciles inputs. Final financial posting/release is separately authorized."},
+    {"records":"Agent actions, approvals, exceptions and reconciliation", "owner":"Owned event and audit ledger", "boundary":"Record actor, evidence, payload hash, policy/model version, idempotency key and outcome."}
+  ],
+  "ats_selection_gate": {
+    "default":"Establish a suitable ATS/CRM for the initial pilot if it passes the integration criteria. Do not select solely because Amergis historically named a vendor.",
+    "required_evidence":["Current documented read/write APIs for required records and status transitions", "Permitted AI integration and customer data access under the applicable agreement", "Scoped service accounts, field access and tenant isolation", "Synthetic test environment or an acceptable documented test approach", "Event/change support or reliable incremental reconciliation", "Data export, attachments, identifiers, limits and operational support", "Measured fit to the pilot journey and commercial terms"],
+    "fallback":"If no candidate passes, build the minimal candidate–job–submission–assignment core for the pilot. Do not recreate an enterprise ATS feature catalog in parallel with buying one.",
+    "vendor_status":"Erecruit, Bullhorn, ADP, Certiphi, Nursys and MatterWorx are research leads or examples, not selected suppliers. No quotes, contracts or accounts have been obtained."
+  },
+  "release_slices": [
+    {"id":"R0", "name":"Operating contract and vendor decisions", "build":"Fix the pilot scope; define object ownership, allowed agent actions and one client requirement/rate pack.", "establish":"Select ATS approach, payroll/accounting, screening/licensing and communication services; obtain permitted test access.", "exit":"An explicit owner and authoritative system for each object; vendor integration gaps recorded; synthetic journey agreed."},
+    {"id":"R1", "name":"Candidate to approved placement", "build":"Worker intake and consent, client requisition intake, evidence-linked matching, credential/onboarding queue and operations approvals.", "establish":"A consented candidate population and real client demand; test credentials and screening packages for the chosen profession.", "exit":"Synthetic duplicate, missing credential, rejection, withdrawal and approved placement cases behave correctly. No live employment decision delegated solely to a model."},
+    {"id":"R2", "name":"Assignment to reconciled money", "build":"Shift confirmation, time intake/amendments, pay preparation, invoice draft and reconciliation views.", "establish":"Contract-designated time source, payroll codes, billing rules, accounting connections and named financial owners.", "exit":"No duplicate booking/pay batch/invoice on retries; pay and bill totals reconcile; a client invoice dispute does not automatically suppress earned-pay processing."},
+    {"id":"R3", "name":"Bounded live operation", "build":"Enable approved reminders and record updates; raise task authority only after observed pilot performance.", "establish":"Named exception coverage, client/worker agreements and live vendor scopes; thresholds set by accountable owners.", "exit":"Measured errors, intervention rates and response times meet agreed limits; rollback, replay and escalation are exercised."},
+    {"id":"R4", "name":"Additional products and scale", "build":"Multi-client programs, supplier/VMS portal, advanced analytics, native mobile or teletherapy administration only when their business lines are selected.", "establish":"Additional contract/jurisdiction rules and relevant licensed services.", "exit":"Each expansion has its own verified workflows, unit economics and regression cases; no assumption one client's configuration generalizes."}
+  ],
+  "next_discovery_sprint": [
+    {"priority":1,"task":"Turn public evidence into versioned specifications", "deliverable":"Field dictionary, permission matrix and state diagrams for requisition, submission, credential readiness, assignment, timecard and invoice.", "completion":"Every transition has actor, prerequisite, evidence, output and exception route; observed behavior is separated from proposed design."},
+    {"priority":2,"task":"Build a synthetic fixture pack", "deliverable":"One complete candidate-to-invoice journey plus duplicate, expired credential, canceled shift, corrected timecard and credit/rebill cases.", "completion":"No real personal or client data is required; expected outcomes are explicit. This is a proposed next implementation, not completed in this phase."},
+    {"priority":3,"task":"Evaluate permitted vendor interfaces", "deliverable":"Versioned API/schema exports, sample payloads, scopes and limits for shortlisted services.", "completion":"Each connector has an owner, authorized scope, source specification, retry/reconciliation behavior and a documented pass/fail decision."},
+    {"priority":4,"task":"Observe authorized role-specific journeys", "deliverable":"Synthetic worker, recruiter, client, supplier and payroll walkthroughs with an approved evaluation purpose.", "completion":"Record action semantics, states, validation and exports without assuming a support-form role label equals permission."},
+    {"priority":5,"task":"Implement the first vertical slice", "deliverable":"Working intake-to-placement prototype over the selected record system, with an operations exception queue.", "completion":"Run the agreed positive and negative cases before any external action authority is enabled."}
+  ],
+  "not_recoverable_from_public_evidence": [
+    "Amergis's private candidate pool, customer CRM and payroll or invoice transactions",
+    "Actual production table definitions, custom fields, configuration and complete permissions",
+    "Private SOPs, matching algorithms, model prompts, conversion rates and operating unit economics",
+    "Current integration mappings and complete failure/retry behavior behind authenticated services"
+  ],
+  "scope_of_this_phase": "Product definition and reconstruction feasibility only. No vendor outreach, registrations, procurement, authenticated portal access or live workflow implementation."
+}

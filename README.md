@@ -2,7 +2,7 @@
 
 Public-source research collected on **October 20, 2026**, with an independent staffing operating model and a map of potential AI agent integrations.
 
-Start with [the API and reconstruction report](outputs/amergis-api-reconstruction.html). Download or clone this repository and open the HTML file locally; GitHub displays HTML source rather than executing the report.
+Start with [the digital product roadmap](outputs/amergis-product-roadmap.html), then [the API and reconstruction report](outputs/amergis-api-reconstruction.html). Download or clone this repository and open the HTML file locally; GitHub displays HTML source rather than executing the report.
 
 ## Deliverables
 
@@ -11,6 +11,7 @@ Start with [the API and reconstruction report](outputs/amergis-api-reconstructio
 | Public assessment | [HTML](outputs/amergis-public-assessment.html) | [Source map](outputs/amergis-source-map.json), [SQLite](outputs/amergis-public-intelligence.sqlite) |
 | Operating blueprint | [HTML](outputs/amergis-operating-blueprint.html), [Excel workbook](outputs/amergis-operating-blueprint.xlsx) | [JSON](outputs/amergis-blueprint.json), [SQLite](outputs/amergis-phase2-intelligence.sqlite) |
 | Portals and APIs | [HTML](outputs/amergis-api-reconstruction.html) | [JSON](outputs/amergis-api-reconstruction.json), [SQLite](outputs/amergis-api-reconstruction.sqlite) |
+| Product roadmap | [HTML](outputs/amergis-product-roadmap.html) | [JSON](outputs/amergis-product-roadmap.json): build/establish decisions, reconstruction feasibility and release gates |
 | Public offices | [61 normalized office records](outputs/amergis-public-locations.json) | Addresses, phones, public branch emails, service categories and preserved discrepancies |
 
 The research includes 5,519 public listing observations, 20 role families, 63 proposed tasks, 12 workflow stages, six contract packets, and 12 platform/surface groups. Listing observations are not unique vacancies, placements or employee counts.
@@ -33,6 +34,7 @@ Requires Python 3.10+; these builders use the Python standard library and do not
 python3 work/amergis-audit/build_deliverables.py
 python3 work/amergis-phase2/build_phase2.py
 python3 work/amergis-phase3/build_report.py
+python3 work/amergis-phase4/build_roadmap.py
 ```
 
 Run in the listed order. The builds use the committed October 2026 evidence snapshot, not live data. The normalized public-office dataset is a committed input to phase 3.
@@ -58,5 +60,6 @@ The reviewed `.xlsx` is included ready to use. Its optional source is `work/amer
 - `work/amergis-audit/`: phase 1 builder, normalized records and provenance.
 - `work/amergis-phase2/`: operating model, curated evidence, template and checks.
 - `work/amergis-phase3/`: API research, normalized CMS summary, template and checks.
+- `work/amergis-phase4/`: product portfolio, reconstruction feasibility, release sequence and report builder.
 
 The repository is private by default. It does not publish a website or enable GitHub Pages.

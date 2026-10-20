@@ -1,0 +1,21 @@
+{
+  "method": "Local in-memory DOM and artifact checks; no live workflow or rendered browser validation.",
+  "checks": [
+    {
+      "name": "Product and feasibility sections populated",
+      "status": "pass"
+    },
+    {
+      "name": "Product search and decision filters",
+      "status": "pass"
+    },
+    {
+      "name": "Artifact links and section anchors resolve",
+      "status": "pass"
+    },
+    {
+      "name": "Evidence distinctions retained",
+      "status": "pass"
+    }
+  ]
+}

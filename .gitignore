@@ -67,3 +67,14 @@
 **/.env*
 **/~$*
 **/.DS_Store
+
+# Product roadmap and reconstruction feasibility
+!/outputs/amergis-product-roadmap.html
+!/outputs/amergis-product-roadmap.json
+!/work/amergis-phase4/plan-core.json
+!/work/amergis-phase4/portfolio.json
+!/work/amergis-phase4/reconstruction.json
+!/work/amergis-phase4/review.json
+!/work/amergis-phase4/build_roadmap.py
+!/work/amergis-phase4/check_roadmap.cjs
+!/work/amergis-phase4/report-checks.json

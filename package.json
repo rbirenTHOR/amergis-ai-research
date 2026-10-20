@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Public-source Amergis research, operating blueprint and API reconstruction map",
   "scripts": {
-    "check": "node work/amergis-phase2/qa/check_report.cjs && node work/amergis-phase3/check_report.cjs"
+    "check": "node work/amergis-phase2/qa/check_report.cjs && node work/amergis-phase3/check_report.cjs && node work/amergis-phase4/check_roadmap.cjs"
   },
   "devDependencies": {
     "linkedom": "0.18.13"
