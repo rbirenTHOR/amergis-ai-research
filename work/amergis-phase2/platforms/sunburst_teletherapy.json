@@ -1,0 +1,197 @@
+{
+  "research_scope": "Official public Sunburst MSP, supplier, VMS, education and healthcare/government service pages, plus Amergis Education teletherapy.",
+  "retrieved_at": "2026-10-20",
+  "method": "Read six publicly linked official pages. No credentials, form submissions, private records or hidden endpoint enumeration.",
+  "interpretation": "Observed means a claim printed on the official public page, not independent confirmation of software implementation or contractual service levels. Proposed workflows, schemas and AI authority are independent design recommendations.",
+  "sources": [
+    {
+      "source_id": "PLAT-SUN-HOME",
+      "title": "Complex Staffing Made Simple",
+      "url": "https://www.sunburstworkforce.com/",
+      "published_date": null,
+      "retrieved_date": "2026-10-20",
+      "source_type": "official service marketing",
+      "evidence": [
+        {"evidence_id": "SUN-HOME-01", "claim": "Describes an MSP with a dedicated program manager, tailored recruitment strategy, and dashboards for staffing and spend.", "location": "On-the-Ground Support; Tailored Solutions; Visibility and Transparency"},
+        {"evidence_id": "SUN-HOME-02", "claim": "Says workforce experts combine AI innovation with practical services, but does not identify AI products, algorithms or delegated decisions.", "location": "Our simple approach"},
+        {"evidence_id": "SUN-HOME-03", "claim": "Positions the supplier network as spanning agency affiliations.", "location": "A network as diverse as your needs"}
+      ]
+    },
+    {
+      "source_id": "PLAT-SUN-VMS",
+      "title": "Vendor Management System",
+      "url": "https://www.sunburstworkforce.com/vendor-management-system/",
+      "published_date": null,
+      "retrieved_date": "2026-10-20",
+      "source_type": "official product/service marketing",
+      "evidence": [
+        {"evidence_id": "SUN-VMS-01", "claim": "Offers VMS partner selection according to customer fit; it does not identify one universal proprietary backend.", "location": "The right technology for your team; An approach you can trust"},
+        {"evidence_id": "SUN-VMS-02", "claim": "Describes consolidated supplier invoices, spend and fill-rate analytics, supplier performance reporting, position management, candidate vetting, and credential/onboarding tracking.", "location": "Consolidated invoicing through Simplified compliance"}
+      ]
+    },
+    {
+      "source_id": "PLAT-SUN-SUP",
+      "title": "Suppliers",
+      "url": "https://www.sunburstworkforce.com/suppliers/",
+      "published_date": null,
+      "retrieved_date": "2026-10-20",
+      "source_type": "official supplier recruitment page",
+      "evidence": [
+        {"evidence_id": "SUN-SUP-01", "claim": "Describes supplier matching by industry and region, specialist coverage, and supplier-diversity objectives.", "location": "Better alignment; Diversity in action; Niche roles, filled"},
+        {"evidence_id": "SUN-SUP-02", "claim": "Published supplier expectations cover quality, compliance, responsiveness, collaboration, candidate experience and growth.", "location": "What we look for in a supplier"},
+        {"evidence_id": "SUN-SUP-03", "claim": "The public joining action leads to contact; no qualification scoring rubric or executable onboarding process is disclosed.", "location": "Become a Sunburst Supplier; Apply to join our supplier network"}
+      ]
+    },
+    {
+      "source_id": "PLAT-SUN-EDU",
+      "title": "Education Workforce Solutions",
+      "url": "https://www.sunburstworkforce.com/education-workforce-solutions/",
+      "published_date": null,
+      "retrieved_date": "2026-10-20",
+      "source_type": "official sector service marketing",
+      "evidence": [
+        {"evidence_id": "SUN-EDU-01", "claim": "For districts, describes onboarding, compliance, vendor coordination, simplified contracting and consolidated billing.", "location": "Less admin, more impact through Consolidate vendor billing & invoices"},
+        {"evidence_id": "SUN-EDU-02", "claim": "Explicitly names MatterWorx as a VMS used for consolidated invoices, spend/fill-rate reporting and credential tracking.", "location": "Say goodbye to spreadsheets"},
+        {"evidence_id": "SUN-EDU-03", "claim": "Claims no cost to school districts; this is a marketing description rather than proof of total economic incidence.", "location": "Educational staffing, simplified"},
+        {"evidence_id": "SUN-EDU-04", "claim": "Names a Vice President of Business Development role. The adjacent three team entries are placeholders, so they are excluded from personnel counts.", "location": "Meet your team"}
+      ]
+    },
+    {
+      "source_id": "PLAT-SUN-HCG",
+      "title": "Healthcare and Government Workforce Solutions",
+      "url": "https://www.sunburstworkforce.com/healthcare-government-workforce-solutions/",
+      "published_date": null,
+      "retrieved_date": "2026-10-20",
+      "source_type": "official sector service marketing",
+      "evidence": [
+        {"evidence_id": "SUN-HCG-01", "claim": "Describes clinical and healthcare leadership guiding labor-mix planning across health systems, individual facilities and public-sector programs.", "location": "Workforce solutions tailored to you; Why partners choose us"},
+        {"evidence_id": "SUN-HCG-02", "claim": "Says its public-sector services are funded through agency fees and supported by vetted suppliers, credentialing and onboarding.", "location": "Compliance-first mindset; Cost-neutral model; Reduced agency spend"}
+      ]
+    },
+    {
+      "source_id": "PLAT-ATP",
+      "title": "Teletherapy Platform",
+      "url": "https://www.amergiseducation.com/teletherapy-platform/",
+      "published_date": null,
+      "retrieved_date": "2026-10-20",
+      "source_type": "official product marketing and FAQ",
+      "evidence": [
+        {"evidence_id": "ATP-01", "claim": "Describes school speech-language and psychological sessions accessed through permanent secure room links without student accounts or downloads, plus waiting rooms.", "location": "Overview; Security and accessibility; FAQ"},
+        {"evidence_id": "ATP-02", "claim": "Lists collaborative whiteboards, document sharing, Boom Cards and Super Duper resources.", "location": "Tools for engaging virtual therapy"},
+        {"evidence_id": "ATP-03", "claim": "Lists in-platform Pearson assessments for SLP and psychology, in-call instructions and printable protocols.", "location": "Clinically valid evaluations"},
+        {"evidence_id": "ATP-04", "claim": "Describes therapy-minute/session-completion tracking and activity reporting for documentation and billing, with technical support.", "location": "Clinically valid evaluations; FAQ"},
+        {"evidence_id": "ATP-05", "claim": "Claims HIPAA/FERPA compliance and no storage of student session data. Public copy does not reconcile reporting with its storage claim or disclose retention, data-flow architecture or assessment licensing.", "location": "Security and accessibility; FAQ"}
+      ]
+    }
+  ],
+  "platform_relationships": [
+    {"from": "Sunburst MSP", "to": "VMS partners", "relationship": "Recommends according to client fit", "source_ids": ["PLAT-SUN-VMS"], "certainty": "explicit public claim"},
+    {"from": "Sunburst education service", "to": "MatterWorx", "relationship": "Named VMS offering", "source_ids": ["PLAT-SUN-EDU"], "certainty": "explicit public claim; deployment breadth unknown"},
+    {"from": "Amergis Teletherapy Platform", "to": "Pearson", "relationship": "Advertised assessment access", "source_ids": ["PLAT-ATP"], "certainty": "explicit public claim; contract, interface and licensing unknown"},
+    {"from": "Amergis Teletherapy Platform", "to": "Boom Cards / Super Duper", "relationship": "Advertised therapy-resource access", "source_ids": ["PLAT-ATP"], "certainty": "explicit public claim; technical integration depth unknown"}
+  ],
+  "workflow_blueprint": [
+    {
+      "workflow_id": "WF-MSP-01",
+      "name": "Program discovery and workforce design",
+      "evidence_ids": ["SUN-HOME-01", "SUN-HCG-01"],
+      "observed_roles": ["Dedicated program manager", "Clinical and healthcare leaders", "Client workforce leadership"],
+      "proposed_flow": ["Capture demand, facility constraints and service expectations", "Normalize a client program specification", "Model coverage and cost alternatives", "Approve program configuration"],
+      "inferred_data_objects": ["Client", "Worksite", "DemandPlan", "CoverageConstraint", "ProgramConfiguration", "DecisionRecord"],
+      "ai_candidate_actions": ["Structure intake notes", "Forecast uncovered demand", "Compare scenarios", "Draft review materials"],
+      "human_authority": ["Client agreement to service scope", "Clinical staffing adequacy and labor mix", "Unusual customer commitments"],
+      "automation_class": "AI-assisted planning with approved configuration",
+      "uncertainties": ["No published operating procedure, service-level targets or forecast method"]
+    },
+    {
+      "workflow_id": "WF-MSP-02",
+      "name": "Supplier qualification and routing",
+      "evidence_ids": ["SUN-SUP-01", "SUN-SUP-02", "SUN-SUP-03"],
+      "observed_roles": ["Staffing supplier", "Program manager"],
+      "proposed_flow": ["Collect supplier capabilities and documents", "Check completeness and expiration", "Approve supplier participation", "Route requisitions by approved coverage rules", "Measure response and delivery"],
+      "inferred_data_objects": ["Supplier", "SupplierCapability", "SupplierAgreement", "SupplierDocument", "DistributionRule", "SupplierScorecard"],
+      "ai_candidate_actions": ["Parse applications and certificates", "Flag missing evidence", "Route opportunities within approved rules", "Produce scorecards"],
+      "human_authority": ["Supplier admission or termination", "Contract signatures", "Material noncompliance findings"],
+      "automation_class": "AI-operated administration; human supplier authority",
+      "uncertainties": ["Actual supplier list, score weights, insurance thresholds and agreements are unpublished"]
+    },
+    {
+      "workflow_id": "WF-MSP-03",
+      "name": "VMS selection and implementation",
+      "evidence_ids": ["SUN-VMS-01", "SUN-EDU-02"],
+      "observed_roles": ["Program manager", "VMS partner", "Client stakeholders"],
+      "proposed_flow": ["Collect workflow requirements", "Compare partner capabilities", "Approve vendor and data-processing terms", "Map requisition, candidate, credential and billing fields", "Test customer-specific flows"],
+      "inferred_data_objects": ["VMSProvider", "IntegrationMapping", "CustomerWorkflow", "DataProcessingAgreement", "AcceptanceTest"],
+      "ai_candidate_actions": ["Draft requirements", "Generate field mappings", "Prepare test cases", "Monitor integration failures"],
+      "human_authority": ["Vendor selection", "Security and contractual acceptance", "Production access authorization"],
+      "automation_class": "AI-assisted integration delivery",
+      "uncertainties": ["No public API specifications, event schemas, tenant architecture or evidence of universal MatterWorx use"]
+    },
+    {
+      "workflow_id": "WF-MSP-04",
+      "name": "Credential and onboarding coordination",
+      "evidence_ids": ["SUN-VMS-02", "SUN-EDU-01", "SUN-HCG-02"],
+      "observed_roles": ["Supplier", "Program manager", "Client approver"],
+      "proposed_flow": ["Instantiate approved requirements by role and site", "Collect credential evidence", "Check authorized verification sources", "Chase missing items", "Route exceptions", "Release eligible worker to assignment"],
+      "inferred_data_objects": ["RequirementSet", "CredentialEvidence", "VerificationResult", "OnboardingTask", "EligibilityDecision", "Exception"],
+      "ai_candidate_actions": ["Extract document fields", "Check expiry and completeness", "Send approved reminders", "Maintain audit trace"],
+      "human_authority": ["Ambiguous credentials", "Waivers or contested verification", "Clinical suitability and exceptional eligibility"],
+      "automation_class": "AI-operated routine checks under policy; exception review",
+      "uncertainties": ["Exact verification vendors, permitted waivers and sign-off ownership are not stated"]
+    },
+    {
+      "workflow_id": "WF-MSP-05",
+      "name": "Consolidated billing and program analytics",
+      "evidence_ids": ["SUN-VMS-02", "SUN-EDU-01", "SUN-EDU-02", "SUN-HCG-02"],
+      "observed_roles": ["Supplier", "Client billing approver", "Program manager"],
+      "proposed_flow": ["Ingest approved time and supplier charges", "Apply contracted rates and MSP fees", "Reconcile exceptions", "Generate consolidated invoice", "Publish spend, fill and supplier metrics"],
+      "inferred_data_objects": ["ApprovedTime", "RateCard", "SupplierInvoice", "MSPFeeRule", "ConsolidatedInvoice", "ReconciliationException", "MetricDefinition"],
+      "ai_candidate_actions": ["Classify charges", "Reconcile to approved records", "Identify duplicates and anomalies", "Draft invoices and explain variance"],
+      "human_authority": ["Rate changes", "Disputed charges", "Credits outside policy", "Payment and financial release approvals"],
+      "automation_class": "AI-operated reconciliation and drafting; controlled release",
+      "uncertainties": ["Public marketing supplies no transaction-level fee formula, tax treatment, payment terms or realized cost data"]
+    },
+    {
+      "workflow_id": "WF-ATP-01",
+      "name": "Teletherapy access and service coordination",
+      "evidence_ids": ["ATP-01", "ATP-04"],
+      "observed_roles": ["Student", "School staff", "Clinician", "Technical support"],
+      "proposed_flow": ["Set school-authorized schedule", "Provide access instructions", "Manage attendance and waiting-room exceptions", "Record activity metadata", "Resolve support issues"],
+      "inferred_data_objects": ["School", "Clinician", "Schedule", "RoomAccessReference", "AttendanceEvent", "SupportTicket"],
+      "ai_candidate_actions": ["Coordinate schedules and reminders", "Provide basic access support", "Flag missed sessions", "Prepare activity summaries"],
+      "human_authority": ["Identity and access policy", "Student-specific clinical needs", "Safeguarding or urgent concerns", "Session admission under school policy"],
+      "automation_class": "AI-operated coordination with human clinical delivery",
+      "uncertainties": ["Room lifecycle, authorization controls, identifiers and metadata retention are not public"]
+    },
+    {
+      "workflow_id": "WF-ATP-02",
+      "name": "Therapy, assessment and documentation",
+      "evidence_ids": ["ATP-02", "ATP-03", "ATP-04", "ATP-05"],
+      "observed_roles": ["Speech-language clinician", "Psychology clinician", "School staff"],
+      "proposed_flow": ["Clinician selects authorized resources", "Clinician delivers therapy or evaluation", "Capture permitted activity metadata", "Prepare documentation support", "Clinician validates record", "Generate approved billing support"],
+      "inferred_data_objects": ["AssessmentEntitlement", "SessionActivity", "TherapyMinutes", "DocumentationDraft", "ClinicianAttestation", "BillingSupportRecord"],
+      "ai_candidate_actions": ["Resource logistics", "Activity reconciliation", "Documentation templates", "Missing-data checks", "Billing-support preparation"],
+      "human_authority": ["Assessment administration and interpretation", "Diagnosis and treatment planning", "Clinical judgments", "Clinical record sign-off"],
+      "automation_class": "AI assists administration; qualified professionals deliver and validate clinical service",
+      "uncertainties": ["No evidence authorizes AI to replace licensed providers or use proprietary test content", "Do not assume session recording, transcript capture or student-data retention is permitted"]
+    }
+  ],
+  "workforce_role_map": [
+    {"role": "Dedicated MSP program manager", "evidence_ids": ["SUN-HOME-01"], "ai_operable_functions": ["Routine vendor coordination", "Demand and spend summaries", "Exception queue triage"], "retained_authority": ["Client commitments", "Complex disputes", "Program changes"]},
+    {"role": "Business development leadership", "evidence_ids": ["SUN-EDU-04"], "ai_operable_functions": ["Public-account research", "Opportunity qualification support", "Proposal drafting"], "retained_authority": ["Negotiation mandates", "Commercial commitments"], "note": "Only title presence is evidenced; duties here are proposed."},
+    {"role": "Clinical and healthcare leadership", "evidence_ids": ["SUN-HCG-01"], "ai_operable_functions": ["Coverage scenarios", "Evidence preparation", "Policy checks"], "retained_authority": ["Clinical adequacy", "Service design", "Exceptions requiring professional judgment"]},
+    {"role": "Supplier account/recruiting operations", "evidence_ids": ["SUN-SUP-01", "SUN-SUP-02"], "ai_operable_functions": ["Opportunity routing", "Document follow-up", "Status reporting"], "retained_authority": ["Employment and supplier commitments"], "note": "Supplier organization is explicit; internal job titles are inferred."},
+    {"role": "Therapy and psychology clinicians", "evidence_ids": ["ATP-01", "ATP-03"], "ai_operable_functions": ["Scheduling", "Activity reconciliation", "Documentation support"], "retained_authority": ["Direct professional service", "Assessment interpretation", "Treatment decisions", "Record approval"]},
+    {"role": "Technical support", "evidence_ids": ["ATP-04"], "ai_operable_functions": ["Standard troubleshooting", "Issue classification", "Status updates"], "retained_authority": ["Privileged access", "Security incidents", "Unresolved school access problems"]}
+  ],
+  "material_unknowns": [
+    "None of these pages discloses production tables, credentials, private client/candidate records or transaction-level data.",
+    "MatterWorx is explicitly named on one education page; generic VMS language supports partner variation rather than one backend.",
+    "Sunburst's AI language does not establish which workflows it already automates.",
+    "Agency-funded fees do not establish that every client contract is economically cost-neutral.",
+    "Marketing compliance claims have not been audited.",
+    "Teletherapy's no-session-data-storage claim needs a vendor data-flow and retention explanation before designing reporting or AI documentation.",
+    "Human-authority recommendations are product design controls, not a completed legal analysis for every jurisdiction.",
+    "The public pages have no visible publication dates; footer years and crawler dates are not treated as document dates."
+  ]
+}

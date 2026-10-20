@@ -1,0 +1,216 @@
+{
+  "title": "AI autonomy boundaries for a proposed US healthcare and education staffing operator",
+  "checked_date": "2026-10-20",
+  "status": "Proposed engineering design, informed by selected current official sources; not an Amergis policy reconstruction or a fifty-state legal review.",
+  "scope": "US staffing operations. Public research does not establish the actual employer of record, client approval rights, credential requirements or agency licenses for a future business.",
+  "interpretation": [
+    "A task marked for human review is a proposed operating control unless the legal_requirement field identifies a required attestation, professional authorization or other specific legal condition.",
+    "The cited sources do not establish a universal US rule requiring a human to approve every hiring decision.",
+    "Autonomy applies to tasks within a role, not to eliminating every responsibility of a role.",
+    "A jurisdiction ruleset must be selected using worksite, employer, agency and applicant location as applicable. The NYC and New York nursing examples are not nationwide rules.",
+    "No blanket HIPAA applicability is assumed. Applicability depends on the entity, relationship and data flow; the medical-data constraint here is based on employment rules."
+  ],
+  "constraints": [
+    {
+      "id": "C01",
+      "name": "Accessible, job-related screening and accommodation",
+      "jurisdiction": "US federal employment law where applicable; ADA Title I generally covers private employers with at least 15 employees. State laws may reach smaller employers.",
+      "legal_requirement": "Covered employers must provide reasonable accommodation absent undue hardship, including where AI assessment impedes an otherwise qualified applicant with a disability. Using software does not remove the employer's obligation.",
+      "ai_can_execute": "Extract stated qualifications, apply approved eligibility criteria, schedule interviews and supply accessible application formats.",
+      "proposed_control": "Use evidence-linked criteria; test selection outcomes; provide an accommodation channel; route disputed or ambiguous exclusions to a reviewer. Keep protected-attribute audit data separate from matching inputs.",
+      "human_authority": "A trained employment reviewer handles individualized accommodation and disputed exclusion decisions under the proposed design.",
+      "source_ids": ["SRC01"],
+      "limit": "Review of all negative decisions is a proposed launch control, not a claimed blanket legal mandate."
+    },
+    {
+      "id": "C02",
+      "name": "Separate hiring-stage questions from medical clearance",
+      "jurisdiction": "US ADA-covered employment; additional state and client requirements need their own rules.",
+      "legal_requirement": "Disability-related inquiries and medical exams are restricted before a conditional offer. Different rules apply after an offer and during employment. Applicant and employee medical information generally must remain confidential, subject to specified exceptions.",
+      "ai_can_execute": "Collect approved job-function and availability answers; after the proper trigger, collect required documents through a restricted clearance workflow and track completion.",
+      "proposed_control": "Enforce hiring-stage field permissions. The recruiter agent sees clearance status and necessary work restrictions rather than unrestricted medical files. Route medical interpretation and individualized fitness concerns to the appropriate professional.",
+      "human_authority": "Clinical or occupational-health judgment and employment accommodation judgment remain assigned to qualified people in this design.",
+      "source_ids": ["SRC01"],
+      "limit": "A missing document is not evidence of a medical condition or inability to do a job."
+    },
+    {
+      "id": "C03",
+      "name": "Background-report authorization and adverse-action sequence",
+      "jurisdiction": "US FCRA when employment decisions use a covered consumer report; state/local background-check restrictions may add conditions.",
+      "legal_requirement": "Before obtaining an employment consumer report, provide the required standalone disclosure and obtain written permission. Before adverse action based on the report, provide the report and rights summary; after action, provide the required adverse-action notice.",
+      "ai_can_execute": "Track signed authorization, order an authorized report, reconcile returned identifiers, assemble notices and track delivery and response.",
+      "proposed_control": "Use a state machine that prevents report ordering without permission and prevents immediate rejection on a returned flag. Preserve a dispute/review path; have a reviewer resolve disputed matches and proposed adverse decisions.",
+      "human_authority": "Employment reviewer for the final adverse decision under this proposed launch design.",
+      "source_ids": ["SRC02"],
+      "limit": "No universal five-day federal waiting period is asserted here; configure timing from the applicable policy and law. The review gate is proposed, while disclosure, consent and notice requirements are legal."
+    },
+    {
+      "id": "C04",
+      "name": "I-9 examination and attestation are distinct from document extraction",
+      "jurisdiction": "US employer obligations for covered hires; distinguish employer-of-record staffing from referral-only activity.",
+      "legal_requirement": "Form I-9 requires employee and employer attestations and document examination. Section 2 is generally completed within three business days of hire, with a shorter rule for employment lasting less than three business days. Examination may use a DHS-authorized alternative procedure when its conditions are met.",
+      "ai_can_execute": "Explain the workflow, extract proposed field values, check form completeness, schedule examination, send deadline reminders and maintain the audit trail.",
+      "proposed_control": "Reserve examination and employer attestation to a designated authorized representative; obtain the employee's own attestation. Do not treat OCR, an uploaded image or E-Verify alone as completing Form I-9.",
+      "human_authority": "Employee and designated employer representative perform their respective verification/attestation steps.",
+      "source_ids": ["SRC03", "SRC04"],
+      "limit": "The remote alternative includes document-copy review and live video interaction; it is not unrestricted remote upload verification. The eCFR page retrieved was current through 2026-10-16."
+    },
+    {
+      "id": "C05",
+      "name": "Pay for compensable work, independently of invoice approval",
+      "jurisdiction": "US FLSA-covered employment, with exemption-specific rules and state/local wage requirements.",
+      "legal_requirement": "Covered employers must keep accurate hours and wage records. Work the employer suffers or permits must be treated as work time even if not requested. Applicable minimum wage and overtime requirements must be met.",
+      "ai_can_execute": "Ingest timecards, detect overlap and omissions, calculate pay under approved rules, reconcile payroll, produce invoices and follow up on client approvals.",
+      "proposed_control": "Separate payroll readiness from customer invoice approval. Never discard worked time merely because a client has not approved it; escalate disputed time before payroll deadlines. Keep correction history and a worker challenge path.",
+      "human_authority": "Payroll reviewer resolves disputed work and classification exceptions. Routine payroll can execute under an approved financial authorization policy.",
+      "source_ids": ["SRC05", "SRC06"],
+      "limit": "The payroll-versus-billing separation is an engineering implication, not a quotation of a special staffing-agency rule."
+    },
+    {
+      "id": "C06",
+      "name": "Location-specific AI hiring deployment gate",
+      "jurisdiction": "NYC Local Law 144 for qualifying AEDT use in the city; this is one local example, not a national checklist.",
+      "legal_requirement": "Qualifying tools require an independent bias audit within the prior year, publication of specified audit information and required notices. DCWP guidance specifies 10 business days' notice to covered NYC-resident applicants/employees and includes qualifying screening, not only final hiring.",
+      "ai_can_execute": "Determine candidate/job/agency location facts, track notice dates, compile audit datasets and suppress a model deployment whose approval conditions are incomplete.",
+      "proposed_control": "Store a versioned deployment record linking model, use case, jurisdiction, audit, notice and effective dates. A compliance owner determines whether the tool and use case fall within scope before release.",
+      "human_authority": "Compliance owner and an appropriately independent auditor for the applicable NYC audit.",
+      "source_ids": ["SRC07", "SRC08"],
+      "limit": "DCWP distinguishes applicant screening from scanning a resume bank or inviting applications. A human reviewer does not automatically remove a tool from the law's scope. Other jurisdictions require separate review."
+    },
+    {
+      "id": "C07",
+      "name": "Credential evidence supports placement; it does not create practice authority",
+      "jurisdiction": "Role and worksite specific. New York nursing is the checked example.",
+      "legal_requirement": "NYSED distinguishes a nursing license from registration authorizing current practice; its guidance states that an expired registration does not authorize practice. Limited permits and other exceptions have separate conditions.",
+      "ai_can_execute": "Match identity to authoritative credential records, track registration and expiration, request missing evidence and check a proposed assignment against an approved requirement matrix.",
+      "proposed_control": "Require source, timestamp, scope and expiry for each credential. Hold placements with ambiguous identity, restrictions, missing authority or exception claims for review. Route competency, clinical incidents and scope-of-practice judgment to qualified professionals.",
+      "human_authority": "Appropriately licensed professionals deliver regulated clinical services; credential/compliance specialists resolve ambiguous authority and exceptions.",
+      "source_ids": ["SRC09"],
+      "limit": "No single nationwide credential matrix is inferred. Education credentials, therapy licenses, compact privileges, client requirements and agency licensing need separate role/jurisdiction rules."
+    }
+  ],
+  "autonomy_rubric": [
+    {
+      "code": "A",
+      "label": "Agent operates",
+      "definition": "Agent executes a bounded, authorized workflow with verified inputs, a deterministic success check, a reversible or correctable result and exception routing.",
+      "examples": ["Normalize job intake", "Send approved reminders", "Reconcile records", "Update credential-expiry dashboard", "Prepare recurring operational reports"]
+    },
+    {
+      "code": "B",
+      "label": "Agent operates after gates pass",
+      "definition": "Agent executes when recorded consent, current eligibility evidence, spending limits, policy version and customer permissions satisfy explicit conditions.",
+      "examples": ["Order an authorized background report", "Schedule an already-cleared worker into an approved shift", "Issue a standard offer within delegated terms", "Run approved payroll and invoice calculations"],
+      "note": "A human need not click every transaction; the business must establish the authority and validation conditions first."
+    },
+    {
+      "code": "C",
+      "label": "Agent prepares; accountable reviewer decides",
+      "definition": "Agent compiles evidence and options. The proposed operating model reserves ambiguous, contested, materially consequential or policy-exception decisions for a named reviewer.",
+      "examples": ["Disputed background match", "Accommodation assessment", "Nonstandard contract or rate exception", "Disputed hours", "Incident disciplinary conclusion"],
+      "note": "This category is an engineering control unless a specific legal or contractual requirement is separately cited."
+    },
+    {
+      "code": "D",
+      "label": "Authorized person performs or attests",
+      "definition": "Agent assists with logistics and documentation; an authorized signatory or appropriately qualified professional performs the required act.",
+      "examples": ["I-9 employee/employer attestation and examination", "Licensed clinical practice", "Required professional evaluation or client clinical supervision"],
+      "note": "Identify the actual requirement, profession and jurisdiction. Do not generalize this label to every staffing decision."
+    }
+  ],
+  "shared_engineering_controls": [
+    "For each consequential action, record input evidence, source timestamp, policy/model version, rule result, actor, authorization and outcome.",
+    "Use idempotent actions and financial limits so retries cannot create duplicate offers, bookings or payments.",
+    "Separate worker consent, client approval, employment eligibility, credential validity and clinical clearance into distinct records.",
+    "Keep a staffed exception queue with ownership and deadlines; unresolved does not silently mean rejected or unpaid.",
+    "Evaluate task accuracy, overturn rate, time to exception resolution and subgroup outcomes before widening autonomy.",
+    "An AI-operated staffing back office is distinct from AI delivering regulated care or education services."
+  ],
+  "sources": [
+    {
+      "id": "SRC01",
+      "publisher": "US Equal Employment Opportunity Commission",
+      "title": "Visual Disabilities in the Workplace and the Americans with Disabilities Act",
+      "url": "https://www.eeoc.gov/laws/guidance/visual-disabilities-workplace-and-americans-disabilities-act",
+      "checked_date": "2026-10-20",
+      "source_date": "2023-07-26",
+      "sections": ["Introduction coverage", "Obtaining, Using, and Disclosing Medical Information", "Keeping Medical Information Confidential", "Questions 16 and 17"],
+      "type": "Official agency technical assistance explaining existing law; guidance is not itself binding law."
+    },
+    {
+      "id": "SRC02",
+      "publisher": "Federal Trade Commission",
+      "title": "Using Consumer Reports: What Employers Need to Know",
+      "url": "https://www.ftc.gov/business-guidance/resources/using-consumer-reports-what-employers-need-know",
+      "checked_date": "2026-10-20",
+      "source_date": "2016-10",
+      "type": "Official agency guidance on FCRA obligations."
+    },
+    {
+      "id": "SRC03",
+      "publisher": "Electronic Code of Federal Regulations",
+      "title": "8 CFR 274a.2 — Verification of identity and employment authorization",
+      "url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-274a/subpart-A/section-274a.2",
+      "checked_date": "2026-10-20",
+      "source_current_through": "2026-10-16",
+      "sections": ["(a)(3)", "(b)(1)(ii)-(iii)", "(g)-(i)"],
+      "type": "Regulatory text on official government eCFR service."
+    },
+    {
+      "id": "SRC04",
+      "publisher": "USCIS E-Verify",
+      "title": "Remote Examination of Documents Procedures",
+      "url": "https://everify.uscis.gov/ica-docs/cases/appendix/field-definitions/remote-examination-of-documents-procedures",
+      "checked_date": "2026-10-20",
+      "type": "Official E-Verify integration documentation; indexed text retrieved, direct page is JavaScript-rendered."
+    },
+    {
+      "id": "SRC05",
+      "publisher": "US Department of Labor",
+      "title": "Fact Sheet #21: Recordkeeping Requirements under the FLSA",
+      "url": "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping",
+      "checked_date": "2026-10-20",
+      "source_date": "2008-07",
+      "type": "Official agency fact sheet; full indexed text retrieved, direct open returned 403."
+    },
+    {
+      "id": "SRC06",
+      "publisher": "US Department of Labor",
+      "title": "Fact Sheet #22: Hours Worked Under the FLSA",
+      "url": "https://www.dol.gov/agencies/whd/fact-sheets/22-flsa-hours-worked",
+      "checked_date": "2026-10-20",
+      "type": "Official agency fact sheet; indexed text retrieved, direct open returned 403."
+    },
+    {
+      "id": "SRC07",
+      "publisher": "New York City Department of Consumer and Worker Protection",
+      "title": "Automated Employment Decision Tools",
+      "url": "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page",
+      "checked_date": "2026-10-20",
+      "type": "Official agency summary of Local Law 144."
+    },
+    {
+      "id": "SRC08",
+      "publisher": "New York City Department of Consumer and Worker Protection",
+      "title": "Automated Employment Decision Tools: Frequently Asked Questions",
+      "url": "https://www.nyc.gov/assets/dca/downloads/pdf/about/DCWP-AEDT-FAQ.pdf",
+      "checked_date": "2026-10-20",
+      "source_date": "2023-06-29",
+      "sections": ["I.4-I.6", "II.1-II.4", "IV", "VI"],
+      "type": "Official agency FAQ interpreting local applicability, audits and notice."
+    },
+    {
+      "id": "SRC09",
+      "publisher": "New York State Education Department, Office of the Professions",
+      "title": "Nursing: Frequently Asked License Questions",
+      "url": "https://www.op.nysed.gov/professions/registered-professional-nursing/frequently-asked-questions",
+      "checked_date": "2026-10-20",
+      "sections": ["Questions 13-14", "Limited permit questions"],
+      "type": "Official licensing authority guidance; New York example only."
+    }
+  ],
+  "research_notes": [
+    "The EEOC AI/ADA resource hub remained available, but its linked 2022 standalone AI guidance did not load. The accessible 2023 visual-disabilities guidance explicitly addresses AI in questions 16-17 and was used instead.",
+    "No claim is made that these seven constraints exhaust legal, contractual, privacy, school safeguarding or agency registration obligations."
+  ]
+}

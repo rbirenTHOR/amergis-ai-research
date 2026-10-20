@@ -1,0 +1,116 @@
+{
+  "retrieved_date": "2026-10-20",
+  "counts": {
+    "records": 61,
+    "unique_wp_ids": 61,
+    "unique_page_urls": 61,
+    "with_address": 61,
+    "with_parsed_address_components": 61,
+    "with_phone": 61,
+    "with_e164_phone": 61,
+    "with_public_branch_email": 59,
+    "with_services_taxonomy": 60,
+    "with_map_url": 61,
+    "with_map_destination_text": 60,
+    "states": 32,
+    "services_used": 4,
+    "services_dictionary_entries": 5,
+    "phase2_urls_matched": 61,
+    "address_map_street_number_conflicts": 2,
+    "phase2_phone_disagreements": 3,
+    "phase2_postal_disagreements": 1
+  },
+  "source_file_sha256": "9d965cd926fb301f508781356de5f994a10f101709d59d6d96e0a2e698c0fd91",
+  "phase2_urls_only": [],
+  "api_urls_only": [],
+  "unresolved_service_ids": [],
+  "issues": [
+    {
+      "wp_id": 6682,
+      "slug": "tampa-travel-hub",
+      "code": "phase2_directory_phone_differs_from_detail",
+      "severity": "needs_source_verification",
+      "phase2_directory_phone": "(813) 877-8711",
+      "detail_phone": "(813) 673-8275"
+    },
+    {
+      "wp_id": 6682,
+      "slug": "tampa-travel-hub",
+      "code": "no_public_branch_email_in_content",
+      "severity": "field_missing",
+      "note": "No mailto branch contact was found in the published location content."
+    },
+    {
+      "wp_id": 6682,
+      "slug": "tampa-travel-hub",
+      "code": "no_services_taxonomy_assignments",
+      "severity": "field_missing",
+      "note": "Empty taxonomy array is not evidence that no services are offered."
+    },
+    {
+      "wp_id": 6555,
+      "slug": "columbia-gov-hub",
+      "code": "address_map_street_number_conflict",
+      "severity": "needs_source_verification",
+      "published_address": "7065 Samuel Morse Drive, Suite 100, Columbia, MD 21046",
+      "published_map_destination": "7075 Samuel Morse Dr #100, Columbia, MD 21046",
+      "note": "Both values retained; no external geocoding or address correction performed."
+    },
+    {
+      "wp_id": 464,
+      "slug": "los-angeles",
+      "code": "phase2_directory_phone_differs_from_detail",
+      "severity": "needs_source_verification",
+      "phase2_directory_phone": "(213) 296-3783",
+      "detail_phone": "(866) 316-8773"
+    },
+    {
+      "wp_id": 444,
+      "slug": "philadelphia",
+      "code": "address_map_street_number_conflict",
+      "severity": "needs_source_verification",
+      "published_address": "1 Fayette Street, Suite 300, Conshohocken, PA 19428",
+      "published_map_destination": "100 Fayette St, Conshohocken, PA 19428",
+      "note": "Both values retained; no external geocoding or address correction performed."
+    },
+    {
+      "wp_id": 437,
+      "slug": "buffalo",
+      "code": "phase2_directory_phone_differs_from_detail",
+      "severity": "needs_source_verification",
+      "phase2_directory_phone": "(716) 446-4116",
+      "detail_phone": "(877) 469-5066"
+    },
+    {
+      "wp_id": 423,
+      "slug": "hq",
+      "code": "no_public_branch_email_in_content",
+      "severity": "field_missing",
+      "note": "No mailto branch contact was found in the published location content."
+    },
+    {
+      "wp_id": 416,
+      "slug": "tampa",
+      "code": "phase2_directory_postal_differs_from_detail",
+      "severity": "needs_source_verification",
+      "phase2_directory_postal_code": "33607",
+      "detail_postal_code": "33614"
+    },
+    {
+      "wp_id": 409,
+      "slug": "san-jose",
+      "code": "mailto_display_name_normalized",
+      "severity": "normalization_note",
+      "note": "Extracted mailbox address from mailto link containing display-name syntax."
+    }
+  ],
+  "method": "Parsed first Address and Phone Number paragraphs, branch mailto links and published directions URLs from saved public WordPress content. Resolved service IDs from saved taxonomy response. Matched prior records by canonical URL path, ignoring www host variation. No network calls.",
+  "limitations": [
+    "Location count is published content inventory, not a verified count of currently operating offices.",
+    "Address, phone and map conflicts are preserved; no candidate or personal records collected.",
+    "Map comparison checks explicit street-number differences only; most map links contain opaque IDs and are not geocoded.",
+    "Map viewport coordinates are not treated as office coordinates.",
+    "All narrative marketing paragraphs, job snippets and client-side count placeholders were excluded.",
+    "Taxonomy assignments describe published categorization and do not prove actual service availability."
+  ]
+}

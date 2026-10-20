@@ -1,0 +1,37 @@
+{
+  "method": "Local in-memory DOM source test; no browser or live application interaction.",
+  "checks": [
+    {
+      "name": "Initial data and task rendering",
+      "status": "pass"
+    },
+    {
+      "name": "Tab selection",
+      "status": "pass"
+    },
+    {
+      "name": "Authority filter",
+      "status": "pass"
+    },
+    {
+      "name": "Payroll task detail preserves worked-time distinction",
+      "status": "pass"
+    },
+    {
+      "name": "Workflow readiness gate",
+      "status": "pass"
+    },
+    {
+      "name": "Contract filter and corrected billing rules",
+      "status": "pass"
+    },
+    {
+      "name": "Text search",
+      "status": "pass"
+    },
+    {
+      "name": "Download links exist",
+      "status": "pass"
+    }
+  ]
+}

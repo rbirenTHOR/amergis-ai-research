@@ -1,0 +1,647 @@
+{
+  "as_of": "2026-10-20",
+  "scope": "Read-only public vendor documentation discovery for ADP, The Work Number/Equifax, Certiphi and Nursys e-Notify.",
+  "method": "Official websites, developer documentation, linked PDFs and previously verified public Amergis relationship evidence. No login, account creation, credential request, form submission, personal record query or operational API request.",
+  "critical_boundary": "A vendor API product does not show that Amergis enables or uses it, and does not grant access to any Amergis tenant or records. This is an independent functional-reconstruction integration map.",
+  "platforms": [
+    {
+      "platform_id": "ADP",
+      "platform": "ADP payroll / HR integration",
+      "amergis_relationship": {
+        "status": "current_public_service_routing",
+        "evidence": "Help Center routes paystubs, W-2s and address changes to ADP. ADP payroll edition, tenant configuration and API subscriptions are not disclosed.",
+        "source_ids": [
+          "PART01"
+        ]
+      },
+      "documentation_class": "verified_public_api_documentation_product_specific",
+      "verified_documentation": [
+        {
+          "claim": "ADP offers HR, time/labor, payroll and other APIs. Client access requires API Central; marketplace partners require program acceptance. Available APIs vary by ADP product.",
+          "source_ids": [
+            "PART03"
+          ]
+        },
+        {
+          "claim": "Public Workforce Now examples expose worker retrieval and worker-change interfaces. Workforce Now is an example integration target, not a verified Amergis product edition.",
+          "source_ids": [
+            "PART06",
+            "PART21"
+          ]
+        },
+        {
+          "claim": "Subscribed change notifications can use a queue or webhooks. Changes should trigger retrieval of current record data; delivery may lag. Event support varies by API and product.",
+          "source_ids": [
+            "PART08"
+          ]
+        },
+        {
+          "claim": "Payroll Data Input can transmit approved earnings, deductions, reimbursements and allocations into a pay-data batch; older published guide notes missing event notifications for added pay batches. Current entitlement and behavior need confirmation.",
+          "source_ids": [
+            "PART07"
+          ]
+        }
+      ],
+      "published_interface_examples": [
+        {
+          "method": "GET",
+          "url": "https://api.adp.com/hr/v2/workers",
+          "purpose": "Worker collection",
+          "source_ids": [
+            "PART06"
+          ],
+          "tested": false
+        },
+        {
+          "method": "GET",
+          "path": "/hr/v2/workers/{aoid}",
+          "purpose": "Retrieve current worker after notification",
+          "source_ids": [
+            "PART08"
+          ],
+          "tested": false
+        },
+        {
+          "method": "POST",
+          "path": "/events/hr/v1/worker.legal-name.change",
+          "purpose": "Worker legal-name change",
+          "source_ids": [
+            "PART21"
+          ],
+          "tested": false
+        },
+        {
+          "method": "POST",
+          "path": "/events/payroll/v1/pay-data-input.modify",
+          "purpose": "Product-specific payroll batch input; older documentation",
+          "source_ids": [
+            "PART07"
+          ],
+          "tested": false
+        },
+        {
+          "method": "GET",
+          "path": "/core/v1/event-notification-messages",
+          "purpose": "Consume subscribed change notification",
+          "source_ids": [
+            "PART08"
+          ],
+          "tested": false
+        },
+        {
+          "method": "DELETE",
+          "path": "/core/v1/event-notification-messages/{adp-msg-msgid}",
+          "purpose": "Acknowledge processed queue notification; listed only, not executed",
+          "source_ids": [
+            "PART08"
+          ],
+          "tested": false
+        }
+      ],
+      "published_schema_examples": [
+        {
+          "path": "/meta/totalNumber",
+          "meaning": "Total worker count in documented response",
+          "source_ids": [
+            "PART06"
+          ]
+        },
+        {
+          "path": "/events/eventNameCode/codeValue",
+          "meaning": "Change-event type",
+          "source_ids": [
+            "PART08"
+          ]
+        },
+        {
+          "path": "/events/data/eventContext/worker/associateOID",
+          "meaning": "Worker record identifier in event",
+          "source_ids": [
+            "PART08"
+          ]
+        },
+        {
+          "header": "adp-msg-msgid",
+          "meaning": "Queue-message identifier",
+          "source_ids": [
+            "PART08"
+          ]
+        }
+      ],
+      "authentication_and_enrollment": {
+        "summary": "API Central purchase for own client data, or accepted Marketplace partnership with required agreements. Provision project credentials and mutual SSL certificate; OAuth 2.0. Product scopes and client consent/permissions are required.",
+        "source_ids": [
+          "PART03",
+          "PART04",
+          "PART05",
+          "PART23"
+        ]
+      },
+      "sandbox_or_demo": {
+        "status": "documented_partner_test_client_sandbox_and_marketed_api_central_demo",
+        "detail": "Partner self-service can request a test client instance after enrollment. API Central offers a contact-form-gated walkthrough. Neither was activated. Do not assume a public anonymous sandbox or that client subscriptions include the partner sandbox.",
+        "source_ids": [
+          "PART04",
+          "PART05"
+        ]
+      },
+      "object_categories": [
+        "workers",
+        "work assignments",
+        "employee demographics",
+        "timecards/time entries",
+        "work schedules",
+        "payroll batch inputs",
+        "change-event notifications"
+      ],
+      "source_ids": [
+        "PART04",
+        "PART06",
+        "PART07",
+        "PART08",
+        "PART22"
+      ],
+      "reconstruction_value": "High for designing an independently owned payroll adapter, worker master synchronization and reconciled payroll preparation; no access to Amergis payroll records.",
+      "missing_access": [
+        "Amergis product edition/version",
+        "Authorized tenant and client consent",
+        "API Central entitlement or partner agreement",
+        "Credentials, certificate and scopes",
+        "Current product-specific limits and write approvals"
+      ],
+      "amergis_api_enabled_or_observed": false
+    },
+    {
+      "platform_id": "EQUIFAX",
+      "platform": "The Work Number / Equifax Talent Report",
+      "amergis_relationship": {
+        "status": "current_public_service_routing",
+        "evidence": "Amergis directs employment/income verification to The Work Number. This confirms a verification-service relationship; it does not show that Amergis uses Equifax Talent Report to screen applicants or has developer API access.",
+        "source_ids": [
+          "PART01"
+        ]
+      },
+      "documentation_class": "verified_public_api_product_and_auth_docs_schema_gated",
+      "verified_documentation": [
+        {
+          "claim": "Talent Report Employment Staffing is a staffing-specific API product describing employment verification for the two most recent employers, including employer, title and available start/end dates.",
+          "source_ids": [
+            "PART10"
+          ]
+        },
+        {
+          "claim": "Developer onboarding offers account creation, application/product selection, sandbox credentials, then reviewed promotion to Test and Live. OAuth 2.0 client credentials use client_id, client_secret and scope. Production API access requires approved credentials and IP whitelisting.",
+          "source_ids": [
+            "PART11"
+          ]
+        },
+        {
+          "claim": "Sandbox uses mocked responses; Test uses realistic test data. Production access and prices are product-specific and subject to approval.",
+          "source_ids": [
+            "PART12"
+          ]
+        },
+        {
+          "claim": "The Work Number publishes direct API, partner integration, web and batch access options. Verifiers must be contracted, credentialed and have a permissible purpose. This overview is lending-focused and is not itself a staffing API schema.",
+          "source_ids": [
+            "PART13"
+          ]
+        }
+      ],
+      "published_interface_examples": [
+        {
+          "environment": "Sandbox",
+          "base_url": "https://api.sandbox.equifax.com",
+          "source_ids": [
+            "PART11"
+          ],
+          "tested": false
+        },
+        {
+          "environment": "Test",
+          "base_url": "https://api.uat.equifax.com",
+          "source_ids": [
+            "PART11"
+          ],
+          "tested": false
+        },
+        {
+          "environment": "Live",
+          "base_url": "https://api.equifax.com",
+          "source_ids": [
+            "PART11"
+          ],
+          "tested": false
+        }
+      ],
+      "published_schema_examples": [],
+      "schema_status": "Staffing product page explicitly gates API Reference and Additional API Docs behind sign-in. No staffing endpoint path, payload or field mapping recovered.",
+      "authentication_and_enrollment": {
+        "summary": "Developer account and app are needed for sandbox. Test/live require per-product review; contracting, verifier credentialing and permitted use apply. Amergis employee self-service or an employer verification code is not an API credential.",
+        "source_ids": [
+          "PART10",
+          "PART11",
+          "PART12",
+          "PART13"
+        ]
+      },
+      "sandbox_or_demo": {
+        "status": "documented_registered_developer_sandbox",
+        "detail": "Mock sandbox exists; no account created or calls made. Staffing product eligibility must be confirmed in an authorized developer account.",
+        "source_ids": [
+          "PART11",
+          "PART12"
+        ]
+      },
+      "object_categories": [
+        "employment-verification request",
+        "employment history report",
+        "employer identity",
+        "job title",
+        "employment dates"
+      ],
+      "source_ids": [
+        "PART10"
+      ],
+      "reconstruction_value": "Medium for replacing manual employment-reference checks in a future staffing business after product enrollment. Employer outbound verification and applicant screening are different integrations and must remain separate.",
+      "missing_access": [
+        "Verified product entitlement",
+        "Developer login for schema and mock data",
+        "Product contract and credentialing",
+        "Approved purpose/authorization workflow",
+        "Employer data-contribution specification if outbound payroll reporting is required"
+      ],
+      "amergis_api_enabled_or_observed": false
+    },
+    {
+      "platform_id": "CERTIPHI",
+      "platform": "Certiphi ATS Toolbox / myCertiphi",
+      "amergis_relationship": {
+        "status": "historical_supplier_statement",
+        "evidence": "June 13, 2024 supplier proposal names Certiphi for background, exclusions and occupational health checks; current deployment and exact integration are unverified.",
+        "source_ids": [
+          "PART02"
+        ]
+      },
+      "documentation_class": "marketed_integration_no_public_endpoint_schema_found",
+      "verified_documentation": [],
+      "marketed_integration": [
+        {
+          "claim": "ATS Toolbox documents front-end screening-report ordering from candidate data and back-end report delivery into client systems. It explicitly lists erecruit among supported ATS/HRMS integrations and references HR Open Standards.",
+          "source_ids": [
+            "PART14"
+          ]
+        },
+        {
+          "claim": "The integration page lists FTP/HTTPS, username/password, client certificates, TLS and PGP among supported security mechanisms; it does not identify a particular Amergis transport or authentication configuration.",
+          "source_ids": [
+            "PART14"
+          ]
+        },
+        {
+          "claim": "Public product catalog describes applicant-data capture, screening status/results, notifications, licensing and health-document tracking. These are product capabilities, not proof all are available through an API.",
+          "source_ids": [
+            "PART15"
+          ]
+        }
+      ],
+      "published_interface_examples": [],
+      "published_schema_examples": [],
+      "authentication_and_enrollment": {
+        "summary": "Client/vendor integration arrangement required. Exact protocol, endpoint, credentials, schemas and services need vendor confirmation. Public marketing is insufficient to implement a connector.",
+        "source_ids": [
+          "PART14"
+        ]
+      },
+      "sandbox_or_demo": {
+        "status": "no_public_sandbox_found",
+        "detail": "Bounded official-site search found no self-service developer portal, sandbox or published API specification. Absence of discovery is not proof no private API or test environment exists."
+      },
+      "object_categories": [
+        "screening order",
+        "candidate data for ordering",
+        "screening report delivery"
+      ],
+      "source_ids": [
+        "PART14"
+      ],
+      "reconstruction_value": "Medium: define screening-order and result-ingestion workflow boundaries. Historical Amergis use plus published erecruit compatibility suggests a plausible integration path, not proof of actual Amergis connectivity.",
+      "missing_access": [
+        "Client integration agreement",
+        "Implementation guide/schema",
+        "Provisioned credentials/certificates",
+        "Screening package catalog and status codes",
+        "Test environment",
+        "Documented result delivery, retries and audit requirements"
+      ],
+      "amergis_api_enabled_or_observed": false
+    },
+    {
+      "platform_id": "NURSYS",
+      "platform": "Nursys e-Notify Institution API",
+      "amergis_relationship": {
+        "status": "historical_supplier_statement",
+        "evidence": "June 13, 2024 supplier proposal names Nursys eNotify for licensure expiry alerts. It does not disclose use of the API.",
+        "source_ids": [
+          "PART02"
+        ]
+      },
+      "documentation_class": "verified_public_api_capability_docs_endpoint_and_schema_gated",
+      "verified_documentation": [
+        {
+          "claim": "Current NCSBN documentation identifies a JSON API for institution Nurse List maintenance, enrolled-nurse report retrieval, license-change notifications and API-password changes every 90 days.",
+          "source_ids": [
+            "PART17"
+          ]
+        },
+        {
+          "claim": "The API only covers e-Notify institution functions and enrolled licenses. There is no QuickConfirm API and no SFTP option.",
+          "source_ids": [
+            "PART17",
+            "PART18"
+          ]
+        },
+        {
+          "claim": "A free Institution Account is prerequisite. An account administrator requests credentials; the API URL is supplied with credentials and the detailed PDF is available after login under Quick Links.",
+          "source_ids": [
+            "PART16"
+          ]
+        },
+        {
+          "claim": "Location administration cannot be done through the API; an institution administrator uses account settings.",
+          "source_ids": [
+            "PART20"
+          ]
+        }
+      ],
+      "published_interface_examples": [],
+      "published_schema_examples": [],
+      "schema_status": "Current official public pages publish capabilities, not paths or JSON field names. No current schema obtained. Older third-party mirrors describing SOAP were excluded in favor of current official JSON documentation.",
+      "authentication_and_enrollment": {
+        "summary": "Institution account plus administrator-requested API credentials; API-password rotation every 90 days is documented. Detailed auth syntax and API URL remain gated.",
+        "source_ids": [
+          "PART16",
+          "PART17"
+        ]
+      },
+      "sandbox_or_demo": {
+        "status": "explicitly_no_separate_sandbox",
+        "detail": "NCSBN says there is no testing environment or sample nurses/licenses. It suggests a separately created institution account designated for testing; no such account was created.",
+        "source_ids": [
+          "PART17",
+          "PART19"
+        ]
+      },
+      "object_categories": [
+        "institution Nurse List",
+        "enrolled license",
+        "nurse report",
+        "license-change notification",
+        "API credential password"
+      ],
+      "source_ids": [
+        "PART17"
+      ],
+      "reconstruction_value": "High for an independently enrolled credential-monitoring adapter. Agents can reconcile enrolled licenses and flag changes; license-readiness policy and authorized clearance remain distinct from receiving a vendor response.",
+      "missing_access": [
+        "Eligible institution account",
+        "Administrator credential request",
+        "Current API specification and URL",
+        "Approved enrolled-nurse population",
+        "Operational testing plan with authorized data"
+      ],
+      "amergis_api_enabled_or_observed": false
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "PART01",
+      "title": "Amergis Help Center",
+      "url": "https://www.amergis.com/help-center/",
+      "evidence_note": "Public Amergis service routing; ADP employee self-service and The Work Number verification.",
+      "retrieved_as_of": "2026-10-20",
+      "publisher_type": "official_vendor_or_primary_customer_record"
+    },
+    {
+      "source_id": "PART02",
+      "title": "June 2024 Amergis supplier proposal reproduced in 2026 El Dorado packet",
+      "url": "https://eldorado.legistar.com/View.ashx?M=F&ID=15807895&GUID=3997709B-28F6-4004-B8A8-F3B74414DF4B#page=30",
+      "evidence_note": "Historical vendor-use disclosure, claim date 2024-06-13; inherited from phase2 verified evidence SW21/SW22.",
+      "retrieved_as_of": "2026-10-20",
+      "publisher_type": "official_vendor_or_primary_customer_record"
+    },
+    {
+      "source_id": "PART03",
+      "title": "ADP Developer Resources",
+      "url": "https://developers.adp.com/",
+      "evidence_note": "Client API Central purchase and partner admission; certificates and credentials; availability varies by ADP product.",
+      "retrieved_as_of": "2026-10-20",
+      "publisher_type": "official_vendor_or_primary_customer_record"
+    },
+    {
+      "source_id": "PART04",
+      "title": "ADP API Central",
+      "url": "https://www.adp.com/what-we-offer/integrations/api-central.aspx",
+      "evidence_note": "OAuth/OpenID Connect; templates; public demo is offered behind business-contact form.",
+      "retrieved_as_of": "2026-10-20",
+      "publisher_type": "official_vendor_or_primary_customer_record"
+    },
+    {
+      "source_id": "PART05",
+      "title": "ADP Marketplace Partner Development Learning Guide",
+      "url": "https://marketplace-cdn-iat.adp.com/dev-portal/pdf/ADP_Marketplace_Partner_Development_Learning_Guide",
+      "evidence_note": "Published official partner onboarding, test sandbox, mutual SSL requirements, page 6; updated 2025-04-04.",
+      "retrieved_as_of": "2026-10-20",
+      "publisher_type": "official_vendor_or_primary_customer_record"
+    },
+    {
+      "source_id": "PART06",
+      "title": "ADP Workforce Now Worker Management API guide, chapter 2",
+      "url": "https://developers.adp.com/articles/preview/guide-worker-management-api-guide-for-adp-workforce-now-1?chapter=2",
+      "evidence_note": "Public product-specific worker API examples and metadata fields; not evidence Amergis uses Workforce Now.",
+      "retrieved_as_of": "2026-10-20",
+      "publisher_type": "official_vendor_or_primary_customer_record"
+    },
+    {
+      "source_id": "PART07",
+      "title": "ADP Payroll Data Input API guide",
+      "url": "https://developers.adp.com/articles/preview/guide-payroll-data-input-api--guide-for-adp-workforce-now-0?chapter=1",
+      "evidence_note": "Public Workforce Now payroll import capabilities, older preview with documented revisions through 2022; verify against current licensed product before implementation.",
+      "retrieved_as_of": "2026-10-20",
+      "publisher_type": "official_vendor_or_primary_customer_record"
+    },
+    {
+      "source_id": "PART08",
+      "title": "ADP Event APIs and Event Notification Guide / Webhooks",
+      "url": "https://marketplace-cdn.adp.com/dev-portal/pdf/Webhooks",
+      "evidence_note": "Official guide updated 2025-10-31. Queue polling plus webhook support and subscriptions; schema depends on event and product.",
+      "retrieved_as_of": "2026-10-20",
+      "publisher_type": "official_vendor_or_primary_customer_record"
+    },
+    {
+      "source_id": "PART09",
+      "title": "Equifax Talent Report Suite",
+      "url": "https://developer.equifax.com/products/talent-report-suite",
+      "evidence_note": "Public API product catalog for pre-employment verification.",
+      "retrieved_as_of": "2026-10-20",
+      "publisher_type": "official_vendor_or_primary_customer_record"
+    },
+    {
+      "source_id": "PART10",
+      "title": "Equifax Talent Report Employment Staffing",
+      "url": "https://developer.equifax.com/products/apiproducts/talent-report-employment-staffing",
+      "evidence_note": "Public staffing product overview; API reference and additional documents explicitly require sign-in.",
+      "retrieved_as_of": "2026-10-20",
+      "publisher_type": "official_vendor_or_primary_customer_record"
+    },
+    {
+      "source_id": "PART11",
+      "title": "Equifax developer Documentation",
+      "url": "https://developer.equifax.com/documentation",
+      "evidence_note": "Public OAuth client credentials and environment/onboarding requirements.",
+      "retrieved_as_of": "2026-10-20",
+      "publisher_type": "official_vendor_or_primary_customer_record"
+    },
+    {
+      "source_id": "PART12",
+      "title": "Equifax developer How to Guide",
+      "url": "https://developer.equifax.com/node/124000",
+      "evidence_note": "Public description of mock sandbox, realistic test data, review and production approval.",
+      "retrieved_as_of": "2026-10-20",
+      "publisher_type": "official_vendor_or_primary_customer_record"
+    },
+    {
+      "source_id": "PART13",
+      "title": "Accessing The Work Number, 2024",
+      "url": "https://assets.equifax.com/wfs/theworknumber/assets/Accessing_The_Work_Number_2024-Infographic.pdf",
+      "evidence_note": "Official direct API/technology partner/web/batch options, contract and permissible-purpose requirements; lending-oriented overview.",
+      "retrieved_as_of": "2026-10-20",
+      "publisher_type": "official_vendor_or_primary_customer_record"
+    },
+    {
+      "source_id": "PART14",
+      "title": "Certiphi ATS Toolbox",
+      "url": "https://www.certiphi.com/why/vs-products/ats-toolbox/",
+      "evidence_note": "Official integration description lists erecruit and other ATS/HRMS, report ordering/delivery and security methods.",
+      "retrieved_as_of": "2026-10-20",
+      "publisher_type": "official_vendor_or_primary_customer_record"
+    },
+    {
+      "source_id": "PART15",
+      "title": "Certiphi products",
+      "url": "https://www.certiphi.com/",
+      "evidence_note": "Public product catalog and link to client portal; not endpoint documentation.",
+      "retrieved_as_of": "2026-10-20",
+      "publisher_type": "official_vendor_or_primary_customer_record"
+    },
+    {
+      "source_id": "PART16",
+      "title": "NCSBN: How do I get access to the Nursys API?",
+      "url": "https://ncsbn.zendesk.com/hc/en-us/articles/18773555273367-How-do-I-get-access-to-the-Nursys-API",
+      "evidence_note": "Updated 2026-06-03: institution administrator requests credentials; PDF and URL are account-gated.",
+      "retrieved_as_of": "2026-10-20",
+      "publisher_type": "official_vendor_or_primary_customer_record"
+    },
+    {
+      "source_id": "PART17",
+      "title": "NCSBN: What is available via the Nursys API?",
+      "url": "https://ncsbn.zendesk.com/hc/en-us/articles/18773959621399-What-is-available-via-the-Nursys-API",
+      "evidence_note": "Updated 2025-06-01: JSON e-Notify API, Nurse List and report/notification operations, password rotation, no SFTP.",
+      "retrieved_as_of": "2026-10-20",
+      "publisher_type": "official_vendor_or_primary_customer_record"
+    },
+    {
+      "source_id": "PART18",
+      "title": "NCSBN: Can I use the API to look up any license?",
+      "url": "https://ncsbn.zendesk.com/hc/en-us/articles/29992058514839-Can-I-use-the-API-to-look-up-any-license-on-the-Nursys-com-website",
+      "evidence_note": "Updated 2025-07-15: only licenses enrolled on the institution list; no QuickConfirm API.",
+      "retrieved_as_of": "2026-10-20",
+      "publisher_type": "official_vendor_or_primary_customer_record"
+    },
+    {
+      "source_id": "PART19",
+      "title": "NCSBN: Is there a testing environment for the API?",
+      "url": "https://ncsbn.zendesk.com/hc/en-us/articles/29992835863831-Is-there-a-testing-environment-for-the-API",
+      "evidence_note": "Updated 2025-03-07: no separate testing environment; institution may establish a separate account designated for testing.",
+      "retrieved_as_of": "2026-10-20",
+      "publisher_type": "official_vendor_or_primary_customer_record"
+    },
+    {
+      "source_id": "PART20",
+      "title": "NCSBN: Can locations be managed via API?",
+      "url": "https://ncsbn.zendesk.com/hc/en-us/articles/29049912662039-Can-I-add-edit-or-remove-a-location-associated-with-my-account-via-the-API",
+      "evidence_note": "Updated 2025-03-07: location changes require administrator settings UI.",
+      "retrieved_as_of": "2026-10-20",
+      "publisher_type": "official_vendor_or_primary_customer_record"
+    },
+    {
+      "source_id": "PART21",
+      "title": "ADP Workforce Now Worker Management API guide",
+      "url": "https://developers.adp.com/articles/preview/guide-worker-management-api-guide-for-adp-workforce-now-0",
+      "evidence_note": "Public product-specific worker change event paths; compatibility varies by Workforce Now version.",
+      "retrieved_as_of": "2026-10-20",
+      "publisher_type": "official_vendor_or_primary_customer_record"
+    },
+    {
+      "source_id": "PART22",
+      "title": "ADP API guides catalog, time and labor",
+      "url": "https://developers.adp.com/guides/api-guides?useCaseTags=Time-Labor-Management",
+      "evidence_note": "Current catalog lists guides for timecards, time entries, schedules, leave, worker management and their modification dates.",
+      "retrieved_as_of": "2026-10-20",
+      "publisher_type": "official_vendor_or_primary_customer_record"
+    },
+    {
+      "source_id": "PART23",
+      "title": "ADP API Central Quick Start Guide",
+      "url": "https://marketplace-cdn.adp.com/dev-portal/pdf/API_Central_Quick_Start_Guide",
+      "evidence_note": "Official guide updated 2026-09-28; contents cover members, projects, certificates and Workforce Now permissions.",
+      "retrieved_as_of": "2026-10-20",
+      "publisher_type": "official_vendor_or_primary_customer_record"
+    }
+  ],
+  "proposed_adapter_backlog": [
+    {
+      "priority": 1,
+      "adapter": "ADP worker/payroll synchronization",
+      "basis": "Real documented product APIs and event semantics. First confirm chosen ADP product and commercial enrollment.",
+      "mock_first": "Locally authored synthetic worker and payroll-batch contracts; label these as design schemas, not Amergis schemas."
+    },
+    {
+      "priority": 1,
+      "adapter": "Nursys credential monitoring",
+      "basis": "Verified institution API scope, current JSON protocol and real access boundary.",
+      "mock_first": "Local mock license-change events only; no invented public endpoint or synthetic license submitted to Nursys."
+    },
+    {
+      "priority": 2,
+      "adapter": "Certiphi screening orchestration",
+      "basis": "Published ordering/report-delivery integration and erecruit compatibility.",
+      "mock_first": "Local generic order/status/result envelope pending vendor implementation specification."
+    },
+    {
+      "priority": 2,
+      "adapter": "Equifax applicant employment verification",
+      "basis": "Staffing-specific API product with gated schema and registered sandbox.",
+      "mock_first": "Obtain product-specific sandbox schema through an authorized developer account before coding vendor field mapping."
+    },
+    {
+      "priority": 3,
+      "adapter": "Employer verification outbound feed",
+      "basis": "Amergis uses The Work Number for employee verification, but data-contribution API/feed specification was not found.",
+      "mock_first": "Keep separate from applicant-screening integration; do not assume common API."
+    }
+  ],
+  "unresolved_questions": [
+    "Current Amergis ADP product edition and subscribed integration scope",
+    "Whether Amergis uses vendor APIs, batch files or manual portals for each named service",
+    "Exact Certiphi protocol and contracted screening packages",
+    "The Work Number employer data-contribution interface",
+    "Current Nursys endpoint/schema and institution rules"
+  ],
+  "excluded_evidence": [
+    {
+      "topic": "Nursys SOAP v2.1.8 document mirrored on third-party site",
+      "reason": "2019 third-party mirror; current 2025/2026 official documentation explicitly says JSON. Not used for implementation."
+    }
+  ]
+}

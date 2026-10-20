@@ -1,0 +1,342 @@
+[
+  {
+    "software_evidence_id": "SW01",
+    "software_or_vendor": "MergePoint",
+    "evidence_category": "actual_stated_use",
+    "observed_claim": "Public Communications Specialist duties identify MergePoint as the company intranet and cover its content, permissions, search and reporting.",
+    "inference_limit": "Statement in an advertisement; current instance/vendor implementation not inspected.",
+    "source_feed_ids": [
+      "16333575"
+    ],
+    "source_urls": [
+      "https://www.amergis.com/job/1009078-communications-specialist-columbia-md/"
+    ],
+    "source_claim_date": null,
+    "retrieved_as_of": "2026-10-20",
+    "upstream_evidence_id": null
+  },
+  {
+    "software_evidence_id": "SW02",
+    "software_or_vendor": "Microsoft Excel / shared workbooks",
+    "evidence_category": "actual_stated_use",
+    "observed_claim": "Reimbursement duties explicitly use Excel and shared workbooks for reporting and collaboration.",
+    "inference_limit": "Does not establish a single enterprise reporting platform.",
+    "source_feed_ids": [
+      "15448969"
+    ],
+    "source_urls": [
+      "https://www.amergis.com/job/1004937-reimbursement-specialist-columbia-md/"
+    ],
+    "source_claim_date": null,
+    "retrieved_as_of": "2026-10-20",
+    "upstream_evidence_id": null
+  },
+  {
+    "software_evidence_id": "SW03",
+    "software_or_vendor": "VMS (vendor unspecified)",
+    "evidence_category": "actual_stated_use",
+    "observed_claim": "Implementation duties include customer/supplier data entry, training and demonstrations in an applicable VMS.",
+    "inference_limit": "No specific VMS vendor is named in this role; multiple customer systems may exist.",
+    "source_feed_ids": [
+      "16986252"
+    ],
+    "source_urls": [
+      "https://www.amergis.com/job/1011782-implementation-specialist-sunburst-phoenix-az/"
+    ],
+    "source_claim_date": null,
+    "retrieved_as_of": "2026-10-20",
+    "upstream_evidence_id": null
+  },
+  {
+    "software_evidence_id": "SW04",
+    "software_or_vendor": "Sunburst AR management system (vendor unspecified)",
+    "evidence_category": "actual_stated_use",
+    "observed_claim": "Operations support role describes implementation and billing workflows around Sunburst\u2019s AR management system.",
+    "inference_limit": "Product, vendor, database and interface are not disclosed.",
+    "source_feed_ids": [
+      "16409763"
+    ],
+    "source_urls": [
+      "https://www.amergis.com/job/1009562-operation-support-manager-sb-columbia-md/"
+    ],
+    "source_claim_date": null,
+    "retrieved_as_of": "2026-10-20",
+    "upstream_evidence_id": null
+  },
+  {
+    "software_evidence_id": "SW05",
+    "software_or_vendor": "CMS / DAM (vendors unspecified)",
+    "evidence_category": "actual_stated_use",
+    "observed_claim": "Content marketing duties include website publishing in a CMS and assets/guides in a DAM.",
+    "inference_limit": "No vendor or edition identified by the role description.",
+    "source_feed_ids": [
+      "17394822"
+    ],
+    "source_urls": [
+      "https://www.amergis.com/job/1013175-content-marketing-specialist-ii-columbia-md/"
+    ],
+    "source_claim_date": null,
+    "retrieved_as_of": "2026-10-20",
+    "upstream_evidence_id": null
+  },
+  {
+    "software_evidence_id": "SW06",
+    "software_or_vendor": "Aruba / Silver Peak SD-WAN",
+    "evidence_category": "actual_stated_use",
+    "observed_claim": "Network engineering duties name deployment and maintenance of Aruba/Silver Peak SD-WAN.",
+    "inference_limit": "A job duty is not a live infrastructure audit; exact footprint unknown.",
+    "source_feed_ids": [
+      "16803893"
+    ],
+    "source_urls": [
+      "https://www.amergis.com/job/1010914-network-engineer-ii-columbia-md/"
+    ],
+    "source_claim_date": null,
+    "retrieved_as_of": "2026-10-20",
+    "upstream_evidence_id": null
+  },
+  {
+    "software_evidence_id": "SW07",
+    "software_or_vendor": "Cisco Meraki",
+    "evidence_category": "actual_stated_use",
+    "observed_claim": "Named alongside SD-WAN deployment and maintenance responsibilities.",
+    "inference_limit": "Specific devices, licensing and current footprint unverified.",
+    "source_feed_ids": [
+      "16803893"
+    ],
+    "source_urls": [
+      "https://www.amergis.com/job/1010914-network-engineer-ii-columbia-md/"
+    ],
+    "source_claim_date": null,
+    "retrieved_as_of": "2026-10-20",
+    "upstream_evidence_id": null
+  },
+  {
+    "software_evidence_id": "SW08",
+    "software_or_vendor": "Palo Alto firewalls / Cisco ISE",
+    "evidence_category": "candidate_qualification",
+    "observed_claim": "Network role asks for knowledge of these network security technologies.",
+    "inference_limit": "Required knowledge alone does not confirm company deployment.",
+    "source_feed_ids": [
+      "16803893"
+    ],
+    "source_urls": [
+      "https://www.amergis.com/job/1010914-network-engineer-ii-columbia-md/"
+    ],
+    "source_claim_date": null,
+    "retrieved_as_of": "2026-10-20",
+    "upstream_evidence_id": null
+  },
+  {
+    "software_evidence_id": "SW09",
+    "software_or_vendor": "Cisco routers/switches / Cisco ACI",
+    "evidence_category": "candidate_qualification",
+    "observed_claim": "Role seeks Cisco hardware experience; Cisco ACI experience is preferred.",
+    "inference_limit": "Qualifications are not a verified asset inventory.",
+    "source_feed_ids": [
+      "16803893"
+    ],
+    "source_urls": [
+      "https://www.amergis.com/job/1010914-network-engineer-ii-columbia-md/"
+    ],
+    "source_claim_date": null,
+    "retrieved_as_of": "2026-10-20",
+    "upstream_evidence_id": null
+  },
+  {
+    "software_evidence_id": "SW10",
+    "software_or_vendor": "Zscaler",
+    "evidence_category": "candidate_qualification",
+    "observed_claim": "Role asks for conceptual understanding of the platform.",
+    "inference_limit": "Does not establish actual production installation.",
+    "source_feed_ids": [
+      "16803893"
+    ],
+    "source_urls": [
+      "https://www.amergis.com/job/1010914-network-engineer-ii-columbia-md/"
+    ],
+    "source_claim_date": null,
+    "retrieved_as_of": "2026-10-20",
+    "upstream_evidence_id": null
+  },
+  {
+    "software_evidence_id": "SW11",
+    "software_or_vendor": "Wireshark / packet-capture tools",
+    "evidence_category": "candidate_qualification",
+    "observed_claim": "Network analysis experience includes Wireshark and packet capture.",
+    "inference_limit": "Tool familiarity requirement; actual use not independently verified.",
+    "source_feed_ids": [
+      "16803893"
+    ],
+    "source_urls": [
+      "https://www.amergis.com/job/1010914-network-engineer-ii-columbia-md/"
+    ],
+    "source_claim_date": null,
+    "retrieved_as_of": "2026-10-20",
+    "upstream_evidence_id": null
+  },
+  {
+    "software_evidence_id": "SW12",
+    "software_or_vendor": "SolarWinds",
+    "evidence_category": "candidate_qualification",
+    "observed_claim": "Network role lists SolarWinds as preferred experience.",
+    "inference_limit": "Do not describe as a confirmed monitoring stack component.",
+    "source_feed_ids": [
+      "16803893"
+    ],
+    "source_urls": [
+      "https://www.amergis.com/job/1010914-network-engineer-ii-columbia-md/"
+    ],
+    "source_claim_date": null,
+    "retrieved_as_of": "2026-10-20",
+    "upstream_evidence_id": null
+  },
+  {
+    "software_evidence_id": "SW13",
+    "software_or_vendor": "Remedy ITSM",
+    "evidence_category": "candidate_qualification",
+    "observed_claim": "Desktop support role lists preferred Remedy ITSM experience.",
+    "inference_limit": "Preferred experience is insufficient evidence of current deployment.",
+    "source_feed_ids": [
+      "17460641"
+    ],
+    "source_urls": [
+      "https://www.amergis.com/job/1013529-desktop-support-specialist-columbia-md/"
+    ],
+    "source_claim_date": null,
+    "retrieved_as_of": "2026-10-20",
+    "upstream_evidence_id": null
+  },
+  {
+    "software_evidence_id": "SW14",
+    "software_or_vendor": "Microsoft SCCM / Office / Project / Internet Explorer / Visio",
+    "evidence_category": "candidate_qualification",
+    "observed_claim": "Desktop support role lists experience with these Microsoft products.",
+    "inference_limit": "May contain legacy qualification wording; no current stack inference.",
+    "source_feed_ids": [
+      "17460641"
+    ],
+    "source_urls": [
+      "https://www.amergis.com/job/1013529-desktop-support-specialist-columbia-md/"
+    ],
+    "source_claim_date": null,
+    "retrieved_as_of": "2026-10-20",
+    "upstream_evidence_id": null
+  },
+  {
+    "software_evidence_id": "SW15",
+    "software_or_vendor": "Microsoft Windows / Word / Excel / legacy Maxim proprietary programs",
+    "evidence_category": "candidate_qualification",
+    "observed_claim": "Program Specialist requirements mention these tools and unnamed proprietary programs.",
+    "inference_limit": "No identity of proprietary software or present installation can be derived.",
+    "source_feed_ids": [
+      "16790213"
+    ],
+    "source_urls": [
+      "https://www.amergis.com/job/1010729-program-specialist-phoenix-az/"
+    ],
+    "source_claim_date": null,
+    "retrieved_as_of": "2026-10-20",
+    "upstream_evidence_id": null
+  },
+  {
+    "software_evidence_id": "SW16",
+    "software_or_vendor": "I-9 / E-Verify",
+    "evidence_category": "title_only",
+    "observed_claim": "One field-support manager posting includes I9 E-Verify in its title.",
+    "inference_limit": "Body is generic field-support text; exact workflow and integration are not disclosed.",
+    "source_feed_ids": [
+      "17389207"
+    ],
+    "source_urls": [
+      "https://www.amergis.com/job/1012984-fsm-i9-e-verify-process-columbia-md/"
+    ],
+    "source_claim_date": null,
+    "retrieved_as_of": "2026-10-20",
+    "upstream_evidence_id": null
+  },
+  {
+    "software_evidence_id": "SW17",
+    "software_or_vendor": "ADP",
+    "evidence_category": "actual_stated_use",
+    "observed_claim": "Official Help Center directs employees to ADP for paystubs, W-2s and address changes.",
+    "inference_limit": "Does not disclose full payroll architecture or expose payroll records.",
+    "source_feed_ids": [],
+    "source_urls": [
+      "https://www.amergis.com/help-center/"
+    ],
+    "source_claim_date": null,
+    "retrieved_as_of": "2026-10-20",
+    "upstream_evidence_id": null
+  },
+  {
+    "software_evidence_id": "SW18",
+    "software_or_vendor": "The Work Number",
+    "evidence_category": "actual_stated_use",
+    "observed_claim": "Official Help Center directs employment/income verification to The Work Number.",
+    "inference_limit": "No private verification records accessed.",
+    "source_feed_ids": [],
+    "source_urls": [
+      "https://www.amergis.com/help-center/"
+    ],
+    "source_claim_date": null,
+    "retrieved_as_of": "2026-10-20",
+    "upstream_evidence_id": null
+  },
+  {
+    "software_evidence_id": "SW19",
+    "software_or_vendor": "Bullhorn",
+    "evidence_category": "app_supplier_clue",
+    "observed_claim": "MaxView Jobs Apple listing carries Bullhorn copyright attribution.",
+    "inference_limit": "Attribution does not establish the whole company ATS/CRM stack or the contractual integration scope.",
+    "source_feed_ids": [],
+    "source_urls": [
+      "https://apps.apple.com/us/app/maxview-jobs-by-amergis/id1626499875"
+    ],
+    "source_claim_date": null,
+    "retrieved_as_of": "2026-10-20",
+    "upstream_evidence_id": null
+  },
+  {
+    "software_evidence_id": "SW20",
+    "software_or_vendor": "eRecruit ATS/CRM integrated with MaxView",
+    "evidence_category": "historical_supplier_statement",
+    "observed_claim": "Amergis names eRecruit as ATS and internal client management, integrated with MaxView.",
+    "inference_limit": "Direct supplier statement, not independent verification of current system architecture. Claim is from June 13, 2024 despite being reproduced in an executed 2026 packet.",
+    "source_feed_ids": [],
+    "source_urls": [
+      "https://eldorado.legistar.com/View.ashx?M=F&ID=15807895&GUID=3997709B-28F6-4004-B8A8-F3B74414DF4B#page=30"
+    ],
+    "source_claim_date": "2024-06-13",
+    "retrieved_as_of": "2026-10-20",
+    "upstream_evidence_id": "PE01"
+  },
+  {
+    "software_evidence_id": "SW21",
+    "software_or_vendor": "Certiphi",
+    "evidence_category": "historical_supplier_statement",
+    "observed_claim": "Supplier names Certiphi for background, exclusion and occupational health checks.",
+    "inference_limit": "Usage described in 2024; customer-specific scope and live integration unverified. Claim is from June 13, 2024 despite being reproduced in an executed 2026 packet.",
+    "source_feed_ids": [],
+    "source_urls": [
+      "https://eldorado.legistar.com/View.ashx?M=F&ID=15807895&GUID=3997709B-28F6-4004-B8A8-F3B74414DF4B#page=30"
+    ],
+    "source_claim_date": "2024-06-13",
+    "retrieved_as_of": "2026-10-20",
+    "upstream_evidence_id": "PE03"
+  },
+  {
+    "software_evidence_id": "SW22",
+    "software_or_vendor": "Nursys eNotify",
+    "evidence_category": "historical_supplier_statement",
+    "observed_claim": "Supplier names Nursys eNotify for licensure-expiry alerts.",
+    "inference_limit": "Scope and current deployment unverified; not a complete credential vendor list. Claim is from June 13, 2024 despite being reproduced in an executed 2026 packet.",
+    "source_feed_ids": [],
+    "source_urls": [
+      "https://eldorado.legistar.com/View.ashx?M=F&ID=15807895&GUID=3997709B-28F6-4004-B8A8-F3B74414DF4B#page=30"
+    ],
+    "source_claim_date": "2024-06-13",
+    "retrieved_as_of": "2026-10-20",
+    "upstream_evidence_id": "PE04"
+  }
+]

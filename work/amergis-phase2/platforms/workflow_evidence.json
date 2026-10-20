@@ -1,0 +1,846 @@
+{
+  "as_of_date": "2026-10-20",
+  "source_registry": "platforms.json:sources",
+  "interpretation": "AI actions, inferred objects, KPIs, tests and authority boundaries are proposed design recommendations, not statements that Amergis operates this way.",
+  "workflows": [
+    {
+      "workflow_id": "WF-P01",
+      "name": "Client intake and routing",
+      "source_ids": [
+        "P07",
+        "P06",
+        "P01"
+      ],
+      "evidence_status": "Observed form fields; routing implementation inferred",
+      "trigger": "New inquiry or demo request",
+      "documented_or_proposed_flow": [
+        "Classify inquiry by explicit form selection",
+        "Validate contact/organization fields and consent",
+        "Route by geography, discipline and existing-customer status",
+        "Create follow-up task and retain source/provenance"
+      ],
+      "inferred_data_objects": [
+        "Inquiry",
+        "Organization",
+        "Office",
+        "Consent",
+        "RoutingTask"
+      ],
+      "ai_candidate_actions": [
+        "Parse and deduplicate leads",
+        "Route routine requests",
+        "Draft responses and demo briefing"
+      ],
+      "human_authority": [
+        "Approve nonstandard commercial promises and scope",
+        "Resolve misrouted sensitive requests"
+      ],
+      "exception_routes": [
+        "Payroll/verification requests to restricted support queue",
+        "Missing consent or unsupported discipline to review"
+      ],
+      "suggested_kpis": [
+        "routing accuracy",
+        "time to first response",
+        "missing-field rate"
+      ],
+      "synthetic_acceptance_tests": [
+        "Payroll inquiry cannot create sales campaign enrollment without appropriate consent",
+        "Ambiguous geography yields exception, not invented office"
+      ],
+      "blueprint_status": "Independent proposed implementation based on public evidence; not recovered SOP"
+    },
+    {
+      "workflow_id": "WF-P02",
+      "name": "Position request and demand publication",
+      "source_ids": [
+        "P02",
+        "P03"
+      ],
+      "evidence_status": "Current marketing plus historical details",
+      "trigger": "Client requests a position or shift",
+      "documented_or_proposed_flow": [
+        "Capture position, worksite, remaining quantity, attachments and comments",
+        "Normalize discipline, pay/bill rules and client requirements",
+        "Validate approved contract/configuration",
+        "Publish approved demand and eligible-candidate notifications"
+      ],
+      "inferred_data_objects": [
+        "Requisition",
+        "Worksite",
+        "ContractRule",
+        "Attachment",
+        "Notification"
+      ],
+      "ai_candidate_actions": [
+        "Normalize intake",
+        "Check completeness",
+        "Publish within approved configurations"
+      ],
+      "human_authority": [
+        "Approve new rates, scope and requirement exceptions",
+        "Client owns position need and staffing adequacy"
+      ],
+      "exception_routes": [
+        "Missing credential specification or inconsistent pay/bill rule"
+      ],
+      "suggested_kpis": [
+        "time to publish",
+        "unfilled demand",
+        "duplicate requisition rate"
+      ],
+      "synthetic_acceptance_tests": [
+        "Missing contract blocks publication",
+        "Duplicate client request recognized without reducing genuine multi-position quantity"
+      ],
+      "blueprint_status": "Independent proposed implementation based on public evidence; not recovered SOP"
+    },
+    {
+      "workflow_id": "WF-P03",
+      "name": "Candidate search, alerts and application",
+      "source_ids": [
+        "P04",
+        "P08"
+      ],
+      "evidence_status": "Historical guide and current app listing",
+      "trigger": "Candidate preference or application",
+      "documented_or_proposed_flow": [
+        "Filter by date, shift, location, specialty, pay and duration",
+        "Deliver consented alert at selected cadence",
+        "Retain favorites and application status",
+        "Route general applications to recruiter support"
+      ],
+      "inferred_data_objects": [
+        "CandidatePreferences",
+        "AlertSubscription",
+        "Application",
+        "Favorite"
+      ],
+      "ai_candidate_actions": [
+        "Apply declared filters",
+        "Schedule alerts",
+        "Answer workflow questions",
+        "Track deadlines"
+      ],
+      "human_authority": [
+        "Candidate chooses whether to apply",
+        "Recruiter handles substantive qualification discussions"
+      ],
+      "exception_routes": [
+        "No matching demand",
+        "Preference conflict",
+        "Missing data"
+      ],
+      "suggested_kpis": [
+        "relevant-alert rate",
+        "application completion",
+        "candidate response latency"
+      ],
+      "synthetic_acceptance_tests": [
+        "Weekly preference does not generate immediate alerts",
+        "Missing specialty is requested rather than inferred from sensitive attributes"
+      ],
+      "blueprint_status": "Independent proposed implementation based on public evidence; not recovered SOP"
+    },
+    {
+      "workflow_id": "WF-P04",
+      "name": "Eligibility and shift self-scheduling",
+      "source_ids": [
+        "P04"
+      ],
+      "evidence_status": "Explicit September 2024 branch; full current rules unknown",
+      "trigger": "Candidate applies for shift",
+      "documented_or_proposed_flow": [
+        "Existing and compliant candidate: documented automatic schedule",
+        "New candidate or compliance needs: documented recruiter contact",
+        "Proposed implementation additionally locks slot and checks conflicts against approved rules"
+      ],
+      "inferred_data_objects": [
+        "Candidate",
+        "ComplianceStatus",
+        "Shift",
+        "Reservation",
+        "Exception"
+      ],
+      "ai_candidate_actions": [
+        "Evaluate approved deterministic requirements",
+        "Detect expired/missing credentials",
+        "Reserve eligible shift atomically",
+        "Send completion tasks"
+      ],
+      "human_authority": [
+        "Authorized compliance professional resolves ambiguous credentials",
+        "Clinician/client decides suitability and exceptions",
+        "Candidate accepts work"
+      ],
+      "exception_routes": [
+        "Unknown or expired compliance",
+        "Double booking",
+        "Worksite mismatch",
+        "Stale availability"
+      ],
+      "suggested_kpis": [
+        "time to confirm",
+        "booking collisions",
+        "false eligibility clearance"
+      ],
+      "synthetic_acceptance_tests": [
+        "Two simultaneous applications cannot overfill one slot",
+        "Expired credential never auto-clears",
+        "Unknown candidate enters onboarding, not rejection"
+      ],
+      "blueprint_status": "Independent proposed implementation based on public evidence; not recovered SOP"
+    },
+    {
+      "workflow_id": "WF-P05",
+      "name": "Submittal, onboarding and placement",
+      "source_ids": [
+        "P03",
+        "P08"
+      ],
+      "evidence_status": "Historical portal guide plus current app claim",
+      "trigger": "Candidate ready for client submission",
+      "documented_or_proposed_flow": [
+        "Assemble candidate packet and attachments",
+        "Client approves or rejects submittal",
+        "Track credentialing and onboarding tasks",
+        "Activate assignment only after required approvals"
+      ],
+      "inferred_data_objects": [
+        "Submittal",
+        "ClientDecision",
+        "CredentialTask",
+        "Placement"
+      ],
+      "ai_candidate_actions": [
+        "Build packet",
+        "Check document completeness and dates",
+        "Remind owners",
+        "Synchronize status"
+      ],
+      "human_authority": [
+        "Client hiring/selection decision",
+        "Authorized verification and clinical judgment",
+        "Accommodation and adverse-action decisions"
+      ],
+      "exception_routes": [
+        "Missing documents",
+        "Contradictory credentials",
+        "Unapproved client requirements"
+      ],
+      "suggested_kpis": [
+        "time to credential",
+        "task aging",
+        "packet accuracy"
+      ],
+      "synthetic_acceptance_tests": [
+        "Missing mandatory evidence blocks ready state",
+        "Rejection reason logged and reviewed; no protected-trait ranking"
+      ],
+      "blueprint_status": "Independent proposed implementation based on public evidence; not recovered SOP"
+    },
+    {
+      "workflow_id": "WF-P06",
+      "name": "Shift lifecycle and absence exceptions",
+      "source_ids": [
+        "P03",
+        "P06"
+      ],
+      "evidence_status": "Historical named shift states; absence workflow inferred from demo-interest option",
+      "trigger": "New request, fill, completion or cancellation event",
+      "documented_or_proposed_flow": [
+        "Maintain documented open/filled/unfilled/canceled vocabulary",
+        "Proposed: process authorized change and notify affected participants",
+        "Reopen demand only under client contract rules"
+      ],
+      "inferred_data_objects": [
+        "Shift",
+        "Booking",
+        "ChangeRequest",
+        "CancellationRule"
+      ],
+      "ai_candidate_actions": [
+        "Manage state transitions",
+        "Detect uncovered shifts",
+        "Suggest replacements",
+        "Notify authorized parties"
+      ],
+      "human_authority": [
+        "Approve exceptions, overtime and cancellation disputes"
+      ],
+      "exception_routes": [
+        "No-show",
+        "Last-minute cancellation",
+        "Conflicting approvals"
+      ],
+      "suggested_kpis": [
+        "fill rate",
+        "uncovered hours",
+        "cancellation latency"
+      ],
+      "synthetic_acceptance_tests": [
+        "Canceled shift cannot remain simultaneously active",
+        "Cancellation fee not invented where contract silent"
+      ],
+      "blueprint_status": "Independent proposed implementation based on public evidence; not recovered SOP"
+    },
+    {
+      "workflow_id": "WF-P07",
+      "name": "Time capture, approval and reconciliation",
+      "source_ids": [
+        "P02",
+        "P03",
+        "P05"
+      ],
+      "evidence_status": "Current e-approval claim; GPS/QR/email in historical guide",
+      "trigger": "Worker submits time or client clock record arrives",
+      "documented_or_proposed_flow": [
+        "Capture hours from approved time source",
+        "Check assignment, date, overlap and pay/bill rules",
+        "Route to authorized client approver",
+        "Record approval/rejection and correction history",
+        "Proposed: reconcile approved time to separate payroll and billing entries"
+      ],
+      "inferred_data_objects": [
+        "TimeEntry",
+        "Timecard",
+        "Approval",
+        "PayRule",
+        "BillRule",
+        "Adjustment"
+      ],
+      "ai_candidate_actions": [
+        "Parse timecards",
+        "Detect duplicate/overlap/missing approval",
+        "Calculate draft amounts",
+        "Create exception queue"
+      ],
+      "human_authority": [
+        "Authorized manager approves worked time",
+        "Payroll owner releases payments and resolves disputes"
+      ],
+      "exception_routes": [
+        "Absent approval",
+        "Client clock disagreement",
+        "Overtime exception",
+        "GPS/QR discrepancy"
+      ],
+      "suggested_kpis": [
+        "approval turnaround",
+        "adjustment rate",
+        "unreconciled hours"
+      ],
+      "synthetic_acceptance_tests": [
+        "Duplicate imported timecard never double bills",
+        "Payroll and bill rates remain separate",
+        "Rejected time is retained for correction, not erased"
+      ],
+      "blueprint_status": "Independent proposed implementation based on public evidence; not recovered SOP"
+    },
+    {
+      "workflow_id": "WF-P08",
+      "name": "Payroll support and employment verification",
+      "source_ids": [
+        "P05"
+      ],
+      "evidence_status": "Current official routing",
+      "trigger": "Employee support/verification request",
+      "documented_or_proposed_flow": [
+        "Authenticate and classify request",
+        "Route pay documents/address to ADP self-service",
+        "Route verification to authorized Work Number flow",
+        "Route exceptions to specialist payroll/verification team"
+      ],
+      "inferred_data_objects": [
+        "SupportCase",
+        "EmployeeIdentity",
+        "VerificationAuthorization",
+        "DocumentAccessEvent"
+      ],
+      "ai_candidate_actions": [
+        "FAQ answers",
+        "Identity-aware routing",
+        "Case triage and reminders"
+      ],
+      "human_authority": [
+        "Employee controls address/direct-deposit requests",
+        "Authorized payroll/verification staff resolve exceptions"
+      ],
+      "exception_routes": [
+        "Identity mismatch",
+        "Disputed pay",
+        "Unauthorized verification"
+      ],
+      "suggested_kpis": [
+        "first-contact resolution",
+        "case age",
+        "unauthorized disclosure count"
+      ],
+      "synthetic_acceptance_tests": [
+        "Public chatbot cannot expose employee pay statements",
+        "Verification without authorization yields no personal data"
+      ],
+      "blueprint_status": "Independent proposed implementation based on public evidence; not recovered SOP"
+    },
+    {
+      "workflow_id": "WF-P09",
+      "name": "Management reporting",
+      "source_ids": [
+        "P02",
+        "P03"
+      ],
+      "evidence_status": "Current advertised metrics; precise definitions unknown",
+      "trigger": "Approved reporting period closes",
+      "documented_or_proposed_flow": [
+        "Aggregate spend, filled demand and time to fill",
+        "Segment by worksite, time window and certification where documented",
+        "Reconcile metrics to approved source events",
+        "Explain variance and propose actions"
+      ],
+      "inferred_data_objects": [
+        "MetricDefinition",
+        "ReportPeriod",
+        "Invoice",
+        "Worksite",
+        "CredentialCategory"
+      ],
+      "ai_candidate_actions": [
+        "Generate reports",
+        "Flag anomalies",
+        "Draft client narrative"
+      ],
+      "human_authority": [
+        "Program leader approves material changes in staffing or commercial terms"
+      ],
+      "exception_routes": [
+        "Metric denominator disagreement",
+        "Missing invoice/time data"
+      ],
+      "suggested_kpis": [
+        "reconciliation difference",
+        "metric freshness",
+        "definition coverage"
+      ],
+      "synthetic_acceptance_tests": [
+        "Fill ratio denominator is explicit",
+        "Draft invoices excluded from paid-spend measure unless labeled"
+      ],
+      "blueprint_status": "Independent proposed implementation based on public evidence; not recovered SOP"
+    }
+  ],
+  "msp_teletherapy_workflows": [
+    {
+      "workflow_id": "WF-MSP-01",
+      "name": "Program discovery and workforce design",
+      "evidence_ids": [
+        "SUN-HOME-01",
+        "SUN-HCG-01"
+      ],
+      "observed_roles": [
+        "Dedicated program manager",
+        "Clinical and healthcare leaders",
+        "Client workforce leadership"
+      ],
+      "proposed_flow": [
+        "Capture demand, facility constraints and service expectations",
+        "Normalize a client program specification",
+        "Model coverage and cost alternatives",
+        "Approve program configuration"
+      ],
+      "inferred_data_objects": [
+        "Client",
+        "Worksite",
+        "DemandPlan",
+        "CoverageConstraint",
+        "ProgramConfiguration",
+        "DecisionRecord"
+      ],
+      "ai_candidate_actions": [
+        "Structure intake notes",
+        "Forecast uncovered demand",
+        "Compare scenarios",
+        "Draft review materials"
+      ],
+      "human_authority": [
+        "Client agreement to service scope",
+        "Clinical staffing adequacy and labor mix",
+        "Unusual customer commitments"
+      ],
+      "automation_class": "AI-assisted planning with approved configuration",
+      "uncertainties": [
+        "No published operating procedure, service-level targets or forecast method"
+      ]
+    },
+    {
+      "workflow_id": "WF-MSP-02",
+      "name": "Supplier qualification and routing",
+      "evidence_ids": [
+        "SUN-SUP-01",
+        "SUN-SUP-02",
+        "SUN-SUP-03"
+      ],
+      "observed_roles": [
+        "Staffing supplier",
+        "Program manager"
+      ],
+      "proposed_flow": [
+        "Collect supplier capabilities and documents",
+        "Check completeness and expiration",
+        "Approve supplier participation",
+        "Route requisitions by approved coverage rules",
+        "Measure response and delivery"
+      ],
+      "inferred_data_objects": [
+        "Supplier",
+        "SupplierCapability",
+        "SupplierAgreement",
+        "SupplierDocument",
+        "DistributionRule",
+        "SupplierScorecard"
+      ],
+      "ai_candidate_actions": [
+        "Parse applications and certificates",
+        "Flag missing evidence",
+        "Route opportunities within approved rules",
+        "Produce scorecards"
+      ],
+      "human_authority": [
+        "Supplier admission or termination",
+        "Contract signatures",
+        "Material noncompliance findings"
+      ],
+      "automation_class": "AI-operated administration; human supplier authority",
+      "uncertainties": [
+        "Actual supplier list, score weights, insurance thresholds and agreements are unpublished"
+      ]
+    },
+    {
+      "workflow_id": "WF-MSP-03",
+      "name": "VMS selection and implementation",
+      "evidence_ids": [
+        "SUN-VMS-01",
+        "SUN-EDU-02"
+      ],
+      "observed_roles": [
+        "Program manager",
+        "VMS partner",
+        "Client stakeholders"
+      ],
+      "proposed_flow": [
+        "Collect workflow requirements",
+        "Compare partner capabilities",
+        "Approve vendor and data-processing terms",
+        "Map requisition, candidate, credential and billing fields",
+        "Test customer-specific flows"
+      ],
+      "inferred_data_objects": [
+        "VMSProvider",
+        "IntegrationMapping",
+        "CustomerWorkflow",
+        "DataProcessingAgreement",
+        "AcceptanceTest"
+      ],
+      "ai_candidate_actions": [
+        "Draft requirements",
+        "Generate field mappings",
+        "Prepare test cases",
+        "Monitor integration failures"
+      ],
+      "human_authority": [
+        "Vendor selection",
+        "Security and contractual acceptance",
+        "Production access authorization"
+      ],
+      "automation_class": "AI-assisted integration delivery",
+      "uncertainties": [
+        "No public API specifications, event schemas, tenant architecture or evidence of universal MatterWorx use"
+      ]
+    },
+    {
+      "workflow_id": "WF-MSP-04",
+      "name": "Credential and onboarding coordination",
+      "evidence_ids": [
+        "SUN-VMS-02",
+        "SUN-EDU-01",
+        "SUN-HCG-02"
+      ],
+      "observed_roles": [
+        "Supplier",
+        "Program manager",
+        "Client approver"
+      ],
+      "proposed_flow": [
+        "Instantiate approved requirements by role and site",
+        "Collect credential evidence",
+        "Check authorized verification sources",
+        "Chase missing items",
+        "Route exceptions",
+        "Release eligible worker to assignment"
+      ],
+      "inferred_data_objects": [
+        "RequirementSet",
+        "CredentialEvidence",
+        "VerificationResult",
+        "OnboardingTask",
+        "EligibilityDecision",
+        "Exception"
+      ],
+      "ai_candidate_actions": [
+        "Extract document fields",
+        "Check expiry and completeness",
+        "Send approved reminders",
+        "Maintain audit trace"
+      ],
+      "human_authority": [
+        "Ambiguous credentials",
+        "Waivers or contested verification",
+        "Clinical suitability and exceptional eligibility"
+      ],
+      "automation_class": "AI-operated routine checks under policy; exception review",
+      "uncertainties": [
+        "Exact verification vendors, permitted waivers and sign-off ownership are not stated"
+      ]
+    },
+    {
+      "workflow_id": "WF-MSP-05",
+      "name": "Consolidated billing and program analytics",
+      "evidence_ids": [
+        "SUN-VMS-02",
+        "SUN-EDU-01",
+        "SUN-EDU-02",
+        "SUN-HCG-02"
+      ],
+      "observed_roles": [
+        "Supplier",
+        "Client billing approver",
+        "Program manager"
+      ],
+      "proposed_flow": [
+        "Ingest approved time and supplier charges",
+        "Apply contracted rates and MSP fees",
+        "Reconcile exceptions",
+        "Generate consolidated invoice",
+        "Publish spend, fill and supplier metrics"
+      ],
+      "inferred_data_objects": [
+        "ApprovedTime",
+        "RateCard",
+        "SupplierInvoice",
+        "MSPFeeRule",
+        "ConsolidatedInvoice",
+        "ReconciliationException",
+        "MetricDefinition"
+      ],
+      "ai_candidate_actions": [
+        "Classify charges",
+        "Reconcile to approved records",
+        "Identify duplicates and anomalies",
+        "Draft invoices and explain variance"
+      ],
+      "human_authority": [
+        "Rate changes",
+        "Disputed charges",
+        "Credits outside policy",
+        "Payment and financial release approvals"
+      ],
+      "automation_class": "AI-operated reconciliation and drafting; controlled release",
+      "uncertainties": [
+        "Public marketing supplies no transaction-level fee formula, tax treatment, payment terms or realized cost data"
+      ]
+    },
+    {
+      "workflow_id": "WF-ATP-01",
+      "name": "Teletherapy access and service coordination",
+      "evidence_ids": [
+        "ATP-01",
+        "ATP-04"
+      ],
+      "observed_roles": [
+        "Student",
+        "School staff",
+        "Clinician",
+        "Technical support"
+      ],
+      "proposed_flow": [
+        "Set school-authorized schedule",
+        "Provide access instructions",
+        "Manage attendance and waiting-room exceptions",
+        "Record activity metadata",
+        "Resolve support issues"
+      ],
+      "inferred_data_objects": [
+        "School",
+        "Clinician",
+        "Schedule",
+        "RoomAccessReference",
+        "AttendanceEvent",
+        "SupportTicket"
+      ],
+      "ai_candidate_actions": [
+        "Coordinate schedules and reminders",
+        "Provide basic access support",
+        "Flag missed sessions",
+        "Prepare activity summaries"
+      ],
+      "human_authority": [
+        "Identity and access policy",
+        "Student-specific clinical needs",
+        "Safeguarding or urgent concerns",
+        "Session admission under school policy"
+      ],
+      "automation_class": "AI-operated coordination with human clinical delivery",
+      "uncertainties": [
+        "Room lifecycle, authorization controls, identifiers and metadata retention are not public"
+      ]
+    },
+    {
+      "workflow_id": "WF-ATP-02",
+      "name": "Therapy, assessment and documentation",
+      "evidence_ids": [
+        "ATP-02",
+        "ATP-03",
+        "ATP-04",
+        "ATP-05"
+      ],
+      "observed_roles": [
+        "Speech-language clinician",
+        "Psychology clinician",
+        "School staff"
+      ],
+      "proposed_flow": [
+        "Clinician selects authorized resources",
+        "Clinician delivers therapy or evaluation",
+        "Capture permitted activity metadata",
+        "Prepare documentation support",
+        "Clinician validates record",
+        "Generate approved billing support"
+      ],
+      "inferred_data_objects": [
+        "AssessmentEntitlement",
+        "SessionActivity",
+        "TherapyMinutes",
+        "DocumentationDraft",
+        "ClinicianAttestation",
+        "BillingSupportRecord"
+      ],
+      "ai_candidate_actions": [
+        "Resource logistics",
+        "Activity reconciliation",
+        "Documentation templates",
+        "Missing-data checks",
+        "Billing-support preparation"
+      ],
+      "human_authority": [
+        "Assessment administration and interpretation",
+        "Diagnosis and treatment planning",
+        "Clinical judgments",
+        "Clinical record sign-off"
+      ],
+      "automation_class": "AI assists administration; qualified professionals deliver and validate clinical service",
+      "uncertainties": [
+        "No evidence authorizes AI to replace licensed providers or use proprietary test content",
+        "Do not assume session recording, transcript capture or student-data retention is permitted"
+      ]
+    }
+  ],
+  "additional_workforce_role_map": [
+    {
+      "role": "Dedicated MSP program manager",
+      "evidence_ids": [
+        "SUN-HOME-01"
+      ],
+      "ai_operable_functions": [
+        "Routine vendor coordination",
+        "Demand and spend summaries",
+        "Exception queue triage"
+      ],
+      "retained_authority": [
+        "Client commitments",
+        "Complex disputes",
+        "Program changes"
+      ]
+    },
+    {
+      "role": "Business development leadership",
+      "evidence_ids": [
+        "SUN-EDU-04"
+      ],
+      "ai_operable_functions": [
+        "Public-account research",
+        "Opportunity qualification support",
+        "Proposal drafting"
+      ],
+      "retained_authority": [
+        "Negotiation mandates",
+        "Commercial commitments"
+      ],
+      "note": "Only title presence is evidenced; duties here are proposed."
+    },
+    {
+      "role": "Clinical and healthcare leadership",
+      "evidence_ids": [
+        "SUN-HCG-01"
+      ],
+      "ai_operable_functions": [
+        "Coverage scenarios",
+        "Evidence preparation",
+        "Policy checks"
+      ],
+      "retained_authority": [
+        "Clinical adequacy",
+        "Service design",
+        "Exceptions requiring professional judgment"
+      ]
+    },
+    {
+      "role": "Supplier account/recruiting operations",
+      "evidence_ids": [
+        "SUN-SUP-01",
+        "SUN-SUP-02"
+      ],
+      "ai_operable_functions": [
+        "Opportunity routing",
+        "Document follow-up",
+        "Status reporting"
+      ],
+      "retained_authority": [
+        "Employment and supplier commitments"
+      ],
+      "note": "Supplier organization is explicit; internal job titles are inferred."
+    },
+    {
+      "role": "Therapy and psychology clinicians",
+      "evidence_ids": [
+        "ATP-01",
+        "ATP-03"
+      ],
+      "ai_operable_functions": [
+        "Scheduling",
+        "Activity reconciliation",
+        "Documentation support"
+      ],
+      "retained_authority": [
+        "Direct professional service",
+        "Assessment interpretation",
+        "Treatment decisions",
+        "Record approval"
+      ]
+    },
+    {
+      "role": "Technical support",
+      "evidence_ids": [
+        "ATP-04"
+      ],
+      "ai_operable_functions": [
+        "Standard troubleshooting",
+        "Issue classification",
+        "Status updates"
+      ],
+      "retained_authority": [
+        "Privileged access",
+        "Security incidents",
+        "Unresolved school access problems"
+      ]
+    }
+  ]
+}

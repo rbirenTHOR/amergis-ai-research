@@ -1,0 +1,78 @@
+{
+  "as_of_date": "2026-10-20",
+  "scope": "One-time public office/platform/workflow extraction; no authenticated systems or personal dossiers.",
+  "counts": {
+    "directory_records": 61,
+    "states": 32,
+    "full_street_addresses": 2,
+    "offices_with_sampled_service_mix": 1,
+    "platforms": 9,
+    "public_form_schemas": 3,
+    "source_records": 16,
+    "core_workflows": 9,
+    "msp_teletherapy_workflows": 7
+  },
+  "covered": [
+    {
+      "surface": "Amergis healthcare office directory",
+      "status": "All 61 currently rendered office cards normalized; distinct URL key",
+      "limits": "Directory completeness against all company offices unresolved; 2/61 street addresses and 1/61 service mix enriched."
+    },
+    {
+      "surface": "MaxView/candidate documentation",
+      "status": "Two historical guides + current product page + publisher version history",
+      "limits": "No tenant or mobile installation; marketed functionality not operationally tested."
+    },
+    {
+      "surface": "Public forms",
+      "status": "Contact default/staffing branch, demo schema, office search",
+      "limits": "Other contact branches and hidden conditional logic not tested."
+    },
+    {
+      "surface": "Sunburst MSP / VMS / education / healthcare government / suppliers",
+      "status": "Five official pages summarized",
+      "limits": "No full supplier list, contracting logic, deployment counts or APIs."
+    },
+    {
+      "surface": "Teletherapy",
+      "status": "Official product and FAQ claims mapped",
+      "limits": "No clinical/student data or assessment protocols extracted."
+    }
+  ],
+  "retrieval_issues": [
+    {
+      "url": "https://www.amergis.com/about/locations/",
+      "issue": "Direct Python HTTP request returned 403; browser and search tools provided the normal public directory."
+    },
+    {
+      "url": "https://www.amergis.com/locations-sitemap.xml",
+      "issue": "Web retrieval inaccessible; prior phase also timed out. No independent sitemap reconciliation."
+    },
+    {
+      "url": "https://www.amergis.com/about/locations/tampa-travel-hub/",
+      "issue": "504 host gateway timeout from web and browser; detail enrichment omitted."
+    },
+    {
+      "url": "https://www.amergis.com/resources/company-news/features-of-the-maxview-workforce-management-dashboard/",
+      "issue": "Web timeout, public browser page readable and saved."
+    },
+    {
+      "url": "https://www.amergis.com/resources/company-news/looking-for-per-diem-shifts-how-maxview-jobs-can-help/",
+      "issue": "Web timeout; browser navigation timed out but resulting page loaded and was read."
+    }
+  ],
+  "not_collected": [
+    "Private candidates, credentials, payroll/invoices or client records",
+    "Office headcount/facility counters that rendered zero",
+    "Individual employee dossiers or app-review profiles",
+    "Full street/service detail for remaining 59/60 office entries",
+    "Full sitemap content and site-wide blog archive",
+    "Authenticated product/API/database internals"
+  ],
+  "no_completeness_claim": "Remaining public information is open-ended. This inventory defines exactly what was extracted and what remains unverified.",
+  "next_public_steps": [
+    "Reconcile education/other-brand office directory with healthcare directory if expansion is required",
+    "Enrich individual office street/service details at the published crawl cadence when directory data becomes insufficient",
+    "Obtain current public demo/guide release evidence for roadmap features and Connect"
+  ]
+}

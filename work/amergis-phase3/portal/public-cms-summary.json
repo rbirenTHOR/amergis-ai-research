@@ -1,0 +1,79 @@
+{
+  "as_of": "2026-10-20",
+  "source_url": "https://www.amergis.com/wp-json/",
+  "source_sha256": "1ba36e9e4e5a02bf7caa54a20c35eb049622bcabebd12637cc5ef0ad29725175",
+  "route_count": 312,
+  "namespaces": [
+    "oembed/1.0",
+    "wpe/cache-plugin/v1",
+    "wpe_sign_on_plugin/v1",
+    "redirection/v1",
+    "safe-svg/v1",
+    "yoast/v1",
+    "wp-all-import/v1",
+    "duplicate-post/v1",
+    "wp-2fa-methods/v1",
+    "wp-2fa-passkeys/v1",
+    "wp/v2",
+    "woocommerce-email-editor/v1",
+    "mailpoet/v1",
+    "wp-site-health/v1",
+    "wp-block-editor/v1",
+    "wp-abilities/v1"
+  ],
+  "routes": {
+    "/wp/v2/pages": {
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    "/wp/v2/posts": {
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    "/wp/v2/locations": {
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    "/wp/v2/services": {
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    "/wp/v2/categories": {
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    "/wp/v2/tags": {
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    "/wp/v2/search": {
+      "methods": [
+        "GET"
+      ]
+    },
+    "/wp/v2/media": {
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    },
+    "/wp/v2/landing-page": {
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    }
+  }
+}

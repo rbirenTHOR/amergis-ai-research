@@ -1,0 +1,131 @@
+[
+  {
+    "finding_id": "DQ-R01",
+    "source_feed_ids": [
+      "17018584"
+    ],
+    "type": "title_body_mismatch",
+    "finding": "Finance Operations Manager title; body calls role Assistant Controller reporting to Regional Controller.",
+    "handling": "Group under finance operations/control and preserve both labels."
+  },
+  {
+    "finding_id": "DQ-R02",
+    "source_feed_ids": [
+      "16918064"
+    ],
+    "type": "brand_body_mismatch",
+    "finding": "Prolucent title/introduction followed by Sunburst responsibilities/reporting.",
+    "handling": "Do not infer a separate verified Prolucent organization or reporting chain."
+  },
+  {
+    "finding_id": "DQ-R03",
+    "source_feed_ids": [
+      "17389206",
+      "17389207"
+    ],
+    "type": "shared_generic_description",
+    "finding": "Customer Service Team and I9 E-Verify titles share generic FSM body including homecare-related terms.",
+    "handling": "Keep title-only E-Verify signal separate; do not generalize every body duty to all staffing segments."
+  },
+  {
+    "finding_id": "DQ-R04",
+    "source_feed_ids": [
+      "17323081"
+    ],
+    "type": "missing_duties",
+    "finding": "Staffing Analyst has no substantive responsibilities in available index description.",
+    "handling": "Retain unresolved family and create no inferred task solely from title."
+  },
+  {
+    "finding_id": "DQ-R05",
+    "source_feed_ids": [
+      "13443814",
+      "13949270",
+      "14481037",
+      "15011812",
+      "15089588",
+      "15146585",
+      "15146596",
+      "15390209",
+      "15390218",
+      "15448953",
+      "15448955",
+      "15448962",
+      "15448963",
+      "15451563",
+      "15459762",
+      "15537302",
+      "15577916",
+      "15592559",
+      "15670447",
+      "16065230",
+      "16324984",
+      "16386857",
+      "16392470",
+      "16461453",
+      "16526538",
+      "16526638",
+      "16526738",
+      "16526838",
+      "16540951",
+      "16546636",
+      "16792392",
+      "16859748",
+      "16879955",
+      "16944262",
+      "16944641",
+      "17018586",
+      "17069231",
+      "17078274",
+      "17252664",
+      "17274130",
+      "17318236",
+      "17326388",
+      "17337666",
+      "17385780",
+      "17385781",
+      "17385782",
+      "17397672",
+      "17463408",
+      "17463421",
+      "17532040",
+      "17543210",
+      "17543211",
+      "17782577",
+      "17785069",
+      "17785325",
+      "17785326",
+      "17790546"
+    ],
+    "type": "templated_recruiting_descriptions",
+    "finding": "57 recruiting postings reduce to three exact duty-body variants: 47 local/education trainee-style, nine national recruiter-style, one national trainee.",
+    "handling": "Normalize into one recruiting family, preserve variants; advertisements do not show employee count."
+  },
+  {
+    "finding_id": "DQ-R06",
+    "source_feed_ids": [
+      "13964420",
+      "16790213"
+    ],
+    "type": "similar_titles_different_functions",
+    "finding": "Program Manager describes corporate improvement projects; Program Specialist describes MSP client service.",
+    "handling": "Keep separate role families R03 and R10."
+  },
+  {
+    "finding_id": "DQ-R07",
+    "source_feed_ids": [
+      "16803893",
+      "17460641"
+    ],
+    "type": "software_qualification_vs_use",
+    "finding": "Several named technologies occur in qualification requirements rather than deployment duties.",
+    "handling": "Separate candidate_qualification from actual_stated_use in SW register."
+  },
+  {
+    "finding_id": "DQ-R08",
+    "source_feed_ids": [],
+    "type": "historical_architecture_claim",
+    "finding": "eRecruit/Certiphi/Nursys software disclosure in a 2026 packet reproduces a June 2024 supplier proposal.",
+    "handling": "Use 2024 claim date; no current-live-deployment conclusion."
+  }
+]

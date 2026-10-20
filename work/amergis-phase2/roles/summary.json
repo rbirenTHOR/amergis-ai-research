@@ -1,0 +1,49 @@
+{
+  "public_postings": 79,
+  "categories": {
+    "Field": 70,
+    "Corporate": 9
+  },
+  "role_families": 20,
+  "task_count": 63,
+  "task_autonomy_counts": {
+    "B": 23,
+    "A": 26,
+    "C": 14
+  },
+  "role_family_posting_counts": {
+    "Recruiting and placement": 57,
+    "Clinical education and quality improvement": 1,
+    "Program and process improvement management": 1,
+    "Billing reimbursement and collections": 1,
+    "Workers compensation claims": 1,
+    "Internal communications and intranet": 1,
+    "MSP revenue operations leadership": 1,
+    "Financial analysis": 1,
+    "Local business development and recruiting leadership": 1,
+    "MSP program service operations": 2,
+    "Enterprise workforce solution sales": 2,
+    "Network engineering": 1,
+    "MSP implementation and training": 1,
+    "MSP compliance management": 1,
+    "Regional finance operations and control": 1,
+    "Field support and customer service management": 2,
+    "Content marketing": 1,
+    "Desktop and end-user technology support": 1,
+    "Onboarding and credentialing support": 1,
+    "Staffing analysis \u2014 duties unresolved": 1
+  },
+  "warnings": [
+    "Counts are public advertisement records, not people, labor-hours, verified vacancies, or FTE savings.",
+    "All task triggers, input/output designs, KPIs, AI agents and autonomy labels are proposed designs. Only observed duty/source fields describe public evidence.",
+    "No production database or private candidate/employee records were accessed.",
+    "No legal determination that A-class actions are permissible in every jurisdiction: deployment requires approved policies, integration permissions and applicable review.",
+    "100% AI operation is not established: clinical judgment, employment decisions, legal/claims decisions, binding contracts and financial exception authority remain human-owned in this design.",
+    "The Staffing Analyst posting has no duties, so its operations are unresolved."
+  ],
+  "classification": {
+    "A": "Rules-based execution after initial policy approval, approved inputs and integration access; discrepancies stop for review.",
+    "B": "AI prepares evidence/proposal; named human approves before consequential execution.",
+    "C": "Human leads decision/relationship/professional judgment; AI supports records, preparation and monitoring."
+  }
+}

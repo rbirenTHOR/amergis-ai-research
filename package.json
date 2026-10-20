@@ -1,0 +1,15 @@
+{
+  "name": "amergis-ai-research",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Public-source Amergis research, operating blueprint and API reconstruction map",
+  "scripts": {
+    "check": "node work/amergis-phase2/qa/check_report.cjs && node work/amergis-phase3/check_report.cjs"
+  },
+  "devDependencies": {
+    "linkedom": "0.18.13"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

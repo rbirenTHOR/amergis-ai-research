@@ -1,0 +1,605 @@
+{
+  "report_id": "amergis-phase3-ats-api-research",
+  "observed_date": "2026-10-20",
+  "scope": "Official vendor public docs and published examples only. No logins, tenant enumeration, token requests, private records, app binaries or decompilation.",
+  "principal_findings": [
+    "Erecruit WebAPI is the most directly relevant historical platform lead. It is separate from Bullhorn ATS/CRM REST.",
+    "Public docs establish substantial workflow/API capabilities but do not reveal Amergis tenant configuration, current product version, data, or MaxView integration mappings.",
+    "Access programs provide legitimate test environments; current Bullhorn terms condition AI/LLM integrations and customer-data access on explicit permissions."
+  ],
+  "platforms": [
+    {
+      "platform_id": "erecruit-webapi-v2",
+      "platform": "Erecruit by Bullhorn \u2014 WebAPI v2",
+      "relationship_to_amergis": "Historical June 2024 supplier-proposal evidence supplied by parent research names Erecruit; Amergis current release and API enablement remain unverified.",
+      "evidence_level": "Official vendor capabilities; no authenticated Amergis tenant validation",
+      "public_documentation_status": "Public guides and operation examples available. Full version-specific Swagger is hosted on each agency instance; no Amergis Swagger was accessed.",
+      "public_documentation_source_ids": [
+        "er-select",
+        "er-overview",
+        "er-docs",
+        "er-usecase",
+        "er-admin32"
+      ],
+      "published_documentation_path_template": "https://erecruit.agency.com/WebApi/swagger/ui/index#/",
+      "documentation_path_note": "Vendor-published placeholder only; not an Amergis URL and not requested against any tenant.",
+      "authentication": {
+        "mechanism": "OAuth 2.0 client_credentials; POST /t/token; bearer access token",
+        "source_ids": [
+          "er-overview",
+          "er-testing"
+        ]
+      },
+      "authorization": {
+        "model": "Registered application linked to API service account and default entity; administrator selects allowed endpoint calls. No permissions selected by default; separate registrations for multiple entities.",
+        "source_ids": [
+          "er-permissions"
+        ]
+      },
+      "object_families": {
+        "families": [
+          "Candidate",
+          "Attachment",
+          "Address",
+          "CompanyDepartment",
+          "Contact",
+          "CredentialingRequest",
+          "Requirement",
+          "Onboarding",
+          "Shift",
+          "Vendor"
+        ],
+        "source_ids": [
+          "er-usecase",
+          "er-admin32"
+        ]
+      },
+      "methods": {
+        "documented": [
+          "GET",
+          "POST",
+          "PUT",
+          "PATCH"
+        ],
+        "note": "Availability is operation-specific and version-dependent. Published examples do not establish all CRUD support.",
+        "source_ids": [
+          "er-docs",
+          "er-admin32"
+        ]
+      },
+      "webhooks": {
+        "status": "Workflow v2 Call Endpoint action is vendor-documented for external notifications. Delivery/retry/security contract and Amergis configuration not verified.",
+        "source_ids": [
+          "er-legacy"
+        ]
+      },
+      "schema_reconstruction_value": "High for defining an independent staffing domain and adapter contract; tenant Swagger, configuration and approved sample payloads are necessary for exact compatibility.",
+      "exact_access_needed": [
+        "Agency/vender-approved test tenant and current build number",
+        "Version-matched Swagger export supplied or linked by administrator",
+        "Registered external application and API-role service account",
+        "Client ID and client secret delivered through an approved secret store",
+        "Default entity plus explicit permission list for required endpoints",
+        "Synthetic examples and configuration: statuses, custom fields, requirement definitions, workflows, rate logic",
+        "Confirmation from vendor that intended AI integration is permitted under applicable agreement"
+      ],
+      "uncertain": [
+        "Current Amergis Erecruit deployment/version and migration status",
+        "MaxView-to-Erecruit integration contract and field mappings",
+        "Complete current operation list, custom fields, tenant defaults and rate limits",
+        "Public documentation differs on token lifetime; consume actual expires_in in an authorized test environment instead of hard-coding 10 or 20 minutes"
+      ],
+      "next_step": "Request an official demo/test tenant or agency-provided documentation export. Continue independent design from public domain concepts."
+    },
+    {
+      "platform_id": "erecruit-restservices-v1",
+      "platform": "Erecruit \u2014 legacy RESTServices API v1",
+      "relationship_to_amergis": "Vendor platform family historically named by Amergis; no evidence Amergis uses legacy v1.",
+      "evidence_level": "Legacy vendor reference only",
+      "public_documentation_status": "Public overview and call catalog; release-specific documentation is tenant-hosted.",
+      "public_documentation_source_ids": [
+        "er-legacy",
+        "er-legacycalls",
+        "er-select"
+      ],
+      "published_documentation_path_template": "https://erecruit.agency.com/RESTServices/Documentation.txt",
+      "documentation_path_note": "Derived from the explicit vendor documentation location; placeholder only, never requested against an Amergis tenant.",
+      "authentication": {
+        "mechanism": "API-role user credentials and agency entity context; exact legacy authentication call not investigated.",
+        "source_ids": [
+          "er-legacy"
+        ]
+      },
+      "authorization": {
+        "model": "API user access through the application business layer; agency configuration applies.",
+        "source_ids": [
+          "er-legacy"
+        ]
+      },
+      "object_families": {
+        "families": [
+          "Company",
+          "Contact",
+          "Position",
+          "Match",
+          "Candidate",
+          "CandidateApplication",
+          "Recruiter",
+          "Timesheet",
+          "Agreement",
+          "Invoice",
+          "Requirement",
+          "Vendor",
+          "Shift"
+        ],
+        "source_ids": [
+          "er-legacy"
+        ]
+      },
+      "methods": {
+        "documented": [
+          "GET",
+          "POST"
+        ],
+        "payload": "XML",
+        "source_ids": [
+          "er-legacy"
+        ]
+      },
+      "webhooks": {
+        "status": "Workflow v2 Call Endpoint action can notify external services.",
+        "source_ids": [
+          "er-legacy"
+        ]
+      },
+      "schema_reconstruction_value": "Useful historical vocabulary and object relationships; not a default implementation target.",
+      "exact_access_needed": [
+        "Confirm whether legacy support is relevant",
+        "Agency-approved version-specific documentation and test instance",
+        "Provisioned API user and authorized data scope"
+      ],
+      "uncertain": [
+        "Documentation labels legacy availability as 2.5-and-earlier on some pages and 3.0-and-earlier on overview; administrator must resolve actual release",
+        "No current Amergis usage established"
+      ],
+      "next_step": "Keep as historical mapping reference unless an authorized owner confirms a legacy dependency."
+    },
+    {
+      "platform_id": "bullhorn-ats-rest",
+      "platform": "Bullhorn ATS/CRM REST API",
+      "relationship_to_amergis": "MaxView Jobs App Store Bullhorn attribution is a vendor clue from parent research; it does not establish Amergis use of Bullhorn ATS/CRM or this API.",
+      "evidence_level": "Official vendor API; Amergis deployment unconfirmed",
+      "public_documentation_status": "Public API/Entity references and OAuth guide. Customer data and sandbox require vendor/customer authorization.",
+      "public_documentation_source_ids": [
+        "bh-rest",
+        "bh-entities",
+        "bh-oauth",
+        "bh-access"
+      ],
+      "published_documentation_url": "https://bullhorn.github.io/rest-api-docs/",
+      "authentication": {
+        "mechanism": "OAuth authorization-code flow; access token exchanged through REST login for BhRestToken and a tenant/data-center-specific base URL. Refresh-token support documented.",
+        "source_ids": [
+          "bh-start",
+          "bh-oauth"
+        ]
+      },
+      "authorization": {
+        "model": "User entitlements govern create/read/update/delete at owned, department and corporate levels. Tenant metadata describes configured fields.",
+        "source_ids": [
+          "bh-rest"
+        ]
+      },
+      "object_families": {
+        "families": [
+          "Candidate",
+          "ClientCorporation",
+          "ClientContact",
+          "JobOrder",
+          "JobSubmission",
+          "Placement",
+          "Appointment",
+          "Note",
+          "Task",
+          "CandidateCertification",
+          "CandidateEducation",
+          "CandidateWorkHistory",
+          "PlacementRateCard",
+          "JobOrderRateCard",
+          "CorporateUser",
+          "CustomObject"
+        ],
+        "source_ids": [
+          "bh-entities"
+        ]
+      },
+      "methods": {
+        "documented": [
+          "GET entity/search/query/meta",
+          "PUT entity creation",
+          "POST entity updates",
+          "DELETE supported entity operations"
+        ],
+        "source_ids": [
+          "bh-rest"
+        ]
+      },
+      "webhooks": {
+        "status": "Documented event subscriptions are polled queues, not automatic push callbacks. Create/update/delete events identify affected entity and changed properties; consumer then reads required fields. Consumption purges returned events from the queue; this GET has stateful effects. Published limits: 15 subscriptions/database, 100 events/request, seven-day event expiry.",
+        "source_ids": [
+          "bh-events"
+        ]
+      },
+      "schema_reconstruction_value": "High generic ATS schema reference and potential alternative integration target. Its names/authentication differ from Erecruit; do not connect by analogy.",
+      "exact_access_needed": [
+        "Confirm this product is actually involved before designing its connector",
+        "Vendor API registration and application OAuth key",
+        "Customer-authorized API user with scoped entitlements and approved redirect URI",
+        "Paid API program contract/security review for vendor sandbox under published program",
+        "Explicit vendor permission for proposed third-party AI/LLM use; customer written instruction identifying provider and permitted data",
+        "Synthetic test data plus tenant meta export, field mappings and enabled modules"
+      ],
+      "implementation_recommendation": "Use a dedicated integration subscription, durable event checkpoint and idempotent downstream processing; never consume another integration\u2019s queue during inspection.",
+      "uncertain": [
+        "Amergis deployment of Bullhorn ATS/CRM REST",
+        "Exact partner fees and agreement applicability",
+        "Amergis custom fields, license modules, business rules and record population",
+        "Whether vendor approves the proposed intended use"
+      ],
+      "next_step": "Use public object definitions for comparison; obtain a suitable product demo and approved sandbox if this platform is selected."
+    }
+  ],
+  "documented_endpoint_examples": [
+    {
+      "endpoint_id": "er-webapi-doc",
+      "platform_id": "erecruit-webapi-v2",
+      "method": "GET",
+      "published_path_template": "/WebApi/swagger/ui/index#/",
+      "purpose": "Version-specific interactive documentation",
+      "source_id": "er-docs",
+      "status": "DOCUMENTATION_ONLY_NOT_EXECUTED",
+      "note": "Relative/pattern path from public vendor documentation; production base URL and release-specific contract not verified."
+    },
+    {
+      "endpoint_id": "er-token",
+      "platform_id": "erecruit-webapi-v2",
+      "method": "POST",
+      "published_path_template": "/t/token",
+      "purpose": "Client-credentials token grant",
+      "source_id": "er-overview",
+      "status": "DOCUMENTATION_ONLY_NOT_EXECUTED",
+      "note": "Relative/pattern path from public vendor documentation; production base URL and release-specific contract not verified."
+    },
+    {
+      "endpoint_id": "er-candidate-dup",
+      "platform_id": "erecruit-webapi-v2",
+      "method": "POST",
+      "published_path_template": "/webapi/candidate/duplicate",
+      "purpose": "Duplicate-check step",
+      "source_id": "er-usecase",
+      "status": "DOCUMENTATION_ONLY_NOT_EXECUTED",
+      "note": "Relative/pattern path from public vendor documentation; production base URL and release-specific contract not verified."
+    },
+    {
+      "endpoint_id": "er-candidate-create",
+      "platform_id": "erecruit-webapi-v2",
+      "method": "POST",
+      "published_path_template": "/webapi/candidate",
+      "purpose": "Create candidate",
+      "source_id": "er-usecase",
+      "status": "DOCUMENTATION_ONLY_NOT_EXECUTED",
+      "note": "Relative/pattern path from public vendor documentation; production base URL and release-specific contract not verified."
+    },
+    {
+      "endpoint_id": "er-candidate-resume",
+      "platform_id": "erecruit-webapi-v2",
+      "method": "POST",
+      "published_path_template": "/webapi/candidate/resume/file",
+      "purpose": "Create candidate with resume",
+      "source_id": "er-usecase",
+      "status": "DOCUMENTATION_ONLY_NOT_EXECUTED",
+      "note": "Relative/pattern path from public vendor documentation; production base URL and release-specific contract not verified."
+    },
+    {
+      "endpoint_id": "er-onboarding",
+      "platform_id": "erecruit-webapi-v2",
+      "method": "POST",
+      "published_path_template": "/Onboarding/Initiate/{aboutType}/{referenceID}",
+      "purpose": "Initiate candidate or match onboarding",
+      "source_id": "er-admin32",
+      "status": "DOCUMENTATION_ONLY_NOT_EXECUTED",
+      "note": "Relative/pattern path from public vendor documentation; production base URL and release-specific contract not verified."
+    },
+    {
+      "endpoint_id": "er-req-progress",
+      "platform_id": "erecruit-webapi-v2",
+      "method": "GET",
+      "published_path_template": "/CredentialingRequest/Progress/{CredentialingRequestId}",
+      "purpose": "Read progress",
+      "source_id": "er-admin32",
+      "status": "DOCUMENTATION_ONLY_NOT_EXECUTED",
+      "note": "Relative/pattern path from public vendor documentation; production base URL and release-specific contract not verified."
+    },
+    {
+      "endpoint_id": "er-requirement-filter",
+      "platform_id": "erecruit-webapi-v2",
+      "method": "POST",
+      "published_path_template": "/Requirement/Filter",
+      "purpose": "Filter requirements",
+      "source_id": "er-admin32",
+      "status": "DOCUMENTATION_ONLY_NOT_EXECUTED",
+      "note": "Relative/pattern path from public vendor documentation; production base URL and release-specific contract not verified."
+    },
+    {
+      "endpoint_id": "er-shift-read",
+      "platform_id": "erecruit-webapi-v2",
+      "method": "GET",
+      "published_path_template": "/Shift/{aboutType}/{referenceID}",
+      "purpose": "Read shifts",
+      "source_id": "er-admin32",
+      "status": "DOCUMENTATION_ONLY_NOT_EXECUTED",
+      "note": "Relative/pattern path from public vendor documentation; production base URL and release-specific contract not verified."
+    },
+    {
+      "endpoint_id": "er-shift-create",
+      "platform_id": "erecruit-webapi-v2",
+      "method": "POST",
+      "published_path_template": "/Shift",
+      "purpose": "Create shift",
+      "source_id": "er-admin32",
+      "status": "DOCUMENTATION_ONLY_NOT_EXECUTED",
+      "note": "Relative/pattern path from public vendor documentation; production base URL and release-specific contract not verified."
+    },
+    {
+      "endpoint_id": "bh-meta",
+      "platform_id": "bullhorn-ats-rest",
+      "method": "GET",
+      "published_path_template": "/meta/{entityType}?fields=*",
+      "purpose": "Read configured entity metadata",
+      "source_id": "bh-rest",
+      "status": "DOCUMENTATION_ONLY_NOT_EXECUTED",
+      "note": "Relative/pattern path from public vendor documentation; production base URL and release-specific contract not verified."
+    },
+    {
+      "endpoint_id": "bh-entity",
+      "platform_id": "bullhorn-ats-rest",
+      "method": "GET",
+      "published_path_template": "/entity/{entityType}/{entityId}?fields={fieldList}",
+      "purpose": "Read selected entity fields",
+      "source_id": "bh-rest",
+      "status": "DOCUMENTATION_ONLY_NOT_EXECUTED",
+      "note": "Relative/pattern path from public vendor documentation; production base URL and release-specific contract not verified."
+    },
+    {
+      "endpoint_id": "bh-entitlements",
+      "platform_id": "bullhorn-ats-rest",
+      "method": "GET",
+      "published_path_template": "/entitlements/Candidate",
+      "purpose": "Read current user Candidate entitlements",
+      "source_id": "bh-rest",
+      "status": "DOCUMENTATION_ONLY_NOT_EXECUTED",
+      "note": "Relative/pattern path from public vendor documentation; production base URL and release-specific contract not verified."
+    },
+    {
+      "endpoint_id": "bh-event-read",
+      "platform_id": "bullhorn-ats-rest",
+      "method": "GET",
+      "published_path_template": "/event/subscription/{subscriptionId}?maxEvents=100",
+      "purpose": "Consume change events",
+      "source_id": "bh-events",
+      "status": "DOCUMENTATION_ONLY_NOT_EXECUTED",
+      "note": "Relative/pattern path from public vendor documentation; production base URL and release-specific contract not verified."
+    },
+    {
+      "endpoint_id": "bh-event-create",
+      "platform_id": "bullhorn-ats-rest",
+      "method": "PUT",
+      "published_path_template": "/event/subscription/{subscriptionId}?type=entity&names=Candidate,Placement&eventTypes=INSERTED,UPDATED",
+      "purpose": "Register event queue",
+      "source_id": "bh-events",
+      "status": "DOCUMENTATION_ONLY_NOT_EXECUTED",
+      "note": "Relative/pattern path from public vendor documentation; production base URL and release-specific contract not verified."
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "er-select",
+      "title": "Selecting API",
+      "url": "https://kb.bullhorn.com/erecruit/Content/Erecruit/Topics/selectingAPI.htm",
+      "published_date": null,
+      "observed_date": "2026-10-20",
+      "source_type": "official_vendor_documentation",
+      "publicly_readable": true,
+      "relevance": "Erecruit v2 applies to 3.1+; version determines integration interface."
+    },
+    {
+      "source_id": "er-overview",
+      "title": "WebAPI Overview",
+      "url": "https://kb.bullhorn.com/erecruit/Content/Erecruit/Topics/webAPIOverview.htm",
+      "published_date": null,
+      "observed_date": "2026-10-20",
+      "source_type": "official_vendor_documentation",
+      "publicly_readable": true,
+      "relevance": "Documents client-credentials token flow, tenant Swagger and registration."
+    },
+    {
+      "source_id": "er-permissions",
+      "title": "Manage API Permissions",
+      "url": "https://kb.bullhorn.com/erecruit/Content/Erecruit/Topics/manageApiPermissions.htm",
+      "published_date": null,
+      "observed_date": "2026-10-20",
+      "source_type": "official_vendor_documentation",
+      "publicly_readable": true,
+      "relevance": "Documents service account, default entity and per-application endpoint permissions."
+    },
+    {
+      "source_id": "er-docs",
+      "title": "WebAPI Documentation",
+      "url": "https://kb.bullhorn.com/erecruit/Content/Erecruit/Topics/WebAPIDocumentation.html",
+      "published_date": null,
+      "observed_date": "2026-10-20",
+      "source_type": "official_vendor_documentation",
+      "publicly_readable": true,
+      "relevance": "Swagger exposes operation grouping, parameter types, response descriptions."
+    },
+    {
+      "source_id": "er-testing",
+      "title": "WebAPI Testing",
+      "url": "https://kb.bullhorn.com/erecruit/Content/Erecruit/Topics/WebAPITesting.html",
+      "published_date": null,
+      "observed_date": "2026-10-20",
+      "source_type": "official_vendor_documentation",
+      "publicly_readable": true,
+      "relevance": "Uses an agency test environment and registered external application."
+    },
+    {
+      "source_id": "er-usecase",
+      "title": "API v2 Use Cases",
+      "url": "https://kb.bullhorn.com/erecruit/Content/Erecruit/Topics/apiV2UseCases.htm",
+      "published_date": null,
+      "observed_date": "2026-10-20",
+      "source_type": "official_vendor_documentation",
+      "publicly_readable": true,
+      "relevance": "Published candidate-creation sequence: duplicate check, candidate creation, resume parsing and attachment."
+    },
+    {
+      "source_id": "er-admin32",
+      "title": "New Administration Features",
+      "url": "https://kb.bullhorn.com/erecruit/Content/Erecruit/Topics/NewAdministrationFeatures.html",
+      "published_date": null,
+      "observed_date": "2026-10-20",
+      "source_type": "official_vendor_documentation",
+      "publicly_readable": true,
+      "relevance": "Version 3.2 additions expose credentialing, requirements, shifts, onboarding and vendor functions."
+    },
+    {
+      "source_id": "er-legacy",
+      "title": "REST Services API Overview",
+      "url": "https://kb.bullhorn.com/erecruit/Content/Erecruit/Topics/rESTServicesAPIOverview.htm",
+      "published_date": null,
+      "observed_date": "2026-10-20",
+      "source_type": "official_vendor_documentation",
+      "publicly_readable": true,
+      "relevance": "Legacy XML API, entity terminology and workflow endpoint notifications."
+    },
+    {
+      "source_id": "er-legacycalls",
+      "title": "RESTServices API Calls (API v1)",
+      "url": "https://kb.bullhorn.com/erecruit/Content/Erecruit/Topics/RESTServicesAPICalls(APIv1).html",
+      "published_date": null,
+      "observed_date": "2026-10-20",
+      "source_type": "official_vendor_documentation",
+      "publicly_readable": true,
+      "relevance": "Legacy object-call catalog."
+    },
+    {
+      "source_id": "bh-start",
+      "title": "Get Started with the Bullhorn REST API",
+      "url": "https://bullhorn.github.io/Getting-Started-with-REST/",
+      "published_date": "2016-02-18",
+      "observed_date": "2026-10-20",
+      "source_type": "official_vendor_documentation",
+      "publicly_readable": true,
+      "relevance": "Registration, OAuth keys, session login and data-center routing."
+    },
+    {
+      "source_id": "bh-oauth",
+      "title": "Bullhorn OAuth Authorization",
+      "url": "https://bullhorn.github.io/docs/oauth/",
+      "published_date": null,
+      "observed_date": "2026-10-20",
+      "source_type": "official_vendor_documentation",
+      "publicly_readable": true,
+      "relevance": "Authorization-code and refresh-token flows."
+    },
+    {
+      "source_id": "bh-rest",
+      "title": "API Reference",
+      "url": "https://bullhorn.github.io/rest-api-docs/",
+      "published_date": null,
+      "observed_date": "2026-10-20",
+      "source_type": "official_vendor_documentation",
+      "publicly_readable": true,
+      "relevance": "Entity operations, metadata and entitlements."
+    },
+    {
+      "source_id": "bh-entities",
+      "title": "Entity Reference",
+      "url": "https://bullhorn.github.io/rest-api-docs/entityref.html",
+      "published_date": null,
+      "observed_date": "2026-10-20",
+      "source_type": "official_vendor_documentation",
+      "publicly_readable": true,
+      "relevance": "Published generic entity properties and associations."
+    },
+    {
+      "source_id": "bh-events",
+      "title": "Bullhorn REST API event subscriptions",
+      "url": "https://bullhorn.github.io/REST-API-Event-Subscriptions/",
+      "published_date": "2025-08-22",
+      "observed_date": "2026-10-20",
+      "source_type": "official_vendor_documentation",
+      "publicly_readable": true,
+      "relevance": "Subscription events are consumed by polling rather than documented push webhooks."
+    },
+    {
+      "source_id": "bh-access",
+      "title": "Bullhorn API Access FAQs",
+      "url": "https://www.bullhorn.com/bullhorn-api-access-faqs/",
+      "published_date": null,
+      "observed_date": "2026-10-20",
+      "source_type": "official_vendor_documentation",
+      "publicly_readable": true,
+      "relevance": "Paid API access program, sandbox and approval prerequisites."
+    },
+    {
+      "source_id": "bh-developer",
+      "title": "Developer Program Guide",
+      "url": "https://www.bullhorn.com/partner-program-guide/developer-program-guide-2/",
+      "published_date": null,
+      "observed_date": "2026-10-20",
+      "source_type": "official_vendor_documentation",
+      "publicly_readable": true,
+      "relevance": "Developer-specific test server, application key and integration validation requirements."
+    },
+    {
+      "source_id": "bh-policy",
+      "title": "API Fair Use Policy",
+      "url": "https://bullhorn.github.io/api-fair-use-policy/",
+      "published_date": "2025-12-17",
+      "observed_date": "2026-10-20",
+      "source_type": "official_vendor_documentation",
+      "publicly_readable": true,
+      "relevance": "Conditions include explicit AI/LLM permission and customer instruction for database access."
+    }
+  ],
+  "access_conditions": [
+    {
+      "source_id": "bh-policy",
+      "summary": "Published policy requires customer-specific written instruction for a provider accessing customer data and explicit Bullhorn permission for third-party AI/LLM API use. It also restricts competing uses, unauthorized model/MCP transfers, excess extraction and API/service source-code reverse engineering. Other agreements may override conflicting terms.",
+      "implication": "Assess and obtain vendor permission before proposing a live AI connector. Public-documentation analysis is distinct from connecting an AI to the API."
+    },
+    {
+      "source_id": "bh-access",
+      "summary": "API Access Program describes an annual fee, sandbox, technical resources and 200,000 monthly calls, with overages. Sandbox access follows contract signature, security assessment and cleared invoice. Published FAQ disallows uncontracted vendor access through a customer key.",
+      "implication": "A sandbox request is a commercial onboarding step; no registration, purchase or request was submitted."
+    }
+  ],
+  "known_documentation_caveats": [
+    "Erecruit public pages disagree on legacy release boundaries and token duration; use the licensed current version specification.",
+    "Published 3.2 Erecruit capabilities are historical generic features, not evidence all are enabled at Amergis.",
+    "Do not confuse unrelated erecruit.io search results with Erecruit by Bullhorn; none were used.",
+    "Do not infer Bullhorn Recruitment Cloud/Salesforce or Automation APIs from shared Bullhorn branding."
+  ],
+  "reconstruction_request_pack": [
+    "Product/version/module inventory",
+    "Current Swagger or OpenAPI/API-reference export",
+    "Synthetic candidate-to-invoice sample journey",
+    "Field dictionary, custom fields, enumerations and identifier mappings",
+    "Workflow-state transitions, approval rules and exception cases",
+    "Service-account entitlements and approved endpoint list",
+    "Event schema, retries, replay, idempotency and audit behavior",
+    "Sandbox access under approved AI use and customer-data scope"
+  ],
+  "evidence_files_note": "Raw documentation HTML snapshots and HTTP fetch manifest saved only under work/amergis-phase3/ats for research traceability; final deliverable should present concise synthesized findings."
+}

@@ -1,0 +1,8 @@
+{
+  "as_of": "2026-10-20",
+  "algorithm": "sha256",
+  "files": {
+    "public-jobs-feed.json": "3fc1ea2423dd23fd5ad731b5543ff5735fd85c0419c447496315fc1b5061377a",
+    "public-jobs-search.json": "bb15c7d63586272db0f1a2e3c7f8b4d5770a8fa90238e4e87c51ed884941beac"
+  }
+}

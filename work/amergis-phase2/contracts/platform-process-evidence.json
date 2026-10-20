@@ -1,0 +1,98 @@
+[
+  {
+    "evidence_id": "PE01",
+    "topic": "ATS/CRM",
+    "fact": "Amergis names eRecruit as ATS and internal client management, integrated with MaxView.",
+    "source_url": "https://eldorado.legistar.com/View.ashx?M=F&ID=15807895&GUID=3997709B-28F6-4004-B8A8-F3B74414DF4B#page=30",
+    "pdf_page": 30,
+    "document_context": "June 13, 2024 Sourcewell supplier proposal reproduced in executed August 2026 El Dorado packet",
+    "claim_date": "2024-06-13",
+    "retrieved_as_of": "2026-10-20",
+    "evidence_status": "historical_supplier_self_description",
+    "limits": "Direct supplier statement, not independent verification of current system architecture."
+  },
+  {
+    "evidence_id": "PE02",
+    "topic": "ATS entities",
+    "fact": "eRecruit description includes candidate requirements/preferences, placements, client positions, solicitations and billed hours.",
+    "source_url": "https://eldorado.legistar.com/View.ashx?M=F&ID=15807895&GUID=3997709B-28F6-4004-B8A8-F3B74414DF4B#page=30",
+    "pdf_page": 30,
+    "document_context": "June 13, 2024 Sourcewell supplier proposal reproduced in executed August 2026 El Dorado packet",
+    "claim_date": "2024-06-13",
+    "retrieved_as_of": "2026-10-20",
+    "evidence_status": "historical_supplier_self_description",
+    "limits": "Functional entities only; no schema, records, API or deployment observed."
+  },
+  {
+    "evidence_id": "PE03",
+    "topic": "Background and health screening",
+    "fact": "Supplier names Certiphi for background, exclusion and occupational health checks.",
+    "source_url": "https://eldorado.legistar.com/View.ashx?M=F&ID=15807895&GUID=3997709B-28F6-4004-B8A8-F3B74414DF4B#page=30",
+    "pdf_page": 30,
+    "document_context": "June 13, 2024 Sourcewell supplier proposal reproduced in executed August 2026 El Dorado packet",
+    "claim_date": "2024-06-13",
+    "retrieved_as_of": "2026-10-20",
+    "evidence_status": "historical_supplier_self_description",
+    "limits": "Usage described in 2024; customer-specific scope and live integration unverified."
+  },
+  {
+    "evidence_id": "PE04",
+    "topic": "License monitoring",
+    "fact": "Supplier names Nursys eNotify for licensure-expiry alerts.",
+    "source_url": "https://eldorado.legistar.com/View.ashx?M=F&ID=15807895&GUID=3997709B-28F6-4004-B8A8-F3B74414DF4B#page=30",
+    "pdf_page": 30,
+    "document_context": "June 13, 2024 Sourcewell supplier proposal reproduced in executed August 2026 El Dorado packet",
+    "claim_date": "2024-06-13",
+    "retrieved_as_of": "2026-10-20",
+    "evidence_status": "historical_supplier_self_description",
+    "limits": "Scope and current deployment unverified; not a complete credential vendor list."
+  },
+  {
+    "evidence_id": "PE05",
+    "topic": "MSP roles",
+    "fact": "Program team sources/contracts suppliers, manages onboarding evidence/status and validates electronic timecards.",
+    "source_url": "https://eldorado.legistar.com/View.ashx?M=F&ID=15807895&GUID=3997709B-28F6-4004-B8A8-F3B74414DF4B#page=29",
+    "pdf_page": 29,
+    "document_context": "June 13, 2024 Sourcewell supplier proposal reproduced in executed August 2026 El Dorado packet",
+    "claim_date": "2024-06-13",
+    "retrieved_as_of": "2026-10-20",
+    "evidence_status": "historical_supplier_self_description",
+    "limits": "Proposed service model; actual client process varies."
+  },
+  {
+    "evidence_id": "PE06",
+    "topic": "Time and expense handoffs",
+    "fact": "Timesheets verified by worker, local account manager and two Time & Expense specialists; billing checks rates/adjustments; finance handles cooperative fees.",
+    "source_url": "https://eldorado.legistar.com/View.ashx?M=F&ID=15807895&GUID=3997709B-28F6-4004-B8A8-F3B74414DF4B#page=39",
+    "pdf_page": 39,
+    "document_context": "June 13, 2024 Sourcewell supplier proposal reproduced in executed August 2026 El Dorado packet",
+    "claim_date": "2024-06-13",
+    "retrieved_as_of": "2026-10-20",
+    "evidence_status": "historical_supplier_self_description",
+    "limits": "Supplier description of segregation and audit process, not independently observed execution."
+  },
+  {
+    "evidence_id": "PE07",
+    "topic": "Historical candidate pool claim",
+    "fact": "Supplier claimed over 2 million candidates in its eRecruit system.",
+    "source_url": "https://eldorado.legistar.com/View.ashx?M=F&ID=15807895&GUID=3997709B-28F6-4004-B8A8-F3B74414DF4B#page=30",
+    "pdf_page": 30,
+    "document_context": "June 13, 2024 Sourcewell supplier proposal reproduced in executed August 2026 El Dorado packet",
+    "claim_date": "2024-06-13",
+    "retrieved_as_of": "2026-10-20",
+    "evidence_status": "historical_supplier_self_description",
+    "limits": "Do not call this a current, unique, active, reachable or verified candidate count; no candidate records accessed."
+  },
+  {
+    "evidence_id": "PE08",
+    "topic": "Cooperative fee exception",
+    "fact": "Proposal says 1.5% administrative fee paid annually; master p7 requires quarterly remittance within 45 days.",
+    "source_url": "https://eldorado.legistar.com/View.ashx?M=F&ID=15807895&GUID=3997709B-28F6-4004-B8A8-F3B74414DF4B#page=39",
+    "pdf_page": 39,
+    "document_context": "June 13, 2024 Sourcewell supplier proposal reproduced in executed August 2026 El Dorado packet",
+    "claim_date": "2024-06-13",
+    "retrieved_as_of": "2026-10-20",
+    "evidence_status": "historical_supplier_self_description",
+    "limits": "Retain conflict for contract hierarchy review; do not silently choose proposal timing."
+  }
+]

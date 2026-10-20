@@ -1,0 +1,683 @@
+{
+  "title": "Amergis public-source intelligence: initial assessment",
+  "as_of_date": "2026-10-20",
+  "working_scope": "AI-operated staffing administration with human healthcare and education professionals delivering services; zero-human business feasibility not established.",
+  "extraction_summary": {
+    "as_of": "2026-10-20T17:19:04.252484+00:00",
+    "source_url": "https://www.amergis.com/wp-content/uploads/wmx-jobs/jobs.json?v=1792515708",
+    "record_count": 2755,
+    "unique_feed_ids": 2755,
+    "unique_position_ids": 2755,
+    "unique_urls": 2755,
+    "nulls": {
+      "source_feed_id": 0,
+      "position_id_from_card": 0,
+      "url_slug_id": 0,
+      "title": 0,
+      "state": 0,
+      "location": 0,
+      "job_type": 0,
+      "job_category": 0,
+      "job_setting": 0,
+      "advertised_pay_raw": 0,
+      "duration_raw": 0,
+      "url": 0
+    },
+    "categories": {
+      "Field": 70,
+      "Corporate": 9,
+      "Nursing": 1567,
+      "Allied": 540,
+      "Aide": 345,
+      "Advanced Practitioner": 92,
+      "Physician": 89,
+      "Admin": 37,
+      "Revenue Cycle": 6
+    },
+    "types": {
+      "Full Time": 78,
+      "Travel": 1799,
+      "Contract - Full Time": 673,
+      "Per Diem": 53,
+      "Contract - Part Time": 152
+    },
+    "settings": {
+      "Corporate/Field Office": 78,
+      "Healthcare Facilities": 2419,
+      "Corrections": 257,
+      "Remote": 1
+    },
+    "states": {
+      "CO": 60,
+      "MD": 140,
+      "VA": 69,
+      "MI": 48,
+      "MN": 46,
+      "IL": 95,
+      "WA": 103,
+      "TX": 85,
+      "FL": 56,
+      "NH": 90,
+      "OR": 78,
+      "IN": 62,
+      "AZ": 11,
+      "MA": 151,
+      "RI": 35,
+      "OH": 86,
+      "NC": 93,
+      "ME": 39,
+      "WV": 44,
+      "TN": 53,
+      "SC": 39,
+      "PA": 159,
+      "MO": 21,
+      "CA": 297,
+      "ID": 22,
+      "CT": 66,
+      "NY": 116,
+      "IA": 117,
+      "AR": 17,
+      "WI": 74,
+      "GA": 44,
+      "KS": 30,
+      "OK": 42,
+      "DE": 16,
+      "MS": 7,
+      "NE": 54,
+      "MT": 16,
+      "KY": 50,
+      "AK": 7,
+      "NM": 36,
+      "SD": 1,
+      "LA": 5,
+      "AL": 9,
+      "WY": 6,
+      "DC": 30,
+      "NV": 7,
+      "NJ": 10,
+      "VT": 13
+    },
+    "feed_key_sets": {
+      "html|id|job_category|job_setting|job_type|state": 2755
+    }
+  },
+  "public_pricing_summary": {
+    "sourceUrl": "https://files.sourcewell.org/public/Shared%20Documents/Solicitations/10924/00006717/Additional%20Documents/Sourcewell%20Price%20List%20May%202026.xlsx",
+    "inspectedAt": "2026-10-20T17:20:28.001Z",
+    "bytes": 56664,
+    "sha256": "62a0017f4c8b4e99403a6c641721a1d3f5c9560a66d639beaf374f3122613733",
+    "healthcare": {
+      "range": "A1:I150",
+      "headerRow": 2,
+      "dataRange": "A3:I150",
+      "dataRows": 148,
+      "fieldColumns": {
+        "itemNumber": "A",
+        "laborCategory": "B",
+        "serviceDescription": "E",
+        "unitType": "H",
+        "sourcewellNotToExceedPrice": "I"
+      },
+      "categoryCounts": {
+        "Administative Services": 3,
+        "Ancillary Services": 48,
+        "Behavioral Health Services": 8,
+        "Nursing Services": 14,
+        "Physician Services": 38,
+        "Revenue Cycle Services": 10,
+        "School Staffing Services": 26,
+        "Ancillary Services/School Staffing Services": 1
+      },
+      "allPricesNumeric": true,
+      "allUnitsPerHour": true,
+      "examples": [
+        {
+          "row": 68,
+          "itemNumber": 66,
+          "laborCategory": "Registered Nurses \u2010 Med/Surg",
+          "serviceDescription": "Nursing Services",
+          "unitType": "Per Hour",
+          "sourcewellNotToExceedPrice": 115
+        },
+        {
+          "row": 140,
+          "itemNumber": 138,
+          "laborCategory": "Speech Language Pathologist",
+          "serviceDescription": "School Staffing Services",
+          "unitType": "Per Hour",
+          "sourcewellNotToExceedPrice": 125
+        }
+      ]
+    },
+    "sunburst": {
+      "range": "A1:F6",
+      "headerRow": 3,
+      "dataRows": 3,
+      "values": [
+        [
+          "Annual\u00a0Spend Projection\u00a0\u2010\u00a0Client",
+          null,
+          "Potential\u00a0MSP Fee\u00a0%",
+          "Participating Entity\u00a0Rebate (Included\u00a0in 5%\u00a0MSP\u00a0Fee)",
+          null,
+          "Avg.\u00a0VMS\nTechnology\u00a0Fee (Included\u00a0in\u00a05% MSP\u00a0Fee)"
+        ],
+        [
+          "< $1M",
+          null,
+          "4.00% \u2010 5.00%",
+          0,
+          null,
+          0.01
+        ],
+        [
+          "$1M \u2010 $4,999,999",
+          null,
+          "3.50% \u2010 5.00%",
+          0.005,
+          null,
+          0.01
+        ],
+        [
+          "> $5M",
+          null,
+          "3.00% \u2010 5.00%",
+          0.005,
+          null,
+          0.01
+        ]
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Healthcare job board",
+      "url": "https://www.amergis.com/jobs/",
+      "evidence_type": "Observed HTML",
+      "evidence_date": "2026-10-20",
+      "limits": "Displayed 2,751 results. Includes internal jobs; not a count of placements."
+    },
+    {
+      "id": "S02",
+      "title": "Public job-card feed",
+      "url": "https://www.amergis.com/wp-content/uploads/wmx-jobs/jobs.json?v=1792515708",
+      "evidence_type": "Retrieved JSON",
+      "evidence_date": "2026-10-20",
+      "limits": "2,755 records. Referenced directly by the public jobs page."
+    },
+    {
+      "id": "S03",
+      "title": "Public job search index",
+      "url": "https://www.amergis.com/wp-content/uploads/wmx-jobs/jobs-search.json?v=1792515709",
+      "evidence_type": "Retrieved JSON",
+      "evidence_date": "2026-10-20",
+      "limits": "2,755 keys, all matched to the job-card feed. Lowercased searchable descriptions; not an internal API."
+    },
+    {
+      "id": "S04",
+      "title": "Education job board",
+      "url": "https://www.amergiseducation.com/jobs/",
+      "evidence_type": "Observed HTML",
+      "evidence_date": "2026-10-20",
+      "limits": "Displayed 2,764 results. Full education catalog not extracted or deduplicated against healthcare."
+    },
+    {
+      "id": "S05",
+      "title": "Locations",
+      "url": "https://www.amergis.com/about/locations/",
+      "evidence_type": "Observed HTML",
+      "evidence_date": "2026-10-20",
+      "limits": "Office records, cities, states and published business phone numbers. Page has Load More; not assumed complete."
+    },
+    {
+      "id": "S06",
+      "title": "MaxView",
+      "url": "https://www.amergis.com/workforce-solutions/maxview/",
+      "evidence_type": "Product claim",
+      "evidence_date": "",
+      "limits": "Public feature descriptions; authenticated business records not accessed."
+    },
+    {
+      "id": "S07",
+      "title": "MaxView feature guide",
+      "url": "https://www.amergis.com/resources/company-news/features-of-the-maxview-workforce-management-dashboard/",
+      "evidence_type": "Historical product guide",
+      "evidence_date": "2024-05-14",
+      "limits": "Positions, submittals, assignments, shifts, timecards and reporting. Some features were roadmap items."
+    },
+    {
+      "id": "S08",
+      "title": "Per-diem workflow guide",
+      "url": "https://www.amergis.com/resources/company-news/looking-for-per-diem-shifts-how-maxview-jobs-can-help/",
+      "evidence_type": "Historical product guide",
+      "evidence_date": "2024-09-18",
+      "limits": "Compliant existing applicants can be scheduled automatically; others go to a recruiter."
+    },
+    {
+      "id": "S09",
+      "title": "MaxView login",
+      "url": "https://mymaxview.com/",
+      "evidence_type": "Public login surface",
+      "evidence_date": "2026-10-20",
+      "limits": "Account boundary; no login attempted."
+    },
+    {
+      "id": "S10",
+      "title": "MaxView Jobs Apple listing",
+      "url": "https://apps.apple.com/us/app/maxview-jobs-by-amergis/id1626499875",
+      "evidence_type": "Publisher listing",
+      "evidence_date": "2026-10-20",
+      "limits": "Amergis seller and Bullhorn copyright are supplier clues, not proof of the full ATS or backend."
+    },
+    {
+      "id": "S11",
+      "title": "MaxView Jobs Google listing",
+      "url": "https://play.google.com/store/apps/details?id=com.maximstaffing.app&hl=en_US",
+      "evidence_type": "Publisher listing",
+      "evidence_date": "2026-10-20",
+      "limits": "Public features and version information; legacy Maxim package name."
+    },
+    {
+      "id": "S12",
+      "title": "Amergis homepage",
+      "url": "https://www.amergis.com/",
+      "evidence_type": "Observed marketing page",
+      "evidence_date": "2026-10-20",
+      "limits": "Amergis Connect heading and Coming soon label coexist with MaxView Jobs copy; transition unresolved."
+    },
+    {
+      "id": "S13",
+      "title": "Help Center",
+      "url": "https://www.amergis.com/help-center/",
+      "evidence_type": "Official support documentation",
+      "evidence_date": "2026-10-20",
+      "limits": "ADP for pay documents/address; The Work Number for verification; recruiters/local offices handle employee support."
+    },
+    {
+      "id": "S14",
+      "title": "Sunburst VMS",
+      "url": "https://www.sunburstworkforce.com/vendor-management-system/",
+      "evidence_type": "Product claim",
+      "evidence_date": "",
+      "limits": "Describes recommending VMS partners. Does not establish one proprietary Sunburst VMS."
+    },
+    {
+      "id": "S15",
+      "title": "Sunburst suppliers",
+      "url": "https://www.sunburstworkforce.com/suppliers/",
+      "evidence_type": "Public qualification criteria",
+      "evidence_date": "",
+      "limits": "Supplier quality, compliance and responsiveness criteria; no complete supplier dataset obtained."
+    },
+    {
+      "id": "S16",
+      "title": "Sourcewell contract 061324-AMH",
+      "url": "https://www.sourcewell-mn.gov/cooperative-purchasing/061324-AMH",
+      "evidence_type": "Public procurement record",
+      "evidence_date": "2026-10-20",
+      "limits": "Contract matures October 24, 2028. Pricing subject to change."
+    },
+    {
+      "id": "S17",
+      "title": "Sourcewell pricing workbook",
+      "url": "https://files.sourcewell.org/public/Shared%20Documents/Solicitations/10924/00006717/Additional%20Documents/Sourcewell%20Price%20List%20May%202026.xlsx",
+      "evidence_type": "Inspected workbook",
+      "evidence_date": "2026-05",
+      "limits": "148 hourly not-to-exceed prices and three proposed MSP tiers. Not wages or realized margins."
+    },
+    {
+      "id": "S18",
+      "title": "Knox County contract packet",
+      "url": "https://public.destinyhosted.com/knoxdocs/2025/AGN/20250604_4922/17376_Contract_No._25-287%28b%29_Amergis_Healthcare_Staffing%2C_Inc..pdf",
+      "evidence_type": "Historical customer contract/proposal",
+      "evidence_date": "2025-03-13",
+      "limits": "Client-specific workflow evidence; agreement July 2025\u2013June 2026. PDF pages 46 and 65\u201370 particularly useful."
+    },
+    {
+      "id": "S19",
+      "title": "Clinical education role",
+      "url": "https://www.amergis.com/job/993081-rn-clinical-education-and-quality-improvement-lead-pueblo-co/",
+      "evidence_type": "Official role description",
+      "evidence_date": "2026-08-07",
+      "limits": "Clinical interviews, facility training, trackers and follow-up; RN license required by posting."
+    },
+    {
+      "id": "S20",
+      "title": "Senior Proposal Developer",
+      "url": "https://www.amergis.com/job/953595-senior-proposal-developer-columbia-md/",
+      "evidence_type": "Official role description",
+      "evidence_date": "2026-04-10",
+      "limits": "Bid analysis, SME interviews, reviews, staffing and implementation plans, BAFOs and templates."
+    },
+    {
+      "id": "S21",
+      "title": "Clinical Investigator",
+      "url": "https://www.amergis.com/job/955292-clinical-investigator-rn-educational-services-columbia-md/",
+      "evidence_type": "Official role description",
+      "evidence_date": "2026-04-16",
+      "limits": "Incident intake, investigations, root-cause analysis, corrective action and risk reports."
+    },
+    {
+      "id": "S22",
+      "title": "National Recruitment Manager historical posting",
+      "url": "https://careers.amergis.com/job/859369-amergis-national-recruitment-manager-tampa-florida/",
+      "evidence_type": "Indexed historical role description",
+      "evidence_date": "2025-03-11",
+      "limits": "Sourcing, qualification, negotiation, assignment and retention. Legacy URL may now redirect."
+    },
+    {
+      "id": "S23",
+      "title": "Time and Expense historical posting",
+      "url": "https://careers.amergis.com/job/877789-time-and-expense-field-support-specialist-i-los-angeles-california/",
+      "evidence_type": "Indexed historical role description",
+      "evidence_date": "2025-06-17",
+      "limits": "Timecards, payroll/billing system entry, HQ handoff and revenue-cycle reconciliation. Vendor unnamed."
+    },
+    {
+      "id": "S24",
+      "title": "Privacy policy",
+      "url": "https://www.amergis.com/privacy-policy/",
+      "evidence_type": "Declared data categories",
+      "evidence_date": "2024-04-08",
+      "limits": "Discloses applicant, education, credential, reference and payroll data categories; no actual records."
+    },
+    {
+      "id": "S25",
+      "title": "Client contact form",
+      "url": "https://www.amergis.com/contact/",
+      "evidence_type": "Observed form schema",
+      "evidence_date": "2026-10-20",
+      "limits": "Company, location, staffing needs and consent fields. No submission made."
+    },
+    {
+      "id": "S26",
+      "title": "Teletherapy platform",
+      "url": "https://www.amergiseducation.com/teletherapy-platform/",
+      "evidence_type": "Product claim",
+      "evidence_date": "",
+      "limits": "Virtual sessions, assessment integrations and session-activity reporting. Not independently tested."
+    },
+    {
+      "id": "S27",
+      "title": "Robots directives",
+      "url": "https://www.amergis.com/robots.txt",
+      "evidence_type": "Retrieved text",
+      "evidence_date": "2026-10-20",
+      "limits": "Contains disallowed paths, a 10-second crawl delay and sitemap link. Duplicate agent groups; use conservative directives."
+    },
+    {
+      "id": "S28",
+      "title": "Sitemap index",
+      "url": "https://www.amergis.com/sitemap_index.xml",
+      "evidence_type": "Retrieved XML",
+      "evidence_date": "2026-10-20",
+      "limits": "Eight sitemap categories. Locations child sitemap timed out; no full site count established."
+    },
+    {
+      "id": "S29",
+      "title": "MaxView demo form",
+      "url": "https://www.amergis.com/request-a-demo/",
+      "evidence_type": "Observed form schema",
+      "evidence_date": "",
+      "limits": "Organization, industry, size and requested capabilities. No submission made."
+    }
+  ],
+  "surface_inventory": [
+    {
+      "surface": "Public healthcare jobs",
+      "status": "Extracted",
+      "source_ids": "S01,S02,S03",
+      "extractable": "IDs, title, geography, type, category, setting, advertised pay, duration, detail URL; searchable requirement text available",
+      "value": "Demand and recruiting-role catalog",
+      "limits": "Feed and UI counts differ; preserve all ID namespaces."
+    },
+    {
+      "surface": "Education jobs",
+      "status": "Sample inspected",
+      "source_ids": "S04",
+      "extractable": "Titles, school disciplines, geography, pay units, contract length and requirements",
+      "value": "Education staffing demand",
+      "limits": "Not yet fully extracted; do not sum with healthcare."
+    },
+    {
+      "surface": "Office and geographic network",
+      "status": "Sample inspected",
+      "source_ids": "S05,S28",
+      "extractable": "Office identity, address, business contact, local service mix",
+      "value": "Territory and delivery footprint",
+      "limits": "Published offices are not internal headcount or all client locations."
+    },
+    {
+      "surface": "MaxView client portal",
+      "status": "Public documentation inspected",
+      "source_ids": "S06,S07,S09",
+      "extractable": "Feature descriptions, entities, status vocabulary, approval paths and reporting dimensions",
+      "value": "Client-side workflow specification",
+      "limits": "No client records, current tenant screens or private APIs."
+    },
+    {
+      "surface": "Candidate app",
+      "status": "Public documentation inspected",
+      "source_ids": "S08,S10,S11",
+      "extractable": "Features, screenshots, release history, search fields and per-diem decision branch",
+      "value": "Candidate journey and eligibility rules",
+      "limits": "No candidate profiles; Bullhorn attribution is a clue only."
+    },
+    {
+      "surface": "Amergis Connect",
+      "status": "Announcement observed",
+      "source_ids": "S12",
+      "extractable": "Public name and coming-soon status",
+      "value": "Track product transition",
+      "limits": "Launch, migration and backend relationship unknown."
+    },
+    {
+      "surface": "Payroll and verification",
+      "status": "Official routing documented",
+      "source_ids": "S13",
+      "extractable": "ADP and The Work Number touchpoints; support ownership",
+      "value": "Integration and escalation requirements",
+      "limits": "No employee or financial records accessed."
+    },
+    {
+      "surface": "Sunburst MSP and VMS",
+      "status": "Public documentation inspected",
+      "source_ids": "S14,S15,S16",
+      "extractable": "Supplier criteria, VMS partner role, procurement services",
+      "value": "Multi-vendor business model",
+      "limits": "Vendor selection and deployment vary by client."
+    },
+    {
+      "surface": "Public contracts and pricing",
+      "status": "Workbook extracted; packet reviewed",
+      "source_ids": "S16,S17,S18",
+      "extractable": "Price ceilings, proposed MSP fees, contract scope, terms, invoice fields and customer-specific procedures",
+      "value": "Commercial rules and operating processes",
+      "limits": "Ceilings are not actual rates, wages, margins or revenue."
+    },
+    {
+      "surface": "Internal workforce roles",
+      "status": "Role samples and public catalog",
+      "source_ids": "S19,S20,S21,S22,S23",
+      "extractable": "Responsibilities, handoffs, qualifications and explicit software mentions",
+      "value": "Task inventory for AI agents and human owners",
+      "limits": "Job postings do not establish role staffing levels; legacy links may redirect."
+    },
+    {
+      "surface": "Intake and data declarations",
+      "status": "Public forms/policy inspected",
+      "source_ids": "S24,S25,S29",
+      "extractable": "Field names, purpose, consent and declared data classes",
+      "value": "Lead/candidate intake schema",
+      "limits": "Policy categories are not database tables or accessible records."
+    },
+    {
+      "surface": "Education teletherapy",
+      "status": "Public feature page inspected",
+      "source_ids": "S26",
+      "extractable": "Session workflows, assessment brands, activity reporting",
+      "value": "Separate service line to scope",
+      "limits": "Student/clinical records and underlying implementation unavailable."
+    }
+  ],
+  "conceptual_entities": [
+    {
+      "entity": "Organization / Worksite",
+      "purpose": "Clients, service locations and local operating requirements",
+      "source_ids": "S05,S06,S18",
+      "status": "Inferred design; not recovered Amergis schema"
+    },
+    {
+      "entity": "Contract / RateRule",
+      "purpose": "Effective dates, pay/bill rules, overtime, cancellation, conversion, timekeeping and approvals",
+      "source_ids": "S16,S17,S18",
+      "status": "Inferred design; not recovered Amergis schema"
+    },
+    {
+      "entity": "Requisition / Shift",
+      "purpose": "Discipline, location, schedule, requirements and demand status",
+      "source_ids": "S01,S06,S08",
+      "status": "Inferred design; not recovered Amergis schema"
+    },
+    {
+      "entity": "Professional / Credential",
+      "purpose": "Candidate qualifications, availability and verification/expiry status",
+      "source_ids": "S08,S24",
+      "status": "Inferred design; not recovered Amergis schema"
+    },
+    {
+      "entity": "Application / Submittal",
+      "purpose": "Candidate interest, screening and client decisions",
+      "source_ids": "S06,S07",
+      "status": "Inferred design; not recovered Amergis schema"
+    },
+    {
+      "entity": "OnboardingTask / Placement",
+      "purpose": "Requirements, sign-offs, assignment start and completion",
+      "source_ids": "S07,S19",
+      "status": "Inferred design; not recovered Amergis schema"
+    },
+    {
+      "entity": "Timecard / Approval",
+      "purpose": "Worked time, worksite clock source, acceptance and exceptions",
+      "source_ids": "S07,S18,S23",
+      "status": "Inferred design; not recovered Amergis schema"
+    },
+    {
+      "entity": "PayrollEntry / Invoice / Adjustment",
+      "purpose": "Separate payroll and customer-billing amounts and reconciliation",
+      "source_ids": "S13,S18,S23",
+      "status": "Inferred design; not recovered Amergis schema"
+    },
+    {
+      "entity": "Supplier / MSPProgram",
+      "purpose": "Participating vendors, fee rules and performance",
+      "source_ids": "S14,S15,S17",
+      "status": "Inferred design; not recovered Amergis schema"
+    },
+    {
+      "entity": "Incident / CorrectiveAction",
+      "purpose": "Clinical or service issue, investigation, owner and resolution",
+      "source_ids": "S21",
+      "status": "Inferred design; not recovered Amergis schema"
+    },
+    {
+      "entity": "RecruiterActivity / Proposal",
+      "purpose": "Sales pipeline, sourcing activity, bids, templates and approvals",
+      "source_ids": "S20,S22",
+      "status": "Inferred design; not recovered Amergis schema"
+    },
+    {
+      "entity": "Consent / Communication / AuditEvent",
+      "purpose": "Permissions, notices, communication and traceable decisions",
+      "source_ids": "S24,S25",
+      "status": "Inferred design; not recovered Amergis schema"
+    }
+  ],
+  "next_extraction_priorities": [
+    {
+      "priority": 1,
+      "task": "Reconcile job catalogs",
+      "method": "Extract education feed if publicly linked; deduplicate by preserved IDs and canonical URLs; separate internal and deployed roles.",
+      "limitation": "Daily snapshots only if later requested; current run is one-time."
+    },
+    {
+      "priority": 2,
+      "task": "Build contract rule matrix",
+      "method": "Compare multiple recent public agreements for approval routes, rates, overtime, cancellation, credential requirements and invoice terms.",
+      "limitation": "Record client, jurisdiction and effective dates for each rule."
+    },
+    {
+      "priority": 3,
+      "task": "Map workforce tasks",
+      "method": "Expand internal role catalog and map each task to inputs, outputs, decision rules, exception owner and KPI.",
+      "limitation": "Do not infer staffing levels from hiring advertisements."
+    },
+    {
+      "priority": 4,
+      "task": "Resolve current product state",
+      "method": "Cross-reference current guides, release notes and publicly available screenshots for MaxView and Connect.",
+      "limitation": "Authorized demos or supplied materials needed for nonpublic detail."
+    },
+    {
+      "priority": 5,
+      "task": "Define automation tests",
+      "method": "Test job normalization, eligibility checks, document completeness, scheduling constraints and invoice reconciliation on synthetic cases.",
+      "limitation": "Clinical and employment decisions retain accountable owners until separately justified."
+    }
+  ],
+  "limitations": [
+    "This is a public-source research database, not a copy of Amergis production systems.",
+    "No access to candidate pool, customer CRM, credential documents, payroll, billing transactions, internal schemas or matching algorithms.",
+    "Healthcare feed records, healthcare page totals and education page totals are separate observations; not unique vacancy, employee or placement counts.",
+    "Public descriptions can be historical or aspirational. Documented client procedures can differ from advertised platform workflows.",
+    "Public bill-rate ceilings and fee proposals do not establish realized prices, costs, profit margins or client revenue.",
+    "Terms-of-use retrieval returned timeouts; no conclusion about bulk reuse permissions. Robots and rate directives require checking before a larger crawl.",
+    "No logins, account creation, form submissions, security testing, private endpoint enumeration or scheduled monitoring were performed."
+  ],
+  "sample_jobs": [
+    {
+      "source_feed_id": "12754069",
+      "position_id_from_card": "1187391",
+      "url_slug_id": "993081",
+      "title": "RN Clinical Education and Quality Improvement Lead",
+      "state": "CO",
+      "location": "Pueblo, CO",
+      "job_type": "Full Time",
+      "job_category": "Field",
+      "job_setting": "Corporate/Field Office",
+      "advertised_pay_raw": "$80000 - $95000 / Year",
+      "duration_raw": "N/A",
+      "url": "https://www.amergis.com/job/993081-rn-clinical-education-and-quality-improvement-lead-pueblo-co/"
+    },
+    {
+      "source_feed_id": "13443814",
+      "position_id_from_card": "1190013",
+      "url_slug_id": "994669",
+      "title": "National Recruitment Manager",
+      "state": "MD",
+      "location": "Columbia, MD",
+      "job_type": "Full Time",
+      "job_category": "Field",
+      "job_setting": "Corporate/Field Office",
+      "advertised_pay_raw": "$52500 / Year",
+      "duration_raw": "N/A",
+      "url": "https://www.amergis.com/job/994669-national-recruitment-manager-columbia-md/"
+    },
+    {
+      "source_feed_id": "13949270",
+      "position_id_from_card": "1195521",
+      "url_slug_id": "997943",
+      "title": "Education Recruiter",
+      "state": "VA",
+      "location": "Virginia Beach, VA",
+      "job_type": "Full Time",
+      "job_category": "Field",
+      "job_setting": "Corporate/Field Office",
+      "advertised_pay_raw": "$52500 / Year",
+      "duration_raw": "N/A",
+      "url": "https://www.amergis.com/job/997943-education-recruiter-virginia-beach-va/"
+    }
+  ]
+}

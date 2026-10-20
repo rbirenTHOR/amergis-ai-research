@@ -1,0 +1,1456 @@
+[
+  {
+    "role_family_id": "R01",
+    "role_family": "Recruiting and placement",
+    "source_feed_ids": [
+      "13443814",
+      "13949270",
+      "14481037",
+      "15011812",
+      "15089588",
+      "15146585",
+      "15146596",
+      "15390209",
+      "15390218",
+      "15448953",
+      "15448955",
+      "15448962",
+      "15448963",
+      "15451563",
+      "15459762",
+      "15537302",
+      "15577916",
+      "15592559",
+      "15670447",
+      "16065230",
+      "16324984",
+      "16386857",
+      "16392470",
+      "16461453",
+      "16526538",
+      "16526638",
+      "16526738",
+      "16526838",
+      "16540951",
+      "16546636",
+      "16792392",
+      "16859748",
+      "16879955",
+      "16944262",
+      "16944641",
+      "17018586",
+      "17069231",
+      "17078274",
+      "17252664",
+      "17274130",
+      "17318236",
+      "17326388",
+      "17337666",
+      "17385780",
+      "17385781",
+      "17385782",
+      "17397672",
+      "17463408",
+      "17463421",
+      "17532040",
+      "17543210",
+      "17543211",
+      "17782577",
+      "17785069",
+      "17785325",
+      "17785326",
+      "17790546"
+    ],
+    "public_posting_count": 57,
+    "count_meaning": "Public job records, not employee headcount or verified vacancies",
+    "title_variants": [
+      "Education Recruiter",
+      "Educational Services Recruiter",
+      "Entry Level Sales - Educational Services Recruiter",
+      "Entry Level Sales - Recruiter",
+      "Entry Level Sales Recruiter",
+      "Healthcare Staffing Recruiter - Sales",
+      "National Recruitment Manager",
+      "National Recruitment Manager Trainee",
+      "Recruiter",
+      "Recruiter - Education Staffing",
+      "Recruiter - Educational Services",
+      "Recruiter - Entry Level Sales",
+      "Recruiter Trainee",
+      "Sales Recruiter"
+    ],
+    "observed_public_duties": [
+      "Source and engage candidates through referrals, databases, networking and recruitment technology",
+      "Screen/interview candidates, check credentials and align to hiring criteria in national recruiter descriptions",
+      "Negotiate pay packages and obtain candidate/client placement acceptance",
+      "Support placed workers with payroll issues and retention",
+      "Manage inbound phone coverage, onboarding coordination, reports and daily recruiting workload",
+      "Complete recruiter training; trainee descriptions often refer to a typical 13-week program"
+    ],
+    "observed_handoff_partners": [
+      "Candidates and placed professionals",
+      "Clients",
+      "Recruiting leaders and team members"
+    ],
+    "proposed_human_decision_ownership": [
+      "Candidate assessment, selection and rejection",
+      "Pay negotiation and exceptions",
+      "Placement acceptance",
+      "Employment grievances and retention interventions"
+    ],
+    "explicit_system_mentions": [
+      {
+        "name": "Recruitment databases and multiple recruitment technologies",
+        "evidence_scope": "generic tools named; vendor not disclosed"
+      },
+      {
+        "name": "E-learning training module",
+        "evidence_scope": "national recruitment manager trainee duties"
+      }
+    ],
+    "evidence_status": "Observed duties paraphrased from public job descriptions; family grouping and future decision ownership inferred",
+    "limitations": "57 postings contain only three distinct duty-body variants (47 local/education trainee-style; 9 national recruiter-style; 1 national trainee). National Recruitment Manager title does not establish people-management scope. Training and salary wording varies; not an org chart.",
+    "sources": [
+      {
+        "source_feed_id": "13443814",
+        "url": "https://www.amergis.com/job/994669-national-recruitment-manager-columbia-md/",
+        "title": "National Recruitment Manager"
+      },
+      {
+        "source_feed_id": "13949270",
+        "url": "https://www.amergis.com/job/997943-education-recruiter-virginia-beach-va/",
+        "title": "Education Recruiter"
+      },
+      {
+        "source_feed_id": "14481037",
+        "url": "https://www.amergis.com/job/1000607-entry-level-sales-recruiter-golden-valley-mn/",
+        "title": "Entry Level Sales Recruiter"
+      },
+      {
+        "source_feed_id": "15011812",
+        "url": "https://www.amergis.com/job/1002766-recruiter-educational-services-chicago-il/",
+        "title": "Recruiter - Educational Services"
+      },
+      {
+        "source_feed_id": "15089588",
+        "url": "https://www.amergis.com/job/1003387-recruiter-trainee-mountlake-terrace-wa/",
+        "title": "Recruiter Trainee"
+      },
+      {
+        "source_feed_id": "15146585",
+        "url": "https://www.amergis.com/job/1003782-recruiter-tacoma-wa/",
+        "title": "Recruiter"
+      },
+      {
+        "source_feed_id": "15146596",
+        "url": "https://www.amergis.com/job/1003760-education-recruiter-spokane-wa/",
+        "title": "Education Recruiter"
+      },
+      {
+        "source_feed_id": "15390209",
+        "url": "https://www.amergis.com/job/1004556-recruiter-trainee-timonium-md/",
+        "title": "Recruiter Trainee"
+      },
+      {
+        "source_feed_id": "15390218",
+        "url": "https://www.amergis.com/job/1004537-recruiter-sugarland-tx/",
+        "title": "Recruiter"
+      },
+      {
+        "source_feed_id": "15448953",
+        "url": "https://www.amergis.com/job/1004981-healthcare-staffing-recruiter-sales-tampa-fl/",
+        "title": "Healthcare Staffing Recruiter - Sales"
+      },
+      {
+        "source_feed_id": "15448955",
+        "url": "https://www.amergis.com/job/1004969-national-recruitment-manager-tampa-fl/",
+        "title": "National Recruitment Manager"
+      },
+      {
+        "source_feed_id": "15448962",
+        "url": "https://www.amergis.com/job/1004955-entry-level-sales-recruiter-manchester-nh/",
+        "title": "Entry Level Sales Recruiter"
+      },
+      {
+        "source_feed_id": "15448963",
+        "url": "https://www.amergis.com/job/1004954-education-recruiter-mountlake-terrace-wa/",
+        "title": "Education Recruiter"
+      },
+      {
+        "source_feed_id": "15451563",
+        "url": "https://www.amergis.com/job/1005026-national-recruitment-manager-tampa-fl/",
+        "title": "National Recruitment Manager"
+      },
+      {
+        "source_feed_id": "15459762",
+        "url": "https://www.amergis.com/job/1005025-national-recruitment-manager-tampa-fl/",
+        "title": "National Recruitment Manager"
+      },
+      {
+        "source_feed_id": "15537302",
+        "url": "https://www.amergis.com/job/985583-sales-recruiter-portland-or/",
+        "title": "Sales Recruiter"
+      },
+      {
+        "source_feed_id": "15577916",
+        "url": "https://www.amergis.com/job/1005973-recruiter-trainee-indianapolis-in/",
+        "title": "Recruiter Trainee"
+      },
+      {
+        "source_feed_id": "15592559",
+        "url": "https://www.amergis.com/job/1006276-educational-services-recruiter-phoenix-az/",
+        "title": "Educational Services Recruiter"
+      },
+      {
+        "source_feed_id": "15670447",
+        "url": "https://www.amergis.com/job/983947-education-recruiter-portland-or/",
+        "title": "Education Recruiter"
+      },
+      {
+        "source_feed_id": "16065230",
+        "url": "https://www.amergis.com/job/1000645-entry-level-sales-recruiter-charleston-wv/",
+        "title": "Entry Level Sales Recruiter"
+      },
+      {
+        "source_feed_id": "16324984",
+        "url": "https://www.amergis.com/job/998127-recruiter-educational-services-san-jose-ca/",
+        "title": "Recruiter - Educational Services"
+      },
+      {
+        "source_feed_id": "16386857",
+        "url": "https://www.amergis.com/job/1009238-entry-level-sales-recruiter-pensacola-fl/",
+        "title": "Entry Level Sales - Recruiter"
+      },
+      {
+        "source_feed_id": "16392470",
+        "url": "https://www.amergis.com/job/985565-sales-recruiter-omaha-ne/",
+        "title": "Sales Recruiter"
+      },
+      {
+        "source_feed_id": "16461453",
+        "url": "https://www.amergis.com/job/1009698-entry-level-sales-recruiter-tucson-az/",
+        "title": "Entry Level Sales Recruiter"
+      },
+      {
+        "source_feed_id": "16526538",
+        "url": "https://www.amergis.com/job/1000633-entry-level-sales-recruiter-silver-spring-md/",
+        "title": "Entry Level Sales Recruiter"
+      },
+      {
+        "source_feed_id": "16526638",
+        "url": "https://www.amergis.com/job/996585-recruiter-trainee-wauwatosa-wi/",
+        "title": "Recruiter Trainee"
+      },
+      {
+        "source_feed_id": "16526738",
+        "url": "https://www.amergis.com/job/992198-recruiter-trainee-wilmington-de/",
+        "title": "Recruiter Trainee"
+      },
+      {
+        "source_feed_id": "16526838",
+        "url": "https://www.amergis.com/job/971929-national-recruitment-manager-tampa-fl/",
+        "title": "National Recruitment Manager"
+      },
+      {
+        "source_feed_id": "16540951",
+        "url": "https://www.amergis.com/job/1010210-recruiter-blue-ash-oh/",
+        "title": "Recruiter"
+      },
+      {
+        "source_feed_id": "16546636",
+        "url": "https://www.amergis.com/job/1009957-entry-level-sales-recruiter-needham-ma/",
+        "title": "Entry Level Sales Recruiter"
+      },
+      {
+        "source_feed_id": "16792392",
+        "url": "https://www.amergis.com/job/1003556-national-recruitment-manager-pittsburgh-pa/",
+        "title": "National Recruitment Manager"
+      },
+      {
+        "source_feed_id": "16859748",
+        "url": "https://www.amergis.com/job/1011156-national-recruitment-manager-trainee-tampa-fl/",
+        "title": "National Recruitment Manager Trainee"
+      },
+      {
+        "source_feed_id": "16879955",
+        "url": "https://www.amergis.com/job/985559-education-recruiter-omaha-ne/",
+        "title": "Education Recruiter"
+      },
+      {
+        "source_feed_id": "16944262",
+        "url": "https://www.amergis.com/job/1002811-entry-level-sales-recruiter-charleston-sc/",
+        "title": "Entry Level Sales - Recruiter"
+      },
+      {
+        "source_feed_id": "16944641",
+        "url": "https://www.amergis.com/job/1011753-recruiter-educational-services-orange-ca/",
+        "title": "Recruiter - Educational Services"
+      },
+      {
+        "source_feed_id": "17018586",
+        "url": "https://www.amergis.com/job/997098-recruiter-trainee-lakewood-co/",
+        "title": "Recruiter Trainee"
+      },
+      {
+        "source_feed_id": "17069231",
+        "url": "https://www.amergis.com/job/1003353-entry-level-sales-recruiter-jacksonville-fl/",
+        "title": "Entry Level Sales - Recruiter"
+      },
+      {
+        "source_feed_id": "17078274",
+        "url": "https://www.amergis.com/job/1012282-entry-level-sales-educational-services-recruiter-emeryville-ca/",
+        "title": "Entry Level Sales - Educational Services Recruiter"
+      },
+      {
+        "source_feed_id": "17252664",
+        "url": "https://www.amergis.com/job/1012352-recruiter-trainee-pittsburgh-pa/",
+        "title": "Recruiter Trainee"
+      },
+      {
+        "source_feed_id": "17274130",
+        "url": "https://www.amergis.com/job/992547-entry-level-sales-recruiter-tampa-fl/",
+        "title": "Entry Level Sales - Recruiter"
+      },
+      {
+        "source_feed_id": "17318236",
+        "url": "https://www.amergis.com/job/1012709-national-recruitment-manager-pittsburgh-pa/",
+        "title": "National Recruitment Manager"
+      },
+      {
+        "source_feed_id": "17326388",
+        "url": "https://www.amergis.com/job/996399-entry-level-sales-educational-services-recruiter-los-angeles-ca/",
+        "title": "Entry Level Sales - Educational Services Recruiter"
+      },
+      {
+        "source_feed_id": "17337666",
+        "url": "https://www.amergis.com/job/1002352-national-recruitment-manager-dallas-tx/",
+        "title": "National Recruitment Manager"
+      },
+      {
+        "source_feed_id": "17385780",
+        "url": "https://www.amergis.com/job/1005119-entry-level-sales-recruiter-providence-ri/",
+        "title": "Entry Level Sales Recruiter"
+      },
+      {
+        "source_feed_id": "17385781",
+        "url": "https://www.amergis.com/job/1005061-entry-level-sales-recruiter-harrisburg-pa/",
+        "title": "Entry Level Sales Recruiter"
+      },
+      {
+        "source_feed_id": "17385782",
+        "url": "https://www.amergis.com/job/1005060-recruiter-entry-level-sales-south-portland-me/",
+        "title": "Recruiter - Entry Level Sales"
+      },
+      {
+        "source_feed_id": "17397672",
+        "url": "https://www.amergis.com/job/1013210-entry-level-sales-recruiter-bakersfield-ca/",
+        "title": "Entry Level Sales - Recruiter"
+      },
+      {
+        "source_feed_id": "17463408",
+        "url": "https://www.amergis.com/job/1013576-recruiter-st-louis-mo/",
+        "title": "Recruiter"
+      },
+      {
+        "source_feed_id": "17463421",
+        "url": "https://www.amergis.com/job/1013557-recruiter-austin-tx/",
+        "title": "Recruiter"
+      },
+      {
+        "source_feed_id": "17532040",
+        "url": "https://www.amergis.com/job/1013938-entry-level-sales-recruiter-emeryville-ca/",
+        "title": "Entry Level Sales - Recruiter"
+      },
+      {
+        "source_feed_id": "17543210",
+        "url": "https://www.amergis.com/job/1014077-recruiter-educational-services-sacramento-ca/",
+        "title": "Recruiter - Educational Services"
+      },
+      {
+        "source_feed_id": "17543211",
+        "url": "https://www.amergis.com/job/1014076-recruiter-education-staffing-sacramento-ca/",
+        "title": "Recruiter - Education Staffing"
+      },
+      {
+        "source_feed_id": "17782577",
+        "url": "https://www.amergis.com/job/1014495-entry-level-sales-recruiter-fort-lauderdale-fl/",
+        "title": "Entry Level Sales - Recruiter"
+      },
+      {
+        "source_feed_id": "17785069",
+        "url": "https://www.amergis.com/job/1003047-entry-level-sales-recruiter-atlanta-ga/",
+        "title": "Entry Level Sales - Recruiter"
+      },
+      {
+        "source_feed_id": "17785325",
+        "url": "https://www.amergis.com/job/1014520-entry-level-sales-recruiter-memphis-tn/",
+        "title": "Entry Level Sales - Recruiter"
+      },
+      {
+        "source_feed_id": "17785326",
+        "url": "https://www.amergis.com/job/1014519-entry-level-sales-recruiter-brentwood-tn/",
+        "title": "Entry Level Sales - Recruiter"
+      },
+      {
+        "source_feed_id": "17790546",
+        "url": "https://www.amergis.com/job/1004608-entry-level-sales-recruiter-fayetteville-nc/",
+        "title": "Entry Level Sales - Recruiter"
+      }
+    ],
+    "task_ids": [
+      "T001",
+      "T002",
+      "T003",
+      "T004",
+      "T005",
+      "T006",
+      "T007"
+    ],
+    "task_count": 7,
+    "autonomy_task_counts": {
+      "B": 3,
+      "A": 3,
+      "C": 1
+    }
+  },
+  {
+    "role_family_id": "R02",
+    "role_family": "Clinical education and quality improvement",
+    "source_feed_ids": [
+      "12754069"
+    ],
+    "public_posting_count": 1,
+    "count_meaning": "Public job records, not employee headcount or verified vacancies",
+    "title_variants": [
+      "RN Clinical Education and Quality Improvement Lead"
+    ],
+    "observed_public_duties": [
+      "Assess clinical skills in pre-submission interviews",
+      "Learn facility policies and conduct orientation support",
+      "Create educational materials and coach active clinicians",
+      "Liaise on knowledge gaps and workplace concerns",
+      "Track re-education and clinician progress with account management"
+    ],
+    "observed_handoff_partners": [
+      "Facility clinical leaders",
+      "Amergis clinical leaders",
+      "Account management",
+      "Clinicians"
+    ],
+    "proposed_human_decision_ownership": [
+      "Clinical competency evaluation",
+      "Patient-care and clinical guidance",
+      "Clinical review and remediation",
+      "Resolution of clinician mistreatment concerns"
+    ],
+    "explicit_system_mentions": [],
+    "evidence_status": "Observed duties paraphrased from public job descriptions; family grouping and future decision ownership inferred",
+    "limitations": "A public advertisement describes intended responsibilities; it does not prove execution frequency, operating effectiveness, staffing levels or software configuration.",
+    "sources": [
+      {
+        "source_feed_id": "12754069",
+        "url": "https://www.amergis.com/job/993081-rn-clinical-education-and-quality-improvement-lead-pueblo-co/",
+        "title": "RN Clinical Education and Quality Improvement Lead"
+      }
+    ],
+    "task_ids": [
+      "T008",
+      "T009",
+      "T010",
+      "T011"
+    ],
+    "task_count": 4,
+    "autonomy_task_counts": {
+      "B": 1,
+      "C": 2,
+      "A": 1
+    }
+  },
+  {
+    "role_family_id": "R03",
+    "role_family": "Program and process improvement management",
+    "source_feed_ids": [
+      "13964420"
+    ],
+    "public_posting_count": 1,
+    "count_meaning": "Public job records, not employee headcount or verified vacancies",
+    "title_variants": [
+      "Program Manager"
+    ],
+    "observed_public_duties": [
+      "Lead cross-functional improvement projects and project plans",
+      "Prioritize initiatives and solicit stakeholder feedback",
+      "Report and advocate objectives with executive and office leadership"
+    ],
+    "observed_handoff_partners": [
+      "Executive team",
+      "Department management",
+      "Office leadership",
+      "Cross-functional project team"
+    ],
+    "proposed_human_decision_ownership": [
+      "Project priorities and resource commitments",
+      "Acceptance of operational change"
+    ],
+    "explicit_system_mentions": [],
+    "evidence_status": "Observed duties paraphrased from public job descriptions; family grouping and future decision ownership inferred",
+    "limitations": "A public advertisement describes intended responsibilities; it does not prove execution frequency, operating effectiveness, staffing levels or software configuration.",
+    "sources": [
+      {
+        "source_feed_id": "13964420",
+        "url": "https://www.amergis.com/job/997367-program-manager-grand-rapids-mi/",
+        "title": "Program Manager"
+      }
+    ],
+    "task_ids": [
+      "T012",
+      "T013"
+    ],
+    "task_count": 2,
+    "autonomy_task_counts": {
+      "A": 1,
+      "B": 1
+    }
+  },
+  {
+    "role_family_id": "R04",
+    "role_family": "Billing reimbursement and collections",
+    "source_feed_ids": [
+      "15448969"
+    ],
+    "public_posting_count": 1,
+    "count_meaning": "Public job records, not employee headcount or verified vacancies",
+    "title_variants": [
+      "Reimbursement Specialist"
+    ],
+    "observed_public_duties": [
+      "Review and post billable revenue with timecards, purchase orders and contracts",
+      "Generate, validate, correct and submit invoices",
+      "Pursue overdue balances and escalate problem accounts",
+      "Code deposits and process card payments",
+      "Confirm new client invoicing instructions"
+    ],
+    "observed_handoff_partners": [
+      "Clients",
+      "Office partners",
+      "Team lead",
+      "Other departments"
+    ],
+    "proposed_human_decision_ownership": [
+      "Disputed invoice correction",
+      "Credit/open-credit resolution",
+      "Delinquency escalation and payment exceptions"
+    ],
+    "explicit_system_mentions": [
+      {
+        "name": "Excel and shared workbooks",
+        "evidence_scope": "explicit collaboration/reporting duties"
+      },
+      {
+        "name": "VMS, email, mail and fax",
+        "evidence_scope": "listed invoice-submission channels; VMS vendor unspecified"
+      }
+    ],
+    "evidence_status": "Observed duties paraphrased from public job descriptions; family grouping and future decision ownership inferred",
+    "limitations": "A public advertisement describes intended responsibilities; it does not prove execution frequency, operating effectiveness, staffing levels or software configuration.",
+    "sources": [
+      {
+        "source_feed_id": "15448969",
+        "url": "https://www.amergis.com/job/1004937-reimbursement-specialist-columbia-md/",
+        "title": "Reimbursement Specialist"
+      }
+    ],
+    "task_ids": [
+      "T014",
+      "T015",
+      "T016",
+      "T017",
+      "T018"
+    ],
+    "task_count": 5,
+    "autonomy_task_counts": {
+      "A": 3,
+      "B": 2
+    }
+  },
+  {
+    "role_family_id": "R05",
+    "role_family": "Workers compensation claims",
+    "source_feed_ids": [
+      "16123425"
+    ],
+    "public_posting_count": 1,
+    "count_meaning": "Public job records, not employee headcount or verified vacancies",
+    "title_variants": [
+      "Workers' Compensation Claims Examiner"
+    ],
+    "observed_public_duties": [
+      "Manage assigned-state claims through resolution",
+      "Coordinate with third-party administrators and providers",
+      "Monitor legal deadlines and file resolution plans",
+      "Analyze financial exposure and authorize/revise reserves",
+      "Represent company in mediation/depositions",
+      "Coordinate benefits absence and transitional duty"
+    ],
+    "observed_handoff_partners": [
+      "Third-party administrators",
+      "Medical providers",
+      "Local offices",
+      "Workers compensation manager",
+      "Benefits team",
+      "State programs"
+    ],
+    "proposed_human_decision_ownership": [
+      "Reserve adjustments",
+      "Claim action and resolution strategy",
+      "Legal representations",
+      "Return-to-work/transitional-duty determinations"
+    ],
+    "explicit_system_mentions": [],
+    "evidence_status": "Observed duties paraphrased from public job descriptions; family grouping and future decision ownership inferred",
+    "limitations": "A public advertisement describes intended responsibilities; it does not prove execution frequency, operating effectiveness, staffing levels or software configuration.",
+    "sources": [
+      {
+        "source_feed_id": "16123425",
+        "url": "https://www.amergis.com/job/1008639-workers-compensation-claims-examiner-columbia-md/",
+        "title": "Workers' Compensation Claims Examiner"
+      }
+    ],
+    "task_ids": [
+      "T019",
+      "T020",
+      "T021"
+    ],
+    "task_count": 3,
+    "autonomy_task_counts": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    }
+  },
+  {
+    "role_family_id": "R06",
+    "role_family": "Internal communications and intranet",
+    "source_feed_ids": [
+      "16333575"
+    ],
+    "public_posting_count": 1,
+    "count_meaning": "Public job records, not employee headcount or verified vacancies",
+    "title_variants": [
+      "Communications Specialist"
+    ],
+    "observed_public_duties": [
+      "Plan internal communications and audience/channel strategy",
+      "Create and publish communications and branded graphics",
+      "Maintain intranet structure, permissions and publishing knowledge",
+      "Audit and retire content",
+      "Run department liaison program and evaluate analytics"
+    ],
+    "observed_handoff_partners": [
+      "Business partners",
+      "Department liaisons",
+      "Communications team",
+      "Cross-functional teams"
+    ],
+    "proposed_human_decision_ownership": [
+      "Sensitive internal messages",
+      "Permission-policy changes",
+      "Brand and communications strategy"
+    ],
+    "explicit_system_mentions": [
+      {
+        "name": "MergePoint",
+        "evidence_scope": "explicitly described as company intranet in job duties"
+      }
+    ],
+    "evidence_status": "Observed duties paraphrased from public job descriptions; family grouping and future decision ownership inferred",
+    "limitations": "A public advertisement describes intended responsibilities; it does not prove execution frequency, operating effectiveness, staffing levels or software configuration.",
+    "sources": [
+      {
+        "source_feed_id": "16333575",
+        "url": "https://www.amergis.com/job/1009078-communications-specialist-columbia-md/",
+        "title": "Communications Specialist"
+      }
+    ],
+    "task_ids": [
+      "T022",
+      "T023",
+      "T024"
+    ],
+    "task_count": 3,
+    "autonomy_task_counts": {
+      "B": 2,
+      "A": 1
+    }
+  },
+  {
+    "role_family_id": "R07",
+    "role_family": "MSP revenue operations leadership",
+    "source_feed_ids": [
+      "16409763"
+    ],
+    "public_posting_count": 1,
+    "count_meaning": "Public job records, not employee headcount or verified vacancies",
+    "title_variants": [
+      "Operation Support Manager - SB"
+    ],
+    "observed_public_duties": [
+      "Oversee receivables, payables, cash application and supplier payment initiation",
+      "Support new-client timecards and invoice setup",
+      "Handle over-90-day and other escalated accounts",
+      "Analyze risks to cash flow",
+      "Develop revenue staff and improve processes"
+    ],
+    "observed_handoff_partners": [
+      "Implementation manager",
+      "Amergis corporate revenue leaders",
+      "Suppliers and agency partners",
+      "Clients",
+      "Senior leadership"
+    ],
+    "proposed_human_decision_ownership": [
+      "Supplier payment release/hold",
+      "Complex payer dispute resolution",
+      "Credit/cash-risk escalation",
+      "Staff performance and succession"
+    ],
+    "explicit_system_mentions": [
+      {
+        "name": "Sunburst AR management system",
+        "evidence_scope": "generic system referenced; vendor undisclosed"
+      }
+    ],
+    "evidence_status": "Observed duties paraphrased from public job descriptions; family grouping and future decision ownership inferred",
+    "limitations": "A public advertisement describes intended responsibilities; it does not prove execution frequency, operating effectiveness, staffing levels or software configuration.",
+    "sources": [
+      {
+        "source_feed_id": "16409763",
+        "url": "https://www.amergis.com/job/1009562-operation-support-manager-sb-columbia-md/",
+        "title": "Operation Support Manager - SB"
+      }
+    ],
+    "task_ids": [
+      "T025",
+      "T026",
+      "T027"
+    ],
+    "task_count": 3,
+    "autonomy_task_counts": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    }
+  },
+  {
+    "role_family_id": "R08",
+    "role_family": "Financial analysis",
+    "source_feed_ids": [
+      "16466209"
+    ],
+    "public_posting_count": 1,
+    "count_meaning": "Public job records, not employee headcount or verified vacancies",
+    "title_variants": [
+      "Financial Analyst II - Corporate"
+    ],
+    "observed_public_duties": [
+      "Prepare weekly/monthly reports and annual projections",
+      "Analyze credit, medical billing, collections and branch profitability",
+      "Explain performance metrics and recommend operational improvement",
+      "Train junior financial analysts",
+      "Support immunization-program reporting"
+    ],
+    "observed_handoff_partners": [
+      "Branch office managers",
+      "Regional/corporate customers",
+      "Branch and regional leadership",
+      "Financial Analyst I"
+    ],
+    "proposed_human_decision_ownership": [
+      "Forecast assumptions and financial interpretation",
+      "Improvement priorities"
+    ],
+    "explicit_system_mentions": [],
+    "evidence_status": "Observed duties paraphrased from public job descriptions; family grouping and future decision ownership inferred",
+    "limitations": "A public advertisement describes intended responsibilities; it does not prove execution frequency, operating effectiveness, staffing levels or software configuration.",
+    "sources": [
+      {
+        "source_feed_id": "16466209",
+        "url": "https://www.amergis.com/job/1004246-financial-analyst-ii-corporate-columbia-md/",
+        "title": "Financial Analyst II - Corporate"
+      }
+    ],
+    "task_ids": [
+      "T028",
+      "T029"
+    ],
+    "task_count": 2,
+    "autonomy_task_counts": {
+      "A": 1,
+      "B": 1
+    }
+  },
+  {
+    "role_family_id": "R09",
+    "role_family": "Local business development and recruiting leadership",
+    "source_feed_ids": [
+      "16594915"
+    ],
+    "public_posting_count": 1,
+    "count_meaning": "Public job records, not employee headcount or verified vacancies",
+    "title_variants": [
+      "Business Development Manager"
+    ],
+    "observed_public_duties": [
+      "Develop geographic market and referral strategy",
+      "Manage client relationships and customized proposals",
+      "Align local recruitment and business strategy",
+      "Interview, hire, lead and develop recruiters",
+      "Conduct daily recruiting red-zone meetings",
+      "Track financial targets and account activity"
+    ],
+    "observed_handoff_partners": [
+      "Clinical and operational teams",
+      "Director of business operations",
+      "Recruiting team",
+      "Regional/national teams",
+      "Customers and referral sources"
+    ],
+    "proposed_human_decision_ownership": [
+      "Commercial relationship and negotiation",
+      "Recruiter hiring and performance",
+      "Local business priorities",
+      "Administrator responsibilities where applicable"
+    ],
+    "explicit_system_mentions": [],
+    "evidence_status": "Observed duties paraphrased from public job descriptions; family grouping and future decision ownership inferred",
+    "limitations": "One posting specifies 80% customer engagement in person and a minimum of 10 pursuit target accounts per year. These are local role requirements, not enterprise-wide actuals. Administrator duty is explicitly conditional on state requirements.",
+    "sources": [
+      {
+        "source_feed_id": "16594915",
+        "url": "https://www.amergis.com/job/1010420-business-development-manager-melville-ny/",
+        "title": "Business Development Manager"
+      }
+    ],
+    "task_ids": [
+      "T030",
+      "T031",
+      "T032",
+      "T033"
+    ],
+    "task_count": 4,
+    "autonomy_task_counts": {
+      "B": 1,
+      "C": 2,
+      "A": 1
+    }
+  },
+  {
+    "role_family_id": "R10",
+    "role_family": "MSP program service operations",
+    "source_feed_ids": [
+      "16790213",
+      "16986255"
+    ],
+    "public_posting_count": 2,
+    "count_meaning": "Public job records, not employee headcount or verified vacancies",
+    "title_variants": [
+      "Program Specialist"
+    ],
+    "observed_public_duties": [
+      "Support program management office and client implementation orders",
+      "Maintain customer sponsors and service satisfaction",
+      "Ensure timely client/supplier billing",
+      "Document KPI and SLA adherence",
+      "Support account expansion"
+    ],
+    "observed_handoff_partners": [
+      "Program management team",
+      "Customer sponsors",
+      "Clients",
+      "Suppliers",
+      "Divisional resources"
+    ],
+    "proposed_human_decision_ownership": [
+      "SLA exceptions and customer remedy",
+      "Billing disputes",
+      "Customer relationship commitments"
+    ],
+    "explicit_system_mentions": [
+      {
+        "name": "Microsoft Windows/Word/Excel and legacy Maxim proprietary programs",
+        "evidence_scope": "candidate knowledge requirement; unnamed proprietary software and actual configuration unknown"
+      }
+    ],
+    "evidence_status": "Observed duties paraphrased from public job descriptions; family grouping and future decision ownership inferred",
+    "limitations": "A public advertisement describes intended responsibilities; it does not prove execution frequency, operating effectiveness, staffing levels or software configuration.",
+    "sources": [
+      {
+        "source_feed_id": "16790213",
+        "url": "https://www.amergis.com/job/1010729-program-specialist-phoenix-az/",
+        "title": "Program Specialist"
+      },
+      {
+        "source_feed_id": "16986255",
+        "url": "https://www.amergis.com/job/1011778-program-specialist-pittsburgh-pa/",
+        "title": "Program Specialist"
+      }
+    ],
+    "task_ids": [
+      "T034",
+      "T035"
+    ],
+    "task_count": 2,
+    "autonomy_task_counts": {
+      "A": 1,
+      "B": 1
+    }
+  },
+  {
+    "role_family_id": "R11",
+    "role_family": "Enterprise workforce solution sales",
+    "source_feed_ids": [
+      "16795654",
+      "16918064"
+    ],
+    "public_posting_count": 2,
+    "count_meaning": "Public job records, not employee headcount or verified vacancies",
+    "title_variants": [
+      "Director of Business Development - Prolucent",
+      "Director of Business Development - Sunburst"
+    ],
+    "observed_public_duties": [
+      "Manage business-development targets and workforce-solution strategy",
+      "Analyze deal requirements and financials",
+      "Prepare negotiation positions and contracts",
+      "Coordinate contract requirements with delivery operations",
+      "Share market intelligence with company leadership"
+    ],
+    "observed_handoff_partners": [
+      "Sunburst vice president",
+      "Strategic sales",
+      "Finance/operations leaders",
+      "Regional/local leadership",
+      "Delivery teams",
+      "Customers"
+    ],
+    "proposed_human_decision_ownership": [
+      "Contract negotiation and signature",
+      "Deal economics and investments",
+      "Enterprise growth strategy"
+    ],
+    "explicit_system_mentions": [],
+    "evidence_status": "Observed duties paraphrased from public job descriptions; family grouping and future decision ownership inferred",
+    "limitations": "Prolucent-titled posting 16918064 repeats Sunburst role body and reporting lines. Treat brand/reporting structure as unresolved; do not infer a separate confirmed Prolucent organization.",
+    "sources": [
+      {
+        "source_feed_id": "16795654",
+        "url": "https://www.amergis.com/job/1010810-director-of-business-development-sunburst-columbia-md/",
+        "title": "Director of Business Development - Sunburst"
+      },
+      {
+        "source_feed_id": "16918064",
+        "url": "https://www.amergis.com/job/1011379-director-of-business-development-prolucent-columbia-md/",
+        "title": "Director of Business Development - Prolucent"
+      }
+    ],
+    "task_ids": [
+      "T036",
+      "T037"
+    ],
+    "task_count": 2,
+    "autonomy_task_counts": {
+      "B": 1,
+      "C": 1
+    }
+  },
+  {
+    "role_family_id": "R12",
+    "role_family": "Network engineering",
+    "source_feed_ids": [
+      "16803893"
+    ],
+    "public_posting_count": 1,
+    "count_meaning": "Public job records, not employee headcount or verified vacancies",
+    "title_variants": [
+      "Network Engineer II"
+    ],
+    "observed_public_duties": [
+      "Design and implement enterprise voice/data networks",
+      "Provide tier-3 support and major-incident remediation",
+      "Document designs and evaluate technology/vendors",
+      "Train and transition services to network operations",
+      "Deploy/maintain SD-WAN"
+    ],
+    "observed_handoff_partners": [
+      "Project teams",
+      "Network operations",
+      "Solutions architects",
+      "Vendors"
+    ],
+    "proposed_human_decision_ownership": [
+      "Production architecture and network/security changes",
+      "Major incident command",
+      "Vendor choice"
+    ],
+    "explicit_system_mentions": [
+      {
+        "name": "Aruba / Silver Peak SD-WAN; Cisco Meraki",
+        "evidence_scope": "named in deployment/maintenance duties"
+      },
+      {
+        "name": "Palo Alto firewalls, Cisco ISE, Cisco routers/switches, Cisco ACI, Zscaler, Wireshark, SolarWinds",
+        "evidence_scope": "qualification/experience requirements only; not proof of production installation"
+      }
+    ],
+    "evidence_status": "Observed duties paraphrased from public job descriptions; family grouping and future decision ownership inferred",
+    "limitations": "A public advertisement describes intended responsibilities; it does not prove execution frequency, operating effectiveness, staffing levels or software configuration.",
+    "sources": [
+      {
+        "source_feed_id": "16803893",
+        "url": "https://www.amergis.com/job/1010914-network-engineer-ii-columbia-md/",
+        "title": "Network Engineer II"
+      }
+    ],
+    "task_ids": [
+      "T038",
+      "T039"
+    ],
+    "task_count": 2,
+    "autonomy_task_counts": {
+      "B": 1,
+      "C": 1
+    }
+  },
+  {
+    "role_family_id": "R13",
+    "role_family": "MSP implementation and training",
+    "source_feed_ids": [
+      "16986252"
+    ],
+    "public_posting_count": 1,
+    "count_meaning": "Public job records, not employee headcount or verified vacancies",
+    "title_variants": [
+      "Implementation Specialist - Sunburst"
+    ],
+    "observed_public_duties": [
+      "Execute client implementation plans and checklists",
+      "Collect and enter data in VMS",
+      "Train clients/suppliers and run product demos",
+      "Create job aids and revise training materials",
+      "Communicate product enhancements and workflow changes"
+    ],
+    "observed_handoff_partners": [
+      "Implementation manager",
+      "Program management",
+      "Corporate support",
+      "Clients",
+      "Agency/supplier partners"
+    ],
+    "proposed_human_decision_ownership": [
+      "Client implementation scope",
+      "Go-live acceptance",
+      "Configuration changes to business rules"
+    ],
+    "explicit_system_mentions": [
+      {
+        "name": "VMS",
+        "evidence_scope": "generic applicable tool; vendor unspecified"
+      }
+    ],
+    "evidence_status": "Observed duties paraphrased from public job descriptions; family grouping and future decision ownership inferred",
+    "limitations": "A public advertisement describes intended responsibilities; it does not prove execution frequency, operating effectiveness, staffing levels or software configuration.",
+    "sources": [
+      {
+        "source_feed_id": "16986252",
+        "url": "https://www.amergis.com/job/1011782-implementation-specialist-sunburst-phoenix-az/",
+        "title": "Implementation Specialist - Sunburst"
+      }
+    ],
+    "task_ids": [
+      "T040",
+      "T041",
+      "T042",
+      "T043"
+    ],
+    "task_count": 4,
+    "autonomy_task_counts": {
+      "A": 2,
+      "B": 1,
+      "C": 1
+    }
+  },
+  {
+    "role_family_id": "R14",
+    "role_family": "MSP compliance management",
+    "source_feed_ids": [
+      "16989237"
+    ],
+    "public_posting_count": 1,
+    "count_meaning": "Public job records, not employee headcount or verified vacancies",
+    "title_variants": [
+      "Compliance Manager - Sunburst Workforce Advisors"
+    ],
+    "observed_public_duties": [
+      "Maintain customer credentialing rules including annual refresh",
+      "Ensure pre-assignment and contract requirements are tracked",
+      "Coordinate supplier credential renewals",
+      "Audit active contractor credentials",
+      "Discover client/state requirements during implementation",
+      "Hire and develop credentialing specialists"
+    ],
+    "observed_handoff_partners": [
+      "Credentialing specialists",
+      "Talent acquisition",
+      "Program management",
+      "Implementation team",
+      "Customers",
+      "Suppliers"
+    ],
+    "proposed_human_decision_ownership": [
+      "Credential exception disposition",
+      "Interpretation/approval of client requirements",
+      "Audit findings and corrective actions",
+      "Credentialing staff selection"
+    ],
+    "explicit_system_mentions": [],
+    "evidence_status": "Observed duties paraphrased from public job descriptions; family grouping and future decision ownership inferred",
+    "limitations": "A public advertisement describes intended responsibilities; it does not prove execution frequency, operating effectiveness, staffing levels or software configuration.",
+    "sources": [
+      {
+        "source_feed_id": "16989237",
+        "url": "https://www.amergis.com/job/1011784-compliance-manager-sunburst-workforce-advisors-phoenix-az/",
+        "title": "Compliance Manager - Sunburst Workforce Advisors"
+      }
+    ],
+    "task_ids": [
+      "T044",
+      "T045",
+      "T046"
+    ],
+    "task_count": 3,
+    "autonomy_task_counts": {
+      "B": 1,
+      "A": 1,
+      "C": 1
+    }
+  },
+  {
+    "role_family_id": "R15",
+    "role_family": "Regional finance operations and control",
+    "source_feed_ids": [
+      "17018584"
+    ],
+    "public_posting_count": 1,
+    "count_meaning": "Public job records, not employee headcount or verified vacancies",
+    "title_variants": [
+      "Finance Operations Manager"
+    ],
+    "observed_public_duties": [
+      "Oversee regional reporting, forecasts, budgets, cost controls and compensation analysis",
+      "Participate in financial/operational RFP and contract work",
+      "Coordinate field issues across corporate departments",
+      "Review expenses and train direct reports"
+    ],
+    "observed_handoff_partners": [
+      "Regional controller",
+      "Field offices",
+      "Purchasing",
+      "Payroll",
+      "Contracts",
+      "Legal",
+      "Accounts payable",
+      "Revenue cycle"
+    ],
+    "proposed_human_decision_ownership": [
+      "Budget and compensation decisions",
+      "Contract financial approval",
+      "Expense exceptions",
+      "Financial control ownership"
+    ],
+    "explicit_system_mentions": [],
+    "evidence_status": "Observed duties paraphrased from public job descriptions; family grouping and future decision ownership inferred",
+    "limitations": "Public title is Finance Operations Manager but body explicitly calls role Assistant Controller reporting to Regional Controller. Preserve mismatch; exact organizational title is unresolved.",
+    "sources": [
+      {
+        "source_feed_id": "17018584",
+        "url": "https://www.amergis.com/job/997152-finance-operations-manager-columbia-md/",
+        "title": "Finance Operations Manager"
+      }
+    ],
+    "task_ids": [
+      "T047",
+      "T048",
+      "T049"
+    ],
+    "task_count": 3,
+    "autonomy_task_counts": {
+      "B": 2,
+      "A": 1
+    }
+  },
+  {
+    "role_family_id": "R16",
+    "role_family": "Field support and customer service management",
+    "source_feed_ids": [
+      "17389206",
+      "17389207"
+    ],
+    "public_posting_count": 2,
+    "count_meaning": "Public job records, not employee headcount or verified vacancies",
+    "title_variants": [
+      "FSM - Customer Service Team",
+      "FSM - I9 E-Verify Process"
+    ],
+    "observed_public_duties": [
+      "Supervise field support, onboarding, payroll and credentialing",
+      "Check work-readiness and perform payroll/billing quality assurance",
+      "Coordinate records, claims, licenses, office spending and collections",
+      "Handle grievances, incident reports and compliance correction plans",
+      "Develop staff and select new team members"
+    ],
+    "observed_handoff_partners": [
+      "Business development",
+      "Recruiting",
+      "Clinical team",
+      "Revenue cycle",
+      "Contracts/licensing",
+      "Corporate real estate",
+      "Caregivers and field staff"
+    ],
+    "proposed_human_decision_ownership": [
+      "Worker readiness/credential exceptions",
+      "Payroll/billing discrepancies",
+      "Grievances and incident response",
+      "Staff hiring and performance"
+    ],
+    "explicit_system_mentions": [
+      {
+        "name": "I-9 / E-Verify",
+        "evidence_scope": "one job title only; shared body contains no specific E-Verify workflow"
+      },
+      {
+        "name": "Incident database; HQM scorecard; C10; CPOC",
+        "evidence_scope": "terms named in body; product and control definitions undisclosed"
+      }
+    ],
+    "evidence_status": "Observed duties paraphrased from public job descriptions; family grouping and future decision ownership inferred",
+    "limitations": "Both titles have identical generic duties, including homecare-related terminology. Do not conclude every listed homecare process applies to every staffing segment. C10 and HQM are unresolved internal terms.",
+    "sources": [
+      {
+        "source_feed_id": "17389206",
+        "url": "https://www.amergis.com/job/1012985-fsm-customer-service-team-columbia-md/",
+        "title": "FSM - Customer Service Team"
+      },
+      {
+        "source_feed_id": "17389207",
+        "url": "https://www.amergis.com/job/1012984-fsm-i9-e-verify-process-columbia-md/",
+        "title": "FSM - I9 E-Verify Process"
+      }
+    ],
+    "task_ids": [
+      "T050",
+      "T051",
+      "T052",
+      "T053",
+      "T054"
+    ],
+    "task_count": 5,
+    "autonomy_task_counts": {
+      "B": 1,
+      "A": 2,
+      "C": 2
+    }
+  },
+  {
+    "role_family_id": "R17",
+    "role_family": "Content marketing",
+    "source_feed_ids": [
+      "17394822"
+    ],
+    "public_posting_count": 1,
+    "count_meaning": "Public job records, not employee headcount or verified vacancies",
+    "title_variants": [
+      "Content Marketing Specialist II"
+    ],
+    "observed_public_duties": [
+      "Write/edit multi-channel content and maintain calendar",
+      "Coordinate review with legal, HR, clinical and subject experts",
+      "Coordinate design/video work",
+      "Publish in CMS and maintain DAM assets",
+      "Optimize search and track performance"
+    ],
+    "observed_handoff_partners": [
+      "Content team lead",
+      "Legal",
+      "HR",
+      "Clinical",
+      "Subject matter experts",
+      "Designers/developers",
+      "Video producers"
+    ],
+    "proposed_human_decision_ownership": [
+      "Content claims and sensitive messaging approval",
+      "Campaign strategy"
+    ],
+    "explicit_system_mentions": [
+      {
+        "name": "CMS and DAM",
+        "evidence_scope": "generic systems named; vendors unspecified"
+      }
+    ],
+    "evidence_status": "Observed duties paraphrased from public job descriptions; family grouping and future decision ownership inferred",
+    "limitations": "A public advertisement describes intended responsibilities; it does not prove execution frequency, operating effectiveness, staffing levels or software configuration.",
+    "sources": [
+      {
+        "source_feed_id": "17394822",
+        "url": "https://www.amergis.com/job/1013175-content-marketing-specialist-ii-columbia-md/",
+        "title": "Content Marketing Specialist II"
+      }
+    ],
+    "task_ids": [
+      "T055",
+      "T056",
+      "T057"
+    ],
+    "task_count": 3,
+    "autonomy_task_counts": {
+      "B": 1,
+      "A": 2
+    }
+  },
+  {
+    "role_family_id": "R18",
+    "role_family": "Desktop and end-user technology support",
+    "source_feed_ids": [
+      "17460641"
+    ],
+    "public_posting_count": 1,
+    "count_meaning": "Public job records, not employee headcount or verified vacancies",
+    "title_variants": [
+      "Desktop Support Specialist"
+    ],
+    "observed_public_duties": [
+      "Install/configure/test desktop systems and software",
+      "Resolve escalated help calls and coordinate vendors",
+      "Assess purchasing specifications with procurement",
+      "Ensure system interconnection and security standards"
+    ],
+    "observed_handoff_partners": [
+      "Solution Center",
+      "Vendor support",
+      "Procurement",
+      "Corporate and remote staff"
+    ],
+    "proposed_human_decision_ownership": [
+      "Access/security exceptions",
+      "Procurement decisions",
+      "High-risk endpoint changes"
+    ],
+    "explicit_system_mentions": [
+      {
+        "name": "Remedy ITSM; Microsoft SCCM, Office, Project, Internet Explorer, Visio; Windows/Mac",
+        "evidence_scope": "candidate qualification/experience requirements only; current deployment unverified"
+      }
+    ],
+    "evidence_status": "Observed duties paraphrased from public job descriptions; family grouping and future decision ownership inferred",
+    "limitations": "A public advertisement describes intended responsibilities; it does not prove execution frequency, operating effectiveness, staffing levels or software configuration.",
+    "sources": [
+      {
+        "source_feed_id": "17460641",
+        "url": "https://www.amergis.com/job/1013529-desktop-support-specialist-columbia-md/",
+        "title": "Desktop Support Specialist"
+      }
+    ],
+    "task_ids": [
+      "T058",
+      "T059"
+    ],
+    "task_count": 2,
+    "autonomy_task_counts": {
+      "A": 1,
+      "B": 1
+    }
+  },
+  {
+    "role_family_id": "R19",
+    "role_family": "Onboarding and credentialing support",
+    "source_feed_ids": [
+      "17780233"
+    ],
+    "public_posting_count": 1,
+    "count_meaning": "Public job records, not employee headcount or verified vacancies",
+    "title_variants": [
+      "Onboarding and Credentialing Field Support Specialist I"
+    ],
+    "observed_public_duties": [
+      "Guide candidates through onboarding",
+      "Track pre-assignment and contract requirements before activation",
+      "Enter and validate credential data",
+      "Obtain updated credentials before expiry",
+      "Support multiple offices and office administration"
+    ],
+    "observed_handoff_partners": [
+      "Field support manager",
+      "Candidates",
+      "Caregivers/field staff",
+      "Clients",
+      "Offices"
+    ],
+    "proposed_human_decision_ownership": [
+      "Credential discrepancy/exception decisions",
+      "Final work authorization and readiness",
+      "Privacy-sensitive requests"
+    ],
+    "explicit_system_mentions": [],
+    "evidence_status": "Observed duties paraphrased from public job descriptions; family grouping and future decision ownership inferred",
+    "limitations": "A public advertisement describes intended responsibilities; it does not prove execution frequency, operating effectiveness, staffing levels or software configuration.",
+    "sources": [
+      {
+        "source_feed_id": "17780233",
+        "url": "https://www.amergis.com/job/1013607-onboarding-and-credentialing-field-support-specialist-i-las-vegas-nv/",
+        "title": "Onboarding and Credentialing Field Support Specialist I"
+      }
+    ],
+    "task_ids": [
+      "T060",
+      "T061",
+      "T062",
+      "T063"
+    ],
+    "task_count": 4,
+    "autonomy_task_counts": {
+      "A": 3,
+      "C": 1
+    }
+  },
+  {
+    "role_family_id": "R20",
+    "role_family": "Staffing analysis \u2014 duties unresolved",
+    "source_feed_ids": [
+      "17323081"
+    ],
+    "public_posting_count": 1,
+    "count_meaning": "Public job records, not employee headcount or verified vacancies",
+    "title_variants": [
+      "Staffing Analyst"
+    ],
+    "observed_public_duties": [
+      "Public card provides job title, location, pay and contract status; no substantive duties disclosed"
+    ],
+    "observed_handoff_partners": [],
+    "proposed_human_decision_ownership": [],
+    "explicit_system_mentions": [],
+    "evidence_status": "Observed duties paraphrased from public job descriptions; family grouping and future decision ownership inferred",
+    "limitations": "Do not infer scheduling, forecasting or analytics responsibilities solely from Staffing Analyst title. No sourced tasks created for this family; seek additional public role description.",
+    "sources": [
+      {
+        "source_feed_id": "17323081",
+        "url": "https://www.amergis.com/job/1006683-staffing-analyst-poughkeepsie-ny/",
+        "title": "Staffing Analyst"
+      }
+    ],
+    "task_ids": [],
+    "task_count": 0,
+    "autonomy_task_counts": {}
+  }
+]

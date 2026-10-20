@@ -1,0 +1,59 @@
+{
+  "as_of": "2026-10-20",
+  "counts": {
+    "documents": 6,
+    "pdf_pages_including_reproduced_master": 297,
+    "rules": 57,
+    "customer_bill_rate_rows": 42,
+    "platform_process_findings": 8
+  },
+  "coverage": "Targeted six-document operating sample, not a census of Amergis contracts or complete remaining public data. El Dorado includes 44 reproduced master/proposal pages.",
+  "visual_review_pages": [
+    "sourcewell 6",
+    "eldorado-executed 46",
+    "knox 46",
+    "rockford 10",
+    "oakland-agreement 19",
+    "santabarbara-executed 15",
+    "santabarbara-executed 18",
+    "rockford 32",
+    "eldorado-executed 30"
+  ],
+  "missing_or_unresolved": [
+    "No executed renewal retrieved for Rockford; do not label it current.",
+    "No conversion fee located in Knox, Rockford or Oakland inspected text; absence of extraction is not proof no fee exists elsewhere.",
+    "El Dorado initial-assignment non-solicitation is not a quantified conversion fee.",
+    "Santa Barbara 140\u2013280-hour conversion row is defective in rendered original. Block calculation pending clarification.",
+    "Santa Barbara SOW independent-contractor language needs contract/HR interpretation before treating workers as W-2 or 1099.",
+    "Sourcewell annual proposal fee-remittance language conflicts with quarterly master requirement; requires hierarchy resolution.",
+    "Rockford literal CST deadline needs daylight-saving interpretation.",
+    "Santa Barbara holiday periods combine 11pm rule with 3pm eve exceptions; confirm boundaries.",
+    "No public contract ceiling is a measurement of spend, wages, margins or company revenue."
+  ],
+  "proposed_validation_cases": [
+    {
+      "case": "Knox timesheet imported without supervisor approval",
+      "expected": "hold customer billing; request approval; payroll duty assessed separately"
+    },
+    {
+      "case": "Rockford invoice issued before Board approval",
+      "expected": "do not start 45-day post-Board-approval payment clock"
+    },
+    {
+      "case": "Santa Barbara direct hire after 200 hours",
+      "expected": "flag defective conversion band; no invented percentage"
+    },
+    {
+      "case": "El Dorado overtime with no written approval",
+      "expected": "flag missing client authorization; do not erase worked hours"
+    },
+    {
+      "case": "Santa Barbara RN MedSurg local assignment at $90/hour",
+      "expected": "flag schedule differs from $85; accept only documented authorized assignment override"
+    },
+    {
+      "case": "Client changes holiday calendar",
+      "expected": "effective-date contract version; rerun impacted billing preview; authorized approval before activation"
+    }
+  ]
+}

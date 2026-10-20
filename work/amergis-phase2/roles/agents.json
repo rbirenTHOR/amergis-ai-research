@@ -1,0 +1,205 @@
+[
+  {
+    "agent_group_id": "AG01",
+    "agent_group": "Talent and worker service",
+    "role_family_ids": [
+      "R01"
+    ],
+    "task_ids": [
+      "T001",
+      "T002",
+      "T003",
+      "T004",
+      "T005",
+      "T006",
+      "T007"
+    ],
+    "proposed_scope": "Recruiting queue, evidence preparation, scheduling and worker-service routing.",
+    "status": "Inferred future operating design, not an observed Amergis agent",
+    "operating_principle": "A tasks execute only under approved policies; B tasks require approval; C decisions remain human-led."
+  },
+  {
+    "agent_group_id": "AG02",
+    "agent_group": "Clinical administration and knowledge",
+    "role_family_ids": [
+      "R02"
+    ],
+    "task_ids": [
+      "T008",
+      "T009",
+      "T010",
+      "T011"
+    ],
+    "proposed_scope": "Support licensed clinical owners with records, approved knowledge and case preparation.",
+    "status": "Inferred future operating design, not an observed Amergis agent",
+    "operating_principle": "A tasks execute only under approved policies; B tasks require approval; C decisions remain human-led."
+  },
+  {
+    "agent_group_id": "AG03",
+    "agent_group": "Program improvement",
+    "role_family_ids": [
+      "R03"
+    ],
+    "task_ids": [
+      "T012",
+      "T013"
+    ],
+    "proposed_scope": "Track approved projects and propose measured process changes.",
+    "status": "Inferred future operating design, not an observed Amergis agent",
+    "operating_principle": "A tasks execute only under approved policies; B tasks require approval; C decisions remain human-led."
+  },
+  {
+    "agent_group_id": "AG04",
+    "agent_group": "Revenue cycle",
+    "role_family_ids": [
+      "R04",
+      "R07"
+    ],
+    "task_ids": [
+      "T014",
+      "T015",
+      "T016",
+      "T017",
+      "T018",
+      "T025",
+      "T026",
+      "T027"
+    ],
+    "proposed_scope": "Validate approved revenue, invoice, reconcile and prepare financial exceptions.",
+    "status": "Inferred future operating design, not an observed Amergis agent",
+    "operating_principle": "A tasks execute only under approved policies; B tasks require approval; C decisions remain human-led."
+  },
+  {
+    "agent_group_id": "AG05",
+    "agent_group": "Claims and workforce case support",
+    "role_family_ids": [
+      "R05",
+      "R16"
+    ],
+    "task_ids": [
+      "T019",
+      "T020",
+      "T021",
+      "T050",
+      "T051",
+      "T052",
+      "T053",
+      "T054"
+    ],
+    "proposed_scope": "Route incidents, maintain claims records and support human employee/claims decisions.",
+    "status": "Inferred future operating design, not an observed Amergis agent",
+    "operating_principle": "A tasks execute only under approved policies; B tasks require approval; C decisions remain human-led."
+  },
+  {
+    "agent_group_id": "AG06",
+    "agent_group": "Knowledge and communications",
+    "role_family_ids": [
+      "R06",
+      "R17"
+    ],
+    "task_ids": [
+      "T022",
+      "T023",
+      "T024",
+      "T055",
+      "T056",
+      "T057"
+    ],
+    "proposed_scope": "Draft content, orchestrate specialist review and publish approved versions.",
+    "status": "Inferred future operating design, not an observed Amergis agent",
+    "operating_principle": "A tasks execute only under approved policies; B tasks require approval; C decisions remain human-led."
+  },
+  {
+    "agent_group_id": "AG07",
+    "agent_group": "Finance planning and control",
+    "role_family_ids": [
+      "R08",
+      "R15"
+    ],
+    "task_ids": [
+      "T028",
+      "T029",
+      "T047",
+      "T048",
+      "T049"
+    ],
+    "proposed_scope": "Prepare reconciled reports, scenarios and controlled approval packets.",
+    "status": "Inferred future operating design, not an observed Amergis agent",
+    "operating_principle": "A tasks execute only under approved policies; B tasks require approval; C decisions remain human-led."
+  },
+  {
+    "agent_group_id": "AG08",
+    "agent_group": "Account development",
+    "role_family_ids": [
+      "R09",
+      "R11"
+    ],
+    "task_ids": [
+      "T030",
+      "T031",
+      "T032",
+      "T033",
+      "T036",
+      "T037"
+    ],
+    "proposed_scope": "Research accounts and prepare proposals for human commercial ownership.",
+    "status": "Inferred future operating design, not an observed Amergis agent",
+    "operating_principle": "A tasks execute only under approved policies; B tasks require approval; C decisions remain human-led."
+  },
+  {
+    "agent_group_id": "AG09",
+    "agent_group": "MSP implementation and service",
+    "role_family_ids": [
+      "R10",
+      "R13"
+    ],
+    "task_ids": [
+      "T034",
+      "T035",
+      "T040",
+      "T041",
+      "T042",
+      "T043"
+    ],
+    "proposed_scope": "Coordinate client/supplier setup, milestones and contractual service reporting.",
+    "status": "Inferred future operating design, not an observed Amergis agent",
+    "operating_principle": "A tasks execute only under approved policies; B tasks require approval; C decisions remain human-led."
+  },
+  {
+    "agent_group_id": "AG10",
+    "agent_group": "Enterprise IT support",
+    "role_family_ids": [
+      "R12",
+      "R18"
+    ],
+    "task_ids": [
+      "T038",
+      "T039",
+      "T058",
+      "T059"
+    ],
+    "proposed_scope": "Provide bounded support and prepare controlled engineering changes.",
+    "status": "Inferred future operating design, not an observed Amergis agent",
+    "operating_principle": "A tasks execute only under approved policies; B tasks require approval; C decisions remain human-led."
+  },
+  {
+    "agent_group_id": "AG11",
+    "agent_group": "Credentialing and onboarding",
+    "role_family_ids": [
+      "R14",
+      "R19"
+    ],
+    "task_ids": [
+      "T044",
+      "T045",
+      "T046",
+      "T060",
+      "T061",
+      "T062",
+      "T063"
+    ],
+    "proposed_scope": "Collect and verify evidence structure, monitor expiry and prepare human clearances.",
+    "status": "Inferred future operating design, not an observed Amergis agent",
+    "operating_principle": "A tasks execute only under approved policies; B tasks require approval; C decisions remain human-led."
+  }
+]

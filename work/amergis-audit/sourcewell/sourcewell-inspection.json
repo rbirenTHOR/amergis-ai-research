@@ -1,0 +1,90 @@
+{
+  "sourceUrl": "https://files.sourcewell.org/public/Shared%20Documents/Solicitations/10924/00006717/Additional%20Documents/Sourcewell%20Price%20List%20May%202026.xlsx",
+  "sourcePath": "Sourcewell Price List May 2026.xlsx (original not distributed; see source URL in report)",
+  "inspectedAt": "2026-10-20T17:20:28.001Z",
+  "bytes": 56664,
+  "sha256": "62a0017f4c8b4e99403a6c641721a1d3f5c9560a66d639beaf374f3122613733",
+  "summary": "{\"kind\":\"workbook\",\"id\":\"wb/lc0c0x\",\"sheets\":2}\n{\"kind\":\"sheet\",\"id\":\"ws/khc2c9\",\"name\":\"Amergis Healthcare\",\"index\":0,\"range\":\"A1:I150\",\"address\":\"A1:I150\"}\n{\"kind\":\"sheet\",\"id\":\"ws/d45zu8\",\"name\":\"Sunburst Workforce\",\"index\":1,\"range\":\"A1:F6\",\"address\":\"A1:F6\"}",
+  "healthcare": {
+    "range": "A1:I150",
+    "headerRow": 2,
+    "dataRange": "A3:I150",
+    "dataRows": 148,
+    "fieldColumns": {
+      "itemNumber": "A",
+      "laborCategory": "B",
+      "serviceDescription": "E",
+      "unitType": "H",
+      "sourcewellNotToExceedPrice": "I"
+    },
+    "categoryCounts": {
+      "Administative Services": 3,
+      "Ancillary Services": 48,
+      "Behavioral Health Services": 8,
+      "Nursing Services": 14,
+      "Physician Services": 38,
+      "Revenue Cycle Services": 10,
+      "School Staffing Services": 26,
+      "Ancillary Services/School Staffing Services": 1
+    },
+    "allPricesNumeric": true,
+    "allUnitsPerHour": true,
+    "examples": [
+      {
+        "row": 68,
+        "itemNumber": 66,
+        "laborCategory": "Registered Nurses \u2010 Med/Surg",
+        "serviceDescription": "Nursing Services",
+        "unitType": "Per Hour",
+        "sourcewellNotToExceedPrice": 115
+      },
+      {
+        "row": 140,
+        "itemNumber": 138,
+        "laborCategory": "Speech Language Pathologist",
+        "serviceDescription": "School Staffing Services",
+        "unitType": "Per Hour",
+        "sourcewellNotToExceedPrice": 125
+      }
+    ]
+  },
+  "sunburst": {
+    "range": "A1:F6",
+    "headerRow": 3,
+    "dataRows": 3,
+    "values": [
+      [
+        "Annual\u00a0Spend Projection\u00a0\u2010\u00a0Client",
+        null,
+        "Potential\u00a0MSP Fee\u00a0%",
+        "Participating Entity\u00a0Rebate (Included\u00a0in 5%\u00a0MSP\u00a0Fee)",
+        null,
+        "Avg.\u00a0VMS\nTechnology\u00a0Fee (Included\u00a0in\u00a05% MSP\u00a0Fee)"
+      ],
+      [
+        "< $1M",
+        null,
+        "4.00% \u2010 5.00%",
+        0,
+        null,
+        0.01
+      ],
+      [
+        "$1M \u2010 $4,999,999",
+        null,
+        "3.50% \u2010 5.00%",
+        0.005,
+        null,
+        0.01
+      ],
+      [
+        "> $5M",
+        null,
+        "3.00% \u2010 5.00%",
+        0.005,
+        null,
+        0.01
+      ]
+    ]
+  }
+}

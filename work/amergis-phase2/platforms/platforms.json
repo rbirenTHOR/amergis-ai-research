@@ -1,0 +1,852 @@
+{
+  "as_of_date": "2026-10-20",
+  "interpretation": "Public evidence map; entity names are proposed implementation concepts. Claims are not product tests or recovered internal schema.",
+  "sources": [
+    {
+      "source_id": "P01",
+      "title": "Amergis office directory",
+      "url": "https://www.amergis.com/about/locations/",
+      "published_date": null,
+      "retrieved_date": "2026-10-20",
+      "source_type": "observed public directory",
+      "evidence": [
+        "61 distinct linked office records across 32 states in rendered directory. City, state, ZIP and business telephone available for every record; full addresses require detail pages."
+      ],
+      "raw_file": "raw/locations-ax.txt"
+    },
+    {
+      "source_id": "P02",
+      "title": "MaxView workforce management",
+      "url": "https://www.amergis.com/workforce-solutions/maxview/",
+      "published_date": null,
+      "retrieved_date": "2026-10-20",
+      "source_type": "current undated marketing claim",
+      "evidence": [
+        "Advertises positions, candidate/credential/bill-rate/schedule visibility, timesheet e-approval, invoice consolidation and quarterly reporting of spend, fill ratios and time to fill.",
+        "Advertises a communications hub and notifications of posted jobs to qualified candidates. Features have not been tested in an authenticated tenant."
+      ]
+    },
+    {
+      "source_id": "P03",
+      "title": "Features of the MaxView Workforce Management Dashboard",
+      "url": "https://www.amergis.com/resources/company-news/features-of-the-maxview-workforce-management-dashboard/",
+      "published_date": "2024-05-14",
+      "retrieved_date": "2026-10-20",
+      "source_type": "historical official guide",
+      "evidence": [
+        "Positions include open/pending and remaining-to-fill counts, comments and attachments. Submittals may be approved or rejected, then tracked through credentialing and active assignments.",
+        "Shift statuses named: open, filled, unfilled, canceled. Timecards may be approved/rejected, including by email; guide advertises GPS and QR time capture.",
+        "Communication hub, credential document/expiry module and invoice history/status section were future enhancements in this 2024 article. Current exact release status cannot be inferred from the article."
+      ],
+      "raw_file": "raw/maxview-guide-ax.txt"
+    },
+    {
+      "source_id": "P04",
+      "title": "Looking for Per Diem Shifts? How MaxView Jobs Can Help",
+      "url": "https://www.amergis.com/resources/company-news/looking-for-per-diem-shifts-how-maxview-jobs-can-help/",
+      "published_date": "2024-09-18",
+      "retrieved_date": "2026-10-20",
+      "source_type": "historical official guide",
+      "evidence": [
+        "Filters include start date, shift, location, specialty, pay and duration; alerts may be immediate, daily or weekly.",
+        "Applying has two documented branches: an existing compliant candidate is automatically scheduled; a new candidate or one with compliance needs is contacted by a recruiter.",
+        "Favorites retain prospective shifts for later comparison. The guide does not disclose compliance rules, simultaneous booking control or cancellation rules."
+      ],
+      "raw_file": "raw/perdiem-guide-ax.txt"
+    },
+    {
+      "source_id": "P05",
+      "title": "Help Center",
+      "url": "https://www.amergis.com/help-center/",
+      "published_date": null,
+      "retrieved_date": "2026-10-20",
+      "source_type": "current official support instructions",
+      "evidence": [
+        "ADP is used for pay stubs, W2s and address updates, with a dedicated support channel.",
+        "The Work Number provides automated employment/income verification; written requests or other questions go to a verification team.",
+        "Recruiters/local offices support timesheets, compliance training, onboarding, new-hire documents, direct deposit and benefits. Benefits and referral terms can vary by office or position."
+      ]
+    },
+    {
+      "source_id": "P06",
+      "title": "MaxView Demo Request",
+      "url": "https://www.amergis.com/request-a-demo/",
+      "published_date": null,
+      "retrieved_date": "2026-10-20",
+      "source_type": "observed form schema",
+      "evidence": [
+        "Visible form captures organization, contacts, industry, location, size, current customer/use status, prior demo, features of interest and needs narrative, plus processing consent. No submission."
+      ],
+      "raw_file": "raw/demo-form-ax.txt"
+    },
+    {
+      "source_id": "P07",
+      "title": "Amergis Contact Us",
+      "url": "https://www.amergis.com/contact/",
+      "published_date": null,
+      "retrieved_date": "2026-10-20",
+      "source_type": "observed public intake form",
+      "evidence": [
+        "Visible routing choices distinguish staffing needs, employee verification, ADP/payroll help, job search and travel job search.",
+        "Selecting staffing needs reveals discipline and additional-information fields. Headquarters address is published here. No contact details entered and no submission."
+      ],
+      "raw_file": "raw/contact-staffing-ax.txt"
+    },
+    {
+      "source_id": "P08",
+      "title": "MaxView Jobs by Amergis \u2014 Apple publisher listing",
+      "url": "https://apps.apple.com/us/app/maxview-jobs-by-amergis/id1626499875",
+      "published_date": null,
+      "retrieved_date": "2026-10-20",
+      "source_type": "current publisher listing and dated version history",
+      "evidence": [
+        "Listed latest version 2025.5.01 dated 2025-11-11. Version 2025.5.00 (2025-07-29) changes per-diem wording to shift; alerts and self-registration appear in earlier releases.",
+        "Application, onboarding, hours/payment tracking, timecards and recruiter contact are advertised. Copyright credits Bullhorn; this does not identify the whole ATS or prove backend architecture."
+      ]
+    },
+    {
+      "source_id": "P09",
+      "title": "Amergis homepage",
+      "url": "https://www.amergis.com/",
+      "published_date": null,
+      "retrieved_date": "2026-10-20",
+      "source_type": "current marketing page; phase-one saved HTML",
+      "evidence": [
+        "Advertises over 70 offices and a network of over 2 million candidates; neither is a recovered operating dataset.",
+        "Amergis Connect appears with Coming soon while adjoining copy still describes MaxView Jobs; launch/migration status unresolved."
+      ],
+      "raw_file": "../../amergis-audit/home.html"
+    },
+    {
+      "source_id": "P10",
+      "title": "Phoenix office",
+      "url": "https://www.amergis.com/about/locations/phoenix/",
+      "published_date": null,
+      "retrieved_date": "2026-10-20",
+      "source_type": "observed office detail and local marketing claims",
+      "evidence": [
+        "Lists 3300 N Central Avenue, Suite 500, Phoenix AZ 85012 and local business telephone.",
+        "Describes Commercial, Government and Education divisions and staffing across central/northern Arizona. Local offerings are not generalized to every office.",
+        "Three statistics widgets render as zero; excluded from workforce/facility counts because they appear unpopulated."
+      ],
+      "raw_file": "raw/phoenix-office-ax.txt"
+    },
+    {
+      "source_id": "PLAT-SUN-HOME",
+      "title": "Complex Staffing Made Simple",
+      "url": "https://www.sunburstworkforce.com/",
+      "published_date": null,
+      "retrieved_date": "2026-10-20",
+      "source_type": "official service marketing",
+      "evidence": [
+        {
+          "evidence_id": "SUN-HOME-01",
+          "claim": "Describes an MSP with a dedicated program manager, tailored recruitment strategy, and dashboards for staffing and spend.",
+          "location": "On-the-Ground Support; Tailored Solutions; Visibility and Transparency"
+        },
+        {
+          "evidence_id": "SUN-HOME-02",
+          "claim": "Says workforce experts combine AI innovation with practical services, but does not identify AI products, algorithms or delegated decisions.",
+          "location": "Our simple approach"
+        },
+        {
+          "evidence_id": "SUN-HOME-03",
+          "claim": "Positions the supplier network as spanning agency affiliations.",
+          "location": "A network as diverse as your needs"
+        }
+      ]
+    },
+    {
+      "source_id": "PLAT-SUN-VMS",
+      "title": "Vendor Management System",
+      "url": "https://www.sunburstworkforce.com/vendor-management-system/",
+      "published_date": null,
+      "retrieved_date": "2026-10-20",
+      "source_type": "official product/service marketing",
+      "evidence": [
+        {
+          "evidence_id": "SUN-VMS-01",
+          "claim": "Offers VMS partner selection according to customer fit; it does not identify one universal proprietary backend.",
+          "location": "The right technology for your team; An approach you can trust"
+        },
+        {
+          "evidence_id": "SUN-VMS-02",
+          "claim": "Describes consolidated supplier invoices, spend and fill-rate analytics, supplier performance reporting, position management, candidate vetting, and credential/onboarding tracking.",
+          "location": "Consolidated invoicing through Simplified compliance"
+        }
+      ]
+    },
+    {
+      "source_id": "PLAT-SUN-SUP",
+      "title": "Suppliers",
+      "url": "https://www.sunburstworkforce.com/suppliers/",
+      "published_date": null,
+      "retrieved_date": "2026-10-20",
+      "source_type": "official supplier recruitment page",
+      "evidence": [
+        {
+          "evidence_id": "SUN-SUP-01",
+          "claim": "Describes supplier matching by industry and region, specialist coverage, and supplier-diversity objectives.",
+          "location": "Better alignment; Diversity in action; Niche roles, filled"
+        },
+        {
+          "evidence_id": "SUN-SUP-02",
+          "claim": "Published supplier expectations cover quality, compliance, responsiveness, collaboration, candidate experience and growth.",
+          "location": "What we look for in a supplier"
+        },
+        {
+          "evidence_id": "SUN-SUP-03",
+          "claim": "The public joining action leads to contact; no qualification scoring rubric or executable onboarding process is disclosed.",
+          "location": "Become a Sunburst Supplier; Apply to join our supplier network"
+        }
+      ]
+    },
+    {
+      "source_id": "PLAT-SUN-EDU",
+      "title": "Education Workforce Solutions",
+      "url": "https://www.sunburstworkforce.com/education-workforce-solutions/",
+      "published_date": null,
+      "retrieved_date": "2026-10-20",
+      "source_type": "official sector service marketing",
+      "evidence": [
+        {
+          "evidence_id": "SUN-EDU-01",
+          "claim": "For districts, describes onboarding, compliance, vendor coordination, simplified contracting and consolidated billing.",
+          "location": "Less admin, more impact through Consolidate vendor billing & invoices"
+        },
+        {
+          "evidence_id": "SUN-EDU-02",
+          "claim": "Explicitly names MatterWorx as a VMS used for consolidated invoices, spend/fill-rate reporting and credential tracking.",
+          "location": "Say goodbye to spreadsheets"
+        },
+        {
+          "evidence_id": "SUN-EDU-03",
+          "claim": "Claims no cost to school districts; this is a marketing description rather than proof of total economic incidence.",
+          "location": "Educational staffing, simplified"
+        },
+        {
+          "evidence_id": "SUN-EDU-04",
+          "claim": "Names a Vice President of Business Development role. The adjacent three team entries are placeholders, so they are excluded from personnel counts.",
+          "location": "Meet your team"
+        }
+      ]
+    },
+    {
+      "source_id": "PLAT-SUN-HCG",
+      "title": "Healthcare and Government Workforce Solutions",
+      "url": "https://www.sunburstworkforce.com/healthcare-government-workforce-solutions/",
+      "published_date": null,
+      "retrieved_date": "2026-10-20",
+      "source_type": "official sector service marketing",
+      "evidence": [
+        {
+          "evidence_id": "SUN-HCG-01",
+          "claim": "Describes clinical and healthcare leadership guiding labor-mix planning across health systems, individual facilities and public-sector programs.",
+          "location": "Workforce solutions tailored to you; Why partners choose us"
+        },
+        {
+          "evidence_id": "SUN-HCG-02",
+          "claim": "Says its public-sector services are funded through agency fees and supported by vetted suppliers, credentialing and onboarding.",
+          "location": "Compliance-first mindset; Cost-neutral model; Reduced agency spend"
+        }
+      ]
+    },
+    {
+      "source_id": "PLAT-ATP",
+      "title": "Teletherapy Platform",
+      "url": "https://www.amergiseducation.com/teletherapy-platform/",
+      "published_date": null,
+      "retrieved_date": "2026-10-20",
+      "source_type": "official product marketing and FAQ",
+      "evidence": [
+        {
+          "evidence_id": "ATP-01",
+          "claim": "Describes school speech-language and psychological sessions accessed through permanent secure room links without student accounts or downloads, plus waiting rooms.",
+          "location": "Overview; Security and accessibility; FAQ"
+        },
+        {
+          "evidence_id": "ATP-02",
+          "claim": "Lists collaborative whiteboards, document sharing, Boom Cards and Super Duper resources.",
+          "location": "Tools for engaging virtual therapy"
+        },
+        {
+          "evidence_id": "ATP-03",
+          "claim": "Lists in-platform Pearson assessments for SLP and psychology, in-call instructions and printable protocols.",
+          "location": "Clinically valid evaluations"
+        },
+        {
+          "evidence_id": "ATP-04",
+          "claim": "Describes therapy-minute/session-completion tracking and activity reporting for documentation and billing, with technical support.",
+          "location": "Clinically valid evaluations; FAQ"
+        },
+        {
+          "evidence_id": "ATP-05",
+          "claim": "Claims HIPAA/FERPA compliance and no storage of student session data. Public copy does not reconcile reporting with its storage claim or disclose retention, data-flow architecture or assessment licensing.",
+          "location": "Security and accessibility; FAQ"
+        }
+      ]
+    }
+  ],
+  "platforms": [
+    {
+      "platform_id": "PL01",
+      "name": "Amergis public web/job/office surfaces",
+      "status": "Observed public pages",
+      "audience": [
+        "prospective clients",
+        "candidates"
+      ],
+      "functions": [
+        "job discovery",
+        "office routing",
+        "lead intake",
+        "service documentation"
+      ],
+      "data_objects": [
+        "PublicJob",
+        "Office",
+        "Inquiry",
+        "Consent"
+      ],
+      "source_ids": [
+        "P01",
+        "P07",
+        "P09"
+      ],
+      "limits": "Public records and visible form schemas; candidate/client databases not exposed."
+    },
+    {
+      "platform_id": "PL02",
+      "name": "MaxView client portal",
+      "status": "Current claims plus historical guide",
+      "audience": [
+        "client staffing managers",
+        "time approvers",
+        "Amergis account teams"
+      ],
+      "functions": [
+        "position request",
+        "submittal review",
+        "placement visibility",
+        "shift planning",
+        "time approval",
+        "spend analytics",
+        "invoice consolidation",
+        "communications"
+      ],
+      "data_objects": [
+        "Position",
+        "Submittal",
+        "Placement",
+        "Shift",
+        "Timecard",
+        "Invoice",
+        "Report"
+      ],
+      "source_ids": [
+        "P02",
+        "P03"
+      ],
+      "limits": "API, actual table structure, permissions and present tenant behavior unknown."
+    },
+    {
+      "platform_id": "PL03",
+      "name": "MaxView Jobs candidate app",
+      "status": "Public listing active; per-diem rules historical",
+      "audience": [
+        "healthcare professionals",
+        "school professionals"
+      ],
+      "functions": [
+        "job alerts",
+        "application",
+        "favorites",
+        "onboarding",
+        "shift calendar",
+        "time submission",
+        "pay visibility",
+        "recruiter communication"
+      ],
+      "data_objects": [
+        "Candidate",
+        "Preferences",
+        "Application",
+        "CredentialTask",
+        "ShiftBooking",
+        "TimeEntry"
+      ],
+      "source_ids": [
+        "P04",
+        "P08"
+      ],
+      "limits": "App not installed/tested; broad one-click application language coexists with documented compliant-shift auto-scheduling branch."
+    },
+    {
+      "platform_id": "PL04",
+      "name": "Amergis Connect",
+      "status": "Coming-soon label observed",
+      "audience": [
+        "professionals"
+      ],
+      "functions": [],
+      "data_objects": [],
+      "source_ids": [
+        "P09"
+      ],
+      "limits": "Relationship to MaxView and launch state unresolved; do not assume migration complete."
+    },
+    {
+      "platform_id": "PL05",
+      "name": "ADP employee self-service",
+      "status": "Explicit current support routing",
+      "audience": [
+        "employees",
+        "payroll support"
+      ],
+      "functions": [
+        "pay documents",
+        "W2",
+        "address maintenance"
+      ],
+      "data_objects": [
+        "PayStatement",
+        "TaxDocument",
+        "EmployeeAddress"
+      ],
+      "source_ids": [
+        "P05"
+      ],
+      "limits": "Does not prove the entire payroll calculation/system-of-record stack."
+    },
+    {
+      "platform_id": "PL06",
+      "name": "The Work Number",
+      "status": "Explicit current support routing",
+      "audience": [
+        "authorized employment/income verifiers",
+        "verification team"
+      ],
+      "functions": [
+        "employment verification",
+        "income verification",
+        "exception routing"
+      ],
+      "data_objects": [
+        "VerificationRequest",
+        "Authorization",
+        "VerificationResult"
+      ],
+      "source_ids": [
+        "P05"
+      ],
+      "limits": "No employee records requested or obtained."
+    },
+    {
+      "platform_id": "PL07",
+      "name": "Sunburst MSP / configurable VMS partners",
+      "status": "Current undated public claims",
+      "audience": [
+        "clients",
+        "suppliers",
+        "program managers"
+      ],
+      "functions": [
+        "vendor coordination",
+        "position management",
+        "credential/onboarding tracking",
+        "consolidated invoicing",
+        "spend/fill/supplier reporting"
+      ],
+      "data_objects": [
+        "MSPProgram",
+        "Supplier",
+        "Requisition",
+        "SupplierSubmission",
+        "VendorInvoice"
+      ],
+      "source_ids": [
+        "PLAT-SUN-HOME",
+        "PLAT-SUN-VMS",
+        "PLAT-SUN-SUP"
+      ],
+      "limits": "Partner selection varies by fit; no single proprietary VMS inferred."
+    },
+    {
+      "platform_id": "PL08",
+      "name": "MatterWorx within Sunburst education offering",
+      "status": "Explicitly named current product claim",
+      "audience": [
+        "school districts",
+        "program managers"
+      ],
+      "functions": [
+        "invoice consolidation",
+        "spend/fill-rate reporting",
+        "credential tracking"
+      ],
+      "data_objects": [
+        "VendorInvoice",
+        "Credential",
+        "ProgramMetric"
+      ],
+      "source_ids": [
+        "PLAT-SUN-EDU"
+      ],
+      "limits": "Documented education offering only; breadth of production deployments unknown."
+    },
+    {
+      "platform_id": "PL09",
+      "name": "Amergis Teletherapy Platform",
+      "status": "Current undated marketing/FAQ claims",
+      "audience": [
+        "licensed clinicians",
+        "school students",
+        "district administrators"
+      ],
+      "functions": [
+        "virtual sessions",
+        "waiting rooms",
+        "resource sharing",
+        "assessment access",
+        "therapy-minute tracking",
+        "activity reporting"
+      ],
+      "data_objects": [
+        "Room",
+        "Session",
+        "ActivityRecord",
+        "Assessment",
+        "ServiceMinute"
+      ],
+      "source_ids": [
+        "PLAT-ATP"
+      ],
+      "limits": "Clinical judgments remain clinician work. Reporting/storage scope and licensing require implementation discovery."
+    }
+  ],
+  "form_schemas": [
+    {
+      "form_id": "FORM01",
+      "name": "Contact",
+      "source_id": "P07",
+      "url": "https://www.amergis.com/contact/",
+      "fields": [
+        {
+          "label": "First name",
+          "type": "text",
+          "required_as_displayed": true
+        },
+        {
+          "label": "Last name",
+          "type": "text",
+          "required_as_displayed": true
+        },
+        {
+          "label": "Email",
+          "type": "text",
+          "required_as_displayed": true
+        },
+        {
+          "label": "Phone",
+          "type": "text",
+          "required_as_displayed": true
+        },
+        {
+          "label": "Job Title",
+          "type": "text",
+          "required_as_displayed": true
+        },
+        {
+          "label": "Company name",
+          "type": "text",
+          "required_as_displayed": true
+        },
+        {
+          "label": "Company zip code",
+          "type": "text",
+          "required_as_displayed": true
+        },
+        {
+          "label": "How can we help?",
+          "type": "select",
+          "required_as_displayed": true,
+          "options": [
+            "I have staffing needs",
+            "I need an employee verification",
+            "I need ADP or payroll help",
+            "I'm looking for a job",
+            "I'm looking for a travel job"
+          ]
+        },
+        {
+          "label": "Consent to future email communications",
+          "type": "checkbox",
+          "required_as_displayed": true
+        }
+      ],
+      "conditional_fields": {
+        "I have staffing needs": [
+          {
+            "label": "I'm hiring for",
+            "type": "select",
+            "required_as_displayed": true,
+            "options": [
+              "Nurses",
+              "Allied healthcare professionals",
+              "School-based professionals",
+              "Physicians or advanced practitioners",
+              "Revenue cycle professionals"
+            ]
+          },
+          {
+            "label": "Additional Information",
+            "type": "textarea",
+            "required_as_displayed": true
+          }
+        ]
+      },
+      "limitations": "Only default and staffing-needs branch inspected; other conditional routing not executed. CAPTCHA present; never submitted."
+    },
+    {
+      "form_id": "FORM02",
+      "name": "MaxView demo",
+      "source_id": "P06",
+      "url": "https://www.amergis.com/request-a-demo/",
+      "fields": [
+        {
+          "label": "First name",
+          "type": "text",
+          "required_as_displayed": true
+        },
+        {
+          "label": "Last name",
+          "type": "text",
+          "required_as_displayed": true
+        },
+        {
+          "label": "Email",
+          "type": "text",
+          "required_as_displayed": true
+        },
+        {
+          "label": "Phone",
+          "type": "text",
+          "required_as_displayed": true
+        },
+        {
+          "label": "Company name",
+          "type": "text",
+          "required_as_displayed": true
+        },
+        {
+          "label": "Industry",
+          "type": "text",
+          "required_as_displayed": true
+        },
+        {
+          "label": "City",
+          "type": "text",
+          "required_as_displayed": true
+        },
+        {
+          "label": "State",
+          "type": "text",
+          "required_as_displayed": true
+        },
+        {
+          "label": "Company size",
+          "type": "text",
+          "required_as_displayed": false
+        },
+        {
+          "label": "Job title",
+          "type": "text",
+          "required_as_displayed": false
+        },
+        {
+          "label": "Are you currently an Amergis customer?",
+          "type": "select",
+          "required_as_displayed": true,
+          "options": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "label": "Do you currently use MaxView?",
+          "type": "select",
+          "required_as_displayed": true,
+          "options": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "label": "Have you seen a MaxView demonstration before?",
+          "type": "select",
+          "required_as_displayed": true,
+          "options": [
+            "Yes",
+            "No",
+            "Not sure"
+          ]
+        },
+        {
+          "label": "Which MaxView features are you interested in learning about?",
+          "type": "multi_checkbox",
+          "required_as_displayed": true,
+          "options": [
+            "Time capture and tracking",
+            "Onboarding & compliance management",
+            "Reporting & analytics",
+            "Absence management",
+            "Invoice management",
+            "Other"
+          ]
+        },
+        {
+          "label": "If other, please specify",
+          "type": "text",
+          "required_as_displayed": false
+        },
+        {
+          "label": "Tell us more about your workforce management needs",
+          "type": "textarea",
+          "required_as_displayed": true
+        },
+        {
+          "label": "Allow storage and processing of personal data",
+          "type": "checkbox",
+          "required_as_displayed": null
+        }
+      ],
+      "limitations": "Required flag reflects visible asterisk only, not server validation. Feature-interest choices are not proof those capabilities are deployed. CAPTCHA present; never submitted."
+    },
+    {
+      "form_id": "FORM03",
+      "name": "Office discovery",
+      "source_id": "P01",
+      "url": "https://www.amergis.com/about/locations/",
+      "fields": [
+        {
+          "label": "Keyword",
+          "type": "text",
+          "required_as_displayed": null
+        },
+        {
+          "label": "State",
+          "type": "select",
+          "required_as_displayed": null
+        },
+        {
+          "label": "Zipcode",
+          "type": "text",
+          "required_as_displayed": null
+        },
+        {
+          "label": "Distance",
+          "type": "select",
+          "required_as_displayed": null,
+          "options": [
+            "any",
+            "25 miles",
+            "50 miles",
+            "100 miles",
+            "200 miles",
+            "500 miles"
+          ]
+        }
+      ],
+      "limitations": "Directory schema only; no search queries submitted."
+    }
+  ],
+  "relationships": [
+    {
+      "from": "Sunburst MSP",
+      "to": "VMS partners",
+      "relationship": "Recommends according to client fit",
+      "source_ids": [
+        "PLAT-SUN-VMS"
+      ],
+      "certainty": "explicit public claim"
+    },
+    {
+      "from": "Sunburst education service",
+      "to": "MatterWorx",
+      "relationship": "Named VMS offering",
+      "source_ids": [
+        "PLAT-SUN-EDU"
+      ],
+      "certainty": "explicit public claim; deployment breadth unknown"
+    },
+    {
+      "from": "Amergis Teletherapy Platform",
+      "to": "Pearson",
+      "relationship": "Advertised assessment access",
+      "source_ids": [
+        "PLAT-ATP"
+      ],
+      "certainty": "explicit public claim; contract, interface and licensing unknown"
+    },
+    {
+      "from": "Amergis Teletherapy Platform",
+      "to": "Boom Cards / Super Duper",
+      "relationship": "Advertised therapy-resource access",
+      "source_ids": [
+        "PLAT-ATP"
+      ],
+      "certainty": "explicit public claim; technical integration depth unknown"
+    }
+  ],
+  "feature_status": [
+    {
+      "feature": "Communications hub",
+      "historical_status": "Future enhancement in 2024-05 guide",
+      "current_status": "Advertised on current undated MaxView page",
+      "source_ids": [
+        "P03",
+        "P02"
+      ]
+    },
+    {
+      "feature": "Credential-document/expiry module",
+      "historical_status": "Future enhancement in 2024-05 guide",
+      "current_status": "Current general credential visibility advertised; exact module/release unverified",
+      "source_ids": [
+        "P03",
+        "P02"
+      ]
+    },
+    {
+      "feature": "Invoice history/status section",
+      "historical_status": "Future enhancement in 2024-05 guide",
+      "current_status": "Current consolidation and demo invoice-management interest advertised; history/status UI unverified",
+      "source_ids": [
+        "P03",
+        "P02",
+        "P06"
+      ]
+    },
+    {
+      "feature": "Amergis Connect",
+      "historical_status": null,
+      "current_status": "Coming-soon label with legacy MaxView Jobs copy; unresolved",
+      "source_ids": [
+        "P09"
+      ]
+    }
+  ],
+  "material_unknowns": [
+    "None of these pages discloses production tables, credentials, private client/candidate records or transaction-level data.",
+    "MatterWorx is explicitly named on one education page; generic VMS language supports partner variation rather than one backend.",
+    "Sunburst's AI language does not establish which workflows it already automates.",
+    "Agency-funded fees do not establish that every client contract is economically cost-neutral.",
+    "Marketing compliance claims have not been audited.",
+    "Teletherapy's no-session-data-storage claim needs a vendor data-flow and retention explanation before designing reporting or AI documentation.",
+    "Human-authority recommendations are product design controls, not a completed legal analysis for every jurisdiction.",
+    "The public pages have no visible publication dates; footer years and crawler dates are not treated as document dates.",
+    "Actual ATS/CRM, middleware, API contracts, database schemas and access-control matrices",
+    "Current client-specific self-scheduling constraints and assignment approval semantics",
+    "Production status of roadmap modules and Amergis Connect migration"
+  ]
+}

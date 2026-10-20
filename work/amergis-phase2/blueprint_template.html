@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Amergis — AI operating blueprint</title>
+<style>
+:root{--ink:#172b3b;--muted:#5b6c7d;--paper:#fff;--page:#eff3f6;--line:#d9e2e8;--teal:#126b68;--navy:#173c55;--a:#176d59;--ap:#e7f4ed;--b:#926320;--bp:#fff3de;--c:#66508b;--cp:#f0ebf7}
+*{box-sizing:border-box}body{margin:0;background:var(--page);color:var(--ink);font:15px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select{font:inherit}button{cursor:pointer}a{color:#116a8b;text-underline-offset:3px}a:hover{color:#004b64}h1,h2,h3,p{margin:0 0 12px}h1{font-size:32px;line-height:1.15;letter-spacing:-.7px}h2{font-size:24px;line-height:1.25}h3{font-size:17px}small,.small{font-size:12px}.muted{color:var(--muted)}.eyebrow{text-transform:uppercase;letter-spacing:1.8px;font-size:11px;font-weight:700;margin-bottom:10px}
+.masthead{background:var(--navy);color:#fff;padding:34px max(24px,calc((100vw - 1280px)/2));border-bottom:5px solid #45a599}.masthead p{max-width:850px;color:#e0ecf2}.masthead .eyebrow{color:#aac8d7}.masthead a{color:#d5f4ed}.download{display:flex;gap:20px;flex-wrap:wrap;margin-top:18px;font-size:13px}.shell{max-width:1328px;margin:0 auto;padding:0 24px 60px}.nav{position:sticky;top:0;z-index:5;display:flex;gap:3px;background:var(--page);padding:16px 0 12px;border-bottom:1px solid var(--line);overflow:auto}.nav button{border:0;background:transparent;color:var(--muted);padding:10px 16px;border-radius:6px;white-space:nowrap}.nav button[aria-selected=true]{background:var(--navy);color:#fff}.panel{display:none;padding-top:25px}.panel.active{display:block}.lead{max-width:950px;margin-bottom:23px}.grid{display:grid;gap:18px}.two{grid-template-columns:1fr 1fr}.three{grid-template-columns:repeat(3,1fr)}.card{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:20px}.stats{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:0 0 24px}.stat{padding:15px;background:var(--paper);border-bottom:3px solid #90b4c6}.stat strong{display:block;font-size:27px;font-weight:650;line-height:1.25}.stat span{font-size:12px;color:var(--muted)}.banner{background:#fff8e8;border-left:4px solid #b88b3c;padding:14px 18px;margin:18px 0}.tag{display:inline-block;font-size:11px;line-height:1.4;padding:5px 8px;border-radius:4px;font-weight:600}.tag.A{color:var(--a);background:var(--ap)}.tag.B{color:var(--b);background:var(--bp)}.tag.C{color:var(--c);background:var(--cp)}.badge{display:inline-block;padding:2px 7px;background:#edf2f6;color:var(--muted);border-radius:4px;font-size:11px}
+.flow-layout{display:grid;grid-template-columns:330px 1fr;gap:20px;align-items:start}.stage-list{display:grid;gap:6px}.stage{display:flex;align-items:center;gap:10px;padding:11px 13px;text-align:left;background:var(--paper);border:1px solid var(--line);border-radius:6px}.stage[aria-pressed=true]{border-color:var(--teal);background:#e9f3f2;box-shadow:inset 4px 0 var(--teal)}.stage .num{font-size:11px;color:var(--muted);min-width:24px}.stage .name{flex:1;font-size:13px}.stage .dot{width:8px;height:8px;border-radius:50%;background:var(--a)}.stage .dot.B{background:var(--b)}.stage .dot.C{background:var(--c)}.detail{min-height:530px}.detail dl{margin:18px 0 0}.detail dt{font-size:11px;text-transform:uppercase;letter-spacing:.8px;font-weight:700;color:var(--muted);margin-top:16px}.detail dd{margin:4px 0 0}.detail ul{padding-left:20px;margin:5px 0}.detail li{margin:3px 0}.detail .gate{margin-top:18px;padding:14px;background:#eef5f8;border-radius:6px}.detail .exception{margin-top:12px;border-left:3px solid #bd924b;padding:8px 12px;background:#fffaf0}.source-links{display:flex;gap:10px;flex-wrap:wrap;font-size:12px;margin-top:15px}.section{margin-top:30px}.controls{display:flex;gap:12px;flex-wrap:wrap;align-items:end;margin:18px 0}.controls label{font-size:12px;color:var(--muted);display:grid;gap:4px}.controls input,.controls select{padding:9px 11px;border:1px solid #bdcbd5;background:white;color:var(--ink);border-radius:5px;min-width:190px}.controls input{min-width:270px}.table-wrap{overflow:auto;background:white;border:1px solid var(--line);border-radius:7px}.table-scroll{max-height:560px;overflow:auto}table{width:100%;border-collapse:collapse;font-size:13px}th,td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}th{background:#eaf0f4;font-size:11px;text-transform:uppercase;letter-spacing:.5px;position:sticky;top:0;z-index:1}tbody tr:last-child td{border-bottom:0}.table-btn{border:0;background:transparent;color:#126a85;padding:0;text-align:left;font-weight:600}.table-btn:hover{text-decoration:underline}.subline{display:block;font-size:11px;color:var(--muted);margin-top:4px}.task-layout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(350px,.8fr);gap:18px;align-items:start}.task-detail{position:sticky;top:86px;max-height:780px;overflow:auto}.authority{display:flex;gap:8px;margin-top:15px}.authority span{flex:1;padding:12px;background:#f3f5f7;border-radius:5px;font-size:12px}.authority b{display:block;font-size:23px}.cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.cap-card{background:white;border:1px solid var(--line);border-radius:7px;padding:16px}.cap-card .chips{display:flex;gap:6px;margin-top:12px}.cap-card h3{font-size:15px}.cap-card p{font-size:13px;color:var(--muted)}details{border:1px solid var(--line);background:white;border-radius:6px;margin-bottom:10px}summary{cursor:pointer;padding:13px 16px;font-weight:600}details .inside{padding:0 16px 16px;font-size:13px}.rule{padding:14px 16px;border-bottom:1px solid var(--line)}.rule:last-child{border-bottom:0}.rule h3{font-size:14px}.rule p{font-size:13px}.columns{columns:2;column-gap:28px}.columns li{break-inside:avoid;margin-bottom:8px}ul.clean{padding-left:20px;margin:8px 0}.stepnum{display:inline-flex;align-items:center;justify-content:center;background:var(--navy);color:white;width:28px;height:28px;border-radius:50%;margin-bottom:10px}.status-line{font-size:12px;color:var(--muted);margin:8px 0}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}.footer{margin-top:35px;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+@media(max-width:1050px){.stats{grid-template-columns:repeat(3,1fr)}.task-layout{grid-template-columns:1fr}.task-detail{position:static;max-height:none}.cap-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.shell{padding:0 14px 35px}.masthead{padding:25px 18px}h1{font-size:27px}.nav button{padding:9px 11px}.two,.three,.flow-layout{grid-template-columns:1fr}.stage-list{grid-template-columns:1fr 1fr}.stage{padding:8px}.stage .name{font-size:11px}.stats{grid-template-columns:repeat(2,1fr)}.cap-grid{grid-template-columns:1fr}.columns{columns:1}.controls input,.controls select{min-width:0;max-width:100%;width:100%}.controls label{width:100%}.detail{min-height:0}}
+@media print{.nav,.controls,.download{display:none}.panel{display:block;break-before:page}.masthead{background:white;color:var(--ink);padding:0;border:0}.masthead p,.masthead .eyebrow{color:var(--muted)}body{background:white}.shell{padding:0}.table-scroll,.task-detail{max-height:none;overflow:visible}.task-detail{position:static}.card,details{break-inside:avoid}.flow-layout{grid-template-columns:1fr}.stage-list{display:none}.cap-grid{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<header class="masthead">
+<div class="eyebrow">Public evidence → independent operating design · October 20, 2026</div>
+<h1>Amergis AI operating blueprint</h1>
+<p>What public data reveals about staffing operations, which tasks agents could perform, and where an accountable person retains authority.</p>
+<div class="download"><a href="amergis-operating-blueprint.xlsx">Editable workbook</a><a href="amergis-phase2-intelligence.sqlite">Research database</a><a href="amergis-blueprint.json">Machine-readable blueprint</a><a href="amergis-public-assessment.html">Initial assessment</a></div>
+</header>
+<main class="shell">
+<nav class="nav" aria-label="Blueprint sections" role="tablist">
+<button role="tab" aria-selected="true" data-panel="overview">Overview</button>
+<button role="tab" aria-selected="false" data-panel="workflow">Workflow</button>
+<button role="tab" aria-selected="false" data-panel="functions">Agent functions</button>
+<button role="tab" aria-selected="false" data-panel="evidence">Evidence and data</button>
+<button role="tab" aria-selected="false" data-panel="build">Build plan</button>
+</nav>
+<section id="overview" class="panel active" role="tabpanel">
+<div class="lead"><h2>A task-level blueprint for staffing operations</h2><p>Public evidence supports an AI-operated administrative layer. Human professionals still deliver care and education, and the design reserves professional judgment, attestations and defined exceptions to named owners. This is a research and implementation specification, not a deployed system.</p></div>
+<div class="stats" id="stats"></div>
+<div class="grid two"><div class="card"><h3>Proposed authority across 63 tasks</h3><div id="authority-summary"></div><p class="small muted" style="margin-top:14px">Task counts do not estimate labor hours, employee reductions or financial savings. All A tasks require explicit delegation, verified inputs and exception routing.</p></div><div class="card"><h3>What was reconstructed</h3><p>Two public job catalogs, a listed-office network, role responsibilities, public product workflows, commercial rules and selected vendor disclosures.</p><p class="muted">The private candidate pool, customer CRM, production schema, realized margins and actual staffing levels are still unknown.</p><p class="small">The role map covers 19 characterized families and one unresolved Staffing Analyst family.</p></div></div>
+<div class="section"><h2>Findings that change the design</h2><div class="grid two" id="findings"></div></div>
+<div class="banner"><b>Contract-specific logic is essential.</b> A single customer’s holiday calendar, time approval process or invoice clock must not become a company-wide rule. Missing or contradictory terms stay unresolved until an owner clarifies them.</div>
+</section>
+<section id="workflow" class="panel" role="tabpanel">
+<div class="lead"><h2>From client demand to payment and follow-up</h2><p>The stages below are an independent synthesis. Published functions inform the workflow; the proposed gates, data model and agent authority are design choices. Select a stage to inspect its operation.</p></div>
+<div class="flow-layout"><div class="stage-list" id="stage-list"></div><article class="card detail" id="stage-detail" aria-live="polite"></article></div>
+<div class="section"><h2>Cross-cutting execution controls</h2><div class="grid two" id="runtime"></div></div>
+</section>
+<section id="functions" class="panel" role="tabpanel">
+<div class="lead"><h2>Agent functions and workforce responsibilities</h2><p>The 63 tasks are organized into 11 logical capability groups. These are proposed functions, not 63 separate production agents. Each task identifies its public responsibility, inputs, output, proposed authority, human owner and exception route.</p></div>
+<div class="cap-grid" id="capabilities"></div>
+<div class="section"><h2>Task matrix</h2><div class="controls"><label>Search tasks<input id="task-search" placeholder="Credential, payroll, recruiter…" type="search"></label><label>Authority<select id="class-filter"><option value="">All authority levels</option><option value="A">A · Agent operates within rules</option><option value="B">B · Person approves</option><option value="C">C · Person leads</option></select></label><label>Capability group<select id="group-filter"><option value="">All groups</option></select></label></div>
+<div class="status-line" id="task-count"></div><div class="task-layout"><div class="table-wrap table-scroll"><table><thead><tr><th>Task and role</th><th>Authority</th><th>Human owner</th></tr></thead><tbody id="task-rows"></tbody></table></div><article class="card detail task-detail" id="task-detail" aria-live="polite"></article></div></div>
+<div class="section"><h2>Role catalog</h2><p class="muted">Posting counts describe advertisements in the retrieved snapshot. Family grouping does not establish Amergis’s organization chart or current team size.</p><div id="role-catalog"></div></div>
+</section>
+<section id="evidence" class="panel" role="tabpanel">
+<div class="lead"><h2>Extraction coverage and provenance</h2><p>This is a targeted public-source corpus. It expands the first assessment substantially, but it is not an exhaustive capture of every public Amergis record.</p></div>
+<div class="table-wrap"><table><thead><tr><th>Area</th><th>Coverage</th><th>Count</th><th>Limit</th></tr></thead><tbody id="coverage-rows"></tbody></table></div>
+<div class="section"><h2>Customer contracts and operating rules</h2><p class="muted">Six packets yielded 57 scoped rules and 42 customer rate rows. Published Sourcewell ceilings remain a separate 148-row dataset. Customer billing rules are not worker wage rules.</p><div class="table-wrap"><table><thead><tr><th>Contract</th><th>Published term</th><th>Status at Oct 20, 2026</th><th>Source</th></tr></thead><tbody id="contract-rows"></tbody></table></div>
+<div class="controls"><label>Rules for customer<select id="contract-filter"><option value="">All contracts</option></select></label></div><div class="table-wrap table-scroll" id="contract-rules"></div></div>
+<div class="section"><h2>Technology evidence</h2><p class="muted">Job requirements, vendor attribution and actual stated use are different evidence categories. Historical supplier claims remain dated even when reproduced in newer packets.</p><div class="table-wrap"><table><thead><tr><th>Software / vendor</th><th>Evidence category</th><th>Observed statement</th><th>Limit</th></tr></thead><tbody id="software-rows"></tbody></table></div></div>
+<div class="section"><h2>Selected deployment constraints</h2><p class="muted">These distinguish legal requirements from proposed engineering controls. Jurisdiction-specific examples are not nationwide rules, and the material is not a fifty-state review.</p><div id="control-list"></div></div>
+<div class="section"><h2>Data-quality findings</h2><div id="quality-list"></div><div class="card"><h3>Remaining gaps</h3><ul class="clean" id="remaining-gaps"></ul></div></div>
+<div class="section"><details><summary>Source register</summary><div class="inside"><p class="muted">Role responsibilities were read from the public search-index snapshot. Linked detail pages were not all individually fetched.</p><div id="source-register"></div></div></details></div>
+</section>
+<section id="build" class="panel" role="tabpanel">
+<div class="lead"><h2>Implementation sequence and acceptance cases</h2><p>Start with one client/worksite group, one state and one specialty. Increase authority by task after measured validation, while retaining a staffed exception path.</p></div>
+<div class="grid two" id="rollout"></div>
+<div class="section"><h2>Proposed data domains</h2><p class="muted">These are inferred tables and record boundaries for an independent operator. They are not recovered Amergis production tables.</p><div class="table-wrap"><table><thead><tr><th>Domain</th><th>Core fields</th><th>Design rule</th></tr></thead><tbody id="domain-rows"></tbody></table></div></div>
+<div class="section"><h2>Acceptance scenarios</h2><p class="muted">The cases below are specified requirements. They have not been executed against a live staffing system.</p><div class="table-wrap"><table><thead><tr><th>Case</th><th>Expected behavior</th><th>Workflow</th></tr></thead><tbody id="test-rows"></tbody></table></div></div>
+<div class="section"><div class="card"><h3>Release evidence needed before live operation</h3><ul class="clean"><li>Approved client/worker data, operating scope, vendor connections and contract-rule versions.</li><li>Named owners and response deadlines for clinical, employment, payroll and contract exceptions.</li><li>Scenario results and real error/override measurements meeting thresholds set by those owners.</li><li>Permission boundaries, approval-version binding, idempotency and an exercised rollback path.</li><li>Role/jurisdiction-specific requirements resolved for the pilot, including credential and employment processes.</li></ul></div></div>
+</section>
+<footer class="footer">Public-source research as of October 20, 2026. Independent review reconciled task/role/contract links and corrected identified authority and billing/payroll inconsistencies. This review supports publication of the research blueprint; it does not validate deployment.</footer>
+</main>
+<script type="application/json" id="blueprint-data">__BLUEPRINT_DATA__</script>
+<script>
+(() => {
+const D=JSON.parse(document.getElementById("blueprint-data").textContent);
+const $=id=>document.getElementById(id);
+const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const list=a=>"<ul class='clean'>"+(a||[]).map(x=>"<li>"+esc(x)+"</li>").join("")+"</ul>";
+const link=(u,l)=>/^https?:\/\//.test(u||"")?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(l||"Source")}</a>`:"";
+const sourceLinks=a=>`<div class="source-links">${(a||[]).map((u,i)=>link(u,`Source ${i+1}`)).join("")}</div>`;
+const tag=c=>`<span class="tag ${esc(c)}">${esc(c)} · ${esc(D.autonomy.find(x=>x.code===c)?.label||c)}</span>`;
+document.querySelectorAll("[data-panel]").forEach(b=>b.addEventListener("click",()=>{
+document.querySelectorAll("[data-panel]").forEach(x=>x.setAttribute("aria-selected",String(x===b)));
+document.querySelectorAll(".panel").forEach(p=>p.classList.toggle("active",p.id===b.dataset.panel));
+}));
+const metric=[["5,519","public listing records"],["61","listed office URLs"],["20","role families"],["63","task designs"],["6","contract packets"],["57","scoped contract rules"]];
+$("stats").innerHTML=metric.map(([n,l])=>`<div class="stat"><strong>${n}</strong><span>${l}</span></div>`).join("");
+$("authority-summary").innerHTML=D.autonomy.map(a=>`<div style="margin-top:12px">${tag(a.code)}<span style="float:right;font-weight:650">${D.counts.task_autonomy[a.code]} tasks</span><p class="small muted" style="margin:7px 0">${esc(a.definition)}</p></div>`).join("");
+$("findings").innerHTML=D.findings.map(f=>`<div class="card"><h3>${esc(f.title)}</h3><p>${esc(f.body)}</p>${sourceLinks(f.source_urls)}</div>`).join("");
+function renderStage(id){
+const s=D.workflow_stages.find(s=>s.id===id);
+document.querySelectorAll("[data-stage]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.stage===id)));
+$("stage-detail").innerHTML=`<div class="eyebrow">${esc(s.id)} · Proposed workflow</div><h2>${esc(s.name)}</h2>${tag(s.autonomy)}<dl><dt>Public evidence</dt><dd>${esc(s.observed_basis)}${sourceLinks(s.source_urls)}</dd><dt>Agent function</dt><dd>${esc(s.agent_function)}</dd></dl><div class="grid two" style="margin-top:16px"><div><h3>Inputs</h3>${list(s.inputs)}</div><div><h3>Outputs</h3>${list(s.outputs)}</div></div><div class="gate"><b>Execution gate</b><br>${esc(s.gate)}</div><div class="exception"><b>Exception route</b><br>${esc(s.exception)}</div><dl><dt>Accountable owner</dt><dd>${esc(s.owner)}</dd><dt>Measurement</dt><dd>${esc(s.kpi)}</dd></dl>`;
+}
+$("stage-list").innerHTML=D.workflow_stages.map((s,i)=>`<button class="stage" data-stage="${esc(s.id)}" aria-pressed="false"><span class="num">${String(i+1).padStart(2,"0")}</span><span class="name">${esc(s.name)}</span><span class="dot ${s.autonomy}" aria-label="${esc(s.autonomy)}"></span></button>`).join("");
+document.querySelectorAll("[data-stage]").forEach(b=>b.addEventListener("click",()=>renderStage(b.dataset.stage)));
+renderStage("W01");
+$("runtime").innerHTML=D.runtime.map(r=>`<div class="card"><h3>${esc(r.component)}</h3><p>${esc(r.responsibility)}</p></div>`).join("");
+$("capabilities").innerHTML=D.agent_groups.map(a=>`<div class="cap-card"><div class="eyebrow">${esc(a.agent_group_id)} · ${a.task_count} tasks</div><h3>${esc(a.agent_group)}</h3><p>${esc(a.proposed_scope)}</p><div class="chips">${["A","B","C"].filter(c=>a.autonomy_counts[c]).map(c=>`<span class="tag ${c}">${c}: ${a.autonomy_counts[c]}</span>`).join("")}</div></div>`).join("");
+$("group-filter").innerHTML+=D.agent_groups.map(a=>`<option value="${esc(a.agent_group_id)}">${esc(a.agent_group)}</option>`).join("");
+let selectedTask="T001";
+function renderTask(id){
+const t=D.tasks.find(t=>t.task_id===id);if(!t)return;selectedTask=id;
+$("task-detail").innerHTML=`<div class="eyebrow">${esc(t.task_id)} · ${esc(t.role_family_id)}</div><h2>${esc(t.task_name)}</h2>${tag(t.autonomy_class)}<dl><dt>Observed public duty</dt><dd>${esc(t.observed_public_duty)}</dd><dt>Proposed agent</dt><dd>${esc(t.proposed_ai_agent)}</dd><dt>Trigger</dt><dd>${esc(t.trigger)}</dd><dt>Inputs</dt><dd>${list(t.inputs)}</dd><dt>Outputs</dt><dd>${list(t.outputs)}</dd><dt>Decision and rationale</dt><dd>${esc(t.decisions)}<p class="muted" style="margin-top:7px">${esc(t.rationale)}</p></dd><dt>Prerequisites</dt><dd>${list(t.dependencies)}</dd><dt>Human owner</dt><dd>${esc(t.human_owner)}</dd></dl><div class="exception">${esc(t.exception_route)}</div><dl><dt>Proposed KPI</dt><dd>${list(t.kpi)}</dd></dl>${sourceLinks((t.sources||[]).map(s=>s.url))}<p class="small muted" style="margin-top:14px">The public duty is observed. Agent design, authority, inputs, outputs and KPIs are proposed.</p>`;
+}
+function renderTasks(){
+const q=$("task-search").value.toLowerCase(),c=$("class-filter").value,g=$("group-filter").value;
+const rows=D.tasks.filter(t=>(!c||t.autonomy_class===c)&&(!g||t.agent_group_id===g)&&(!q||[t.task_name,t.role_family,t.proposed_ai_agent,t.human_owner,t.task_id].join(" ").toLowerCase().includes(q)));
+$("task-count").textContent=`${rows.length} of ${D.tasks.length} task designs shown`;
+$("task-rows").innerHTML=rows.map(t=>`<tr><td><button class="table-btn" data-task="${esc(t.task_id)}">${esc(t.task_id)} · ${esc(t.task_name)}</button><span class="subline">${esc(t.role_family)}</span></td><td><span class="tag ${t.autonomy_class}">${t.autonomy_class}</span></td><td>${esc(t.human_owner)}</td></tr>`).join("")||'<tr><td colspan="3">No matching tasks.</td></tr>';
+document.querySelectorAll("[data-task]").forEach(b=>b.addEventListener("click",()=>renderTask(b.dataset.task)));
+if(rows.length&&!rows.some(t=>t.task_id===selectedTask))renderTask(rows[0].task_id);
+}
+["task-search","class-filter","group-filter"].forEach(id=>$(id).addEventListener(id==="task-search"?"input":"change",renderTasks));
+renderTasks();renderTask(selectedTask);
+$("role-catalog").innerHTML=D.roles.map(r=>`<details><summary>${esc(r.role_family_id)} · ${esc(r.role_family)} <span class="badge">${r.public_posting_count} ads · ${r.task_count} mapped tasks</span></summary><div class="inside"><b>Observed responsibilities</b>${list(r.observed_public_duties)}<b>Proposed human ownership</b>${list(r.proposed_human_decision_ownership)}<p class="muted">${esc(r.limitations)}</p>${sourceLinks(r.sources.slice(0,3).map(s=>s.url))}</div></details>`).join("");
+$("coverage-rows").innerHTML=D.coverage.map(c=>`<tr><td><b>${esc(c.area)}</b></td><td>${esc(c.status)}</td><td>${c.count===null?"—":c.count.toLocaleString()} ${esc(c.unit)}</td><td>${esc(c.limits)}</td></tr>`).join("");
+$("contract-rows").innerHTML=D.contracts.map(c=>`<tr><td><b>${esc(c.contract_id)} · ${esc(c.customer)}</b><span class="subline">${esc(c.title)}</span></td><td>${esc(c.effective_start||"Unspecified")} to ${esc(c.effective_end||"Unspecified")}</td><td>${esc(c.status_as_of_2026_10_20.replaceAll("_"," "))}</td><td>${link(c.source_url,"Public packet")}</td></tr>`).join("");
+$("contract-filter").innerHTML+=D.contracts.map(c=>`<option value="${esc(c.contract_id)}">${esc(c.contract_id)} · ${esc(c.customer)}</option>`).join("");
+function renderRules(){
+const id=$("contract-filter").value;
+$("contract-rules").innerHTML=D.contract_rules.filter(r=>!id||r.contract_id===id).map(r=>`<div class="rule"><div class="small muted">${esc(r.rule_id)} · ${esc(r.customer)} · ${esc(r.category)}</div><h3>${esc(r.summary)}</h3><p><b>Proposed control:</b> ${esc(r.proposed_agent_control)}</p><p class="muted"><b>Exception owner:</b> ${esc(r.human_exception_owner)} · ${esc(r.contract_status.replaceAll("_"," "))}</p>${link(r.source_url,`PDF p${r.pdf_page} · ${r.section||"source"}`)}</div>`).join("");
+}
+$("contract-filter").addEventListener("change",renderRules);renderRules();
+$("software-rows").innerHTML=D.software_evidence.map(s=>`<tr><td><b>${esc(s.software_or_vendor)}</b></td><td>${esc(s.evidence_category.replaceAll("_"," "))}<span class="subline">${esc(s.source_claim_date||"Claim date unspecified")}</span></td><td>${esc(s.observed_claim)}${sourceLinks(s.source_urls)}</td><td>${esc(s.inference_limit)}</td></tr>`).join("");
+const csrc=Object.fromEntries(D.controls.sources.map(s=>[s.id,s]));
+$("control-list").innerHTML=D.controls.constraints.map(c=>`<details><summary>${esc(c.id)} · ${esc(c.name)}</summary><div class="inside"><p><b>Scope:</b> ${esc(c.jurisdiction)}</p><p><b>Legal requirement:</b> ${esc(c.legal_requirement)}</p><p><b>Proposed engineering control:</b> ${esc(c.proposed_control)}</p><p><b>Human authority:</b> ${esc(c.human_authority)}</p><p class="muted">${esc(c.limit)}</p>${sourceLinks(c.source_ids.map(id=>csrc[id]?.url).filter(Boolean))}</div></details>`).join("");
+$("quality-list").innerHTML=D.data_quality_findings.map(f=>`<details><summary>${esc(f.finding_id)} · ${esc(f.type.replaceAll("_"," "))}</summary><div class="inside"><p>${esc(f.finding)}</p><p><b>Handling:</b> ${esc(f.handling)}</p></div></details>`).join("");
+$("remaining-gaps").innerHTML=D.remaining_gaps.map(g=>`<li>${esc(g)}</li>`).join("");
+$("source-register").innerHTML=D.sources.map(s=>`<p>${link(s.url,s.title)}<br><span class="small muted">${esc(s.source_type)} · ${esc(s.evidence_date||"Date unspecified")} · ${esc(s.notes)}</span></p>`).join("");
+$("rollout").innerHTML=D.rollout.map((r,i)=>`<div class="card"><div class="stepnum">${i+1}</div><h3>${esc(r.phase)}</h3><p>${esc(r.scope)}</p><p><b>Dependency:</b> ${esc(r.dependency)}</p><p><b>Acceptance:</b> ${esc(r.acceptance)}</p><p class="small muted"><b>Authority:</b> ${esc(r.authority)}</p></div>`).join("");
+$("domain-rows").innerHTML=D.data_domains.map(d=>`<tr><td><b>${esc(d.domain)}</b></td><td>${esc(d.fields)}</td><td>${esc(d.design_rule)}</td></tr>`).join("");
+$("test-rows").innerHTML=D.acceptance_scenarios.map(t=>`<tr><td><b>${esc(t.test_id)}</b> · ${esc(t.scenario)}</td><td>${esc(t.expected)}</td><td>${esc(t.workflow_ids.join(", "))}</td></tr>`).join("");
+})();
+</script>
+</body>
+</html>

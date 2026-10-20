@@ -1,0 +1,128 @@
+{
+  "review_id": "amergis-phase3-independent-claim-review",
+  "review_date": "2026-10-20",
+  "status": "pass_for_public_evidence_and_design_planning",
+  "status_limit": "This review does not establish complete reconstruction, tenant access, production compatibility, legal clearance or operational API validation.",
+  "reviewed_artifacts": [
+    "work/amergis-phase3/ats/api-findings.json",
+    "work/amergis-phase3/partners/api-findings.json",
+    "work/amergis-phase3/vms/api-findings.json",
+    "work/amergis-phase2/contracts/platform-process-evidence.json",
+    "work/amergis-phase2/platforms/sunburst_teletherapy.json"
+  ],
+  "scope": "Independent claim/provenance challenge, selected primary-document checks and source-reference validation. No authenticated portals, private endpoints, tokens, business API operations or personal records accessed.",
+  "summary": "The three research files distinguish vendor documentation from Amergis deployment and private tenant capabilities. They preserve historical claim dates, separately classify advertised integrations and published schemas, and identify material access and terms conditions. No material unsupported claim remains in the reviewed findings after the noted refinements.",
+  "checks": [
+    {
+      "id": "REV01",
+      "topic": "Erecruit and Bullhorn ATS/CRM are separate API products",
+      "result": "pass",
+      "detail": "Erecruit is the historical Amergis platform lead from the June 2024 supplier proposal. Bullhorn ATS REST is an alternative/generic API reference; app publisher attribution does not demonstrate its use by Amergis."
+    },
+    {
+      "id": "REV02",
+      "topic": "Erecruit API access",
+      "result": "pass",
+      "detail": "Official guide confirms registered applications, OAuth 2, API service account, default entity and per-call permissions. Instance-specific Swagger path is a vendor placeholder, never represented as a discovered Amergis URL.",
+      "source_url": "https://kb.bullhorn.com/erecruit/Content/Erecruit/Topics/manageApiPermissions.htm"
+    },
+    {
+      "id": "REV03",
+      "topic": "API and AI use conditions",
+      "result": "pass_with_applicability_caveat",
+      "detail": "Bullhorn published policy conditions AI connections and competing uses on permission. Its applicability to a specific Erecruit agreement must be resolved with the vendor; it is not evidence that independent product design itself is prohibited.",
+      "source_url": "https://bullhorn.github.io/api-fair-use-policy/"
+    },
+    {
+      "id": "REV04",
+      "topic": "Bullhorn event consumption",
+      "result": "corrected",
+      "detail": "Reviewer identified that GET event consumption purges events. Author added stateful consumption, dedicated integration subscription, durable checkpoint and idempotent handling. HTTP GET must not be assumed side-effect-free.",
+      "source_url": "https://bullhorn.github.io/REST-API-Event-Subscriptions/"
+    },
+    {
+      "id": "REV05",
+      "topic": "ADP product and entitlement",
+      "result": "pass",
+      "detail": "Amergis routing to ADP does not disclose product edition or API subscription. Workforce Now paths are correctly labeled vendor examples; availability and event behavior are product-specific."
+    },
+    {
+      "id": "REV06",
+      "topic": "Equifax verification directions",
+      "result": "pass",
+      "detail": "Amergis employee income/employment verification via The Work Number is separated from applicant-screening Talent Report API capability. Product schema is sign-in gated. Employer code is not treated as an API credential.",
+      "source_url": "https://developer.equifax.com/products/apiproducts/talent-report-employment-staffing"
+    },
+    {
+      "id": "REV07",
+      "topic": "Certiphi integration",
+      "result": "pass",
+      "detail": "Published ATS order/report integration and Erecruit compatibility are not presented as Amergis-specific transport, endpoint schema or proven live integration."
+    },
+    {
+      "id": "REV08",
+      "topic": "Nursys scope and test environment",
+      "result": "pass",
+      "detail": "Official current documentation independently confirms JSON institution functions for enrolled licenses, no QuickConfirm API and no separate sandbox/sample licenses. Earlier SOAP mirrors are excluded.",
+      "source_urls": [
+        "https://ncsbn.zendesk.com/hc/en-us/articles/18773959621399-What-is-available-via-the-Nursys-API",
+        "https://ncsbn.zendesk.com/hc/en-us/articles/29992835863831-Is-there-a-testing-environment-for-the-API"
+      ]
+    },
+    {
+      "id": "REV09",
+      "topic": "MatterWorx API, roles and terms",
+      "result": "pass",
+      "detail": "Open API and SSO are marketing claims without discovered endpoint contracts. Public support labels are not inferred RBAC permissions. Published terms restrict competitive service access and third-party credentials, making permitted purpose a real prerequisite for authenticated analysis.",
+      "source_urls": [
+        "https://matterworx.com/implementation-integrations/",
+        "https://matterworx.com/contact-support/",
+        "https://matterworx.com/terms-of-use/"
+      ]
+    },
+    {
+      "id": "REV10",
+      "topic": "Sunburst deployment scope",
+      "result": "pass_with_wording_refinement",
+      "detail": "General VMS selection is client-specific. Education offering names MatterWorx; this is not an inventory of actual customer deployments. Suggested changing shorthand 'education explicitly uses' to 'education offering explicitly names'."
+    },
+    {
+      "id": "REV11",
+      "topic": "Teletherapy",
+      "result": "pass",
+      "detail": "Backend identity, APIs, room access lifecycle, assessment rights and reporting/retention architecture remain unknown. Public session-minute reporting is not a basis for assuming session-recording or transcript retention."
+    }
+  ],
+  "source_reference_validation": [
+    {"artifact": "ats/api-findings.json", "source_count": 17, "reference_count": 48, "unresolved_source_ids": []},
+    {"artifact": "partners/api-findings.json", "source_count": 23, "reference_count": 59, "unresolved_source_ids": []},
+    {"artifact": "vms/api-findings.json", "source_count": 13, "reference_count": 7, "unresolved_source_ids": []}
+  ],
+  "root_findings_not_independently_runtime_verified": [
+    "Root reports MaxView username/password login was reached in a public browser, with no login attempt; a linked login asset contains Clerk identity components.",
+    "Root reports WordPress index returned 312 declared routes in 16 namespaces. This means a declared route inventory, not 312 anonymously callable business APIs.",
+    "Root reports only declared public locations and homepage detail are being retrieved; no administrative or user route execution."
+  ],
+  "integration_report_requirements": [
+    "Keep public static feeds, public content API, vendor-documented API, advertised integration and UI-internal route as separate interface classes.",
+    "Do not transform a generic relative vendor example into an Amergis host/path.",
+    "List whether each example was merely documented, publicly read, or operationally tested; no private API was tested in this work.",
+    "Do not publish or reuse accidental secrets, session identifiers or personal record data in a reconstruction deliverable.",
+    "Treat role-specific portal access as scoped to the account, tenant, purpose and applicable terms; an account alone is not universal access authorization.",
+    "Keep historical June 2024 supplier statements separate from current deployment verification.",
+    "State no public specification found in inspected sources rather than asserting no API exists."
+  ],
+  "full_reconstruction_dependencies": [
+    "Permitted test environments and appropriate account roles",
+    "Current tenant-specific schema and configuration exports",
+    "Custom fields, identifiers, enumerations and cross-system mappings",
+    "Business-state transitions, validators and conditional approvals",
+    "Pricing, pay, bill, overtime, fee and customer-contract rules",
+    "Document/credential requirements and exception handling",
+    "Events, replay, delivery ordering, retry and idempotency semantics",
+    "Role and field permissions plus audit records",
+    "Historical and ongoing authorized business data where needed",
+    "Synthetic end-to-end cases covering cancellations, corrections, disputes and failure recovery"
+  ],
+  "recommended_conclusion": "Public evidence supports a substantial independent workflow and data-domain reconstruction plus a realistic integration backlog. It cannot establish an exact clone of Amergis production databases or operating rules, and the reviewed documents do not provide access to Amergis records."
+}

@@ -1,0 +1,94 @@
+{
+  "outputPath": "/Users/ryan/Documents/Codex/2026-10-20/i-wa/outputs/amergis-operating-blueprint.xlsx",
+  "counts": {
+    "roleFamilies": 20,
+    "sourcePostings": 79,
+    "tasks": 63,
+    "contracts": 6,
+    "rules": 57,
+    "autonomy": {
+      "A": 26,
+      "B": 23,
+      "C": 14
+    }
+  },
+  "checks": [
+    {
+      "test": "Approval without owner is incomplete",
+      "value": "Assign owner",
+      "pass": true
+    },
+    {
+      "test": "Owner and approval without evidence is incomplete",
+      "value": "Record acceptance evidence",
+      "pass": true
+    },
+    {
+      "test": "All review fields complete",
+      "value": "Review complete",
+      "pass": true
+    },
+    {
+      "test": "Summary reacts to completed review",
+      "value": 1,
+      "pass": true
+    },
+    {
+      "test": "Task mode summary responds to edits",
+      "value": 27,
+      "pass": true
+    },
+    {
+      "test": "Evidence counts reconcile",
+      "value": [
+        20,
+        79,
+        63,
+        6,
+        57
+      ],
+      "expected": [
+        20,
+        79,
+        63,
+        6,
+        57
+      ],
+      "pass": true
+    },
+    {
+      "test": "Mode counts reconcile",
+      "value": [
+        26,
+        23,
+        14
+      ],
+      "expected": [
+        26,
+        23,
+        14
+      ],
+      "pass": true
+    },
+    {
+      "test": "Review test inputs restored",
+      "value": [
+        0,
+        63,
+        0,
+        63
+      ],
+      "pass": true
+    }
+  ],
+  "renderedSheets": [
+    "Summary",
+    "Agent tasks",
+    "Implementation review",
+    "Task evidence",
+    "Role catalog",
+    "Contract rules",
+    "Contract catalog"
+  ],
+  "formulaScan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+}

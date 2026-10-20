@@ -1,0 +1,97 @@
+{
+  "review_scope": "Independent evidence/design-consistency review of the research blueprint; not production validation or exhaustive legal review",
+  "review_date": "2026-10-20",
+  "release_recommendation": "Approved for publication as an evidence-backed research blueprint after verified corrections. Not deployment-ready.",
+  "checks_passed": [
+    "63 unique task records map to 20 role families; every task has a public-duty source, human owner and exception route.",
+    "26 A, 23 B and 14 C task counts reconcile; 79 public role advertisements reconcile to families without being represented as headcount.",
+    "57 unique contract rules link to six contracts; supplier process descriptions, contractual rules and documented ambiguities are distinguished.",
+    "Education totals reconcile to 2,764 and cross-site counts are limited to listing observations at snapshot times.",
+    "Public evidence is distinguished from proposed agents, workflows, data models and autonomy classifications.",
+    "Clinical practice/judgment, attestation, consequential employment decisions and financial exceptions have named human ownership.",
+    "Selected controls cover hiring-stage medical data, consent/background adverse-action sequencing, wage obligations independent of client billing approval, and location-specific deployment review without claiming a nationwide exhaustive checklist.",
+    "No unsupported total workforce, FTE savings, recovered production schema or achieved 100%-AI operation claims found."
+  ],
+  "findings": [
+    {
+      "id": "RV01",
+      "severity": "medium",
+      "refs": [
+        "W04",
+        "T001"
+      ],
+      "status": "resolved_verified",
+      "issue": "W04 originally A conflicted with B-class ranked sourcing/outreach preparation T001.",
+      "correction": "W04 now B; gate requires recruiter approval of ranked prospects and messages at launch.",
+      "verification": "Confirmed in operating_model.py."
+    },
+    {
+      "id": "RV02",
+      "severity": "medium",
+      "refs": [
+        "CR011",
+        "CR012",
+        "CR014",
+        "CR035",
+        "CR053",
+        "CR054"
+      ],
+      "status": "resolved_verified",
+      "issue": "Customer billing overtime/holiday/on-call provisions are not consistently labeled as bill-rate semantics; CR011 routes a billing provision to payroll rules.",
+      "correction": "Label customer charge rules explicitly and keep wage calculation separate; customer overtime approval must not suppress worked-time pay.",
+      "source_check": "El Dorado executed p46-p47, Rockford overtime/holiday clauses, Santa Barbara executed p18 inspected via extracted text.",
+      "verification": "Re-read corrected source JSON / operating_model.py on 2026-10-20."
+    },
+    {
+      "id": "RV03",
+      "severity": "medium",
+      "refs": [
+        "T050",
+        "W08",
+        "controls:C05"
+      ],
+      "status": "resolved_verified",
+      "issue": "T050 payroll QA only accepts Approved hours and depends on Time approval, risking omission of disputed/pending-approval worked time.",
+      "correction": "Include worked-time records, disputed/pending-approval hours and approval status; treat client approval as a billing prerequisite only.",
+      "verification": "Re-read corrected source JSON / operating_model.py on 2026-10-20."
+    },
+    {
+      "id": "RV04",
+      "severity": "low",
+      "refs": [
+        "CR051"
+      ],
+      "status": "resolved_verified",
+      "issue": "payment_days:30 collapses the specific payment-processing event and invoice-presentation trigger.",
+      "correction": "Use processing_completion_days_from_invoice_presentation:30 and invoice_satisfactory_required:true; do not assert guaranteed settled cash.",
+      "source_check": "Santa Barbara executed p17 Exhibit B D.",
+      "verification": "Re-read corrected source JSON / operating_model.py on 2026-10-20."
+    },
+    {
+      "id": "RV05",
+      "severity": "medium",
+      "refs": [
+        "W06",
+        "T063",
+        "W07"
+      ],
+      "status": "resolved_verified",
+      "issue": "W06 B outputs clearance status without explicitly requiring T063 human-led readiness decision.",
+      "correction": "Label clearance status as imported from an authorized human readiness decision; W07 requires recorded current clearance.",
+      "verification": "Re-read corrected source JSON / operating_model.py on 2026-10-20."
+    },
+    {
+      "id": "RV06",
+      "severity": "low",
+      "refs": [
+        "education/reconciliation.json",
+        "roles/summary.json"
+      ],
+      "status": "nonblocking_presentation_note",
+      "issue": "42 distinct state codes include DC; 5,519 combined public listings include 79 internal Field/Corporate advertisements.",
+      "correction": "Use state/DC jurisdictions and public listing observations; avoid implying all records represent clinical/education placement vacancies."
+    }
+  ],
+  "control_rubric_note": "Controls uses source A/B/C/D; root intended crosswalk A+B\u2192A,C\u2192B,D\u2192C must remain explicit, and task-specific launch controls may be stricter than generic examples.",
+  "remaining_blocking_findings": []
+}

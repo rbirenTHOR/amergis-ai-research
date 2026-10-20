@@ -1,0 +1,3829 @@
+{
+  "dataset": "Amergis public office directory: normalized detail records",
+  "retrieved_date": "2026-10-20",
+  "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+  "source_http_status": 200,
+  "source_api_total": 61,
+  "source_api_total_pages": 1,
+  "record_count": 61,
+  "schema_version": "1.0",
+  "counts": {
+    "records": 61,
+    "unique_wp_ids": 61,
+    "unique_page_urls": 61,
+    "with_address": 61,
+    "with_parsed_address_components": 61,
+    "with_phone": 61,
+    "with_e164_phone": 61,
+    "with_public_branch_email": 59,
+    "with_services_taxonomy": 60,
+    "with_map_url": 61,
+    "with_map_destination_text": 60,
+    "states": 32,
+    "services_used": 4,
+    "services_dictionary_entries": 5,
+    "phase2_urls_matched": 61,
+    "address_map_street_number_conflicts": 2,
+    "phase2_phone_disagreements": 3,
+    "phase2_postal_disagreements": 1
+  },
+  "services_lookup_url": "https://www.amergis.com/wp-json/wp/v2/services",
+  "normalization_notes": [
+    "Location count is published content inventory, not a verified count of currently operating offices.",
+    "Address, phone and map conflicts are preserved; no candidate or personal records collected.",
+    "Map comparison checks explicit street-number differences only; most map links contain opaque IDs and are not geocoded.",
+    "Map viewport coordinates are not treated as office coordinates.",
+    "All narrative marketing paragraphs, job snippets and client-side count placeholders were excluded.",
+    "Taxonomy assignments describe published categorization and do not prove actual service availability."
+  ],
+  "records": [
+    {
+      "wp_id": 399,
+      "office_name": "Phoenix",
+      "slug": "phoenix",
+      "page_url": "https://www.amergis.com/about/locations/phoenix/",
+      "address_published": "3300 N Central Avenue, Suite 500, Phoenix, AZ 85012",
+      "street_address": "3300 N Central Avenue, Suite 500",
+      "city": "Phoenix",
+      "state": "AZ",
+      "postal_code": "85012",
+      "business_phone_published": "(602) 216-0110",
+      "business_phone_e164": "+16022160110",
+      "business_emails": [
+        "Phoenix.AZ.203@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+3300+N+Central+Ave+Suite+500,+Phoenix,+AZ+85012/@33.4870088,-112.0790846,16z/data=!4m17!1m7!3m6!1s0x872b139dc0b5eab3:0xc63255fca3f8d934!2sAmergis!8m2!3d33.4870044!4d-112.0742137!16s%2Fg%2F11pyzw309n!4m8!1m0!1m5!1m1!1s0x872b139dc0b5eab3:0xc63255fca3f8d934!2m2!1d-112.0742137!2d33.4870044!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 3300 N Central Ave Suite 500, Phoenix, AZ 85012",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:21",
+      "content_modified_date_local_unspecified_timezone": "2026-04-28T14:58:43",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "399",
+        "phase2_directory_office_name": "Phoenix",
+        "phase2_directory_city": "Phoenix",
+        "phase2_directory_state": "AZ",
+        "phase2_directory_postal_code": "85012",
+        "phase2_directory_phone": "(602) 216-0110"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 400,
+      "office_name": "Tucson",
+      "slug": "tucson",
+      "page_url": "https://www.amergis.com/about/locations/tucson/",
+      "address_published": "5151 E Broadway Boulevard, Suite 1100, Tucson, AZ 85711",
+      "street_address": "5151 E Broadway Boulevard, Suite 1100",
+      "city": "Tucson",
+      "state": "AZ",
+      "postal_code": "85711",
+      "business_phone_published": "(520) 747-4100",
+      "business_phone_e164": "+15207474100",
+      "business_emails": [
+        "Tucson.AZ.293@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+5151+E+Broadway+Blvd+%23+1100,+Tucson,+AZ+85711/@27.9581458,-82.5388453,1667m/data=!3m3!1e3!4b1!5s0x86d66e57d98c8fa1:0xce53d1e8b9cedb18!4m9!4m8!1m0!1m5!1m1!1s0xa6fe2a6614540053:0xf353dfadb81fc01b!2m2!1d-110.8825692!2d32.2225371!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMS4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 5151 E Broadway Blvd # 1100, Tucson, AZ 85711",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:21",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T14:20:05",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "400",
+        "phase2_directory_office_name": "Tucson",
+        "phase2_directory_city": "Tucson",
+        "phase2_directory_state": "AZ",
+        "phase2_directory_postal_code": "85711",
+        "phase2_directory_phone": "(520) 747-4100"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 401,
+      "office_name": "Bakersfield",
+      "slug": "bakersfield",
+      "page_url": "https://www.amergis.com/about/locations/bakersfield/",
+      "address_published": "5060 California Avenue, Suite 970, Bakersfield, CA 93309",
+      "street_address": "5060 California Avenue, Suite 970",
+      "city": "Bakersfield",
+      "state": "CA",
+      "postal_code": "93309",
+      "business_phone_published": "(661) 322-6428",
+      "business_phone_e164": "+16613226428",
+      "business_emails": [
+        "Bakersfield.CA.436@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps?sca_esv=caa33d4cbe571e87&rlz=1C1GCEB_enUS1185US1185&biw=1536&bih=791&sxsrf=ANbL-n4hgS4qW3cNvWd7AyMbe4-kKeFBdQ:1776692524472&uact=5&gs_lp=Egxnd3Mtd2l6LXNlcnAiHmJha2Vyc2ZpZWxkIGFtZXJnaXMgaGVhbHRoY2FyZTIGEAAYCBgeMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMgUQABjvBTIIEAAYgAQYogQyBRAAGO8FMggQABiiBBiJBUjgElAAWIEScAB4AJABAJgBb6ABzAaqAQQxMC4xuAEDyAEA-AEBmAIKoAKjBsICCBAAGAcYCBgewgIIEAAYCBgNGB6YAwCSBwM5LjGgB4JOsgcDOS4xuAejBsIHBTAuNy4zyAcagAgA&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KXWvKNjEQeqAMSrYxUK0kElc&daddr=5060+California+Ave+Suite+970,+Bakersfield,+CA+93309",
+      "published_map_destination": "5060 California Ave Suite 970, Bakersfield, CA 93309",
+      "map_destination_extraction_method": "published_map_query_daddr",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:21",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T12:23:22",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "401",
+        "phase2_directory_office_name": "Bakersfield",
+        "phase2_directory_city": "Bakersfield",
+        "phase2_directory_state": "CA",
+        "phase2_directory_postal_code": "93309",
+        "phase2_directory_phone": "(661) 322-6428"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 402,
+      "office_name": "Emeryville",
+      "slug": "emeryville",
+      "page_url": "https://www.amergis.com/about/locations/emeryville/",
+      "address_published": "2100 Powell Street, Suite 620, Emeryville, CA 94608",
+      "street_address": "2100 Powell Street, Suite 620",
+      "city": "Emeryville",
+      "state": "CA",
+      "postal_code": "94608",
+      "business_phone_published": "(510) 982-3818",
+      "business_phone_e164": "+15109823818",
+      "business_emails": [
+        "EmeryvilleCAStaffing-132@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//2100+Powell+Street%2C+Suite+620%2C+Emeryville%2C+CA+94608",
+      "published_map_destination": "2100 Powell Street, Suite 620, Emeryville, CA 94608",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:21",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T10:51:09",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "402",
+        "phase2_directory_office_name": "Emeryville",
+        "phase2_directory_city": "Emeryville",
+        "phase2_directory_state": "CA",
+        "phase2_directory_postal_code": "94608",
+        "phase2_directory_phone": "(510) 982-3818"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 464,
+      "office_name": "Los Angeles",
+      "slug": "los-angeles",
+      "page_url": "https://www.amergis.com/about/locations/los-angeles/",
+      "address_published": "6060 Center Drive, Tenth Floor, Suites 033 & 039, Los Angeles, CA 90045",
+      "street_address": "6060 Center Drive, Tenth Floor, Suites 033 & 039",
+      "city": "Los Angeles",
+      "state": "CA",
+      "postal_code": "90045",
+      "business_phone_published": "(866) 316-8773",
+      "business_phone_e164": "+18663168773",
+      "business_emails": [
+        "LosAngelesCAStaffing-252@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+6060+Center+Dr+Tenth+Floor,+033+%26+039,+Los+Angeles,+CA+90045/@33.976001,-137.9024597,5z/data=!3m1!5s0x80dcb74676690f6b:0xd28c31e334cf13a4!4m18!1m8!3m7!1s0x80c2b724dc78d18d:0x12b68dd420231507!2sAmergis!8m2!3d33.976001!4d-118.390741!15sChNsb3MgYW5nZWxlcyBhbWVyZ2lzkgERZW1wbG95bWVudF9hZ2VuY3ngAQA!16s%2Fg%2F11m5h5p482!4m8!1m0!1m5!1m1!1s0x80c2b724dc78d18d:0x12b68dd420231507!2m2!1d-118.390741!2d33.976001!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 6060 Center Dr Tenth Floor, 033 & 039, Los Angeles, CA 90045",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2022-01-19T17:19:52",
+      "content_modified_date_local_unspecified_timezone": "2026-04-27T15:14:35",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "464",
+        "phase2_directory_office_name": "Los Angeles",
+        "phase2_directory_city": "Los Angeles",
+        "phase2_directory_state": "CA",
+        "phase2_directory_postal_code": "90045",
+        "phase2_directory_phone": "(213) 296-3783"
+      },
+      "quality_flags": [
+        {
+          "code": "phase2_directory_phone_differs_from_detail",
+          "severity": "needs_source_verification",
+          "phase2_directory_phone": "(213) 296-3783",
+          "detail_phone": "(866) 316-8773"
+        }
+      ]
+    },
+    {
+      "wp_id": 405,
+      "office_name": "Orange",
+      "slug": "orange",
+      "page_url": "https://www.amergis.com/about/locations/orange/",
+      "address_published": "500 S Main Street, Suite 400, Orange, CA 92868",
+      "street_address": "500 S Main Street, Suite 400",
+      "city": "Orange",
+      "state": "CA",
+      "postal_code": "92868",
+      "business_phone_published": "(714) 573-8830",
+      "business_phone_e164": "+17145738830",
+      "business_emails": [
+        "orange.ca.059@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://maps.app.goo.gl/QbZYqrHefo84wKHo9",
+      "published_map_destination": null,
+      "map_destination_extraction_method": null,
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:21",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T10:52:36",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "405",
+        "phase2_directory_office_name": "Orange",
+        "phase2_directory_city": "Orange",
+        "phase2_directory_state": "CA",
+        "phase2_directory_postal_code": "92868",
+        "phase2_directory_phone": "(714) 573-8830"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 407,
+      "office_name": "Sacramento",
+      "slug": "sacramento",
+      "page_url": "https://www.amergis.com/about/locations/sacramento/",
+      "address_published": "2241 Harvard Street, Suite 300, Sacramento, CA 95815",
+      "street_address": "2241 Harvard Street, Suite 300",
+      "city": "Sacramento",
+      "state": "CA",
+      "postal_code": "95815",
+      "business_phone_published": "(916) 614-9539",
+      "business_phone_e164": "+19166149539",
+      "business_emails": [
+        "Sacramento.CA.ES.South.210@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+2241+Harvard+St+Suite+300,+Sacramento,+CA+95815/@38.6068438,-121.4390751,17z/data=!4m17!1m7!3m6!1s0x809adbf0b19ad115:0x6c9bec5297ad0aaa!2sAmergis!8m2!3d38.6068396!4d-121.4365002!16s%2Fg%2F11pk9w8rcp!4m8!1m0!1m5!1m1!1s0x809adbf0b19ad115:0x6c9bec5297ad0aaa!2m2!1d-121.4365002!2d38.6068396!3e2?entry=ttu&g_ep=EgoyMDI2MDQyNi4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 2241 Harvard St Suite 300, Sacramento, CA 95815",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:21",
+      "content_modified_date_local_unspecified_timezone": "2026-04-29T14:57:59",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "407",
+        "phase2_directory_office_name": "Sacramento",
+        "phase2_directory_city": "Sacramento",
+        "phase2_directory_state": "CA",
+        "phase2_directory_postal_code": "95815",
+        "phase2_directory_phone": "(916) 614-9539"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 408,
+      "office_name": "San Diego",
+      "slug": "san-diego",
+      "page_url": "https://www.amergis.com/about/locations/san-diego/",
+      "address_published": "3111 Camino Del Rio N, Suite 1250, San Diego, CA 92108",
+      "street_address": "3111 Camino Del Rio N, Suite 1250",
+      "city": "San Diego",
+      "state": "CA",
+      "postal_code": "92108",
+      "business_phone_published": "(619) 209-3696",
+      "business_phone_e164": "+16192093696",
+      "business_emails": [
+        "SanDiego.CA.171@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+3111+Camino+Del+Rio+N+Suite+1250,+San+Diego,+CA+92108/@32.7740159,-117.1304289,17z/data=!4m17!1m7!3m6!1s0x80d9552575c6ea41:0xdc3507d4500be572!2sAmergis!8m2!3d32.7740114!4d-117.127854!16s%2Fg%2F11bxc7jgn4!4m8!1m0!1m5!1m1!1s0x80d9552575c6ea41:0xdc3507d4500be572!2m2!1d-117.1278087!2d32.7739338!3e2?entry=ttu&g_ep=EgoyMDI2MDQyNi4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 3111 Camino Del Rio N Suite 1250, San Diego, CA 92108",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:21",
+      "content_modified_date_local_unspecified_timezone": "2026-04-29T15:03:33",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "408",
+        "phase2_directory_office_name": "San Diego",
+        "phase2_directory_city": "San Diego",
+        "phase2_directory_state": "CA",
+        "phase2_directory_postal_code": "92108",
+        "phase2_directory_phone": "(619) 209-3696"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 409,
+      "office_name": "San Jose",
+      "slug": "san-jose",
+      "page_url": "https://www.amergis.com/about/locations/san-jose/",
+      "address_published": "2870 Zanker Road, Suite 230, San Jose, CA 95134",
+      "street_address": "2870 Zanker Road, Suite 230",
+      "city": "San Jose",
+      "state": "CA",
+      "postal_code": "95134",
+      "business_phone_published": "(408) 914-4895",
+      "business_phone_e164": "+14089144895",
+      "business_emails": [
+        "SanJose.CA.209@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+2870+Zanker+Rd+Suite+230,+San+Jose,+CA+95134/@37.3952582,-121.9304197,17z/data=!3m1!5s0x808fc9662a009735:0x13cbe11699924a50!4m17!1m7!3m6!1s0x808fc98ed0609547:0x3ab00a6045c4143f!2sAmergis!8m2!3d37.395254!4d-121.9278448!16s%2Fg%2F11pyzxjrpr!4m8!1m0!1m5!1m1!1s0x808fc98ed0609547:0x3ab00a6045c4143f!2m2!1d-121.9278448!2d37.395254!3e2?entry=ttu&g_ep=EgoyMDI2MDQyNi4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 2870 Zanker Rd Suite 230, San Jose, CA 95134",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:21",
+      "content_modified_date_local_unspecified_timezone": "2026-04-29T15:08:59",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "409",
+        "phase2_directory_office_name": "San Jose",
+        "phase2_directory_city": "San Jose",
+        "phase2_directory_state": "CA",
+        "phase2_directory_postal_code": "95134",
+        "phase2_directory_phone": "(408) 914-4895"
+      },
+      "quality_flags": [
+        {
+          "code": "mailto_display_name_normalized",
+          "severity": "normalization_note",
+          "note": "Extracted mailbox address from mailto link containing display-name syntax."
+        }
+      ]
+    },
+    {
+      "wp_id": 410,
+      "office_name": "San Luis Obispo",
+      "slug": "san-luis-obispo",
+      "page_url": "https://www.amergis.com/about/locations/san-luis-obispo/",
+      "address_published": "735 Tank Farm Road, Suite 220, San Luis Obispo, CA 93401",
+      "street_address": "735 Tank Farm Road, Suite 220",
+      "city": "San Luis Obispo",
+      "state": "CA",
+      "postal_code": "93401",
+      "business_phone_published": "(805) 934-8473",
+      "business_phone_e164": "+18059348473",
+      "business_emails": [
+        "SanLuisObispo.CA.748@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//735+Tank+Farm+Road%2C+Suite+220%2C+San+Luis+Obispo%2C+CA+93401",
+      "published_map_destination": "735 Tank Farm Road, Suite 220, San Luis Obispo, CA 93401",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:21",
+      "content_modified_date_local_unspecified_timezone": "2026-04-29T16:29:26",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "410",
+        "phase2_directory_office_name": "San Luis Obispo",
+        "phase2_directory_city": "San Luis Obispo",
+        "phase2_directory_state": "CA",
+        "phase2_directory_postal_code": "93401",
+        "phase2_directory_phone": "(805) 934-8473"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 411,
+      "office_name": "Denver",
+      "slug": "denver",
+      "page_url": "https://www.amergis.com/about/locations/denver/",
+      "address_published": "143 Union Boulevard, Suite 1000, Lakewood, CO 80228",
+      "street_address": "143 Union Boulevard, Suite 1000",
+      "city": "Lakewood",
+      "state": "CO",
+      "postal_code": "80228",
+      "business_phone_published": "(303) 322-7108",
+      "business_phone_e164": "+13033227108",
+      "business_emails": [
+        "Denver.CO.296@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+143+Union+Blvd+Suite+1000,+Lakewood,+CO+80228/@33.0011319,-100.155692,858591m/data=!3m1!1e3!4m9!4m8!1m0!1m5!1m1!1s0x876c795ec98a8ce5:0xe164f0c86ed15cfc!2m2!1d-105.1349891!2d39.7164906!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMS4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 143 Union Blvd Suite 1000, Lakewood, CO 80228",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:21",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T14:51:49",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "411",
+        "phase2_directory_office_name": "Lakewood",
+        "phase2_directory_city": "Lakewood",
+        "phase2_directory_state": "CO",
+        "phase2_directory_postal_code": "80228",
+        "phase2_directory_phone": "(303) 322-7108"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 412,
+      "office_name": "Hartford",
+      "slug": "hartford",
+      "page_url": "https://www.amergis.com/about/locations/hartford/",
+      "address_published": "1111 Cromwell Avenue, Suite 501, Rocky Hill, CT 06067",
+      "street_address": "1111 Cromwell Avenue, Suite 501",
+      "city": "Rocky Hill",
+      "state": "CT",
+      "postal_code": "06067",
+      "business_phone_published": "(860) 291-9692",
+      "business_phone_e164": "+18602919692",
+      "business_emails": [
+        "Hartford.CT.745@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+1111+Cromwell+Ave+Suite+501,+Rocky+Hill,+CT+06067/@41.6395067,-72.6816293,705m/data=!3m1!1e3!4m17!1m7!3m6!1s0x89e64d851ff5bf1f:0x4b7d18d31ab98a86!2sAmergis!8m2!3d41.6395027!4d-72.6790544!16s%2Fg%2F11b72nt87g!4m8!1m0!1m5!1m1!1s0x89e64d851ff5bf1f:0x4b7d18d31ab98a86!2m2!1d-72.6790501!2d41.6394837!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMS4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 1111 Cromwell Ave Suite 501, Rocky Hill, CT 06067",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:21",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T15:26:08",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "412",
+        "phase2_directory_office_name": "Rocky Hill",
+        "phase2_directory_city": "Rocky Hill",
+        "phase2_directory_state": "CT",
+        "phase2_directory_postal_code": "06067",
+        "phase2_directory_phone": "(860) 291-9692"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 413,
+      "office_name": "Wilmington",
+      "slug": "wilmington",
+      "page_url": "https://www.amergis.com/about/locations/wilmington/",
+      "address_published": "1 Righter Parkway, Suite 200, Wilmington, DE 19803",
+      "street_address": "1 Righter Parkway, Suite 200",
+      "city": "Wilmington",
+      "state": "DE",
+      "postal_code": "19803",
+      "business_phone_published": "(302) 477-1301",
+      "business_phone_e164": "+13024771301",
+      "business_emails": [
+        "Wilmington.DE.314@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//1+Righter+Parkway%2C+Suite+200%2C+Wilmington%2C+DE+19803",
+      "published_map_destination": "1 Righter Parkway, Suite 200, Wilmington, DE 19803",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:21",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T10:55:49",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "413",
+        "phase2_directory_office_name": "Wilmington",
+        "phase2_directory_city": "Wilmington",
+        "phase2_directory_state": "DE",
+        "phase2_directory_postal_code": "19803",
+        "phase2_directory_phone": "(302) 477-1301"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 414,
+      "office_name": "Jacksonville",
+      "slug": "jacksonville",
+      "page_url": "https://www.amergis.com/about/locations/jacksonville/",
+      "address_published": "7775 Baymeadows Way, Suite 210, Jacksonville, FL 32256",
+      "street_address": "7775 Baymeadows Way, Suite 210",
+      "city": "Jacksonville",
+      "state": "FL",
+      "postal_code": "32256",
+      "business_phone_published": "(904) 396-5077",
+      "business_phone_e164": "+19043965077",
+      "business_emails": [
+        "JacksonvilleFLStaffing-276@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+7775+Baymeadows+Way+suite+210,+Jacksonville,+FL+32256/@30.2308408,-81.5846322,17z/data=!4m17!1m7!3m6!1s0x88e5b66460545b8b:0xfc8903d11a3fab7b!2sAmergis!8m2!3d30.2308362!4d-81.5820573!16s%2Fg%2F11cmfg0th7!4m8!1m0!1m5!1m1!1s0x88e5b66460545b8b:0xfc8903d11a3fab7b!2m2!1d-81.5820573!2d30.2308362!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 7775 Baymeadows Way suite 210, Jacksonville, FL 32256",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:21",
+      "content_modified_date_local_unspecified_timezone": "2026-04-27T10:54:11",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "414",
+        "phase2_directory_office_name": "Jacksonville",
+        "phase2_directory_city": "Jacksonville",
+        "phase2_directory_state": "FL",
+        "phase2_directory_postal_code": "32256",
+        "phase2_directory_phone": "(904) 396-5077"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 415,
+      "office_name": "Pensacola",
+      "slug": "pensacola",
+      "page_url": "https://www.amergis.com/about/locations/pensacola/",
+      "address_published": "4900 Bayou boulevard, suite 103, Pensacola, FL 32503",
+      "street_address": "4900 Bayou boulevard, suite 103",
+      "city": "Pensacola",
+      "state": "FL",
+      "postal_code": "32503",
+      "business_phone_published": "(850) 471-7020",
+      "business_phone_e164": "+18504717020",
+      "business_emails": [
+        "PensacolaFLStaffing-754@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+4900+Bayou+Blvd+%23103,+Pensacola,+FL+32503/@30.470374,-87.2087774,17z/data=!3m1!5s0x8890c06d1350da65:0xe089af8d2bc32a98!4m17!1m7!3m6!1s0x8890c14aaff2a265:0xee32537d64afc752!2sAmergis!8m2!3d30.470374!4d-87.2062025!16s%2Fg%2F11jycnfh58!4m8!1m0!1m5!1m1!1s0x8890c14aaff2a265:0xee32537d64afc752!2m2!1d-87.2062025!2d30.470374!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 4900 Bayou Blvd #103, Pensacola, FL 32503",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:21",
+      "content_modified_date_local_unspecified_timezone": "2026-04-28T14:46:56",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "415",
+        "phase2_directory_office_name": "Pensacola",
+        "phase2_directory_city": "Pensacola",
+        "phase2_directory_state": "FL",
+        "phase2_directory_postal_code": "32503",
+        "phase2_directory_phone": "(850) 471-7020"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 465,
+      "office_name": "South Florida",
+      "slug": "south-florida",
+      "page_url": "https://www.amergis.com/about/locations/south-florida/",
+      "address_published": "550 NW 62nd Street, Suite 490, Fort Lauderdale, FL 33309",
+      "street_address": "550 NW 62nd Street, Suite 490",
+      "city": "Fort Lauderdale",
+      "state": "FL",
+      "postal_code": "33309",
+      "business_phone_published": "(754) 228-3113",
+      "business_phone_e164": "+17542283113",
+      "business_emails": [
+        "Miami.FL.778@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps?rlz=1C1GCEB_enUS1185US1185&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQIRigATIHCAUQIRigATIHCAYQIRifBTIHCAcQIRifBTIHCAgQIRifBTIHCAkQIRifBdIBCDM0MzJqMGozqAIAsAIB&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KRMnHb-8A9mIMT807fxCRnGk&daddr=550+NW+62nd+St+Suite+490,+Fort+Lauderdale,+FL+33309",
+      "published_map_destination": "550 NW 62nd St Suite 490, Fort Lauderdale, FL 33309",
+      "map_destination_extraction_method": "published_map_query_daddr",
+      "content_published_date_local_unspecified_timezone": "2023-01-31T21:13:57",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T12:06:36",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "465",
+        "phase2_directory_office_name": "Fort Lauderdale",
+        "phase2_directory_city": "Fort Lauderdale",
+        "phase2_directory_state": "FL",
+        "phase2_directory_postal_code": "33309",
+        "phase2_directory_phone": "(754) 228-3113"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 416,
+      "office_name": "Tampa",
+      "slug": "tampa",
+      "page_url": "https://www.amergis.com/about/locations/tampa/",
+      "address_published": "4511 N Himes Avenue, Suite 200, Tampa, FL 33614",
+      "street_address": "4511 N Himes Avenue, Suite 200",
+      "city": "Tampa",
+      "state": "FL",
+      "postal_code": "33614",
+      "business_phone_published": "(813) 673-8275",
+      "business_phone_e164": "+18136738275",
+      "business_emails": [
+        "Tampa.FL.135@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+4511+N+Himes+Ave+Suite+200,+Tampa,+FL+33614/@39.1681031,-76.8094497,732m/data=!3m3!1e3!4b1!5s0x88c2c3c0fcb9a1c7:0xa49a4ea5eaf15eea!4m9!4m8!1m0!1m5!1m1!1s0x88c2c35f63c545bb:0x2b0429476327a4e1!2m2!1d-82.5002858!2d27.9840699!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMS4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 4511 N Himes Ave Suite 200, Tampa, FL 33614",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:21",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T13:45:26",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "416",
+        "phase2_directory_office_name": "Tampa",
+        "phase2_directory_city": "Tampa",
+        "phase2_directory_state": "FL",
+        "phase2_directory_postal_code": "33607",
+        "phase2_directory_phone": "(813) 673-8275"
+      },
+      "quality_flags": [
+        {
+          "code": "phase2_directory_postal_differs_from_detail",
+          "severity": "needs_source_verification",
+          "phase2_directory_postal_code": "33607",
+          "detail_postal_code": "33614"
+        }
+      ]
+    },
+    {
+      "wp_id": 6682,
+      "office_name": "Tampa Hub",
+      "slug": "tampa-travel-hub",
+      "page_url": "https://www.amergis.com/about/locations/tampa-travel-hub/",
+      "address_published": "5332 Avion Park Drive, Suites 150, 200, 300, Tampa, FL 33607",
+      "street_address": "5332 Avion Park Drive, Suites 150, 200, 300",
+      "city": "Tampa",
+      "state": "FL",
+      "postal_code": "33607",
+      "business_phone_published": "(813) 673-8275",
+      "business_phone_e164": "+18136738275",
+      "business_emails": [],
+      "service_ids": [],
+      "services": [],
+      "published_map_url": "https://www.google.com/maps/dir//5332+Avion+Park+Dr,+Tampa,+FL+33607/@27.9581458,-82.5388453,1667m/data=!3m1!1e3!4m18!1m8!3m7!1s0x88c2c258bea127e9:0x83abb09984bb0a09!2s5332+Avion+Park+Dr,+Tampa,+FL+33607!3b1!8m2!3d27.9581411!4d-82.5339744!16s%2Fg%2F11c5lvm_hl!4m8!1m0!1m5!1m1!1s0x88c2c258bea127e9:0x83abb09984bb0a09!2m2!1d-82.5339744!2d27.9581411!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMS4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "5332 Avion Park Dr, Tampa, FL 33607",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2026-04-24T14:10:54",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T14:11:31",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "6682",
+        "phase2_directory_office_name": "Tampa",
+        "phase2_directory_city": "Tampa",
+        "phase2_directory_state": "FL",
+        "phase2_directory_postal_code": "33607",
+        "phase2_directory_phone": "(813) 877-8711"
+      },
+      "quality_flags": [
+        {
+          "code": "phase2_directory_phone_differs_from_detail",
+          "severity": "needs_source_verification",
+          "phase2_directory_phone": "(813) 877-8711",
+          "detail_phone": "(813) 673-8275"
+        },
+        {
+          "code": "no_public_branch_email_in_content",
+          "severity": "field_missing",
+          "note": "No mailto branch contact was found in the published location content."
+        },
+        {
+          "code": "no_services_taxonomy_assignments",
+          "severity": "field_missing",
+          "note": "Empty taxonomy array is not evidence that no services are offered."
+        }
+      ]
+    },
+    {
+      "wp_id": 417,
+      "office_name": "Atlanta",
+      "slug": "atlanta",
+      "page_url": "https://www.amergis.com/about/locations/atlanta/",
+      "address_published": "6425 Powers Ferry Road NW, Suite 200, Atlanta, GA 30339",
+      "street_address": "6425 Powers Ferry Road NW, Suite 200",
+      "city": "Atlanta",
+      "state": "GA",
+      "postal_code": "30339",
+      "business_phone_published": "(470) 275-8399",
+      "business_phone_e164": "+14702758399",
+      "business_emails": [
+        "Atlanta.GA.277@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "http://google.com/maps?vet=10CAAQoqAOahcKEwjwvbGiw_yTAxUAAAAAHQAAAAAQFg..i&rlz=1C1GCEB_enUS1185US1185&pvq=Cg0vZy8xMXZ3X2ZwOXQyIg0KB2FtZXJnaXMQAhgD&lqi=Cg9hdGxhbnRhIGFtZXJnaXNIos7q9u-6gIAIWhcQARgAGAEiD2F0bGFudGEgYW1lcmdpc5IBDm51cnNpbmdfYWdlbmN54AEA&fvr=1&cs=1&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KYft206pD_WIMaVhU2VyUG1k&daddr=6425+Powers+Ferry+Rd+NW+Suite+200,+Atlanta,+GA+30339",
+      "published_map_destination": "6425 Powers Ferry Rd NW Suite 200, Atlanta, GA 30339",
+      "map_destination_extraction_method": "published_map_query_daddr",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:21",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T12:23:05",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "417",
+        "phase2_directory_office_name": "Atlanta",
+        "phase2_directory_city": "Atlanta",
+        "phase2_directory_state": "GA",
+        "phase2_directory_postal_code": "30339",
+        "phase2_directory_phone": "(470) 275-8399"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 418,
+      "office_name": "Chicago",
+      "slug": "chicago",
+      "page_url": "https://www.amergis.com/about/locations/chicago/",
+      "address_published": "230 W Monroe Street, Suites 550 and 625, Chicago, IL 60606",
+      "street_address": "230 W Monroe Street, Suites 550 and 625",
+      "city": "Chicago",
+      "state": "IL",
+      "postal_code": "60606",
+      "business_phone_published": "(312) 577-7522",
+      "business_phone_e164": "+13125777522",
+      "business_emails": [
+        "Chicago.IL.283@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps?sca_esv=c2f15ba4c766d1a6&rlz=1C1GCEB_enUS1185US1185&biw=1536&bih=791&sxsrf=ANbL-n4ol-vOnVdGCzpwNPWomhj0cFHcKg:1776704786537&uact=5&gs_lp=Egxnd3Mtd2l6LXNlcnAiHmFtZXJnaXMgaGVhbHRoY2FyZSBjaGljYWdvIGl1bDIGEAAYFhgeMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMggQABiABBiiBDIIEAAYgAQYogQyBRAAGO8FMggQABiABBiiBEiyD1CmBFjXDXABeAGQAQCYAWygAfAHqgEEMTAuMbgBA8gBAPgBAZgCDKACoAjCAgoQABiwAxjWBBhHwgIEECMYJ8ICBRAAGIAEmAMA4gMFEgExIECIBgGQBgiSBwQxMC4yoAeqRbIHAzkuMrgHnAjCBwUwLjkuM8gHIYAIAA&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KRFvLBG4LA6IMVTKJZi5r1Uj&daddr=230+W+Monroe+St+Suites+550+and+625,+Chicago,+IL+60606",
+      "published_map_destination": "230 W Monroe St Suites 550 and 625, Chicago, IL 60606",
+      "map_destination_extraction_method": "published_map_query_daddr",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:21",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T12:24:44",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "418",
+        "phase2_directory_office_name": "Chicago",
+        "phase2_directory_city": "Chicago",
+        "phase2_directory_state": "IL",
+        "phase2_directory_postal_code": "60606",
+        "phase2_directory_phone": "(312) 577-7522"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 419,
+      "office_name": "Indianapolis",
+      "slug": "indianapolis",
+      "page_url": "https://www.amergis.com/about/locations/indianapolis/",
+      "address_published": "6612 E 75th Street, Suite 305, Indianapolis, IN 46250",
+      "street_address": "6612 E 75th Street, Suite 305",
+      "city": "Indianapolis",
+      "state": "IN",
+      "postal_code": "46250",
+      "business_phone_published": "(317) 585-1691",
+      "business_phone_e164": "+13175851691",
+      "business_emails": [
+        "IndianapolisINStaffing-764@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps?sca_esv=bab5d0a3aacebeff&rlz=1C1GCEB_enUS1185US1185&sxsrf=ANbL-n4w7EdmXu5aGCOB6GtuZyc-q-5wuQ:1777299654419&biw=1536&bih=791&uact=5&gs_lp=Egxnd3Mtd2l6LXNlcnAiE2FtZXJnaXNpbmRpYW5hcG9saXMyBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMggQABiABBiiBDIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiABBiiBEijCVCsBFjKCHACeAGQAQCYAWigAbIEqgEDNi4xuAEDyAEA-AEBmAIGoALKAsICChAAGEcY1gQYsAPCAg0QABhHGNYEGMkDGLADwgIOEAAYgAQYigUYkgMYsAPCAgoQLhgNGLEDGIAEwgINEC4YgAQYDRixAxiDAcICDRAAGIAEGA0YsQMYgwHCAhMQLhiABBgNGMcBGK8BGLEDGIMBwgIHEAAYgAQYDcICEBAuGIAEGA0YrwEYsQMYxwHCAhkQLhgNGLEDGIAEGJcFGNwEGN4EGOAE2AEBwgIHECMYsAIYJ8ICCxAAGIAEGIoFGIYDmAMAiAYBkAYKugYGCAEQARgUkgcDNS4xoAfJS7IHAzMuMbgHvgLCBwUwLjEuNcgHGoAIAQ&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KbsfO3woTWuIMbLSw_5fhI0W&daddr=6612+E+75th+St+Suite+305,+Indianapolis,+IN+46250",
+      "published_map_destination": "6612 E 75th St Suite 305, Indianapolis, IN 46250",
+      "map_destination_extraction_method": "published_map_query_daddr",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:39",
+      "content_modified_date_local_unspecified_timezone": "2026-04-27T10:34:01",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "419",
+        "phase2_directory_office_name": "Indianapolis",
+        "phase2_directory_city": "Indianapolis",
+        "phase2_directory_state": "IN",
+        "phase2_directory_postal_code": "46250",
+        "phase2_directory_phone": "(317) 585-1691"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 420,
+      "office_name": "Louisville",
+      "slug": "louisville",
+      "page_url": "https://www.amergis.com/about/locations/louisville/",
+      "address_published": "401 S 4th Street, Suite 1108, Louisville, KY 40202",
+      "street_address": "401 S 4th Street, Suite 1108",
+      "city": "Louisville",
+      "state": "KY",
+      "postal_code": "40202",
+      "business_phone_published": "(502) 909-3502",
+      "business_phone_e164": "+15029093502",
+      "business_emails": [
+        "LouisvilleStaffing-148@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+401+S+4th+St+Suite+1108,+Louisville,+KY+40202/@38.2527811,-85.7596319,17z/data=!4m17!1m7!3m6!1s0x88697258eacdc74f:0xde2b81b7af630973!2sAmergis!8m2!3d38.2527769!4d-85.757057!16s%2Fg%2F125_vk8gz!4m8!1m0!1m5!1m1!1s0x88697258eacdc74f:0xde2b81b7af630973!2m2!1d-85.757057!2d38.2527769!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 401 S 4th St Suite 1108, Louisville, KY 40202",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:39",
+      "content_modified_date_local_unspecified_timezone": "2026-04-27T14:15:53",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "420",
+        "phase2_directory_office_name": "Louisville",
+        "phase2_directory_city": "Louisville",
+        "phase2_directory_state": "KY",
+        "phase2_directory_postal_code": "40202",
+        "phase2_directory_phone": "(502) 909-3502"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 421,
+      "office_name": "Boston",
+      "slug": "boston",
+      "page_url": "https://www.amergis.com/about/locations/boston/",
+      "address_published": "110 2nd Avenue, Needham Heights, MA 02494",
+      "street_address": "110 2nd Avenue",
+      "city": "Needham Heights",
+      "state": "MA",
+      "postal_code": "02494",
+      "business_phone_published": "(781) 400-7105",
+      "business_phone_e164": "+17814007105",
+      "business_emails": [
+        "Boston.MA.363@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps?sca_esv=caa33d4cbe571e87&rlz=1C1GCEB_enUS1185US1185&biw=1536&bih=791&sxsrf=ANbL-n4CUQB6KCAloJnLrrhcorTGiSLiSw:1776692712094&uact=5&gs_lp=Egxnd3Mtd2l6LXNlcnAiHGJvc3RvbiBtYSBhbWVyZ2lzIGhlYWx0aGNhcmUyBhAAGAgYHjILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMggQABiABBiiBDIFEAAY7wUyBRAAGO8FMgUQABjvBTIFEAAY7wVIjxJQqAZYihFwAngAkAEAmAFdoAHtBaoBAjEwuAEDyAEA-AEBmAIIoALLA8ICChAAGLADGNYEGEfCAggQABgHGAgYHpgDAIgGAZAGCJIHATigB5RAsgcBNrgHwwPCBwUwLjUuM8gHGIAIAA&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KTWeJnsgguOJMeBzhCb2vFT-&daddr=110+2nd+Ave,+Needham+Heights,+MA+02494",
+      "published_map_destination": "110 2nd Ave, Needham Heights, MA 02494",
+      "map_destination_extraction_method": "published_map_query_daddr",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:39",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T12:23:58",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "421",
+        "phase2_directory_office_name": "Needham",
+        "phase2_directory_city": "Needham",
+        "phase2_directory_state": "MA",
+        "phase2_directory_postal_code": "02494",
+        "phase2_directory_phone": "(781) 400-7105"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 425,
+      "office_name": "Baltimore",
+      "slug": "baltimore",
+      "page_url": "https://www.amergis.com/about/locations/baltimore/",
+      "address_published": "1954 Greenspring Drive, Suite 220, Timonium, MD 21093",
+      "street_address": "1954 Greenspring Drive, Suite 220",
+      "city": "Timonium",
+      "state": "MD",
+      "postal_code": "21093",
+      "business_phone_published": "(410) 494-0280",
+      "business_phone_e164": "+14104940280",
+      "business_emails": [
+        "Baltimore.MD.096@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps?vet=10CAAQoqAOahcKEwiYxqWQyPyTAxUAAAAAHQAAAAAQDA..i&rlz=1C1GCEB_enUS1185US1185&sca_esv=caa33d4cbe571e87&pvq=Cg0vZy8xMXNyMzh5bXgwIhgKEmFtZXJnaXMgaGVhbHRoY2FyZRACGAM&lqi=ChxiYWx0aW1vcmUgYW1lcmdpcyBoZWFsdGhjYXJlWh4iHGJhbHRpbW9yZSBhbWVyZ2lzIGhlYWx0aGNhcmWSAQ5udXJzaW5nX2FnZW5jeeABAA&fvr=1&cs=1&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=Kdfy4ahvD8iJMTN_VUxtJshj&daddr=1954+Greenspring+Dr+Suite+220,+Timonium,+MD+21093",
+      "published_map_destination": "1954 Greenspring Dr Suite 220, Timonium, MD 21093",
+      "map_destination_extraction_method": "published_map_query_daddr",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:39",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T12:23:55",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "425",
+        "phase2_directory_office_name": "Timonium",
+        "phase2_directory_city": "Timonium",
+        "phase2_directory_state": "MD",
+        "phase2_directory_postal_code": "21093",
+        "phase2_directory_phone": "(410) 494-0280"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 6555,
+      "office_name": "Columbia Hub",
+      "slug": "columbia-gov-hub",
+      "page_url": "https://www.amergis.com/about/locations/columbia-gov-hub/",
+      "address_published": "7065 Samuel Morse Drive, Suite 100, Columbia, MD 21046",
+      "street_address": "7065 Samuel Morse Drive, Suite 100",
+      "city": "Columbia",
+      "state": "MD",
+      "postal_code": "21046",
+      "business_phone_published": "410.910.1366",
+      "business_phone_e164": "+14109101366",
+      "business_emails": [
+        "Columbia.MD.709@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//7075+Samuel+Morse+Dr+%23100,+Columbia,+MD+21046/@39.1681031,-76.8094497,732m/data=!3m1!1e3!4m9!4m8!1m0!1m5!1m1!1s0x89b7e0961abd4ceb:0x8ac080152dc1c608!2m2!1d-76.8094497!2d39.1681031!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMS4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "7075 Samuel Morse Dr #100, Columbia, MD 21046",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2026-03-13T15:54:26",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T13:06:00",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "6555",
+        "phase2_directory_office_name": "Columbia",
+        "phase2_directory_city": "Columbia",
+        "phase2_directory_state": "MD",
+        "phase2_directory_postal_code": "21046",
+        "phase2_directory_phone": "(410) 910-1366"
+      },
+      "quality_flags": [
+        {
+          "code": "address_map_street_number_conflict",
+          "severity": "needs_source_verification",
+          "published_address": "7065 Samuel Morse Drive, Suite 100, Columbia, MD 21046",
+          "published_map_destination": "7075 Samuel Morse Dr #100, Columbia, MD 21046",
+          "note": "Both values retained; no external geocoding or address correction performed."
+        }
+      ]
+    },
+    {
+      "wp_id": 423,
+      "office_name": "HQ",
+      "slug": "hq",
+      "page_url": "https://www.amergis.com/about/locations/hq/",
+      "address_published": "7223 Lee DeForest Drive, Columbia, MD 21046",
+      "street_address": "7223 Lee DeForest Drive",
+      "city": "Columbia",
+      "state": "MD",
+      "postal_code": "21046",
+      "business_phone_published": "888-800-1854",
+      "business_phone_e164": "+18888001854",
+      "business_emails": [],
+      "service_ids": [
+        158
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//7223+Lee+Deforest+Dr,+Columbia,+MD+21046,+USA/@39.1681031,-76.8094497,732m/data=!3m2!1e3!4b1!4m9!4m8!1m0!1m5!1m1!1s0x89b7e09924a36001:0xdb2b178d47e0c15!2m2!1d-76.8191688!2d39.1717653!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMS4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "7223 Lee Deforest Dr, Columbia, MD 21046, USA",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:39",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T13:04:57",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "423",
+        "phase2_directory_office_name": "Columbia",
+        "phase2_directory_city": "Columbia",
+        "phase2_directory_state": "MD",
+        "phase2_directory_postal_code": "21046",
+        "phase2_directory_phone": "(888) 800-1854"
+      },
+      "quality_flags": [
+        {
+          "code": "no_public_branch_email_in_content",
+          "severity": "field_missing",
+          "note": "No mailto branch contact was found in the published location content."
+        }
+      ]
+    },
+    {
+      "wp_id": 424,
+      "office_name": "Silver Spring",
+      "slug": "silver-spring",
+      "page_url": "https://www.amergis.com/about/locations/silver-spring/",
+      "address_published": "962 Wayne Avenue, Suite 750, Silver Spring, MD 20910",
+      "street_address": "962 Wayne Avenue, Suite 750",
+      "city": "Silver Spring",
+      "state": "MD",
+      "postal_code": "20910",
+      "business_phone_published": "(301) 585-9773",
+      "business_phone_e164": "+13015859773",
+      "business_emails": [
+        "SilverSpring.DC.270@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps?sca_esv=c2f15ba4c766d1a6&rlz=1C1GCEB_enUS1185US1185&biw=1536&bih=791&sxsrf=ANbL-n4QiM_rOPyLqlal1Ukm0KGnHc-lHw:1776706113963&gs_lp=Egxnd3Mtd2l6LXNlcnAiKWFtZXJnaXMgaGVhbHRoY2FyZSBzdGFmZmluZyBzaWx2ZXIgc3ByaW5nKgIIADIGEAAYFhgeMgUQABjvBTIFEAAY7wUyBRAAGO8FMgUQABjvBUi1F1DZA1iyDnABeACQAQCYAXCgAYULqgEEMTIuM7gBAcgBAPgBAZgCD6ACgQvCAgoQABiwAxjWBBhHwgIEECMYJ8ICBRAAGIAEwgILEC4YgAQYxwEYrwHCAgsQABiABBiGAxiKBcICCBAAGIAEGKIEmAMAiAYBkAYIkgcDNy44oAfrXLIHAzYuOLgH-wrCBwYwLjExLjTIByuACAA&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KU9LJz-ZybeJMbAm3nW84OoD&daddr=962+Wayne+Ave+Suite+750,+Silver+Spring,+MD+20910",
+      "published_map_destination": "962 Wayne Ave Suite 750, Silver Spring, MD 20910",
+      "map_destination_extraction_method": "published_map_query_daddr",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:39",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T12:00:32",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "424",
+        "phase2_directory_office_name": "Silver Spring",
+        "phase2_directory_city": "Silver Spring",
+        "phase2_directory_state": "MD",
+        "phase2_directory_postal_code": "20910",
+        "phase2_directory_phone": "(301) 585-9773"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 426,
+      "office_name": "Portland, Maine",
+      "slug": "portland-maine",
+      "page_url": "https://www.amergis.com/about/locations/portland-maine/",
+      "address_published": "82 Running Hill Road, Suite 203, South Portland, ME 04106",
+      "street_address": "82 Running Hill Road, Suite 203",
+      "city": "South Portland",
+      "state": "ME",
+      "postal_code": "04106",
+      "business_phone_published": "(207) 560-2614",
+      "business_phone_e164": "+12075602614",
+      "business_emails": [
+        "Portland.ME.813@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+82+Running+Hill+Rd+Suite+203,+South+Portland,+ME+04106/@43.6367352,-70.3448772,17z/data=!4m17!1m7!3m6!1s0x4cb29b39ab9b52fb:0x6f7178b9c9979da0!2sAmergis!8m2!3d43.6362266!4d-70.3422915!16s%2Fg%2F11s9n4nc68!4m8!1m0!1m5!1m1!1s0x4cb29b39ab9b52fb:0x6f7178b9c9979da0!2m2!1d-70.3422915!2d43.6362266!3e2?entry=ttu&g_ep=EgoyMDI2MDQyNi4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 82 Running Hill Rd Suite 203, South Portland, ME 04106",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:39",
+      "content_modified_date_local_unspecified_timezone": "2026-04-29T14:23:11",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "426",
+        "phase2_directory_office_name": "Portland",
+        "phase2_directory_city": "Portland",
+        "phase2_directory_state": "ME",
+        "phase2_directory_postal_code": "04106",
+        "phase2_directory_phone": "(207) 560-2614"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 427,
+      "office_name": "Grand Rapids",
+      "slug": "grand-rapids",
+      "page_url": "https://www.amergis.com/about/locations/grand-rapids/",
+      "address_published": "5300 Patterson Avenue SE, Suite 125, Grand Rapids, MI 49512",
+      "street_address": "5300 Patterson Avenue SE, Suite 125",
+      "city": "Grand Rapids",
+      "state": "MI",
+      "postal_code": "49512",
+      "business_phone_published": "(616) 222- 5643",
+      "business_phone_e164": "+16162225643",
+      "business_emails": [
+        "GrandRapids.MI.418@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+5300+Patterson+Ave+SE+Suite+125,+Grand+Rapids,+MI+49512/@35.3465736,-78.7511633,286831m/data=!3m2!1e3!4b1!4m9!4m8!1m0!1m5!1m1!1s0x88184d4c4939f6d5:0x273688de46beda05!2m2!1d-85.5448929!2d42.8680978!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMS4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 5300 Patterson Ave SE Suite 125, Grand Rapids, MI 49512",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:39",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T15:10:05",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "427",
+        "phase2_directory_office_name": "Grand Rapids",
+        "phase2_directory_city": "Grand Rapids",
+        "phase2_directory_state": "MI",
+        "phase2_directory_postal_code": "49512",
+        "phase2_directory_phone": "(616) 222-5643"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 428,
+      "office_name": "Minneapolis",
+      "slug": "minneapolis",
+      "page_url": "https://www.amergis.com/about/locations/minneapolis/",
+      "address_published": "6465 Wayzata Boulevard, Suite 400, St Louis Park, MN 55426",
+      "street_address": "6465 Wayzata Boulevard, Suite 400",
+      "city": "St Louis Park",
+      "state": "MN",
+      "postal_code": "55426",
+      "business_phone_published": "(763) 354-5435",
+      "business_phone_e164": "+17633545435",
+      "business_emails": [
+        "Minneapolis.MN.738@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+6465+Wayzata+Blvd+Suite+400,+St+Louis+Park,+MN+55426/@44.9692452,-93.3666415,16z/data=!3m1!5s0x52b334bc3590498b:0x7098c33780393064!4m17!1m7!3m6!1s0x87f621dcbaad3e8d:0xf1e6b82f6343c56d!2sAmergis!8m2!3d44.9692415!4d-93.3617706!16s%2Fg%2F119tmswg_!4m8!1m0!1m5!1m1!1s0x87f621dcbaad3e8d:0xf1e6b82f6343c56d!2m2!1d-93.3617706!2d44.9692415!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 6465 Wayzata Blvd Suite 400, St Louis Park, MN 55426",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:39",
+      "content_modified_date_local_unspecified_timezone": "2026-04-27T15:38:03",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "428",
+        "phase2_directory_office_name": "St. Louis Park",
+        "phase2_directory_city": "St. Louis Park",
+        "phase2_directory_state": "MN",
+        "phase2_directory_postal_code": "55426",
+        "phase2_directory_phone": "(763) 354-5435"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 429,
+      "office_name": "St. Louis",
+      "slug": "st-louis",
+      "page_url": "https://www.amergis.com/about/locations/st-louis/",
+      "address_published": "1 Cityplace Drive, Suite 100, Creve Coeur, MO 63141",
+      "street_address": "1 Cityplace Drive, Suite 100",
+      "city": "Creve Coeur",
+      "state": "MO",
+      "postal_code": "63141",
+      "business_phone_published": "(314) 529-5569",
+      "business_phone_e164": "+13145295569",
+      "business_emails": [
+        "StLouis.MO.285@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps?vet=10CAAQoqAOahcKEwiIjsCi__yTAxUAAAAAHQAAAAAQCQ..i&rlz=1C1GCEB_enUS1185US1185&sca_esv=7127d2bfff853169&pvq=CgsvZy8xdl9zNmY3MyIiChxzdC4gbG91aXMgYW1lcmdpcyBoZWFsdGhjYXJlEAIYAw&lqi=ChxzdC4gbG91aXMgYW1lcmdpcyBoZWFsdGhjYXJlSOPpjPzrgICACFonEAAQARACEAMYAiIbc3QgbG91aXMgYW1lcmdpcyBoZWFsdGhjYXJlkgEObnVyc2luZ19hZ2VuY3ngAQA&fvr=1&cs=1&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KYOkcHrAMt-HMRtdcJ7dDQJm&daddr=1+Cityplace+Dr+Suite+100,+Creve+Coeur,+MO+63141",
+      "published_map_destination": "1 Cityplace Dr Suite 100, Creve Coeur, MO 63141",
+      "map_destination_extraction_method": "published_map_query_daddr",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:39",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T12:21:32",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "429",
+        "phase2_directory_office_name": "Creve Coeur",
+        "phase2_directory_city": "Creve Coeur",
+        "phase2_directory_state": "MO",
+        "phase2_directory_postal_code": "63141",
+        "phase2_directory_phone": "(314) 529-5569"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 430,
+      "office_name": "Charlotte",
+      "slug": "charlotte",
+      "page_url": "https://www.amergis.com/about/locations/charlotte/",
+      "address_published": "2221 Edge Lake Drive, Suite 165, Charlotte, NC 28217",
+      "street_address": "2221 Edge Lake Drive, Suite 165",
+      "city": "Charlotte",
+      "state": "NC",
+      "postal_code": "28217",
+      "business_phone_published": "(704) 552-9510",
+      "business_phone_e164": "+17045529510",
+      "business_emails": [
+        "Charlotte.NC.406@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps?sca_esv=c2f15ba4c766d1a6&rlz=1C1GCEB_enUS1185US1185&biw=1536&bih=791&sxsrf=ANbL-n7Yt4d7p2DLxcraW6UBvhQN55t6EA:1776699024696&uact=5&gs_lp=Egxnd3Mtd2l6LXNlcnAiIGFtZXJnaXMgaGVhbHRoY2FyZSBjY2hhcmxvdHRlIG5jMgYQABgWGB4yCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTIFEAAY7wUyBRAAGO8FMgUQABjvBTIIEAAYgAQYogRIgQ5QwgJY8gxwAXgBkAEAmAG-AqABkwyqAQc1LjYuMC4xuAEDyAEA-AEBmAINoALLDMICChAAGLADGNYEGEfCAgUQIRigAcICBxAjGLACGCfCAgYQABgNGB7CAggQABgIGA0YHpgDAIgGAZAGCJIHBzUuNy4wLjGgB9xKsgcHNC43LjAuMbgHxgzCBwYwLjExLjLIByKACAA&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KbsCyXFCmVaIMScS9MwMGj9N&daddr=2221+Edge+Lake+Dr+Suite+165,+Charlotte,+NC+28217",
+      "published_map_destination": "2221 Edge Lake Dr Suite 165, Charlotte, NC 28217",
+      "map_destination_extraction_method": "published_map_query_daddr",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:39",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T12:24:38",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "430",
+        "phase2_directory_office_name": "Charlotte",
+        "phase2_directory_city": "Charlotte",
+        "phase2_directory_state": "NC",
+        "phase2_directory_postal_code": "28217",
+        "phase2_directory_phone": "(704) 552-9510"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 431,
+      "office_name": "Fayetteville",
+      "slug": "fayetteville",
+      "page_url": "https://www.amergis.com/about/locations/fayetteville/",
+      "address_published": "4151 Sycamore Dairy Road, Suite A, Fayetteville, NC 28303",
+      "street_address": "4151 Sycamore Dairy Road, Suite A",
+      "city": "Fayetteville",
+      "state": "NC",
+      "postal_code": "28303",
+      "business_phone_published": "(910) 605-4109",
+      "business_phone_e164": "+19106054109",
+      "business_emails": [
+        "FayettevilleStaffing-142@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+4151+Sycamore+Dairy+Rd+Suite+A,+Fayetteville,+NC+28303/@35.0713616,-78.956955,772m/data=!3m1!1e3!4m17!1m7!3m6!1s0x89ab6b80817a1da7:0xcfce3ab3d8d92bb5!2sAmergis!8m2!3d35.0713572!4d-78.9543801!16s%2Fg%2F11rtd76q15!4m8!1m0!1m5!1m1!1s0x89ab6b80817a1da7:0xcfce3ab3d8d92bb5!2m2!1d-78.9543801!2d35.0713572!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMS4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 4151 Sycamore Dairy Rd Suite A, Fayetteville, NC 28303",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:39",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T15:04:54",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "431",
+        "phase2_directory_office_name": "Fayetteville",
+        "phase2_directory_city": "Fayetteville",
+        "phase2_directory_state": "NC",
+        "phase2_directory_postal_code": "28303",
+        "phase2_directory_phone": "(910) 605-4109"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 433,
+      "office_name": "Omaha",
+      "slug": "omaha",
+      "page_url": "https://www.amergis.com/about/locations/omaha/",
+      "address_published": "11602 West Center Road, Suites 300-325, Omaha, NE 68144",
+      "street_address": "11602 West Center Road, Suites 300-325",
+      "city": "Omaha",
+      "state": "NE",
+      "postal_code": "68144",
+      "business_phone_published": "(402) 558-1120",
+      "business_phone_e164": "+14025581120",
+      "business_emails": [
+        "Omaha.NE.427@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//11602+West+Center+Road%2C+Suites+300-325%2C+Omaha%2C+NE+68144",
+      "published_map_destination": "11602 West Center Road, Suites 300-325, Omaha, NE 68144",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:39",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T10:53:37",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "433",
+        "phase2_directory_office_name": "Omaha",
+        "phase2_directory_city": "Omaha",
+        "phase2_directory_state": "NE",
+        "phase2_directory_postal_code": "68144",
+        "phase2_directory_phone": "(402) 558-1120"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 434,
+      "office_name": "Manchester",
+      "slug": "manchester",
+      "page_url": "https://www.amergis.com/about/locations/manchester/",
+      "address_published": "1750 Elm Street, Suite 602, Manchester, NH 03104",
+      "street_address": "1750 Elm Street, Suite 602",
+      "city": "Manchester",
+      "state": "NH",
+      "postal_code": "03104",
+      "business_phone_published": "(603) 263-4600",
+      "business_phone_e164": "+16032634600",
+      "business_emails": [
+        "Manchester.NH.814@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+1750+Elm+St+Suite+602,+Manchester,+NH+03104/@43.0037738,-71.4705068,17z/data=!3m1!5s0x89e2f82e826c07af:0xd7e59f851996779!4m17!1m7!3m6!1s0x89e24fca09307581:0xaf3e16b14164ede5!2sAmergis!8m2!3d43.00377!4d-71.4656359!16s%2Fg%2F11sr3kflmx!4m8!1m0!1m5!1m1!1s0x89e24fca09307581:0xaf3e16b14164ede5!2m2!1d-71.4656359!2d43.00377!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 1750 Elm St Suite 602, Manchester, NH 03104",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:39",
+      "content_modified_date_local_unspecified_timezone": "2026-04-27T15:22:29",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "434",
+        "phase2_directory_office_name": "Manchester",
+        "phase2_directory_city": "Manchester",
+        "phase2_directory_state": "NH",
+        "phase2_directory_postal_code": "03104",
+        "phase2_directory_phone": "(603) 263-4600"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 435,
+      "office_name": "New Jersey",
+      "slug": "new-jersey",
+      "page_url": "https://www.amergis.com/about/locations/new-jersey/",
+      "address_published": "200 American Metro Boulevard, Suite 126, Hamilton Township, NJ 08619",
+      "street_address": "200 American Metro Boulevard, Suite 126",
+      "city": "Hamilton Township",
+      "state": "NJ",
+      "postal_code": "08619",
+      "business_phone_published": "(856) 532-2592",
+      "business_phone_e164": "+18565322592",
+      "business_emails": [
+        "CherryHill.NJ.354@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+200+American+Metro+Blvd+Suite+126,+Hamilton+Township,+NJ+08619/@40.255544,-74.7088936,17z/data=!4m17!1m7!3m6!1s0x89c159d8176ccd6f:0x553eb13a24a081d7!2sAmergis!8m2!3d40.2555399!4d-74.7063187!16s%2Fg%2F11vz69v7hr!4m8!1m0!1m5!1m1!1s0x89c159d8176ccd6f:0x553eb13a24a081d7!2m2!1d-74.7063187!2d40.2555399!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 200 American Metro Blvd Suite 126, Hamilton Township, NJ 08619",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:39",
+      "content_modified_date_local_unspecified_timezone": "2026-04-27T15:55:09",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "435",
+        "phase2_directory_office_name": "Hamilton",
+        "phase2_directory_city": "Hamilton",
+        "phase2_directory_state": "NJ",
+        "phase2_directory_postal_code": "08619",
+        "phase2_directory_phone": "(856) 532-2592"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 437,
+      "office_name": "Buffalo",
+      "slug": "buffalo",
+      "page_url": "https://www.amergis.com/about/locations/buffalo/",
+      "address_published": "500 Seneca Street, Suite 620, Buffalo, NY 14204",
+      "street_address": "500 Seneca Street, Suite 620",
+      "city": "Buffalo",
+      "state": "NY",
+      "postal_code": "14204",
+      "business_phone_published": "(877) 469-5066",
+      "business_phone_e164": "+18774695066",
+      "business_emails": [
+        "BuffaloNYStaffing@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps?sca_esv=caa33d4cbe571e87&rlz=1C1GCEB_enUS1185US1185&biw=1536&bih=791&sxsrf=ANbL-n5KQeGvLMQsPN0FVJkLGQu4pp1djQ:1776692788331&uact=5&gs_lp=Egxnd3Mtd2l6LXNlcnAiHWJ1ZmZhbG8gbnkgYW1lcmdpcyBoZWFsdGhjYXJlMgYQABgIGB4yCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyBRAAGO8FMgUQABjvBTIFEAAY7wUyCBAAGKIEGIkFSK0vUMUMWLsucAl4AJABAJgBY6ABywmqAQIxNrgBA8gBAPgBAZgCFqACuQjCAgoQABiwAxjWBBhHwgIIEAAYBxgIGB7CAggQABiABBiiBMICCBAAGAgYDRgemAMAiAYBkAYIkgcEMjEuMaAHq1WyBwQxMi4xuAeaCMIHBjAuMTkuM8gHM4AIAA&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KeuCcE6UE9OJMV5dA7fOYGqk&daddr=500+Seneca+St+Suite+620,+Buffalo,+NY+14204",
+      "published_map_destination": "500 Seneca St Suite 620, Buffalo, NY 14204",
+      "map_destination_extraction_method": "published_map_query_daddr",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:55",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T12:24:04",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "437",
+        "phase2_directory_office_name": "Buffalo",
+        "phase2_directory_city": "Buffalo",
+        "phase2_directory_state": "NY",
+        "phase2_directory_postal_code": "14204",
+        "phase2_directory_phone": "(716) 446-4116"
+      },
+      "quality_flags": [
+        {
+          "code": "phase2_directory_phone_differs_from_detail",
+          "severity": "needs_source_verification",
+          "phase2_directory_phone": "(716) 446-4116",
+          "detail_phone": "(877) 469-5066"
+        }
+      ]
+    },
+    {
+      "wp_id": 436,
+      "office_name": "Long Island",
+      "slug": "long-island",
+      "page_url": "https://www.amergis.com/about/locations/long-island/",
+      "address_published": "290 Broadhollow Road, Suite 115E, Melville, NY 11747",
+      "street_address": "290 Broadhollow Road, Suite 115E",
+      "city": "Melville",
+      "state": "NY",
+      "postal_code": "11747",
+      "business_phone_published": "(516) 408-9780",
+      "business_phone_e164": "+15164089780",
+      "business_emails": [
+        "LongIslandStaffing-027@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//290+Broadhollow+Rd,+Melville,+NY+11747/@40.7838785,-73.4211284,17z/data=!4m18!1m8!3m7!1s0x89e82a2d2c2234cb:0xf4acc1750f46ed6c!2s290+Broadhollow+Rd,+Melville,+NY+11747!3b1!8m2!3d40.7838745!4d-73.4185535!16s%2Fg%2F11c1y86q82!4m8!1m0!1m5!1m1!1s0x89e82a2d2c2234cb:0xf4acc1750f46ed6c!2m2!1d-73.4185535!2d40.7838745!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "290 Broadhollow Rd, Melville, NY 11747",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:39",
+      "content_modified_date_local_unspecified_timezone": "2026-04-27T14:59:14",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "436",
+        "phase2_directory_office_name": "Melville",
+        "phase2_directory_city": "Melville",
+        "phase2_directory_state": "NY",
+        "phase2_directory_postal_code": "11747",
+        "phase2_directory_phone": "(516) 408-9780"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 439,
+      "office_name": "Cincinnati",
+      "slug": "cincinnati",
+      "page_url": "https://www.amergis.com/about/locations/cincinnati/",
+      "address_published": "10300 Alliance Road, Suite 310, Cincinnati, OH 45242",
+      "street_address": "10300 Alliance Road, Suite 310",
+      "city": "Cincinnati",
+      "state": "OH",
+      "postal_code": "45242",
+      "business_phone_published": "(513) 793-4407",
+      "business_phone_e164": "+15137934407",
+      "business_emails": [
+        "CincinnatiStaffing-284@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps?sca_esv=c2f15ba4c766d1a6&rlz=1C1GCEB_enUS1185US1185&biw=1536&bih=791&sxsrf=ANbL-n7hdnXxSBlltLA_J4A8JGqTP6lzCg:1776704852217&gs_lp=Egxnd3Mtd2l6LXNlcnAiGWFtZXJnaXMgaGVhbHRoY2FyZSBjaW5jaW4qAggBMgYQABgWGB4yBhAAGBYYHjIFEAAY7wUyBRAAGO8FMggQABiABBiiBDIFEAAY7wVIoSJQ-QdYtBFwAXgAkAEAmAFooAH2BKoBAzYuMbgBA8gBAPgBAZgCB6ACuwTCAgoQABiwAxjWBBhHwgIEECMYJ8ICBRAAGIAEwgILEAAYgAQYhgMYigWYAwDiAwUSATEgQIgGAZAGCJIHAzQuM6AH2imyBwMzLjO4B7YEwgcFMC41LjLIBxKACAA&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KRkE3SxnU0CIMb62rDseFAv0&daddr=10300+Alliance+Rd+Suite+310,+Cincinnati,+OH+45242",
+      "published_map_destination": "10300 Alliance Rd Suite 310, Cincinnati, OH 45242",
+      "map_destination_extraction_method": "published_map_query_daddr",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:55",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T12:26:02",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "439",
+        "phase2_directory_office_name": "Cincinnati",
+        "phase2_directory_city": "Cincinnati",
+        "phase2_directory_state": "OH",
+        "phase2_directory_postal_code": "45242",
+        "phase2_directory_phone": "(513) 793-4407"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 438,
+      "office_name": "Cleveland",
+      "slug": "cleveland",
+      "page_url": "https://www.amergis.com/about/locations/cleveland/",
+      "address_published": "2 Summit Park Drive, Suite 410, Independence, OH 44131",
+      "street_address": "2 Summit Park Drive, Suite 410",
+      "city": "Independence",
+      "state": "OH",
+      "postal_code": "44131",
+      "business_phone_published": "(216) 606-0936",
+      "business_phone_e164": "+12166060936",
+      "business_emails": [
+        "Cleveland.OH.287@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps?sca_esv=c2f15ba4c766d1a6&rlz=1C1GCEB_enUS1185US1185&biw=1536&bih=791&sxsrf=ANbL-n7OxAV5_TxGpLtFK8dTxTN3gtWYmg:1776705841969&uact=5&gs_lp=Egxnd3Mtd2l6LXNlcnAiKmFtZXJnaXMgaGVhbHRoY2FyZSBzdGFmZmluZyBjbGV2ZWxhbmQgb2hpbzIEEAAYHjILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTIFEAAY7wUyBRAAGO8FMgUQABjvBTIFEAAY7wVI2BBQgghY7A9wA3gAkAEAmAGAAaAB8giqAQM0Lje4AQPIAQD4AQGYAgegArEDwgIKEAAYsAMY1gQYR8ICBhAAGAcYHsICBxAAGIAEGA3CAggQABgIGA0YHpgDAIgGAZAGCJIHAzYuMaAHnUGyBwMzLjG4B6EDwgcFMC40LjPIBxSACAA&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KQ3zITjI5TCIMTdjUugufioC&daddr=2+Summit+Park+Dr+Suite+410,+Independence,+OH+44131",
+      "published_map_destination": "2 Summit Park Dr Suite 410, Independence, OH 44131",
+      "map_destination_extraction_method": "published_map_query_daddr",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:55",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T12:25:24",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "438",
+        "phase2_directory_office_name": "Independence",
+        "phase2_directory_city": "Independence",
+        "phase2_directory_state": "OH",
+        "phase2_directory_postal_code": "44131",
+        "phase2_directory_phone": "(216) 606-0936"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 440,
+      "office_name": "Columbus",
+      "slug": "columbus",
+      "page_url": "https://www.amergis.com/about/locations/columbus/",
+      "address_published": "445 Hutchinson Avenue, Suite 740, Columbus, OH 43235",
+      "street_address": "445 Hutchinson Avenue, Suite 740",
+      "city": "Columbus",
+      "state": "OH",
+      "postal_code": "43235",
+      "business_phone_published": "(614) 986-3001",
+      "business_phone_e164": "+16149863001",
+      "business_emails": [
+        "Columbus.OH.422@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps?sca_esv=c2f15ba4c766d1a6&rlz=1C1GCEB_enUS1185US1185&biw=1536&bih=791&sxsrf=ANbL-n7eHoIMHJdeMyZ5YtIbwPxKPypfhw:1776706088445&uact=5&gs_lp=Egxnd3Mtd2l6LXNlcnAiKWFtZXJnaXMgaGVhbHRoY2FyZSBzdGFmZmluZyBjb2x1bWJ1cyBvaGlvMgQQABgeMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FMgUQABjvBUi5DlDrA1jRDXACeACQAQCYAWGgAbIGqgECMTC4AQPIAQD4AQGYAgqgAswFwgIKEAAYsAMY1gQYR8ICBhAAGAcYHsICBxAAGIAEGA3CAggQABgIGA0YHpgDAIgGAZAGCJIHAzkuMaAHtESyBwM3LjG4B8IFwgcFMC42LjTIBxuACAA&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=Kb0dmN3WYziIMdDWQ9FHgIeW&daddr=445+Hutchinson+Ave+Suite+740,+Columbus,+OH+43235",
+      "published_map_destination": "445 Hutchinson Ave Suite 740, Columbus, OH 43235",
+      "map_destination_extraction_method": "published_map_query_daddr",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:55",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T12:25:29",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "440",
+        "phase2_directory_office_name": "Columbus",
+        "phase2_directory_city": "Columbus",
+        "phase2_directory_state": "OH",
+        "phase2_directory_postal_code": "43235",
+        "phase2_directory_phone": "(614) 986-3001"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 442,
+      "office_name": "Portland, Oregon",
+      "slug": "portland-oregon",
+      "page_url": "https://www.amergis.com/about/locations/portland-oregon/",
+      "address_published": "10220 SW Greenburg Road, Suite 570, Portland, OR 97223",
+      "street_address": "10220 SW Greenburg Road, Suite 570",
+      "city": "Portland",
+      "state": "OR",
+      "postal_code": "97223",
+      "business_phone_published": "(503) 452-7979",
+      "business_phone_e164": "+15034527979",
+      "business_emails": [
+        "Portland.OR.431@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+10220+SW+Greenburg+Rd+%23+570,+Portland,+OR+97223/@45.4465387,-122.7761528,17z/data=!3m1!5s0x54950cfaf11f34cf:0xfbf6fe11d1d34d2e!4m17!1m7!3m6!1s0x54950dcffb6107af:0xda713be48caae676!2sAmergis!8m2!3d45.446535!4d-122.7735779!16s%2Fg%2F11pyzvwwdf!4m8!1m0!1m5!1m1!1s0x54950dcffb6107af:0xda713be48caae676!2m2!1d-122.7735779!2d45.446535!3e2?entry=ttu&g_ep=EgoyMDI2MDQyNi4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 10220 SW Greenburg Rd # 570, Portland, OR 97223",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:55",
+      "content_modified_date_local_unspecified_timezone": "2026-04-29T14:58:07",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "442",
+        "phase2_directory_office_name": "Portland",
+        "phase2_directory_city": "Portland",
+        "phase2_directory_state": "OR",
+        "phase2_directory_postal_code": "97223",
+        "phase2_directory_phone": "(503) 452-7979"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 443,
+      "office_name": "Harrisburg",
+      "slug": "harrisburg",
+      "page_url": "https://www.amergis.com/about/locations/harrisburg/",
+      "address_published": "2550 Interstate Drive, Suite 202, Harrisburg, PA 17110",
+      "street_address": "2550 Interstate Drive, Suite 202",
+      "city": "Harrisburg",
+      "state": "PA",
+      "postal_code": "17110",
+      "business_phone_published": "(717) 710-2024",
+      "business_phone_e164": "+17177102024",
+      "business_emails": [
+        "HarrisburgStaffing@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+2550+Interstate+Dr+Suite+202,+Harrisburg,+PA+17110/@40.3080354,-76.8486309,720m/data=!3m1!1e3!4m17!1m7!3m6!1s0x89c8c752245a7733:0xae960b0492221f78!2sAmergis!8m2!3d40.3080313!4d-76.846056!16s%2Fg%2F11splwbl3l!4m8!1m0!1m5!1m1!1s0x89c8c752245a7733:0xae960b0492221f78!2m2!1d-76.846056!2d40.3080313!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMS4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 2550 Interstate Dr Suite 202, Harrisburg, PA 17110",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:55",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T15:32:49",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "443",
+        "phase2_directory_office_name": "Harrisburg",
+        "phase2_directory_city": "Harrisburg",
+        "phase2_directory_state": "PA",
+        "phase2_directory_postal_code": "17110",
+        "phase2_directory_phone": "(717) 710-2024"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 444,
+      "office_name": "Philadelphia",
+      "slug": "philadelphia",
+      "page_url": "https://www.amergis.com/about/locations/philadelphia/",
+      "address_published": "1 Fayette Street, Suite 300, Conshohocken, PA 19428",
+      "street_address": "1 Fayette Street, Suite 300",
+      "city": "Conshohocken",
+      "state": "PA",
+      "postal_code": "19428",
+      "business_phone_published": "(610) 617-8766",
+      "business_phone_e164": "+16106178766",
+      "business_emails": [
+        "PhiladelphiaStaffing-273@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//100+Fayette+St,+Conshohocken,+PA+19428/@40.0742078,-75.3090312,17z/data=!4m18!1m8!3m7!1s0x89c6be434b93fcdd:0x8fa3db692efe27f0!2s100+Fayette+St,+Conshohocken,+PA+19428!3b1!8m2!3d40.0742037!4d-75.3064563!16s%2Fg%2F11csmsg376!4m8!1m0!1m5!1m1!1s0x89c6be434b93fcdd:0x8fa3db692efe27f0!2m2!1d-75.3064563!2d40.0742037!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "100 Fayette St, Conshohocken, PA 19428",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:55",
+      "content_modified_date_local_unspecified_timezone": "2026-04-28T14:58:48",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "444",
+        "phase2_directory_office_name": "Conshohocken",
+        "phase2_directory_city": "Conshohocken",
+        "phase2_directory_state": "PA",
+        "phase2_directory_postal_code": "19428",
+        "phase2_directory_phone": "(610) 617-8766"
+      },
+      "quality_flags": [
+        {
+          "code": "address_map_street_number_conflict",
+          "severity": "needs_source_verification",
+          "published_address": "1 Fayette Street, Suite 300, Conshohocken, PA 19428",
+          "published_map_destination": "100 Fayette St, Conshohocken, PA 19428",
+          "note": "Both values retained; no external geocoding or address correction performed."
+        }
+      ]
+    },
+    {
+      "wp_id": 445,
+      "office_name": "Pittsburgh",
+      "slug": "pittsburgh",
+      "page_url": "https://www.amergis.com/about/locations/pittsburgh/",
+      "address_published": "317 E Carson Street, Suite 430, Pittsburgh, PA 15219",
+      "street_address": "317 E Carson Street, Suite 430",
+      "city": "Pittsburgh",
+      "state": "PA",
+      "postal_code": "15219",
+      "business_phone_published": "(412) 505-0514",
+      "business_phone_e164": "+14125050514",
+      "business_emails": [
+        "Pittsburgh.PA.756@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+317+E+Carson+St+Suite+430,+Pittsburgh,+PA+15219/@40.4303969,-79.9994066,16z/data=!3m1!5s0x8834f1458df4f03d:0xe0aa2834053c47fc!4m17!1m7!3m6!1s0x8834f65ab68bf1d5:0xb979f2900ddfb585!2sAmergis!8m2!3d40.4303928!4d-79.9968317!16s%2Fg%2F1thd2g8p!4m8!1m0!1m5!1m1!1s0x8834f65ab68bf1d5:0xb979f2900ddfb585!2m2!1d-79.9968317!2d40.4303928!3e2?entry=ttu&g_ep=EgoyMDI2MDQyNi4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 317 E Carson St Suite 430, Pittsburgh, PA 15219",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:55",
+      "content_modified_date_local_unspecified_timezone": "2026-04-29T14:18:04",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "445",
+        "phase2_directory_office_name": "Pittsburgh",
+        "phase2_directory_city": "Pittsburgh",
+        "phase2_directory_state": "PA",
+        "phase2_directory_postal_code": "15219",
+        "phase2_directory_phone": "(412) 505-0514"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 446,
+      "office_name": "Reading",
+      "slug": "reading",
+      "page_url": "https://www.amergis.com/about/locations/reading/",
+      "address_published": "2208 Quarry Drive, Suite A100, Reading, PA 19609",
+      "street_address": "2208 Quarry Drive, Suite A100",
+      "city": "Reading",
+      "state": "PA",
+      "postal_code": "19609",
+      "business_phone_published": "(484) 709-3598",
+      "business_phone_e164": "+14847093598",
+      "business_emails": [
+        "ReadingPAStaffing-818@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//2208+Quarry+Drive%2C+Suite+A100%2C+Reading%2C+PA+19609",
+      "published_map_destination": "2208 Quarry Drive, Suite A100, Reading, PA 19609",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:55",
+      "content_modified_date_local_unspecified_timezone": "2026-04-29T14:07:21",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "446",
+        "phase2_directory_office_name": "Reading",
+        "phase2_directory_city": "Reading",
+        "phase2_directory_state": "PA",
+        "phase2_directory_postal_code": "19609",
+        "phase2_directory_phone": "(484) 709-3598"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 447,
+      "office_name": "Providence",
+      "slug": "providence",
+      "page_url": "https://www.amergis.com/about/locations/providence/",
+      "address_published": "95 Cedar Street, Suite 100, Providence, RI 02903",
+      "street_address": "95 Cedar Street, Suite 100",
+      "city": "Providence",
+      "state": "RI",
+      "postal_code": "02903",
+      "business_phone_published": "(401) 443-1001",
+      "business_phone_e164": "+14014431001",
+      "business_emails": [
+        "ProvidenceRIStaffing-749@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+95+Cedar+St+Suite+100,+Providence,+RI+02903/@41.8249789,-71.4264859,16z/data=!4m17!1m7!3m6!1s0x89e4454a3230fbbd:0x13c9b7935c40e2f4!2sAmergis!8m2!3d41.8249749!4d-71.423911!16s%2Fg%2F11s5k0z63v!4m8!1m0!1m5!1m1!1s0x89e4454a3230fbbd:0x13c9b7935c40e2f4!2m2!1d-71.4237823!2d41.8249644!3e2?entry=ttu&g_ep=EgoyMDI2MDQyNi4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 95 Cedar St Suite 100, Providence, RI 02903",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:55",
+      "content_modified_date_local_unspecified_timezone": "2026-04-29T14:58:25",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "447",
+        "phase2_directory_office_name": "Providence",
+        "phase2_directory_city": "Providence",
+        "phase2_directory_state": "RI",
+        "phase2_directory_postal_code": "02903",
+        "phase2_directory_phone": "(401) 443-1001"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 448,
+      "office_name": "Charleston, South Carolina",
+      "slug": "charleston-south-carolina",
+      "page_url": "https://www.amergis.com/about/locations/charleston-south-carolina/",
+      "address_published": "65 Fairchild Street, Suite 200, Charleston, SC 29492",
+      "street_address": "65 Fairchild Street, Suite 200",
+      "city": "Charleston",
+      "state": "SC",
+      "postal_code": "29492",
+      "business_phone_published": "(843) 573-0772",
+      "business_phone_e164": "+18435730772",
+      "business_emails": [
+        "Charleston.SC.695@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps?rlz=1C1GCEB_enUS1185US1185&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyDQgBEC4YrwEYxwEYgAQyCAgCEAAYFhgeMggIAxAAGBYYHjINCAQQABiGAxiABBiKBTIKCAUQABiABBiiBDIHCAYQABjvBTIKCAcQABiABBiiBDIHCAgQABjvBTIKCAkQABiABBiiBNIBCDMyNzBqMGo3qAIAsAIA&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KQEAAABxfP6IMe21PFE7ZwCx&daddr=65+Fairchild+St+Suite+200,+Charleston,+SC+29492",
+      "published_map_destination": "65 Fairchild St Suite 200, Charleston, SC 29492",
+      "map_destination_extraction_method": "published_map_query_daddr",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:55",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T12:24:33",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "448",
+        "phase2_directory_office_name": "Charleston",
+        "phase2_directory_city": "Charleston",
+        "phase2_directory_state": "SC",
+        "phase2_directory_postal_code": "29492",
+        "phase2_directory_phone": "(843) 573-0772"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 450,
+      "office_name": "Knoxville",
+      "slug": "knoxville",
+      "page_url": "https://www.amergis.com/about/locations/knoxville/",
+      "address_published": "900 South Gay Street, Suite 601, knoxville, tn 37902",
+      "street_address": "900 South Gay Street, Suite 601",
+      "city": "knoxville",
+      "state": "TN",
+      "postal_code": "37902",
+      "business_phone_published": "(865) 291-6454",
+      "business_phone_e164": "+18652916454",
+      "business_emails": [
+        "Knoxville.TN.697@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//900+S+Gay+St,+Knoxville,+TN+37902/@35.961795,-83.9200766,17z/data=!4m18!1m8!3m7!1s0x885c3d362829e9c3:0xc1dfd9ee54241efc!2s900+S+Gay+St,+Knoxville,+TN+37902!3b1!8m2!3d35.9617908!4d-83.9152057!16s%2Fg%2F11c3vrr561!4m8!1m0!1m5!1m1!1s0x885c3d362829e9c3:0xc1dfd9ee54241efc!2m2!1d-83.9152057!2d35.9617908!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "900 S Gay St, Knoxville, TN 37902",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:55",
+      "content_modified_date_local_unspecified_timezone": "2026-04-27T15:01:48",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "450",
+        "phase2_directory_office_name": "Knoxville",
+        "phase2_directory_city": "Knoxville",
+        "phase2_directory_state": "TN",
+        "phase2_directory_postal_code": "37902",
+        "phase2_directory_phone": "(865) 291-6454"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 451,
+      "office_name": "Memphis",
+      "slug": "memphis",
+      "page_url": "https://www.amergis.com/about/locations/memphis/",
+      "address_published": "1255 Lynnfield Road, Suite 266, Memphis, TN 38119",
+      "street_address": "1255 Lynnfield Road, Suite 266",
+      "city": "Memphis",
+      "state": "TN",
+      "postal_code": "38119",
+      "business_phone_published": "(901) 415-6188",
+      "business_phone_e164": "+19014156188",
+      "business_emails": [
+        "Memphis.TN.324@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+1255+Lynnfield+Rd+%23+266,+Memphis,+TN+38119/@35.0969249,-89.8717619,16z/data=!3m1!5s0x887f84c278a6f1bf:0x30d7fc7b9ad55f0b!4m17!1m7!3m6!1s0x887f85ddb6f81291:0x6b5cb8400b82d082!2sAmergis!8m2!3d35.0969205!4d-89.869187!16s%2Fg%2F11rqsdvqrg!4m8!1m0!1m5!1m1!1s0x887f85ddb6f81291:0x6b5cb8400b82d082!2m2!1d-89.869187!2d35.0969205!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 1255 Lynnfield Rd # 266, Memphis, TN 38119",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:55",
+      "content_modified_date_local_unspecified_timezone": "2026-04-27T15:28:49",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "451",
+        "phase2_directory_office_name": "Memphis",
+        "phase2_directory_city": "Memphis",
+        "phase2_directory_state": "TN",
+        "phase2_directory_postal_code": "38119",
+        "phase2_directory_phone": "(901) 415-6188"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 452,
+      "office_name": "Nashville",
+      "slug": "nashville",
+      "page_url": "https://www.amergis.com/about/locations/nashville/",
+      "address_published": "120 Brentwood Commons Way, Suite 650, Brentwood, TN 37027",
+      "street_address": "120 Brentwood Commons Way, Suite 650",
+      "city": "Brentwood",
+      "state": "TN",
+      "postal_code": "37027",
+      "business_phone_published": "(615) 383-3725",
+      "business_phone_e164": "+16153833725",
+      "business_emails": [
+        "Nashville.TN.741@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+120+Brentwood+Commons+Way+%23650,+Brentwood,+TN+37027/@36.0428194,-86.7781386,17z/data=!4m17!1m7!3m6!1s0x8864641f6219abd7:0x6f21a050b3972d8d!2sAmergis!8m2!3d36.0428151!4d-86.7755637!16s%2Fg%2F11h06m8dg!4m8!1m0!1m5!1m1!1s0x8864641f6219abd7:0x6f21a050b3972d8d!2m2!1d-86.7756424!2d36.0427688!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 120 Brentwood Commons Way #650, Brentwood, TN 37027",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:55",
+      "content_modified_date_local_unspecified_timezone": "2026-04-27T15:48:02",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "452",
+        "phase2_directory_office_name": "Nashville",
+        "phase2_directory_city": "Nashville",
+        "phase2_directory_state": "TN",
+        "phase2_directory_postal_code": "37027",
+        "phase2_directory_phone": "(615) 383-3725"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 453,
+      "office_name": "Austin",
+      "slug": "austin",
+      "page_url": "https://www.amergis.com/about/locations/austin/",
+      "address_published": "3636 Executive Center Drive, Suite 150, Austin, TX 78731",
+      "street_address": "3636 Executive Center Drive, Suite 150",
+      "city": "Austin",
+      "state": "TX",
+      "postal_code": "78731",
+      "business_phone_published": "(512) 275-0002",
+      "business_phone_e164": "+15122750002",
+      "business_emails": [
+        "Austin.TX.426@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps?sca_esv=caa33d4cbe571e87&rlz=1C1GCEB_enUS1185US1185&biw=1536&bih=791&sxsrf=ANbL-n7ZngTOhBNaBdMaJAXv97Fu2eHPEA:1776692443907&gs_lp=Egxnd3Mtd2l6LXNlcnAiGmF1c3RpbiB0ZXhhcyBhbWVyZ2lzIGhlYWx0KgIIADIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGJ8FSNwkUKEFWKsYcAF4AZABAJgBYqABogiqAQIxM7gBA8gBAPgBAZgCDaACiwjCAgoQABiwAxjWBBhHwgIIEAAYBxgIGB7CAggQABiABBiiBMICBRAAGO8FwgILEAAYgAQYhgMYigXCAgYQABgIGB7CAggQABiiBBiJBcICBhAAGBYYHpgDAIgGAZAGCJIHBDExLjKgB8Y_sgcEMTAuMrgHhgjCBwYwLjEyLjHIBxuACAA&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KbO3YyaUy0SGMfIWsd620nb0&daddr=3636+Executive+Center+Dr+Suite+150,+Austin,+TX+78731",
+      "published_map_destination": "3636 Executive Center Dr Suite 150, Austin, TX 78731",
+      "map_destination_extraction_method": "published_map_query_daddr",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:55",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T12:23:13",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "453",
+        "phase2_directory_office_name": "Austin",
+        "phase2_directory_city": "Austin",
+        "phase2_directory_state": "TX",
+        "phase2_directory_postal_code": "78731",
+        "phase2_directory_phone": "(512) 275-0002"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 454,
+      "office_name": "Dallas",
+      "slug": "dallas",
+      "page_url": "https://www.amergis.com/about/locations/dallas/",
+      "address_published": "5001 Lyndon B Johnson Freeway, Suites 200 and 550, Dallas, TX 75244",
+      "street_address": "5001 Lyndon B Johnson Freeway, Suites 200 and 550",
+      "city": "Dallas",
+      "state": "TX",
+      "postal_code": "75244",
+      "business_phone_published": "(214) 905-2933",
+      "business_phone_e164": "+12149052933",
+      "business_emails": [
+        "Dallas.TX.728@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+5001+Lyndon+B+Johnson+Fwy+Suites+200+and+550,+Dallas,+TX+75244/@37.0382642,-78.4777889,229320m/data=!3m3!1e3!4b1!5s0x864c20db0707671d:0xbc4d3ce7f008184e!4m9!4m8!1m0!1m5!1m1!1s0x864ea4ffbd71a485:0x2d89120a405bbecc!2m2!1d-96.8231976!2d32.9281865!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMS4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 5001 Lyndon B Johnson Fwy Suites 200 and 550, Dallas, TX 75244",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:55",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T14:45:07",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "454",
+        "phase2_directory_office_name": "Dallas",
+        "phase2_directory_city": "Dallas",
+        "phase2_directory_state": "TX",
+        "phase2_directory_postal_code": "75244",
+        "phase2_directory_phone": "(214) 905-2933"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 455,
+      "office_name": "Houston",
+      "slug": "houston",
+      "page_url": "https://www.amergis.com/about/locations/houston/",
+      "address_published": "13135 Dairy Ashford Road, Suite 100, Sugar Land, TX 77478",
+      "street_address": "13135 Dairy Ashford Road, Suite 100",
+      "city": "Sugar Land",
+      "state": "TX",
+      "postal_code": "77478",
+      "business_phone_published": "(832) 944-4120",
+      "business_phone_e164": "+18329444120",
+      "business_emails": [
+        "Houston.TX.758@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+13135+Dairy+Ashford+Rd+Suite+100,+Sugar+Land,+TX+77478/@29.6248814,-95.604269,820m/data=!3m1!1e3!4m17!1m7!3m6!1s0x8640c13bc925b4bd:0x399ba47a52846305!2sAmergis!8m2!3d29.6248768!4d-95.6016941!16s%2Fg%2F1ttq2h94!4m8!1m0!1m5!1m1!1s0x8640c13bc925b4bd:0x399ba47a52846305!2m2!1d-95.6016941!2d29.6248768!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMS4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 13135 Dairy Ashford Rd Suite 100, Sugar Land, TX 77478",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:55",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T15:30:53",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "455",
+        "phase2_directory_office_name": "Sugar Land",
+        "phase2_directory_city": "Sugar Land",
+        "phase2_directory_state": "TX",
+        "phase2_directory_postal_code": "77478",
+        "phase2_directory_phone": "(832) 944-4120"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 456,
+      "office_name": "Northern Virginia",
+      "slug": "northern-virginia",
+      "page_url": "https://www.amergis.com/about/locations/northern-virginia/",
+      "address_published": "2010 Corporate Ridge, Suite 250, McLean, VA 22102",
+      "street_address": "2010 Corporate Ridge, Suite 250",
+      "city": "McLean",
+      "state": "VA",
+      "postal_code": "22102",
+      "business_phone_published": "(703) 270-6078",
+      "business_phone_e164": "+17032706078",
+      "business_emails": [
+        "Nova.VA.400@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+2010+Corporate+Ridge+Suite+250,+McLean,+VA+22102/@38.9117535,-77.2180236,17z/data=!3m1!5s0x89b64ad94d318d09:0x143be21f018e4ed0!4m17!1m7!3m6!1s0x89b64b8e9a521b51:0xbb3141b29b5fb5d0!2sAmergis!8m2!3d38.9117494!4d-77.2154487!16s%2Fg%2F11rqj5gbm7!4m8!1m0!1m5!1m1!1s0x89b64b8e9a521b51:0xbb3141b29b5fb5d0!2m2!1d-77.2154487!2d38.9117494!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 2010 Corporate Ridge Suite 250, McLean, VA 22102",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:10:55",
+      "content_modified_date_local_unspecified_timezone": "2026-04-27T16:00:02",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "456",
+        "phase2_directory_office_name": "McLean",
+        "phase2_directory_city": "McLean",
+        "phase2_directory_state": "VA",
+        "phase2_directory_postal_code": "22102",
+        "phase2_directory_phone": "(703) 270-6078"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 458,
+      "office_name": "Virginia Beach",
+      "slug": "virginia-beach",
+      "page_url": "https://www.amergis.com/about/locations/virginia-beach/",
+      "address_published": "293 Independence Boulevard, Suite 406, Virginia Beach, VA 23462",
+      "street_address": "293 Independence Boulevard, Suite 406",
+      "city": "Virginia Beach",
+      "state": "VA",
+      "postal_code": "23462",
+      "business_phone_published": "(757) 490-4766",
+      "business_phone_e164": "+17574904766",
+      "business_emails": [
+        "VirginiaBeach.VA.401@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+293+Independence+Blvd+Suite+406,+Virginia+Beach,+VA+23462/@36.8450505,-76.1429962,755m/data=!3m2!1e3!5s0x89ba9597999c339b:0x3d0db97fc974f369!4m17!1m7!3m6!1s0x89ba95a1f37f835d:0xd1dc8bb8437d17aa!2sAmergis!8m2!3d36.8450462!4d-76.1404213!16s%2Fg%2F1hfhd7_gy!4m8!1m0!1m5!1m1!1s0x89ba95a1f37f835d:0xd1dc8bb8437d17aa!2m2!1d-76.1404213!2d36.8450462!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMS4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 293 Independence Blvd Suite 406, Virginia Beach, VA 23462",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:11:11",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T14:26:55",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "458",
+        "phase2_directory_office_name": "Virginia Beach",
+        "phase2_directory_city": "Virginia Beach",
+        "phase2_directory_state": "VA",
+        "phase2_directory_postal_code": "23462",
+        "phase2_directory_phone": "(757) 490-4766"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 459,
+      "office_name": "Seattle",
+      "slug": "seattle",
+      "page_url": "https://www.amergis.com/about/locations/seattle/",
+      "address_published": "24120 Van Ry Boulevard, Suite 400, Mountlake Terrace, WA 98043",
+      "street_address": "24120 Van Ry Boulevard, Suite 400",
+      "city": "Mountlake Terrace",
+      "state": "WA",
+      "postal_code": "98043",
+      "business_phone_published": "(425) 412-9019",
+      "business_phone_e164": "+14254129019",
+      "business_emails": [
+        "Seattle.WA.430@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps?rlz=1C1GCEB_enUS1185US1185&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTINCAEQLhivARjHARiABDIHCAIQABiABDIHCAMQLhiABDIHCAQQABiABDIWCAUQLhivARjHARiABBiYBRicBRieBTIGCAYQRRg8MgYIBxBFGDzSAQgzMTU1ajBqNKgCA7ACAfEFgm-DYs2ph1s&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=Kf_wXbW7EZBUMeuGFltb2Ej9&daddr=24120+Van+Ry+Blvd+Suite+400,+Mountlake+Terrace,+WA+98043",
+      "published_map_destination": "24120 Van Ry Blvd Suite 400, Mountlake Terrace, WA 98043",
+      "map_destination_extraction_method": "published_map_query_daddr",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:11:11",
+      "content_modified_date_local_unspecified_timezone": "2026-04-28T16:35:18",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "459",
+        "phase2_directory_office_name": "Mountlake Terrace",
+        "phase2_directory_city": "Mountlake Terrace",
+        "phase2_directory_state": "WA",
+        "phase2_directory_postal_code": "98043",
+        "phase2_directory_phone": "(425) 412-9019"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 460,
+      "office_name": "Spokane",
+      "slug": "spokane",
+      "page_url": "https://www.amergis.com/about/locations/spokane/",
+      "address_published": "16201 E Indiana Avenue, Suite 3500, Spokane, WA 99216",
+      "street_address": "16201 E Indiana Avenue, Suite 3500",
+      "city": "Spokane",
+      "state": "WA",
+      "postal_code": "99216",
+      "business_phone_published": "(509) 324-6434",
+      "business_phone_e164": "+15093246434",
+      "business_emails": [
+        "Spokane.WA.753@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps?sca_esv=7127d2bfff853169&rlz=1C1GCEB_enUS1185US1185&sxsrf=ANbL-n63AJHXllmIYPMJJkSSdfx4bywkvg:1776707281255&biw=1536&bih=791&uact=5&gs_lp=Egxnd3Mtd2l6LXNlcnAiGnNwb2thbmUgYW1lcmdpcyBoZWFsdGhjYXJlMgYQABgIGB4yBhAAGAgYHjILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTIIEAAYgAQYogQyBRAAGO8FMgUQABjvBTIFEAAY7wUyCBAAGIAEGKIESIoeUL4CWMsWcAF4ApABAJgBXaABuASqAQE3uAEDyAEA-AEBmAIHoAKsA8ICBxAjGLADGCfCAgoQABiwAxjWBBhHwgIEEAAYR8ICBhAAGAcYHsICCBAAGAcYCBgemAMA4gMFEgExIECIBgGQBgiSBwE3oAeQMrIHATW4B6MDwgcFMC4zLjTIBxmACAA&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KZW7wUMl32FTMesr5kb3wZ0Y&daddr=16201+E+Indiana+Ave+Suite+3500,+Spokane,+WA+99216",
+      "published_map_destination": "16201 E Indiana Ave Suite 3500, Spokane, WA 99216",
+      "map_destination_extraction_method": "published_map_query_daddr",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:11:11",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T12:13:36",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "460",
+        "phase2_directory_office_name": "Spokane",
+        "phase2_directory_city": "Spokane",
+        "phase2_directory_state": "WA",
+        "phase2_directory_postal_code": "99216",
+        "phase2_directory_phone": "(509) 324-6434"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 461,
+      "office_name": "Tacoma",
+      "slug": "tacoma",
+      "page_url": "https://www.amergis.com/about/locations/tacoma/",
+      "address_published": "4301 S Pine Street, Suite 505, Tacoma, WA 98409",
+      "street_address": "4301 S Pine Street, Suite 505",
+      "city": "Tacoma",
+      "state": "WA",
+      "postal_code": "98409",
+      "business_phone_published": "(253) 671-9969",
+      "business_phone_e164": "+12536719969",
+      "business_emails": [
+        "Tacoma.WA.294@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps?rlz=1C1GCEB_enUS1185US1185&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yCggCEAAYgAQYogQyCggDEAAYgAQYogQyBwgEEAAY7wUyBwgFEAAY7wUyCggGEAAYgAQYogTSAQgzNjU2ajBqNKgCALACAQ&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=Ka97Ls0BAJFUMRcwS8TIO7il&daddr=4301+S+Pine+St+Suite+505,+Tacoma,+WA+98409",
+      "published_map_destination": "4301 S Pine St Suite 505, Tacoma, WA 98409",
+      "map_destination_extraction_method": "published_map_query_daddr",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:11:11",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T13:33:51",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "461",
+        "phase2_directory_office_name": "Tacoma",
+        "phase2_directory_city": "Tacoma",
+        "phase2_directory_state": "WA",
+        "phase2_directory_postal_code": "98409",
+        "phase2_directory_phone": "(253) 671-9969"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 462,
+      "office_name": "Milwaukee",
+      "slug": "milwaukee",
+      "page_url": "https://www.amergis.com/about/locations/milwaukee/",
+      "address_published": "10701 W Research Drive, Suite 100, Wauwatosa, WI 53226",
+      "street_address": "10701 W Research Drive, Suite 100",
+      "city": "Wauwatosa",
+      "state": "WI",
+      "postal_code": "53226",
+      "business_phone_published": "(414) 203-1872",
+      "business_phone_e164": "+14142031872",
+      "business_emails": [
+        "MilwaukeeStaffing@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps/dir//Amergis,+10701+W+Research+Dr+Suite+100,+Wauwatosa,+WI+53226/@43.0401464,-88.0474591,17z/data=!4m17!1m7!3m6!1s0x880fb63725f30ae7:0x20cc9b49cc6d729d!2sAmergis!8m2!3d43.0401425!4d-88.0448842!16s%2Fg%2F1thnpcck!4m8!1m0!1m5!1m1!1s0x880fb63725f30ae7:0x20cc9b49cc6d729d!2m2!1d-88.0448842!2d43.0401425!3e2?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D",
+      "published_map_destination": "Amergis, 10701 W Research Dr Suite 100, Wauwatosa, WI 53226",
+      "map_destination_extraction_method": "explicit_destination_in_published_directions_url",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:11:11",
+      "content_modified_date_local_unspecified_timezone": "2026-04-27T15:40:28",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "462",
+        "phase2_directory_office_name": "Wauwatosa",
+        "phase2_directory_city": "Wauwatosa",
+        "phase2_directory_state": "WI",
+        "phase2_directory_postal_code": "53226",
+        "phase2_directory_phone": "(414) 203-1872"
+      },
+      "quality_flags": []
+    },
+    {
+      "wp_id": 463,
+      "office_name": "Charleston, West Virginia",
+      "slug": "charleston-west-virginia",
+      "page_url": "https://www.amergis.com/about/locations/charleston-west-virginia/",
+      "address_published": "900 Virginia Street E, Suite 500, Charleston, WV 25301",
+      "street_address": "900 Virginia Street E, Suite 500",
+      "city": "Charleston",
+      "state": "WV",
+      "postal_code": "25301",
+      "business_phone_published": "(681) 313-2900",
+      "business_phone_e164": "+16813132900",
+      "business_emails": [
+        "CharlestonWVStaffing@amergis.com"
+      ],
+      "service_ids": [
+        158,
+        94,
+        95,
+        96
+      ],
+      "services": [
+        {
+          "id": 158,
+          "label": "Acute Staffing",
+          "slug": "acute-staffing"
+        },
+        {
+          "id": 94,
+          "label": "Allied Staffing",
+          "slug": "allied-staffing"
+        },
+        {
+          "id": 95,
+          "label": "Healthcare Staffing",
+          "slug": "healthcare-staffing"
+        },
+        {
+          "id": 96,
+          "label": "School Staffing",
+          "slug": "school-staffing"
+        }
+      ],
+      "published_map_url": "https://www.google.com/maps?sca_esv=c2f15ba4c766d1a6&rlz=1C1GCEB_enUS1185US1185&sxsrf=ANbL-n5M_xI0qfZEH45crt2DuzpfTUMRFw:1776696469948&biw=1536&bih=791&uact=5&gs_lp=Egxnd3Mtd2l6LXNlcnAiIGFtZXJnaXMgaGVhbHRoY2FyZSBjaGFybGVzdG9uIHd2MgYQABgHGB4yBhAAGAcYHjILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTIIEAAYgAQYogQyBRAAGO8FMggQABiABBiiBDIFEAAY7wVIry5QxwRY5i1wAngBkAEAmAFwoAHSCKoBBDExLjK4AQPIAQD4AQGYAgqgArYFwgIKEAAYsAMY1gQYR8ICCxAuGIAEGMcBGK8BwgIGEAAYFhgewgIaEC4YgAQYxwEYrwEYlwUY3AQY3gQY4ATYAQGYAwCIBgGQBgi6BgYIARABGBSSBwM5LjGgB5xcsgcDNy4xuAeoBcIHBTAuNC42yAcmgAgA&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KTXkfxt4LU-IMWssYMR0UI2B&daddr=900+Virginia+St+E+Suite+500,+Charleston,+WV+25301",
+      "published_map_destination": "900 Virginia St E Suite 500, Charleston, WV 25301",
+      "map_destination_extraction_method": "published_map_query_daddr",
+      "content_published_date_local_unspecified_timezone": "2021-12-26T16:11:11",
+      "content_modified_date_local_unspecified_timezone": "2026-04-24T12:24:35",
+      "source_api_url": "https://www.amergis.com/wp-json/wp/v2/locations?per_page=100&_fields=id,date,modified,slug,link,title,content,acf,services,meta",
+      "retrieved_date": "2026-10-20",
+      "phase2_reconciliation": {
+        "matched_by": "canonical_page_path",
+        "phase2_matched": true,
+        "phase2_published_location_id": "463",
+        "phase2_directory_office_name": "Charleston",
+        "phase2_directory_city": "Charleston",
+        "phase2_directory_state": "WV",
+        "phase2_directory_postal_code": "25301",
+        "phase2_directory_phone": "(681) 313-2900"
+      },
+      "quality_flags": []
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "as_of_date": "2026-10-20",
+  "scope": "Official public marketing/help/terms, publicly linked login shell, and published teletherapy page assets only. No auth attempts, account creation, form submissions, hidden-route probes or meeting-room joining.",
+  "sources": [
+    {
+      "id": "VMS-S01",
+      "url": "https://matterworx.com/implementation-integrations/",
+      "title": "Implementation & Integrations",
+      "evidence_status": "official_public_claim_and_page_retrieved",
+      "facts": [
+        "Explicitly advertises an open API.",
+        "Describes workflows for postings, applications, vendor communications, onboarding, timekeeping and invoicing.",
+        "Public navigation links a login and a sales demo."
+      ],
+      "limit": "No base URL, endpoint schema, auth method, scope, SDK, webhook catalog or rate limit is published on this page."
+    },
+    {
+      "id": "VMS-S02",
+      "url": "https://matterworx.com/why-matterworx/",
+      "title": "Why MatterWorx",
+      "evidence_status": "official_public_claim",
+      "facts": [
+        "Advertises open API and Single Sign On.",
+        "Advertises GPS timekeeping, per-diem support, absence management and candidate ranking."
+      ],
+      "limit": "Protocols, field formats and autonomy/decision logic are not disclosed."
+    },
+    {
+      "id": "VMS-S03",
+      "url": "https://vms.matterworxapp.com/?authLogin=",
+      "title": "MatterWorx linked login",
+      "evidence_status": "official_link_followed_unauthenticated_shell_retrieved_browser_failed_to_load",
+      "facts": [
+        "Linked from MatterWorx marketing navigation as Login.",
+        "A normal unauthenticated GET returned a page titled MatterWorx with a Next.js application shell."
+      ],
+      "limit": "Browser reported page could not load. No sign-in fields, authenticated workflow, private data or executable business API were tested. Client framework is not proof of backend schema."
+    },
+    {
+      "id": "VMS-S04",
+      "url": "https://matterworx.com/help-center/",
+      "title": "Help Center",
+      "evidence_status": "official_public_page_retrieved",
+      "facts": [
+        "FAQ claims real-time integration sync and configurable workflows/reporting/UI.",
+        "Knowledge-base video slots are placeholder labels.",
+        "Support links to a public ticket form."
+      ],
+      "limit": "No technical integration documentation found in the inspected help page."
+    },
+    {
+      "id": "VMS-S05",
+      "url": "https://matterworx.com/contact-support/",
+      "title": "Contact Support",
+      "evidence_status": "official_public_form_schema",
+      "facts": [
+        "Published role choices: Worker, Hiring Manager, Recruitment Manager, Program Admin.",
+        "Issue categories expose worker profile, assignments/positions, invoices, client/company data, program settings and vendors/MSPs.",
+        "Subcategories name clock-in/out problems, incorrect shifts, profile updates, invoice generation/payment discrepancies, timesheet imports and picklist errors."
+      ],
+      "limit": "These are support-taxonomy observations, not demonstrated role permissions or database tables."
+    },
+    {
+      "id": "VMS-S06",
+      "url": "https://matterworx.com/school-integrations/",
+      "title": "School Integrations",
+      "evidence_status": "official_public_page_retrieved",
+      "facts": [
+        "Advertises connectivity to existing school systems.",
+        "Available Integrations is populated by repeated List item placeholders in the retrieved public content."
+      ],
+      "limit": "No named supported connector or implementation contract verified."
+    },
+    {
+      "id": "VMS-S07",
+      "url": "https://matterworx.com/healthcare-integrations/",
+      "title": "Healthcare Integrations",
+      "evidence_status": "official_public_page_retrieved",
+      "facts": [
+        "Advertises connectivity to existing healthcare systems.",
+        "Available Integrations is populated by repeated List item placeholders in the retrieved public content."
+      ],
+      "limit": "No named supported connector or implementation contract verified."
+    },
+    {
+      "id": "VMS-S08",
+      "url": "https://matterworx.com/demo/",
+      "title": "Demo MatterWorx",
+      "evidence_status": "official_public_form",
+      "facts": [
+        "Sales-led demo request collects first/last name, phone, email and organization; includes consent and CAPTCHA.",
+        "Describes representative-led onboarding."
+      ],
+      "limit": "No instant sandbox or self-service API provisioning shown. Form was not submitted."
+    },
+    {
+      "id": "VMS-S09",
+      "url": "https://matterworx.com/terms-of-use/",
+      "title": "SaaS End User Agreement / Terms of Use",
+      "evidence_status": "official_published_terms",
+      "published_revision": "2026-01-02",
+      "facts": [
+        "Terms restrict competitive benchmarking, reverse engineering and access to build a competing product, and restrict third-party access/login sharing.",
+        "Named authorized company audiences include staffing purchasers, suppliers and MSPs.",
+        "Terms prohibit uploading/storing protected health information, education records and PCI-related data."
+      ],
+      "limit": "This reports the published access conditions, not a legal interpretation. Ordinary customer/demo access should not be treated as permission for competitive reconstruction; any authenticated work needs an expressly permitted scope."
+    },
+    {
+      "id": "VMS-S10",
+      "url": "https://www.sunburstworkforce.com/vendor-management-system/",
+      "title": "Sunburst Vendor Management System",
+      "evidence_status": "official_public_claim",
+      "facts": [
+        "Sunburst says it recommends VMS partners for client fit.",
+        "Describes consolidated invoices, spend/fill/vendor analytics, position/candidate management and credentials/onboarding."
+      ],
+      "limit": "Does not establish that every Sunburst program uses MatterWorx; no Sunburst-specific API documented."
+    },
+    {
+      "id": "VMS-S11",
+      "url": "https://www.sunburstworkforce.com/education-workforce-solutions/",
+      "title": "Sunburst Education Workforce Solutions",
+      "evidence_status": "official_public_claim",
+      "facts": [
+        "Explicitly names and links MatterWorx for consolidated invoices, spend/fill reporting and credential tracking."
+      ],
+      "limit": "Education offering only; actual tenant deployments and integration configuration remain unknown."
+    },
+    {
+      "id": "VMS-S12",
+      "url": "https://www.amergiseducation.com/teletherapy-platform/",
+      "title": "Amergis Teletherapy Platform",
+      "evidence_status": "official_public_claim_and_html_links_inspected",
+      "facts": [
+        "Advertises permanent room links, waiting rooms, no student accounts or downloads, and no student session-data storage.",
+        "Names Boom Cards, Super Duper resources and Pearson assessments.",
+        "Claims minute/completion tracking and session-activity reporting for documentation and billing.",
+        "See it in action and assessment calls to action lead to the general contact page."
+      ],
+      "limit": "No ATP login, room endpoint, public API, webhook, export format or named underlying video backend is linked. No clinical room entered; compliance and integration depth not independently verified."
+    },
+    {
+      "id": "VMS-S13",
+      "url": "https://www.amergiseducation.com/about/",
+      "title": "About Amergis Education",
+      "evidence_status": "official_public_claim",
+      "facts": [
+        "Describes ATP as proprietary."
+      ],
+      "limit": "Proprietary branding does not identify whether underlying video or assessment components are third-party."
+    }
+  ],
+  "findings": [
+    {
+      "id": "VMS-F01",
+      "platform": "MatterWorx",
+      "finding": "Open API exists as a published product claim, not an openly documented endpoint contract.",
+      "source_ids": [
+        "VMS-S01",
+        "VMS-S02"
+      ],
+      "evidence_status": "vendor_declared_unverified_runtime",
+      "api_status": "advertised_no_public_spec_found",
+      "public_access": "Marketing/help pages; linked unauthenticated app shell.",
+      "account_requirement": "User identifications/passwords supplied to authorized company users per terms; API credentials/provisioning not specified.",
+      "objects_supported_by_public_evidence": [
+        "JobPosting",
+        "Application",
+        "CandidateOption",
+        "Vendor",
+        "OnboardingRequirement",
+        "Credential",
+        "TimeEntry",
+        "Timesheet",
+        "Invoice",
+        "ClientCompany",
+        "Assignment",
+        "ProgramSetting",
+        "Picklist"
+      ],
+      "objects_status": "Independent domain abstractions from public feature/support labels; not actual API/table names.",
+      "reconstruction_limit": "Cannot recover schemas, permissions, status transitions, pricing logic, webhook behavior, bulk export or data from current public material."
+    },
+    {
+      "id": "VMS-F02",
+      "platform": "MatterWorx",
+      "finding": "Public support form reveals four role labels and operational exception routes.",
+      "source_ids": [
+        "VMS-S05"
+      ],
+      "evidence_status": "observed_public_form",
+      "api_status": "not_an_api",
+      "roles": [
+        {
+          "name": "Worker",
+          "published_support_topics": [
+            "Worker",
+            "Profile setup",
+            "Registration/password"
+          ]
+        },
+        {
+          "name": "Hiring Manager",
+          "published_support_topics": [
+            "Worker",
+            "Profile setup",
+            "Registration/password",
+            "Assignment/position",
+            "Invoices/invoicing"
+          ]
+        },
+        {
+          "name": "Recruitment Manager",
+          "published_support_topics": [
+            "Worker",
+            "Profile setup",
+            "Registration/password",
+            "Assignment/position"
+          ]
+        },
+        {
+          "name": "Program Admin",
+          "published_support_topics": [
+            "Worker",
+            "Company/client",
+            "Profile setup",
+            "Registration/password",
+            "Assignment/position",
+            "Program settings",
+            "Vendors/MSPs",
+            "Invoices/invoicing"
+          ]
+        }
+      ],
+      "reconstruction_limit": "The form reflects support categories only, not RBAC or proof every role can mutate every listed object."
+    },
+    {
+      "id": "VMS-F03",
+      "platform": "Sunburst MSP",
+      "finding": "VMS selection is client-specific; education explicitly uses MatterWorx.",
+      "source_ids": [
+        "VMS-S10",
+        "VMS-S11"
+      ],
+      "evidence_status": "official_published_claim",
+      "api_status": "no_sunburst_api_found_in_inspected_sources",
+      "objects_supported_by_public_evidence": [
+        "MSPProgram",
+        "Supplier",
+        "ClientRequirement",
+        "SupplierSubmission",
+        "ConsolidatedInvoice",
+        "ProgramMetric"
+      ],
+      "reconstruction_limit": "Supplier portal URL, account enrollment process, supplier-facing endpoints and program-specific integrations not publicly resolved."
+    },
+    {
+      "id": "VMS-F04",
+      "platform": "Amergis Teletherapy Platform",
+      "finding": "Public content describes workflow capabilities but exposes no documented technical interface.",
+      "source_ids": [
+        "VMS-S12",
+        "VMS-S13"
+      ],
+      "evidence_status": "official_published_claim",
+      "api_status": "no_public_spec_or_portal_link_found_in_inspected_sources",
+      "objects_supported_by_public_evidence": [
+        "Room",
+        "WaitingRoom",
+        "Session",
+        "TherapyMinute",
+        "SessionCompletion",
+        "ActivityReport",
+        "AssessmentAccess"
+      ],
+      "objects_status": "Independent design concepts, not actual vendor schema.",
+      "reconstruction_limit": "Backend identity, clinician/admin portal, room-link generation, retention boundary, reporting/export data model, assessment licensing and integrations remain unknown."
+    }
+  ],
+  "authorized_followup_checklist": [
+    {
+      "priority": 1,
+      "platform": "MatterWorx",
+      "request": "Confirm permitted evaluation/integration purpose and scope in writing before authenticated competitive analysis; request vendor-sanctioned synthetic-data sandbox if appropriate.",
+      "why": "Published terms restrict competitive reconstruction and third-party access."
+    },
+    {
+      "priority": 2,
+      "platform": "MatterWorx",
+      "request": "Obtain current API/OpenAPI documentation, supported API version, authentication/scopes, tenant boundaries, service-account policy, rate limits and production/sandbox separation.",
+      "why": "Open API claim does not define a usable adapter."
+    },
+    {
+      "priority": 3,
+      "platform": "MatterWorx",
+      "request": "Request sample synthetic schemas for requisitions, candidates/submissions, assignments, credentials, timesheets, invoices, suppliers, clients and program settings, including immutable identifiers and state diagrams.",
+      "why": "Converts public domain concepts into testable mappings."
+    },
+    {
+      "priority": 4,
+      "platform": "MatterWorx",
+      "request": "Ask for webhook/event catalog, delivery/retry semantics, deletion/change feeds, idempotency and reconciliation support.",
+      "why": "Determines whether AI workers can operate reliably without duplicate submissions or invoices."
+    },
+    {
+      "priority": 5,
+      "platform": "MatterWorx",
+      "request": "Demonstrate role-specific create/read/approve permissions using synthetic records; export/import supported formats and data-portability terms.",
+      "why": "Support categories alone do not establish permissions or field-level access."
+    },
+    {
+      "priority": 6,
+      "platform": "Sunburst MSP",
+      "request": "For a permitted sample program, identify actual VMS vendor and supplier onboarding route; obtain redacted business rules for distribution, submissions, approval, invoicing and service-level escalations.",
+      "why": "Do not generalize one education deployment across all programs."
+    },
+    {
+      "priority": 7,
+      "platform": "Amergis Teletherapy Platform",
+      "request": "Request an expressly permitted synthetic-data clinician/admin demonstration, integration architecture, API/export availability and account/room access model.",
+      "why": "Public room-link description does not expose an authorized test room."
+    },
+    {
+      "priority": 8,
+      "platform": "Amergis Teletherapy Platform",
+      "request": "Reconcile no student-session-storage claims with activity/minute reporting, and clarify assessment/resource licenses and clinical-system boundaries.",
+      "why": "Needed to design reporting independently without inventing storage behavior or copying licensed assessment content."
+    }
+  ],
+  "research_limits": [
+    "No public API specification found in the inspected published pages and focused search results; this does not prove none exists.",
+    "MatterWorx app shell is reachable through ordinary HTTP retrieval, but the in-app browser could not load it; application functionality remains untested.",
+    "Python urllib initially lacked local certificate-chain trust across all sampled domains; validated curl succeeded. No TLS validation was disabled.",
+    "Only officially linked route followed for app access. Bundle code and protected endpoints were not analyzed.",
+    "No named ATP video backend inferred from marketing similarities."
+  ],
+  "next_reconstruction_step": "Use the public object/role map to design an independent interface contract; keep vendor-specific adapters blocked on published documentation or expressly authorized integration access."
+}

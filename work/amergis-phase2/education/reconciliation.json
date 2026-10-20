@@ -1,0 +1,231 @@
+{
+  "as_of": "2026-10-20T17:25:31.392829+00:00",
+  "education_page_url": "https://www.amergiseducation.com/jobs/",
+  "education_feed_url": "https://www.amergiseducation.com/wp-content/uploads/wmx-jobs/jobs.json?v=1792510358",
+  "education_search_url": "https://www.amergiseducation.com/wp-content/uploads/wmx-jobs/jobs-search.json?v=1792510360",
+  "education_page_displayed_count": 2764,
+  "education_feed_records": 2764,
+  "healthcare_prior_feed_records": 2755,
+  "combined_record_observations": 5519,
+  "education_category_counts": {
+    "Therapy": 640,
+    "Nursing": 217,
+    "Teaching": 633,
+    "Support Staff": 975,
+    "Mental Health": 269
+  },
+  "education_unclassified_category_records": 30,
+  "education_job_type_counts": {
+    "Contract - Full Time": 1432,
+    "Contract - Part Time": 720,
+    "Travel": 566,
+    "Per Diem": 46
+  },
+  "education_setting_counts": {
+    "Schools": 2746,
+    "Healthcare Facilities": 18
+  },
+  "education_pay_unit_counts": {
+    "hour": 2198,
+    "week": 566
+  },
+  "education_state_counts": {
+    "TX": 109,
+    "PA": 148,
+    "AL": 22,
+    "FL": 115,
+    "MI": 76,
+    "OR": 60,
+    "NY": 124,
+    "TN": 79,
+    "AZ": 99,
+    "CA": 804,
+    "WV": 25,
+    "WA": 145,
+    "GA": 25,
+    "WI": 52,
+    "IL": 92,
+    "OH": 63,
+    "SC": 68,
+    "MA": 57,
+    "NC": 87,
+    "ME": 59,
+    "DC": 18,
+    "ID": 11,
+    "NE": 30,
+    "KS": 32,
+    "VA": 34,
+    "IN": 74,
+    "DE": 12,
+    "MO": 31,
+    "CT": 14,
+    "NJ": 34,
+    "MN": 21,
+    "KY": 15,
+    "HI": 4,
+    "RI": 18,
+    "VT": 3,
+    "NH": 21,
+    "NM": 15,
+    "MD": 28,
+    "CO": 20,
+    "OK": 13,
+    "MT": 1,
+    "IA": 6
+  },
+  "education_distinct_states": 42,
+  "education_missing_fields": {
+    "source_feed_id": 0,
+    "position_id_from_card": 0,
+    "url_slug_id": 0,
+    "title": 0,
+    "location": 0,
+    "job_category": 30,
+    "advertised_pay_raw": 0,
+    "duration_raw": 0
+  },
+  "education_duplicate_ids": {
+    "source_feed_id": [],
+    "position_id_from_card": [],
+    "url_slug_id": [],
+    "url": []
+  },
+  "education_same_title_geo_groups_with_multiple_records": 602,
+  "education_same_title_geo_records_above_one_per_group": 1324,
+  "education_top_titles": [
+    {
+      "title": "Special Education Teacher",
+      "records": 548
+    },
+    {
+      "title": "School Behavior Aide",
+      "records": 444
+    },
+    {
+      "title": "School Speech Language Pathologist (SLP)",
+      "records": 335
+    },
+    {
+      "title": "School Aide",
+      "records": 285
+    },
+    {
+      "title": "School Occupational Therapist (OT)",
+      "records": 149
+    },
+    {
+      "title": "School Psychologist",
+      "records": 124
+    },
+    {
+      "title": "School BCBA",
+      "records": 96
+    },
+    {
+      "title": "School Registered Nurse (RN)",
+      "records": 84
+    },
+    {
+      "title": "School Registered/Certified Behavior Technician",
+      "records": 72
+    },
+    {
+      "title": "School LPN",
+      "records": 48
+    },
+    {
+      "title": "School Speech Language Pathology Assistant (SLPA)",
+      "records": 44
+    },
+    {
+      "title": "School Sign Language Interpreter (SLI)",
+      "records": 38
+    },
+    {
+      "title": "School Social Worker",
+      "records": 31
+    },
+    {
+      "title": "School Physical Therapist (PT)",
+      "records": 29
+    },
+    {
+      "title": "General Education Teacher",
+      "records": 28
+    }
+  ],
+  "identifier_overlaps": {
+    "source_feed_id": {
+      "healthcare_unique_nonempty": 2755,
+      "education_unique_nonempty": 2764,
+      "overlap_unique_values": 0,
+      "same_title_location_count": 0,
+      "different_title_location_count": 0,
+      "matches": []
+    },
+    "position_id_from_card": {
+      "healthcare_unique_nonempty": 2755,
+      "education_unique_nonempty": 2764,
+      "overlap_unique_values": 0,
+      "same_title_location_count": 0,
+      "different_title_location_count": 0,
+      "matches": []
+    },
+    "url_slug_id": {
+      "healthcare_unique_nonempty": 2755,
+      "education_unique_nonempty": 2764,
+      "overlap_unique_values": 0,
+      "same_title_location_count": 0,
+      "different_title_location_count": 0,
+      "matches": []
+    },
+    "url": {
+      "healthcare_unique_nonempty": 2755,
+      "education_unique_nonempty": 2764,
+      "overlap_unique_values": 0,
+      "same_title_location_count": 0,
+      "different_title_location_count": 0,
+      "matches": []
+    }
+  },
+  "same_title_geo_candidates": [],
+  "same_title_geo_candidate_groups": 0,
+  "search_index": {
+    "format": "dict",
+    "record_count": 2764,
+    "feed_keys_missing_from_search": [],
+    "search_keys_missing_from_feed": []
+  },
+  "source_metadata": {
+    "robots.txt": {
+      "sha256": "3f6351c337737ce2deb6057f3ffbd65275776aeaef411ce0722a9fa69b2b3bd0",
+      "bytes": 355,
+      "retrieved_at": "2026-10-20T17:24:59.396543+00:00"
+    },
+    "jobs.html": {
+      "sha256": "e4e98dd4c25339a3cec0cbdae429430323cc4adace2d7b46ad399e942b28c3b0",
+      "bytes": 145407,
+      "retrieved_at": "2026-10-20T17:25:13.526387+00:00"
+    },
+    "jobs-feed.json": {
+      "sha256": "c1493cca7c273ca0ad92c58db0c5cc811bf0dbcc0a0e0d439e6730e8016c4bc4",
+      "bytes": 4657182,
+      "retrieved_at": "2026-10-20T17:25:31.392829+00:00"
+    },
+    "jobs-search.json": {
+      "sha256": "cc70e4a50adcac2d87e95678c176709fda4b57a7daf1a402c47a747129181db4",
+      "bytes": 6014894,
+      "retrieved_at": "2026-10-20T17:25:40.314328+00:00"
+    }
+  },
+  "limitations": [
+    "Counts are public listing observations, not employees, placements, unique vacancies, open headcount or realized demand.",
+    "Healthcare and education feeds are snapshots retrieved at different times; changes between snapshots can affect reconciliation.",
+    "Separate identifier namespaces are preserved. Cross-site card IDs can be site-local WordPress IDs; numerical equality alone is not proof of identical jobs.",
+    "Exact title/geography similarity is a candidate match only; duplicates may represent distinct client requests.",
+    "Canonical URL is normalized from the public card link; individual detail-page canonical tags were not crawled.",
+    "Advertised pay and units are preserved; weekly amounts are not converted to hourly pay and are not assumed to equal bill rates.",
+    "Public search-description data is retained only as intermediate evidence; full descriptions are not included in normalized records.",
+    "No logged-in data, credentials, candidate records, form submissions or private endpoints were accessed."
+  ]
+}

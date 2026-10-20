@@ -1,0 +1,33 @@
+{
+  "method": "Local in-memory DOM source check; not rendered browser validation or live integration testing.",
+  "checks": [
+    {
+      "name": "All platform, source and workflow rows render",
+      "status": "pass"
+    },
+    {
+      "name": "Every platform selection renders its matching detail",
+      "status": "pass"
+    },
+    {
+      "name": "Tabs select one panel",
+      "status": "pass"
+    },
+    {
+      "name": "Source filter finds Nursys",
+      "status": "pass"
+    },
+    {
+      "name": "All artifact links exist and external URLs are HTTPS",
+      "status": "pass"
+    },
+    {
+      "name": "New office data reconciles to source totals",
+      "status": "pass"
+    },
+    {
+      "name": "No copied tokens and appropriate event-consumption distinction",
+      "status": "pass"
+    }
+  ]
+}
