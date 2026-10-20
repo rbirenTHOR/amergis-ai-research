@@ -1,0 +1,340 @@
+{
+  "title": "East Ramapo school SLP pilot operating plan",
+  "as_of": "2026-10-20",
+  "timezone": "America/New_York",
+  "status": "New-company launch plan — not bid-ready: no confirmed therapists or insurance",
+  "charter": {
+    "buyer": "East Ramapo Central School District",
+    "opportunity": "RFP-ER-5-27 Speech-Language Pathology Services",
+    "proposed_service": "In-person school speech-language pathology, using one experienced SLP initially and a separately qualified backup. Add a second or third clinician only for authorized assignments with funded capacity.",
+    "pilot_boundary": "One buyer and one discipline. Prefer a geographically concentrated assignment with a defined timetable. Assignment size, caseload, sites, frequency and start date remain buyer decisions.",
+    "employment_baseline": "Agency-employed W-2 clinicians for planning and cost modelling. Confirm the actual entity, employer, labor obligations and contract structure before employment or bid representations. Backup availability and compensation require an agreement; standby is not assumed free.",
+    "delivery": "Therapy is in person. Licensed humans provide and document clinical services; the school retains IEP and service-authorization decisions. AI assists approved administrative workflows.",
+    "records": "Use the district's approved clinical and attendance-record process. Keep staffing evidence, actual worked time, invoice quantities and clinical service records distinct. Do not assume a specific district platform or API.",
+    "initial_validation_window": "Review the first 30 service days after an authorized start, then the first complete invoice-to-cash cycle. These are proposed management checkpoints, not promised contract duration.",
+    "out_of_scope": [
+      "Teletherapy for this RFP",
+      "OT/PT, assistants or clinical fellows as automatic substitutes for the SLP profile",
+      "Independent IEP changes by an AI agent",
+      "A new clinical-record system",
+      "Medicaid claim submission by the agency unless separately scoped and authorized",
+      "Guaranteed hours, awards or revenue"
+    ]
+  },
+  "readiness": [
+    {
+      "id": "ERG01",
+      "gate": "Business and signing authority",
+      "stage": "Before bid",
+      "status": "New-company setup required; evidence not supplied",
+      "proof": "Exact bidder identity, NY business-registration evidence, ownership/employer structure, W-9, authorized signatory, organizational history and truthful performance narrative."
+    },
+    {
+      "id": "ERG02",
+      "gate": "Named clinician capacity",
+      "stage": "Before bid",
+      "status": "Not ready — no confirmed therapists",
+      "proof": "Consented clinician resumes, references, qualifications and genuine availability; separate backup plan. Do not list people who have not agreed to be proposed."
+    },
+    {
+      "id": "ERG03",
+      "gate": "Insurance evidence",
+      "stage": "Before bid",
+      "status": "Not ready — no confirmed insurance",
+      "proof": "Required COI and insurer/bidder certification, with reconciled coverage limits, endorsements, dates, activities and legal-entity name."
+    },
+    {
+      "id": "ERG04",
+      "gate": "Commercial viability",
+      "stage": "Before bid",
+      "status": "Unverified",
+      "proof": "Actual pay expectations, insurer/service quotes and approved fee units; fully loaded rate analysis, absence/cancellation treatment and working-capital capacity."
+    },
+    {
+      "id": "ERG05",
+      "gate": "Complete submission",
+      "stage": "Before bid",
+      "status": "Not ready — mandatory evidence outstanding",
+      "proof": "Current packet/addenda, all forms and notarizations, fee narrative, required attachments, submission access and final human authorization."
+    },
+    {
+      "id": "ERG06",
+      "gate": "Award and funded assignment",
+      "stage": "Before service",
+      "status": "Not established",
+      "proof": "Executed agreement and district-authorized assignment/order with sites, dates, services, approvers and funding authority. Vendor selection alone is insufficient."
+    },
+    {
+      "id": "ERG07",
+      "gate": "Provider clearance and systems",
+      "stage": "Before service",
+      "status": "Unverified",
+      "proof": "Current license/registration and school credentials; district-requested clearance, exclusion checks, training, orientation and approved records access."
+    },
+    {
+      "id": "ERG08",
+      "gate": "Operational and data readiness",
+      "stage": "Before service",
+      "status": "Unverified",
+      "proof": "Payroll and insurance live; attendance/service/time/invoice workflows rehearsed; approved data agreement, access, retention and incident handling; named accountable owners."
+    }
+  ],
+  "critical_path": [
+    {
+      "id": "ERL01",
+      "when": "October 20–22, 2026",
+      "type": "Internal target",
+      "deliverable": "Inventory entity, signatory, current insurance, references, clinician roster and cash resources; appoint operating and clinical leads.",
+      "owner": "Business lead",
+      "dependency": "User/company information",
+      "exit": "Each mandatory evidence item is available or has a named owner and credible completion date."
+    },
+    {
+      "id": "ERL02",
+      "when": "October 20–23, 2026",
+      "type": "Internal target",
+      "deliverable": "Assemble a real proposed SLP and backup pipeline; verify credentials, consent to inclusion, timetable, travel and pay expectations.",
+      "owner": "Recruiting and clinical leads",
+      "dependency": "Approved role and compensation approach",
+      "exit": "Named capacity can be supported without speculation; unresolved credential/clearance timing is visible."
+    },
+    {
+      "id": "ERL03",
+      "when": "October 20–23, 2026",
+      "type": "Internal target",
+      "deliverable": "Prepare insurer submission using the coverage matrix and request reconciliation of conflicting sample provisions.",
+      "owner": "Business lead and licensed broker",
+      "dependency": "Accurate entity, payroll, operations and claims information",
+      "exit": "Insurer confirms obtainable coverage, cost, effective dates and bid-time evidence; no policy bought in this research."
+    },
+    {
+      "id": "ERL04",
+      "when": "October 23, 2026",
+      "type": "Proposed go/no-go checkpoint",
+      "deliverable": "Decide whether a truthful, complete and financially supportable October 30 response is feasible.",
+      "owner": "Authorized business lead",
+      "dependency": "ERG01–ERG04 evidence",
+      "exit": "Proceed only with credible clinician, coverage, price and completion evidence; otherwise preserve the plan for the next permitted route."
+    },
+    {
+      "id": "ERL11",
+      "when": "If the current bid cannot be completed truthfully",
+      "type": "Alternative path; no deadline assumed",
+      "deliverable": "Finish company/employer setup, secure provider capacity and price coverage, then verify the next district-permitted procurement or addition route. Do not assume rolling entry, a late submission or subcontract permission.",
+      "owner": "Business and bid leads",
+      "dependency": "Current bid readiness checkpoint",
+      "exit": "A verified lawful purchasing route before promising East Ramapo work; startup work can proceed independently of an award."
+    },
+    {
+      "id": "ERL05",
+      "when": "October 26, 2026",
+      "type": "Internal target",
+      "deliverable": "Finalize the consolidated purchasing questions from this pack and check the latest addenda.",
+      "owner": "Bid lead",
+      "dependency": "Unresolved bid, insurance, units, payment, data and clinician questions",
+      "exit": "One reviewed question list; contact only through the RFP's authorized channel when instructed."
+    },
+    {
+      "id": "ERL06",
+      "when": "October 27, 2026, 12:00 p.m. EDT",
+      "type": "District deadline",
+      "deliverable": "RFP question deadline; recheck any subsequent changes before action.",
+      "owner": "Authorized bidder",
+      "dependency": "Permission to send finalized questions",
+      "exit": "If sent, retain transmission evidence and published responses; no questions sent by this research."
+    },
+    {
+      "id": "ERL07",
+      "when": "October 28–29, 2026",
+      "type": "Internal target",
+      "deliverable": "Complete all narrative attachments, fees, insurance evidence, signatures and notarizations; independently compare with the current RFP and addenda.",
+      "owner": "Bid lead, signatory, broker and notary as applicable",
+      "dependency": "ERG01–ERG05 complete",
+      "exit": "No unsupported factual representation or unfilled mandatory field. Review price assumptions against the offered scope."
+    },
+    {
+      "id": "ERL08",
+      "when": "October 30, 2026, 12:00 p.m. EDT",
+      "type": "District deadline",
+      "deliverable": "Electronic proposal deadline in the reviewed RFP; target earlier completion to allow upload problems.",
+      "owner": "Authorized bidder",
+      "dependency": "Final approved package and current portal instructions",
+      "exit": "Submission, if later authorized and performed, requires the actual acceptance receipt. No bid is submitted by this plan."
+    },
+    {
+      "id": "ERL09",
+      "when": "After award and before first service",
+      "type": "Dependency gate; date unknown",
+      "deliverable": "Complete district onboarding, funded assignment, provider clearance, payroll, insurance, approved record access and workflow rehearsal.",
+      "owner": "Operations, clinical lead and district",
+      "dependency": "ERG06–ERG08 complete",
+      "exit": "Named human release decision with evidence; no service starts solely because a contract was awarded."
+    },
+    {
+      "id": "ERL10",
+      "when": "First 30 service days, then first collected invoice",
+      "type": "Proposed evaluation checkpoints",
+      "deliverable": "Review coverage, service/documentation exceptions, worked-time accuracy, invoice acceptance, collections and cost per assignment.",
+      "owner": "Business, clinical and finance leads",
+      "dependency": "Actual observed operations",
+      "exit": "Scale only after quality, staffing, cash and buyer acceptance are demonstrated; compare with the assumptions in the model."
+    }
+  ],
+  "operating_cadence": [
+    {
+      "frequency": "Before each provider starts",
+      "control": "Verify qualifications and clearances, effective coverage and scope, school authorization, current assignment and required access.",
+      "ai_role": "Compile evidence and flag gaps; no autonomous clearance."
+    },
+    {
+      "frequency": "Each service/work day",
+      "control": "Confirm attendance/coverage; clinician records delivered or missed services in the approved process; worker records all actual compensable work separately.",
+      "ai_role": "Send approved reminders, detect missing administrative evidence and route exceptions; no invented service notes or hours."
+    },
+    {
+      "frequency": "Weekly",
+      "control": "Reconcile district-required service logs and worked time, resolve absences and documentation gaps, and prepare payroll evidence.",
+      "ai_role": "Reconcile authorized metadata, show discrepancies and create review queues."
+    },
+    {
+      "frequency": "Monthly and at relevant status changes",
+      "control": "Complete required exclusion checks and credential/coverage reviews; route potential matches to qualified human review.",
+      "ai_role": "Track due dates and capture permitted verification evidence; never treat a name-only match as a final finding."
+    },
+    {
+      "frequency": "Service date plus fewer than 30 calendar days",
+      "control": "Deliver the required invoice and attendance evidence before the district's 30-day submission limit; use an internal earlier target after the unit/cadence is agreed.",
+      "ai_role": "Prepare a reconciled invoice draft, age missing evidence and escalate well before deadline; do not label the deadline as payment terms."
+    },
+    {
+      "frequency": "On absence, incident, exclusion, expiry or disputed record",
+      "control": "Pause the affected approval or assignment as appropriate; notify the accountable human; retain history; district/clinical team decides clinical recovery.",
+      "ai_role": "Detect, queue, draft and audit within approved permissions. Safety-critical notifications must not depend on an unattended AI queue."
+    }
+  ],
+  "proposed_success_measures": [
+    {
+      "metric": "Credential and assignment release",
+      "target": "100% of assigned clinicians have verified, current applicable evidence before student contact.",
+      "measurement": "Human-approved readiness record and source-verification timestamps; proposed control target."
+    },
+    {
+      "metric": "Coverage reliability",
+      "target": "All scheduled assignment gaps are visible and escalated; target fulfillment level agreed with buyer after actual scope is known.",
+      "measurement": "Scheduled, attempted, delivered, canceled and missed events remain distinct; no automatic compensatory-service decisions."
+    },
+    {
+      "metric": "Documentation and invoicing",
+      "target": "All required weekly logs and invoice/attendance packages meet the applicable deadlines.",
+      "measurement": "Submission receipts and reconciliation status; distinguish our completion from district acceptance."
+    },
+    {
+      "metric": "Payroll accuracy",
+      "target": "No worked time withheld solely because a client invoice is delayed or disputed.",
+      "measurement": "Separate time approval, payroll and receivable histories."
+    },
+    {
+      "metric": "Commercial outcome",
+      "target": "Positive contribution after actual delivery, admin and coverage costs, and sufficient cash through the observed collection cycle.",
+      "measurement": "Reconciled actuals against the illustrative economics model; no assumed guaranteed utilization."
+    },
+    {
+      "metric": "Automation quality",
+      "target": "Zero unauthorized external actions or unsupported clinical/financial decisions; establish actual administrative touch-time baseline during the pilot.",
+      "measurement": "Action log, human interventions, errors, retries and time per workflow. No achieved automation percentage claimed."
+    }
+  ],
+  "privacy_requirements": [
+    {
+      "id": "ERD01",
+      "requirement": "Agree the district's data-security/privacy contract and approved workflow before receiving student data.",
+      "implementation": "Identify permitted purposes, data elements, records location, authorized people/subprocessors, retention/deletion and incident process. Include the applicable Parents' Bill of Rights and training evidence.",
+      "source_ids": [
+        "ERS01",
+        "ERS02"
+      ]
+    },
+    {
+      "id": "ERD02",
+      "requirement": "Keep pupil clinical and attendance evidence in the district-approved route; minimize copies into the staffing workspace.",
+      "implementation": "Use approved references and aggregate status where adequate. Opaque student identifiers can still be protected; document re-identification/access risks. Do not send source clinical files or attendance details to a generic AI workspace.",
+      "source_ids": [
+        "ERS01",
+        "ERS02"
+      ]
+    },
+    {
+      "id": "ERD03",
+      "requirement": "Evaluate each tool and subprocessor for the exact data and contract purpose.",
+      "implementation": "MFA, role-scoped access, encrypted transfer/storage, auditable changes and deletion/export controls are release requirements. A security badge or inventory listing is not district approval or permission to train models.",
+      "source_ids": [
+        "ERS01",
+        "ERS03"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "ERS01",
+      "title": "East Ramapo — Data Privacy and Security",
+      "url": "https://www.ercsd.org/departments/technology-information-management/data-privacy-and-security",
+      "checked_on": "2026-10-20",
+      "supports": "District privacy policy, vendor Data Privacy Agreement, Parents' Bill of Rights and software-security inventory are published entry points.",
+      "limit": "A public listing does not grant access or approve the proposed agency tools or AI processing."
+    },
+    {
+      "id": "ERS02",
+      "title": "New York Education Law §2-d",
+      "url": "https://www.nysenate.gov/legislation/laws/EDN/2-D",
+      "checked_on": "2026-10-20",
+      "supports": "Contractor-purpose limits, Parents' Bill of Rights/supplemental information and data security/privacy, access and training obligations when receiving covered data.",
+      "limit": "Apply with current Part 121, the executed district contract and exact data flow; this pack is not a completed legal determination."
+    },
+    {
+      "id": "ERS03",
+      "title": "NYSED — Frequently Asked Questions for DPOs",
+      "url": "https://www.nysed.gov/data-privacy-security/frequently-asked-questions-dpos",
+      "checked_on": "2026-10-20",
+      "supports": "Local district responsibility for technology decisions; NYSED does not certify vendor compliance or maintain an approved-vendor list. Covered data requires an appropriate written contract.",
+      "retrieval": "Current search-indexed official text inspected; direct web open returned 502.",
+      "limit": "Not approval of a particular product, integration or AI provider."
+    }
+  ],
+  "open_company_inputs": [
+    "Proposed company name, legal formation/registration status and signing authority",
+    "Current client/organizational references",
+    "New recruiting pipeline: no therapists confirmed; obtain consented primary/backup availability and credentials",
+    "New insurance placement: no policies confirmed; broker, underwriting inputs and actual quotes required",
+    "Approved compensation approach and real provider pay expectations",
+    "Working-capital limit and finance owner",
+    "Existing secure workplace/HR/payroll/accounting tools",
+    "Named business, clinical, recruiting and privacy owners"
+  ],
+  "actions_performed": "Public research, proposed operating design, draft planning materials and illustrative calculations only. No recruitment messages, reference calls, broker requests, company registration, software purchase, bid submission or district contact.",
+  "company_baseline": {
+    "source": "User confirmation in this conversation, October 20, 2026",
+    "stage": "Starting a new company",
+    "confirmed_therapists": 0,
+    "insurance": "None confirmed",
+    "legal_entity": "Formation/registration evidence not supplied; starting-company baseline",
+    "consequence": "Named clinician capacity and bid-time insurance requirements are not currently met. The October 30 response is conditional, not a committed launch milestone. Do not certify readiness, implemented policies or capacity that does not exist."
+  },
+  "capital_release_sequence": [
+    {
+      "stage": "Before pursuing the current bid",
+      "rule": "Approve a capped at-risk preparation budget for entity/employer advice, recruiting and verification, bid preparation and required policy implementation. Winning work is not assured."
+    },
+    {
+      "stage": "Before bid submission",
+      "rule": "Obtain the required insurance certificate and signed insurer/bidder acknowledgments. A nonbinding broker quote is not the COI. Coverage placement may require a deposit or premium before award; obtain actual cash and cancellation terms before spending."
+    },
+    {
+      "stage": "After an authorized assignment, before hiring/start commitments",
+      "rule": "Reserve cash for payroll, coverage, operations and collection delays using actual quotes and approved scope. Keep commercial margin and cash liquidity as separate gates."
+    },
+    {
+      "stage": "During service and at termination",
+      "rule": "Review weekly cash exposure, declining utilization and receivable aging. Fund contractually required continuing professional-liability coverage after work ends; first-year allowances do not prove that later obligation is funded."
+    }
+  ]
+}

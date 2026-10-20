@@ -1,0 +1,498 @@
+{
+  "as_of": "2026-10-20",
+  "scope": "Insurance workstream for the proposed East Ramapo in-person SLP pilot; public evidence and planning only.",
+  "decision": "Treat the page-5 coverages and bid certificate as immediate gates; price the full sample schedule while obtaining written clarification of conflicting sample provisions.",
+  "sources": [
+    {
+      "id": "EIS01",
+      "title": "East Ramapo RFP-ER-5-27, insurance provisions and forms",
+      "url": "https://resources.finalsite.net/images/v1791482107/ercsdorg/sukltm9f2kp0petz1047/RFP-ER-5-27SpeechLanguagePathologyServices.pdf",
+      "publisher": "East Ramapo Central School District",
+      "checked_on": "2026-10-20",
+      "locators": [
+        "PDF pp. 5, 7-10, 14"
+      ],
+      "inspection": "Downloaded public 22-page scanned PDF; OCR located clauses; complete relevant pages visually reviewed.",
+      "evidence_kind": "official solicitation"
+    },
+    {
+      "id": "EIS02",
+      "title": "East Ramapo RFP-ER-5-27 Addendum 1",
+      "url": "https://resources.finalsite.net/images/v1792420062/ercsdorg/fpom6qft6vvbddf353po/Addendum1_16.pdf",
+      "publisher": "East Ramapo Central School District",
+      "checked_on": "2026-10-20",
+      "locators": [
+        "p. 1, Q1; service-model clarifications"
+      ],
+      "inspection": "Downloaded official linked PDF and extracted text.",
+      "evidence_kind": "official addendum"
+    },
+    {
+      "id": "EIS03",
+      "title": "East Ramapo current bid, quote and RFP listings",
+      "url": "https://www.ercsd.org/departments/purchasing/current-bid-quote-and-rfp-listings",
+      "publisher": "East Ramapo Central School District",
+      "checked_on": "2026-10-20",
+      "locators": [
+        "Open Listings: RFP-ER-5-27 and Addendum 1"
+      ],
+      "inspection": "Fresh public index check shows Addendum 1; no later addendum listed at inspection.",
+      "evidence_kind": "official procurement index"
+    },
+    {
+      "id": "EIS04",
+      "title": "Workers compensation proof for government permits, licenses and contracts",
+      "url": "https://www.wcb.ny.gov/content/main/coverage-requirements-wc/permits-licenses-contracts.jsp",
+      "publisher": "New York State Workers Compensation Board",
+      "checked_on": "2026-10-20",
+      "locators": [
+        "Complying with the law"
+      ],
+      "evidence_kind": "official regulatory guidance"
+    },
+    {
+      "id": "EIS05",
+      "title": "Disability and Paid Family Leave proof for government contracts",
+      "url": "https://apps.wcb.ny.gov/content/main/coverage-requirements-db/permits-licenses-contracts.jsp",
+      "publisher": "New York State Workers Compensation Board",
+      "checked_on": "2026-10-20",
+      "locators": [
+        "Complying with the law"
+      ],
+      "evidence_kind": "official regulatory guidance"
+    },
+    {
+      "id": "EIS06",
+      "title": "Obtaining Form DB-120.1",
+      "url": "https://www.wcb.ny.gov/content/onlineforms/obtainDB120-1.jsp",
+      "publisher": "New York State Workers Compensation Board",
+      "checked_on": "2026-10-20",
+      "locators": [
+        "Overview"
+      ],
+      "evidence_kind": "official forms guidance"
+    },
+    {
+      "id": "EIS07",
+      "title": "Requirements for businesses applying for government permits, licenses or contracts",
+      "url": "https://www.wcb.ny.gov/content/main/Employers/requirements-businesses-applying-government-permits-licenses-contracts.pdf",
+      "publisher": "New York State Workers Compensation Board",
+      "checked_on": "2026-10-20",
+      "locators": [
+        "p. 1"
+      ],
+      "evidence_kind": "official forms guidance"
+    },
+    {
+      "id": "EIS08",
+      "title": "Certificate of Attestation of Exemption CE-200",
+      "url": "https://www.wcb.ny.gov/content/ebiz/wc_db_exemptions/verifyCE200Overview.jsp",
+      "publisher": "New York State Workers Compensation Board",
+      "checked_on": "2026-10-20",
+      "locators": [
+        "Request Certificate of Attestation of Exemption"
+      ],
+      "evidence_kind": "official exemption guidance"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "EIR01",
+      "topic": "Commercial general liability",
+      "status": "direct RFP requirement",
+      "requirement": "Occurrence $1,000,000; general and products/completed-operations aggregates $2,000,000; personal/advertising injury $1,000,000.",
+      "source_ids": [
+        "EIS01"
+      ],
+      "locator": "p. 5",
+      "checked_on": "2026-10-20",
+      "pilot_action": "Request a written coverage comparison against every line; do not substitute an individual malpractice policy for agency CGL."
+    },
+    {
+      "id": "EIR02",
+      "topic": "Professional errors and omissions",
+      "status": "direct RFP requirement",
+      "requirement": "Occurrence $2,000,000; aggregate $2,000,000. Claims-made retrodate before contract inception; coverage continues two years after work ends.",
+      "source_ids": [
+        "EIS01"
+      ],
+      "locator": "pp. 5, 8-9",
+      "checked_on": "2026-10-20",
+      "pilot_action": "Broker must confirm agency, employed clinicians and approved substitutes are insured for actual school-SLP services. Obtain renewal or extended-reporting solution and cost for the post-service obligation; buyer must accept claims-made wording."
+    },
+    {
+      "id": "EIR03",
+      "topic": "Workers compensation / disability",
+      "status": "direct RFP requirement",
+      "requirement": "Statutory workers compensation and NY disability; sample also lists employers liability.",
+      "source_ids": [
+        "EIS01"
+      ],
+      "locator": "pp. 5, 8-9",
+      "checked_on": "2026-10-20",
+      "pilot_action": "Use WCB evidence schedule below. Do not assume a 1099 label establishes exemption; establish the employer and insurer arrangement before dispatch."
+    },
+    {
+      "id": "EIR04",
+      "topic": "Insurer quality / authorization",
+      "status": "direct RFP and sample conflict",
+      "requirement": "p5: NY-licensed, A.M. Best A-minus minimum. p9: authorized, secured-or-better; NY-licensed preferred.",
+      "source_ids": [
+        "EIS01"
+      ],
+      "locator": "pp. 5, 7, 9",
+      "checked_on": "2026-10-20",
+      "pilot_action": "Quote to the stronger p5 standard and obtain written buyer acceptance of the actual insurer; do not silently relax to the sample wording."
+    },
+    {
+      "id": "EIR05",
+      "topic": "Cancellation / nonrenewal",
+      "status": "direct RFP ambiguity",
+      "requirement": "30-day cancellation/nonrenewal; malformed 10-unit nonpayment wording.",
+      "source_ids": [
+        "EIS01"
+      ],
+      "locator": "p. 5",
+      "checked_on": "2026-10-20",
+      "pilot_action": "Buyer should confirm intended notice interval for nonpayment and responsible notifier. Broker should provide actual available endorsement wording, not promise an unsupported notice on a certificate."
+    },
+    {
+      "id": "EIR06",
+      "topic": "Additional insured / endorsements",
+      "status": "direct RFP plus samples",
+      "requirement": "District/Board on CGL. Samples: primary/noncontributory; CG2026/equivalent; ongoing/completed operations. Exceptions: WC, disability, professional liability.",
+      "source_ids": [
+        "EIS01"
+      ],
+      "locator": "pp. 5, 7, 9",
+      "checked_on": "2026-10-20",
+      "pilot_action": "Have broker map insured parties and policy forms, attach completed endorsements, and obtain district acceptance of equivalents. Do not add the district to professional liability by inference."
+    },
+    {
+      "id": "EIR07",
+      "topic": "Excess liability",
+      "status": "sample provision; applicability unresolved",
+      "requirement": "$1,000,000 occurrence/aggregate, follow-form.",
+      "source_ids": [
+        "EIS01"
+      ],
+      "locator": "pp. 8-9",
+      "checked_on": "2026-10-20",
+      "pilot_action": "Include in quote scope pending written district clarification. Identify underlying policies and any excluded professional, auto, abuse or privacy exposures; follow-form is not evidence all risks are insured."
+    },
+    {
+      "id": "EIR08",
+      "topic": "Automobile liability",
+      "status": "sample provision; applicability unresolved",
+      "requirement": "$1,000,000 combined single limit: owned, hired, borrowed, non-owned.",
+      "source_ids": [
+        "EIS01"
+      ],
+      "locator": "p. 9",
+      "checked_on": "2026-10-20",
+      "pilot_action": "Disclose actual vehicle use and travel between schools. Ask whether hired/non-owned coverage satisfies a business with no owned vehicles. No student transportation is proposed."
+    },
+    {
+      "id": "EIR09",
+      "topic": "CGL aggregate / premises",
+      "status": "sample conflict; applicability unresolved",
+      "requirement": "p9 per-project aggregate; p8 off-premises-only parenthetical.",
+      "source_ids": [
+        "EIS01"
+      ],
+      "locator": "pp. 8-9",
+      "checked_on": "2026-10-20",
+      "pilot_action": "Request written governing schedule; do not omit CGL for on-site work based on the parenthetical because p5 directly requires it."
+    },
+    {
+      "id": "EIR10",
+      "topic": "Performance bond",
+      "status": "expressly optional/conditional",
+      "requirement": "If required: NY-admitted surety; district obligee; original authority/acknowledgments.",
+      "source_ids": [
+        "EIS01"
+      ],
+      "locator": "pp. 8-9",
+      "checked_on": "2026-10-20",
+      "pilot_action": "Ask whether this procurement invokes the bond and, if so, its amount and terms. Do not present a bond as a confirmed mandatory cost."
+    },
+    {
+      "id": "EIR11",
+      "topic": "Bid insurance certification",
+      "status": "mandatory submission item",
+      "requirement": "Bid-time COI; insurer representative and bidder sign p10.",
+      "source_ids": [
+        "EIS01",
+        "EIS02"
+      ],
+      "locator": "p. 10; Addendum 1 Q1",
+      "checked_on": "2026-10-20",
+      "pilot_action": "Collect the signed form and actual evidence before final bid assembly. A broker quotation alone is not a substitute for the requested certificate; clarify the expected in-force date and all forms due with bid."
+    },
+    {
+      "id": "EIR12",
+      "topic": "Deductibles / indemnity",
+      "status": "contractual obligation; human review",
+      "requirement": "Sample allocates deductibles/SIR to contractor; notarized hold-harmless form.",
+      "source_ids": [
+        "EIS01"
+      ],
+      "locator": "pp. 8, 14",
+      "checked_on": "2026-10-20",
+      "pilot_action": "Have broker and counsel compare contractual liability, defense costs and uninsured obligations against policy wording before signature; insurance limits do not cap contractual exposure."
+    },
+    {
+      "id": "EIR13",
+      "topic": "Waiver of subrogation",
+      "status": "not identified in reviewed provisions",
+      "requirement": "No express requirement identified.",
+      "source_ids": [
+        "EIS01"
+      ],
+      "locator": "pp. 5, 7-10",
+      "checked_on": "2026-10-20",
+      "pilot_action": "Ask if the final agreement adds one. Do not describe a waiver as a verified RFP mandate."
+    }
+  ],
+  "wcb_evidence_schedule": [
+    {
+      "id": "EIW01",
+      "coverage": "Workers compensation",
+      "insured_proof": "C-105.2; U-26.3 for NYSIF",
+      "alternative": "SI-12 for approved self-insurance; SIG-105.2 for group self-insurance; CE-200 only if genuinely exempt.",
+      "source_ids": [
+        "EIS04"
+      ],
+      "control": "An ordinary ACORD liability certificate does not establish this coverage."
+    },
+    {
+      "id": "EIW02",
+      "coverage": "NY disability and Paid Family Leave",
+      "insured_proof": "DB-120.1",
+      "alternative": "DB-155 for approved self-insurance; CE-200 only if genuinely exempt.",
+      "source_ids": [
+        "EIS05",
+        "EIS06"
+      ],
+      "control": "Use the carrier or its authorized NY agent to issue DB-120.1; a broker alone is not an authorized issuer. ACORD alone is insufficient."
+    },
+    {
+      "id": "EIW03",
+      "coverage": "Entity identity",
+      "insured_proof": "Evidence matches contracting legal name and FEIN.",
+      "alternative": null,
+      "source_ids": [
+        "EIS07"
+      ],
+      "control": "Do not upload FEIN or policy documents into the public research repository; store them in a restricted supplier record."
+    },
+    {
+      "id": "EIW04",
+      "coverage": "Exemption validation",
+      "insured_proof": "Contract-specific CE-200, if valid for actual facts.",
+      "alternative": null,
+      "source_ids": [
+        "EIS08"
+      ],
+      "control": "The planned in-person employee model should be budgeted for coverage. Never infer exemption from small headcount, no current revenue, remote administration or out-of-state incorporation."
+    }
+  ],
+  "coverage_gap_matrix": [
+    {
+      "id": "EIG01",
+      "exposure": "Entity vicarious and direct professional liability",
+      "current_evidence": "No policy supplied.",
+      "gap": "A clinician personal policy may not insure the contracting company.",
+      "next_evidence": "Carrier confirmation of named insureds, school-SLP scope, employees/approved substitutes, territory and defense basis.",
+      "classification": "recommended underwriting review"
+    },
+    {
+      "id": "EIG02",
+      "exposure": "Claims-made continuity",
+      "current_evidence": "No retroactive date or prior policy history supplied.",
+      "gap": "A new policy could exclude earlier acts; cancellation could leave later-reported claims uncovered.",
+      "next_evidence": "Written retrodate plus uninterrupted renewal/ERP plan through required post-work period; price separately.",
+      "classification": "contract-linked planning"
+    },
+    {
+      "id": "EIG03",
+      "exposure": "Abuse / molestation allegations involving minors",
+      "current_evidence": "No exclusion or endorsement supplied; reviewed RFP does not state a separate limit.",
+      "gap": "CGL/E&O coverage may contain exclusions or sublimits.",
+      "next_evidence": "Broker proposes coverage and exclusions with explicit limits and defense treatment; agency evaluates safeguarding controls.",
+      "classification": "recommended risk coverage, not verified RFP mandate"
+    },
+    {
+      "id": "EIG04",
+      "exposure": "Privacy / cyber incident",
+      "current_evidence": "No cyber policy or district-approved data agreement supplied; reviewed RFP does not specify a cyber limit.",
+      "gap": "Operational student references, clinician PII and invoices may create breach response exposure even when district holds clinical records.",
+      "next_evidence": "Optional cyber/privacy quote aligned to approved data flows; verify breach response, vendor incidents and exclusions. Recheck final data agreement for insurance additions.",
+      "classification": "recommended risk coverage, not verified RFP mandate"
+    },
+    {
+      "id": "EIG05",
+      "exposure": "Travel between assigned sites",
+      "current_evidence": "Vehicle ownership and usage unknown.",
+      "gap": "Personal vehicle cover may not satisfy company auto liability or contractual endorsements.",
+      "next_evidence": "Actual vehicle-use schedule and broker/buyer answer on auto requirement; no pupil transport assumed.",
+      "classification": "sample-clause clarification"
+    },
+    {
+      "id": "EIG06",
+      "exposure": "Employer and subcontractor coverage",
+      "current_evidence": "Employment entity, payroll arrangement and subcontract consent unverified.",
+      "gap": "Misclassified workers, incomplete employer evidence or excluded subcontractors can leave gaps.",
+      "next_evidence": "Confirm employer of record, WC/DBL/PFL proof and insurer classification; vet approved subcontractor coverage without assuming it replaces agency insurance.",
+      "classification": "contract and statutory evidence gate"
+    },
+    {
+      "id": "EIG07",
+      "exposure": "Contract indemnity and defense costs",
+      "current_evidence": "RFP p14 broad form; no executed contract or insurance reviewed.",
+      "gap": "Contract promises may exceed available insurance; retentions and defense can consume cash.",
+      "next_evidence": "Human legal/insurance comparison and explicit retained-risk decision before signature.",
+      "classification": "contract review"
+    },
+    {
+      "id": "EIG08",
+      "exposure": "Certificates versus actual coverage",
+      "current_evidence": "No certificate or endorsement received.",
+      "gap": "A certificate description may not amend the policy or supply required endorsements.",
+      "next_evidence": "Compare issued policy schedule and endorsements with buyer requirements; track effective/expiry dates and material changes.",
+      "classification": "operating control"
+    }
+  ],
+  "broker_rfq_brief": {
+    "status": "Copy-ready internal draft. No broker contacted; no application, quote or policy obtained.",
+    "subject": "Insurance review and quotation request - proposed East Ramapo school SLP staffing pilot, RFP-ER-5-27",
+    "opening": "Please review the attached official solicitation, Addendum 1 and requirement matrix, identify conflicts or unavailable terms, and prepare a written coverage proposal. Please do not bind coverage or treat this draft as a completed insurance application.",
+    "proposed_operations": [
+      "One experienced New York-qualified school SLP and one cleared backup initially; proposed expansion ceiling three active clinicians only after assignments and coverage are approved.",
+      "In-person speech-language services to minors at district-assigned public and non-public schools in East Ramapo, New York; clinical decisions and delivery remain with qualified clinicians.",
+      "Initial contract would begin only after award and required approvals; actual start date, sites, caseload, student ages, weekly hours and contract value remain unverified.",
+      "No student transportation, clinic premises, teletherapy or unapproved subcontracting is proposed. Any change requires a new exposure and buyer review.",
+      "AI may assist staffing administration, reminders and draft reconciliation under human controls. No autonomous therapy, diagnosis, IEP decisions or unapproved student-data processing is proposed."
+    ],
+    "applicant_inputs_to_complete": [
+      "Legal name, entity type, state registrations, principal address, FEIN and authorized signer.",
+      "Ownership, operating history, professional-services structure and prior related experience.",
+      "Existing policies, carriers, limits, retroactive dates, loss runs, claims or known circumstances; all currently unknown, not assumed clean.",
+      "Actual payroll by job classification, states, projected paid hours, employees versus approved contractors, and employer-of-record arrangement.",
+      "Actual projected revenue and contract value. Any unit-economics figures from the pilot workbook are illustrative planning scenarios until confirmed; label them accordingly.",
+      "Named clinician credentials and scope, hiring/reference/fingerprint process, supervision and substitute approval controls.",
+      "Vehicle ownership, hired/non-owned use, travel frequency and explicit absence or presence of pupil transport.",
+      "Data categories, retention, access control, district-approved systems, vendor contracts and incident-response arrangements."
+    ],
+    "quote_scope": "Map each EIR requirement to proposed policy, limit, deductible/SIR, form, exclusions, named/additional insureds and evidence. Quote the broader sample schedule pending buyer confirmation; separately price optional abuse/privacy enhancements and any bond only if buyer invokes it.",
+    "requested_return": [
+      "Coverage matrix with compliant / clarification needed / unavailable for each requirement; no blanket compliance assertion.",
+      "Carrier legal name, NY authorization and current financial rating; policy term and earliest realistic binding/evidence date.",
+      "Annual premium, taxes/fees, deposit, installments/finance charges, audit basis/minimum earned premium and cancellation terms separately by coverage.",
+      "Claims-made continuity or ERP cost and conditions; aggregate sharing and defense inside/outside limits.",
+      "Copies/specimens of required additional-insured, primary/noncontributory, aggregate and notice endorsements; identify waiver-of-subrogation only if required by later written terms.",
+      "Ability to complete RFP p10 representative certification and issue correct liability COI plus WCB-specific forms before the submission deadline; list what must be bound first.",
+      "Open items requiring buyer, lawyer, accountant or operator answers before binding."
+    ]
+  },
+  "insurance_budget": {
+    "status": "No premium quote or policy evidence obtained; dollar amounts remain unpriced.",
+    "annual_premium_usd": null,
+    "deposit_usd": null,
+    "deductible_or_sir_usd": null,
+    "post_work_coverage_cost_usd": null,
+    "basis": "Do not substitute internet averages or an individual SLP premium for agency pricing at the RFP limits. Any model allowance must be labeled an assumption and replaced by a written carrier quote.",
+    "cost_components": [
+      "CGL",
+      "Agency professional liability",
+      "WC and employers liability",
+      "DBL/PFL",
+      "Excess and auto pending sample clarification",
+      "Optional abuse/privacy enhancements",
+      "Bond only if invoked",
+      "Broker/tax/finance charges",
+      "Claims-made continuity or ERP",
+      "Deductible/SIR cash exposure"
+    ],
+    "allocation_rule": "Use policy cash payments on their actual due dates in cash runway. For economic allocation, distinguish fixed annual insurance from payroll-audited variable premiums; do not add the same WC burden again if already included in loaded payroll.",
+    "bid_control": "Do not approve a final bid rate while material required insurance remains unquoted."
+  },
+  "buyer_clarification_questions": [
+    {
+      "id": "EIQ01",
+      "question": "Which insurance schedule governs RFP-ER-5-27: page 5, the sample on pages 7-8, or page 9? Please confirm excess, auto, per-project aggregate and whether the off-premises-only CGL parenthetical applies.",
+      "related_requirement_ids": [
+        "EIR01",
+        "EIR07",
+        "EIR08",
+        "EIR09"
+      ]
+    },
+    {
+      "id": "EIQ02",
+      "question": "Please specify all insurance documents required with the proposal, policy effective dates, and whether additional-insured endorsements and WCB forms must accompany the bid-time COI and completed page-10 certification.",
+      "related_requirement_ids": [
+        "EIR11"
+      ]
+    },
+    {
+      "id": "EIQ03",
+      "question": "Please confirm insurer eligibility/rating, accepted additional-insured forms and scope, cancellation/nonrenewal/nonpayment notice intervals, and who must give notice. Is any waiver of subrogation required?",
+      "related_requirement_ids": [
+        "EIR04",
+        "EIR05",
+        "EIR06",
+        "EIR13"
+      ]
+    },
+    {
+      "id": "EIQ04",
+      "question": "For claims-made professional liability, is continued coverage or an extended-reporting arrangement acceptable for the two-year post-work obligation, and what date starts that period if annual renewals occur?",
+      "related_requirement_ids": [
+        "EIR02"
+      ]
+    },
+    {
+      "id": "EIQ05",
+      "question": "For an agency with no owned vehicles and no pupil transport, what hired/non-owned auto evidence is acceptable? Is a performance bond required here, and at what amount?",
+      "related_requirement_ids": [
+        "EIR08",
+        "EIR10"
+      ]
+    }
+  ],
+  "operating_controls": [
+    {
+      "id": "EIC01",
+      "rule": "Human insurance reviewer approves issued documents and endorsements against the final buyer schedule; an AI extracted limit does not approve coverage.",
+      "acceptance": "Missing or unresolved required proof prevents bid-ready status."
+    },
+    {
+      "id": "EIC02",
+      "rule": "Assignment release checks entity, clinician, service, site, policy term and approved limits.",
+      "acceptance": "Expired policy, unapproved service or unmatched named entity blocks dispatch."
+    },
+    {
+      "id": "EIC03",
+      "rule": "Record policy renewal, notice deadlines, retrodates and two-year post-work obligation with evidence and accountable owner.",
+      "acceptance": "Cancellation or nonrenewal creates an urgent human action; the system never invents continuity or backdates evidence."
+    },
+    {
+      "id": "EIC04",
+      "rule": "Restricted document store holds insurance evidence; public research stores only source rules and readiness status.",
+      "acceptance": "No FEIN, loss runs, policyholder private data or issued policy files are pushed to the research repository."
+    },
+    {
+      "id": "EIC05",
+      "rule": "The reviewed final contract and buyer written clarifications version the insurance checklist.",
+      "acceptance": "AI cannot silently resolve conflicting sample terms or mark the stronger requirement optional."
+    }
+  ],
+  "evidence_limits": [
+    "This is a research and quotation-preparation pack, not a coverage opinion, binder, quote, exemption determination or executed contract.",
+    "No applicant-specific entity, claims, payroll, premiums or existing insurance has been verified.",
+    "Addendum 1 is the latest on the public index at inspection; recheck the procurement system and official page before submission.",
+    "No separate cyber, abuse/molestation or waiver-of-subrogation mandate was identified in the inspected RFP insurance provisions; final agreements may change requirements.",
+    "Sample provisions are unresolved applicability issues. They are included for pricing and clarification, not declared optional merely because their heading says sample."
+  ]
+}

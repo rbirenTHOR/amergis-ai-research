@@ -2,7 +2,7 @@
 
 Public-source research collected on **October 20, 2026**, with an independent staffing operating model and a map of potential AI agent integrations.
 
-Start with [the pilot market selection](outputs/school-therapy-pilot-selection.html), then [the school therapy requirements pack](outputs/school-therapy-requirements.html), [the digital product roadmap](outputs/amergis-product-roadmap.html) and [the API and reconstruction report](outputs/amergis-api-reconstruction.html). Download or clone this repository and open the HTML file locally; GitHub displays HTML source rather than executing the report.
+Start with [the East Ramapo pilot plan](outputs/east-ramapo-pilot-plan.html), then [the pilot market selection](outputs/school-therapy-pilot-selection.html), [the school therapy requirements pack](outputs/school-therapy-requirements.html), [the digital product roadmap](outputs/amergis-product-roadmap.html) and [the API and reconstruction report](outputs/amergis-api-reconstruction.html). Download or clone this repository and open the HTML file locally; GitHub displays HTML source rather than executing the report.
 
 ## Deliverables
 
@@ -14,6 +14,7 @@ Start with [the pilot market selection](outputs/school-therapy-pilot-selection.h
 | Product roadmap | [HTML](outputs/amergis-product-roadmap.html) | [JSON](outputs/amergis-product-roadmap.json): build/establish decisions, reconstruction feasibility and release gates |
 | School therapy requirements | [HTML](outputs/school-therapy-requirements.html) | [JSON](outputs/school-therapy-requirements.json): 43 requirements, 26 sources, 12 objects, 9 bounded state models and 26 proposed acceptance scenarios |
 | Pilot market selection | [HTML](outputs/school-therapy-pilot-selection.html) | [JSON](outputs/school-therapy-pilot-selection.json): six-state comparison, 17 buyers, 70 source records, current entry routes and eligibility gates |
+| East Ramapo pilot plan | [HTML with cost calculator](outputs/east-ramapo-pilot-plan.html) | [JSON](outputs/east-ramapo-pilot-plan.json): therapist and credential plan, insurance, bid checklist, illustrative economics, eight digital capabilities and eight bounded agent roles |
 | Public offices | [61 normalized office records](outputs/amergis-public-locations.json) | Addresses, phones, public branch emails, service categories and preserved discrepancies |
 
 The research includes 5,519 public listing observations, 20 role families, 63 proposed tasks, 12 workflow stages, six contract packets, and 12 platform/surface groups. Listing observations are not unique vacancies, placements or employee counts.
@@ -25,6 +26,8 @@ Observed facts, historical supplier statements, vendor capabilities and proposed
 The blueprint is not a deployed staffing system. Exact Amergis configuration, permissions, rules and integration mappings remain unverified. Vendor documentation does not grant access to an Amergis tenant. The API report identifies applicable access conditions and unresolved dependencies.
 
 The current requirements work targets **schools and therapists**, with SLP as a worked example and OT/PT differences recorded. The market screen recommends validating an in-person SLP pilot in **Rockland County, New York**, starting with East Ramapo and then Rockland BOCES. Frederick County, Maryland is a conditional ongoing-entry alternative. These are research priorities, not buyer commitments or a conclusion that this operator qualifies. Current deadlines are an October 20, 2026 snapshot; later addenda must be checked. Company readiness, clinician availability, actual orders and economics remain unverified.
+
+The selected East Ramapo plan now uses the user's confirmed **new-company baseline, with no confirmed therapists or insurance**. It proposes one experienced in-person SLP and a qualified backup, with growth only against funded assignments. The October 30 bid is not currently ready. Insurance and provider evidence, organization setup and truthful signed certifications must precede any submission. The calculator uses analyst assumptions and unquoted allowances, not actual district rates, provider offers or insurer premiums; post-work professional-liability continuation remains unpriced. Custom software is outside the bid critical path.
 
 District contract examples retain their dates and applicability; they are not adopted commercial terms. The staffing model preserves school-owned service records and separates approved service obligations, actual services, worked time and district billing. Clinical/IEP decisions and Medicaid claims are outside the initial product scope. The bounded domain model covers one provider/work block; broader school scenarios and eight dedicated case-design gaps are explicit. No interviews, outreach, registrations, bids, live integrations or operating-performance measurements were performed.
 
@@ -43,6 +46,7 @@ python3 work/amergis-phase3/build_report.py
 python3 work/amergis-phase4/build_roadmap.py
 python3 work/amergis-phase5/build_pack.py
 python3 work/amergis-phase6/build_selection.py
+python3 work/amergis-phase7/build_plan.py
 ```
 
 Run in the listed order. The builds use the committed October 2026 evidence snapshot, not live data. The normalized public-office dataset is a committed input to phase 3.
@@ -58,6 +62,8 @@ npm run check
 
 Checks exercise local DOM rendering, navigation, filtering, artifact links and selected evidence distinctions. The school requirements checks also validate source/trace references, state-graph consistency and artificial Decimal financial fixtures. Pilot-selection checks validate source and buyer references, snapshot dates and purchasing-route distinctions. They do not test an implemented staffing product, live integrations or clinical decisions, and do not replace rendered browser verification. Scenario acceptance tests are specified for future implementation; fixture checks do not execute those behaviors.
 
+East Ramapo checks also reconcile the plan with its current inputs, validate illustrative economics independently with Decimal, and compare the interactive calculator with stored scenario results. A passing check establishes internal consistency, not bid eligibility, available staffing, insurance coverage, actual economics or live operating readiness.
+
 ## Workbook
 
 The reviewed `.xlsx` is included ready to use. Its optional source is `work/amergis-phase2/workbook/build.mjs`, which requires the Codex `@oai/artifact-tool` runtime. That runtime is not supplied or installed by this repository. Workbook validation evidence is retained in `work/amergis-phase2/workbook/verification.json`.
@@ -71,5 +77,6 @@ The reviewed `.xlsx` is included ready to use. Its optional source is `work/amer
 - `work/amergis-phase4/`: product portfolio, reconstruction feasibility, release sequence and report builder.
 - `work/amergis-phase5/`: school therapy requirements, primary-source evidence, domain specification, synthetic fixtures, traceability and independent review.
 - `work/amergis-phase6/`: regional buyer research, credential/entity and buyer-risk evidence, conditional market selection, builder, checks and independent review.
+- `work/amergis-phase7/`: East Ramapo bid, workforce, insurance, economics, operating-product plan, new-company launch gates, report builder and checks.
 
 The repository is private by default. It does not publish a website or enable GitHub Pages.

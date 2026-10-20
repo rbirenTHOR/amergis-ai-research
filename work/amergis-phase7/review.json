@@ -1,0 +1,146 @@
+{
+  "as_of": "2026-10-20",
+  "reviewer": "Independent East Ramapo pilot-plan reviewer",
+  "status": "pass",
+  "scope": "Evidence, consistency, completeness and illustrative arithmetic review of the planning pack. This is not confirmation of a qualified company, clinician, bid, policy, live software or legally cleared operation.",
+  "files_reviewed": [
+    "launch-core.json",
+    "bid-requirements.json",
+    "insurance.json",
+    "workforce.json",
+    "products.json",
+    "economics.json",
+    "check_economics.py",
+    "outputs/east-ramapo-pilot-plan.html",
+    "outputs/east-ramapo-pilot-plan.json",
+    "check_report.cjs"
+  ],
+  "findings": [
+    {
+      "id": "ERR01",
+      "priority": "P2",
+      "topic": "Complete minimum-provider responsibility gate",
+      "finding": "The initial bid matrix summarized satisfactory performance from page 4, but did not preserve page 7's explicit no-record-of-unsatisfactory-performance minimum.",
+      "required_change": "State the page-7 minimum explicitly as an unverified company responsibility requirement. Require truthful history and buyer clarification for a new entity; selected positive references do not by themselves establish compliance.",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "RFP PDF page 7, Minimum Provider Requirements",
+      "status": "resolved_verified",
+      "disposition": "Verified EBR36 and eligibility.organization explicitly preserve page-7 no-unsatisfactory-performance minimum, truthful full relevant history and unresolved new-entity evidence. EBQ02 asks buyer how new-entity evidence is evaluated."
+    },
+    {
+      "id": "ERR02",
+      "priority": "P2",
+      "topic": "Post-work professional-liability cost",
+      "finding": "The insurance workstream identifies the two-year post-work coverage obligation, but the original economics model did not explicitly identify its unpriced continuation/extended-reporting cost outside the first-year premium and startup funding calculation.",
+      "required_change": "Add an explicit unpriced post-work cost/exclusion and pricing/closure reserve gate. Do not imply the annual placeholder or startup cash target funds the full contract lifecycle.",
+      "source_ids": [
+        "EIS01",
+        "EBS02"
+      ],
+      "locator": "RFP PDF pages 5, 8-9, Errors and Omissions Insurance; economics scope and pricing gates",
+      "status": "resolved_verified",
+      "disposition": "Verified economics.scope.excludes, ECO-U01 and ECO-G07 explicitly exclude and require a separately funded, broker-priced two-year post-work E&O continuation/reporting solution. First-year cash/contingency are not claimed to fund it."
+    },
+    {
+      "id": "ERR03",
+      "priority": "P2",
+      "topic": "Technology setup effort and cost reconciliation",
+      "finding": "The model includes $2,500 for configured tools while the product plan estimates 38-76 staff-hours. At the model's base $65/hour operator cost, the effort range is $2,470-$4,940; the initial allowance only covers its lower end.",
+      "required_change": "Explicitly reconcile the effort range to the cost allowance, show the higher-effort funding effect or state the unfunded gap, and keep subscriptions/provider setup separate. This is a planning estimate, not a quote or committed delivery schedule.",
+      "source_ids": [],
+      "locator": "products.json budget_and_effort_note; economics.json technology_configuration_setup and admin_loaded_rate",
+      "status": "resolved_verified",
+      "disposition": "Verified setup_labor_basis and changed inputs: 76h \u00d7 $65 = $4,940 base/conservative; 76h \u00d7 $75 = $5,700 stress. Recalculated one-clinician startup targets $74,223.05 / $101,350.91 / $137,013.58. All 378 numeric assertions pass after the change."
+    },
+    {
+      "id": "ERR04",
+      "priority": "P2",
+      "topic": "Bidder entity exclusion representation",
+      "finding": "The initial operating screening description focused on workers while RFP page 15 also makes a representation about the bidder entity itself.",
+      "required_change": "Require evidence to substantiate the company exclusion/ineligibility representation before signature. Preserve the separate express monthly employee/subcontractor checks; do not invent a monthly company-check mandate.",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "RFP PDF page 15, first paragraph and monthly-check paragraph",
+      "status": "resolved_verified",
+      "disposition": "Verified EBR37 and EBF07 require bidder/entity and employee/contractor exclusion/ineligibility evidence before initial representation. EBR24 retains monthly employee/subcontractor checks; no monthly entity mandate is invented."
+    }
+  ],
+  "checks": [
+    {
+      "id": "ERC01",
+      "topic": "Submission and questions",
+      "result": "pass",
+      "evidence": "RFP pages 1-3 and 6 support electronic BidNet submission October 30, 2026 at noon local time, questions October 27 at noon; October Eastern time is EDT. Public addendum warns only the purchasing channel is available before award. Portal fields and later addenda remain unchecked gates."
+    },
+    {
+      "id": "ERC02",
+      "topic": "Mandatory forms",
+      "result": "pass",
+      "evidence": "RFP pages 10-17 support bid-time COI, insurance representative and bidder acknowledgments, signed declarations, three notarized forms and W-9. No fabricated forms, signatures, eligibility or receipt are claimed."
+    },
+    {
+      "id": "ERC03",
+      "topic": "Billing timing",
+      "result": "pass",
+      "evidence": "RFP page 6 visually inspected: invoice and attendance must be received within 30 calendar days of service. Pack correctly avoids a net-30 promise and separates receipt, approval and cash."
+    },
+    {
+      "id": "ERC04",
+      "topic": "Insurance schedule",
+      "result": "pass",
+      "evidence": "Direct page-5 CGL, E&O and statutory requirements are distinct from sample auto/excess/per-project provisions and the optional bond. Conflicting insurer/cancellation/sample language remains a buyer clarification. ACORD does not replace WCB proof."
+    },
+    {
+      "id": "ERC05",
+      "topic": "Credentials and current training",
+      "result": "pass",
+      "evidence": "Independently opened NYSED dual-credential matrix and Education Law 8208. Official NYSED indexed pages confirm second updated child-abuse workshop November 17, 2026 and October 1, 2026 fingerprint fee $107.50. Earlier pre-contact completion is clearly a pilot policy, not an invented statutory date."
+    },
+    {
+      "id": "ERC06",
+      "topic": "Workforce and backup",
+      "result": "pass",
+      "evidence": "W-2 model is a proposed baseline, not supplied company evidence. Backup requires a real qualified person, costed availability and district acceptance. Clinical authority stays with licensed humans and district IEP owners; no guaranteed volume is inferred."
+    },
+    {
+      "id": "ERC07",
+      "topic": "Digital permissions and records",
+      "result": "pass",
+      "evidence": "District platform/API and data permission remain unknown. The plan keeps clinical records, actual work, billable units and payroll distinct; agents cannot make hiring/clinical decisions, certify credentials, submit bids or release money independently."
+    },
+    {
+      "id": "ERC08",
+      "topic": "Source traceability",
+      "result": "pass",
+      "evidence": "All source_ids in the six input files resolved at inspection. Four prior-design source records in products.json explicitly name their provenance; every referenced prior record ID exists."
+    },
+    {
+      "id": "ERC09",
+      "topic": "Illustrative model arithmetic",
+      "result": "pass",
+      "evidence": "Executed check_economics.py: 9 scenario/scale cases, 12 sensitivity cases and 378 numeric assertions passed. Independently inspected formulas, insurance cash/P&L separation, owner financing, paid/billable units and conservative no-collection reserve. Source wages are contextual, not input market quotes."
+    },
+    {
+      "id": "ERC10",
+      "topic": "Truthful readiness and authority",
+      "result": "pass",
+      "evidence": "User-confirmed new-company baseline is reflected in launch-core: no confirmed therapists or insurance, explicit not-bid-ready status and mandatory evidence outstanding. No outreach, procurement, hiring, insurance purchase or bid is represented as completed or authorized by this plan."
+    },
+    {
+      "id": "ERC11",
+      "topic": "Generated report presentation and consistency",
+      "result": "pass",
+      "evidence": "Compared all six assembled modules with current inputs and inspected rendered DOM text/source: new-company/no-confirmed-clinician-or-insurance baseline, 37 bid requirements, corrected responsibility gates, $74,223.05 base funding, unpriced excluded post-work reserve and 76h configuration cost are present. check_report.cjs passed structural links, record coverage, filters, all nine calculator scenario/scale cases and invalid-input controls. This is source/in-memory DOM inspection, not a browser-render screenshot or live system test."
+    }
+  ],
+  "limits": [
+    "Review is bounded to the reviewed public sources and proposed plan as of October 20, 2026; current addenda and private portal fields require a final authorized check.",
+    "No company, clinician, insurer quote, official clearance, assigned work, fee schedule, payment history or district systems access has been independently established.",
+    "Passing model checks verifies arithmetic under assumptions, not a profitable or financeable pilot.",
+    "Generated HTML/source and in-memory DOM/calculator checks were reviewed; no rendered-browser inspection, live integration or operational acceptance test is claimed."
+  ],
+  "conclusion": "Pass for the research-backed proposed pilot plan and illustrative model. All four review findings were corrected and verified. The user-confirmed new company remains not bid-ready; no individual, policy, company registration, price, order or live system is established by this review."
+}

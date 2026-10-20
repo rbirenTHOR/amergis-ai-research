@@ -1,0 +1,1000 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-20",
+  "id": "ECON-ER-01",
+  "status": "planning_model_not_bid_quote",
+  "currency": "USD",
+  "summary": "A one-clinician pilot needs meaningful rate headroom and cash funding even with automated administration. The base case is intentionally explicit, not a forecast or an actual East Ramapo fee schedule.",
+  "scope": {
+    "model": "Hypothetical W-2, one to three experienced school SLPs, normalized 30-day service month",
+    "excludes": [
+      "Bespoke software/product development beyond the configured-tool setup allowance",
+      "Income taxes, borrowing/factoring fees, profit distributions and loan repayments",
+      "Business valuation, guaranteed district orders, awards and available named clinicians",
+      "Summer/holiday annualization and 12-month payroll guarantees",
+      "Clinical session/group billing rules not in executed district terms",
+      "Unquoted professional E&O continuation for two years after the work ends, including broker-approved renewal or extended-reporting cost; a separate closure reserve is required before a final funding decision."
+    ],
+    "employment_model_note": "W-2 is a planning assumption; confirm lawful employer/professional-entity structure. A 1099 contractor alternative needs separate legal classification, pay units, insurance, tax and availability analysis. Do not simply remove payroll burden to manufacture margin.",
+    "calendar_note": "Do not multiply a normalized service month by 12 to forecast a school-year contract. Actual start date, school calendar, closures, assignment changes and June 30, 2027 term end must replace this normalized view.",
+    "invoice_note": "The RFP requires invoice and attendance records within 30 calendar days of service. That is a submission deadline, not payment Net 30. Fee-for-service narrative is requested; no fixed price/unit worksheet is provided.",
+    "starting_position": "User-confirmed new company, no confirmed therapists and no insurance in place. This model budgets setup rather than assuming an existing operating platform, approved roster or bound coverage."
+  },
+  "sources": [
+    {
+      "id": "EFS01",
+      "title": "BLS Occupational Outlook Handbook \u2014 Speech-Language Pathologists",
+      "url": "https://www.bls.gov/ooh/healthcare/speech-language-pathologists.htm",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "checked_on": "2026-10-20",
+      "kind": "primary_government",
+      "supports": "May 2025 national annual median of $97,870; educational-services industry annual median $83,120.",
+      "limit": "National employees, multiple settings. Annual wage remains annual; no conversion into school-year hourly pay, agency bill rate or Rockland hiring offer."
+    },
+    {
+      "id": "EFS02",
+      "title": "EDU Healthcare \u2014 School SLP Jobs and salary expectations",
+      "url": "https://www.eduhealthcare.com/careers/school-slp-jobs",
+      "publisher": "EDU Healthcare",
+      "checked_on": "2026-10-20",
+      "kind": "primary_employer_general_guidance",
+      "supports": "Employer publishes general national contract-SLP pay discussion of $45\u201365/hour and annual school-SLP salaries $65,000\u201395,000.",
+      "limit": "Broad marketing guidance, not a dated Rockland job or accepted offer. Not used to set a market clearing price."
+    },
+    {
+      "id": "EFS03",
+      "title": "Summit School at Nyack \u2014 Speech-Language Pathologist Leave Replacement listing visible on Indeed",
+      "url": "https://www.indeed.com/jobs?l=Nyack%2C+NY&q=SLP",
+      "publisher": "Indeed listing attributed to Summit Children\u2019s Residence Center",
+      "checked_on": "2026-10-20",
+      "kind": "employer_attributed_jobboard_discovery",
+      "supports": "Visible job description states $60/hour, in-person school role, September 1, 2026\u2013January 29, 2027, NY SLP license and TSSLD.",
+      "limit": "Direct employer publication was not independently retrieved. Dynamic job-board evidence is a discovery lead only, excluded from verified benchmark inputs; availability unverified."
+    },
+    {
+      "id": "EFS04",
+      "title": "Adelphi Staffing \u2014 Spring Valley SLP EDU-1564-02 listing visible on Monster",
+      "url": "https://www.monster.com/job-openings/speech-language-pathologist-slp-spring-valley-ny--f3b23b27-b3a2-4d64-a362-cd05599d4f18",
+      "publisher": "Monster listing attributed to Adelphi Staffing",
+      "checked_on": "2026-10-20",
+      "kind": "employer_attributed_jobboard_discovery",
+      "supports": "Search-indexed local school, on-site contract SLP posting states $60\u201365/hour and reference EDU-1564-02.",
+      "limit": "Primary employer detail not independently retrieved. Discovery only: no confirmed W-2/1099 terms, actual vacancy, paid indirect time, accepted offer or connection to an awarded East Ramapo order."
+    },
+    {
+      "id": "EFS05",
+      "title": "Little Leaps & Sounds \u2014 Pediatric SLP/OT/PT independent contractor advertisement",
+      "url": "https://www.jobserve.com/us/en/extjob/PEDIATRIC-SLP-OT-PT-INDEPENDENT-CONTRACTORS-in-Nyack-NewYork-USA-BF5133BC62970B49DC/",
+      "publisher": "JobServe listing attributed to Little Leaps & Sounds LLC",
+      "checked_on": "2026-10-20",
+      "kind": "employer_attributed_jobboard_discovery",
+      "supports": "October 15, 2026 listing advertises Rockland preschool CPSE independent-contractor work at $95 per direct-service hour, prorated for 30-minute sessions.",
+      "limit": "Different employment and service model; direct employer details not independently retrieved. Do not compare with a paid-all-hours W-2 wage or double session rates to estimate guaranteed earnings."
+    },
+    {
+      "id": "EFS06",
+      "title": "East Ramapo RFP-ER-5-27 \u2014 professional E&O and invoicing requirements",
+      "url": "https://resources.finalsite.net/images/v1791482107/ercsdorg/sukltm9f2kp0petz1047/RFP-ER-5-27SpeechLanguagePathologyServices.pdf",
+      "publisher": "East Ramapo Central School District",
+      "checked_on": "2026-10-20",
+      "kind": "primary_government_solicitation",
+      "supports": "Professional E&O continuation for two years after work ends (pp. 5, 8\u20139); invoice and attendance submission within 30 days of service (p. 6).",
+      "limit": "Insurance workstream visually verified the original scanned provisions. Broker and buyer must settle the compliant post-service renewal or reporting solution and actual cost. No payment Net 30 term is inferred."
+    }
+  ],
+  "verified_pay_context": [
+    {
+      "id": "PAY01",
+      "source_ids": [
+        "EFS01"
+      ],
+      "geography": "U.S. national",
+      "basis": "annual median employee wage, May 2025",
+      "values": {
+        "all_settings": 97870,
+        "educational_services": 83120
+      },
+      "model_use": "Context only; never converted into agency hourly pay."
+    },
+    {
+      "id": "PAY02",
+      "source_ids": [
+        "EFS02"
+      ],
+      "geography": "U.S. national employer guidance",
+      "basis": "general contract hourly pay discussion, not local offer",
+      "values": {
+        "hourly_low": 45,
+        "hourly_high": 65
+      },
+      "model_use": "Broad context only; local accepted compensation remains an open requirement."
+    }
+  ],
+  "local_pay_evidence_gap": "No direct-employer local SLP pay page was independently verified in this bounded pass. EFS03\u2013EFS05 are separately labeled discovery leads and are not inputs. Budget $70/$75/$80 paid-hour scenarios provisionally and replace with actual clinician terms before pricing.",
+  "input_definitions": [
+    {
+      "key": "paid_hours",
+      "unit": "hours/clinician/30-day normalized service month",
+      "provenance_kind": "analyst_estimate",
+      "note": "All compensable clinician work and paid absence assumed in the month, including documentation, meetings, travel between work sites and required training; not only student contact. 140 is a modeling input, not a guaranteed assignment or fixed 35-hour workweek."
+    },
+    {
+      "key": "billable_hour_equivalents",
+      "unit": "accepted revenue hour-equivalents/clinician/30-day normalized service month",
+      "provenance_kind": "analyst_estimate",
+      "note": "Analytical denominator only. Does not assert the district buys hours. Map the actual fee schedule and accepted units into revenue; do not conflate clinical minutes, group participants, paid time and billable units."
+    },
+    {
+      "key": "pay_rate",
+      "unit": "USD/paid clinician hour",
+      "provenance_kind": "analyst_estimate",
+      "note": "Hypothetical W-2 gross wage, to replace with accepted clinician pay and lawful employment terms. No 1099 conversion or travel stipend assumption."
+    },
+    {
+      "key": "bill_rate_equivalent",
+      "unit": "USD/accepted revenue hour-equivalent",
+      "provenance_kind": "analyst_estimate",
+      "note": "Revenue scenario, not proposed bid price, published East Ramapo rate or statement of market-clearing price. District contract unit rules remain unresolved."
+    },
+    {
+      "key": "employer_burden_fraction",
+      "unit": "fraction of gross clinician pay",
+      "provenance_kind": "analyst_estimate",
+      "note": "Blended allowance for employer payroll taxes, unemployment, benefits and payroll administration. Not a statutory tax rate. Excludes insurance premiums in the insurance line. Paid hours already include paid leave; do not add the same leave again. Replace with payroll-provider budget and benefit elections."
+    },
+    {
+      "key": "backup_allowance_fraction",
+      "unit": "fraction of loaded clinician payroll",
+      "provenance_kind": "analyst_estimate",
+      "note": "Expected incremental backup/replacement cost budget above regular paid time. Treated as expense and funded cash allowance, not a second full-time therapist. No guaranteed backup availability; actual standby/replacement agreement required."
+    },
+    {
+      "key": "travel_per_clinician",
+      "unit": "USD/clinician/month",
+      "provenance_kind": "quote_required",
+      "note": "Mileage/tolls/material transport allowance; paid work travel time belongs in paid hours. Actual site schedule and reimbursement terms required."
+    },
+    {
+      "key": "software_seat_per_clinician",
+      "unit": "USD/clinician/month",
+      "provenance_kind": "quote_required",
+      "note": "Incremental secure accounts/device management/operating-tool allowance, separate from shared software and from one-time configuration."
+    },
+    {
+      "key": "credential_maintenance_per_clinician",
+      "unit": "USD/clinician/month",
+      "provenance_kind": "quote_required",
+      "note": "Renewal/CEU/material replenishment allowance only. Initial recruiting and initial credential checks are one-time setup; no duplicate amortization."
+    },
+    {
+      "key": "annual_insurance_first",
+      "unit": "USD/year for agency with first clinician",
+      "provenance_kind": "quote_required",
+      "note": "Placeholder for broker-quoted total required policy portfolio including liability, professional liability, umbrella/auto/cyber as applicable and workers compensation/disability cover where required. No premium or coverage adequacy is verified. First-year portfolio only; excludes the separately required two-year post-work professional E&O continuation/closure reserve."
+    },
+    {
+      "key": "annual_insurance_additional",
+      "unit": "USD/year per additional clinician",
+      "provenance_kind": "quote_required",
+      "note": "Illustrative marginal premium allocation. Actual underwriting/payroll exposure may scale nonlinearly."
+    },
+    {
+      "key": "admin_hours_first",
+      "unit": "human hours/month for first clinician",
+      "provenance_kind": "analyst_estimate",
+      "note": "Human credential review, scheduling exceptions, district coordination, payroll/billing review and supervision of automated operations. Does not include clinician clinical work."
+    },
+    {
+      "key": "admin_hours_additional",
+      "unit": "human hours/month per additional clinician",
+      "provenance_kind": "analyst_estimate",
+      "note": "Incremental operating workload; validate with time logs before staffing expansion."
+    },
+    {
+      "key": "admin_loaded_rate",
+      "unit": "USD/human admin hour fully loaded",
+      "provenance_kind": "analyst_estimate",
+      "note": "Owner opportunity cost or fully loaded outside operator cost. Already loaded; do not apply clinician payroll burden again."
+    },
+    {
+      "key": "shared_software_monthly",
+      "unit": "USD/agency/month",
+      "provenance_kind": "quote_required",
+      "note": "Shared subscriptions, secure storage, accounting workflow and capped AI usage allowance. Vendor products and costs not selected."
+    },
+    {
+      "key": "entity_legal_setup",
+      "unit": "USD one-time",
+      "provenance_kind": "quote_required",
+      "note": "Entity/professional-structure, employment, procurement and data-contract review allowance. May materially exceed this amount; not a legal quote."
+    },
+    {
+      "key": "technology_configuration_setup",
+      "unit": "USD one-time",
+      "provenance_kind": "quote_required",
+      "note": "Budgeted tool configuration, controls and rehearsal: 76 staff hours \u00d7 the case loaded admin rate ($4,940 base/conservative, $5,700 stress). Upper end of the product workstream 38\u201376 hour estimate; excludes entity/legal, recruiting, bid preparation and hardware, separately budgeted. Not a quote for custom product development."
+    },
+    {
+      "key": "bid_preparation_hours",
+      "unit": "human hours one-time",
+      "provenance_kind": "analyst_estimate",
+      "note": "Paid/valued human proposal preparation and review, multiplied by fully loaded admin rate."
+    },
+    {
+      "key": "backup_recruit_clearance_setup",
+      "unit": "USD one-time shared",
+      "provenance_kind": "quote_required",
+      "note": "Finding and clearing one backup clinician, not paying for standby capacity. Availability and deployment approval still required."
+    },
+    {
+      "key": "recruit_clearance_setup_per_clinician",
+      "unit": "USD one-time per primary clinician",
+      "provenance_kind": "quote_required",
+      "note": "Recruiting, candidate verification, initial checks and onboarding allowance. Official fingerprint fee is not independently itemized here; no implied reimbursement obligation."
+    },
+    {
+      "key": "hardware_setup_per_clinician",
+      "unit": "USD one-time per primary clinician",
+      "provenance_kind": "quote_required",
+      "note": "Dedicated device/accessories allowance; actual district device restrictions and secure configuration may change it."
+    },
+    {
+      "key": "insurance_upfront_fraction",
+      "unit": "fraction of annual premium paid before start",
+      "provenance_kind": "analyst_estimate",
+      "note": "Base assumes full annual premium prepaid. P&L still allocates annual premium over 12 months. Cash reserves exclude the prepaid portion to prevent double counting."
+    },
+    {
+      "key": "admin_cash_fraction",
+      "unit": "fraction of human admin cost actually paid monthly",
+      "provenance_kind": "analyst_estimate",
+      "note": "Default 1 funds all owner/operator work. Set below 1 only with explicit owner financing decision; P&L continues to charge full human cost."
+    },
+    {
+      "key": "invoice_cycle_days",
+      "unit": "days from first service to first cycle close",
+      "provenance_kind": "analyst_estimate",
+      "note": "28-day submission cycle chosen so two-day preparation remains within 30 days of earliest service. Actual invoice schedule and district acceptance are not confirmed."
+    },
+    {
+      "key": "invoice_submission_lag_days",
+      "unit": "days after cycle close",
+      "provenance_kind": "analyst_estimate",
+      "note": "Two-day preparation assumption; cycle plus lag must not exceed 30 days for earliest service under the RFP submission rule."
+    },
+    {
+      "key": "approval_delay_days",
+      "unit": "days from submission to approval",
+      "provenance_kind": "analyst_estimate",
+      "note": "Approval delay scenario only; not a district commitment."
+    },
+    {
+      "key": "payment_after_approval_days",
+      "unit": "days from approval to collection",
+      "provenance_kind": "analyst_estimate",
+      "note": "Collection delay scenario only; RFP invoice deadline does not establish Net 30 payment terms."
+    },
+    {
+      "key": "extra_cash_cushion_days",
+      "unit": "days beyond modeled first collection",
+      "provenance_kind": "analyst_estimate",
+      "note": "Additional no-collection operating buffer. Cash funding uses outflows without netting uncollected receivables."
+    },
+    {
+      "key": "cash_contingency_fraction",
+      "unit": "fraction of setup + prepaid insurance + cash reserve",
+      "provenance_kind": "analyst_estimate",
+      "note": "Additional uncertainty reserve; not a guarantee of sufficient capital."
+    },
+    {
+      "key": "target_operating_margin",
+      "unit": "fraction of revenue",
+      "provenance_kind": "analyst_estimate",
+      "note": "Proposed 10% steady-state pre-tax operating margin after human operator cost, before startup recovery and financing. A management threshold, not a district or industry rule."
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "ECON-B",
+      "label": "Base planning case",
+      "provenance_kind": "analyst_estimate",
+      "inputs": {
+        "paid_hours": 140,
+        "billable_hour_equivalents": 126,
+        "pay_rate": 70,
+        "bill_rate_equivalent": 120,
+        "employer_burden_fraction": 0.2,
+        "backup_allowance_fraction": 0.05,
+        "travel_per_clinician": 100,
+        "software_seat_per_clinician": 75,
+        "credential_maintenance_per_clinician": 100,
+        "annual_insurance_first": 7200,
+        "annual_insurance_additional": 1800,
+        "admin_hours_first": 12,
+        "admin_hours_additional": 4,
+        "admin_loaded_rate": 65,
+        "shared_software_monthly": 250,
+        "entity_legal_setup": 3000,
+        "technology_configuration_setup": 4940,
+        "bid_preparation_hours": 20,
+        "backup_recruit_clearance_setup": 1000,
+        "recruit_clearance_setup_per_clinician": 1500,
+        "hardware_setup_per_clinician": 750,
+        "insurance_upfront_fraction": 1,
+        "admin_cash_fraction": 1,
+        "invoice_cycle_days": 28,
+        "invoice_submission_lag_days": 2,
+        "approval_delay_days": 15,
+        "payment_after_approval_days": 30,
+        "extra_cash_cushion_days": 30,
+        "cash_contingency_fraction": 0.1,
+        "target_operating_margin": 0.1
+      },
+      "results": [
+        {
+          "clinicians": 1,
+          "paid_hours_total": 140.0,
+          "billable_hour_equivalents_total": 126.0,
+          "billable_to_paid_ratio": 0.9,
+          "revenue": 15120.0,
+          "gross_pay": 9800.0,
+          "employer_burden": 1960.0,
+          "loaded_pay": 11760.0,
+          "backup_allowance": 588.0,
+          "travel": 100.0,
+          "software_seats": 75.0,
+          "credential_maintenance": 100.0,
+          "direct_delivery_cost": 12623.0,
+          "contribution_before_shared_overhead": 2497.0,
+          "annual_insurance": 7200.0,
+          "insurance_monthly_allocation": 600.0,
+          "human_admin_hours": 12.0,
+          "human_admin_cost": 780.0,
+          "shared_overhead": 1630.0,
+          "total_operating_cost": 14253.0,
+          "operating_profit_before_tax_startup_and_financing": 867.0,
+          "operating_margin_fraction": 0.0573,
+          "break_even_rate_equivalent": 113.12,
+          "rate_equivalent_for_target_margin": 125.69,
+          "break_even_billable_to_paid_ratio": 0.8484,
+          "max_pay_rate_for_target_margin": 66.34,
+          "setup_cost": 12490.0,
+          "insurance_upfront_cash": 7200.0,
+          "insurance_monthly_cash_remaining": 0.0,
+          "monthly_cash_outflow": 13653.0,
+          "days_to_first_cash_assumption": 75.0,
+          "funding_days": 105.0,
+          "working_capital_cash_reserve": 47785.5,
+          "cash_contingency": 6747.55,
+          "startup_funding_target": 74223.05,
+          "operating_profit_per_clinician": 867.0,
+          "incremental_funding_vs_previous_scale": 74223.05,
+          "incremental_monthly_profit_vs_previous_scale": 867.0
+        },
+        {
+          "clinicians": 2,
+          "paid_hours_total": 280.0,
+          "billable_hour_equivalents_total": 252.0,
+          "billable_to_paid_ratio": 0.9,
+          "revenue": 30240.0,
+          "gross_pay": 19600.0,
+          "employer_burden": 3920.0,
+          "loaded_pay": 23520.0,
+          "backup_allowance": 1176.0,
+          "travel": 200.0,
+          "software_seats": 150.0,
+          "credential_maintenance": 200.0,
+          "direct_delivery_cost": 25246.0,
+          "contribution_before_shared_overhead": 4994.0,
+          "annual_insurance": 9000.0,
+          "insurance_monthly_allocation": 750.0,
+          "human_admin_hours": 16.0,
+          "human_admin_cost": 1040.0,
+          "shared_overhead": 2040.0,
+          "total_operating_cost": 27286.0,
+          "operating_profit_before_tax_startup_and_financing": 2954.0,
+          "operating_margin_fraction": 0.0977,
+          "break_even_rate_equivalent": 108.28,
+          "rate_equivalent_for_target_margin": 120.31,
+          "break_even_billable_to_paid_ratio": 0.8121,
+          "max_pay_rate_for_target_margin": 69.8,
+          "setup_cost": 14740.0,
+          "insurance_upfront_cash": 9000.0,
+          "insurance_monthly_cash_remaining": 0.0,
+          "monthly_cash_outflow": 26536.0,
+          "days_to_first_cash_assumption": 75.0,
+          "funding_days": 105.0,
+          "working_capital_cash_reserve": 92876.0,
+          "cash_contingency": 11661.6,
+          "startup_funding_target": 128277.6,
+          "operating_profit_per_clinician": 1477.0,
+          "incremental_funding_vs_previous_scale": 54054.55,
+          "incremental_monthly_profit_vs_previous_scale": 2087.0
+        },
+        {
+          "clinicians": 3,
+          "paid_hours_total": 420.0,
+          "billable_hour_equivalents_total": 378.0,
+          "billable_to_paid_ratio": 0.9,
+          "revenue": 45360.0,
+          "gross_pay": 29400.0,
+          "employer_burden": 5880.0,
+          "loaded_pay": 35280.0,
+          "backup_allowance": 1764.0,
+          "travel": 300.0,
+          "software_seats": 225.0,
+          "credential_maintenance": 300.0,
+          "direct_delivery_cost": 37869.0,
+          "contribution_before_shared_overhead": 7491.0,
+          "annual_insurance": 10800.0,
+          "insurance_monthly_allocation": 900.0,
+          "human_admin_hours": 20.0,
+          "human_admin_cost": 1300.0,
+          "shared_overhead": 2450.0,
+          "total_operating_cost": 40319.0,
+          "operating_profit_before_tax_startup_and_financing": 5041.0,
+          "operating_margin_fraction": 0.1111,
+          "break_even_rate_equivalent": 106.66,
+          "rate_equivalent_for_target_margin": 118.52,
+          "break_even_billable_to_paid_ratio": 0.8,
+          "max_pay_rate_for_target_margin": 70.95,
+          "setup_cost": 16990.0,
+          "insurance_upfront_cash": 10800.0,
+          "insurance_monthly_cash_remaining": 0.0,
+          "monthly_cash_outflow": 39419.0,
+          "days_to_first_cash_assumption": 75.0,
+          "funding_days": 105.0,
+          "working_capital_cash_reserve": 137966.5,
+          "cash_contingency": 16575.65,
+          "startup_funding_target": 182332.15,
+          "operating_profit_per_clinician": 1680.33,
+          "incremental_funding_vs_previous_scale": 54054.55,
+          "incremental_monthly_profit_vs_previous_scale": 2087.0
+        }
+      ]
+    },
+    {
+      "id": "ECON-C",
+      "label": "Conservative case",
+      "provenance_kind": "analyst_estimate",
+      "inputs": {
+        "paid_hours": 140,
+        "billable_hour_equivalents": 112,
+        "pay_rate": 75,
+        "bill_rate_equivalent": 120,
+        "employer_burden_fraction": 0.25,
+        "backup_allowance_fraction": 0.075,
+        "travel_per_clinician": 125,
+        "software_seat_per_clinician": 75,
+        "credential_maintenance_per_clinician": 100,
+        "annual_insurance_first": 9000,
+        "annual_insurance_additional": 2400,
+        "admin_hours_first": 16,
+        "admin_hours_additional": 6,
+        "admin_loaded_rate": 65,
+        "shared_software_monthly": 250,
+        "entity_legal_setup": 3000,
+        "technology_configuration_setup": 4940,
+        "bid_preparation_hours": 20,
+        "backup_recruit_clearance_setup": 1000,
+        "recruit_clearance_setup_per_clinician": 1500,
+        "hardware_setup_per_clinician": 750,
+        "insurance_upfront_fraction": 1,
+        "admin_cash_fraction": 1,
+        "invoice_cycle_days": 28,
+        "invoice_submission_lag_days": 2,
+        "approval_delay_days": 30,
+        "payment_after_approval_days": 45,
+        "extra_cash_cushion_days": 30,
+        "cash_contingency_fraction": 0.1,
+        "target_operating_margin": 0.1
+      },
+      "results": [
+        {
+          "clinicians": 1,
+          "paid_hours_total": 140.0,
+          "billable_hour_equivalents_total": 112.0,
+          "billable_to_paid_ratio": 0.8,
+          "revenue": 13440.0,
+          "gross_pay": 10500.0,
+          "employer_burden": 2625.0,
+          "loaded_pay": 13125.0,
+          "backup_allowance": 984.38,
+          "travel": 125.0,
+          "software_seats": 75.0,
+          "credential_maintenance": 100.0,
+          "direct_delivery_cost": 14409.38,
+          "contribution_before_shared_overhead": -969.38,
+          "annual_insurance": 9000.0,
+          "insurance_monthly_allocation": 750.0,
+          "human_admin_hours": 16.0,
+          "human_admin_cost": 1040.0,
+          "shared_overhead": 2040.0,
+          "total_operating_cost": 16449.38,
+          "operating_profit_before_tax_startup_and_financing": -3009.38,
+          "operating_margin_fraction": -0.2239,
+          "break_even_rate_equivalent": 146.87,
+          "rate_equivalent_for_target_margin": 163.19,
+          "break_even_billable_to_paid_ratio": 0.9791,
+          "max_pay_rate_for_target_margin": 51.86,
+          "setup_cost": 12490.0,
+          "insurance_upfront_cash": 9000.0,
+          "insurance_monthly_cash_remaining": 0.0,
+          "monthly_cash_outflow": 15699.38,
+          "days_to_first_cash_assumption": 105.0,
+          "funding_days": 135.0,
+          "working_capital_cash_reserve": 70647.19,
+          "cash_contingency": 9213.72,
+          "startup_funding_target": 101350.91,
+          "operating_profit_per_clinician": -3009.38,
+          "incremental_funding_vs_previous_scale": 101350.91,
+          "incremental_monthly_profit_vs_previous_scale": -3009.38
+        },
+        {
+          "clinicians": 2,
+          "paid_hours_total": 280.0,
+          "billable_hour_equivalents_total": 224.0,
+          "billable_to_paid_ratio": 0.8,
+          "revenue": 26880.0,
+          "gross_pay": 21000.0,
+          "employer_burden": 5250.0,
+          "loaded_pay": 26250.0,
+          "backup_allowance": 1968.75,
+          "travel": 250.0,
+          "software_seats": 150.0,
+          "credential_maintenance": 200.0,
+          "direct_delivery_cost": 28818.75,
+          "contribution_before_shared_overhead": -1938.75,
+          "annual_insurance": 11400.0,
+          "insurance_monthly_allocation": 950.0,
+          "human_admin_hours": 22.0,
+          "human_admin_cost": 1430.0,
+          "shared_overhead": 2630.0,
+          "total_operating_cost": 31448.75,
+          "operating_profit_before_tax_startup_and_financing": -4568.75,
+          "operating_margin_fraction": -0.17,
+          "break_even_rate_equivalent": 140.4,
+          "rate_equivalent_for_target_margin": 156.0,
+          "break_even_billable_to_paid_ratio": 0.936,
+          "max_pay_rate_for_target_margin": 55.71,
+          "setup_cost": 14740.0,
+          "insurance_upfront_cash": 11400.0,
+          "insurance_monthly_cash_remaining": 0.0,
+          "monthly_cash_outflow": 30498.75,
+          "days_to_first_cash_assumption": 105.0,
+          "funding_days": 135.0,
+          "working_capital_cash_reserve": 137244.38,
+          "cash_contingency": 16338.44,
+          "startup_funding_target": 179722.81,
+          "operating_profit_per_clinician": -2284.38,
+          "incremental_funding_vs_previous_scale": 78371.9,
+          "incremental_monthly_profit_vs_previous_scale": -1559.37
+        },
+        {
+          "clinicians": 3,
+          "paid_hours_total": 420.0,
+          "billable_hour_equivalents_total": 336.0,
+          "billable_to_paid_ratio": 0.8,
+          "revenue": 40320.0,
+          "gross_pay": 31500.0,
+          "employer_burden": 7875.0,
+          "loaded_pay": 39375.0,
+          "backup_allowance": 2953.13,
+          "travel": 375.0,
+          "software_seats": 225.0,
+          "credential_maintenance": 300.0,
+          "direct_delivery_cost": 43228.13,
+          "contribution_before_shared_overhead": -2908.13,
+          "annual_insurance": 13800.0,
+          "insurance_monthly_allocation": 1150.0,
+          "human_admin_hours": 28.0,
+          "human_admin_cost": 1820.0,
+          "shared_overhead": 3220.0,
+          "total_operating_cost": 46448.13,
+          "operating_profit_before_tax_startup_and_financing": -6128.13,
+          "operating_margin_fraction": -0.152,
+          "break_even_rate_equivalent": 138.24,
+          "rate_equivalent_for_target_margin": 153.6,
+          "break_even_billable_to_paid_ratio": 0.9216,
+          "max_pay_rate_for_target_margin": 57.0,
+          "setup_cost": 16990.0,
+          "insurance_upfront_cash": 13800.0,
+          "insurance_monthly_cash_remaining": 0.0,
+          "monthly_cash_outflow": 45298.13,
+          "days_to_first_cash_assumption": 105.0,
+          "funding_days": 135.0,
+          "working_capital_cash_reserve": 203841.56,
+          "cash_contingency": 23463.16,
+          "startup_funding_target": 258094.72,
+          "operating_profit_per_clinician": -2042.71,
+          "incremental_funding_vs_previous_scale": 78371.91,
+          "incremental_monthly_profit_vs_previous_scale": -1559.38
+        }
+      ]
+    },
+    {
+      "id": "ECON-S",
+      "label": "Stress case",
+      "provenance_kind": "analyst_estimate",
+      "inputs": {
+        "paid_hours": 140,
+        "billable_hour_equivalents": 98,
+        "pay_rate": 80,
+        "bill_rate_equivalent": 120,
+        "employer_burden_fraction": 0.28,
+        "backup_allowance_fraction": 0.1,
+        "travel_per_clinician": 200,
+        "software_seat_per_clinician": 100,
+        "credential_maintenance_per_clinician": 150,
+        "annual_insurance_first": 12000,
+        "annual_insurance_additional": 3000,
+        "admin_hours_first": 20,
+        "admin_hours_additional": 8,
+        "admin_loaded_rate": 75,
+        "shared_software_monthly": 300,
+        "entity_legal_setup": 3000,
+        "technology_configuration_setup": 5700,
+        "bid_preparation_hours": 20,
+        "backup_recruit_clearance_setup": 1000,
+        "recruit_clearance_setup_per_clinician": 1500,
+        "hardware_setup_per_clinician": 750,
+        "insurance_upfront_fraction": 1,
+        "admin_cash_fraction": 1,
+        "invoice_cycle_days": 28,
+        "invoice_submission_lag_days": 2,
+        "approval_delay_days": 45,
+        "payment_after_approval_days": 60,
+        "extra_cash_cushion_days": 30,
+        "cash_contingency_fraction": 0.1,
+        "target_operating_margin": 0.1
+      },
+      "results": [
+        {
+          "clinicians": 1,
+          "paid_hours_total": 140.0,
+          "billable_hour_equivalents_total": 98.0,
+          "billable_to_paid_ratio": 0.7,
+          "revenue": 11760.0,
+          "gross_pay": 11200.0,
+          "employer_burden": 3136.0,
+          "loaded_pay": 14336.0,
+          "backup_allowance": 1433.6,
+          "travel": 200.0,
+          "software_seats": 100.0,
+          "credential_maintenance": 150.0,
+          "direct_delivery_cost": 16219.6,
+          "contribution_before_shared_overhead": -4459.6,
+          "annual_insurance": 12000.0,
+          "insurance_monthly_allocation": 1000.0,
+          "human_admin_hours": 20.0,
+          "human_admin_cost": 1500.0,
+          "shared_overhead": 2800.0,
+          "total_operating_cost": 19019.6,
+          "operating_profit_before_tax_startup_and_financing": -7259.6,
+          "operating_margin_fraction": -0.6173,
+          "break_even_rate_equivalent": 194.08,
+          "rate_equivalent_for_target_margin": 215.64,
+          "break_even_billable_to_paid_ratio": 1.1321,
+          "max_pay_rate_for_target_margin": 37.21,
+          "setup_cost": 13450.0,
+          "insurance_upfront_cash": 12000.0,
+          "insurance_monthly_cash_remaining": 0.0,
+          "monthly_cash_outflow": 18019.6,
+          "days_to_first_cash_assumption": 135.0,
+          "funding_days": 165.0,
+          "working_capital_cash_reserve": 99107.8,
+          "cash_contingency": 12455.78,
+          "startup_funding_target": 137013.58,
+          "operating_profit_per_clinician": -7259.6,
+          "incremental_funding_vs_previous_scale": 137013.58,
+          "incremental_monthly_profit_vs_previous_scale": -7259.6
+        },
+        {
+          "clinicians": 2,
+          "paid_hours_total": 280.0,
+          "billable_hour_equivalents_total": 196.0,
+          "billable_to_paid_ratio": 0.7,
+          "revenue": 23520.0,
+          "gross_pay": 22400.0,
+          "employer_burden": 6272.0,
+          "loaded_pay": 28672.0,
+          "backup_allowance": 2867.2,
+          "travel": 400.0,
+          "software_seats": 200.0,
+          "credential_maintenance": 300.0,
+          "direct_delivery_cost": 32439.2,
+          "contribution_before_shared_overhead": -8919.2,
+          "annual_insurance": 15000.0,
+          "insurance_monthly_allocation": 1250.0,
+          "human_admin_hours": 28.0,
+          "human_admin_cost": 2100.0,
+          "shared_overhead": 3650.0,
+          "total_operating_cost": 36089.2,
+          "operating_profit_before_tax_startup_and_financing": -12569.2,
+          "operating_margin_fraction": -0.5344,
+          "break_even_rate_equivalent": 184.13,
+          "rate_equivalent_for_target_margin": 204.59,
+          "break_even_billable_to_paid_ratio": 1.0741,
+          "max_pay_rate_for_target_margin": 42.15,
+          "setup_cost": 15700.0,
+          "insurance_upfront_cash": 15000.0,
+          "insurance_monthly_cash_remaining": 0.0,
+          "monthly_cash_outflow": 34839.2,
+          "days_to_first_cash_assumption": 135.0,
+          "funding_days": 165.0,
+          "working_capital_cash_reserve": 191615.6,
+          "cash_contingency": 22231.56,
+          "startup_funding_target": 244547.16,
+          "operating_profit_per_clinician": -6284.6,
+          "incremental_funding_vs_previous_scale": 107533.58,
+          "incremental_monthly_profit_vs_previous_scale": -5309.6
+        },
+        {
+          "clinicians": 3,
+          "paid_hours_total": 420.0,
+          "billable_hour_equivalents_total": 294.0,
+          "billable_to_paid_ratio": 0.7,
+          "revenue": 35280.0,
+          "gross_pay": 33600.0,
+          "employer_burden": 9408.0,
+          "loaded_pay": 43008.0,
+          "backup_allowance": 4300.8,
+          "travel": 600.0,
+          "software_seats": 300.0,
+          "credential_maintenance": 450.0,
+          "direct_delivery_cost": 48658.8,
+          "contribution_before_shared_overhead": -13378.8,
+          "annual_insurance": 18000.0,
+          "insurance_monthly_allocation": 1500.0,
+          "human_admin_hours": 36.0,
+          "human_admin_cost": 2700.0,
+          "shared_overhead": 4500.0,
+          "total_operating_cost": 53158.8,
+          "operating_profit_before_tax_startup_and_financing": -17878.8,
+          "operating_margin_fraction": -0.5068,
+          "break_even_rate_equivalent": 180.81,
+          "rate_equivalent_for_target_margin": 200.9,
+          "break_even_billable_to_paid_ratio": 1.0547,
+          "max_pay_rate_for_target_margin": 43.8,
+          "setup_cost": 17950.0,
+          "insurance_upfront_cash": 18000.0,
+          "insurance_monthly_cash_remaining": 0.0,
+          "monthly_cash_outflow": 51658.8,
+          "days_to_first_cash_assumption": 135.0,
+          "funding_days": 165.0,
+          "working_capital_cash_reserve": 284123.4,
+          "cash_contingency": 32007.34,
+          "startup_funding_target": 352080.74,
+          "operating_profit_per_clinician": -5959.6,
+          "incremental_funding_vs_previous_scale": 107533.58,
+          "incremental_monthly_profit_vs_previous_scale": -5309.6
+        }
+      ]
+    }
+  ],
+  "sensitivity": {
+    "id": "ECON-SENS01",
+    "basis": "One clinician; base inputs except pay rate and billable/paid ratio; $120 rate equivalent. Every cell is a model result, not an attainable bid or staffing commitment.",
+    "rows": [
+      {
+        "pay_rate": 60,
+        "billable_to_paid_ratio": 0.7,
+        "billable_hour_equivalents": 98.0,
+        "operating_profit": -729.0,
+        "break_even_rate_equivalent": 127.44,
+        "target_margin_rate_equivalent": 141.6
+      },
+      {
+        "pay_rate": 60,
+        "billable_to_paid_ratio": 0.8,
+        "billable_hour_equivalents": 112.0,
+        "operating_profit": 951.0,
+        "break_even_rate_equivalent": 111.51,
+        "target_margin_rate_equivalent": 123.9
+      },
+      {
+        "pay_rate": 60,
+        "billable_to_paid_ratio": 0.9,
+        "billable_hour_equivalents": 126.0,
+        "operating_profit": 2631.0,
+        "break_even_rate_equivalent": 99.12,
+        "target_margin_rate_equivalent": 110.13
+      },
+      {
+        "pay_rate": 60,
+        "billable_to_paid_ratio": 0.95,
+        "billable_hour_equivalents": 133.0,
+        "operating_profit": 3471.0,
+        "break_even_rate_equivalent": 93.9,
+        "target_margin_rate_equivalent": 104.34
+      },
+      {
+        "pay_rate": 70,
+        "billable_to_paid_ratio": 0.7,
+        "billable_hour_equivalents": 98.0,
+        "operating_profit": -2493.0,
+        "break_even_rate_equivalent": 145.44,
+        "target_margin_rate_equivalent": 161.6
+      },
+      {
+        "pay_rate": 70,
+        "billable_to_paid_ratio": 0.8,
+        "billable_hour_equivalents": 112.0,
+        "operating_profit": -813.0,
+        "break_even_rate_equivalent": 127.26,
+        "target_margin_rate_equivalent": 141.4
+      },
+      {
+        "pay_rate": 70,
+        "billable_to_paid_ratio": 0.9,
+        "billable_hour_equivalents": 126.0,
+        "operating_profit": 867.0,
+        "break_even_rate_equivalent": 113.12,
+        "target_margin_rate_equivalent": 125.69
+      },
+      {
+        "pay_rate": 70,
+        "billable_to_paid_ratio": 0.95,
+        "billable_hour_equivalents": 133.0,
+        "operating_profit": 1707.0,
+        "break_even_rate_equivalent": 107.17,
+        "target_margin_rate_equivalent": 119.07
+      },
+      {
+        "pay_rate": 80,
+        "billable_to_paid_ratio": 0.7,
+        "billable_hour_equivalents": 98.0,
+        "operating_profit": -4257.0,
+        "break_even_rate_equivalent": 163.44,
+        "target_margin_rate_equivalent": 181.6
+      },
+      {
+        "pay_rate": 80,
+        "billable_to_paid_ratio": 0.8,
+        "billable_hour_equivalents": 112.0,
+        "operating_profit": -2577.0,
+        "break_even_rate_equivalent": 143.01,
+        "target_margin_rate_equivalent": 158.9
+      },
+      {
+        "pay_rate": 80,
+        "billable_to_paid_ratio": 0.9,
+        "billable_hour_equivalents": 126.0,
+        "operating_profit": -897.0,
+        "break_even_rate_equivalent": 127.12,
+        "target_margin_rate_equivalent": 141.24
+      },
+      {
+        "pay_rate": 80,
+        "billable_to_paid_ratio": 0.95,
+        "billable_hour_equivalents": 133.0,
+        "operating_profit": -57.0,
+        "break_even_rate_equivalent": 120.43,
+        "target_margin_rate_equivalent": 133.81
+      }
+    ]
+  },
+  "formulas": {
+    "gross_pay": "N * paid_hours * pay_rate",
+    "loaded_pay": "gross_pay * (1 + employer_burden_fraction)",
+    "direct_delivery_cost": "loaded_pay * (1 + backup_allowance_fraction) + N * (travel_per_clinician + software_seat_per_clinician + credential_maintenance_per_clinician)",
+    "annual_insurance": "annual_insurance_first + (N - 1) * annual_insurance_additional",
+    "human_admin_cost": "(admin_hours_first + (N - 1) * admin_hours_additional) * admin_loaded_rate",
+    "shared_overhead": "annual_insurance / 12 + human_admin_cost + shared_software_monthly",
+    "revenue": "N * billable_hour_equivalents * bill_rate_equivalent",
+    "contribution_before_shared_overhead": "revenue - direct_delivery_cost",
+    "operating_profit": "revenue - direct_delivery_cost - shared_overhead",
+    "break_even_rate": "total_operating_cost / (N * billable_hour_equivalents)",
+    "target_rate": "total_operating_cost / (N * billable_hour_equivalents * (1 - target_operating_margin))",
+    "break_even_billable_to_paid_ratio": "total_operating_cost / (N * paid_hours * bill_rate_equivalent)",
+    "insurance_upfront_cash": "annual_insurance * insurance_upfront_fraction",
+    "monthly_cash_outflow": "direct_delivery_cost + shared_software_monthly + human_admin_cost * admin_cash_fraction + annual_insurance * (1 - insurance_upfront_fraction) / 12",
+    "funding_days": "invoice_cycle_days + invoice_submission_lag_days + approval_delay_days + payment_after_approval_days + extra_cash_cushion_days",
+    "working_capital_cash_reserve": "monthly_cash_outflow * funding_days / 30; no receivable offsets",
+    "setup_cost": "entity_legal_setup + technology_configuration_setup + bid_preparation_hours * admin_loaded_rate + backup_recruit_clearance_setup + N * (recruit_clearance_setup_per_clinician + hardware_setup_per_clinician)",
+    "startup_funding_target": "(setup_cost + insurance_upfront_cash + working_capital_cash_reserve) * (1 + cash_contingency_fraction)"
+  },
+  "interpretation": [
+    "Contribution before shared overhead is not operating profit. Operating profit charges the owner/operator\u2019s human work, insurance and tools; startup costs and financing still need recovery.",
+    "Cash funding is a conservative no-collection reserve policy, not a predicted cash-flow low point. It funds setup, annual prepaid premiums and all operating outflows to modeled first cash plus a 30-day cushion, then adds 10%. It does not net receivables.",
+    "Annual insurance is expensed monthly for economics, prepaid in cash by default, and excluded from monthly cash burn to avoid counting the same premium twice. Change cash treatment if the broker offers installments, then include financing charges.",
+    "A backup allowance buys neither a cleared named therapist nor a contractual response time. Actual cover has to be agreed. Unused allowance is reserve, not proof of delivered service.",
+    "The owner can defer cash pay only as an explicit financing choice. The economic cost remains in operating profit.",
+    "A short or fragmented assignment can be much less economic than this normalized month; quote only after the site schedule, allowed units, meetings, no-shows, cancellations and travel terms are settled.",
+    "Do not raise clinical session intensity to hit an economic utilization target. Clinical workload and IEP obligations remain controlled by qualified staff and district approvals.",
+    "All cash targets are total funding required for a fresh pilot at that scale; incremental funding is the difference from the prior scale. It is not a per-clinician quote. Scale economies assume the same shared platform and cost structure and must be revalidated before adding clinicians.",
+    "The maximum affordable pay calculation diagnoses a rate/schedule mismatch. It is not a recommended offer or permission to reduce legally owed pay. Renegotiate authorized pricing/scope or decline uneconomic work.",
+    "Modeled startup funding is incomplete until the post-service E&O obligation is priced. The annual portfolio assumption funds first-year insurance only; no two-year continuation or reporting-period premium is included, and the 10% contingency is not a substitute for that quote."
+  ],
+  "pricing_release_gates": [
+    {
+      "id": "ECO-G01",
+      "gate": "District confirms payable unit definitions, indirect time, evaluation/reporting/meeting rules, group rules, cancellations/no-shows, travel and invoice acceptance/payment process."
+    },
+    {
+      "id": "ECO-G02",
+      "gate": "Named primary and backup agree pay/availability; payroll provider budgets exact employer costs and lawful paid-time rules."
+    },
+    {
+      "id": "ECO-G03",
+      "gate": "Broker quotes required limits/endorsements, deposits or annual premiums, deductibles and possible audit premiums for the actual entity and payroll."
+    },
+    {
+      "id": "ECO-G04",
+      "gate": "Owner approves fully allocated break-even and target-margin floor; no below-floor bid justified by assumed future scale."
+    },
+    {
+      "id": "ECO-G05",
+      "gate": "Cash or committed financing covers the revised funding case and a stop-loss response; no payroll reliance on unapproved or uncollected invoices."
+    },
+    {
+      "id": "ECO-G06",
+      "gate": "Add bespoke product engineering, insurance deductibles/uninsured loss exposures, financing cost and any professional-entity restructuring cost if selected; rerun all scenarios."
+    },
+    {
+      "id": "ECO-G07",
+      "source_ids": [
+        "EFS06"
+      ],
+      "gate": "Broker prices and buyer accepts the professional E&O solution continuing two years after work ends; add a separate funded closure reserve or upfront reporting-period premium. The first-year cash model cannot certify final sufficient capital until this is resolved."
+    }
+  ],
+  "input_validation": {
+    "clinicians": {
+      "min": 1,
+      "max": 3,
+      "integer": true
+    },
+    "nonnegative_keys": "All numeric inputs must be finite and >= 0; pay rate and paid hours must be > 0; billable hour-equivalents must be > 0 for unit-rate metrics.",
+    "fractions": {
+      "insurance_upfront_fraction": [
+        0,
+        1
+      ],
+      "admin_cash_fraction": [
+        0,
+        1
+      ],
+      "target_operating_margin": [
+        0,
+        0.99
+      ],
+      "employer_burden_fraction": [
+        0,
+        1
+      ],
+      "backup_allowance_fraction": [
+        0,
+        1
+      ],
+      "cash_contingency_fraction": [
+        0,
+        1
+      ]
+    },
+    "billable_capacity": "0 < billable_hour_equivalents <= paid_hours in this bounded analytical model. This restriction does not invent actual contractual group/session units.",
+    "invoice_submission": "invoice_cycle_days + invoice_submission_lag_days <= 30; above 30 mark invalid for the assumed earliest service, not a larger funding scenario.",
+    "positive_margin_warning": "If break_even_billable_to_paid_ratio > 1, the assumed rate cannot break even even at full conversion of paid time in this bounded model.",
+    "rounding": "Compute with unrounded inputs; round money to cents and ratios to four decimal places only at presentation. Do not round intermediate cash or payroll components."
+  },
+  "setup_labor_basis": {
+    "status": "new_company_planning_assumptions",
+    "technology_configuration": "Budget upper end of the product workstream estimate: 76 human hours for tool configuration, controls and rehearsal. At $65 loaded/hour this is $4,940 in base and conservative cases; at $75 it is $5,700 in stress. This is additional to entity/legal, recruiting/clearance, hardware and 20 human bid-preparation hours. Custom product development beyond this bounded setup remains separately unpriced.",
+    "recruiting": "Initial recruitment and clearance allowances are $1,500 per primary clinician and $1,000 shared for one backup. These are placeholders requiring a recruitment plan and vendor costs, not candidate commitments or per-hire market prices.",
+    "legal_employer_setup": "$3,000 entity/legal/employer setup allowance is unquoted; professional-entity structure, payroll registrations, required policies and contract review can materially change it.",
+    "ongoing_operator": "12/16/20 human operating hours per month for one clinician across base/conservative/stress, plus scale increments. Broader company sales, product engineering and unrelated founder work are not included."
+  },
+  "unpriced_required_cash": [
+    {
+      "id": "ECO-U01",
+      "item": "Post-service professional E&O continuation / closure reserve",
+      "source_ids": [
+        "EFS06"
+      ],
+      "requirement": "Budget the compliant coverage solution for two years after services end.",
+      "amount": null,
+      "status": "broker_quote_and_buyer_acceptance_required",
+      "treatment": "Excluded from all startup_funding_target numbers and from the annual first-year portfolio allowance. Do not infer it is funded by 10% contingency. Add the required prepaid tail, renewal reserve or other accepted solution to the funding/pricing decision when quoted."
+    }
+  ]
+}

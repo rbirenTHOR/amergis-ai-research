@@ -1,0 +1,38 @@
+{
+  "status": "pass",
+  "method": "Local in-memory DOM/source and calculator checks; not rendered-browser, vendor integration, live operation or procurement verification.",
+  "checks": [
+    {
+      "name": "Unique IDs and structural links resolve",
+      "status": "pass"
+    },
+    {
+      "name": "All requirement, capability and evidence records render",
+      "status": "pass"
+    },
+    {
+      "name": "Scope, human accountability and unverified readiness remain visible",
+      "status": "pass"
+    },
+    {
+      "name": "Requirement search, group filter and reset",
+      "status": "pass"
+    },
+    {
+      "name": "Product search, priority filter and reset",
+      "status": "pass"
+    },
+    {
+      "name": "Calculator agrees with every stored scenario and clinician count",
+      "status": "pass"
+    },
+    {
+      "name": "Calculator rejects unsupported and nonfinite assumptions",
+      "status": "pass"
+    },
+    {
+      "name": "Calculator form handles invalid values and restores a scenario",
+      "status": "pass"
+    }
+  ]
+}

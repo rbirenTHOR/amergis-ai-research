@@ -113,3 +113,20 @@
 !/work/amergis-phase6/check_report.cjs
 !/work/amergis-phase6/validation.json
 !/work/amergis-phase6/report-checks.json
+
+# East Ramapo pilot planning package
+!/outputs/east-ramapo-pilot-plan.html
+!/outputs/east-ramapo-pilot-plan.json
+!/work/amergis-phase7/launch-core.json
+!/work/amergis-phase7/bid-requirements.json
+!/work/amergis-phase7/workforce.json
+!/work/amergis-phase7/insurance.json
+!/work/amergis-phase7/products.json
+!/work/amergis-phase7/economics.json
+!/work/amergis-phase7/review.json
+!/work/amergis-phase7/build_plan.py
+!/work/amergis-phase7/check_economics.py
+!/work/amergis-phase7/check_pack.py
+!/work/amergis-phase7/check_report.cjs
+!/work/amergis-phase7/validation.json
+!/work/amergis-phase7/report-checks.json

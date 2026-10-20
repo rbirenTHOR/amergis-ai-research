@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "as_of": "2026-10-20",
+  "checks": [
+    "All six operating-plan modules match the curated inputs",
+    "Every module source reference resolves; repeated source URLs are not counted as unique evidence",
+    "User-confirmed startup gaps, current deadlines, notarizations and unquoted pricing remain explicit",
+    "Unpriced insurance and illustrative economics cannot become actual quotes or payment terms",
+    "Digital capability, agent and proposed acceptance coverage is structurally complete"
+  ],
+  "limits": [
+    "Planning-package consistency only; no bid, vendor integration or live product acceptance test executed.",
+    "No clinician recruited, insurance bound, company formed or district assignment authorized by these checks."
+  ]
+}

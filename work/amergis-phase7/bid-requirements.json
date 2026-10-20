@@ -1,0 +1,1092 @@
+{
+  "as_of": "2026-10-20",
+  "scope": "East Ramapo Central School District SLP RFP-ER-5-27; public procurement evidence and proposed response preparation, not an executed bid.",
+  "readiness_note": "Confirmed means the requirement is supported by the reviewed source; it does not mean our company satisfies it. The user confirms a new company, no confirmed therapists and no insurance. The pilot is not bid-ready. Formation/registration, qualified named clinicians, coverage, substantiated representations and authorized signatures remain readiness gates.",
+  "sources": [
+    {
+      "id": "EBS01",
+      "title": "East Ramapo current bid, quote and RFP listings",
+      "url": "https://www.ercsd.org/departments/purchasing/current-bid-quote-and-rfp-listings",
+      "publisher": "East Ramapo Central School District",
+      "checked_on": "2026-10-20",
+      "locator": "Open Listings; W-9 instruction",
+      "finding": "SLP RFP and Addendum 1 are the only SLP documents linked in the public index at inspection. W-9 required with bids. Generic mailing language conflicts with the RFP-specific electronic route."
+    },
+    {
+      "id": "EBS02",
+      "title": "RFP-ER-5-27 Speech-Language Pathology Services",
+      "url": "https://resources.finalsite.net/images/v1791482107/ercsdorg/sukltm9f2kp0petz1047/RFP-ER-5-27SpeechLanguagePathologyServices.pdf",
+      "publisher": "East Ramapo Central School District",
+      "checked_on": "2026-10-20",
+      "document_date": "2026-10-13",
+      "locator": "22 PDF pages; operative specification pp.1-16; W-9 pp.17-22",
+      "inspection": "Public scanned PDF downloaded and OCR read. Material submission, service, eligibility, insurance-certification, signature, notary, exclusion and commercial clauses visually checked."
+    },
+    {
+      "id": "EBS03",
+      "title": "RFP-ER-5-27 Addendum 1",
+      "url": "https://resources.finalsite.net/images/v1792420062/ercsdorg/fpom6qft6vvbddf353po/Addendum1_16.pdf",
+      "publisher": "East Ramapo Central School District",
+      "checked_on": "2026-10-20",
+      "locator": "PDF p.1, questions 1-5 and additional-question summary",
+      "inspection": "Official index link resolved to this public PDF; extracted text and rendered page reviewed."
+    }
+  ],
+  "procurement": {
+    "rfp": "RFP-ER-5-27",
+    "discipline": "Speech-language pathology",
+    "issued": "2026-10-13",
+    "submission_deadline": "2026-10-30T12:00:00-04:00",
+    "question_deadline": "2026-10-27T12:00:00-04:00",
+    "timezone": "America/New_York",
+    "deadline_note": "Local time in RFP; these October dates are EDT. Recheck all subsequent addenda before acting.",
+    "question_contact": {
+      "name": "Michelle Rivera",
+      "role": "Purchasing Agent",
+      "email": "mrivera@ercsd.org",
+      "channel": "Written RFP questions only; answers by addendum on BidNet and district site. Service coordinator contact withheld until award.",
+      "source_ids": [
+        "EBS02",
+        "EBS03"
+      ],
+      "locator": "RFP p.6; Addendum question 5"
+    },
+    "submission_channel": "Electronic submission through Empire State Purchasing Group / BidNet Direct, https://www.bidnetdirect.com/new-york. RFP describes a free Limited registration option. No account created or logged into in this research.",
+    "route_precedence": "Use the solicitation-specific electronic instructions, not the district index generic mail/drop-off paragraph.",
+    "portal_unknowns": [
+      "Authenticated event upload fields, file-size limits and acknowledgment checkboxes not inspected.",
+      "Free-registration and account setup steps not performed.",
+      "Only the district public index was checked for addenda; final response must also inspect the authorized BidNet event."
+    ],
+    "award_method": "Best value; price plus qualifications, responsiveness and responsibility. Lowest fee is not determinative. Board approval and formal contract required; no fixed award date published.",
+    "initial_term": "Date of award through June 30, 2027.",
+    "renewal_ambiguity": "RFP p.5 refers to a Physical Therapist, says four (3) additional years and a four-year total. Obtain correction; do not model renewal as assured.",
+    "termination": "Either party may terminate with 30 days written notice. District owes unpaid services performed and authorized costs incurred; no termination profit guarantee stated.",
+    "volume": "Assignments fluctuate from individual part-time sessions to full-time leave replacement; billed hours depend on the approved assignment schedule. No guaranteed caseload, FTE or weekly revenue.",
+    "payment": "District approves service performance before payment authorization. No net payment interval or invoice-payment deadline located. The 30-calendar-day rule concerns invoice plus attendance submission after service.",
+    "source_ids": [
+      "EBS02",
+      "EBS03"
+    ],
+    "document_completeness_note": "RFP p.3 bars documents after bid opening while p.5 reserves district discretion to request additional information. Plan a complete bid; do not rely on a later cure."
+  },
+  "requirements": [
+    {
+      "id": "EBR01",
+      "category": "Submission",
+      "requirement": "Submit electronically by October 30, 2026 at noon EDT.",
+      "evidence_needed": "Final BidNet receipt and submitted immutable package.",
+      "owner": "Bid lead",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "bid",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "pp.1-3"
+    },
+    {
+      "id": "EBR02",
+      "category": "Submission",
+      "requirement": "Provide complete requested documentation at opening; do not plan later cures.",
+      "evidence_needed": "Checked package manifest and signed forms.",
+      "owner": "Bid lead",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "bid",
+      "source_ids": [
+        "EBS02",
+        "EBS03"
+      ],
+      "locator": "p.3; Addendum Q1"
+    },
+    {
+      "id": "EBR03",
+      "category": "Submission",
+      "requirement": "Monitor district and BidNet amendments; public index currently shows Addendum 1 only.",
+      "evidence_needed": "Dated amendment register and final recheck.",
+      "owner": "Bid lead",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "bid",
+      "source_ids": [
+        "EBS01",
+        "EBS02"
+      ],
+      "locator": "p.2; current index"
+    },
+    {
+      "id": "EBR04",
+      "category": "Narrative",
+      "requirement": "Include authorized-officer cover letter and authority certification.",
+      "evidence_needed": "Signed letterhead letter with required contact fields.",
+      "owner": "Owner",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "bid",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "p.3"
+    },
+    {
+      "id": "EBR05",
+      "category": "Narrative",
+      "requirement": "Provide program outcomes, work plan and provider evaluation methods.",
+      "evidence_needed": "Concise executable delivery plan mapped to RFP scope.",
+      "owner": "Clinical lead",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "bid",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "pp.3-4"
+    },
+    {
+      "id": "EBR06",
+      "category": "Personnel",
+      "requirement": "Submit resumes and references for individual proposed clinicians.",
+      "evidence_needed": "Named clinicians with consent and genuine reference evidence.",
+      "owner": "Recruiting lead",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "bid",
+      "source_ids": [
+        "EBS03"
+      ],
+      "locator": "additional-question summary"
+    },
+    {
+      "id": "EBR07",
+      "category": "Personnel",
+      "requirement": "Prove required SLP credentials, state education and IEP experience.",
+      "evidence_needed": "Primary credential checks and supporting professional/education evidence.",
+      "owner": "Credentialing lead",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "bid",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "p.7"
+    },
+    {
+      "id": "EBR08",
+      "category": "Entity",
+      "requirement": "Include requested New York business-registration evidence with proposal.",
+      "evidence_needed": "Correct entity registration evidence; clarify precise acceptable document.",
+      "owner": "Owner/legal",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "bid",
+      "source_ids": [
+        "EBS03"
+      ],
+      "locator": "Q1"
+    },
+    {
+      "id": "EBR09",
+      "category": "Responsibility",
+      "requirement": "Demonstrate records, administrative/fiscal capability and adequate audit trail.",
+      "evidence_needed": "Truthful capability narrative, controls and funding evidence appropriate to startup status.",
+      "owner": "Operations/finance",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "bid",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "pp.4,7"
+    },
+    {
+      "id": "EBR10",
+      "category": "Commercial",
+      "requirement": "Include fee-for-service proposal.",
+      "evidence_needed": "Owner-approved rate card with units and inclusions.",
+      "owner": "Finance/owner",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "bid",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "p.3"
+    },
+    {
+      "id": "EBR11",
+      "category": "Insurance",
+      "requirement": "Submit COI plus insurance representative and bidder acknowledgments.",
+      "evidence_needed": "COI and both signatures on supplied p.10 form.",
+      "owner": "Broker/owner",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "bid",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "p.10"
+    },
+    {
+      "id": "EBR12",
+      "category": "Forms",
+      "requirement": "Sign non-discrimination and assignability form.",
+      "evidence_needed": "Completed p.11 signature/name/title/date.",
+      "owner": "Owner",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "bid",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "p.11"
+    },
+    {
+      "id": "EBR13",
+      "category": "Forms",
+      "requirement": "Submit notarized Iran divestment certification.",
+      "evidence_needed": "Completed p.12 form signed and notarized.",
+      "owner": "Owner/notary",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "bid",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "p.12"
+    },
+    {
+      "id": "EBR14",
+      "category": "Forms",
+      "requirement": "Sign non-collusion certification truthfully.",
+      "evidence_needed": "Completed p.13 form or permitted detailed explanation if necessary.",
+      "owner": "Owner",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "bid",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "p.13"
+    },
+    {
+      "id": "EBR15",
+      "category": "Forms",
+      "requirement": "Submit signed/notarized hold-harmless agreement.",
+      "evidence_needed": "Owner-reviewed p.14 commitment, signature and notarization.",
+      "owner": "Owner/legal/notary",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "bid",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "p.14"
+    },
+    {
+      "id": "EBR16",
+      "category": "Forms",
+      "requirement": "Certify implemented sexual-harassment policy and annual training.",
+      "evidence_needed": "Actual policy/training implementation and notarized p.16 form.",
+      "owner": "HR/owner/notary",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "bid",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "p.16"
+    },
+    {
+      "id": "EBR17",
+      "category": "Forms",
+      "requirement": "Return completed W-9.",
+      "evidence_needed": "Correct restricted-access W-9; no TIN in public artifact.",
+      "owner": "Finance",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "bid",
+      "source_ids": [
+        "EBS01",
+        "EBS02"
+      ],
+      "locator": "Index; pp.17-22"
+    },
+    {
+      "id": "EBR18",
+      "category": "Delivery",
+      "requirement": "Deliver in person in public/nonpublic schools; teletherapy is excluded.",
+      "evidence_needed": "Local clinician availability and assignment acceptance.",
+      "owner": "Clinical/operations",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "before service",
+      "source_ids": [
+        "EBS03"
+      ],
+      "locator": "Q2,Q4 and summary"
+    },
+    {
+      "id": "EBR19",
+      "category": "Delivery",
+      "requirement": "Provide IEP-aligned individual/group sessions and initial/annual-review evaluations.",
+      "evidence_needed": "Qualified human clinical plan and district-approved assignment.",
+      "owner": "Treating SLP",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "during service",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "p.4"
+    },
+    {
+      "id": "EBR20",
+      "category": "Delivery",
+      "requirement": "Support IEP goals/progress reports, attend CSE meetings and collaborate with Pupil Personnel.",
+      "evidence_needed": "Human clinician participation and district-authorized records.",
+      "owner": "Treating SLP",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "during service",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "p.4"
+    },
+    {
+      "id": "EBR21",
+      "category": "Documentation",
+      "requirement": "Maintain and submit weekly student-session logs.",
+      "evidence_needed": "District-approved log fields and weekly delivery receipt.",
+      "owner": "Treating SLP/operations",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "weekly",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "p.4"
+    },
+    {
+      "id": "EBR22",
+      "category": "Billing",
+      "requirement": "Submit invoice information and attendance documentation within 30 calendar days of each service date.",
+      "evidence_needed": "Service-date aging control, supporting attendance and submission receipt.",
+      "owner": "Billing lead",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "during service",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "p.6"
+    },
+    {
+      "id": "EBR23",
+      "category": "Billing",
+      "requirement": "Use invoice format approved by Accounting Office and Claims Auditor.",
+      "evidence_needed": "Written field/template and approval-process confirmation.",
+      "owner": "Billing lead",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "before first invoice",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "p.7"
+    },
+    {
+      "id": "EBR24",
+      "category": "Screening",
+      "requirement": "Check all employees/subcontractors monthly against federal exclusion system/successor, HHS OIG and NY OMIG lists.",
+      "evidence_needed": "Dated screening results, identity-match review and monthly completion log.",
+      "owner": "Compliance lead",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "monthly",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "p.15"
+    },
+    {
+      "id": "EBR25",
+      "category": "Screening",
+      "requirement": "Notify district in writing within 3 days of exclusion/ineligibility event or excluded-party discovery.",
+      "evidence_needed": "Escalation owner and event-based deadline with notification evidence.",
+      "owner": "Compliance/owner",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "event-driven",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "p.15"
+    },
+    {
+      "id": "EBR26",
+      "category": "Subcontracting",
+      "requirement": "Obtain prior written purchasing consent before subcontracting or assigning contract/receivables.",
+      "evidence_needed": "Specific consent for proposed arrangement; do not assume 1099 approval.",
+      "owner": "Owner/legal",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "before affected arrangement",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "p.11"
+    },
+    {
+      "id": "EBR27",
+      "category": "Insurance",
+      "requirement": "Maintain applicable coverage and deliver policy/endorsement proof as required.",
+      "evidence_needed": "Broker-reviewed schedule and district acceptance; resolve overlapping samples.",
+      "owner": "Broker/owner",
+      "status": "ambiguous",
+      "readiness": "unverified",
+      "due_stage": "bid and before service",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "pp.5,7-10"
+    },
+    {
+      "id": "EBR28",
+      "category": "Commercial",
+      "requirement": "Resolve fee unit, group treatment, indirect time, travel and canceled-session billing.",
+      "evidence_needed": "Written purchasing clarification and executed rate schedule.",
+      "owner": "Finance/bid lead",
+      "status": "ambiguous",
+      "readiness": "unverified",
+      "due_stage": "before price approval",
+      "source_ids": [
+        "EBS02",
+        "EBS03"
+      ],
+      "locator": "p.3; Addendum hours summary"
+    },
+    {
+      "id": "EBR29",
+      "category": "Commercial",
+      "requirement": "Clarify invoice approval, payment cycle and disputed-invoice handling.",
+      "evidence_needed": "Written contract terms and funded assignment route.",
+      "owner": "Finance/owner",
+      "status": "ambiguous",
+      "readiness": "unverified",
+      "due_stage": "before contract",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "pp.4,6-7"
+    },
+    {
+      "id": "EBR30",
+      "category": "Commercial",
+      "requirement": "Clarify renewal term contradiction and actual mobilization date.",
+      "evidence_needed": "Written amendment/contract correction.",
+      "owner": "Bid lead/legal",
+      "status": "ambiguous",
+      "readiness": "unverified",
+      "due_stage": "before contract",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "p.5"
+    },
+    {
+      "id": "EBR31",
+      "category": "Digital",
+      "requirement": "Confirm authorized IEP/log/attendance platform, data terms and access approvals.",
+      "evidence_needed": "District-approved systems, roles, transfer method and contract data terms.",
+      "owner": "Operations/security",
+      "status": "ambiguous",
+      "readiness": "unverified",
+      "due_stage": "before student data",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "pp.3-4,7"
+    },
+    {
+      "id": "EBR32",
+      "category": "Personnel",
+      "requirement": "Additional clinicians may be proposed after contract establishment; approval is not automatic.",
+      "evidence_needed": "District approval evidence for each additional clinician.",
+      "owner": "Recruiting/clinical lead",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "before additional assignment",
+      "source_ids": [
+        "EBS03"
+      ],
+      "locator": "additional-question summary"
+    },
+    {
+      "id": "EBR33",
+      "category": "Readiness",
+      "requirement": "Approve a one-SLP pilot capacity limit and qualified backup before making commitments.",
+      "evidence_needed": "Actual availability, costed offer and coverage plan.",
+      "owner": "Owner/clinical lead",
+      "status": "proposed",
+      "readiness": "unverified",
+      "due_stage": "before bid",
+      "source_ids": [],
+      "locator": "Our proposed pilot control, not a stated RFP minimum"
+    },
+    {
+      "id": "EBR34",
+      "category": "Submission",
+      "requirement": "Prepare internal draft early and preserve all final addendum acknowledgments.",
+      "evidence_needed": "Independent completeness review and human submission authority.",
+      "owner": "Bid lead",
+      "status": "proposed",
+      "readiness": "unverified",
+      "due_stage": "before bid",
+      "source_ids": [],
+      "locator": "Our preparation control; no separate addendum-ack form located"
+    },
+    {
+      "id": "EBR35",
+      "category": "Commercial",
+      "requirement": "Either party may terminate on 30 days written notice; the district remains responsible for unpaid services performed and authorized vendor costs incurred.",
+      "evidence_needed": "Executed contract terms; internal exit/handover plan and payroll reserve. Employee pay duties remain separate from district billability.",
+      "owner": "Owner/finance",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "before contract",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "RFP p.6; exit-plan controls are our implementation proposal."
+    },
+    {
+      "id": "EBR36",
+      "category": "Responsibility",
+      "requirement": "Provider must have no record of unsatisfactory performance.",
+      "evidence_needed": "Truthful relevant full performance history and substantiation of the representation; disclose that the company is new and obtain district clarification on acceptable evidence. Do not substitute selected favorable references or attribute a clinician/predecessor record to the new entity.",
+      "owner": "Owner/legal",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "before bid certification",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "p.7, Minimum Provider Requirements"
+    },
+    {
+      "id": "EBR37",
+      "category": "Screening",
+      "requirement": "Substantiate the initial representation that the vendor/entity and its employees/contractors are not excluded or otherwise ineligible for the specified government programs.",
+      "evidence_needed": "Dated entity and proposed-personnel screening evidence, identity-match review, documented eligibility inquiry and authorized human certification before signing/submitting. This is distinct from EBR24 monthly employee/subcontractor checks; no monthly entity-check mandate is asserted.",
+      "owner": "Compliance/owner",
+      "status": "confirmed",
+      "readiness": "unverified",
+      "due_stage": "before bid certification",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "p.15, opening representation"
+    }
+  ],
+  "proposal_sequence": [
+    {
+      "order": 1,
+      "section": "Signed cover letter on organization letterhead",
+      "content": "Identify this RFP, authorized contacts (name/title/address/phone), and officer authority certification under penalty of perjury.",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "p.3"
+    },
+    {
+      "order": 2,
+      "section": "Executive summary and individual provider evidence",
+      "content": "Planned outcomes and method; individual proposed clinician resumes and references. Organizational overview cannot replace provider evidence.",
+      "source_ids": [
+        "EBS02",
+        "EBS03"
+      ],
+      "locator": "p.3; Addendum additional-question summary"
+    },
+    {
+      "order": 3,
+      "section": "Work plan",
+      "content": "District-consulted collection of effectiveness and regulatory-compliance data; address all service requirements.",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "pp.3-4"
+    },
+    {
+      "order": 4,
+      "section": "Provider performance indicators",
+      "content": "Describe evaluation methods for SLP delivery and quality.",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "p.3"
+    },
+    {
+      "order": 5,
+      "section": "Fee-for-service proposal",
+      "content": "State unambiguous unit definitions, inclusions and charges; fixed district rate worksheet not provided.",
+      "source_ids": [
+        "EBS02"
+      ],
+      "locator": "p.3"
+    },
+    {
+      "order": 6,
+      "section": "Administrative appendix",
+      "content": "Requested business/credential evidence, COI, broker and bidder certifications, signed/notarized forms and W-9. Appendix placement is our organization recommendation; required contents derive from the RFP.",
+      "source_ids": [
+        "EBS01",
+        "EBS02",
+        "EBS03"
+      ],
+      "locator": "pp.7,10-17; Addendum question 1"
+    }
+  ],
+  "form_checklist": [
+    {
+      "id": "EBF01",
+      "document": "Cover letter",
+      "page": "3",
+      "signers": [
+        "Authorized organization officer"
+      ],
+      "notary": false,
+      "requirement": "Letterhead, authorized-contact details and authority/perjury certification.",
+      "source_ids": [
+        "EBS02"
+      ]
+    },
+    {
+      "id": "EBF02",
+      "document": "Insurance Certification",
+      "page": "10",
+      "signers": [
+        "Insurance representative",
+        "Bidder"
+      ],
+      "notary": false,
+      "requirement": "Both acknowledgment sections, contact details and dates; attach COI with bid. Broker confirmation does not replace the COI.",
+      "source_ids": [
+        "EBS02"
+      ]
+    },
+    {
+      "id": "EBF03",
+      "document": "Non-discrimination statement / assignability of contract",
+      "page": "11",
+      "signers": [
+        "Authorized signatory"
+      ],
+      "notary": false,
+      "requirement": "Signature, printed name/title and date on supplied form.",
+      "source_ids": [
+        "EBS02"
+      ]
+    },
+    {
+      "id": "EBF04",
+      "document": "Iranian Energy Sector Divestment Statement",
+      "page": "12",
+      "signers": [
+        "Company authorized signatory",
+        "Notary"
+      ],
+      "notary": true,
+      "requirement": "Company name, signature/title, sworn date and notary stamp/seal; submit notarized copy.",
+      "source_ids": [
+        "EBS02"
+      ]
+    },
+    {
+      "id": "EBF05",
+      "document": "Non-collusive bidding certification",
+      "page": "13",
+      "signers": [
+        "Authorized signatory"
+      ],
+      "notary": false,
+      "requirement": "Bidder/business contact fields, bid date, signature and title. If certification cannot truthfully be made, the RFP provides for a detailed signed explanation; district determines acceptability.",
+      "source_ids": [
+        "EBS02"
+      ]
+    },
+    {
+      "id": "EBF06",
+      "document": "Hold Harmless Agreement",
+      "page": "14",
+      "signers": [
+        "Authorized signatory",
+        "Notary"
+      ],
+      "notary": true,
+      "requirement": "Signed and notarized form with proposal; owner/legal review must understand defense and surviving indemnity obligation.",
+      "source_ids": [
+        "EBS02"
+      ]
+    },
+    {
+      "id": "EBF07",
+      "document": "Excluded/debarred party clause",
+      "page": "15",
+      "signers": [],
+      "notary": false,
+      "requirement": "Initial representation covers the bidder/entity and its employees/contractors; substantiate it before signing/submitting. No separate signature field is printed. Retain the clause in the complete response. Monthly employee/subcontractor checks and event notices are separate operating obligations.",
+      "source_ids": [
+        "EBS02"
+      ]
+    },
+    {
+      "id": "EBF08",
+      "document": "Sexual-harassment written policy and training certification",
+      "page": "16",
+      "signers": [
+        "Authorized signatory",
+        "Notary"
+      ],
+      "notary": true,
+      "requirement": "Certify implemented policy and annual employee training; enter name/title/company/signature/date and notarial affirmation. Do not certify an unimplemented program.",
+      "source_ids": [
+        "EBS02"
+      ]
+    },
+    {
+      "id": "EBF09",
+      "document": "Form W-9",
+      "page": "17; instructions pp.18-22",
+      "signers": [
+        "Appropriate taxpayer signatory when required by the form/instructions"
+      ],
+      "notary": false,
+      "requirement": "Completed matching taxpayer/entity name, classification, address and TIN. Complete certification as applicable under W-9 instructions. Keep tax identifiers out of public reports/repos.",
+      "source_ids": [
+        "EBS01",
+        "EBS02"
+      ]
+    }
+  ],
+  "eligibility": {
+    "clinician": "Required SLP licenses/certifications, state-required education and experience with children with IEPs. Individual proposed clinician resumes/references at submission. Additional candidates may be considered after contract establishment.",
+    "organization": "No record of unsatisfactory performance is an express minimum provider requirement. Administrative/fiscal capability, adequate records and audit trail, sufficient financial resources or ability to obtain them, integrity and delivery capacity are also required.",
+    "not_found": [
+      "No numeric minimum company age in the reviewed RFP/addendum.",
+      "No specified count or format for clinician references.",
+      "No required ASHA CCC, bilingual ability or minimum years of clinician experience expressly stated in this RFP. Separate applicable law and assignment requirements still govern.",
+      "No named IEP, attendance or billing system in the RFP/addendum."
+    ],
+    "new_entity_limit": "Absence of a firm-age threshold does not waive responsibility criteria or the no-unsatisfactory-performance gate. Disclose the new company and truthful relevant full performance history; distinguish individual/predecessor experience from company history. Obtain district clarification on acceptable new-entity evidence. Selected positive references alone do not substantiate the negative performance-history representation.",
+    "source_ids": [
+      "EBS02",
+      "EBS03"
+    ],
+    "locator": "RFP pp.4,7; Addendum question 1 and additional-question summary",
+    "initial_exclusion_representation": "Before the bidder signs/submits, substantiate the p.15 representation that the vendor/entity and its employees/contractors are not excluded or otherwise ineligible for covered government programs. This is separate from the express monthly employee/subcontractor checks; the RFP does not expressly impose monthly entity screening."
+  },
+  "price_line_items": [
+    {
+      "id": "EBP01",
+      "item": "Direct individual therapy",
+      "unit": "Proposed per authorized provider-hour, or district-confirmed session increment",
+      "quoted_amount": null,
+      "status": "proposed",
+      "note": "Distinguish direct minutes from other paid work; never infer a 30-minute rate from another district.",
+      "district_confirmed_payable": false,
+      "source_ids": [
+        "EBS02",
+        "EBS03"
+      ]
+    },
+    {
+      "id": "EBP02",
+      "item": "Group therapy",
+      "unit": "Proposed per provider-hour/group session; exact approved basis required",
+      "quoted_amount": null,
+      "status": "proposed",
+      "note": "State permitted group-size/attendance treatment; do not multiply a provider-hour price by children.",
+      "district_confirmed_payable": false,
+      "source_ids": [
+        "EBS02",
+        "EBS03"
+      ]
+    },
+    {
+      "id": "EBP03",
+      "item": "Initial/annual-review evaluation",
+      "unit": "Proposed per completed evaluation or approved hour",
+      "quoted_amount": null,
+      "status": "proposed",
+      "note": "Define records review, testing, report, consultation and any meeting inclusion.",
+      "district_confirmed_payable": false,
+      "source_ids": [
+        "EBS02",
+        "EBS03"
+      ]
+    },
+    {
+      "id": "EBP04",
+      "item": "IEP/CSE meeting attendance",
+      "unit": "Proposed per approved provider-hour or expressly included",
+      "quoted_amount": null,
+      "status": "proposed",
+      "note": "Clarify whether billed separately or included in assignment rate.",
+      "district_confirmed_payable": false,
+      "source_ids": [
+        "EBS02",
+        "EBS03"
+      ]
+    },
+    {
+      "id": "EBP05",
+      "item": "Progress reports, IEP support and session documentation",
+      "unit": "Proposed included allowance or separately authorized indirect-time hour",
+      "quoted_amount": null,
+      "status": "proposed",
+      "note": "Prevent double billing; paid employee work remains distinct from client-payable work.",
+      "district_confirmed_payable": false,
+      "source_ids": [
+        "EBS02",
+        "EBS03"
+      ]
+    },
+    {
+      "id": "EBP06",
+      "item": "Inter-school travel/mileage",
+      "unit": "Proposed included in pricing unless district expressly approves a charge",
+      "quoted_amount": null,
+      "status": "proposed",
+      "note": "Identify start-site commute versus assignment travel and any minimum-block economics.",
+      "district_confirmed_payable": false,
+      "source_ids": [
+        "EBS02",
+        "EBS03"
+      ]
+    },
+    {
+      "id": "EBP07",
+      "item": "Full-day/leave coverage",
+      "unit": "Proposed hourly schedule or explicitly defined day",
+      "quoted_amount": null,
+      "status": "proposed",
+      "note": "Specify paid/billable hours and included indirect work; no assumed guaranteed day.",
+      "district_confirmed_payable": false,
+      "source_ids": [
+        "EBS02",
+        "EBS03"
+      ]
+    },
+    {
+      "id": "EBP08",
+      "item": "Cancellations, school closures and makeup services",
+      "unit": "Proposed express cancellation policy subject to district agreement",
+      "quoted_amount": null,
+      "status": "proposed",
+      "note": "No automatic fee for absent student, unused capacity or unperformed session; approved makeup is a separately traceable service.",
+      "district_confirmed_payable": false,
+      "source_ids": [
+        "EBS02",
+        "EBS03"
+      ]
+    }
+  ],
+  "price_schedule_note": "No district-issued price worksheet, fixed billing increment or prescribed rate-line list appears in the reviewed 22-page RFP or Addendum 1. The following is our proposed response-rate-card structure, not district-confirmed payable units or additional mandatory bid lines. Avoid double charging included work.",
+  "questions_draft": [
+    {
+      "id": "EBQ01",
+      "topic": "Pricing and volume",
+      "question": "What fee units should proposers use, and how should individual/group therapy, evaluations, CSE meetings, documentation, inter-school travel and cancellations be priced? Can you provide a nonbinding range of initial assignments and expected approved weekly hours?",
+      "reason": "Critical to a defensible rate and minimum viable assignment.",
+      "status": "draft_not_sent",
+      "recipient": "Michelle Rivera, mrivera@ercsd.org",
+      "due": "2026-10-27T12:00:00-04:00",
+      "source_ids": [
+        "EBS02",
+        "EBS03"
+      ]
+    },
+    {
+      "id": "EBQ02",
+      "topic": "Company evidence",
+      "question": "For a newly formed agency proposing experienced named clinicians, what company-registration and full performance-history evidence will satisfy responsibility criteria, including the p.7 no-record-of-unsatisfactory-performance requirement? How many clinician references are required?",
+      "reason": "Distinguishes individual experience from company history and tests the express negative-history gate; selected positive references do not establish it.",
+      "status": "draft_not_sent",
+      "recipient": "Michelle Rivera, mrivera@ercsd.org",
+      "due": "2026-10-27T12:00:00-04:00",
+      "source_ids": [
+        "EBS02",
+        "EBS03"
+      ]
+    },
+    {
+      "id": "EBQ03",
+      "topic": "Insurance",
+      "question": "Which of pages 5, 7-9 controls the final insurance schedule, including auto/excess, insurer standards, endorsements and cancellation wording? Please confirm exact evidence required with the bid versus at contract execution.",
+      "reason": "COI and p.10 signatures are already stated bid requirements; clarification addresses overlapping schedules.",
+      "status": "draft_not_sent",
+      "recipient": "Michelle Rivera, mrivera@ercsd.org",
+      "due": "2026-10-27T12:00:00-04:00",
+      "source_ids": [
+        "EBS02",
+        "EBS03"
+      ]
+    },
+    {
+      "id": "EBQ04",
+      "topic": "Payment",
+      "question": "What is the payment interval after an accepted invoice, who approves attendance/service completion, and how are invoice rejections corrected? Is an assignment or purchase order required before service?",
+      "reason": "Thirty days in p.6 is submission deadline, not payment promise.",
+      "status": "draft_not_sent",
+      "recipient": "Michelle Rivera, mrivera@ercsd.org",
+      "due": "2026-10-27T12:00:00-04:00",
+      "source_ids": [
+        "EBS02",
+        "EBS03"
+      ]
+    },
+    {
+      "id": "EBQ05",
+      "topic": "Term and start",
+      "question": "Please correct p.5 renewal wording (Physical Therapist, four (3) additional years, four-year total) and state anticipated award and earliest service date.",
+      "reason": "Avoids an invented award date or renewal forecast.",
+      "status": "draft_not_sent",
+      "recipient": "Michelle Rivera, mrivera@ercsd.org",
+      "due": "2026-10-27T12:00:00-04:00",
+      "source_ids": [
+        "EBS02",
+        "EBS03"
+      ]
+    },
+    {
+      "id": "EBQ06",
+      "topic": "Systems and data",
+      "question": "Which systems/templates must providers use for IEP access, weekly logs, attendance and invoices, and what data agreement, role approval, training and incident notification terms apply?",
+      "reason": "No named platform or integration/API entitlement is established by this RFP.",
+      "status": "draft_not_sent",
+      "recipient": "Michelle Rivera, mrivera@ercsd.org",
+      "due": "2026-10-27T12:00:00-04:00",
+      "source_ids": [
+        "EBS02",
+        "EBS03"
+      ]
+    },
+    {
+      "id": "EBQ07",
+      "topic": "Provider onboarding and coverage",
+      "question": "What district onboarding/clearance evidence and review lead time apply to each named provider, substitutes and post-award additions? What notice/approval is required when a provider is unavailable?",
+      "reason": "RFP permits later candidate consideration, not automatic replacement.",
+      "status": "draft_not_sent",
+      "recipient": "Michelle Rivera, mrivera@ercsd.org",
+      "due": "2026-10-27T12:00:00-04:00",
+      "source_ids": [
+        "EBS02",
+        "EBS03"
+      ]
+    },
+    {
+      "id": "EBQ08",
+      "topic": "Employment/subcontracting",
+      "question": "If an agency uses independent-contractor clinicians or a subcontracted clinical entity, how should written consent under p.11 be requested and documented?",
+      "reason": "Needed only if considering that structure; proposed initial W-2 approach does not assume permission.",
+      "status": "draft_not_sent",
+      "recipient": "Michelle Rivera, mrivera@ercsd.org",
+      "due": "2026-10-27T12:00:00-04:00",
+      "source_ids": [
+        "EBS02",
+        "EBS03"
+      ]
+    }
+  ],
+  "procedural_checklist": [
+    {
+      "id": "EBC01",
+      "when": "Oct 20-22",
+      "step": "Owner readiness review",
+      "detail": "User confirms a new company, no confirmed therapists and no insurance: not bid-ready. Establish the entity, actual named clinician capacity, credentials, coverage and capital; substantiate full performance history and entity/personnel eligibility before any certification.",
+      "owner": "Owner",
+      "status": "planned_not_completed"
+    },
+    {
+      "id": "EBC02",
+      "when": "Oct 20-23",
+      "step": "Prepare document manifest",
+      "detail": "Map each RFP item to a real attachment; draft narrative and proposed rate units.",
+      "owner": "Bid lead",
+      "status": "planned_not_completed"
+    },
+    {
+      "id": "EBC03",
+      "when": "Before Oct 27 noon EDT",
+      "step": "Resolve purchasing questions",
+      "detail": "Owner-authorized question submission, if pursued, goes only to named purchasing contact; no outreach has occurred.",
+      "owner": "Owner/bid lead",
+      "status": "planned_not_completed"
+    },
+    {
+      "id": "EBC04",
+      "when": "Oct 23-28",
+      "step": "Secure signatures and notary",
+      "detail": "Broker/bidder certification; COI; three notarized forms; other signed forms and W-9. Only authorized humans certify facts.",
+      "owner": "Owner/broker/notary",
+      "status": "planned_not_completed"
+    },
+    {
+      "id": "EBC05",
+      "when": "Oct 28-29",
+      "step": "Internal go/no-go",
+      "detail": "Recheck addenda, actual provider readiness, company/insurance eligibility, rate margin and cash runway. No-bid if material gates cannot be satisfied.",
+      "owner": "Owner/clinical/finance",
+      "status": "planned_not_completed"
+    },
+    {
+      "id": "EBC06",
+      "when": "Proposed Oct 29 internal target",
+      "step": "Submission preparation",
+      "detail": "If owner elects to bid, review portal format with authorized account, validate all uploads and receipts; this target is earlier than official deadline.",
+      "owner": "Bid lead",
+      "status": "planned_not_completed"
+    },
+    {
+      "id": "EBC07",
+      "when": "Oct 30 noon EDT official deadline",
+      "step": "Final electronic receipt",
+      "detail": "Complete authorized submission before cutoff; a local PDF or saved draft is not proof of receipt.",
+      "owner": "Authorized bidder",
+      "status": "planned_not_completed"
+    },
+    {
+      "id": "EBC08",
+      "when": "After award; before service",
+      "step": "Mobilization",
+      "detail": "Executed agreement, insurance acceptance, provider approval, district onboarding/data access, funded assignments, approved schedule and payroll setup.",
+      "owner": "Operations",
+      "status": "planned_not_completed"
+    },
+    {
+      "id": "EBC09",
+      "when": "Weekly / monthly / event-driven",
+      "step": "Operate controls",
+      "detail": "Weekly service logs; invoice+attendance within30 days; monthly exclusions;3-day exclusion notices; credential/insurance monitoring and cash reconciliation.",
+      "owner": "Operations/compliance/finance",
+      "status": "planned_not_completed"
+    }
+  ],
+  "research_limits": [
+    "No BidNet account registration, login, upload, bid, email or records request performed.",
+    "User confirms a new company, no confirmed therapists and no insurance. No company/clinician supporting documents, insurer quotes, references or capital have been verified.",
+    "No purchase order, award, approved hours or district platform access established.",
+    "Subsequent amendments can change all preparation assumptions."
+  ],
+  "current_readiness": {
+    "status": "not_bid_ready",
+    "basis": "User-confirmed starting position",
+    "new_company": true,
+    "confirmed_therapists": 0,
+    "insurance_in_place": false,
+    "meaning": "Procurement requirements are unchanged; do not certify or promise readiness before evidence exists."
+  }
+}

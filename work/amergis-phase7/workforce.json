@@ -1,0 +1,785 @@
+{
+  "title": "East Ramapo SLP pilot: workforce and credential operating plan",
+  "as_of": "2026-10-20",
+  "scope": "One experienced in-person SLP plus a separately cleared backup; expand to at most three primary clinicians only against approved, funded assignments. This is our proposed pilot boundary, not a district volume commitment.",
+  "status": "Research and proposed operating design. No candidates identified, approached, screened or hired; no individual credentials verified; no employer registrations completed.",
+  "planning_assumptions": [
+    "Use the agency as the proposed W-2 employer; employment, entity and insurance arrangements require an accountable professional review before representations or payroll. Do not label workers independent contractors merely to reduce modeled costs.",
+    "Use already qualified, independently practicing school SLPs for initial capacity. Clinical fellows, assistants, teletherapy and OT/PT expansion are separate designs, not substitutions if recruiting is difficult.",
+    "The backup is a real second person with documented availability and accepted standby/activation terms; an applicant list is not guaranteed coverage. Reserve cost and any minimum paid commitment must be priced.",
+    "A named clinical lead oversees quality; this may be the experienced primary SLP if qualified and capacity allows. It does not create a statutory supervision requirement for every fully licensed SLP.",
+    "Public and nonpublic school sites may have different calendars, travel and onboarding. Do not promise a single-site job before the district confirms the assignment."
+  ],
+  "role_cards": [
+    {
+      "id": "EWC01",
+      "role": "Primary school SLP",
+      "proposed_count": 1,
+      "employment_model": "Proposed W-2, assignment and hours contingent on funded district order",
+      "job": "Deliver authorized school speech services in person; evaluate only when specifically authorized; attend agreed meetings; complete district clinical documentation; communicate missed services and safety concerns.",
+      "selection_preferences": [
+        "Demonstrated independent school/IEP experience relevant to actual ages and needs. No invented minimum number of years.",
+        "Competence in assessment, progress documentation and culturally/linguistically appropriate practice; request de-identified or synthetic examples.",
+        "Reliability for confirmed sites/hours and ability to perform essential duties with reasonable accommodation.",
+        "Actual state-required education and district qualification evidence; CCC-SLP is verified if the candidate claims it or the final assignment requires it, not assumed universally mandatory."
+      ],
+      "credential_rule": "EWR01",
+      "readiness_rule": "EWR03",
+      "bid_rule": "EWR07"
+    },
+    {
+      "id": "EWC02",
+      "role": "Cleared backup SLP",
+      "proposed_count": 1,
+      "employment_model": "Proposed W-2; written availability and paid activation/standby terms",
+      "job": "Cover only assignments and populations for which independently qualified and district-approved; receive the authorized plan and documented handoff before contact.",
+      "selection_preferences": [
+        "Equivalent assignment-specific credentials, relevant clinical competence and clearance.",
+        "A feasible local travel plan and actual availability windows that do not overlap incompatible work."
+      ],
+      "credential_rule": "EWR01",
+      "readiness_rule": "EWR03",
+      "bid_rule": "EWR07"
+    },
+    {
+      "id": "EWC03",
+      "role": "Clinical lead",
+      "proposed_count": "Named responsibility, not necessarily an additional FTE",
+      "job": "Human clinical review of competency, scope, complex cases, documentation and service concerns; coordinate with district clinical/IEP authorities.",
+      "capacity_rule": "Allocate and pay protected review time; do not count it twice as direct treatment and billable therapy. The role cannot be filled by an AI agent."
+    },
+    {
+      "id": "EWC04",
+      "role": "Operations and HR/payroll owner",
+      "proposed_count": "Named responsibility; founder or retained service can cover appropriate portions",
+      "job": "Own hiring decisions, credential acceptance, district approvals, coverage escalation, employment notices and payroll release. Use separation or independent review where the treating clinician also holds an agency role.",
+      "capacity_rule": "Founder remains accountable for vendors and agents; payroll service and counsel are established specialist services."
+    }
+  ],
+  "requirements": [
+    {
+      "id": "EWR01",
+      "kind": "NY rule",
+      "title": "Verify both professional and school authority",
+      "requirement": "Agency SLPs need NY SLP licensure/current registration plus the applicable TSHH/TSSLD certificate. A bilingual IEP assignment also needs its bilingual extension; language fluency alone does not establish that credential.",
+      "owner": "Credentialing lead, accepted by district",
+      "source_ids": [
+        "EWS01",
+        "EWS02",
+        "EWS03"
+      ]
+    },
+    {
+      "id": "EWR02",
+      "kind": "NY rule plus pilot design",
+      "title": "Resolve entity and employer model",
+      "requirement": "Education Law 8208 expressly permits corporate SLP/audiology practice through qualified people. Confirm the actual contracting/employer entity and any agency-license applicability; this SLP exception does not authorize OT/PT automatically.",
+      "owner": "Business owner with NY counsel",
+      "source_ids": [
+        "EWS11",
+        "EWS12",
+        "EWS13"
+      ]
+    },
+    {
+      "id": "EWR03",
+      "kind": "NY rule plus pilot design",
+      "title": "District-linked school clearance",
+      "requirement": "East Ramapo must coordinate the covered-school TEACH clearance request for agency personnel. A fingerprint appointment, receipt, prior credential or NYCPS clearance alone is insufficient proof of assignment readiness. Pilot policy requires full district-confirmed clearance before student contact, with no emergency shortcut.",
+      "owner": "District Fingerprint Coordinator and agency HR",
+      "source_ids": [
+        "EWS04",
+        "EWS05",
+        "EWS06"
+      ]
+    },
+    {
+      "id": "EWR04",
+      "kind": "NY rule plus pilot design",
+      "title": "Finish current child-abuse training",
+      "requirement": "NYSED sets November 17, 2026 for the second updated mandated-reporter curriculum. Pilot policy is to finish it before first student contact, even if that occurs earlier. Verify provider-reported completion; an old workshop certificate is not adequate evidence of this update.",
+      "owner": "Clinician and credentialing lead",
+      "source_ids": [
+        "EWS07",
+        "EWS08"
+      ]
+    },
+    {
+      "id": "EWR05",
+      "kind": "NY rule; applicability review",
+      "title": "Keep distinct credential renewal duties",
+      "requirement": "Practicing SLPs generally complete 30 continuing-competency hours per three-year professional-registration cycle under NYSED rules. Separately verify educator certificate type, validity and applicable registration/CTLE duties. Do not copy professional CE into a generic school-renewal checkbox; resolve applicable exceptions.",
+      "owner": "Clinician and credentialing lead",
+      "source_ids": [
+        "EWS09",
+        "EWS10"
+      ]
+    },
+    {
+      "id": "EWR06",
+      "kind": "NY rule plus pilot design",
+      "title": "Training and site handoff",
+      "requirement": "Certification workshops include child abuse, DASA and violence prevention; the speech certificate path also includes autism training. Confirm actual TEACH evidence/applicability, and complete district-specific safety, reporting, privacy and system orientation. Employer harassment policy and annual training are separate. RFP page 16 separately requires the bidder to certify that its policy is already implemented and annual employee training is provided.",
+      "owner": "HR and district site lead",
+      "source_ids": [
+        "EWS07",
+        "EWS20",
+        "EWS21"
+      ]
+    },
+    {
+      "id": "EWR07",
+      "kind": "RFP/addendum requirement",
+      "title": "Bid named clinician capability honestly",
+      "requirement": "Submit individual proposed-provider resumes/references, not leadership experience alone. Addendum permits later additions and assignments ranging from part-time sessions to leave coverage, but establishes no guaranteed work. Do not imply availability without the clinician agreeing to be proposed. Base RFP asks for IEP-child experience and state-required education; it states no minimum years or universal CCC requirement.",
+      "owner": "Bid owner and HR",
+      "source_ids": [
+        "EWS21",
+        "EWS22"
+      ]
+    },
+    {
+      "id": "EWR08",
+      "kind": "NY rule plus pilot design",
+      "title": "Establish W-2 employer operations",
+      "requirement": "Obtain/verify EIN and NY employer registration; configure withholding, wage reporting and new-hire reporting. Confirm coverage and pay/leave policies with payroll/counsel. Reporting starts from compensated work, which may precede classroom service.",
+      "owner": "Employer/payroll owner",
+      "source_ids": [
+        "EWS14",
+        "EWS15"
+      ]
+    },
+    {
+      "id": "EWR09",
+      "kind": "NY rule; applicability review",
+      "title": "Give the correct wage notice",
+      "requirement": "Resolve whether the firm meets the temporary-help definition and use the applicable pre-work wage notice/assignment procedure. Confirm workweek, pay frequency, overtime treatment, travel, training and cancellation pay. Client rejection of an invoice must not erase actual employee work.",
+      "owner": "Payroll owner and employment counsel",
+      "source_ids": [
+        "EWS16"
+      ]
+    },
+    {
+      "id": "EWR10",
+      "kind": "NY rule plus pilot design",
+      "title": "Fair recruiting and transparent proposed terms",
+      "requirement": "Do not ask for or rely on salary history. Publish a real approved pay range as pilot policy. NYDOL distinguishes client temporary-help assignments from internal agency jobs for the posting rule; do not describe all placements as legally identical.",
+      "owner": "Human hiring manager",
+      "source_ids": [
+        "EWS17",
+        "EWS18"
+      ]
+    },
+    {
+      "id": "EWR11",
+      "kind": "Proposed operating control",
+      "title": "Human clinical and hiring authority",
+      "requirement": "People decide hiring, accommodations, professional eligibility and clinical matters. AI may organize authorized evidence and flag missing items; it may not diagnose, change an IEP, sign a therapy note, or make an adverse hiring decision.",
+      "owner": "Hiring manager; treating therapist; district IEP authority",
+      "source_ids": []
+    },
+    {
+      "id": "EWR12",
+      "kind": "Proposed operating control",
+      "title": "Readiness is assignment-specific",
+      "requirement": "Before every start or substitute activation, approve the combination of person, school/site, schedule, service scope, credentials, current plan access and funded order. Unknown, pending and expired states block release; they are not equivalent to cleared.",
+      "owner": "Agency operations owner and district service owner",
+      "source_ids": []
+    },
+    {
+      "id": "EWR13",
+      "kind": "RFP requirement plus proposed review control",
+      "title": "Monthly exclusions screening and timely notice",
+      "requirement": "RFP page 15 requires at least monthly checks of all employees and subcontractors against federal EPLS/successor, HHS OIG and NY OMIG lists; written district notice within 3 days of an exclusion/ineligibility event or discovery. Potential name matches require prompt human identity review, not automatic rejection.",
+      "owner": "Compliance owner and district contract owner",
+      "source_ids": [
+        "EWS21",
+        "EWS24",
+        "EWS25",
+        "EWS26"
+      ]
+    }
+  ],
+  "credential_matrix": [
+    {
+      "item": "Identity and permission to propose",
+      "evidence": "Consented legal-name/credential match, current resume and signed permission to include the person in this bid; availability statement.",
+      "verification": "Human identity matching; do not expose identity documents in proposal or ordinary recruiting notes.",
+      "cadence": "At intake, material change and pre-submission availability reconfirmation.",
+      "basis": "Proposed control; bid evidence EWR07",
+      "source_ids": [
+        "EWS21",
+        "EWS22"
+      ]
+    },
+    {
+      "item": "NY SLP professional authority",
+      "evidence": "License number, professional status, registered-through date, timestamped official verification and any restriction review.",
+      "verification": "NYSED OP official verification plus relevant discipline search; applicant upload alone is not the final check.",
+      "cadence": "Proposed: intake, within five business days before start, monthly status review and on notice; reminders at 90/60/30 days before registration end. Expiry blocks assignment.",
+      "basis": "NY rule; cadence is agency design",
+      "source_ids": [
+        "EWS02"
+      ]
+    },
+    {
+      "item": "School certificate and applicable registration",
+      "evidence": "Certificate title/type, issued/expiry status, relevant extensions and district/TEACH verification; applicable registration evidence.",
+      "verification": "TEACH official verification through authorized access; no shared applicant password.",
+      "cadence": "Proposed: intake, pre-start, monthly exception review and renewal/change; apply the actual certificate dates.",
+      "basis": "NY rule; cadence is agency design",
+      "source_ids": [
+        "EWS03",
+        "EWS10"
+      ]
+    },
+    {
+      "item": "Bilingual role",
+      "evidence": "Relevant extension, verified assignment language and clinical competence.",
+      "verification": "School credential record and qualified human language/clinical assessment against the actual task.",
+      "cadence": "Before a bilingual assignment or any language/scope change.",
+      "basis": "NY credential rule plus proposed competency review",
+      "source_ids": [
+        "EWS01"
+      ]
+    },
+    {
+      "item": "School fingerprint clearance",
+      "evidence": "District-confirmed clearance status and date, request/reference identifiers where allowed.",
+      "verification": "District coordinator/TEACH process; retain status rather than unnecessary raw criminal-history detail.",
+      "cadence": "Before initial assignment and district-required rehire/transfer/change; district decides needed updates. No invented annual re-fingerprint rule.",
+      "basis": "NY process",
+      "source_ids": [
+        "EWS04",
+        "EWS05"
+      ]
+    },
+    {
+      "item": "Exclusions / debarment",
+      "evidence": "List/version, search timestamp, subject identity reference and reviewed result for each required list; escalation and notice evidence if applicable.",
+      "verification": "SAM.gov exclusions, HHS OIG LEIE and NY OMIG official services. Restricted identifiers used only for necessary official identity verification; no SSNs in AI prompts or proposal.",
+      "cadence": "Apply EWR13 contractual cadence and notice deadline. Initial screening before representation/start is additional pilot policy; the contract does not call the notice period business days.",
+      "basis": "RFP page 15; identity-resolution controls are proposed",
+      "source_ids": [
+        "EWS21",
+        "EWS24",
+        "EWS25",
+        "EWS26"
+      ]
+    },
+    {
+      "item": "Required workshops and latest update",
+      "evidence": "TEACH/provider evidence for applicable workshops, including the second updated child-abuse curriculum.",
+      "verification": "Approved provider electronic completion and district acceptance.",
+      "cadence": "Before pilot contact; deadline check for November 17, 2026; thereafter when law, certificate or district policy changes.",
+      "basis": "NY rule; earlier start gate is pilot design",
+      "source_ids": [
+        "EWS07",
+        "EWS08"
+      ]
+    },
+    {
+      "item": "Experience and references",
+      "evidence": "Relevant school roles, ages/tasks, proposed job-related reference checks; reference consent; synthetic work sample.",
+      "verification": "Human reference conversation and credentialed clinical interview. Final solicitation controls the required bid references; screening must not dilute that requirement.",
+      "cadence": "Before proposal/hire and on material assignment change.",
+      "basis": "RFP evidence plus proposed screening policy",
+      "source_ids": [
+        "EWS21",
+        "EWS22"
+      ]
+    },
+    {
+      "item": "Continuing competency",
+      "evidence": "Clinician attestation, cycle dates, CE plan and targeted proof if needed; do not store unnecessary course records.",
+      "verification": "Credentialing owner reviews applicability and exceptions; registration status remains independently verified.",
+      "cadence": "Proposed: onboarding and annual progress review; renewal check by actual due date.",
+      "basis": "NY rule with proposed review cadence",
+      "source_ids": [
+        "EWS09",
+        "EWS10"
+      ]
+    },
+    {
+      "item": "Employment authorization and payroll",
+      "evidence": "I-9 and tax/onboarding records in restricted HR/payroll system, signed wage notice and pay terms.",
+      "verification": "Authorized human employer representative and payroll provider; clinician chooses permitted I-9 documents.",
+      "cadence": "Hire and applicable reverification deadlines; no routine request for citizenship or nationality in screening.",
+      "basis": "Federal onboarding plus NY employer processes",
+      "source_ids": [
+        "EWS14",
+        "EWS16",
+        "EWS23"
+      ]
+    },
+    {
+      "item": "Assignment acceptance",
+      "evidence": "Written district approval, funded scope/hours/sites, actual start date, clinician acceptance, access confirmation and orientation.",
+      "verification": "Operations and district approvers jointly release; qualified therapist confirms service-plan handoff.",
+      "cadence": "Every new assignment, substitute activation or material scope/site change.",
+      "basis": "Proposed pilot design",
+      "source_ids": []
+    }
+  ],
+  "recruiting_plan": {
+    "geography": "Proposed search order: Rockland County first; then adjacent Westchester, Orange and northern Bergen County commuters who already hold the necessary NY credentials. These are search hypotheses, not evidence of available clinicians. Evaluate actual school-time travel and multi-site cost; do not impose residence or car-ownership requirements when another reliable travel method works.",
+    "channels": "Prepare a role-specific job description and approved compensation band; use authorized professional job boards, voluntary applicant intake, professional referrals and experienced school-SLP communities. No postings, paid campaigns, messages or scraping of private profiles have been performed.",
+    "pipeline_targets": "Proposed planning funnel, not a forecast: 8\u201312 qualified conversations, 4\u20136 human clinical interviews, two reference-complete finalists plus alternates. Do not put any unconsenting clinician in the bid or promise this funnel by October 30.",
+    "first_screen": [
+      "Confirm the actual credential record and relevant experience; no citizenship, age, family-status or salary-history questions.",
+      "Explain in-person work, conditional assignment, known/unknown hours, site travel and compensation/benefit terms honestly.",
+      "Confirm interview accommodations, start-date constraints and consent to credential/reference verification."
+    ],
+    "interview_rubric": [
+      {
+        "dimension": "IEP implementation",
+        "prompt": "With a synthetic service plan, explain authorized work, missing information and who may change the plan.",
+        "positive_evidence": "Keeps district/IEP authority distinct; does not invent service frequency or eligibility."
+      },
+      {
+        "dimension": "Clinical competence",
+        "prompt": "Discuss an appropriately de-identified school case and how assessment findings guided professional decisions.",
+        "positive_evidence": "Reasoned assessment and individualized intervention within scope; acknowledges limitations."
+      },
+      {
+        "dimension": "Documentation",
+        "prompt": "Create a brief note from an artificial session and distinguish attendance, treatment and progress.",
+        "positive_evidence": "Accurate attestation without fabricated observations; clear privacy judgment."
+      },
+      {
+        "dimension": "Language and accessibility",
+        "prompt": "Explain how language difference, disability and interpreter/bilingual requirements affect the specific assignment.",
+        "positive_evidence": "Avoids unsupported assumptions; recognizes when another qualification or support is necessary."
+      },
+      {
+        "dimension": "Missed services and safeguarding",
+        "prompt": "Respond to a cancellation, a safety concern and a plan mismatch.",
+        "positive_evidence": "Documents and escalates promptly through appropriate channels; does not unilaterally prescribe compensatory services."
+      },
+      {
+        "dimension": "Operational reliability",
+        "prompt": "Walk through a realistic site-day schedule including documentation, meetings and travel.",
+        "positive_evidence": "Feasible availability and workload; no overlapping commitments or double-counted service time."
+      }
+    ],
+    "decision_method": "Human clinical lead and hiring manager record supported / needs clarification / not yet supported against the same job-related criteria. No automated ranking, facial/voice/personality scoring or proxy protected-class inference. Resolve accommodations and lawful background issues through approved human processes."
+  },
+  "onboarding_sequence": [
+    {
+      "step": 1,
+      "owner": "Business owner",
+      "action": "Resolve contracting entity, W-2 model, insurance placement and payroll provider; approve real recruiting terms and a funded cash reserve.",
+      "exit": "Written owner decisions and provider confirmations; no entity/coverage assumptions hidden in bid."
+    },
+    {
+      "step": 2,
+      "owner": "Hiring manager and clinical lead",
+      "action": "Recruit/interview consenting candidates, verify capability, obtain references and genuine conditional availability.",
+      "exit": "Named primary and backup candidates who can be accurately represented."
+    },
+    {
+      "step": 3,
+      "owner": "Credentialing lead",
+      "action": "Complete official professional/school credential checks and review training; open a separate missing-evidence queue.",
+      "exit": "No unresolved mandatory qualification for proposed work; renewal dates recorded."
+    },
+    {
+      "step": 4,
+      "owner": "Bid owner",
+      "action": "Submit only the final approved personnel evidence and capacity statement required by the current solicitation.",
+      "exit": "Receipt and immutable packet retained; award or an assignment is not inferred from submission."
+    },
+    {
+      "step": 5,
+      "owner": "District coordinator and agency HR",
+      "action": "After applicable hiring/contract conditions, complete school-linked clearance, formal employment onboarding and authorized screening.",
+      "exit": "District-confirmed clearance plus employer readiness; compensation starts according to actual work performed."
+    },
+    {
+      "step": 6,
+      "owner": "District service owner and clinician",
+      "action": "Confirm funded order, sites/calendar, authorized service input, safe workspace/materials, reporting chain, record access and site orientation.",
+      "exit": "Named approval for the actual person/site/scope/date; no generic ready checkbox."
+    },
+    {
+      "step": 7,
+      "owner": "Operations owner",
+      "action": "Run a synthetic absence, timesheet, invoice and payroll rehearsal; verify that an invoice hold cannot suppress recorded wages.",
+      "exit": "Owners can resolve the exception and evidence is recoverable; rehearsal is not live therapy."
+    },
+    {
+      "step": 8,
+      "owner": "Clinical lead and district counterpart",
+      "action": "Review first week, then weekly during the pilot: gaps, documentation, workload, time accuracy and coverage capacity.",
+      "exit": "Continue/adjust/hold decision based on evidence; expand only after a funded need and capacity review."
+    }
+  ],
+  "backup_protocol": {
+    "planned_absence": "Confirm availability, district acceptance and exact scope; schedule paid handoff/preparation where required. Backup gains only necessary assignment access. Do not silently treat them as the original provider.",
+    "same_day_absence": "Agent alerts operations and drafts impacted-session list; human contacts the district through agreed channels. Offer the already cleared backup only if actually available and approved for the assignment.",
+    "no_available_backup": "Report unfilled work honestly and preserve missed-service evidence. The district/IEP process decides educational remedy; no automated makeup or compensatory-service determination.",
+    "commercial_rule": "Choose and price a real availability arrangement: paid scheduled reserve, limited standby retainer or explicitly non-guaranteed on-call. Employment counsel/payroll determine compensable on-call restrictions. Do not promise guaranteed coverage for an unpaid name on a roster.",
+    "access_rule": "Log handoff, new clinician attestation and any change of record access; revoke access when coverage ends."
+  },
+  "employer_decisions_before_offer": [
+    {
+      "topic": "Legal/employer structure",
+      "question": "Which entity signs, employs, pays, invoices and retains professional responsibility; does employment-agency licensing or another registration apply to this exact arrangement?",
+      "owner": "Business owner and NY counsel",
+      "source_ids": [
+        "EWS11",
+        "EWS12",
+        "EWS13"
+      ]
+    },
+    {
+      "topic": "Payroll and work classification",
+      "question": "What is the approved pay basis and workweek, applicable exemption/nonexempt treatment, overtime aggregation across assignments, pay frequency and treatment of travel, training, meetings, preparation, cancellations and standby?",
+      "owner": "Payroll provider and employment counsel",
+      "source_ids": [
+        "EWS16"
+      ]
+    },
+    {
+      "topic": "Employee leave/benefits",
+      "question": "What headcount/income tests and eligibility govern sick leave, paid prenatal leave, disability/PFL and other benefits; what additional benefits make the offer viable? School closure alone is not a complete pay rule.",
+      "owner": "HR, payroll and insurance broker",
+      "source_ids": [
+        "EWS14",
+        "EWS19"
+      ]
+    },
+    {
+      "topic": "Required insurance",
+      "question": "Does the bound employer coverage include the actual personnel, sites and duties, and does it meet the district packet? Reconcile separately with the insurance workstream.",
+      "owner": "Broker and contract owner",
+      "source_ids": [
+        "EWS14",
+        "EWS21"
+      ]
+    },
+    {
+      "topic": "New hires and employee records",
+      "question": "Who completes I-9, wage notices, taxes and new-hire reporting and stores them in restricted systems; who handles errors and legal holds?",
+      "owner": "Employer/payroll owner",
+      "source_ids": [
+        "EWS14",
+        "EWS15",
+        "EWS16",
+        "EWS23"
+      ]
+    },
+    {
+      "topic": "No unsupported shortcuts",
+      "question": "If a mandatory credential, clearance or provider availability is missing at the commercial deadline, which scope is withdrawn or held? Do not replace a missing SLP with an assistant/CF or change to teletherapy.",
+      "owner": "Business owner and district counterpart",
+      "source_ids": [
+        "EWS01",
+        "EWS22"
+      ]
+    }
+  ],
+  "human_agent_boundary": [
+    {
+      "function": "Candidate intake and evidence collection",
+      "agent_can": "Prepare a consented intake, extract fields, detect missing/expired documents and schedule reminders.",
+      "human_must": "Approve screening criteria, interview and hiring decisions; handle disputes and accommodations."
+    },
+    {
+      "function": "Credentialing",
+      "agent_can": "Prepare official verification tasks, retain source/timestamp, compare dates and flag mismatches.",
+      "human_must": "Resolve name matches, restrictions, applicability and final professional/district eligibility."
+    },
+    {
+      "function": "Coverage",
+      "agent_can": "Compare approved availability to authorized assignments and draft options.",
+      "human_must": "Accept the staffing change; district approves scope/access; clinician accepts handoff."
+    },
+    {
+      "function": "Clinical work",
+      "agent_can": "Only district-authorized administrative support; avoid student data in general AI context.",
+      "human_must": "Perform therapy/evaluation, exercise clinical judgment, sign notes and use district IEP procedures."
+    },
+    {
+      "function": "Payroll",
+      "agent_can": "Reconcile actual time, missing approvals and configured pay rules into a draft.",
+      "human_must": "Resolve disputed work/classification and authorize payroll release independent of invoice collection."
+    }
+  ],
+  "open_evidence": [
+    "Actual company entity, registrations, experience and professional/employer arrangements.",
+    "Named consenting clinicians, qualifications, references, availability, expected pay and backup terms.",
+    "Current complete bid/addenda requirements and district acceptance of proposed personnel/coverage.",
+    "Exact district clearance initiation, authorized private-school sites and site orientation requirements.",
+    "Actual funded assignments, school calendars, caseload/schedule, travel and student/service documentation systems.",
+    "Bound employer/professional insurance, benefit design and working-capital capacity.",
+    "Named human owners for every clinical, HR, compliance, payroll and district approval; roles above are not filled merely because the plan names them."
+  ],
+  "sources": [
+    {
+      "id": "EWS01",
+      "title": "Agency and bilingual school-SLP credential matrix",
+      "publisher": "New York State Education Department",
+      "url": "https://www.op.nysed.gov/professions/speech-language-pathology/practice-settings-credentials/what-credential-required-provide-speech-services-new-york-state",
+      "checked_on": "2026-10-20",
+      "supports": "Both credentials for the agency/contract model; additional bilingual extension for bilingual IEP speech.",
+      "inspection": "Fresh official page read."
+    },
+    {
+      "id": "EWS02",
+      "title": "Online professional-license verification and registration status",
+      "publisher": "NYSED Office of the Professions",
+      "url": "https://www.op.nysed.gov/services/verifications/online-verification-searches",
+      "checked_on": "2026-10-20",
+      "supports": "Official record fields and separate Regents discipline search; registration is distinct from license issuance.",
+      "inspection": "Fresh official search-index content."
+    },
+    {
+      "id": "EWS03",
+      "title": "Certification Start to Finish",
+      "publisher": "New York State Education Department",
+      "url": "https://www.nysed.gov/teaching-initiatives/certification-start-finish",
+      "checked_on": "2026-10-20",
+      "supports": "Official school credential verification through TEACH.",
+      "inspection": "Fresh official search-index content; direct fetch returned 502."
+    },
+    {
+      "id": "EWS04",
+      "title": "Who Must Be Fingerprinted Charts",
+      "publisher": "New York State Education Department",
+      "url": "https://www.nysed.gov/educator-integrity/who-must-be-fingerprinted-charts",
+      "checked_on": "2026-10-20",
+      "supports": "Contract-service-provider employees placed in schools are covered.",
+      "inspection": "Fresh official search-index content."
+    },
+    {
+      "id": "EWS05",
+      "title": "Required Fingerprinting of Prospective School Employees, September 25, 2024",
+      "publisher": "New York State Education Department",
+      "url": "https://www.nysed.gov/sites/default/files/memo.finnessey.to_.field_.required.fingerprinting.092524_0.pdf",
+      "checked_on": "2026-10-20",
+      "supports": "Covered school fingerprint coordinator must request contractor employee clearance through TEACH.",
+      "inspection": "Fresh official search-index text; direct fetch returned 502."
+    },
+    {
+      "id": "EWS06",
+      "title": "Fingerprinting: procedures and fee",
+      "publisher": "New York State Education Department",
+      "url": "https://www.nysed.gov/educator-integrity/fingerprinting",
+      "checked_on": "2026-10-20",
+      "supports": "Separate certification/employment service codes; October 1, 2026 fee $107.50; not NYC DOE workflow.",
+      "inspection": "Fresh official search-index content; direct fetch returned 502. Recheck fee when booking."
+    },
+    {
+      "id": "EWS07",
+      "title": "Workshops Required for Certification",
+      "publisher": "New York State Education Department",
+      "url": "https://www.nysed.gov/teaching-initiatives/workshops-required-certification",
+      "checked_on": "2026-10-20",
+      "supports": "Child abuse, DASA, violence prevention and speech-certificate autism training; provider electronic reporting.",
+      "inspection": "Fresh official search-index content."
+    },
+    {
+      "id": "EWS08",
+      "title": "Second Update Child Abuse Identification Workshop",
+      "publisher": "New York State Education Department",
+      "url": "https://www.nysed.gov/teaching-initiatives/news/second-update-child-abuse-identification-workshop",
+      "checked_on": "2026-10-20",
+      "supports": "Second updated curriculum deadline November 17, 2026 for educators/school staff who are mandated reporters.",
+      "inspection": "Fresh official search-index full substantive content; direct fetch returned 502."
+    },
+    {
+      "id": "EWS09",
+      "title": "Continuing Education for Speech-Language Pathology",
+      "publisher": "NYSED Office of the Professions",
+      "url": "https://www.op.nysed.gov/professions/speech-language-pathology/continuing-education",
+      "checked_on": "2026-10-20",
+      "supports": "30 continuing-competency hours per three-year professional-registration cycle, with activity-category conditions.",
+      "inspection": "Fresh official search-index content."
+    },
+    {
+      "id": "EWS10",
+      "title": "Educator Registration Information",
+      "publisher": "New York State Education Department",
+      "url": "https://www.nysed.gov/teaching-initiatives/registration-information",
+      "checked_on": "2026-10-20",
+      "supports": "Registration applicability depends on certificate type and practice setting; agency speech staff practicing in schools are addressed.",
+      "inspection": "Fresh official search-index content. Do not infer universal CTLE hours for every certificate."
+    },
+    {
+      "id": "EWS11",
+      "title": "Education Law 8208: Special provisions",
+      "publisher": "New York State Senate, consolidated law",
+      "url": "https://www.nysenate.gov/legislation/laws/EDN/8208",
+      "checked_on": "2026-10-20",
+      "supports": "SLP/audiology-specific corporate-practice exception and licensed/exempt personnel condition.",
+      "inspection": "Fresh official law read."
+    },
+    {
+      "id": "EWS12",
+      "title": "How to file a Professional Service Entity",
+      "publisher": "NYSED Office of the Professions",
+      "url": "https://www.op.nysed.gov/corporate/disclaimer/how-to-file",
+      "checked_on": "2026-10-20",
+      "supports": "Professional entity and employment/management distinctions; profession-specific exceptions.",
+      "inspection": "Carried forward from Phase 6 official source review on the same date."
+    },
+    {
+      "id": "EWS13",
+      "title": "Employment Agencies",
+      "publisher": "New York State Department of Labor",
+      "url": "https://dol.ny.gov/employment-agencies",
+      "checked_on": "2026-10-20",
+      "supports": "Fee-based placement with third-party employers and licensing exceptions; applicability must be classified.",
+      "inspection": "Fresh official page read."
+    },
+    {
+      "id": "EWS14",
+      "title": "Hiring employees",
+      "publisher": "New York State Department of Taxation and Finance",
+      "url": "https://www.tax.ny.gov/bus/doingbus/hire.htm",
+      "checked_on": "2026-10-20",
+      "supports": "EIN, NY employer registration, withholding/wage reporting and employer coverage responsibilities.",
+      "inspection": "Fresh official page read."
+    },
+    {
+      "id": "EWS15",
+      "title": "New hire reporting",
+      "publisher": "New York State Department of Taxation and Finance",
+      "url": "https://www.tax.ny.gov/bus/wt/newhire.htm",
+      "checked_on": "2026-10-20",
+      "supports": "Report new/rehires within 20 calendar days; defines compensated start date.",
+      "inspection": "Fresh official search-index content."
+    },
+    {
+      "id": "EWS16",
+      "title": "Notice and Acknowledgment of Wage Rates for Temporary Help Firms (LS50)",
+      "publisher": "New York State Department of Labor",
+      "url": "https://dol.ny.gov/guidelines-notice-and-acknowledgment-wage-rates-temporary-help-firms-ls50",
+      "checked_on": "2026-10-20",
+      "supports": "Applicable temporary-help wage notice before work; applies to specified employment model.",
+      "inspection": "Fresh official search-index content; direct fetch returned 403."
+    },
+    {
+      "id": "EWS17",
+      "title": "Salary History Ban: What You Need To Know",
+      "publisher": "New York State",
+      "url": "https://www.ny.gov/salary-history-ban/salary-history-ban-what-you-need-know",
+      "checked_on": "2026-10-20",
+      "supports": "Employers cannot request or rely on applicant salary history as described by the rule.",
+      "inspection": "Fresh official search-index content."
+    },
+    {
+      "id": "EWS18",
+      "title": "Pay Transparency Act Frequently Asked Questions",
+      "publisher": "New York State Department of Labor",
+      "url": "https://dol.ny.gov/node/45456",
+      "checked_on": "2026-10-20",
+      "supports": "Temporary-help client assignment exception; internal agency opportunities treated differently; good-faith pay range.",
+      "inspection": "Fresh official page read."
+    },
+    {
+      "id": "EWS19",
+      "title": "New York Paid Sick Leave",
+      "publisher": "New York State",
+      "url": "https://www.ny.gov/new-york-paid-sick-leave/new-york-paid-sick-leave",
+      "checked_on": "2026-10-20",
+      "supports": "Leave accrual and paid/unpaid entitlement depend on employer size and income.",
+      "inspection": "Fresh official search-index content; not a complete leave-benefit checklist."
+    },
+    {
+      "id": "EWS20",
+      "title": "Harassment and Workplace Violence employer guidance",
+      "publisher": "New York State Department of Labor",
+      "url": "https://dol.ny.gov/harassment-and-workplace-violence-fare-grant",
+      "checked_on": "2026-10-20",
+      "supports": "Employer prevention policy and annual sexual harassment prevention training.",
+      "inspection": "Fresh official search-index content."
+    },
+    {
+      "id": "EWS21",
+      "title": "East Ramapo RFP-ER-5-27 Speech Language Pathology Services",
+      "publisher": "East Ramapo Central School District",
+      "url": "https://resources.finalsite.net/images/v1791482107/ercsdorg/sukltm9f2kp0petz1047/RFP-ER-5-27SpeechLanguagePathologyServices.pdf",
+      "checked_on": "2026-10-20",
+      "supports": "Personnel eligibility; monthly exclusions checks and 3-day notice; implemented harassment policy/training certification.",
+      "inspection": "Fresh Phase 7 original public PDF OCR read for pages 7, 15 and 16; bid workstream independently checks original pages and current addenda."
+    },
+    {
+      "id": "EWS22",
+      "title": "East Ramapo RFP-ER-5-27 Addendum 1",
+      "publisher": "East Ramapo Central School District",
+      "url": "https://resources.finalsite.net/images/v1792420062/ercsdorg/fpom6qft6vvbddf353po/Addendum1_16.pdf",
+      "checked_on": "2026-10-20",
+      "supports": "In-person only; named clinician resumes/references; later clinician additions and varying assignment sizes.",
+      "inspection": "Phase 6 original PDF verified on October 20; direct web fetch failed this turn. Phase 7 bid workstream refreshes."
+    },
+    {
+      "id": "EWS23",
+      "title": "Instructions for Form I-9",
+      "publisher": "US Citizenship and Immigration Services",
+      "url": "https://www.uscis.gov/sites/default/files/document/forms/i-9instr.pdf",
+      "checked_on": "2026-10-20",
+      "supports": "Employer identity/employment-authorization verification; Section 2 generally within three business days.",
+      "inspection": "Fresh official search-index content; use current form and approved verification procedure at hiring."
+    },
+    {
+      "id": "EWS24",
+      "title": "SAM.gov exclusions search and matching help",
+      "publisher": "US General Services Administration",
+      "url": "https://sam.gov/help",
+      "checked_on": "2026-10-20",
+      "supports": "Official exclusions tool and identity-confirmation help; no individual searched.",
+      "inspection": "Fresh official search-index content."
+    },
+    {
+      "id": "EWS25",
+      "title": "HHS OIG Exclusions FAQs",
+      "publisher": "US Department of Health and Human Services, Office of Inspector General",
+      "url": "https://www.oig.hhs.gov/faqs/exclusions-faq/",
+      "checked_on": "2026-10-20",
+      "supports": "Official LEIE search and identity-verification process; no individual searched.",
+      "inspection": "Fresh official search-index content."
+    },
+    {
+      "id": "EWS26",
+      "title": "Search Medicaid Exclusions",
+      "publisher": "NY Office of the Medicaid Inspector General",
+      "url": "https://apps.omig.ny.gov/exclusions/ex_search.aspx",
+      "checked_on": "2026-10-20",
+      "supports": "Official restricted/excluded-provider search; no individual searched.",
+      "inspection": "Fresh official search-index content."
+    }
+  ],
+  "operating_checks": [
+    {
+      "check": "License versus registration",
+      "expected": "A lifetime-issued license with expired registration remains not ready."
+    },
+    {
+      "check": "School credential versus professional license",
+      "expected": "One verified credential cannot satisfy the other; missing bilingual extension prevents that bilingual assignment."
+    },
+    {
+      "check": "Fingerprint receipt versus district clearance",
+      "expected": "An appointment receipt cannot release a school assignment."
+    },
+    {
+      "check": "Pending backup",
+      "expected": "A qualified name without accepted availability, district clearance and handoff cannot be activated."
+    },
+    {
+      "check": "Potential sanctions name match",
+      "expected": "Escalate promptly to a human for identity verification; preserve contractual notice obligations without treating a name hit as a final employment decision."
+    },
+    {
+      "check": "Missed service versus payroll",
+      "expected": "Undelivered therapy remains undelivered while actual preparation/travel/documentation work is preserved for approved payroll treatment."
+    },
+    {
+      "check": "Unfunded capacity",
+      "expected": "A bid submission or award cannot create guaranteed clinician work hours or a payable district assignment."
+    }
+  ],
+  "operating_checks_note": "Proposed manual rehearsal criteria, not implemented software tests or proof of legal compliance."
+}
