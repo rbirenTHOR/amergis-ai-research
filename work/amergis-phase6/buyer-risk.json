@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-20",
+  "scope": "Focused public buyer-financial-risk check for East Ramapo Central School District and Rockland BOCES. This is not a credit rating, financial audit, payment-history verification or recommendation to extend credit.",
+  "conclusion": "Retain East Ramapo as a conditional pilot target; monitoring status alone does not establish financial distress. Its current budget analysis supports the budget while identifying material operational and funding risks. Rockland has useful audited disclosure, but neither buyer has been cleared for credit or payment performance.",
+  "buyers": [
+    {
+      "id": "RSKB01",
+      "name": "East Ramapo Central School District",
+      "state": "NY",
+      "assessment": "Enhanced funding and operational diligence; no verified payment-default finding.",
+      "facts": [
+        {
+          "text": "The April 2026 monitors supported the proposed 2026-27 budget as academically and fiscally sound and described improved finances.",
+          "source_ids": [
+            "RSK01"
+          ],
+          "locator": "Transmittal letter, PDF pages 1-2"
+        },
+        {
+          "text": "The report describes a $10 million February 2026 fund-balance transfer for transportation, limited capital-market access associated with a Baa3 rating, and $6.6 million proposed reserve support for recurring operations.",
+          "source_ids": [
+            "RSK01"
+          ],
+          "locator": "Report pages 3, 5-6; PDF pages 5, 7-8"
+        },
+        {
+          "text": "Counterbalancing resources included $38.2 million unassigned fund balance at June 2025 and projected June 2026 cash near $60 million; the report projected adequate cash through fall 2026 and a low point in February 2027.",
+          "source_ids": [
+            "RSK01"
+          ],
+          "locator": "Report pages 6-7; PDF pages 8-9"
+        },
+        {
+          "text": "Leadership turnover, incomplete position control and weak recruitment/retention infrastructure remained operating concerns in the April report.",
+          "source_ids": [
+            "RSK01"
+          ],
+          "locator": "Report pages 3-4, 8"
+        },
+        {
+          "text": "The district website reports that voters passed the 2026-27 budget; the page labels its displayed election counts unofficial.",
+          "source_ids": [
+            "RSK02"
+          ],
+          "locator": "2026 Election Unofficial Results - Budget Passed"
+        }
+      ],
+      "limits": [
+        "The rating and cash figures are dated statements/projections in the April report; current rating and actual June/October cash have not been independently established.",
+        "No vendor aging, invoice disputes, late-payment or default evidence was obtained.",
+        "The preliminary monitor analysis is not the final adopted budget or a therapy allocation."
+      ],
+      "pilot_implication": "Do not reject solely because monitors are assigned. Before a first assignment, verify current approved funding/encumbrance, named service and invoice approvers, payment terms and current invoice-processing experience. Keep initial exposure within available payroll capital."
+    },
+    {
+      "id": "RSKB02",
+      "name": "Rockland BOCES",
+      "state": "NY",
+      "assessment": "Public audited disclosure available; current payment capacity and contract-specific funding remain unverified.",
+      "facts": [
+        {
+          "text": "The FY2025 independent auditor reported fair presentation of the financial statements; its limited control review did not identify material weaknesses.",
+          "source_ids": [
+            "RSK04"
+          ],
+          "locator": "PDF pages 3, 70-71"
+        },
+        {
+          "text": "At June 2025, reported general-fund balance was $13.91 million and a $9 million revenue anticipation note was outstanding. The report attributes the unrestricted net-position deficit primarily to pension and other post-employment liabilities.",
+          "source_ids": [
+            "RSK04"
+          ],
+          "locator": "PDF pages 24, 36, 63"
+        },
+        {
+          "text": "The 2025 management letter recommended reviewing banking arrangements and improving capital-asset reconciliations; it acknowledged corrections to the asset register.",
+          "source_ids": [
+            "RSK05"
+          ],
+          "locator": "PDF page 2"
+        },
+        {
+          "text": "The official Business Office page publishes the FY2025 financial statements, management letter and 2026-27 budget book.",
+          "source_ids": [
+            "RSK03"
+          ],
+          "locator": "Audited Financial Statements resources"
+        }
+      ],
+      "limits": [
+        "An audit opinion concerns financial-statement presentation, not a guarantee of payment or an opinion on internal-control effectiveness.",
+        "The reviewed audit is for June 2025; no current vendor-aging data or therapy-order encumbrance was obtained.",
+        "The BOCES government-wide net-position deficit must not be represented as a current cash shortfall.",
+        "The 2026-27 budget book was located; a detailed current-year cash-flow and therapy-line review was outside this focused check."
+      ],
+      "pilot_implication": "Retain as an alternative procurement target; do not label it financially risk-free or demonstrably more creditworthy than East Ramapo on this limited comparison. Apply the same funded-order, payment-term and payroll-capital checks."
+    }
+  ],
+  "comparison_limits": [
+    "The two organizations have different funding and accounting structures; comparing headline fund balances is not a normalized credit comparison.",
+    "No payment default or late-payment pattern was verified for either buyer.",
+    "An adopted budget or public solicitation does not guarantee funds or work for a particular agency."
+  ],
+  "sources": [
+    {
+      "id": "RSK01",
+      "title": "State Monitor Analysis of East Ramapo Proposed 2026-2027 Budget",
+      "publisher": "New York State Education Department",
+      "url": "https://www.nysed.gov/sites/default/files/programs/innovation-school-reform/ercsd-2026-27-budget-analysis-transmittal-letter-and-report-4-15-26-with-amended-transmittal-letter.pdf",
+      "published_on": "2026-04-15",
+      "amended_on": "2026-04-20",
+      "accessed_on": "2026-10-20",
+      "source_type": "primary government report",
+      "access_note": "Web fetch timed out; ordinary public HTTPS retrieval succeeded; extracted full text and visually inspected relevant financial pages 8-9."
+    },
+    {
+      "id": "RSK02",
+      "title": "2026 Budget Vote and Election Information",
+      "publisher": "East Ramapo Central School District",
+      "url": "https://www.ercsd.org/board-of-education-26/budget-vote/2026-budget-vote-and-election-information",
+      "published_on": null,
+      "accessed_on": "2026-10-20",
+      "source_type": "primary district website"
+    },
+    {
+      "id": "RSK03",
+      "title": "Business Office",
+      "publisher": "Rockland BOCES",
+      "url": "https://www.rocklandboces.org/resources/business-office",
+      "published_on": null,
+      "accessed_on": "2026-10-20",
+      "source_type": "primary BOCES website"
+    },
+    {
+      "id": "RSK04",
+      "title": "Rockland BOCES FY2025 Financial Statements and Independent Auditor Reports",
+      "publisher": "Rockland BOCES / R.S. Abrams & Co., LLP",
+      "url": "https://www.rocklandboces.org/fs/resource-manager/view/e2c312c5-5aca-4375-b1d9-2ae3be61b85d",
+      "published_on": "2025-11-13",
+      "period_end": "2025-06-30",
+      "accessed_on": "2026-10-20",
+      "source_type": "primary audited financial statements",
+      "access_note": "Public PDF text inspected; auditor opinion page visually inspected."
+    },
+    {
+      "id": "RSK05",
+      "title": "Rockland BOCES 2025 Management Letter",
+      "publisher": "Rockland BOCES / R.S. Abrams & Co., LLP",
+      "url": "https://www.rocklandboces.org/fs/resource-manager/view/547b6060-5418-425e-a656-c83076eb2f92",
+      "published_on": "2025-11-13",
+      "accessed_on": "2026-10-20",
+      "source_type": "primary auditor management letter",
+      "access_note": "Web title metadata misleadingly says September 4, 2007; actual letter is dated November 13, 2025 and concerns FY2025."
+    },
+    {
+      "id": "RSK06",
+      "title": "Rockland BOCES Budget Book 2026-27",
+      "publisher": "Rockland BOCES",
+      "url": "https://www.rocklandboces.org/fs/resource-manager/view/d6c56f0d-7c98-4b61-8394-aca7d30c2559",
+      "published_on": null,
+      "accessed_on": "2026-10-20",
+      "source_type": "primary proposed budget book",
+      "access_note": "Located through official Business Office; detailed financial conclusions not derived from this document."
+    }
+  ]
+}

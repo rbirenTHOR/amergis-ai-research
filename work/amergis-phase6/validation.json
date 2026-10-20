@@ -1,0 +1,12 @@
+{
+  "as_of": "2026-10-20",
+  "status": "pass",
+  "method": "Research-data consistency checks only; no current procurement, legal, clinical, credit or product validation.",
+  "checks": [
+    "Unique IDs, source counts and HTTPS source structure",
+    "All nested source and buyer references resolve",
+    "Action-calendar dates follow snapshot and state time zones",
+    "Closed, conflicted, unverified and non-staffing channels stay distinct",
+    "Recommendation remains conditional and supply metric is scoped"
+  ]
+}

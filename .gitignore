@@ -96,3 +96,20 @@
 !/work/amergis-phase5/check_report.cjs
 !/work/amergis-phase5/report-checks.json
 !/work/amergis-phase5/validation.json
+
+# School therapy pilot market selection
+!/outputs/school-therapy-pilot-selection.html
+!/outputs/school-therapy-pilot-selection.json
+!/work/amergis-phase6/selection.json
+!/work/amergis-phase6/texas.json
+!/work/amergis-phase6/carolina-georgia.json
+!/work/amergis-phase6/midatlantic.json
+!/work/amergis-phase6/challengers.json
+!/work/amergis-phase6/state-credential-fit.json
+!/work/amergis-phase6/buyer-risk.json
+!/work/amergis-phase6/review.json
+!/work/amergis-phase6/build_selection.py
+!/work/amergis-phase6/check_selection.py
+!/work/amergis-phase6/check_report.cjs
+!/work/amergis-phase6/validation.json
+!/work/amergis-phase6/report-checks.json

@@ -1,0 +1,248 @@
+{
+  "as_of": "2026-10-20",
+  "scope": "Bounded challenger search outside Texas, North Carolina, Georgia, Virginia and Maryland. Searched Ohio, Pennsylvania, New York, Delaware, Arizona, Florida, Washington and Michigan; this is not a 50-state market census.",
+  "recommendation": "New York deserves a real challenger position: East Ramapo and Rockland BOCES have verified late-October discipline-specific procurements in the same county. NYCPS offers a separate application-based independent-provider channel. Prioritize procurement readiness and an available licensed clinician before selecting any market; an open bid is not a placement or revenue commitment.",
+  "sources": [
+    {
+      "id": "CHS01",
+      "title": "Rockland BOCES current bids and RFPs",
+      "url": "https://www.rocklandboces.org/resources/business-office/purchasing/~board/bids-and-rfps/post/speech-therapist-rfp-2026-27-18",
+      "publisher": "Rockland BOCES",
+      "source_type": "official procurement page",
+      "verified": "2026-10-20",
+      "supports": "Separate PT 2026-27-16, OT 2026-27-17 and speech 2026-27-18 procurements, all due October 29, 2026 at 11 a.m."
+    },
+    {
+      "id": "CHS02",
+      "title": "Rockland BOCES Speech Therapist RFP 2026-27-18",
+      "url": "https://resources.finalsite.net/images/v1791546749/rocklandbocesorg/dcfmrexhu0n2zstuctvx/SPEECHTHERAPIST-RFP2026-27-18.pdf",
+      "publisher": "Rockland BOCES",
+      "source_type": "official RFP PDF",
+      "verified": "2026-10-20",
+      "supports": "Entry, delivery, pricing structure, school experience, systems and planned December 2026 effective award.",
+      "inspection": "Public linked scanned PDF downloaded, OCR read, deadline/timeline page visually checked."
+    },
+    {
+      "id": "CHS03",
+      "title": "East Ramapo current bid, quote and RFP listings",
+      "url": "https://www.ercsd.org/departments/purchasing/current-bid-quote-and-rfp-listings",
+      "publisher": "East Ramapo Central School District",
+      "source_type": "official procurement page",
+      "verified": "2026-10-20",
+      "supports": "Open listings include SLP RFP-ER-5-27 with Addendum 1 and PT RFP-ER-4-27. Generic page mailing language is superseded for the reviewed SLP procurement by its electronic-submission instructions."
+    },
+    {
+      "id": "CHS04",
+      "title": "East Ramapo SLP RFP-ER-5-27",
+      "url": "https://resources.finalsite.net/images/v1791482107/ercsdorg/sukltm9f2kp0petz1047/RFP-ER-5-27SpeechLanguagePathologyServices.pdf",
+      "publisher": "East Ramapo Central School District",
+      "source_type": "official RFP PDF",
+      "verified": "2026-10-20",
+      "supports": "October 30 noon electronic deadline; October 27 noon question deadline; free limited BidNet option; qualifications and service scope.",
+      "inspection": "Public linked scanned PDF downloaded and OCR read; submission page visually checked."
+    },
+    {
+      "id": "CHS05",
+      "title": "East Ramapo SLP RFP-ER-5-27 Addendum 1",
+      "url": "https://resources.finalsite.net/images/v1792420062/ercsdorg/fpom6qft6vvbddf353po/Addendum1_16.pdf",
+      "publisher": "East Ramapo Central School District",
+      "source_type": "official RFP addendum PDF",
+      "verified": "2026-10-20",
+      "supports": "In-person only; individual-provider resumes/references at bid; additional clinicians after award; part-time sessions through full-time leave replacement.",
+      "inspection": "Linked public PDF downloaded, extracted and visually checked."
+    },
+    {
+      "id": "CHS06",
+      "title": "NYCPS independent related service provider application",
+      "url": "https://infohub.nyced.org/docs/default-source/default-document-library/application-for-independent-related-service-providers.pdf?sfvrsn=7b02556b_2",
+      "publisher": "New York City Public Schools",
+      "source_type": "official application PDF",
+      "verified": "2026-10-20",
+      "document_date": "Revised July 2026",
+      "supports": "Agency and individual qualification route; school-age/preschool selection; clinician credentials and DOE clearance; no fixed deadline stated."
+    },
+    {
+      "id": "CHS07",
+      "title": "NYCPS independent related service provider rates",
+      "url": "https://infohub.nyced.org/docs/default-source/default-document-library/related-services-independent-provider-rates.pdf",
+      "publisher": "New York City Public Schools",
+      "source_type": "official reimbursement schedule",
+      "verified": "2026-10-20",
+      "document_date": "Revised August 21, 2026; rates effective September 1, 2025",
+      "supports": "OT/PT and individual monolingual speech $54 per half-hour; individual bilingual speech $64.80 per half-hour. Reimbursement schedule, not employee pay."
+    },
+    {
+      "id": "CHS08",
+      "title": "NYCPS related services: public school students K-12",
+      "url": "https://www.schools.nyc.gov/learning/special-education/supports-and-services/related-services",
+      "publisher": "New York City Public Schools",
+      "source_type": "official service guidance",
+      "verified": "2026-10-20",
+      "supports": "Employee then contracted-agency then independent-provider RSA voucher delivery sequence; no assurance of referrals."
+    },
+    {
+      "id": "CHS09",
+      "title": "State monitors: East Ramapo Central School District",
+      "url": "https://www.nysed.gov/innovation-school-reform/state-monitors-east-ramapo-central-school-district-ercsd",
+      "publisher": "New York State Education Department",
+      "source_type": "official oversight page",
+      "verified": "2026-10-20",
+      "supports": "Continuing academic/fiscal oversight, review of budget and long-term plan, and reporting that includes district contracts."
+    },
+    {
+      "id": "CHS10",
+      "title": "NY State Comptroller Fiscal Stress Monitoring search",
+      "url": "https://wwe1.osc.state.ny.us/localgov/fiscalmonitoring/fsms.cfm",
+      "publisher": "Office of the New York State Comptroller",
+      "source_type": "official fiscal indicator",
+      "verified": "2026-10-20",
+      "supports": "2025 school-district row for East Ramapo: No Designation, score 0.0. Do not confuse the separate Town of Ramapo municipal rating with the school district."
+    },
+    {
+      "id": "CHS11",
+      "title": "Suffolk County RFQ25/00002 published legal notice",
+      "url": "https://cdn1.creativecirclemedia.com/liadvance/files/20250312-105332-3ed-SCN%203-13-25_Web.pdf",
+      "publisher": "Suffolk County notice published in Suffolk County News",
+      "source_type": "county-authored procurement notice in newspaper",
+      "verified": "2026-10-20",
+      "document_date": "March 13, 2025",
+      "supports": "Original rolling preschool related-services RFQ response window through January 31, 2030, 3:30 p.m.; current packet/addenda not independently verified."
+    }
+  ],
+  "districts": [
+    {
+      "id": "CHD01",
+      "name": "East Ramapo Central School District",
+      "state": "NY",
+      "buyer_type": "Public school district; public and nonpublic school service assignments",
+      "demand_evidence": "Official SLP RFP and addendum describe varying assignments from individual part-time sessions to full-time leave replacement; no guaranteed caseload or headcount.",
+      "procurement_status": "Verified open SLP RFP-ER-5-27, with Addendum 1 reviewed. A separate PT procurement is listed but its complete terms were not reviewed.",
+      "deadline": "October 30, 2026, 12:00 p.m. Eastern Daylight Time (America/New_York); questions October 27, 2026, 12:00 p.m. EDT. RFP calls this local time; recheck subsequent addenda.",
+      "entry_route": "Electronic BidNet submission; RFP describes a free Limited registration option. No registration or submission performed.",
+      "incumbents": "Not established. Addendum directs incumbent-rate requests to district records/BoardDocs; no such request was sent.",
+      "new_entrant_requirements": "Qualified SLPs with required credentials and IEP experience; individual clinician resumes and references at submission. Leadership credentials alone do not suffice. Required proposal documents, including requested NY business-registration evidence, must accompany the bid. Later clinician additions are possible after contract establishment.",
+      "pilot_fit": "Strong operational fit for one to three in-person therapists if named qualified clinicians and compliant business infrastructure are already available. The short deadline makes this a readiness test, not justification to rush formation or promise capacity.",
+      "supply_economics": "No local therapist availability, awarded bill rates, or margin verified. Fiscal-monitor oversight merits contract/payment diligence; the Comptroller's 2025 district record is No Designation, not fiscal stress. Do not import the Town of Ramapo rating.",
+      "modality": "In-person only; virtual-only and teletherapy rejected in Addendum 1.",
+      "critical_gaps": [
+        "Actual authorized assignments and hours",
+        "Available named clinicians, pay expectations and school credentials",
+        "Current award rates, payment timing and approval route",
+        "Clarification of inconsistent renewal wording in the RFP, which refers to a physical therapist and conflicting extension counts",
+        "All subsequent addenda before any response"
+      ],
+      "source_ids": [
+        "CHS03",
+        "CHS04",
+        "CHS05",
+        "CHS09",
+        "CHS10"
+      ],
+      "recommendation": "Priority challenger for an immediately ready local SLP team; score separately from long-term market attractiveness. A candidate pipeline and procurement approval remain prerequisites.",
+      "discipline_only_bid": "Yes: reviewed RFP-ER-5-27 is SLP-specific; separate PT procurement listed. Addendum explicitly permits part-time individual sessions as assignments, but no minimum purchase or permission to ignore required proposal components.",
+      "insurance_summary": "RFP PDF page 5: general liability $1m occurrence/$2m aggregates; professional E&O $2m occurrence/$2m aggregate with two-year continuation; statutory workers compensation and NY disability. Later sample requirements also list $1m excess and $1m auto, and optional bond language. Obtain insurer/buyer clarification of applicable samples; this is not a complete coverage checklist.",
+      "experience_distinction": "Addendum asks for individual proposed clinician resumes/references, not merely company leadership history; base RFP separately requires organizational administrative/fiscal capability and a satisfactory performance record. No explicit minimum firm age found in reviewed text."
+    },
+    {
+      "id": "CHD02",
+      "name": "Rockland BOCES and component-district programs",
+      "state": "NY",
+      "buyer_type": "Regional educational service cooperative",
+      "demand_evidence": "SLP RFP anticipates variable student-service needs; no minimum volume stated.",
+      "procurement_status": "Verified open separate SLP, OT and PT RFPs; SLP specification reviewed in depth.",
+      "deadline": "October 29, 2026, 11:00 a.m. Eastern Daylight Time (America/New_York). SLP timeline anticipates November board approval and December 2026 effective award; recheck subsequent addenda.",
+      "entry_route": "Two sealed proposal copies by mail or hand delivery to Purchasing, 65 Parrott Road, Building 4, West Nyack. Questions through the named purchasing agent only.",
+      "incumbents": "Not verified from primary award records.",
+      "new_entrant_requirements": "Organizations or individuals may respond. SLP specification calls for NY licensure, NYSED fingerprint clearance, school/disability experience, IEP Direct and Kinney knowledge, transportation, coursework certificates and insurance. District experience and references influence selection; subcontracting requires prior written consent.",
+      "pilot_fit": "Potential single-discipline entry with adjacent East Ramapo opportunity. One to three clinicians is a proposed limit, not buyer-confirmed volume.",
+      "supply_economics": "Bidders quote session lengths, evaluation/meeting and mileage charges; no awarded rate or margin established. Multi-site travel and same-day documentation affect utilization.",
+      "modality": "School programs during school hours, potentially multiple locations; remote delivery not established.",
+      "critical_gaps": [
+        "Available assignments and geographical concentration",
+        "Therapist supply and fully loaded delivery cost",
+        "Incumbent contracts and payment experience",
+        "Full OT/PT specifications if selected instead of SLP",
+        "Clinical supervision and approval of any staffing/subcontracting structure"
+      ],
+      "source_ids": [
+        "CHS01",
+        "CHS02"
+      ],
+      "recommendation": "Second verified NY procurement option; credible for an experienced licensed clinician-led entrant, with reference and insurance burden recognized.",
+      "discipline_only_bid": "Yes: speech, OT and PT have separate RFP numbers; only speech terms were reviewed in detail. Scope and qualification review must be repeated before an OT/PT response.",
+      "insurance_summary": "RFP PDF page 7: general liability $1m occurrence/$2m aggregate, $1m sexual misconduct/assault, $1m auto, $2m E&O occurrence/aggregate with three-year continuation, $3m umbrella/excess, and statutory workers compensation/NY disability. Independent-contractor coverage must be demonstrated. Full endorsements/exclusions/forms must be reviewed.",
+      "experience_distinction": "School experience is a clinician requirement; bidder must list current/former school clients and years. Selection weighs individual/organization experience and NY school/BOCES years. No explicit minimum firm age found, but a new company is not exempt from evidence requests."
+    },
+    {
+      "id": "CHD03",
+      "name": "New York City Public Schools \u2014 independent related-services registry",
+      "state": "NY",
+      "buyer_type": "District-authorized family RSA voucher channel; distinct from a district staffing RFP",
+      "demand_evidence": "Official guidance provides an independent-provider fallback where employee and contracted-agency services are unavailable. This establishes a channel, not verified unfilled referrals.",
+      "procurement_status": "Current official independent-provider application available; no fixed submission deadline stated. Qualification/registry route, not an awarded services order.",
+      "deadline": "No fixed application deadline identified in current July 2026 form",
+      "entry_route": "Agency or individual provider application, selecting service/borough/school-age or preschool coverage; individual clinician qualification and DOE clearance required before service.",
+      "incumbents": "NYCPS staff and contracted agencies have earlier positions in the service-delivery sequence; current agency award roster not researched.",
+      "new_entrant_requirements": "Application requires NYSED licensure/current registration for therapy disciplines, DOE fingerprint/clearance process, and SLP TSHH or TSSLD certification. Agencies list each clinician. Registry standard-rate acceptance and application contact details require confirmation before submission.",
+      "pilot_fit": "Possible one-borough, one-discipline, small-team pilot without an imminent districtwide tender, if the business accepts family-voucher matching and session-based operations.",
+      "supply_economics": "Published provider reimbursement: OT/PT/individual monolingual speech $54 per 30 minutes; individual bilingual speech $64.80. These are not wages, guaranteed hourly revenue, or margins. Separate group rates apply. Model travel, no-shows, documentation, billing and payment timing.",
+      "modality": "Not established from the reviewed application and rate documents; do not assume teletherapy eligibility.",
+      "critical_gaps": [
+        "Actual authorized referrals and parent acquisition process",
+        "Assignment/modality authorization",
+        "Local clinician supply, school credentials and availability",
+        "Session documentation, invoice rejection and cash-collection behavior",
+        "Resolve inconsistent application contact-email variants before submission"
+      ],
+      "source_ids": [
+        "CHS06",
+        "CHS07",
+        "CHS08"
+      ],
+      "recommendation": "Best verified no-fixed-deadline alternative, but choose it deliberately as an RSA service model rather than treating it as equivalent to district staffing."
+    }
+  ],
+  "watchlist_and_exclusions": [
+    {
+      "name": "Suffolk County preschool Related Services RFQ25/00002",
+      "state": "NY",
+      "status": "Conditional lead, not fully verified current opportunity",
+      "reason": "Original county notice has rolling responses through January 31, 2030 at 3:30 p.m. County procurement portal returned 403, so current amendments/eligibility/rates remain unverified. Preschool ages 3\u20135 Section 4410 is a distinct model from the K\u201312 staffing pilot.",
+      "source_ids": [
+        "CHS11"
+      ]
+    },
+    {
+      "name": "Grandview School District",
+      "state": "WA",
+      "status": "Closed despite Current RFP heading",
+      "reason": "Official 2026\u201327 physical-therapist PDF gives June 10, 2026, 1 p.m. deadline. Exclude as currently open.",
+      "url": "https://www.gsd200.org/fs/resource-manager/view/36a65ac6-0427-483e-bed1-1f7811140b87"
+    },
+    {
+      "name": "Osceola County School District SDOC-27-043-P-LK",
+      "state": "FL",
+      "status": "Unverified live tender lead",
+      "reason": "Aggregators show October 22 deadline; official district site directs to VendorLink, whose page says registration/login is needed for full documents. No account created; current tender terms, mandatory meeting status and amendments unverified.",
+      "url": "https://www.osceolaschools.net/procurementandcontracts"
+    },
+    {
+      "name": "West Shore School District",
+      "state": "PA",
+      "status": "Open adjacent clinical category, excluded from SLP/OT/PT shortlist",
+      "reason": "Official page describes school-based outpatient counseling, October 28, 2026 deadline and July 2027 start. This is a mental-health counseling procurement, not the selected rehabilitation-therapy staffing model.",
+      "url": "https://www.wssd.k12.pa.us/Content.aspx?id=89614"
+    },
+    {
+      "name": "Ohio, Delaware, Arizona and Michigan bounded search",
+      "status": "No additional verified open right-size SLP/OT/PT procurement established",
+      "reason": "Search found closed awards, stale current-bid listings, unrelated procurements and staffing advertisements. Absence in this bounded search is not proof of no demand."
+    }
+  ],
+  "research_limits": [
+    "No outreach, procurement registration, account login, bid, FOIL request or clinician recruitment performed.",
+    "Open solicitations and registry eligibility do not establish guaranteed volume or an available workforce.",
+    "No comparable local wage/availability or fully loaded margin study completed; do not rank New York highest on economics from this work alone.",
+    "Exact public procurement requirements are evidence for the named opportunity, not a substitute for state-wide legal/credential review."
+  ]
+}

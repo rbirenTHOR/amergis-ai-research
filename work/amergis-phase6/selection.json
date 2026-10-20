@@ -1,0 +1,335 @@
+{
+  "title": "School therapy pilot — state and buyer selection",
+  "as_of": "2026-10-20",
+  "status": "Conditional target recommendation; no buyer or clinician committed",
+  "decision": {
+    "state": "New York",
+    "cluster": "Rockland County",
+    "first_target": "East Ramapo Central School District",
+    "second_target": "Rockland BOCES",
+    "discipline": "SLP first, subject to an available qualified clinician; OT/PT are separate expansion decisions",
+    "headline": "Validate a small, in-person SLP pilot in Rockland County, New York.",
+    "rationale": "East Ramapo has a current SLP-specific purchasing route and explicitly contemplates part-time individual sessions through full-time leave coverage. Rockland BOCES has a second nearby discipline-specific procurement. This combination provides the strongest verified first-pilot prospect in the markets screened, provided the entity and named clinicians can meet the requirements.",
+    "qualification": "This is a recommendation about where to validate and pursue a pilot, not a finding that the new company is bid-ready, that these buyers will award work, or that New York has the best margins.",
+    "time_sensitivity": "The two New York bids close October 29–30, 2026. Recheck addenda and readiness before deciding whether to respond. If the team is not ready, retain the region as a research target and seek the next permitted entry window; do not promise capacity to meet a deadline.",
+    "standing_alternative": "Frederick County Public Schools, Maryland has a verified route to add qualified providers during the contract term. Its experience and reference provisions make it a conditional alternative, especially for an established operator.",
+    "alternate_model": "NYCPS independent-provider registration has no fixed deadline identified, but it serves a family-held RSA voucher channel. That is a different acquisition and service model from district staffing.",
+    "source_ids": [
+      "CHS01",
+      "CHS02",
+      "CHS03",
+      "CHS04",
+      "CHS05",
+      "CHS06",
+      "CHS08",
+      "CLS12",
+      "MAS01",
+      "MAS02",
+      "MAS03",
+      "CLS16",
+      "CLS17",
+      "RSK01",
+      "RSK02",
+      "RSK04"
+    ],
+    "funding_diligence": "East Ramapo’s April 2026 monitors supported its budget and the district reports voter approval. Reserve reliance and administrative weaknesses still call for funded-order and payment diligence. Neither buyer has verified current payment-performance data in this research."
+  },
+  "method": {
+    "scope": "Comparative public-source screen of New York, Texas, North Carolina, Georgia, Virginia and Maryland, with a bounded challenger search in other states. Not a 50-state census or a full credit, legal or commercial diligence exercise.",
+    "user_preference": "No geographic preference or existing regional advantage supplied.",
+    "proposed_pilot": "One buyer, one discipline, initially one experienced clinician and a cleared backup; expand toward three only against approved assignments. In-person delivery for East Ramapo. Pilot size is our proposal, not a buyer commitment.",
+    "unknown_company_inputs": "Entity status, previous client references, clinician roster, insurance, payroll arrangements, working capital and commercial readiness have not been supplied. They are unverified rather than assumed absent.",
+    "criteria_in_order": [
+      "Verifiable current purchasing access and actual opportunity type",
+      "Eligibility of a new or small provider and ability to offer a narrow scope",
+      "Exact credential, clearance, delivery and records requirements",
+      "Feasibility of recruiting and retaining a qualified local clinician",
+      "Funding, payment terms, delivery cost and working-capital exposure"
+    ],
+    "ranking_rule": "Qualitative priority with explicit gates. No weighted numerical score: comparable local supply, pay, rates and payment-performance data are missing. An unknown is not scored as favorable.",
+    "evidence_rule": "Primary buyer documents establish procurement terms. Official boards and statutes establish specific credential/entity rules. Aggregator listings are discovery leads only. Current headings, jobs, historic contracts and vendor registration do not prove an open staffing order.",
+    "date_rule": "All availability labels are a snapshot as of October 20, 2026. Expired deadlines remain closed unless a current primary source establishes another entry mechanism. Future deadlines require a fresh addendum check before action.",
+    "ai_scope": "AI agents can prepare recruiting, credential evidence, scheduling, time reconciliation and invoice workflows under defined permissions. Licensed clinicians deliver therapy and retain clinical judgment; the school retains IEP authority. This research does not establish autonomous operation or permission to use student data in AI systems."
+  },
+  "priorities": [
+    {
+      "rank": 1,
+      "district_id": "CHD01",
+      "label": "First pilot target",
+      "why": "SLP-specific bid; explicitly variable part-time and leave-cover assignments; clinician-level evidence is central.",
+      "gate": "Named dual-credentialed clinicians, organizational capability, insurance, funded assignments and payment diligence. In-person only.",
+      "confidence": "High on advertised scope and current route; low on win probability, supply and economics."
+    },
+    {
+      "rank": 2,
+      "district_id": "CHD02",
+      "label": "Second buyer in the same county",
+      "why": "Separate discipline-specific RFPs; individuals or organizations may respond; planned December 2026 start supports preparation time after award.",
+      "gate": "Experience/references, substantial insurance, geographic scope, transportation and same-day records workflow. No guaranteed assignments.",
+      "confidence": "High on procurement existence; medium on small-team delivery fit until task scope is known."
+    },
+    {
+      "rank": 3,
+      "label": "Best verified ongoing district entry route",
+      "why": "Current contract allows additional qualified providers during its term, avoiding an artificial launch deadline.",
+      "gate": "Five-year history provision with position exceptions, five client references and in-person capability need explicit eligibility resolution. Agency subcontracting is restricted.",
+      "confidence": "High on documented addition mechanism; unresolved for this operator's eligibility.",
+      "district_id": "MAD01"
+    },
+    {
+      "rank": 4,
+      "district_id": "TXD02",
+      "label": "Texas verification target",
+      "why": "Potential continuous-entry procurement would improve timing; Texas has a documented professional-license school SLP pathway.",
+      "gate": "Continuous-entry status and complete current packet are not primary-verified. Do not treat it as an open award opportunity.",
+      "confidence": "Low on current therapy access; general purchasing process verified."
+    },
+    {
+      "rank": 5,
+      "district_id": "SGD03",
+      "label": "Future-cycle small-school target",
+      "why": "North Carolina charter-network procurement allowed individual schools and disciplines, a useful design fit for a small operator.",
+      "gate": "Reviewed solicitation closed. Next lawful entry route, company experience/references and actual funded assignment remain unresolved.",
+      "confidence": "Historical design fit verified; current access unverified."
+    }
+  ],
+  "state_comparison": [
+    {
+      "state": "NY",
+      "name": "New York",
+      "position": "First validation priority",
+      "access": "Two verified current Rockland-area discipline-specific bids; separate NYCPS application channel.",
+      "credential_fit": "Agency school-age SLPs need professional licensure/current registration plus TSHH/TSSLD. The corporate SLP exception must not be generalized to OT/PT.",
+      "tradeoff": "Best evidenced small-assignment access in this screen, offset by credential, insurance, travel and payment-diligence gates.",
+      "source_ids": [
+        "CHS01",
+        "CHS03",
+        "CHS05",
+        "CHS06",
+        "CLS12",
+        "CLS16",
+        "CLS17"
+      ]
+    },
+    {
+      "state": "MD",
+      "name": "Maryland",
+      "position": "Standing-route alternative",
+      "access": "Frederick permits additional qualifying providers during the current contract; entry requirements can exclude an unproven company.",
+      "credential_fit": "Professional board license plus an agency employment-history review for direct contact with minors.",
+      "tradeoff": "Flexible procurement timing is attractive, but experience, references, in-person delivery and contract-term conflicts must be resolved.",
+      "source_ids": [
+        "CLS10",
+        "CLS11",
+        "MAS01",
+        "MAS02",
+        "MAS03"
+      ]
+    },
+    {
+      "state": "TX",
+      "name": "Texas",
+      "position": "Verify before prioritizing",
+      "access": "Birdville deadline imminent and conflicting later-deadline lead unresolved; Mesquite potentially continuous; Elgin identifier mismatch.",
+      "credential_fit": "Documented professional-license pathway; school contractor fingerprinting and district clearance still apply.",
+      "tradeoff": "Large certified-professional population is context only. Current new-company purchasing access is weaker than headline market size suggests.",
+      "source_ids": [
+        "TXS01",
+        "TXS02",
+        "TXS03",
+        "TXS04",
+        "TXS05",
+        "TXS06",
+        "CLS01",
+        "CLS03"
+      ]
+    },
+    {
+      "state": "NC",
+      "name": "North Carolina",
+      "position": "Next-cycle pipeline",
+      "access": "Wake, Durham and smaller-network purchasing show real contract demand, but reviewed submission windows have closed.",
+      "credential_fit": "DPI states a current NCBOESLPA license is the qualifying school SLP credential; district agency onboarding needs confirmation.",
+      "tradeoff": "Clear credential pathway and narrow-campus bid examples; company references and current entry timing remain barriers.",
+      "source_ids": [
+        "CLS04",
+        "CLS05",
+        "SGS01",
+        "SGS02",
+        "SGS03",
+        "SGS04",
+        "SGS05"
+      ]
+    },
+    {
+      "state": "VA",
+      "name": "Virginia",
+      "position": "Credential-clear future target",
+      "access": "Reviewed therapy procurement windows are closed; no comparable current small-provider route established.",
+      "credential_fit": "Board guidance expressly addresses privately contracted school SLPs; use fully licensed experienced personnel initially.",
+      "tradeoff": "Operational licensing clarity does not establish open purchasing access or available clinicians.",
+      "source_ids": [
+        "CLS08",
+        "CLS09",
+        "MAS05",
+        "MAS06",
+        "MAS10"
+      ]
+    },
+    {
+      "state": "GA",
+      "name": "Georgia",
+      "position": "Selective pipeline",
+      "access": "Reviewed therapy awards support buyer demand, with later or specialist entry requiring verification.",
+      "credential_fit": "Professional-board and school-certificate applicability must be resolved for the selected agency placement.",
+      "tradeoff": "Do not equate a broad staffing/MSP tender with an accessible one-therapist opportunity.",
+      "source_ids": [
+        "CLS06",
+        "CLS07",
+        "SGS07",
+        "SGS08",
+        "SGS09",
+        "SGS10",
+        "SGS12"
+      ]
+    }
+  ],
+  "workforce_context": {
+    "source_id": "SUP01",
+    "measure": "ASHA members and nonmembers certified in SLP only who paid dues/fees in 2025",
+    "rows": [
+      {
+        "state": "NY",
+        "count": 19401,
+        "pdf_page": 66
+      },
+      {
+        "state": "TX",
+        "count": 17737,
+        "pdf_page": 88
+      },
+      {
+        "state": "NC",
+        "count": 7167,
+        "pdf_page": 68
+      },
+      {
+        "state": "GA",
+        "count": 5784,
+        "pdf_page": 22
+      },
+      {
+        "state": "VA",
+        "count": 4797,
+        "pdf_page": 94
+      },
+      {
+        "state": "MD",
+        "count": 4004,
+        "pdf_page": 42
+      }
+    ],
+    "limit": "These statewide certificate counts are not all licensees, school staff counts, local available candidates, vacancies or evidence of easy recruitment. They exclude the separate dual-certification category. Not used as a readiness score."
+  },
+  "sources": [
+    {
+      "id": "SUP01",
+      "title": "ASHA 2025 year-end demographic profile by state",
+      "url": "https://www.asha.org/siteassets/surveys/2025-demographic-profile-certificate-holders-by-state.pdf",
+      "verified": "2026-10-20",
+      "supports": "SLP-only certified totals in six states; PDF pages 22, 42, 66, 68, 88 and 94.",
+      "inspection": "Original PDF text extracted; New York and Texas table pages visually inspected. Only professional certification totals are retained.",
+      "limitations": "Certification totals do not measure supply available for this pilot."
+    }
+  ],
+  "sensitivity": [
+    {
+      "condition": "We already have qualified New York clinicians and a compliant ready entity",
+      "effect": "East Ramapo and Rockland BOCES remain the leading direct-buyer targets; evaluate bid readiness against the October dates."
+    },
+    {
+      "condition": "We lack named clinicians, references or insurance for the current windows",
+      "effect": "Do not force a bid. Keep Rockland as a research region, establish the provider operation and verify a later lawful purchasing route. No immediately launch-ready district is established."
+    },
+    {
+      "condition": "We have a five-year relevant history and acceptable client references",
+      "effect": "Frederick can move ahead of the October bids because its additional-provider mechanism allows preparation on a realistic schedule, subject to buyer acceptance."
+    },
+    {
+      "condition": "The pilot must deliver remotely",
+      "effect": "East Ramapo and Frederick fall out. Birdville lists speech/OT teletherapy, but eligibility and latest addenda must be verified; no ready remote-only winner is established."
+    },
+    {
+      "condition": "OT or PT is chosen instead of SLP",
+      "effect": "Repeat the exact state/entity/role and solicitation review. Rockland has separate OT/PT bids; the reviewed SLP terms and New York corporate SLP exception cannot be reused blindly."
+    },
+    {
+      "condition": "The business accepts family-voucher acquisition and session billing",
+      "effect": "NYCPS becomes a credible alternative channel. Assess authorized referrals, clinician utilization and collections separately from district staffing."
+    }
+  ],
+  "validation_plan": [
+    {
+      "step": 1,
+      "decision": "Can the operator qualify?",
+      "evidence_needed": "Entity/employer structure, exact bid forms and current addenda, permitted client references, clinician resumes, insurance quotations and required registrations.",
+      "owner": "Accountable business lead with procurement and credential review",
+      "stop_condition": "No compliant evidence by the submission date; do not promise future capacity as current capacity."
+    },
+    {
+      "step": 2,
+      "decision": "Can one clinician deliver?",
+      "evidence_needed": "Consented availability and pay expectations; independently verified professional and school credentials; required clearance; experience; travel radius; cleared backup plan.",
+      "owner": "Recruiting lead and qualified clinical lead",
+      "stop_condition": "No qualified available clinician for the exact location, timetable and service scope."
+    },
+    {
+      "step": 3,
+      "decision": "Is there a funded, bounded assignment?",
+      "evidence_needed": "Buyer-confirmed need, authorized order, site and caseload, hours and duration, modality, documentation systems, cancellation/absence rules and escalation owner.",
+      "owner": "Buyer and business lead",
+      "stop_condition": "Only vendor eligibility or generic demand is known; there is no authorized assignment."
+    },
+    {
+      "step": 4,
+      "decision": "Does the placement work financially?",
+      "evidence_needed": "Actual bill rate and worker cost; payroll burden; travel, documentation and unbillable time; screening and insurance allocation; invoice approval terms; collection timing and payroll cash buffer.",
+      "owner": "Finance lead",
+      "stop_condition": "Required margin or payroll liquidity depends on unguaranteed utilization or optimistic payment timing."
+    },
+    {
+      "step": 5,
+      "decision": "Can the workflow operate under the contract?",
+      "evidence_needed": "Approved record locations and system access; school consent/data instructions; AI-provider permissions; clinician sign-off; time/pay/bill separation; substitute and missed-service handling.",
+      "owner": "District, clinical lead and operations lead",
+      "stop_condition": "Student-data or clinical authority is unresolved, or an essential district workflow cannot be supported."
+    }
+  ],
+  "product_implications": [
+    {
+      "finding": "New York agency SLP dual credentials",
+      "requirement": "Verify license registration and school certificate independently, including dates, role and any bilingual extension."
+    },
+    {
+      "finding": "Named providers required before bidding",
+      "requirement": "Maintain consented, evidence-backed candidate availability and proposal attachments; prevent speculative names or stale availability."
+    },
+    {
+      "finding": "Small sessions and full-time coverage coexist",
+      "requirement": "Configure service, worked-time and invoice units per assignment rather than treat every order as a full-day shift."
+    },
+    {
+      "finding": "Buyer systems and clinician documentation remain central",
+      "requirement": "Support approved district-system handoffs, completion evidence and exception queues; do not assume a replacement clinical-record portal."
+    },
+    {
+      "finding": "Open procurement can still lack assignments",
+      "requirement": "Track prospect, qualified vendor, executed contract and authorized order as distinct states."
+    },
+    {
+      "finding": "Payment and payroll clocks differ",
+      "requirement": "Track invoice approval/collection independently of payroll obligations and stress-test cash needs before scaling."
+    }
+  ],
+  "not_performed": "No buyer contact, reference checks, clinician recruiting, account registration, bid submission, private portal access, credit certification or operating pilot. No firm-specific eligibility or legal clearance concluded."
+}

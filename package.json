@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Public-source Amergis research, operating blueprint and API reconstruction map",
   "scripts": {
-    "check": "node work/amergis-phase2/qa/check_report.cjs && node work/amergis-phase3/check_report.cjs && node work/amergis-phase4/check_roadmap.cjs && python3 work/amergis-phase5/check_pack.py && python3 work/amergis-phase5/check_scenarios.py && node work/amergis-phase5/check_report.cjs"
+    "check": "node work/amergis-phase2/qa/check_report.cjs && node work/amergis-phase3/check_report.cjs && node work/amergis-phase4/check_roadmap.cjs && python3 work/amergis-phase5/check_pack.py && python3 work/amergis-phase5/check_scenarios.py && node work/amergis-phase5/check_report.cjs && python3 work/amergis-phase6/check_selection.py && node work/amergis-phase6/check_report.cjs"
   },
   "devDependencies": {
     "linkedom": "0.18.13"

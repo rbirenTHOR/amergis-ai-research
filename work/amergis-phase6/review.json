@@ -1,0 +1,92 @@
+{
+  "title": "Independent review of school therapy pilot-market selection",
+  "as_of": "2026-10-20",
+  "reviewer": "pilot_selection_review",
+  "scope": "Review of selection.json and the six research inputs: challengers, texas, carolina-georgia, midatlantic, state-credential-fit and buyer-risk. This review concerns research claims and recommendation logic, not a rendered HTML review, legal clearance, credit approval or live procurement eligibility.",
+  "status": "Pass — no unresolved findings",
+  "conclusion": "Rockland County, New York is defensible as the first validation priority in this bounded screen. East Ramapo is the strongest current direct-buyer lead for a narrow in-person SLP assignment; Rockland BOCES is an adjacent second lead. This is not evidence that the unknown company can submit a compliant bid, that assignments exist for it, or that the region has superior supply or margins. Frederick is a useful ongoing-route alternative only after its agency-history and client-reference conditions are resolved.",
+  "findings": [
+    {
+      "id": "REV601",
+      "severity": "medium",
+      "status": "resolved",
+      "location": "selection.json: decision.source_ids and state_comparison source_ids",
+      "finding": "Several access claims are supported by research inputs but not by the source IDs attached to the summary. The decision's Frederick statement lacks MAS01–MAS03; the Maryland comparison cites only credential sources; North Carolina, Virginia and Georgia access summaries likewise lack the relevant procurement sources. New York's corporate-exception summary should cite CLS16/CLS17.",
+      "required_fix": "Attach the actual procurement sources to each summary claim and include the relevant corporate-authority source. Preserve each district's own evidence links in the report.",
+      "disposition": "Re-read selection.json: the decision now cites Frederick procurement and New York corporate-authority sources; MD/NC/VA/GA summaries cite the relevant procurement sources; the NY state row includes CLS16 and CLS17. District records retain their source links."
+    },
+    {
+      "id": "REV602",
+      "severity": "low",
+      "status": "resolved",
+      "location": "selection.json: priorities rank 3",
+      "finding": "Frederick is selected by district_name_match instead of the stable district_id used elsewhere, weakening deterministic source-to-recommendation linkage.",
+      "required_fix": "Use district_id MAD01 and validate that every ranked buyer resolves to exactly one district record.",
+      "disposition": "Re-read selection.json after the fix: rank 3 now uses district_id MAD01, which resolves to Frederick County Public Schools."
+    }
+  ],
+  "accepted_checks": [
+    "The recommendation is expressly conditional, the user's entity and workforce readiness are unverified rather than assumed absent, and a one-clinician pilot is labeled as the team's proposed scope.",
+    "Open procurements, conditional ongoing qualification, application channels, closed solicitations and unverified portal leads remain distinct. Registration, award eligibility and authorized orders are not conflated.",
+    "New York City independent-provider registration is correctly separated from district staffing as an RSA voucher channel; published session reimbursement is not treated as hourly revenue or margin.",
+    "New York's agency school-age SLP dual-credential requirement and SLP-specific corporate exception are kept separate from OT/PT entity and role questions.",
+    "Compact membership is not treated as issued practice authority or as a provider-mobility advantage in any of the six shortlisted states.",
+    "Frederick's agency work history, client references, in-person requirement and agency-subcontracting restriction are material gates rather than assumed satisfiable through a clinician's personal experience.",
+    "Birdville's imminent deadline and conflicting secondary deadline remain unresolved; Mesquite's rolling status and Elgin's identifier mismatch are not presented as verified open therapy awards.",
+    "East Ramapo's dated fiscal projections and oversight are balanced against the monitor's positive budget assessment; neither buyer is cleared for credit or asserted to have a verified late-payment/default history.",
+    "Statewide ASHA certification counts are labeled as context, not all licensees, available local clinicians, staffing vacancies or a readiness score.",
+    "Licensed clinicians retain therapy judgment and schools retain IEP authority. No right to send student data to an AI system is inferred from a staffing opportunity."
+  ],
+  "primary_spot_checks": [
+    {
+      "source_ids": [
+        "CHS01",
+        "CHS03"
+      ],
+      "method": "Fresh official web retrieval",
+      "result": "Rockland's current listing confirms separate speech, OT and PT RFPs due October 29, 2026 at 11 a.m. East Ramapo's current page lists SLP RFP-ER-5-27 and Addendum 1 under open listings."
+    },
+    {
+      "source_ids": [
+        "CHS05"
+      ],
+      "method": "Fresh ordinary HTTPS PDF retrieval and pdftotext extraction after the web reader failed",
+      "result": "Verified in-person-only services, individual proposed clinician resumes/references with the proposal, later candidate additions after a contract, and assignments ranging from individual part-time sessions to leave replacement."
+    },
+    {
+      "source_ids": [
+        "MAS02"
+      ],
+      "method": "Fresh ordinary HTTPS PDF retrieval; original PDF pages 43, 46 and 59 text inspected",
+      "result": "Verified conditional qualification of additional providers during the term, same bid requirements and competitive rates, five-year agency-history provision with position caveat, five agency-client references, and restriction on subcontracted agencies."
+    },
+    {
+      "source_ids": [
+        "CLS12",
+        "CLS16"
+      ],
+      "method": "Fresh official NYSED credential matrix and New York Education Law §8208 retrieval",
+      "result": "The stated agency/contract school speech model requires both credentials. The law expressly permits corporate SLP/audiology practice through licensed or exempt persons; this does not authorize OT/PT by analogy."
+    }
+  ],
+  "data_integrity": {
+    "input_source_count": 70,
+    "unique_source_ids": 70,
+    "unresolved_source_id_references": 0,
+    "district_records": 17,
+    "method": "Parsed all seven JSON files, checked source-ID uniqueness and recursively resolved source_ids references. The result is referential integrity, not proof that every source supports every sentence."
+  },
+  "preserve_in_final": [
+    "Call New York/Rockland a validation priority within the screened markets, not an established best long-term market or bid-ready launch.",
+    "Keep exact October deadlines and the need to recheck addenda visible; do not imply that a new company should rush a bid.",
+    "State that no immediately launch-ready district is established if named qualified clinicians, references, insurance and business readiness cannot be evidenced.",
+    "Retain actual funded orders, clinician availability, payment terms and payroll liquidity as unresolved go/no-go evidence.",
+    "Do not claim visual/browser QA, live portal access, buyer contact, reference verification, a legal opinion or a credit assessment from this review."
+  ],
+  "release_note": "Both traceability findings were corrected and the changed fields independently rechecked. No recommendation-blocking factual contradiction was identified in the reviewed data or limited primary-source spot checks. Root will rebuild the report and run its structural and filter checks; this review makes no rendered-browser or live-service claim.",
+  "artifact_source_check": {
+    "file": "outputs/school-therapy-pilot-selection.html",
+    "method": "HTML text extraction excluding style/script elements; no browser rendering",
+    "result": "The conditional recommendation, bid dates, firm-readiness gates, independent-provider channel distinction, state credential qualifications, balanced buyer-risk section and sensitivity cases are visible in the HTML source. The independent-review area was pending when inspected and must be rebuilt after this review is finalized."
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "title": "Texas school-therapy pilot procurement screen",
+  "as_of": "2026-10-20",
+  "timezone": "America/New_York",
+  "scope": "Public-source procurement research for a proposed 1\u20133 therapist SLP-first school pilot; no outreach, registration, submissions or authenticated portal access.",
+  "conclusion": "Texas has concrete therapy buying channels, but none of the four screened buyers is yet a verified unconditional new-company launch opportunity. Birdville is the strongest primary-supported current procurement; Mesquite may offer better timing if its continuous entry route is confirmed.",
+  "sources": [
+    {
+      "id": "TXS01",
+      "title": "Birdville ISD \u2014 Texas SmartBuy ESBD solicitation 010-27",
+      "url": "https://www.txsmartbuy.gov/esbd/010-27",
+      "retrieved": "2026-10-20",
+      "date": "Posted 2026-09-18; last modified 2026-10-14 14:01",
+      "location": "Solicitation metadata, purpose, term and submission sections",
+      "fact": "Official notice states response due October 21, 2026 at 2 PM; as-needed multi-award special education contract, proposed December 1, 2026\u2013November 30, 2027 with three renewal options. The $398,494.30 cost-price analysis is based on prior expenditure and CPI. Electronic bid preferred; paper accepted; email/fax rejected.",
+      "limitations": "Retrieved through ordinary HTTPS because web reader failed. Latest IonWave addenda inaccessible; secondary discovery results conflict on deadline. Cost-price analysis is neither guaranteed revenue nor therapy-only expenditure.",
+      "access": "Public HTTPS 200; HTML text inspected"
+    },
+    {
+      "id": "TXS02",
+      "title": "Birdville ISD 010-27 \u2014 official 31-page bid invitation",
+      "url": "https://www.txsmartbuy.gov/core/media/media.nl?id=33757868&c=852252&h=8sIrabjcQQFmS1RWMccmkGJcd8nnTOV8cnUiA8FbWIRRgv_u&_xt=.pdf",
+      "retrieved": "2026-10-20",
+      "date": "Issued 2026-09-18",
+      "location": "pp. 4\u20135 selection; p.24 references; p.26 business age and partial bids; pp.28\u201329 therapy lines",
+      "fact": "Requires three business references; missing information may disqualify. Asks whether firm has five years in business and requests actual age if younger. Other services may be marked No Bid. Explicit SLP, OT, PT and speech/OT teletherapist lines. Hourly rates include transport; no mileage/fuel reimbursement.",
+      "limitations": "Five-year question is not proven automatic exclusion; eligibility needs clarification. Some therapy UOMs say EA despite hourly instruction. Standard terms and latest addenda need review.",
+      "access": "Public HTTPS PDF, 272893 bytes, extracted with pdftotext in memory"
+    },
+    {
+      "id": "TXS03",
+      "title": "Mesquite ISD \u2014 Purchasing Home",
+      "url": "https://mesquiteisd.org/46624_4",
+      "retrieved": "2026-10-20",
+      "date": "Undated page; current retrieval",
+      "location": "Doing Business with Mesquite ISD",
+      "fact": "IonWave registration is required for notifications and does not itself confer approved-vendor status. Evaluation committee selection and Board approval are needed. Orders without authorized PO or district credit card risk nonpayment.",
+      "limitations": "General entry process only; does not establish a currently open therapy opportunity."
+    },
+    {
+      "id": "TXS04",
+      "title": "Mesquite ISD \u2014 Current Bids and Proposals",
+      "url": "https://mesquiteisd.org/current-bids-and-proposals",
+      "retrieved": "2026-10-20",
+      "date": "Undated page; current retrieval",
+      "location": "Current Bids and Proposals",
+      "fact": "Official page requires login to see complete solicitation details, including deadline, scope, addenda and response requirements; links to IonWave.",
+      "limitations": "Public IonWave detail page returned 403. Continuous-bid claim for 2026-011 remains a discovery lead, not primary-verified availability."
+    },
+    {
+      "id": "TXS05",
+      "title": "Elgin ISD \u2014 Purchasing",
+      "url": "https://www.elginisd.net/departments/new-business-finance/purchasing",
+      "retrieved": "2026-10-20",
+      "date": "Undated page; current retrieval",
+      "location": "Open Bids and Bonfire entry instructions",
+      "fact": "Labels RFP 2026-12 Special Programs Services under Open Bids, links an Addendum 1 Q&A, and routes vendor registration and submissions through Bonfire.",
+      "limitations": "No deadline shown. Older items also remain under open/upcoming headings. Linked addendum identifies itself as 2026-45, not 2026-12; cannot certify live status or applicability."
+    },
+    {
+      "id": "TXS06",
+      "title": "Elgin ISD \u2014 linked Special Programs Services Addendum 1 Q&A",
+      "url": "https://www.elginisd.net/fs/resource-manager/view/a13c522c-e24b-461b-bddd-e3260350adbd",
+      "retrieved": "2026-10-20",
+      "date": "Undated PDF discussing 2026\u201327",
+      "location": "p.1 identifier; pp.2\u20133 needs/modality; p.6 district clearance",
+      "fact": "Describes as-needed multi-award service; SLP, SLPA and bilingual roles as critical. Says incumbent vendors fulfill needs while staffing stability is a challenge. Modality depends on discipline; no annual volume specified. District clearance must precede work.",
+      "limitations": "Document says RFP 2026-45 while referring page says 2026-12. Treat as an attributed district research lead until procurement resolves mismatch; not binding pilot terms."
+    },
+    {
+      "id": "TXS07",
+      "title": "IDEA Public Schools \u2014 bid opportunities and closed solicitations",
+      "url": "https://ideapublicschools.org/our-story/finance-budget/pcs/bids-rfps/",
+      "retrieved": "2026-10-20",
+      "date": "Undated index; current retrieval",
+      "location": "Closed Solicitations: RFQ 34-SPEDAP-0626",
+      "fact": "Lists Texas Special Education Services and Assessment Personnel RFQ 34-SPEDAP-0626 under Closed Solicitations, with Q&A, deadline extension and final bid-tabulation links.",
+      "limitations": "Final tabulation link could not be retrieved, so awardees and award amounts are not verified."
+    },
+    {
+      "id": "TXS08",
+      "title": "IDEA RFQ 34-SPEDAP-0626 Texas Special Education Services and Assessment Personnel",
+      "url": "https://ideapublicschools.org/wp-content/uploads/2026/03/RFQ-34-SPEDAP-0626-Texas.pdf",
+      "retrieved": "2026-10-20",
+      "date": "Issue 2026-02-25; March 2026 posted version",
+      "location": "pp.5\u20138 scope; p.13 SLP; p.23 references; pp.25\u201327 geographic response",
+      "fact": "Covers SLP/OT/PT; one or multiple disciplines and selected campuses may be offered. Requires three verifiable prior client references, applicable personnel credentials, in-person service and vendor-supplied equipment. Campus lists are informational, not vacancies.",
+      "limitations": "Closed RFQ. Firm experience/reference requirement may block an entirely new company. Credential descriptions in district RFQ do not replace current licensing-board requirements."
+    },
+    {
+      "id": "TXS09",
+      "title": "IDEA RFQ 34-SPEDAP-0626 \u2014 Addendum 1 vendor Q&A",
+      "url": "https://ideapublicschools.org/wp-content/uploads/2026/03/Addendum-1-Vendor-QA_RFQ34-SPEDAP-0626.pdf",
+      "retrieved": "2026-10-20",
+      "date": "2026-03-30",
+      "location": "Questions 1\u201321, pp.1\u20134",
+      "fact": "Existing active vendors need not rebid; positions and caseloads uncertain at solicitation. In-person delivery, Frontline/ESPED access and training, Net 30, no mileage reimbursement, no rate adjustment, and first-available allocation among awarded vendors.",
+      "limitations": "No position order, guaranteed hours or live October vacancy shown. Answer that minimum weekly guarantees are not required is not a minimum-volume commitment."
+    },
+    {
+      "id": "TXS10",
+      "title": "IDEA RFQ 34-SPEDAP-0626 \u2014 Addendum 2 deadline extension",
+      "url": "https://ideapublicschools.org/wp-content/uploads/2026/04/Addendum-2_Deadline-Extension_34-SPEDAP-0626-Texas.pdf",
+      "retrieved": "2026-10-20",
+      "date": "2026-04-01",
+      "location": "p.1 timeline",
+      "fact": "Extended qualification deadline to April 7, 2026 at 2 PM (document labels CST). Proposed initial term July 1, 2026\u2013June 30, 2027, with four optional annual renewals.",
+      "limitations": "Deadline expired; optional renewal schedule is not evidence of a new entry window or executed award."
+    }
+  ],
+  "districts": [
+    {
+      "id": "TXD01",
+      "name": "Birdville Independent School District",
+      "state": "Texas",
+      "buyer_type": "Public school district, northeast Tarrant County",
+      "demand_evidence": "Official as-needed procurement for supplemental special education services, including SLP, OT and PT.",
+      "procurement_status": "Official ESBD notice Posted with imminent deadline; latest IonWave addenda unverified.",
+      "deadline": "2026-10-21 14:00 America/Chicago (15:00 America/New_York), as stated in official notice and invitation. Secondary deadline conflict unresolved.",
+      "entry_route": "Competitive sealed proposal via district e-bid or paper; must verify current addenda first. No outreach or registration performed.",
+      "incumbents": "Unverified; multi-award structure does not identify available assignments.",
+      "new_entrant_requirements": "Three company references; five-year business-age question needs clarification. Do not assume principals\u2019 employment references satisfy company references.",
+      "pilot_fit": "Best Texas live-procurement lead; discipline-only participation fits a proposed small pilot, but scope and eligibility are unproven.",
+      "supply_economics": "No local candidate availability, worker pay or margin verified. Transport is included in rates. Official cost-price analysis is not guaranteed work.",
+      "modality": "Speech and OT teletherapy explicitly listed alongside therapy lines; PT teletherapy not established.",
+      "critical_gaps": [
+        "Latest addenda and conflicting secondary deadline",
+        "Business-age eligibility and valid company references",
+        "Current clinician-level needs and pilot-sized task order",
+        "Insurance, standard terms, security and platform terms",
+        "Clinician sourcing, billing units and full delivery cost"
+      ],
+      "source_ids": [
+        "TXS01",
+        "TXS02"
+      ],
+      "recommendation": "Urgent procurement verification only. Do not rush a new-company bid or treat tomorrow\u2019s deadline as a viable launch plan. Conditional shortlist if an eligible operating entity and staff already exist."
+    },
+    {
+      "id": "TXD02",
+      "name": "Mesquite Independent School District",
+      "state": "Texas",
+      "buyer_type": "Public school district, Dallas County",
+      "demand_evidence": "Special-education continuous procurement appears in secondary discovery; official sourcing details unavailable without portal access.",
+      "procurement_status": "Unverified open/rolling therapy opportunity; general official entry route confirmed.",
+      "deadline": "Not primary-verified. Discovery listings say 2026-011 closes 2031-05-20; older 2026-001 listings conflict.",
+      "entry_route": "IonWave registration, full packet review, proposal evaluation and Board approval; registration is not approval.",
+      "incumbents": "Unknown; no verified therapy award list read.",
+      "new_entrant_requirements": "Unknown until full solicitation. General registration, evaluation and purchase authorization apply.",
+      "pilot_fit": "Potentially best flexible-timing Texas lead if continuous additions are confirmed. No actual 1\u20133 therapist order demonstrated.",
+      "supply_economics": "No verified wages, rates, volumes, current vacancies or budget for a pilot.",
+      "modality": "Unknown; do not infer teletherapy or hybrid eligibility.",
+      "critical_gaps": [
+        "Obtain current 2026-011 packet through permitted access",
+        "Verify deadline, category scope, continuous evaluation schedule and addenda",
+        "Firm references/experience, modality, minimum staffing and insurance",
+        "Identify unfilled order rather than approved-vendor status only"
+      ],
+      "source_ids": [
+        "TXS03",
+        "TXS04"
+      ],
+      "recommendation": "Priority verification target, not a confirmed open-contract recommendation."
+    },
+    {
+      "id": "TXD03",
+      "name": "Elgin Independent School District",
+      "state": "Texas",
+      "buyer_type": "Public school district, Austin-area counties",
+      "demand_evidence": "Official linked Q&A points to SLP/SLPA/bilingual staffing needs and stability concerns, but also says existing vendors meet needs.",
+      "procurement_status": "Official page labels 2026-12 Open; deadline unavailable and linked Q&A number mismatch prevents confirmation.",
+      "deadline": "Unknown; no primary-verified closing date obtained.",
+      "entry_route": "Official Bonfire portal; first resolve solicitation identifier and current status.",
+      "incumbents": "Names unknown; Q&A says multi-vendor arrangement.",
+      "new_entrant_requirements": "Full packet unavailable; reference and experience conditions unknown.",
+      "pilot_fit": "Potential targeted SLP/bilingual discovery candidate. No confirmed unfilled assignment or pilot scope.",
+      "supply_economics": "Volume and cost unknown; staffing stability may reflect supply difficulty rather than easy entry.",
+      "modality": "Linked Q&A makes delivery model discipline-dependent; no blanket remote permission.",
+      "critical_gaps": [
+        "2026-12 vs 2026-45 mismatch",
+        "Current deadline, award status and vendor addition rules",
+        "Actual remaining need and supply feasibility",
+        "Minimum firm eligibility and binding contract conditions"
+      ],
+      "source_ids": [
+        "TXS05",
+        "TXS06"
+      ],
+      "recommendation": "Secondary verification target; hold ranking until procurement ambiguity is resolved."
+    },
+    {
+      "id": "TXD04",
+      "name": "IDEA Public Schools \u2014 Texas campuses",
+      "state": "Texas",
+      "buyer_type": "Multi-region public charter network",
+      "demand_evidence": "RFQ34 requested therapy capacity for 2026\u201327; no campus vacancy quantities verified.",
+      "procurement_status": "Closed; final tabulation listed but awardees not retrieved.",
+      "deadline": "Expired 2026-04-07 14:00, document labels CST.",
+      "entry_route": "Next authorized RFQ or expressly permitted vendor addition; no rolling entry established. Do not assume subcontracts permitted.",
+      "incumbents": "Active prior contracts can continue without rebidding; region-specific names unknown.",
+      "new_entrant_requirements": "Three verifiable client references and licensed personnel; wholly new firm eligibility is not established.",
+      "pilot_fit": "Selected campuses/discipline scope can suit a future small pilot; closed window and reference burden lower near-term fit.",
+      "supply_economics": "Net30 and fixed rates/no mileage in Q&A; no verified pay spread or guaranteed volume.",
+      "modality": "In person. Geographic worksheet mentions virtual options but explicit scope and Q&A require in person.",
+      "critical_gaps": [
+        "Valid entry window",
+        "Company references and current award roster",
+        "Actual campus order, supervision and backup coverage",
+        "Permitted automation and Frontline access",
+        "Candidate supply and fixed-rate economics"
+      ],
+      "source_ids": [
+        "TXS07",
+        "TXS08",
+        "TXS09",
+        "TXS10"
+      ],
+      "recommendation": "Future pipeline or experienced-provider route after eligibility confirmation; not first immediate direct bid."
+    }
+  ],
+  "disqualifiers": [
+    "Demand and approved-vendor status do not establish a funded assignment.",
+    "IDEA deadline expired and delivery is in person.",
+    "Birdville deadline imminent; business-age and reference gates unresolved.",
+    "Mesquite full packet unavailable; Elgin linked identifiers conflict.",
+    "No local clinician availability, pay-to-bill margin, or acquisition cost validated."
+  ],
+  "discovery_only": [
+    {
+      "name": "Mesquite continuous 2026-011 listing",
+      "url": "https://texasbids.net/government-agencies/dallas/mesquite-independent-school-district-38590/14835320-2026-011-special-education-contracted-services---rfp.html",
+      "use": "Discovery only; future deadline and continuous status not confirmed from district packet."
+    },
+    {
+      "name": "Birdville secondary Addendum 2 listing",
+      "url": "https://bidscopeai.com/opportunities/fce49b14-edbe-4f7e-b8ab-b1d8b7c47335",
+      "use": "Discovery only; displays December 3 deadline and February 2027 term that conflict with retrieved official October21 notice. Do not act on either without latest district addenda."
+    }
+  ],
+  "next_evidence": [
+    "Current complete bid packages and addenda for Birdville and Mesquite",
+    "Written eligibility clarification for a newly formed firm and acceptable references",
+    "One campus-level scope with therapist count, hours, caseload, start, backup and modality",
+    "Local clinician availability and fully loaded cost before pricing",
+    "Awarded-rate and incumbent records where publicly obtainable, with sensitive student data excluded"
+  ]
+}

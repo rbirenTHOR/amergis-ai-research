@@ -1,0 +1,337 @@
+{
+  "title": "North Carolina and Georgia school-therapy pilot research",
+  "as_of": "2026-10-20",
+  "method": "Primary district, charter-network and official procurement evidence. RFP dates establish historic purchasing; they do not establish a currently available order, current shortage, award or rolling enrollment. Recommendations are analyst judgments.",
+  "state_summary": [
+    {
+      "state": "North Carolina",
+      "recommendation": "Conditional shortlist for a 2027-28 or permitted supplemental pilot; no open school-therapy entry route was verified in the reviewed targets.",
+      "rationale": "Wake supplies unusually clear purchasing evidence and a softer experience preference; a single CSUSA school offers the clearest documented small-scope design. Durham and Johnston have company-reference barriers. Treat Triangle-area clinician availability and achievable margins as unverified.",
+      "preferred_targets": [
+        "SGD01",
+        "SGD03"
+      ],
+      "critical_gates": [
+        "Written confirmation of lawful entry outside the expired solicitation",
+        "Acceptability of a new agency's references",
+        "Named available clinicians and feasible school travel",
+        "Current awarded rates and payment terms"
+      ]
+    },
+    {
+      "state": "Georgia",
+      "recommendation": "Secondary research market. Reviewed therapy awards are closed; one live MSP competition is too broad for a first 1-3 therapist prime contract.",
+      "rationale": "Cherokee has an established 28-vendor program through 2029, and Whitfield is awarded. Griffin-Spalding preserves separate specialty purchasing discretion, offering a discovery hypothesis rather than a proven entry route.",
+      "preferred_targets": [],
+      "critical_gates": [
+        "Confirm specialty contracting route",
+        "Retrieve current eligibility and award terms",
+        "Validate local clinicians and rates",
+        "Obtain written permission for district-data AI use where required"
+      ]
+    }
+  ],
+  "districts": [
+    {
+      "id": "SGD01",
+      "name": "Wake County Public School System",
+      "state": "North Carolina",
+      "buyer_type": "Public school district",
+      "demand_evidence": "2026 addendum prioritizes SLP; estimates prior-year use of about 30 SLPs, 21 OTs and one COTA. These are historical utilization estimates, not current vacancies.",
+      "procurement_status": "RFP 251-27-99 deadline expired; current award roster and supplemental-entry permission not verified.",
+      "deadline": "2026-04-22 14:00 ET (past)",
+      "entry_route": "Published competitive RFP via NC eVP. Verify next solicitation or expressly permitted supplemental route before selling a pilot.",
+      "incumbents": "2025-26 table names AMN, EDU Healthcare, Kinetic Pediatric Therapy, ProCare, Soliant, Speech Inspirations, Speech Masters, Stepping Stones and others; not a verified 2026-27 award list.",
+      "new_entrant_requirements": "Two years' experience preferred; references required. Consistent agency identity across registration, insurance and invoices; district interviews/background checks. EOR naming mismatch explicitly rejected.",
+      "pilot_fit": "Conditional medium-high: multi-vendor structure, expected 12-15 awards, and short/long coverage support limited scope; no 1-3 clinician minimum or guarantee established. One-year term plus two optional annual extensions at same cost.",
+      "supply_economics": "Prior-year hourly customer rates published; not current achievable prices or clinician pay. Monthly invoices and firm-renewal pricing warrant cash and wage-sensitivity analysis. Current recruitable supply unknown.",
+      "modality": "Mostly in person; virtual considered where specified.",
+      "critical_gaps": [
+        "Current awards",
+        "Reopening or supplementary procurement authority",
+        "Actual funded request",
+        "Clinician availability and current unit economics"
+      ],
+      "source_ids": [
+        "SGS01",
+        "SGS02"
+      ],
+      "recommendation": "Best NC district discovery target, contingent on an entry route and staffing evidence; not a live bid recommendation."
+    },
+    {
+      "id": "SGD02",
+      "name": "Durham Public Schools",
+      "state": "North Carolina",
+      "buyer_type": "Public school district",
+      "demand_evidence": "RFP 179-2526-268 explicitly addresses SLP/OT/PT staffing shortages. It welcomes agencies and managed-service providers.",
+      "procurement_status": "Expired solicitation. eVP says no longer accepting responses and Pending Selection; award section exposes no verified winner. Portal status may lag operations.",
+      "deadline": "2025-12-02 13:00 ET submission; 14:00 opening (past)",
+      "entry_route": "Next solicitation or confirmed approved subcontracting/supplemental route. Current RFP permits subcontracting with prime accountability; that does not authorize a new subcontract now.",
+      "incumbents": "eVP lists bidders including Ampersand, AMN, eLuma and others; bidders must not be labeled awardees.",
+      "new_entrant_requirements": "Three company references of similar scope/size; licensed and screened clinicians. Under-five assignments add specified early-childhood clearance. Assistant/fellow supervision expected.",
+      "pilot_fit": "Medium operational fit, weak immediate entry. Explicit multiple awards; district assigns caseloads and provides system onboarding. Scope targets 2025-28, while standard term starts at award for three years plus two options: executed agreement needed.",
+      "supply_economics": "37.5-hour week with approximately 25-30 direct/consultative hours specified. Customer rates, current openings and recruitable supply unverified.",
+      "modality": "In person only; DPS-approved records platforms.",
+      "critical_gaps": [
+        "Executed term and awardees",
+        "New-agency reference eligibility",
+        "Available subcontract or supplemental route",
+        "Funded assignments"
+      ],
+      "source_ids": [
+        "SGS03",
+        "SGS04"
+      ],
+      "recommendation": "Second-wave district or approved-partner discovery; reference burden and closed route weaken a new agency's first direct pilot."
+    },
+    {
+      "id": "SGD03",
+      "name": "Charter Schools USA North Carolina managed schools — single-school pilot",
+      "state": "North Carolina",
+      "buyer_type": "Charter-school network procurement, not one conventional district",
+      "demand_evidence": "2026 RFP covers eight schools, including Union Preparatory Academy, Steele Creek Preparatory Academy and Cardinal Charter Academy at Cary.",
+      "procurement_status": "Closed annual RFP; award and later entry not verified.",
+      "deadline": "2026-04-30 17:00 stated EST (past; document weekday label is inconsistent)",
+      "entry_route": "Regional RFP; verify a future annual cycle or authorized supplemental purchase.",
+      "incumbents": "Unverified.",
+      "new_entrant_requirements": "Company profile, description of experience over the last five years, three current references, licensed clinicians and screening. Do not interpret experience-description request as a verified five-year minimum.",
+      "pilot_fit": "High scope fit: explicitly allows bidding selected schools and selected clinical services. Consider one school with 1-3 SLPs only after needs and contracting approval are confirmed.",
+      "supply_economics": "2026-27 contract period; hourly proposals requested. Actual rates, guaranteed volume, clinician supply and travel costs unknown.",
+      "modality": "Not resolved in reviewed evidence.",
+      "critical_gaps": [
+        "Award roster and current need",
+        "Supplemental entry",
+        "Reference eligibility",
+        "Delivery mode and records access"
+      ],
+      "source_ids": [
+        "SGS05"
+      ],
+      "recommendation": "Strong small-scope discovery alternative if charter schools are acceptable; no verified open route."
+    },
+    {
+      "id": "SGD04",
+      "name": "Johnston County Public Schools",
+      "state": "North Carolina",
+      "buyer_type": "Public school district",
+      "demand_evidence": "2026-27 RFP seeks additional SLP/SLPA services, capped at 40 hours per provider weekly; not a count of open placements.",
+      "procurement_status": "RFP 200-SPEECH-01232026-CR expired; award not verified.",
+      "deadline": "2026-01-23 08:30 ET (past)",
+      "entry_route": "Bidder mailing list and future procurement; registration is not contracting approval.",
+      "incumbents": "Unverified.",
+      "new_entrant_requirements": "Demonstrated school-staffing success and three school/district references for similar projects completed within three years; NC references preferred.",
+      "pilot_fit": "SLP-only scope and possible individual-service awards fit a focused offering. Prior-company-project requirement weakens a first direct bid.",
+      "supply_economics": "Price weighted 34%; experience and reputation each 22%. Net 30 after correct invoice/acceptance. Current prices and available clinicians unknown.",
+      "modality": "School-setting services; virtual eligibility unverified. District Medicaid documentation required.",
+      "critical_gaps": [
+        "Award and supplemental route",
+        "New-company references",
+        "Available clinicians",
+        "Funded volume and rates"
+      ],
+      "source_ids": [
+        "SGS06"
+      ],
+      "recommendation": "Secondary watchlist or approved-partner discovery; not a current bid."
+    },
+    {
+      "id": "SGD05",
+      "name": "Cherokee County School District",
+      "state": "Georgia",
+      "buyer_type": "Public school district",
+      "demand_evidence": "SSCS-2026 procurement covered district student-support staffing. Award establishes a purchasing relationship, not an unfilled placement.",
+      "procurement_status": "Awarded June 19, 2026 to 28 vendors; official GPR status Awarded.",
+      "deadline": "2026-06-02 09:00 ET (past)",
+      "entry_route": "Current supplier program already awarded. Next competition, formal addition or approved partnership would require district confirmation.",
+      "incumbents": "Award includes Amergis, Soliant, ProCare, eLuma, Huddle Up and local specialists including CBR Therapy Consultants, Golden Oak Therapies and Speech Teachers of North Georgia.",
+      "new_entrant_requirements": "Solicitation sought experienced agencies; full eligibility/reference conditions not verified in the accessible primary award record.",
+      "pilot_fit": "Existing specialty winners demonstrate supplier diversity, but do not prove a new 1-3-clinician supplier may enter. Award term July 1, 2026-June 30, 2029.",
+      "supply_economics": "Current clinician availability, awarded rates and allocated volumes unverified.",
+      "modality": "Exact purchased modality and records requirements need executed scope.",
+      "critical_gaps": [
+        "New-vendor addition mechanism",
+        "References and insurance requirements",
+        "Funded assignments and clinician supply"
+      ],
+      "source_ids": [
+        "SGS07",
+        "SGS08"
+      ],
+      "recommendation": "Benchmark and renewal watch; low immediate direct-entry fit."
+    },
+    {
+      "id": "SGD06",
+      "name": "Whitfield County Schools",
+      "state": "Georgia",
+      "buyer_type": "Public school district",
+      "demand_evidence": "Official procurement covers OT, PT, SLP, interpreters and nursing staffing.",
+      "procurement_status": "Official GPR status Awarded; attached signed scoring matrix is scanned and winner details were not reliably extracted.",
+      "deadline": "2026-05-15 14:00 ET (past)",
+      "entry_route": "Expired competitive procurement; no rolling or supplemental therapy entry route verified.",
+      "incumbents": "Awardee identities unverified; do not infer them from aggregator lists.",
+      "new_entrant_requirements": "Exact company-experience, reference and staffing-capacity gates unverified.",
+      "pilot_fit": "Research-only: discipline-specific and 1-3-clinician participation not established.",
+      "supply_economics": "Current rates, quantity, term and available clinicians unverified.",
+      "modality": "Unverified.",
+      "critical_gaps": [
+        "Award detail and executed term",
+        "Small-scope permission",
+        "New-vendor entry",
+        "Recruitable supply and rates"
+      ],
+      "source_ids": [
+        "SGS09"
+      ],
+      "recommendation": "Do not select over better-evidenced pilot targets; obtain award and solicitation packet first."
+    }
+  ],
+  "sources": [
+    {
+      "id": "SGS01",
+      "title": "Wake RFP 251-27-99, OT/PT/SLP services",
+      "url": "https://evp.nc.gov/_entity/annotation/d753f9a6-3234-f111-88b3-001dd800b811/863ea987-6d3e-ed11-9daf-001dd805ec0b?t=1777766400279",
+      "publisher": "Wake County Public School System via NC eVP",
+      "type": "Official RFP",
+      "accessed": "2026-10-20",
+      "locator": "Pages 2, 6-8",
+      "status": "Read"
+    },
+    {
+      "id": "SGS02",
+      "title": "Wake RFP 251-27-99 Addendum 1",
+      "url": "https://webarchive.wcpss.net/about-us/purchasing/downloads/index.html?add=1927&id=5976",
+      "publisher": "Wake County Public School System",
+      "type": "Official addendum",
+      "accessed": "2026-10-20",
+      "locator": "Pages 1-6",
+      "status": "Read"
+    },
+    {
+      "id": "SGS03",
+      "title": "Durham RFP 179-2526-268 SLP/OT/PT services",
+      "url": "https://evp.nc.gov/_entity/annotation/3492a0e8-edb4-f011-bbd2-001dd80a67c9/863ea987-6d3e-ed11-9daf-001dd805ec0b?t=1764288000266",
+      "publisher": "Durham Public Schools via NC eVP",
+      "type": "Official RFP",
+      "accessed": "2026-10-20",
+      "locator": "Pages 7-9, 12-14",
+      "status": "Read"
+    },
+    {
+      "id": "SGS04",
+      "title": "Durham RFP official status and bid tabulations",
+      "url": "https://evp.nc.gov/solicitations/details/?id=9e24b6ab-ebb4-f011-bbd2-001dd80a67c9",
+      "publisher": "NC electronic Vendor Portal",
+      "type": "Official procurement record",
+      "accessed": "2026-10-20",
+      "locator": "Status, Tabulations, Awards",
+      "status": "Read; no verified awards displayed"
+    },
+    {
+      "id": "SGS05",
+      "title": "CSUSA North Carolina managed schools clinical-services RFP 2026",
+      "url": "https://www.unionprepk-5.org/RFP%202026.pdf",
+      "publisher": "Union Preparatory Academy / Charter Schools USA",
+      "type": "Official network RFP",
+      "accessed": "2026-10-20",
+      "locator": "Pages 1-3",
+      "status": "Read through web extraction; later repeat fetch returned 403"
+    },
+    {
+      "id": "SGS06",
+      "title": "Johnston RFP 200-SPEECH-01232026-CR",
+      "url": "https://evp.nc.gov/_entity/annotation/e26d05f7-94f0-f011-8407-001dd803db57/863ea987-6d3e-ed11-9daf-001dd805ec0b?t=1771977600292",
+      "publisher": "Johnston County Public Schools via NC eVP",
+      "type": "Official RFP",
+      "accessed": "2026-10-20",
+      "locator": "Pages 1-3, 6, 9",
+      "status": "Read; PDF metadata filename retains 2025 draft title, document body consistently identifies 2026 bid"
+    },
+    {
+      "id": "SGS07",
+      "title": "Cherokee SSCS-2026 official award notice",
+      "url": "https://ssl.doas.state.ga.us/gpr/downloadAttachment?attachmentId=49395116&sourceSystemType=gpr20",
+      "publisher": "Cherokee County School District via Georgia Procurement Registry",
+      "type": "Official award notice",
+      "accessed": "2026-10-20",
+      "locator": "June 19, 2026 award; vendor list and term",
+      "status": "Read by research subagent"
+    },
+    {
+      "id": "SGS08",
+      "title": "Cherokee SSCS-2026 official procurement status",
+      "url": "https://ssl.doas.state.ga.us/gpr/eventDetails?eSourceNumber=PE-55213-NONST-2026-000000098&sourceSystemType=gpr20",
+      "publisher": "Georgia Procurement Registry",
+      "type": "Official procurement record",
+      "accessed": "2026-10-20",
+      "locator": "Event status and dates",
+      "status": "Read by research subagent using ordinary public HTTP retrieval"
+    },
+    {
+      "id": "SGS09",
+      "title": "Whitfield 2026 school staffing procurement",
+      "url": "https://ssl.doas.state.ga.us/gpr/eventDetails?eSourceNumber=PE-55102-NONST-2026-000000036&sourceSystemType=gpr20",
+      "publisher": "Georgia Procurement Registry",
+      "type": "Official procurement record",
+      "accessed": "2026-10-20",
+      "locator": "Event status and scope",
+      "status": "Read by research subagent; signed matrix attachment 51892768 not text-extractable"
+    },
+    {
+      "id": "SGS10",
+      "title": "Griffin-Spalding RFP 27-104 special-education MSP",
+      "url": "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/3654/Gscss/3d640fdf-dc91-4f90-810f-65de12eef117/SPED---Managed-Services-Provider.pdf?disposition=inline",
+      "publisher": "Griffin-Spalding County School System",
+      "type": "Official RFP",
+      "accessed": "2026-10-20",
+      "locator": "Schedule; section II page 4; section XIX page 17",
+      "status": "Read by research subagent"
+    },
+    {
+      "id": "SGS11",
+      "title": "Griffin-Spalding official requests for proposals/bids",
+      "url": "https://www.gscs.org/o/gscss/page/request-for-proposalsbids",
+      "publisher": "Griffin-Spalding County School System",
+      "type": "Official district procurement page",
+      "accessed": "2026-10-20",
+      "locator": "MSP solicitation link via aptg.co/NDtNh1",
+      "status": "Read by research subagent"
+    },
+    {
+      "id": "SGS12",
+      "title": "Griffin-Spalding MSP official open procurement record",
+      "url": "https://ssl.doas.state.ga.us/gpr/eventDetails?eSourceNumber=PE-55096-NONST-2027-000000023&sourceSystemType=gpr20",
+      "publisher": "Georgia Procurement Registry",
+      "type": "Official procurement record",
+      "accessed": "2026-10-20",
+      "locator": "Open status; October 30 2026 noon ET deadline",
+      "status": "Read by research subagent"
+    }
+  ],
+  "research_limits": [
+    "No outreach, registration or application was performed.",
+    "No current therapist candidate availability or negotiated wage evidence was obtained.",
+    "Expired purchasing evidence is useful for fit and requirements, not evidence that the buyer will accept a new supplier now.",
+    "Public bid tabulations identify bidders, not winners or active incumbents."
+  ],
+  "adjacent_live_leads": [
+    {
+      "id": "SGA01",
+      "name": "Griffin-Spalding County School System",
+      "state": "Georgia",
+      "buyer_type": "Public school district",
+      "procurement_status": "Official GPR status Open as of 2026-10-20; RFP 27-104 questions closed October 15.",
+      "deadline": "2026-10-30 12:00 ET (future as of research date)",
+      "demand_evidence": "District seeks a special-education managed-services provider across 16 scored staffing categories. This is an opportunity to compete, not a guaranteed service order.",
+      "entry_route": "Live broad MSP RFP. Section II separately reserves district discretion to contract individual, small-business and specialty providers. A narrow SLP pilot is therefore a discovery hypothesis, not an established open procurement.",
+      "new_entrant_requirements": "At least three public-school district references of similar scope and size; firm K-12/Georgia/special-education experience narrative. Prime must price each staffing category and perform employer-of-record, recruitment, compliance and reporting responsibilities.",
+      "pilot_fit": "Poor first MSP-prime fit; potentially useful specialty discussion after procurement rules and authority are confirmed. Initial term execution through June 30, 2027.",
+      "ai_constraint": "Section XIX requires prior written district authorization for district-data use in AI, machine learning, analytics or model development.",
+      "source_ids": [
+        "SGS10",
+        "SGS11",
+        "SGS12"
+      ],
+      "recommendation": "Do not rush a broad MSP bid. Research the explicitly reserved specialty-provider route."
+    }
+  ]
+}

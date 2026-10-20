@@ -1,0 +1,284 @@
+{
+  "title": "Mid-Atlantic school therapy staffing pilot research",
+  "as_of": "2026-10-20",
+  "scope": "Virginia and Maryland; speech-language pathology first, with a proposed pilot of 1\u20133 clinicians. No outreach or registration performed.",
+  "regional_recommendation": "Maryland/Frederick is the most actionable direct district research target because ongoing qualification is explicit. However, five years of agency history and five client references mean it may not fit a brand-new company. The Virginia candidates examined are closed or have unverified entry routes. Qualification never guarantees assignments.",
+  "states": [
+    {
+      "state": "MD",
+      "position": "Prioritize conditional qualification research",
+      "reason": "Frederick documents ongoing qualification and allows SLP-only bids. Agency history, references, Maryland clinician licensing, CCC and school clearance still apply. MCPS demand is visible but its current procurement route is unclear."
+    },
+    {
+      "state": "VA",
+      "position": "Watchlist pending local clinical capacity and entry route",
+      "reason": "Bristol offers a compact footprint, but its solicitation is closed and requires in-person services, references and Medicaid provider documentation. Fauquier is past solicitation, with current admission unverified."
+    }
+  ],
+  "districts": [
+    {
+      "id": "MAD01",
+      "name": "Frederick County Public Schools",
+      "state": "MD",
+      "buyer_type": "Countywide public school district",
+      "demand_evidence": "Addendum reports six contracted SLPs in the preceding school year and anticipated SLP vacancies for 2026\u201327. Current open positions were not counted.",
+      "procurement_status": "Current awarded 26MISC8 pool, with explicit conditional admission of additional providers during the term.",
+      "deadline": "Initial proposals closed May 1, 2026. Section 5 provides continuing qualification, with written status within 45 days of proposal receipt. The submission channel must be confirmed.",
+      "entry_route": "Apply under 26MISC8 \u00a75 after the buyer confirms eligibility and the submission route. The same bid requirements and competitive pricing apply; registration alone is insufficient.",
+      "incumbents": "The pool includes national and local providers. The June packet records 49 bidding companies, including Amergis, American Medical Staffing, ProCare, Soliant and Stepping Stones. This is not a market-share measure.",
+      "new_entrant_requirements": [
+        "Agency history of at least five years under current or former ownership; the unspecified position exception must be resolved for an SLP-only applicant.",
+        "K\u201312 experience. The questionnaire requests five non-FCPS school or nonprofit clients served by the agency within the last five years. References are worth 10 of 80 technical points; clinician references are not automatically a substitute.",
+        "Maryland business standing and required insurance; Maryland SLP license and ASHA CCC for clinicians, district fingerprints and an approved assignment.",
+        "Agency-to-agency subcontracting is prohibited. Single-discipline bids are permitted; no minimum placement count was identified."
+      ],
+      "pilot_fit": "Best documented continuing entry route in this regional set, conditional on agency history and references. Start with one confirmed SLP assignment, expanding to 2\u20133 only against orders. A brand-new company may not qualify.",
+      "supply_economics": "Available local clinicians remain unverified. Example 2026 SLP bill rates of $72, $82, $85, $98 and $115 per hour are supplier quotations, not wages or margin. Rates include indirect work and travel. Payment is net 30 after verified work and documentation; assignment hours need written confirmation.",
+      "modality": "In-person capability is mandatory. Occasional telehealth may be considered; virtual-only providers are excluded.",
+      "documentation": "Maryland State Online IEP, assessments, reports, IEP meetings and case management; monthly billing supported by verified work. Integration permissions remain unknown.",
+      "critical_gaps": [
+        "Applicability of the five-year agency history exception and acceptable references for a new entity.",
+        "Actual current SLP openings, schools and assignment hours.",
+        "Term conflict: proposal and registry indicate June 2029 base end plus an option through 2031; board packet says June 2028.",
+        "Available clinicians, viable compensation and cancellation terms."
+      ],
+      "source_ids": [
+        "MAS01",
+        "MAS02",
+        "MAS03",
+        "MAS04"
+      ],
+      "recommendation": "Prioritize buyer eligibility discovery. Do not label a greenfield company bid-ready.",
+      "confidence": "High for the public process and barriers; medium for the operative term; low for immediate available orders.",
+      "as_of": "2026-10-20"
+    },
+    {
+      "id": "MAD02",
+      "name": "Bristol Virginia Public Schools",
+      "state": "VA",
+      "buyer_type": "Small city public school division",
+      "demand_evidence": "The 2026 RFP reports approximately 250 speech students in four schools during 2025\u201326. These are not unfilled positions.",
+      "procurement_status": "CO-04-202526 is closed; the awardee and executed contract were not verified.",
+      "deadline": "May 22, 2026 at 2 p.m., now past. The proposed June 2 award date was a planned calendar item.",
+      "entry_route": "Future RFP or a Board-authorized additional contract under \u00a714 if offered. No open admission window was verified.",
+      "incumbents": "Not established from retrieved primary sources.",
+      "new_entrant_requirements": [
+        "SLP-only bidding permitted; three similar-service references, licensed staff and clinical/report samples requested.",
+        "Virginia Medicaid provider documentation and facility-license wording require applicability clarification.",
+        "Geographic accessibility contributes 15% of the evaluation. In-person school service is mandatory."
+      ],
+      "pilot_fit": "Four schools create a compact service footprint. Closed procurement and local presence, reference and Medicaid requirements make this a weaker greenfield launch without established local capacity.",
+      "supply_economics": "No current rates or available clinicians verified. Net 45 payment; inclusive 15-minute units incorporate therapy, documentation, assessments, meetings, travel and billing support. Paid work and billable units must be modeled separately.",
+      "modality": "Teletherapy is explicitly excluded.",
+      "documentation": "Progress and missed-session reports, IEP coordination, Medicaid support and student-level invoice detail.",
+      "critical_gaps": [
+        "Awardee and remaining term.",
+        "Whether additional contracts will be authorized.",
+        "Local clinicians and the precise Medicaid provider eligibility requirement."
+      ],
+      "source_ids": [
+        "MAS05",
+        "MAS06"
+      ],
+      "recommendation": "Watchlist for a locally established provider; not an open 2026 opportunity.",
+      "confidence": "High for closed status and RFP constraints; low for new entry or current orders.",
+      "as_of": "2026-10-20"
+    },
+    {
+      "id": "MAD03",
+      "name": "Montgomery County Public Schools",
+      "state": "MD",
+      "buyer_type": "Large countywide public school district",
+      "demand_evidence": "The official FAQ confirms that contractors fill SLP posts schools cannot staff; current vacancies were not counted.",
+      "procurement_status": "Historical 1063.6 award displays June 30, 2026 expiry. The current replacement or extension was not verified.",
+      "deadline": "No current therapy solicitation deadline verified.",
+      "entry_route": "Formal MCPS/eMMA solicitation and award. Identify the current contract vehicle before assuming admission. Generic independent-contractor guidance does not demonstrate agency therapy access.",
+      "incumbents": "Historical FY26 list contains national and local firms; the FY27 roster is unverified.",
+      "new_entrant_requirements": [
+        "Historical solicitation sought established providers. Current experience and reference criteria require the operative RFP.",
+        "eMMA notices and registration do not confer contract eligibility."
+      ],
+      "pilot_fit": "Useful demand-discovery and later expansion target. Unverified current procurement and a larger system make this less concrete than Frederick for a first pilot.",
+      "supply_economics": "The district describes resorting to virtual staff after in-person supply is unavailable. Current rates, budget, payment terms and open orders remain unknown.",
+      "modality": "In-person first; virtual service may be requested when suitable in-person staff are unavailable, with district decisions and school facilitation.",
+      "documentation": "IEP team and speech supervisor responsibilities are visible; system and interface details require the current contract.",
+      "critical_gaps": [
+        "Current contract and admission mechanism.",
+        "Agency eligibility, rates and actual assignments.",
+        "School-level modality and facilitator responsibilities."
+      ],
+      "source_ids": [
+        "MAS07",
+        "MAS08",
+        "MAS09"
+      ],
+      "recommendation": "Second-wave procurement discovery; not a verified live bid.",
+      "confidence": "High for the contractor-use pattern; low for current entry.",
+      "as_of": "2026-10-20"
+    },
+    {
+      "id": "MAD04",
+      "name": "Fauquier County Public Schools",
+      "state": "VA",
+      "buyer_type": "County school division using joint county procurement",
+      "demand_evidence": "26-122-S procurement and multiple 2026 intent notices demonstrate contracted special education buying; current SLP volume is unknown.",
+      "procurement_status": "Intent-to-award notices verified in the official index. The final award was not verified from its primary PDF.",
+      "deadline": "Secondary discovery reports June 30, 2026 closure; the exact primary solicitation deadline was not retrieved in this pass.",
+      "entry_route": "Current award vehicle and rules for adding suppliers need verification. No continuing admission route established.",
+      "incumbents": "The latest primary award PDF was not retrieved. A secondary 24-vendor list is not treated as confirmed.",
+      "new_entrant_requirements": [
+        "Current RFP experience, references and discipline-specific requirements remain unverified.",
+        "A broad special education title does not establish that every discipline must be offered."
+      ],
+      "pilot_fit": "Potential Northern Virginia target, but its entry path is less substantiated than Frederick.",
+      "supply_economics": "Available clinicians, bill rates and costs are unverified. Secondary AI-generated contract value estimates are excluded.",
+      "modality": "Secondary solicitation title indicates in-person services; primary scope needs confirmation.",
+      "documentation": "Current detailed requirements unverified.",
+      "critical_gaps": [
+        "Final award and operative term.",
+        "Additional-provider and subcontracting rules.",
+        "SLP-only eligibility, modality and reference/history conditions."
+      ],
+      "source_ids": [
+        "MAS10"
+      ],
+      "recommendation": "Watchlist; obtain primary contract evidence before pilot investment.",
+      "confidence": "Medium for procurement activity; low for entry conditions.",
+      "as_of": "2026-10-20"
+    }
+  ],
+  "sources": [
+    {
+      "id": "MAS01",
+      "title": "Frederick County Public Schools current awarded solicitations registry",
+      "url": "https://apps.fcps.org/purchasing/awarded_solicitations/",
+      "published_or_effective": "Retrieved October 20, 2026. Record shows June 10, 2026 Board date and July 1, 2026 start.",
+      "section_or_page": "26MISC8 record 1557 and its four linked files",
+      "retrieval": "Public HTML embedded page data parsed; no login or private API used. Registry places 26MISC8 among awarded solicitations.",
+      "observed": "The current awarded-solicitations registry lists 26MISC8 with July 2026 start, June 2029 renewal date and June 2031 final expiration. It links to proposal 4794, addendum 4802 and award document 4848.",
+      "limitation": "This supports awarded status, not executed individual assignments. Dates conflict with the June 10 board recommendation, which states June 2028 plus a two-year renewal.",
+      "accessed_on": "2026-10-20",
+      "source_type": "primary"
+    },
+    {
+      "id": "MAS02",
+      "title": "Frederick RFP26MISC8 proposal package",
+      "url": "https://apps.fcps.org/purchasing/awarded_solicitations/file/4794",
+      "published_or_effective": "Issued April 2026 for July 2026 start.",
+      "section_or_page": "PDF pp41\u201348, especially p43 \u00a75, p46 \u00a710 and p48 SLP qualifications; p59 references",
+      "retrieval": "Linked public PDF downloaded and extracted in memory using pdftotext; web fetch tool could not render it.",
+      "observed": "Section 5 allows additional providers during the term, subject to the same requirements and competitive rates; written decisions within 45 days. Section 10 requires five years of agency history, with an unspecified position exception, K\u201312 experience, Maryland business standing and insurance. Agency subcontracting is prohibited. Page 59 asks for five non-FCPS school or nonprofit clients served by the agency within five years. SLPs require a Maryland license and ASHA CCC.",
+      "limitation": "The history exception does not name eligible positions. A buyer determination is needed for a new entity offering SLP services. Individual clinician experience does not automatically establish company history. No minimum placement count was identified.",
+      "accessed_on": "2026-10-20",
+      "source_type": "primary"
+    },
+    {
+      "id": "MAS03",
+      "title": "Frederick RFP 26MISC8 Addendum 1: question and answer report",
+      "url": "https://apps.fcps.org/purchasing/awarded_solicitations/file/4802",
+      "published_or_effective": "April 2026 solicitation addendum",
+      "section_or_page": "PDF pp3\u20138; Q4, Q12, Q24, Q28\u201331, Q37, Q40, Q44\u201345 and Q49",
+      "retrieval": "Linked public PDF retrieved and extracted in memory.",
+      "observed": "The preceding school year had six contracted SLPs, with SLP vacancies anticipated for 2026\u201327. Speed to fill and customer service matter. There is no preference for multiple disciplines and no obligation to bid all services. In-person capability is mandatory; virtual-only vendors are excluded. Typical assignment hours are 20 part time or 25\u201340 full time, specified before recruiting. District materials and laptops are usually provided.",
+      "limitation": "Historical staffing is not a current open order. Qualification does not guarantee approval or assignments; hours require position-specific confirmation.",
+      "accessed_on": "2026-10-20",
+      "source_type": "primary"
+    },
+    {
+      "id": "MAS04",
+      "title": "Frederick June 10, 2026 Board packet: RFP 26MISC8 fact sheet, scores and rates",
+      "url": "https://swagit-attachments.granicus.com/uploads/video/agenda_file/390934/6-10_FrederickCountySchools.pdf",
+      "published_or_effective": "2026-06-10",
+      "section_or_page": "PDF pp9\u201316; fact sheet pp11\u201312; bid table pp14\u201315",
+      "retrieval": "Fresh primary PDF web retrieval. Matching award file 4848 was retrieved from the current district registry.",
+      "observed": "The packet records 49 companies submitting proposals and recommends a multi-provider award. Example SLP hourly bid rates: Amergis $98, American Medical Staffing $85, ProCare $82, Level One $72 and Supplemental Health Care $115. There is no overall guarantee of assignments, hours or volume.",
+      "limitation": "The packet is a recommendation with blank action fields in extracted text; the current awarded registry independently supports contract status. Rates are district bill rates, not wages or margin. The term says 2028, conflicting with proposal and registry dates.",
+      "accessed_on": "2026-10-20",
+      "source_type": "primary"
+    },
+    {
+      "id": "MAS05",
+      "title": "Bristol Virginia Public Schools procurement index",
+      "url": "https://www.bvps.org/page/procurements-bids/",
+      "published_or_effective": "Current public index retrieved October 20, 2026.",
+      "section_or_page": "Closed Bids: CO-04-202526",
+      "retrieval": "Official public page successfully retrieved by websearch.",
+      "observed": "The therapy RFP is explicitly listed under Closed Bids.",
+      "limitation": "No award name, execution date or current unmet demand was established.",
+      "accessed_on": "2026-10-20",
+      "source_type": "primary"
+    },
+    {
+      "id": "MAS06",
+      "title": "Bristol RFP CO-04-202526: occupational, physical and speech therapy",
+      "url": "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/4454/Bvps/21e3629b-f6f9-44de-bd5f-2268fd475600/RFP-CO-04-202526-OCCUPATIONAL-PHYSICAL-AND-SPEECH-THERAPY-SERVICES-SPECS.pdf?disposition=inline",
+      "published_or_effective": "Issued May 4, 2026; deadline May 22, 2026.",
+      "section_or_page": "PDF pp3 and 5\u20139; \u00a71.1, \u00a75\u20138, \u00a711 and \u00a714",
+      "retrieval": "Fresh official PDF retrieval.",
+      "observed": "Single-discipline bids are allowed. The prior school year had about 250 speech students across four schools, without future volume guarantees. Services must be in person. Three similar-service references, clinical and report samples, and Virginia Medicaid provider documentation are requested. Geographic accessibility scores 15%. The one-year term has four annual options; the Board reserves discretion to add contracts.",
+      "limitation": "The RFP is closed. The additional-contracts clause is not an announced admission window. Awardee and current unfilled workload remain unknown.",
+      "accessed_on": "2026-10-20",
+      "source_type": "primary"
+    },
+    {
+      "id": "MAS07",
+      "title": "Montgomery County Public Schools special education contractor FAQ",
+      "url": "https://www.montgomeryschoolsmd.org/departments/special-education/frequently-asked-questions/",
+      "published_or_effective": "Undated current FAQ, with some 2024\u201325 context.",
+      "section_or_page": "Using External Contractors: Q1, Q5\u20137 and Q11\u201314",
+      "retrieval": "Official page retrieved through web search on October 20, 2026.",
+      "observed": "MCPS uses contractors for unfilled SLP posts. It requests in-person staff first and seeks virtual staff when agencies cannot supply an in-person clinician. Special Education coordinates contractor placement when schools cannot fill positions.",
+      "limitation": "A process and demand pattern, not a live vacancy count. Some context is dated 2024\u201325.",
+      "accessed_on": "2026-10-20",
+      "source_type": "primary"
+    },
+    {
+      "id": "MAS08",
+      "title": "Montgomery County Public Schools awarded speech contract 1063.6",
+      "url": "https://procurement.montgomeryschoolsmd.org/Home/Award_Record/1685",
+      "published_or_effective": "Board approval December 11, 2025; displayed expiry June 30, 2026.",
+      "section_or_page": "Award record and linked FY26 vendor list dated January 23, 2026.",
+      "retrieval": "Official record and linkedFY26list retrieved.",
+      "observed": "The speech-specific award seeks established providers. The displayed term ends June 30, 2026. Historical suppliers include American Medical Staffing, AMN, Cross Country, Huddle Up, ProCare, Soliant, Stepping Stones and PDS.",
+      "limitation": "The 2026\u201327 replacement or extension was not verified. This historical award does not establish an open entry route.",
+      "accessed_on": "2026-10-20",
+      "source_type": "primary"
+    },
+    {
+      "id": "MAS09",
+      "title": "Montgomery County Public Schools vendor/supplier information",
+      "url": "https://www.montgomeryschoolsmd.org/departments/procurement/supplier-portal/",
+      "published_or_effective": "Current guidance retrieved October 20, 2026.",
+      "section_or_page": "Vendor/Supplier Information and eMMA guidance",
+      "retrieval": "Official page retrieved by websearch.",
+      "observed": "Becoming an MCPS vendor generally requires responding to a formal solicitation and receiving an award. eMMA registration supplies bid notifications. The page also describes generic school engagement of individual independent contractors.",
+      "limitation": "That generic independent-contractor pathway does not establish authority to engage a school therapy staffing agency or bypass related-services procurement.",
+      "accessed_on": "2026-10-20",
+      "source_type": "primary"
+    },
+    {
+      "id": "MAS10",
+      "title": "Fauquier County award and public posting notices",
+      "url": "https://www.fauquiercounty.gov/government/departments-h-z/procurement/award-public-posting-notices?locale=en",
+      "published_or_effective": "Index lists 26-122-S intent notices dated July 6, July 15 and August 17, 2026.",
+      "section_or_page": "RFP 26-122-S Special Education Services notices",
+      "retrieval": "Official search-index text retrieved. Direct opens intermittently returned 403; the latest award PDF was not retrieved.",
+      "observed": "The procurement progressed to multiple intent-to-award notices.",
+      "limitation": "Final award, suppliers, term and admission rules are unverified. Secondary discovery reports a June 30 deadline and September 23 award to 24 suppliers; these are unverified leads, not decision facts.",
+      "accessed_on": "2026-10-20",
+      "source_type": "primary"
+    }
+  ],
+  "next_actions": [
+    "Obtain a written Frederick interpretation of the five-year history exception for an SLP-only new entity and whether clinician experience or references can qualify. Do not assume an exception.",
+    "Confirm the Frederick additional-provider submission channel, operative contract term and an actual one-SLP need before recruiting against a customer order.",
+    "Obtain clinician availability and cost evidence for the named commuting area; shortages do not establish a supply that we can fill.",
+    "Use actual assignment hours and cancellation terms in the working capital model."
+  ],
+  "evidence_notes": [
+    "No consumer reviews or job board counts were treated as proof of district orders.",
+    "Secondary AI-generated contract value estimates were excluded.",
+    "Public award registry and linked documents were read without authentication; no private portal access.",
+    "Conflicting dates in primary records were preserved."
+  ]
+}
