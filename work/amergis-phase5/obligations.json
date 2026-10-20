@@ -1,0 +1,447 @@
+{
+  "title": "School therapy staffing: obligations research matrix",
+  "as_of": "2026-10-20",
+  "status": "Source-grounded requirements research; proposed system behavior; jurisdiction and district rules unresolved",
+  "scope": {
+    "selected_service_line": "School-based therapy staffing",
+    "worked_example": "Speech-language pathologist (SLP), with occupational therapy (OT) and physical therapy (PT) distinctions",
+    "geography": "United States; state and school district not selected",
+    "setting_assumption": "K–12 public-school IDEA Part B services for the worked example; verify applicability for each client",
+    "exclusions": [
+      "No real student or worker records queried",
+      "No Medicaid claim engine assumed",
+      "No independent clinical diagnosis or IEP decision by AI",
+      "No universal caseload, service-minute, clearance, or retention rule inferred"
+    ],
+    "interpretation": "Official sources establish research principles. The software behaviors and acceptance tests below are proposed controls, not findings about Amergis systems or a completed legal determination."
+  },
+  "sources": [
+    {
+      "id": "OB01",
+      "title": "IDEA §300.34 — Related services",
+      "publisher": "U.S. Department of Education",
+      "url": "https://sites.ed.gov/idea/regs/b/a/300.34",
+      "retrieved": "2026-10-20",
+      "evidence_status": "Official indexed text retrieved",
+      "supports": "Speech-language pathology, occupational therapy and physical therapy are identified related services. OT and PT are services supplied by qualified practitioners; discipline-specific functions differ.",
+      "limit": "Does not establish the qualifications or scope for a selected state, school or individual."
+    },
+    {
+      "id": "OB02",
+      "title": "IDEA §300.156(b) — Related services personnel and paraprofessionals",
+      "publisher": "U.S. Department of Education",
+      "url": "https://sites.ed.gov/idea/regs/b/b/300.156/b",
+      "retrieved": "2026-10-20",
+      "evidence_status": "Official indexed subsection text retrieved; parent section direct fetch returned 403",
+      "supports": "Qualifications must align with applicable state-recognized discipline requirements. Related-services requirements cannot be waived on an emergency, temporary or provisional basis. Appropriately trained and supervised assistants may assist in accordance with state law, regulation or written policy.",
+      "limit": "Does not make a national association credential, professional license and school credential interchangeable."
+    },
+    {
+      "id": "OB03",
+      "title": "IDEA §300.320(a) — IEP content",
+      "publisher": "U.S. Department of Education",
+      "url": "https://sites.ed.gov/idea/regs/b/d/300.320/a",
+      "retrieved": "2026-10-20",
+      "evidence_status": "Official indexed subsection text retrieved; parent section direct fetch returned 403",
+      "supports": "An IEP includes goals, progress measurement/reporting, services and projected start, frequency, location and duration.",
+      "limit": "Provides no universal therapy minutes or caseload. The individual authorized plan supplies service obligations."
+    },
+    {
+      "id": "OB04",
+      "title": "IDEA §300.323(d) — IEP access and implementation responsibilities",
+      "publisher": "U.S. Department of Education",
+      "url": "https://sites.ed.gov/idea/regs/b/d/300.323/d",
+      "retrieved": "2026-10-20",
+      "evidence_status": "Official subsection and official CFR text retrieved through search; parent section direct fetch returned 403",
+      "supports": "Responsible providers must have access to the IEP and be informed of their implementation responsibilities and required accommodations, modifications and supports.",
+      "limit": "Does not prescribe a vendor's data model or make a schedule equivalent to delivered service."
+    },
+    {
+      "id": "OB05",
+      "title": "FERPA regulations — 34 CFR Part 99",
+      "publisher": "U.S. Department of Education, Student Privacy Policy Office",
+      "url": "https://studentprivacy.ed.gov/ferpa",
+      "retrieved": "2026-10-20",
+      "evidence_status": "Official full page retrieved",
+      "supports": "Covered schools need consent or an applicable disclosure exception. Outsourced school officials require an institutional function, school control, permitted use/redisclosure and legitimate educational interest. Parents and eligible students have access/amendment rights; pending inspection requests restrict destruction.",
+      "limit": "A staffing contract alone does not establish the exception; schools and record types differ. Technical logging proposed here is broader than any universal FERPA disclosure-log requirement."
+    },
+    {
+      "id": "OB06",
+      "title": "FERPA or HIPAA for school student health records held by an outside provider",
+      "publisher": "U.S. Department of Health and Human Services",
+      "url": "https://www.hhs.gov/hipaa/for-professionals/faq/does-hipaa-apply-to-school-student-health-records/index.html",
+      "retrieved": "2026-10-20",
+      "evidence_status": "Official full page retrieved",
+      "supports": "Student health records maintained by a provider acting for a FERPA-covered school are education records under FERPA, rather than HIPAA records. A provider acting independently requires a different analysis, including HIPAA covered-entity status.",
+      "limit": "Record purpose and relationship determine the regime; school location alone does not. This does not establish a blanket BAA requirement."
+    },
+    {
+      "id": "OB07",
+      "title": "Background Checks: What Employers Need to Know",
+      "publisher": "Federal Trade Commission and Equal Employment Opportunity Commission",
+      "url": "https://www.ftc.gov/business-guidance/resources/background-checks-what-employers-need-know",
+      "retrieved": "2026-10-20",
+      "evidence_status": "Official full page retrieved",
+      "supports": "Employment consumer reports require standalone disclosure and written authorization. Adverse-action processing includes pre-decision report/rights information and a subsequent notice. Equal-treatment, medical-inquiry and record-disposal requirements also apply as specified.",
+      "limit": "School fingerprinting, clearance, registries, employment-law coverage and state/local restrictions need separate research. The source does not establish a universal waiting interval."
+    },
+    {
+      "id": "OB08",
+      "title": "DOL Fact Sheet #22 — Hours Worked under the FLSA",
+      "publisher": "U.S. Department of Labor, Wage and Hour Division",
+      "url": "https://www.dol.gov/agencies/whd/fact-sheets/22-flsa-hours-worked",
+      "retrieved": "2026-10-20",
+      "evidence_status": "Official indexed text retrieved; canonical direct fetch returned 403",
+      "supports": "Compensable time can extend beyond scheduled work and include permitted work. Meal, training, waiting and travel treatment depend on the facts.",
+      "limit": "Employment status, exemption, overtime rules and state requirements remain unresolved; not every therapist or activity has the same pay treatment."
+    },
+    {
+      "id": "OB09",
+      "title": "DOL Fact Sheet #21 — FLSA recordkeeping",
+      "publisher": "U.S. Department of Labor, Wage and Hour Division",
+      "url": "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping",
+      "retrieved": "2026-10-20",
+      "evidence_status": "Official indexed text retrieved; direct fetch of indexed language URL returned 403",
+      "supports": "Covered employers maintain accurate employee, daily/weekly time and wage records. The federal baseline described includes three years for payroll records and two years for wage-computation supporting records.",
+      "limit": "These periods are not a universal retention schedule for student, credential, personnel or litigation records."
+    },
+    {
+      "id": "OB10",
+      "title": "IDEA §300.624 — Destruction of information",
+      "publisher": "U.S. Department of Education",
+      "url": "https://sites.ed.gov/idea/regs/b/f/300.624",
+      "retrieved": "2026-10-20",
+      "evidence_status": "Official indexed text retrieved; direct fetch returned 403",
+      "supports": "The public agency informs parents when IDEA Part B personal information is no longer needed for educational services; parental destruction requests then apply, with a specified permanent-record exception.",
+      "limit": "School counsel must reconcile the applicable duties, holds and record categories; vendor contract termination is not itself the complete retention rule."
+    }
+  ],
+  "requirements": [
+    {
+      "id": "OBR01",
+      "title": "Verify credentials against the discipline, state and school assignment",
+      "source_ids": [
+        "OB01",
+        "OB02"
+      ],
+      "evidence_status": "Official principle; proposed implementation; state-specific rules unresolved",
+      "applicability": "SLP, OT or PT delivering IDEA Part B related services; requirements vary by state and professional role.",
+      "behavior": "Maintain a versioned credential rule set keyed to state, discipline, school setting and role. Keep professional license, state education credential, national certification, clinical competence and district acceptance separate. Readiness remains unknown until authoritative verification and the applicable rule set are approved.",
+      "human_owner": "Credentialing lead, state-licensed discipline supervisor and district special-education lead",
+      "open_questions": [
+        "Which state board regulates SLP/OT/PT and which SEA school credentials or exemptions apply?",
+        "Which district qualifications, specialty experience and verification intervals apply?"
+      ],
+      "acceptance": "A synthetic valid national certification without the required state/school evidence cannot make a therapist ready. An expired, unmatched or unknown verification routes to review rather than being inferred valid."
+    },
+    {
+      "id": "OBR02",
+      "title": "Represent assistants and supervised practitioners as distinct roles",
+      "source_ids": [
+        "OB02"
+      ],
+      "evidence_status": "Official principle; proposed implementation; supervision rules unresolved",
+      "applicability": "SLPA, OTA or PTA participation only where the selected state's rules and district arrangement permit it.",
+      "behavior": "Store permitted tasks, required supervisor, supervision plan and evidence separately for each discipline. Prevent an assistant role from being used as an interchangeable substitute for an independently qualified therapist. Route provisional or unusual credentials for specialist interpretation; do not treat a credential label as an automatic legal conclusion.",
+      "human_owner": "Discipline supervisor and district credentialing authority",
+      "open_questions": [
+        "Which tasks, evaluation/signature permissions, supervision modes and ratios are permitted?",
+        "Are assistants included in the initial contract and do state/SEA rules impose additional restrictions?"
+      ],
+      "acceptance": "An assistant assignment without an approved supervisor or rule set cannot reach service-ready status; a generic supervisor field cannot satisfy a different discipline's supervision rules."
+    },
+    {
+      "id": "OBR03",
+      "title": "Use the authorized IEP service requirement as the operational input",
+      "source_ids": [
+        "OB01",
+        "OB03"
+      ],
+      "evidence_status": "Official IEP content; proposed data model",
+      "applicability": "Services provided under an IDEA Part B IEP; other plans require their own applicability mapping.",
+      "behavior": "Reference the school's authoritative plan version and effective dates. Capture the authorized service, frequency, duration, location, goal references and progress-report schedule without generating default clinical prescriptions. Store unclear or conflicting text as a question for the school team.",
+      "human_owner": "District IEP team and qualified treating therapist",
+      "open_questions": [
+        "Which IEP system is authoritative and which fields may be shared with the staffing platform?",
+        "How are amendments and effective dates communicated?"
+      ],
+      "acceptance": "A plan amendment preserves prior history and changes future operational requirements only after authorized verification. The system cannot insert standard minutes or goals because a field is missing."
+    },
+    {
+      "id": "OBR04",
+      "title": "Confirm provider access and responsibility handoff before service",
+      "source_ids": [
+        "OB04",
+        "OB05"
+      ],
+      "evidence_status": "Official principle; proposed workflow",
+      "applicability": "A provider responsible for implementing an IEP, within the school's approved record-access basis.",
+      "behavior": "Track whether the assigned provider can access the current IEP in the approved system and has received responsibility/accommodation information. Use an access reference when copying the IEP is unnecessary. Revalidate access when assignments end or change.",
+      "human_owner": "School case manager, district records administrator and assigned therapist",
+      "open_questions": [
+        "Who grants access and communicates changes?",
+        "Can the district provide a responsibility extract while preserving access to the complete IEP where required?"
+      ],
+      "acceptance": "A booked provider without confirmed access/responsibility handoff is flagged before service. Reassignment removes the prior worker's access and records the handoff."
+    },
+    {
+      "id": "OBR05",
+      "title": "Keep planned, attempted, delivered and missed service distinct",
+      "source_ids": [
+        "OB03",
+        "OB04"
+      ],
+      "evidence_status": "Proposed implementation derived from IEP service obligations",
+      "applicability": "School therapy delivery tracking; the detailed documentation format is district- and discipline-dependent.",
+      "behavior": "Keep separate service-obligation, scheduled-session, attendance/attempt and therapist-attested delivery records. Distinguish absence, closure, therapist unavailability and other interruption reasons. Escalate discrepancies to the school; do not automatically fabricate delivery or prescribe compensatory services.",
+      "human_owner": "Treating therapist and district special-education lead",
+      "open_questions": [
+        "How are group sessions and indirect work documented?",
+        "Who determines make-up or compensatory action, and what evidence/deadlines apply?"
+      ],
+      "acceptance": "A canceled session never becomes delivered merely because payroll time or an invoice exists. The system can identify an unresolved service gap while leaving the educational remedy to the authorized team."
+    },
+    {
+      "id": "OBR06",
+      "title": "Reserve clinical and educational decisions for authorized personnel",
+      "source_ids": [
+        "OB01",
+        "OB02",
+        "OB03"
+      ],
+      "evidence_status": "Proposed authority control grounded in qualified services and individualized plans",
+      "applicability": "Evaluation, therapy judgments, IEP goals/services and progress conclusions.",
+      "behavior": "Allow AI to organize evidence, draft documentation and surface scheduling gaps. Require the responsible qualified person or school process to attest clinical records and authorize changes. AI cannot autonomously determine eligibility, change goals/minutes/grouping or sign a therapist's note.",
+      "human_owner": "Qualified therapist and district IEP team",
+      "open_questions": [
+        "What drafting assistance does the district permit?",
+        "Which signatures, review steps and notices accompany each decision?"
+      ],
+      "acceptance": "An agent request to alter authorized service frequency or sign a clinical note is denied and audited. Draft text remains visibly unverified until the responsible person reviews it."
+    },
+    {
+      "id": "OBR07",
+      "title": "Establish student-record disclosure authority before connecting systems",
+      "source_ids": [
+        "OB05"
+      ],
+      "evidence_status": "Official disclosure conditions; proposed connection gate",
+      "applicability": "PII from education records held by a FERPA-covered school.",
+      "behavior": "Record the school's approved disclosure basis and approved recipients, including any AI/subprocessor. When using the school-official exception, document the institutional function, school control, purpose restrictions and legitimate educational interest. Keep the student-data connection disabled until this arrangement is established.",
+      "human_owner": "District privacy/records officer and agency privacy counsel",
+      "open_questions": [
+        "Does the school-official exception apply, or is another basis needed?",
+        "Which annual-notice criteria, state student-privacy terms, subprocessors and data locations apply?"
+      ],
+      "acceptance": "A signed commercial staffing agreement without an approved disclosure basis does not enable IEP import. An unapproved AI endpoint cannot receive student PII."
+    },
+    {
+      "id": "OBR08",
+      "title": "Enforce assignment-level access and purpose limits",
+      "source_ids": [
+        "OB05"
+      ],
+      "evidence_status": "Official access/use principle; proposed technical controls",
+      "applicability": "School-approved access to student education records by staff, contractors and permitted systems.",
+      "behavior": "Scope access by district, school, assignment and purpose. Keep student records out of worker recruiting and general payroll views. Audit accesses and exports as a product control; restrict reuse for model training, advertising or cross-client analysis unless separately authorized under applicable requirements.",
+      "human_owner": "District records administrator and platform security owner",
+      "open_questions": [
+        "Which roles need which student fields?",
+        "Which export, subprocessor and permitted-use controls are required by the district?"
+      ],
+      "acceptance": "Cross-district and unassigned-student access tests fail closed. A recruiter can see assignment readiness without seeing therapy notes. Revoked access also blocks agents and integration accounts."
+    },
+    {
+      "id": "OBR09",
+      "title": "Classify records by their actual school/provider relationship",
+      "source_ids": [
+        "OB05",
+        "OB06"
+      ],
+      "evidence_status": "Official FERPA/HIPAA distinction; proposed classification workflow",
+      "applicability": "Student therapy records, agency employment records and any separate direct-to-patient business.",
+      "behavior": "Classify datasets by record owner, purpose and whether the provider acts for the school. Apply the district-approved education-record controls to school records; evaluate independent healthcare activities separately. Keep worker medical/employment documents separate from student records. Do not declare all therapy data HIPAA or assume a BAA resolves FERPA.",
+      "human_owner": "District privacy officer and agency privacy counsel",
+      "open_questions": [
+        "Are any services delivered independently of the school?",
+        "Does the agency perform electronic covered transactions or other activities requiring a separate HIPAA analysis?"
+      ],
+      "acceptance": "A school-contracted session and an independent clinical encounter cannot inherit the same regime automatically. Unknown record classifications block downstream disclosure until reviewed."
+    },
+    {
+      "id": "OBR10",
+      "title": "Gate employment screening orders on the correct authorization",
+      "source_ids": [
+        "OB07"
+      ],
+      "evidence_status": "Official FCRA principle; proposed screening order control",
+      "applicability": "Employment consumer reports obtained from a background reporting company; separate school clearance processes must also be assessed.",
+      "behavior": "Require the approved standalone disclosure, written authorization and provider certification workflow before ordering a covered report. Store the document version, scope and event evidence. Treat consent for applicant screening, student-data disclosure and clinical services as different records.",
+      "human_owner": "HR screening lead and employment counsel",
+      "open_questions": [
+        "Which district/state fingerprinting, registry or clearance checks apply?",
+        "When may each check occur and what recheck authorization is needed?"
+      ],
+      "acceptance": "A general application checkbox or student-service consent cannot satisfy the configured screening authorization. Missing or out-of-scope authorization blocks the screening order."
+    },
+    {
+      "id": "OBR11",
+      "title": "Use a reviewed adverse-action and dispute process",
+      "source_ids": [
+        "OB07"
+      ],
+      "evidence_status": "Official notice principles; proposed human decision control",
+      "applicability": "An employment decision based on covered consumer-report information; federal coverage and state/local rules require confirmation.",
+      "behavior": "Route report issues to qualified HR review. Support pre-adverse report/rights delivery, an opportunity to contest, approved timing and a separately authorized final decision/notice. Apply reviewed job-related criteria consistently. Gate medical-inquiry workflows by an approved hiring-stage policy.",
+      "human_owner": "HR decision maker and employment counsel",
+      "open_questions": [
+        "Which notice forms, response periods and local restrictions apply?",
+        "Who handles disputed matches, accommodation requests and non-consumer-report school clearance decisions?"
+      ],
+      "acceptance": "A vendor flag cannot automatically reject an applicant. A timer alone cannot issue final adverse action. Tests preserve notices and candidate responses without revealing sensitive details to unrelated users."
+    },
+    {
+      "id": "OBR12",
+      "title": "Separate paid work, contract billing and student service measures",
+      "source_ids": [
+        "OB08",
+        "OB09",
+        "OB03"
+      ],
+      "evidence_status": "Official time/record principles; proposed ledger separation",
+      "applicability": "Agency employees subject to applicable wage rules; the employer, classification and pay model remain unresolved.",
+      "behavior": "Maintain raw work-time evidence and separate payroll, customer-billable and student-service records. Capture preparation, documentation, meetings, training, travel and interrupted breaks for classification under approved rules. Do not erase worked time because a district rejects an invoice or a student session was canceled.",
+      "human_owner": "Payroll lead, employment counsel and district contract owner",
+      "open_questions": [
+        "Who employs each therapist; which exemption, workweek aggregation, rates and state wage rules apply?",
+        "Which activities are billable under the contract?"
+      ],
+      "acceptance": "A synthetic therapist with work at two client sites retains both time records. Invoice rejection does not silently zero payroll time; paid preparation does not count as delivered therapy minutes."
+    },
+    {
+      "id": "OBR13",
+      "title": "Support district-led record access, correction and retention",
+      "source_ids": [
+        "OB05",
+        "OB10",
+        "OB09",
+        "OB07"
+      ],
+      "evidence_status": "Official record principles; proposed lifecycle controls",
+      "applicability": "Separate student/IDEA, personnel, consumer-report and payroll record categories.",
+      "behavior": "Maintain category-specific retention policies, requests, holds and approved destruction/export workflows. Route student access/correction requests to the school and preserve amendment history. Reconcile IDEA no-longer-needed/destruction duties with applicable holds. Do not apply payroll retention periods to all data or delete student records automatically at contract end.",
+      "human_owner": "District records officer, agency HR/payroll records owners and counsel",
+      "open_questions": [
+        "Which state schedules, legal holds, parent/eligible-student requests and contract return/destruction terms apply?",
+        "Who owns the authoritative record and each authorized copy?"
+      ],
+      "acceptance": "An outstanding records-access request blocks affected deletion. A payroll retention rule cannot destroy an IEP record. An approved deletion action records categories, authority and affected replicas."
+    },
+    {
+      "id": "OBR14",
+      "title": "Keep incomplete qualifications or unresolved service conditions visible",
+      "source_ids": [
+        "OB02",
+        "OB03",
+        "OB04"
+      ],
+      "evidence_status": "Proposed readiness control derived from personnel and service obligations",
+      "applicability": "Launch and each therapist-to-school assignment.",
+      "behavior": "Maintain readiness dimensions for professional qualification, district clearance, supervision, authorized service input and system access. Unknown is distinct from failed and approved. Agents can request evidence and escalate; they cannot bypass missing state or school rules to mark a worker fully ready.",
+      "human_owner": "Agency credentialing lead and district accountable service owner",
+      "open_questions": [
+        "Who accepts residual exceptions, where legally permitted?",
+        "What prevents a placement from starting before unresolved launch conditions are resolved?"
+      ],
+      "acceptance": "Every production assignment has a rule version and named accountable approval. An unresolved state credential or supervision rule cannot be converted into readiness by a commercial deadline."
+    }
+  ],
+  "production_blocking_unknowns": [
+    {
+      "id": "OBU01",
+      "unknown": "State, district type, age group and service framework",
+      "needed": "Select the state and client, confirm public/charter/private status and whether the work is IDEA Part B, another school framework or direct clinical care.",
+      "owner": "Business owner and district special-education counsel"
+    },
+    {
+      "id": "OBU02",
+      "unknown": "Discipline credentials and supervision",
+      "needed": "Check the actual state SLP/audiology, OT and PT authorities plus SEA school requirements; define SLPA/OTA/PTA and supervised-practice permissions. No Nursys connector is assumed.",
+      "owner": "Credentialing lead and discipline supervisors"
+    },
+    {
+      "id": "OBU03",
+      "unknown": "School clearance and safeguarding",
+      "needed": "Research the selected jurisdiction's fingerprinting, child-abuse/other registries, mandatory-reporting duties, site training, incident escalation and district exclusion rules; FCRA alone does not answer them.",
+      "owner": "District HR/safeguarding lead and employment counsel"
+    },
+    {
+      "id": "OBU04",
+      "unknown": "IEP authority and consent handoffs",
+      "needed": "Define who confirms evaluation/service authorization and parent participation/consent status, who may change plans, required notices, and the handling of missed services or transfers. No universal minutes, caseload or compensatory-service formula.",
+      "owner": "District special-education lead and qualified therapists"
+    },
+    {
+      "id": "OBU05",
+      "unknown": "Employment and pay structure",
+      "needed": "Determine employer, work authorization/onboarding, worker classification, wage/overtime rules, aggregation across assignments, pay timing, leave and recordkeeping duties before production payroll.",
+      "owner": "HR/payroll lead and employment counsel"
+    },
+    {
+      "id": "OBU06",
+      "unknown": "Student-data agreements and authoritative systems",
+      "needed": "Approve disclosure basis, district IEP system ownership, AI/subprocessor access, tenant boundaries, state student-privacy conditions and records lifecycle.",
+      "owner": "District privacy officer and platform security lead"
+    },
+    {
+      "id": "OBU07",
+      "unknown": "Medicaid or other third-party reimbursement",
+      "needed": "Excluded from the initial claims engine. If selected later, research state program/provider enrollment, eligible services, documentation, consent, coding, units, signatures and separation from delivery obligations before implementation.",
+      "owner": "District Medicaid program lead and reimbursement specialist"
+    },
+    {
+      "id": "OBU08",
+      "unknown": "Clinical delivery and telepractice scope",
+      "needed": "Confirm whether the initial product only administers staffing or also operates service delivery; establish clinician accountability, equipment, accessibility, locations, emergency/incident procedures and any telepractice rules.",
+      "owner": "Discipline clinical lead and district service owner"
+    }
+  ],
+  "discipline_discovery_checklist": [
+    {
+      "role": "SLP / SLPA",
+      "research": "Identify the state speech-language pathology/audiology authority, SEA credential or school-specific exemption pathway, permitted SLPA work and supervision. Verify any national certification/client requirement separately; it is not a substitute for state authority.",
+      "evidence_to_obtain": "Board/SEA rule links, verification method, district qualification schedule, supervisor evidence and sample role-specific service documentation."
+    },
+    {
+      "role": "OT / OTA",
+      "research": "Identify the state occupational therapy authority and school requirements, practice scope, OTA delegation/supervision, evaluation and signature permissions. Do not reuse SLP rules.",
+      "evidence_to_obtain": "Board/SEA requirements, district role description, approved supervision arrangement and documentation standards."
+    },
+    {
+      "role": "PT / PTA",
+      "research": "Identify the state physical therapy authority and school requirements, PTA supervision, evaluation and signature permissions, and any relevant service/referral constraints. Do not reuse OT rules.",
+      "evidence_to_obtain": "Board/SEA requirements, district role description, approved supervision arrangement and documentation standards."
+    },
+    {
+      "role": "School case manager / special-education lead",
+      "research": "Identify plan authority, provider responsibility handoff, student-service consent confirmation, progress reporting, transfers and missed-service escalation.",
+      "evidence_to_obtain": "De-identified IEP/service-order example, access workflow, version-change notification and exception SOP."
+    },
+    {
+      "role": "District privacy / records owner",
+      "research": "Confirm school/record coverage, disclosure authority, approved AI recipients, access matrix and request/retention/destruction duties.",
+      "evidence_to_obtain": "Approved data agreement, district annual-notice criteria, state privacy terms and record schedule."
+    },
+    {
+      "role": "Agency HR / payroll",
+      "research": "Confirm screening and school clearance, worker onboarding/classification, time categories, overtime aggregation and pay/billing separation.",
+      "evidence_to_obtain": "Approved disclosure/authorization and notice templates, client clearance schedule, time policy and sample corrected payroll/invoice case."
+    }
+  ],
+  "review": {
+    "method": "Independent scope challenge by obligation_scope_review; primary-source research by care_obligations",
+    "outcome": "Incorporated discipline-specific assistant rules, FERPA authority before access, distinct IEP/time/payment measures, and school-specific clearance holds.",
+    "limitation": "Not a state-specific legal review; no production compliance certification."
+  }
+}

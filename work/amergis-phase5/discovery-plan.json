@@ -1,0 +1,87 @@
+{
+  "title": "School therapy staffing — evidence-linked requirements pack",
+  "as_of": "2026-10-20",
+  "status": "Research and proposed specification; no live staffing service or integrations implemented",
+  "scope": {
+    "user_selected": "Schools and therapists",
+    "worked_example": "Speech-language pathology staffing for a school district; OT and PT variants must be configured separately",
+    "discipline_status": "SLP is a planning example, not a user-selected exclusion of OT or PT",
+    "jurisdiction": "United States baseline research; state not selected",
+    "delivery_model": "Staffing-first example. District-approved modality; in-person, virtual and hybrid eligibility are not assumed interchangeable.",
+    "commercial_model": "Agency supplies qualified therapists to district-approved assignments. Employment model, direct-versus-subcontract route and executed commercial terms remain undecided.",
+    "clinical_boundary": "Qualified professionals and the authorized school team own evaluation, eligibility, service plans, therapy delivery, clinical attestations and decisions about missed services. Agents support administration.",
+    "student_data_boundary": "Keep student clinical and IEP content in the district-designated system for the initial design. Use permitted opaque references and minimum approved aggregates only; an opaque reference can still be protected education data.",
+    "out_of_scope": ["Autonomous diagnosis or therapy", "Independent changes to IEP obligations or automatic compensatory-service decisions", "A replacement IEP/EHR platform", "Medicaid claim submission", "Unapproved virtual therapy", "An asserted complete reconstruction of Amergis internal systems"]
+  },
+  "design_principles": [
+    "Separate published observations, source-specific contractual rules, proposed system behavior and unresolved requirements.",
+    "Maintain one authoritative record owner per object; preserve external identifiers and original evidence.",
+    "Keep approved service obligations, scheduled work, actual services, worked time and billable amounts distinct.",
+    "Treat workload as direct and indirect duties, not a universal number of students or therapy minutes.",
+    "Bind consequential approvals to the exact action payload and relevant record/policy versions.",
+    "All candidate, district and student fixtures are synthetic. No actual students, applicants or private records were accessed."
+  ],
+  "journey": [
+    {"id":"J01","stage":"District demand and procurement","actors":["District special education lead","Procurement","Account owner"],"inputs":["Service discipline and term","Approved workload and school sites","Purchase route and authorized order"],"outputs":["Versioned staffing request","Contract and district requirement pack"],"gate":"Demand, contracting authority, budget and applicable requirement version confirmed","ai_role":"Extract and structure draft requirements; surface missing or conflicting clauses"},
+    {"id":"J02","stage":"Provider intake and qualification","actors":["Therapist","Recruiter","Credential reviewer"],"inputs":["Consented provider profile","Role-specific credentials","Availability and assignment preferences"],"outputs":["Verified identity/qualification evidence","Readiness decision with owner and validity"],"gate":"Correct discipline, license/certification path, school checks and any required supervision","ai_role":"Collect permitted documents, propose field extraction, reminders and evidence gaps"},
+    {"id":"J03","stage":"Submission and selection","actors":["Recruiter","Therapist","District reviewer"],"inputs":["Approved requirement pack","Provider evidence and consent"],"outputs":["Approved submission","Recorded district/provider decisions"],"gate":"Human-reviewed qualification evidence and authorized sharing","ai_role":"Prepare evidence-linked candidate package and explain requirement matches"},
+    {"id":"J04","stage":"Assignment and school access","actors":["Operations","District","Therapist"],"inputs":["Accepted offer","School calendar","Systems and access prerequisites"],"outputs":["Assignment with term/site/workload","District onboarding and system access status"],"gate":"Contract, readiness and required school onboarding accepted","ai_role":"Coordinate onboarding, appointments and due-date reminders"},
+    {"id":"J05","stage":"Schedule and deliver services","actors":["Therapist","School scheduler","Clinical/special education owner"],"inputs":["School-approved workload/constraints","Availability","District calendar and service-system references"],"outputs":["Approved schedule","School-system service records or permitted status references"],"gate":"Qualified professional owns clinical delivery and required attestations","ai_role":"Propose feasible administrative schedules; flag closures, conflicts and missing evidence"},
+    {"id":"J06","stage":"Exceptions and continuity","actors":["Operations","School lead","Qualified professional"],"inputs":["Absence, missed session, closure or discrepancy","Current approved obligations"],"outputs":["Exception record","Approved recovery or replacement plan"],"gate":"No inferred delivered service or automatic IEP/service obligation change","ai_role":"Triage, notify designated adults, propose coverage and track resolution"},
+    {"id":"J07","stage":"Time and financial preparation","actors":["Therapist","Time approver","Payroll owner","Billing owner"],"inputs":["Actual worked time","Contract-specific billable evidence","Approved rate versions"],"outputs":["Pay preparation","District invoice draft","Separate dispute and correction records"],"gate":"Worked-time/pay decisions remain distinct from district invoice acceptance","ai_role":"Check arithmetic, version changes, duplicates and missing support"},
+    {"id":"J08","stage":"Release, reconciliation and renewal","actors":["Financial approver","Operations","District"],"inputs":["Exact approved payroll/invoice payloads","Provider acknowledgments","Actual outcomes"],"outputs":["Reconciled settlement references","Service/operating metrics","Renewal or offboarding tasks"],"gate":"Named owners release funds/financial postings and approve continuation","ai_role":"Prepare reconciliation, exception alerts and evidence-based reporting"}
+  ],
+  "product_changes_from_phase4": [
+    {"product":"Worker portal","change":"Therapist profile, discipline/assistant distinctions, availability, school onboarding and direct/indirect workload."},
+    {"product":"Client portal","change":"District intake, procurement authority and approval tasks; integration with required district systems may take precedence over a new portal."},
+    {"product":"Scheduling","change":"School terms, holidays, closures, recurring availability, cross-site travel and approved workload constraints."},
+    {"product":"Credentialing","change":"SLP/OT/PT-specific evidence, school credentials, assistants and supervision. Nursys nursing verification is not the pilot adapter."},
+    {"product":"Service evidence","change":"Permitted references to district-owned service documentation; no general student clinical record collection in the staffing ATS."},
+    {"product":"Pay and billing","change":"Track work time, service minutes and invoice units independently. Billing gates and cancellation rules are contract-specific."},
+    {"product":"Teletherapy","change":"A conditional district-authorized modality and platform choice, not an automatic first-release product."}
+  ],
+  "decisions": [
+    {"id":"DEC01","topic":"Pilot state and district","status":"open","owner":"Founder + district partner","evidence_needed":"Named state and prospective district; current procurement path","blocks":"Production qualification, pay, privacy and school-specific rule pack; not synthetic design"},
+    {"id":"DEC02","topic":"Initial discipline and provider level","status":"SLP example; open","owner":"Founder + clinical lead","evidence_needed":"Select SLP/OT/PT and whether assistants or supervised trainees are in scope","blocks":"Final credential and supervision templates"},
+    {"id":"DEC03","topic":"Employment and contracting model","status":"open","owner":"Business owner + qualified employment adviser","evidence_needed":"Employer entity, worker model, direct/subcontract role and actual agreements","blocks":"Onboarding, employment obligations and pay configuration"},
+    {"id":"DEC04","topic":"District-required channels and modality","status":"open","owner":"District + operations","evidence_needed":"Permitted in-person/virtual/hybrid model; required VMS, service records, time and communication channels","blocks":"Portal scope and connector selection"},
+    {"id":"DEC05","topic":"Record ownership and student-data purpose","status":"open","owner":"District privacy owner + operator security owner","evidence_needed":"Approved data inventory, permitted purpose, access agreement, retention and district-designated source systems","blocks":"Live student-related processing and integration"},
+    {"id":"DEC06","topic":"Rates, units and funding","status":"open","owner":"Commercial + payroll/billing owners","evidence_needed":"Executed pay/bill terms, burden, payment schedule, cancellation and amendment rules, cash funding plan","blocks":"Actual pricing, payroll release and profitability claims"},
+    {"id":"DEC07","topic":"ATS and service vendors","status":"open","owner":"Technical + procurement owners","evidence_needed":"Vendor conformance evidence, current terms, product edition, test method and quote","blocks":"Vendor-specific implementation"},
+    {"id":"DEC08","topic":"Service and exception coverage","status":"open","owner":"Operations + clinical/school leads","evidence_needed":"Named owners, operating hours, escalation paths, response commitments and authority limits","blocks":"Live delegation and service commitments"},
+    {"id":"DEC09","topic":"Pilot performance thresholds","status":"open","owner":"Operations + district partner","evidence_needed":"Observed baseline; agreed error, intervention, quality and cost thresholds","blocks":"Claims of readiness, automation benefit or scaling"}
+  ],
+  "discovery_sessions": [
+    {"id":"INT01","audience":"District special education director and procurement","proposed_sample":"3 separate district buyer conversations","questions":["Walk through the last therapy staffing request from vacancy to approved start.","Which services, documentation and response commitments are mandatory, and who approves exceptions?","Which systems, provider levels and modalities must vendors use?","Show a redacted accepted and rejected invoice or submission; what changed the outcome?"],"outputs":["Buyer journey","Purchase/approval map","Contract artifact list"],"status":"Guide prepared; no outreach or interviews performed"},
+    {"id":"INT02","audience":"Practicing school therapists","proposed_sample":"3 SLPs plus 1 OT and 1 PT","questions":["Walk through a normal week and a disrupted week, including paperwork, meetings, travel and supervision.","What does onboarding require before you may work at a particular school?","How do you record work and service delivery, and correct mistakes?","Which proposed automations would you want to inspect or approve?"],"outputs":["Workload categories","Provider workflow and usability requirements","Exception examples"],"status":"Guide prepared; voluntary participation and permitted redacted examples needed"},
+    {"id":"INT03","audience":"Recruiter, credential reviewer and scheduler","proposed_sample":"One practitioner per role","questions":["What makes a provider ready for one school but not another?","Which documents or matches require manual interpretation?","Where do duplicates, delays and failed handoffs occur?","Who can approve a substitute, supervised provider or changed assignment?"],"outputs":["Decision rights","Evidence checks","Handling-time baseline"],"status":"Guide prepared; not conducted"},
+    {"id":"INT04","audience":"Payroll and district billing owners","proposed_sample":"One owner per function","questions":["What determines worked time, payable treatment and invoice units?","What happens after a disputed invoice, closure, late approval or retroactive correction?","Show the required export, acknowledgments and release approvals using synthetic or redacted records.","When are workers paid versus customer cash received, and how is the gap funded?"],"outputs":["Pay/bill rules","Reconciliation cases","Cash timing model"],"status":"Guide prepared; not conducted"}
+  ],
+  "economics": {
+    "status":"Input specification only; no observed economics, vendor quotes or revenue forecast",
+    "inputs":[
+      {"name":"Billable units and rate by activity","unit":"hours, sessions or contract-defined units / USD","source_needed":"Executed district agreement and accepted invoice examples","value":null},
+      {"name":"Provider paid hours and rate","unit":"hours / USD per hour or selected pay basis","source_needed":"Actual employment/pay agreement and applicable rule review","value":null},
+      {"name":"Employer burden and insurance allocation","unit":"USD per period or approved cost basis","source_needed":"Payroll/insurance quotes and entity setup","value":null},
+      {"name":"Screening, credential and onboarding cost","unit":"USD per provider/start","source_needed":"Provider quotes and measured onboarding","value":null},
+      {"name":"Recruitment and customer acquisition cost","unit":"USD per qualified start/customer","source_needed":"Observed permitted acquisition funnel and campaign spend","value":null},
+      {"name":"Unbilled work, school closures and paid leave","unit":"hours / USD","source_needed":"Contract, employment terms and actual calendar","value":null},
+      {"name":"Software, integration and transaction charges","unit":"USD fixed and variable","source_needed":"Current vendor quotes including API and minimum commitments","value":null},
+      {"name":"Administrative and exception handling","unit":"minutes per case / USD per hour","source_needed":"Observed work sampling, including human oversight","value":null},
+      {"name":"Payroll outflow and customer collection dates","unit":"dated cash movements","source_needed":"Pay schedule, billing acceptance and actual payment history","value":null}
+    ],
+    "formulas":[
+      "Contribution for a period = earned customer revenue less provider compensation, employer burden, variable delivery costs and allocated variable operating effort. This is not net profit.",
+      "Projected cash at date t = opening cash + cumulative collected receipts through t - cumulative paid outflows through t. Funding need is the greatest deficit plus an owner-selected reserve.",
+      "Cost per filled assignment = consistently scoped acquisition, onboarding and delivery costs / completed qualifying assignments. Define period and exclusions before comparison.",
+      "Do not substitute public contract ceilings for negotiated revenue, advertised pay for total employment cost, or service minutes for all worked time."
+    ]
+  },
+  "next_steps": [
+    {"sequence":1,"action":"Choose pilot district/state and confirm SLP/OT/PT scope","completion":"DEC01–DEC04 owners record choices and authoritative source documents"},
+    {"sequence":2,"action":"Validate requirements with district and therapist walkthroughs","completion":"Record disagreements and accepted revisions; no meeting completion implied by this pack"},
+    {"sequence":3,"action":"Resolve data ownership, vendor access and economics","completion":"Actual terms, approved data scope and permitted test arrangements recorded"},
+    {"sequence":4,"action":"Build one synthetic district-to-invoice prototype","completion":"Implement required paths and run acceptance scenarios against the implementation"},
+    {"sequence":5,"action":"Run a bounded live pilot only after unresolved gates are closed","completion":"Accountable owners approve scope; measured outcomes support any expanded agent authority"}
+  ]
+}

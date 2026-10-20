@@ -1,0 +1,21 @@
+{
+  "method": "Local in-memory DOM/source checks only; no rendered browser or live integration validation.",
+  "checks": [
+    {
+      "name": "Report renders each requirement, domain object, state model, command and scenario",
+      "status": "pass"
+    },
+    {
+      "name": "Requirement text and evidence filters combine correctly",
+      "status": "pass"
+    },
+    {
+      "name": "Local artifacts, section anchors and primary-source URLs resolve structurally",
+      "status": "pass"
+    },
+    {
+      "name": "Clinical, school-record and future-validation boundaries remain visible",
+      "status": "pass"
+    }
+  ]
+}

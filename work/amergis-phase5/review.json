@@ -1,0 +1,197 @@
+{
+  "title": "Independent review of school therapy requirements research",
+  "as_of": "2026-10-20",
+  "status": "Pass for research and proposed bounded specification; no unresolved review findings",
+  "scope": "Evidence-linked requirements for schools and therapists, using SLP as a planning example with OT/PT and assistant distinctions. Review does not establish production readiness or jurisdiction-specific compliance.",
+  "files_reviewed": [
+    "discovery-plan.json",
+    "integrations.json",
+    "obligations.json",
+    "local-care-evidence.json",
+    "domain-spec.json",
+    "scenarios.json",
+    "check_scenarios.py",
+    "traceability.json",
+    "build_pack.py"
+  ],
+  "checks": [
+    {
+      "id": "RV01",
+      "topic": "User scope and discipline variants",
+      "result": "pass",
+      "evidence": "Discovery scope uses schools and therapists; SLP is expressly a worked example. OBR01/02 and the discipline checklist separate SLP/SLPA, OT/OTA and PT/PTA requirements; state and district remain open."
+    },
+    {
+      "id": "RV02",
+      "topic": "Public source applicability",
+      "result": "pass",
+      "evidence": "LC01/02 identify expired initial terms and unverified renewals; LC03/04/05 identify district solicitations rather than awarded Amergis contracts or nationwide rules. Vendor capabilities are not asserted as tested integrations."
+    },
+    {
+      "id": "RV03",
+      "topic": "Primary-source spot checks",
+      "result": "pass",
+      "evidence": "Independently opened Bristol solicitation and DCPS solicitation. Downloaded DCPS amendment with validated system TLS after web-tool open failed. Confirmed district-specific modality, conflicting documentation thresholds/deadlines and named district systems. HHS school-record FAQ and indexed IDEA personnel rule support the stated conditionality.",
+      "source_ids": [
+        "LC03",
+        "LC04",
+        "LC05",
+        "OB02",
+        "OB06"
+      ]
+    },
+    {
+      "id": "RV04",
+      "topic": "Clinical and educational authority",
+      "result": "pass",
+      "evidence": "J05/J06, OBR03/05/06 and VR09 keep clinical delivery, IEP eligibility/goals/minutes, attestations and missed-service remedies with qualified people and the authorized school process."
+    },
+    {
+      "id": "RV05",
+      "topic": "Student records and privacy regime",
+      "result": "pass",
+      "evidence": "Initial scope keeps clinical/IEP content in district-designated systems. OBR07/08/09 require disclosure authority, purpose/assignment scope and relationship-based FERPA/HIPAA classification. Opaque references are explicitly still potentially protected data."
+    },
+    {
+      "id": "RV06",
+      "topic": "Work, service and financial separation",
+      "result": "pass",
+      "evidence": "LCR06, OBR12, VR04 and J07 distinguish worked time, delivered service and customer billing; invoice rejection does not silently suppress payroll review. J08 and VR06 require exact-payload financial approval."
+    },
+    {
+      "id": "RV07",
+      "topic": "Draft field presence and transition prerequisites",
+      "result": "pass after correction",
+      "evidence": "Required-at-create lists now govern initial presence; consent and submission approval evidence are nullable/deferred until required by the relevant transition. ASHA workload reference resolves to integrations V05."
+    },
+    {
+      "id": "RV08",
+      "topic": "Scenario/domain state agreement",
+      "result": "pass after correction",
+      "evidence": "Missing identity or fresh verification remains INCOMPLETE; interval expiry produces EXPIRED plus assignment HOLD; unresolved assistant scope is not a qualified rejection. Billing-rule conflict stays DRAFT. Stale financial approval follows owner-directed correction/re-freeze. All scenario state labels resolve."
+    },
+    {
+      "id": "RV09",
+      "topic": "Traceability and honest coverage",
+      "result": "pass with explicit design gaps",
+      "evidence": "All 43 requirement source references and journey/object/scenario links resolve. Eight requirements have textual acceptance criteria but no dedicated scenario; linked scenarios are explicitly partial. The bounded domain excludes multi-session/multi-school routing, assistant placement, clinical records and teletherapy delivery."
+    },
+    {
+      "id": "RV10",
+      "topic": "Fixture validation versus operational proof",
+      "result": "pass",
+      "evidence": "Ran check_scenarios.py on 26 scenario specifications, four Decimal financial fixtures and eight unmeasured metrics. It passed fixture shape, references, arithmetic, interval and group-duration consistency. The checker explicitly reports that no product acceptance tests, vendor conformance or live validation were performed."
+    },
+    {
+      "id": "RV11",
+      "topic": "Report integration",
+      "result": "pass after correction",
+      "evidence": "Root corrected compact field/command decoding and structured validation text rendering. This is source/DOM-level review; no rendered browser or live application behavior is established."
+    },
+    {
+      "id": "RV12",
+      "topic": "Domain structure, ownership and command semantics",
+      "result": "pass after correction",
+      "evidence": "Independent domain reviewer confirmed all nine declared state graphs are reachable, each nonterminal can reach a terminal, and 50 transition commands join uniquely. Reviewed authoritative records, credential/worksite scope, permissions, exact/current approvals, atomic reservations and idempotency. Cross-file reviewer re-read the corrected readiness, time/payroll, reconfirmation and command-envelope fields. This validates the proposed design structure only."
+    }
+  ],
+  "findings": [
+    {
+      "id": "RF01",
+      "severity": "medium",
+      "status": "resolved",
+      "issue": "Legacy RN domain and scenarios contradicted the selected schools/therapists market.",
+      "resolution": "Replaced with school-therapy scope, SLP example, OT/PT distinctions, district-authorized modality and explicit bounded work-block design."
+    },
+    {
+      "id": "RF02",
+      "severity": "medium",
+      "status": "resolved",
+      "issue": "Initial required-field declarations demanded signed consent and recruiter approval before legitimate DRAFT records could exist.",
+      "resolution": "Added per-object required_at_create rules and deferred/nullable evidence with transition-specific prerequisites."
+    },
+    {
+      "id": "RF03",
+      "severity": "low",
+      "status": "resolved",
+      "issue": "Domain ASHA workload reference incorrectly pointed to V07 (CMS).",
+      "resolution": "Corrected to phase5 integrations source V05."
+    },
+    {
+      "id": "RF04",
+      "severity": "medium",
+      "status": "resolved",
+      "issue": "Several expected scenario states skipped domain guards or used a different expiry meaning.",
+      "resolution": "SC05/07/19 now preserve INCOMPLETE; SC06 uses EXPIRED; SC26 stays DRAFT until billing rules resolve; SC21 describes owner-controlled correction and re-freezing without a premature state assertion."
+    },
+    {
+      "id": "RF05",
+      "severity": "medium",
+      "status": "resolved",
+      "issue": "SC21 allowed a policy exception for financial agent self-approval contrary to the pilot authority model.",
+      "resolution": "Removed the exception; exact new approval requires an authorized human financial approver."
+    },
+    {
+      "id": "RF06",
+      "severity": "low",
+      "status": "resolved",
+      "issue": "Report builder expected expanded field dictionaries and rendered structured validation text as a string.",
+      "resolution": "Root added compact-format decoding and structured rendering."
+    },
+    {
+      "id": "RF07",
+      "severity": "medium",
+      "status": "resolved",
+      "issue": "Payroll batch review needs an unambiguous state after a time revision is exported; PAY_READY corrections need a safe superseding path.",
+      "resolution": "DS-C30 accepts PAY_READY or EXPORTED lines uniquely allocated to the same batch; DS-C29 allows owner-controlled void/supersession of unallocated PAY_READY revisions while transferring all work claims. Exported/issued corrections remain linked adjustments."
+    },
+    {
+      "id": "RF08",
+      "severity": "medium",
+      "status": "resolved",
+      "issue": "Runtime command UUID and DS-Cxx command-definition identifier need distinct fields.",
+      "resolution": "Runtime command_id remains a UUID; command_type identifies one registered DS-Cxx transition or declared non-transition operation. All operations use the audited envelope."
+    },
+    {
+      "id": "RF09",
+      "severity": "medium",
+      "status": "resolved",
+      "issue": "Reconfirmation from HOLD must reacquire fenced worker and slot reservations atomically.",
+      "resolution": "DS-C20 requires atomic reacquisition/validation of worker and slot locks with fencing before reconfirmation from HOLD."
+    },
+    {
+      "id": "RF10",
+      "severity": "medium",
+      "status": "resolved",
+      "issue": "Dispatch must explicitly check approval expiry, revocation, current approver authority and effective policy.",
+      "resolution": "The dispatch envelope requires current, unrevoked approval and currently authorized approver under the applicable policy; exact version/payload binding remains mandatory."
+    },
+    {
+      "id": "RF11",
+      "severity": "medium",
+      "status": "resolved",
+      "issue": "Worksite-specific readiness needs a required explicit worksite reference and exact assignment match; shared district policy alone is insufficient.",
+      "resolution": "DS-O06 now requires same-tenant/client worksite_id, explicitly matching the assignment school, in addition to worker, policy and interval."
+    }
+  ],
+  "limitations": [
+    "No selected state, district, employment model, executed customer contract or operating vendor agreement has been validated.",
+    "No interviews, live student data, authenticated portals, vendor writes or product acceptance execution occurred in this review.",
+    "Public source spot checks are selective; they do not establish completeness of all legal, procurement or clinical requirements.",
+    "The domain model is a bounded staffing coordination design, not a full IEP, clinical delivery, multi-school scheduling or reimbursement specification.",
+    "Eight dedicated scenario-design gaps remain explicitly tracked: LCR03, LCR14, OBR04, OBR09, OBR13, VR02, VR11 and VR14. Existing linked scenarios do not establish exhaustive requirement or transition coverage.",
+    "No measured automation benefit, security effectiveness, legal completeness, profitability or product readiness follows from schema, graph or arithmetic consistency."
+  ],
+  "review_method": "Independent source/applicability and cross-artifact review by school_requirements_review, with specialist graph/command/authority review by local_domain_spec/domain_review. Findings were returned to file owners and corrected in place.",
+  "unresolved_review_findings": [],
+  "research_completion_boundary": "The research pack may be delivered with its explicit open pilot decisions and test-design gaps. Actual implementation, vendor testing, state/district validation and live operating approval are future work, not prerequisites for completing this research task.",
+  "reviewed_input_sha256": {
+    "discovery-plan.json": "a9ec27ed801d82635257f0e46ac53a57524305554c48c1320de12c2f0ee60d7e",
+    "integrations.json": "d9c73128c6145c396a0e634f84468c5ad42b18d69dd5b6697e73fb69776931fe",
+    "obligations.json": "3cfe9596f0f4adac3b520847404be1356f6e95bb61e24962256528c632cd79db",
+    "local-care-evidence.json": "fa78f12c25fad3deaee0c4e8613c6d102e7f3681be7b0037648c74954e6af1e4",
+    "domain-spec.json": "16f8e92844d8e3767c09aa15baffb9ba0f22bad4db24d6d818dac875c62f40eb",
+    "scenarios.json": "41ab9b1bb743010687fb9f501a150f2338ba8ec95f5268df1f5d380bb35515d0",
+    "traceability.json": "7b4d9aeb2b9c214bce1baa405bceeb23796ae6020ad1d727a20933603155cafb"
+  }
+}

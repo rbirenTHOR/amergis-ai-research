@@ -1,0 +1,57 @@
+{
+  "status": "PASS \u2014 research package consistency only",
+  "checks": [
+    {
+      "check": "Pack matches the current curated source files",
+      "status": "pass"
+    },
+    {
+      "check": "Requirement/source IDs resolve and every requirement has acceptance criteria and evidence status",
+      "status": "pass"
+    },
+    {
+      "check": "Compact field/command schemas, object retention and role references are structurally valid",
+      "status": "pass"
+    },
+    {
+      "check": "Every listed state is reachable; each has a terminal path; transitions resolve to unique command/role contracts",
+      "status": "pass"
+    },
+    {
+      "check": "Scenario state references and trace links resolve; dedicated case-design gaps are explicitly retained",
+      "status": "pass"
+    },
+    {
+      "check": "Selected school-therapy scope and unmeasured pilot thresholds are preserved",
+      "status": "pass"
+    }
+  ],
+  "counts": {
+    "requirements": 43,
+    "source_records": 26,
+    "unique_source_urls": 26,
+    "objects": 12,
+    "state_models": 9,
+    "commands": 50,
+    "roles": 11,
+    "scenarios": 26,
+    "arithmetic_fixtures": 4,
+    "expanded_transition_edges": 74,
+    "dedicated_scenario_gaps": 8
+  },
+  "input_sha256": {
+    "discovery-plan.json": "a9ec27ed801d82635257f0e46ac53a57524305554c48c1320de12c2f0ee60d7e",
+    "domain-spec.json": "16f8e92844d8e3767c09aa15baffb9ba0f22bad4db24d6d818dac875c62f40eb",
+    "integrations.json": "d9c73128c6145c396a0e634f84468c5ad42b18d69dd5b6697e73fb69776931fe",
+    "local-care-evidence.json": "fa78f12c25fad3deaee0c4e8613c6d102e7f3681be7b0037648c74954e6af1e4",
+    "obligations.json": "3cfe9596f0f4adac3b520847404be1356f6e95bb61e24962256528c632cd79db",
+    "review.json": "e5cd26d35bf72d48bcd1ca9b578c905fae4120979673e08b32f53cee0fbb7106",
+    "scenarios.json": "1b4b01f201b6c11f771637372298f4a806e6943b8fbe238b909ea6be95c34414",
+    "traceability.json": "7b4d9aeb2b9c214bce1baa405bceeb23796ae6020ad1d727a20933603155cafb"
+  },
+  "limits": [
+    "No application, live API, actual employment/clinical decision or financial release tested.",
+    "Graph reachability does not prove the written guard semantics or a complete clinical workflow.",
+    "No jurisdiction-specific legal clearance, rendered-browser validation or observed operating ROI."
+  ]
+}

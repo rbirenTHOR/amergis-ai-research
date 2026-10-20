@@ -78,3 +78,21 @@
 !/work/amergis-phase4/build_roadmap.py
 !/work/amergis-phase4/check_roadmap.cjs
 !/work/amergis-phase4/report-checks.json
+
+# School therapy requirements and synthetic design fixtures
+!/outputs/school-therapy-requirements.html
+!/outputs/school-therapy-requirements.json
+!/work/amergis-phase5/discovery-plan.json
+!/work/amergis-phase5/local-care-evidence.json
+!/work/amergis-phase5/obligations.json
+!/work/amergis-phase5/integrations.json
+!/work/amergis-phase5/domain-spec.json
+!/work/amergis-phase5/scenarios.json
+!/work/amergis-phase5/traceability.json
+!/work/amergis-phase5/review.json
+!/work/amergis-phase5/build_pack.py
+!/work/amergis-phase5/check_pack.py
+!/work/amergis-phase5/check_scenarios.py
+!/work/amergis-phase5/check_report.cjs
+!/work/amergis-phase5/report-checks.json
+!/work/amergis-phase5/validation.json

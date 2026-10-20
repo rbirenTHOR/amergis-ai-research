@@ -1,0 +1,701 @@
+{
+  "title": "Requirements-to-design and future-validation links",
+  "status": "Proposed traceability; no application acceptance scenario executed",
+  "interpretation": "A linked scenario exercises selected aspects of a requirement, not exhaustive coverage. Every requirement also has textual acceptance criteria. Empty scenario lists identify dedicated case-design gaps, not waived requirements. Broader school scenarios may require extensions beyond the bounded one-provider/work-block domain model.",
+  "requirements": {
+    "LCR01": {
+      "journey_ids": [
+        "J01"
+      ],
+      "object_ids": [
+        "DS-O02",
+        "DS-O03",
+        "DS-O04"
+      ],
+      "scenario_ids": [
+        "SC08",
+        "SC11"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "LCR02": {
+      "journey_ids": [
+        "J02",
+        "J03"
+      ],
+      "object_ids": [
+        "DS-O03",
+        "DS-O06"
+      ],
+      "scenario_ids": [
+        "SC04",
+        "SC05",
+        "SC06",
+        "SC07"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "LCR03": {
+      "journey_ids": [
+        "J01",
+        "J05"
+      ],
+      "object_ids": [
+        "DS-O02",
+        "DS-O03",
+        "DS-O07"
+      ],
+      "scenario_ids": [],
+      "coverage": "Textual acceptance criteria only; dedicated scenario required"
+    },
+    "LCR04": {
+      "journey_ids": [
+        "J04",
+        "J05",
+        "J06"
+      ],
+      "object_ids": [
+        "DS-O04",
+        "DS-O07",
+        "DS-O11"
+      ],
+      "scenario_ids": [
+        "SC12",
+        "SC24"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "LCR05": {
+      "journey_ids": [
+        "J01",
+        "J05"
+      ],
+      "object_ids": [
+        "DS-O04",
+        "DS-O07",
+        "DS-O08"
+      ],
+      "scenario_ids": [
+        "SC09",
+        "SC17"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "LCR06": {
+      "journey_ids": [
+        "J05",
+        "J07"
+      ],
+      "object_ids": [
+        "DS-O08",
+        "DS-O09",
+        "DS-O10"
+      ],
+      "scenario_ids": [
+        "SC14",
+        "SC17"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "LCR07": {
+      "journey_ids": [
+        "J04",
+        "J05"
+      ],
+      "object_ids": [
+        "DS-O02",
+        "DS-O08",
+        "DS-O12"
+      ],
+      "scenario_ids": [
+        "SC20"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "LCR08": {
+      "journey_ids": [
+        "J05",
+        "J06"
+      ],
+      "object_ids": [
+        "DS-O08",
+        "DS-O11"
+      ],
+      "scenario_ids": [
+        "SC12",
+        "SC13"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "LCR09": {
+      "journey_ids": [
+        "J04",
+        "J06"
+      ],
+      "object_ids": [
+        "DS-O07",
+        "DS-O11"
+      ],
+      "scenario_ids": [
+        "SC13"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "LCR10": {
+      "journey_ids": [
+        "J05",
+        "J06",
+        "J07"
+      ],
+      "object_ids": [
+        "DS-O03",
+        "DS-O07",
+        "DS-O08"
+      ],
+      "scenario_ids": [
+        "SC10"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "LCR11": {
+      "journey_ids": [
+        "J07"
+      ],
+      "object_ids": [
+        "DS-O02",
+        "DS-O08"
+      ],
+      "scenario_ids": [
+        "SC15"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "LCR12": {
+      "journey_ids": [
+        "J07",
+        "J08"
+      ],
+      "object_ids": [
+        "DS-O03",
+        "DS-O08",
+        "DS-O09",
+        "DS-O10"
+      ],
+      "scenario_ids": [
+        "SC14",
+        "SC16",
+        "SC17"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "LCR13": {
+      "journey_ids": [
+        "J01",
+        "J07"
+      ],
+      "object_ids": [
+        "DS-O03",
+        "DS-O08",
+        "DS-O10"
+      ],
+      "scenario_ids": [
+        "SC26"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "LCR14": {
+      "journey_ids": [
+        "J05",
+        "J06"
+      ],
+      "object_ids": [
+        "DS-O02",
+        "DS-O11"
+      ],
+      "scenario_ids": [],
+      "coverage": "Textual acceptance criteria only; dedicated scenario required"
+    },
+    "LCR15": {
+      "journey_ids": [
+        "J02",
+        "J04"
+      ],
+      "object_ids": [
+        "DS-O03",
+        "DS-O06",
+        "DS-O07"
+      ],
+      "scenario_ids": [
+        "SC04",
+        "SC06",
+        "SC19"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "OBR01": {
+      "journey_ids": [
+        "J02",
+        "J04"
+      ],
+      "object_ids": [
+        "DS-O03",
+        "DS-O06"
+      ],
+      "scenario_ids": [
+        "SC04",
+        "SC05",
+        "SC06"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "OBR02": {
+      "journey_ids": [
+        "J02",
+        "J04"
+      ],
+      "object_ids": [
+        "DS-O03",
+        "DS-O06"
+      ],
+      "scenario_ids": [
+        "SC07"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "OBR03": {
+      "journey_ids": [
+        "J04",
+        "J05"
+      ],
+      "object_ids": [
+        "DS-O04",
+        "DS-O07"
+      ],
+      "scenario_ids": [
+        "SC12",
+        "SC24"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "OBR04": {
+      "journey_ids": [
+        "J04",
+        "J05"
+      ],
+      "object_ids": [
+        "DS-O02",
+        "DS-O06",
+        "DS-O07"
+      ],
+      "scenario_ids": [],
+      "coverage": "Textual acceptance criteria only; dedicated scenario required"
+    },
+    "OBR05": {
+      "journey_ids": [
+        "J05",
+        "J06"
+      ],
+      "object_ids": [
+        "DS-O08",
+        "DS-O11"
+      ],
+      "scenario_ids": [
+        "SC10",
+        "SC12",
+        "SC13"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "OBR06": {
+      "journey_ids": [
+        "J03",
+        "J05",
+        "J06"
+      ],
+      "object_ids": [
+        "DS-O07",
+        "DS-O11",
+        "DS-O12"
+      ],
+      "scenario_ids": [
+        "SC12",
+        "SC24"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "OBR07": {
+      "journey_ids": [
+        "J04",
+        "J05"
+      ],
+      "object_ids": [
+        "DS-O02",
+        "DS-O08",
+        "DS-O12"
+      ],
+      "scenario_ids": [
+        "SC20"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "OBR08": {
+      "journey_ids": [
+        "J04",
+        "J05"
+      ],
+      "object_ids": [
+        "DS-O02",
+        "DS-O08",
+        "DS-O12"
+      ],
+      "scenario_ids": [
+        "SC20"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "OBR09": {
+      "journey_ids": [
+        "J04",
+        "J05"
+      ],
+      "object_ids": [
+        "DS-O02",
+        "DS-O08"
+      ],
+      "scenario_ids": [],
+      "coverage": "Textual acceptance criteria only; dedicated scenario required"
+    },
+    "OBR10": {
+      "journey_ids": [
+        "J02"
+      ],
+      "object_ids": [
+        "DS-O01",
+        "DS-O06"
+      ],
+      "scenario_ids": [
+        "SC25"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "OBR11": {
+      "journey_ids": [
+        "J02"
+      ],
+      "object_ids": [
+        "DS-O06",
+        "DS-O11",
+        "DS-O12"
+      ],
+      "scenario_ids": [
+        "SC25"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "OBR12": {
+      "journey_ids": [
+        "J07"
+      ],
+      "object_ids": [
+        "DS-O08",
+        "DS-O09",
+        "DS-O10"
+      ],
+      "scenario_ids": [
+        "SC14",
+        "SC15",
+        "SC16",
+        "SC17"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "OBR13": {
+      "journey_ids": [
+        "J04",
+        "J08"
+      ],
+      "object_ids": [
+        "DS-O02",
+        "DS-O08",
+        "DS-O12"
+      ],
+      "scenario_ids": [],
+      "coverage": "Textual acceptance criteria only; dedicated scenario required"
+    },
+    "OBR14": {
+      "journey_ids": [
+        "J02",
+        "J04",
+        "J06"
+      ],
+      "object_ids": [
+        "DS-O06",
+        "DS-O07",
+        "DS-O11"
+      ],
+      "scenario_ids": [
+        "SC04",
+        "SC06",
+        "SC19",
+        "SC24"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "VR01": {
+      "journey_ids": [
+        "J02",
+        "J03",
+        "J07"
+      ],
+      "object_ids": [
+        "DS-O12"
+      ],
+      "scenario_ids": [
+        "SC18",
+        "SC19"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "VR02": {
+      "journey_ids": [
+        "J02",
+        "J07"
+      ],
+      "object_ids": [
+        "DS-O12"
+      ],
+      "scenario_ids": [],
+      "coverage": "Textual acceptance criteria only; dedicated scenario required"
+    },
+    "VR03": {
+      "journey_ids": [
+        "J02"
+      ],
+      "object_ids": [
+        "DS-O01",
+        "DS-O06",
+        "DS-O12"
+      ],
+      "scenario_ids": [
+        "SC25"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "VR04": {
+      "journey_ids": [
+        "J05",
+        "J07",
+        "J08"
+      ],
+      "object_ids": [
+        "DS-O08",
+        "DS-O09",
+        "DS-O10"
+      ],
+      "scenario_ids": [
+        "SC14",
+        "SC15",
+        "SC16",
+        "SC17"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "VR05": {
+      "journey_ids": [
+        "J03",
+        "J04",
+        "J07",
+        "J08"
+      ],
+      "object_ids": [
+        "DS-O12"
+      ],
+      "scenario_ids": [
+        "SC11",
+        "SC18"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "VR06": {
+      "journey_ids": [
+        "J03",
+        "J04",
+        "J06",
+        "J07",
+        "J08"
+      ],
+      "object_ids": [
+        "DS-O12"
+      ],
+      "scenario_ids": [
+        "SC08",
+        "SC21"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "VR07": {
+      "journey_ids": [
+        "J01",
+        "J04",
+        "J05",
+        "J06"
+      ],
+      "object_ids": [
+        "DS-O02",
+        "DS-O08",
+        "DS-O12"
+      ],
+      "scenario_ids": [
+        "SC20",
+        "SC22"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "VR08": {
+      "journey_ids": [
+        "J01",
+        "J04",
+        "J07"
+      ],
+      "object_ids": [
+        "DS-O03"
+      ],
+      "scenario_ids": [
+        "SC26"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "VR09": {
+      "journey_ids": [
+        "J01",
+        "J04",
+        "J05"
+      ],
+      "object_ids": [
+        "DS-O04",
+        "DS-O07",
+        "DS-O08"
+      ],
+      "scenario_ids": [
+        "SC09",
+        "SC17"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "VR10": {
+      "journey_ids": [
+        "J02",
+        "J04"
+      ],
+      "object_ids": [
+        "DS-O03",
+        "DS-O06"
+      ],
+      "scenario_ids": [
+        "SC04",
+        "SC05",
+        "SC06",
+        "SC07"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "VR11": {
+      "journey_ids": [
+        "J07",
+        "J08"
+      ],
+      "object_ids": [
+        "DS-O10"
+      ],
+      "scenario_ids": [],
+      "coverage": "Textual acceptance criteria only; dedicated scenario required"
+    },
+    "VR12": {
+      "journey_ids": [
+        "J01",
+        "J02",
+        "J07"
+      ],
+      "object_ids": [
+        "DS-O12"
+      ],
+      "scenario_ids": [
+        "SC22"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "VR13": {
+      "journey_ids": [
+        "J04",
+        "J06",
+        "J08"
+      ],
+      "object_ids": [
+        "DS-O11",
+        "DS-O12"
+      ],
+      "scenario_ids": [
+        "SC18",
+        "SC19",
+        "SC23"
+      ],
+      "coverage": "Illustrative linked scenarios; expand during implementation"
+    },
+    "VR14": {
+      "journey_ids": [
+        "J04",
+        "J08"
+      ],
+      "object_ids": [
+        "DS-O02",
+        "DS-O08",
+        "DS-O12"
+      ],
+      "scenario_ids": [],
+      "coverage": "Textual acceptance criteria only; dedicated scenario required"
+    }
+  },
+  "dedicated_scenario_gaps": [
+    {
+      "requirement_id": "LCR03",
+      "next_action": "Create an implementation-specific scenario and expected evidence before enabling this capability."
+    },
+    {
+      "requirement_id": "LCR14",
+      "next_action": "Create an implementation-specific scenario and expected evidence before enabling this capability."
+    },
+    {
+      "requirement_id": "OBR04",
+      "next_action": "Create an implementation-specific scenario and expected evidence before enabling this capability."
+    },
+    {
+      "requirement_id": "OBR09",
+      "next_action": "Create an implementation-specific scenario and expected evidence before enabling this capability."
+    },
+    {
+      "requirement_id": "OBR13",
+      "next_action": "Create an implementation-specific scenario and expected evidence before enabling this capability."
+    },
+    {
+      "requirement_id": "VR02",
+      "next_action": "Create an implementation-specific scenario and expected evidence before enabling this capability."
+    },
+    {
+      "requirement_id": "VR11",
+      "next_action": "Create an implementation-specific scenario and expected evidence before enabling this capability."
+    },
+    {
+      "requirement_id": "VR14",
+      "next_action": "Create an implementation-specific scenario and expected evidence before enabling this capability."
+    }
+  ],
+  "additional_test_work": [
+    "Extend district-specific modality, school access handoff and data-classification cases after a district is chosen.",
+    "Specify retention/hold/export and actual vendor-permission decisions against approved agreements.",
+    "For a chosen client, instantiate each contract threshold, unit, deadline and amendment rule with acceptance cases.",
+    "Implement server-side authorization, adapter contracts, concurrency and restoration tests against actual software.",
+    "Evaluate scheduling across multiple schools/sessions only after extending the current bounded domain model.",
+    "Keep Medicaid claims and teletherapy delivery disabled unless their separate scope and requirements are adopted."
+  ],
+  "validation_limit": "Schema/graph/fixture checks assess the consistency of this design package only. Clinical validity, legal completeness, performance, security and business outcomes require subsequent review and implementation testing."
+}

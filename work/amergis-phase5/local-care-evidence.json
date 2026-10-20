@@ -1,0 +1,492 @@
+{
+  "title": "School therapy staffing: buyer, provider and workflow evidence",
+  "as_of": "2026-10-20",
+  "scope": "School-based therapist staffing, with SLP as the worked example and OT/PT comparisons where documented. The user changed the target from local healthcare to schools and therapists; the historical filename is retained only for build compatibility.",
+  "jurisdiction": "Unselected. District examples are research evidence, not the pilot's adopted rules.",
+  "status": "Public-source requirements candidates; no customer interviews, private-system access, procurement submissions, provider outreach or live student data used.",
+  "key_design_findings": [
+    "Track clinician work time, student service delivery, and customer billable units separately.",
+    "The district may require its own timekeeping, student-record and teletherapy systems. A new vendor portal is not necessarily the system of record.",
+    "Provider credentials, assistant eligibility, delivery modality, calendar, billing and missed-service handling require district-specific rule versions.",
+    "AI can prepare, reconcile and flag administrative work. The district and qualified professionals retain service eligibility, IEP, assessment, treatment and clinical signoff decisions.",
+    "Public solicitations reveal useful requirements but do not prove an award, current Amergis execution, customer demand available to us or permission to access student records."
+  ],
+  "sources": [
+    {
+      "id": "LC01",
+      "title": "Rockford Public Schools District 205 / Amergis professional services agreement and school staffing SOW",
+      "url": "https://rps205.community.diligentoneplatform.com/document/0229f470-5937-4ba5-bdfd-0fcb2921ed3f/",
+      "accessed_on": "2026-10-20",
+      "published_or_effective": "Agreement dated 2025-06-18; initial services term 2025-07-01 to 2026-06-30; exercised renewal not established.",
+      "section_or_page": "PDF p10 §5(h); p16 §9(b)–(d); p32 Attachment A §5; p34 Attachment B §§1–2; pp7–8 §4(h)",
+      "retrieval": "Fresh public PDF retrieval succeeded; actual preserved local PDF text independently checked.",
+      "sha256_preserved_pdf": "bb7833ab776274e3d9c4c0c5d65cf1c0b3255379061bc5ec76f150b82b15a119",
+      "directly_observed_fact": "The SOW lists OT/PT and assistant/SLP qualification levels. MaxView hours require weekly district approval. Invoices are weekly; verified payment follows Board approval. Per-diem cancellation and travel replacement clauses are distinct.",
+      "applicability_and_limitations": "Historical district-specific contract evidence, not confirmed current operations. Role listing does not establish that every assistant can replace a therapist. Special per-diem/travel clauses do not establish ordinary term-assigned therapist closure rules."
+    },
+    {
+      "id": "LC02",
+      "title": "Knox County contract 25-287(b), RFP 3635, addenda and Amergis response",
+      "url": "https://public.destinyhosted.com/knoxdocs/2025/AGN/20250604_4922/17376_Contract_No._25-287%28b%29_Amergis_Healthcare_Staffing%2C_Inc..pdf",
+      "accessed_on": "2026-10-20",
+      "published_or_effective": "Packet published for 2025-06-04 agenda; initial term 2025-07-01 to 2026-06-30. Renewal unverified.",
+      "section_or_page": "PDF p19 §4.2.2; p21 §4.3; p37 Addendum I Q8; p38 Q17; p46 Addendum II Q7–12; p99 supplier clarification dated 2025-04-22",
+      "retrieval": "Fresh public PDF retrieval succeeded; actual preserved local PDF text independently checked.",
+      "sha256_preserved_pdf": "40f504b48da2c2bdbe038a26eb79c5b7b44ef03d2418d225e89b2fa936c508a0",
+      "directly_observed_fact": "Knox rejects licensed therapy assistants, requires its timekeeping and supervisor approval, prefers email, and declines a VMS. The supplier says student data stays in district systems. SLP work includes service documentation and meetings.",
+      "applicability_and_limitations": "Separate customer requirements from supplier statements. Initial term has ended. The SLP section contains apparent template errors and ambiguous billing terminology; preserve them for clarification."
+    },
+    {
+      "id": "LC03",
+      "title": "Bristol Virginia Public Schools RFP CO-04-202526: Occupational, Physical and Speech Therapy Services",
+      "url": "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/4454/Bvps/21e3629b-f6f9-44de-bd5f-2268fd475600/RFP-CO-04-202526-OCCUPATIONAL-PHYSICAL-AND-SPEECH-THERAPY-SERVICES-SPECS.pdf?disposition=inline",
+      "accessed_on": "2026-10-20",
+      "published_or_effective": "Issued 2026-05-04; proposal deadline 2026-05-22. Award not investigated.",
+      "section_or_page": "PDF pp5–7, §5 Scope, §5.1 Progress Reports, §5.2 Missed Sessions, §5.3 Billing and §6 Payment",
+      "retrieval": "Fresh public PDF retrieval succeeded; 23 pages.",
+      "directly_observed_fact": "The IEP committee determines service eligibility, frequency and time. Teletherapy is excluded. Therapist absences are rescheduled; student absences reported monthly. Billing uses 15-minute units with specified inclusions and service detail. Historical caseload figures are not guaranteed volume.",
+      "applicability_and_limitations": "One district's solicitation, not an Amergis contract or nationwide rule. Medicaid-support wording is customer-specific and does not establish our own payer enrollment or claim authority."
+    },
+    {
+      "id": "LC04",
+      "title": "DCPS GAGA-2026-I-0191: School-Based Related Services solicitation",
+      "url": "https://dcps.dc.gov/sites/default/files/dc/sites/dcps/page_content/attachments/GAGA-2026-I-0191_Solicitation.pdf",
+      "accessed_on": "2026-10-20",
+      "published_or_effective": "Issued 2026-06-23; bids due 2026-07-06. Award and option exercise not established.",
+      "section_or_page": "PDF pp2–3 §§B.1–B.4; p9 §C.3.1; pp19–20 §§C.5.30–C.5.32; p25 §C.8.1; pp27–28 §§G.1–G.4",
+      "retrieval": "Fresh public PDF retrieval succeeded; 64 pages. Read alongside LC05 amendment and LC06 incorporated guidance.",
+      "directly_observed_fact": "The procurement covers leave replacement for OT/PT/SLP and excludes assistants. It specifies authorized orders, district documentation systems, school-day billing limits, nonbillable closures, documented service thresholds, missed-service plans and monthly electronic invoicing. Documentation thresholds and deadline wording differ across sections.",
+      "applicability_and_limitations": "District-specific IFB, not recovered Amergis operations. Several clauses use OT/PT-specific wording inside a broader related-services procurement. Resolve scope and conflicting text before implementation."
+    },
+    {
+      "id": "LC05",
+      "title": "DCPS GAGA-2026-I-0191 Amendment 001, questions and answers",
+      "url": "https://dcps.dc.gov/sites/default/files/dc/sites/dcps/page_content/attachments/GAGA-2026-I-0191_Amendment%20no.1%20_%20CO%20signed%206.30.26.pdf",
+      "accessed_on": "2026-10-20",
+      "published_or_effective": "Signed 2026-06-30",
+      "section_or_page": "PDF pp1–3, answers 1–7 and 9–11",
+      "retrieval": "Fresh public PDF retrieval succeeded; 4 pages.",
+      "directly_observed_fact": "DCPS seeks one vendor offering all requested disciplines. Virtual-only bids may be considered, with in-person preferred; virtual delivery must use DCPS's platform. Virtual staff retain specified attendance and screening requirements. Additional fees beyond the proposed hourly rate are excluded.",
+      "applicability_and_limitations": "This amendment modifies one procurement. It contradicts any assumption that a vendor can always use its own teletherapy platform or waive onsite-style screening for remote providers."
+    },
+    {
+      "id": "LC06",
+      "title": "DCPS Missed Related Services and Untimely Assessment Guidelines",
+      "url": "https://dcps.dc.gov/sites/default/files/dc/sites/dcps/page_content/attachments/April%202017%20Missed%20Related%20Service%20Sessions%20Truancy%20and%20Due%20Diligence.pdf",
+      "accessed_on": "2026-10-20",
+      "published_or_effective": "Cover April 2017; page footers March 2017. Referenced and attached to the June 2026 procurement.",
+      "section_or_page": "PDF p4 §II.A; p8 §II.F; pp9–10 §III; pp11–16 §IV",
+      "retrieval": "Fresh public PDF retrieval succeeded; 16 pages; official 2026 procurement links this document.",
+      "directly_observed_fact": "Guidance distinguishes provider absence, student absence/unavailability and school closure. Service and make-up records include reasons, durations, attempts and related communications. It uses legacy SEDS terminology, while the 2026 solicitation uses PSSP.",
+      "applicability_and_limitations": "Do not apply a 2017 district procedure universally or translate its system names mechanically. District/clinician decisions about individual impact and remediation remain necessary."
+    },
+    {
+      "id": "LC07",
+      "title": "ASHA school services FAQ: caseload, workload, service delivery and work setting",
+      "url": "https://www.asha.org/slp/schools/school-services-frequently-asked-questions/caseload-workload-service-delivery-and-work-setting-in-school-services/",
+      "accessed_on": "2026-10-20",
+      "published_or_effective": "Undated current webpage",
+      "section_or_page": "Questions: Does ASHA have a recommendation for caseload size?; policy on making up missed sessions?; one service delivery model versus another?",
+      "retrieval": "Fresh primary association webpage retrieval succeeded.",
+      "directly_observed_fact": "ASHA does not set a universal minimum/maximum caseload or a missed-session policy. It emphasizes total workload and individualized district consideration of missed-service impact. It does not prescribe a single service-delivery model.",
+      "applicability_and_limitations": "Professional association guidance, not a substitute for selected-jurisdiction law, adopted district policy or a clinician's assessment."
+    },
+    {
+      "id": "LC08",
+      "title": "Amergis Educational Staffing Teletherapy Platform",
+      "url": "https://www.amergiseducation.com/teletherapy-platform/",
+      "accessed_on": "2026-10-20",
+      "published_or_effective": "Undated current webpage",
+      "section_or_page": "Security and accessibility; Clinically valid evaluations; Frequently Asked Questions",
+      "retrieval": "Fresh public webpage retrieval succeeded.",
+      "directly_observed_fact": "Amergis advertises room links without student accounts/downloads, waiting rooms, therapy-minute tracking, session-activity reporting and technical support. It also claims no stored student session data.",
+      "applicability_and_limitations": "Marketing capabilities and compliance claims are not independently verified architecture, APIs, permissions or certifications. Reporting versus no-storage scope remains unresolved. Do not infer licensed assessment reuse rights."
+    },
+    {
+      "id": "LC09",
+      "title": "Amergis school SLP posting, Willard Missouri, position 1179375",
+      "url": "https://www.amergiseducation.com/job/988085-speech-language-pathologist-2026-27/",
+      "accessed_on": "2026-10-20",
+      "published_or_effective": "Posted 2026-07-27",
+      "section_or_page": "Position overview; Minimum Requirements; Benefits",
+      "retrieval": "Fresh public webpage retrieval succeeded.",
+      "directly_observed_fact": "This posting requires active assignment-state SLP licensure, describes CCC-SLP as preferred or state/contract dependent, and makes several health credentials conditional. It describes evaluation and documentation duties and employment-status-dependent benefits.",
+      "applicability_and_limitations": "One supplier job description, not authoritative Missouri law, a guaranteed vacancy, actual compensation or universal SLP qualification policy. URL job number and displayed position ID differ; retain both."
+    }
+  ],
+  "requirement_candidates": [
+    {
+      "id": "LCR01",
+      "name": "Authorized demand and district rule version",
+      "source_ids": [
+        "LC02",
+        "LC04"
+      ],
+      "actor": "District procurement/HR/SPED owner and staffing operations",
+      "trigger": "New or changed therapy staffing request",
+      "required_behavior": "Bind the request to an authorized order, discipline, assignment dates, school sites, delivery mode, budget/rate approval and adopted rule-pack version. Record which district role can approve each field.",
+      "exception": "Unapproved extension, expired order or contradictory source document routes to the named district owner.",
+      "acceptance": "A synthetic schedule extension without authorized funding remains pending; an existing valid order continues unaffected.",
+      "confidence": "Observed order requirements; proposed data model and release gate.",
+      "title": "Authorized demand and district rule version"
+    },
+    {
+      "id": "LCR02",
+      "name": "Discipline and qualification-level eligibility",
+      "source_ids": [
+        "LC01",
+        "LC02",
+        "LC04",
+        "LC09"
+      ],
+      "actor": "Credential reviewer and district hiring authority",
+      "trigger": "Candidate matched, substituted or renewed",
+      "required_behavior": "Evaluate district × discipline × qualification-level requirements separately. Store verification evidence, applicability, expiry and reviewer. Keep SLP, SLP-CF, SLPA, OT/COTA and PT/PTA distinct.",
+      "exception": "Assistant substitution or conditional credential with unresolved applicability requires review; document upload alone does not clear eligibility.",
+      "acceptance": "The same synthetic SLPA is excluded from a district profile prohibiting assistants and reviewed under an explicit assistant-permitting profile, without changing the original SLP order.",
+      "confidence": "Observed differing customer criteria; proposed eligibility implementation.",
+      "title": "Discipline and qualification-level eligibility"
+    },
+    {
+      "id": "LCR03",
+      "name": "District-controlled modality and delivery platform",
+      "source_ids": [
+        "LC03",
+        "LC05",
+        "LC08"
+      ],
+      "actor": "District SPED/IT owner and licensed provider",
+      "trigger": "Selecting onsite, virtual or hybrid delivery",
+      "required_behavior": "Store approved modality, permitted platform, school facilitator/equipment prerequisites and change authority. The agent can check readiness and route a request; it cannot switch a student's service mode.",
+      "exception": "Customer forbids teletherapy, requires its own platform or lacks access approval.",
+      "acceptance": "Synthetic Bristol-profile demand cannot be fulfilled virtually; a DCPS-profile virtual assignment requires the district-designated platform.",
+      "confidence": "Observed procurement differences; proposed enforcement and readiness checklist.",
+      "title": "District-controlled modality and delivery platform"
+    },
+    {
+      "id": "LCR04",
+      "name": "Separate service plan from staffing logistics",
+      "source_ids": [
+        "LC03",
+        "LC04"
+      ],
+      "actor": "District IEP team/qualified clinician; staffing scheduler",
+      "trigger": "Approved service plan or caseload change",
+      "required_behavior": "Reference the district-approved service-plan version and necessary scheduling constraints. Record operational impacts separately from eligibility, goals, clinical findings and service-frequency decisions, which stay with authorized professionals.",
+      "exception": "A requested schedule conflicts with the authorized service plan or no approved plan reference exists.",
+      "acceptance": "An agent can propose available timetable slots but cannot alter a student's authorized minutes or mark a clinical decision approved.",
+      "confidence": "Observed district authority and plan-linked delivery; proposed access boundaries.",
+      "title": "Separate service plan from staffing logistics"
+    },
+    {
+      "id": "LCR05",
+      "name": "Workload capacity beyond student count",
+      "source_ids": [
+        "LC07",
+        "LC03",
+        "LC04"
+      ],
+      "actor": "Clinical lead and district program manager",
+      "trigger": "Assignment sizing or additional caseload",
+      "required_behavior": "Model direct services, consultation, evaluations, meetings, documentation, travel and supervision separately. Use provider-reviewed capacity assumptions and a feasible calendar; do not invent a universal maximum caseload.",
+      "exception": "Available working time is insufficient even when student count appears low.",
+      "acceptance": "A synthetic request with acceptable headcount but excessive meetings/travel is flagged with the time deficit and routed to the clinical lead.",
+      "confidence": "Observed workload guidance and procurement inclusions; proposed capacity model.",
+      "title": "Workload capacity beyond student count"
+    },
+    {
+      "id": "LCR06",
+      "name": "Three linked but distinct activity ledgers",
+      "source_ids": [
+        "LC02",
+        "LC03",
+        "LC04"
+      ],
+      "actor": "Therapist, time approver and billing specialist",
+      "trigger": "Workday or student service completion",
+      "required_behavior": "Maintain separate clinician work-time, student service/attempt evidence references and customer billing entries, linked through assignment and date. Reconcile them without treating each hour worked as delivered therapy or each session minute as separately billable.",
+      "exception": "Meetings, documentation, group sessions or bundled costs produce legitimate differences between ledgers.",
+      "acceptance": "A synthetic day containing therapy, an IEP meeting and documentation produces correct distinct totals with no duplicate charge.",
+      "confidence": "Observed distinct documentation and commercial measures; proposed ledger design.",
+      "title": "Three linked but distinct activity ledgers"
+    },
+    {
+      "id": "LCR07",
+      "name": "District student-record ownership and controlled references",
+      "source_ids": [
+        "LC02",
+        "LC04",
+        "LC06"
+      ],
+      "actor": "District records/IT owner, provider and integration operator",
+      "trigger": "District onboarding or evidence reconciliation",
+      "required_behavior": "Identify the authoritative student-record system, permitted access, required document states and allowed administrative evidence. Prefer minimal references/completion attestations when full records are unnecessary. Map legacy terminology only after district confirmation.",
+      "exception": "A district API/export is unavailable, permission is missing or imported identifiers do not reconcile.",
+      "acceptance": "The synthetic workflow can prove documentation completion using approved reference IDs without copying clinical narrative into the staffing CRM.",
+      "confidence": "Observed district-system requirements; proposed minimization and adapter contract.",
+      "title": "District student-record ownership and controlled references"
+    },
+    {
+      "id": "LCR08",
+      "name": "Missed-session cause and disposition",
+      "source_ids": [
+        "LC03",
+        "LC06",
+        "LC07"
+      ],
+      "actor": "Provider, district case manager and program manager",
+      "trigger": "Scheduled service not fully delivered",
+      "required_behavior": "Record a specific cause, planned versus delivered duration, attempted delivery and supporting communication. Route clinical impact, due diligence and remedy decisions to the designated professional; track approved recovery rather than assume every absence is identical.",
+      "exception": "Provider absence, student absence, student unavailability, school closure and technical failure have different adopted handling.",
+      "acceptance": "Synthetic provider illness and school closure create different routed cases under their approved district rule version, with no automatic clinical determination.",
+      "confidence": "Observed reason-specific guidance; proposed case workflow.",
+      "title": "Missed-session cause and disposition"
+    },
+    {
+      "id": "LCR09",
+      "name": "Planned absence and provider transition continuity",
+      "source_ids": [
+        "LC04",
+        "LC06"
+      ],
+      "actor": "Staffing coordinator, clinical supervisor and district approver",
+      "trigger": "Leave, resignation, delayed start or uncovered assignment",
+      "required_behavior": "Identify affected scheduled services, prepare a coverage/handoff proposal, obtain required district approvals and retain replacement readiness and notification evidence. Link missed services to later recovery records.",
+      "exception": "Replacement lacks credentials, approved access or available capacity; a deadline cannot be met.",
+      "acceptance": "An announced absence surfaces affected synthetic commitments and cannot be marked resolved merely because a replacement candidate was contacted.",
+      "confidence": "Observed missed-service-plan requirements; proposed operational tracking.",
+      "title": "Planned absence and provider transition continuity"
+    },
+    {
+      "id": "LCR10",
+      "name": "School calendars and commercial treatment",
+      "source_ids": [
+        "LC01",
+        "LC04",
+        "LC06"
+      ],
+      "actor": "District calendar owner and staffing finance",
+      "trigger": "Holiday, delayed opening, closure, ESY or assignment change",
+      "required_behavior": "Version the district calendar and distinguish closure, scheduled break, absence and contract cancellation. Apply only adopted assignment-specific commercial rules; evaluate worker-pay obligations separately.",
+      "exception": "A per-diem cancellation clause is proposed for a term assignment or ESY falls outside purchased scope.",
+      "acceptance": "A synthetic term-assigned SLP closure cannot inherit a per-diem two-hour cancellation fee without an applicable rule and approval.",
+      "confidence": "Observed clause scope differences; proposed category guards.",
+      "title": "School calendars and commercial treatment"
+    },
+    {
+      "id": "LCR11",
+      "name": "Client-controlled time approval channel",
+      "source_ids": [
+        "LC01",
+        "LC02"
+      ],
+      "actor": "Provider and authorized school/worksite approver",
+      "trigger": "Time period close or correction",
+      "required_behavior": "Accept the agreed source and approval channel, including district systems or approved imports. Retain approver, version, actual approval time and corrections; configure local deadline semantics and extension authority.",
+      "exception": "No approval, disputed hours, timezone ambiguity or corrected source timecard.",
+      "acceptance": "Two synthetic clients use different approval channels while preserving the same audit fields; a correction does not overwrite the approved original.",
+      "confidence": "Observed MaxView versus district-timekeeping contrast; proposed common record model.",
+      "title": "Client-controlled time approval channel"
+    },
+    {
+      "id": "LCR12",
+      "name": "Configurable invoice units, inclusions and approval events",
+      "source_ids": [
+        "LC01",
+        "LC02",
+        "LC03",
+        "LC05"
+      ],
+      "actor": "Billing specialist and district finance approver",
+      "trigger": "Invoice preparation",
+      "required_behavior": "Resolve rate, unit basis, bundled inclusions, separately authorized extras, cadence and payment trigger from the signed rule pack. Keep customer approval, invoice submission and cash receipt as separate events.",
+      "exception": "Included meeting/travel cost is charged twice or a payment clock starts from the wrong approval event.",
+      "acceptance": "A synthetic unit-based contract and an inclusive hourly contract produce different correct invoices; no additional fee appears where the profile excludes it.",
+      "confidence": "Observed contrasting commercial structures; proposed rules engine and reconciliation.",
+      "title": "Configurable invoice units, inclusions and approval events"
+    },
+    {
+      "id": "LCR13",
+      "name": "Documentation readiness and unresolved rule conflicts",
+      "source_ids": [
+        "LC02",
+        "LC04",
+        "LC06"
+      ],
+      "actor": "District contract owner, documentation reviewer and billing specialist",
+      "trigger": "Adopting a rule pack or releasing a customer invoice",
+      "required_behavior": "Represent required documentation and verification gates explicitly. When source sections conflict, preserve both with citations and request a written governing interpretation before enabling the affected automated rule. Invoice readiness must not silently decide worker-pay eligibility.",
+      "exception": "Different percentage/deadline wording, apparent copied role labels, or obsolete system names.",
+      "acceptance": "The DCPS fixture remains unresolved until an approver chooses and records the governing threshold/deadline; the agent cannot silently select the easier clause.",
+      "confidence": "Observed source ambiguities; proposed fail-safe adoption process.",
+      "title": "Documentation readiness and unresolved rule conflicts"
+    },
+    {
+      "id": "LCR14",
+      "name": "Virtual-session operational evidence and technical recovery",
+      "source_ids": [
+        "LC05",
+        "LC08"
+      ],
+      "actor": "Provider, district facilitator/IT and support operator",
+      "trigger": "Approved virtual session setup or connection failure",
+      "required_behavior": "Verify approved platform access, device readiness and support ownership. Record operational session status separately from provider-signed clinical notes; route outages and incomplete sessions into the district-approved exception process.",
+      "exception": "A room link, attendance event or vendor activity report is mistaken for proof of delivered clinical service.",
+      "acceptance": "A synthetic connected-but-interrupted session cannot be auto-certified as completed therapy; reporting and retention responsibilities are documented before any live deployment.",
+      "confidence": "Observed advertised tools and district platform requirement; proposed validation requirements.",
+      "title": "Virtual-session operational evidence and technical recovery"
+    },
+    {
+      "id": "LCR15",
+      "name": "Role-specific onboarding and continuing readiness",
+      "source_ids": [
+        "LC01",
+        "LC04",
+        "LC05",
+        "LC09"
+      ],
+      "actor": "Credential owner, district onboarding contact and clinical supervisor",
+      "trigger": "Prestart, credential expiration, changed location/modality or renewal",
+      "required_behavior": "Track state/profession checks, district screening, required orientation, documentation-system access and supervision arrangements as separate readiness items. Reassess changed assignments and preserve the authority behind any exception.",
+      "exception": "Remote status is incorrectly treated as a blanket waiver or a generic SLP posting is substituted for district requirements.",
+      "acceptance": "A synthetic remote provider missing a district-required item stays pending even with a complete resume and active professional license.",
+      "confidence": "Observed conditional and customer-specific screening; proposed readiness implementation.",
+      "title": "Role-specific onboarding and continuing readiness"
+    }
+  ],
+  "source_exceptions": [
+    {
+      "id": "LCE01",
+      "source_ids": [
+        "LC02"
+      ],
+      "issue": "PDF p19 SLP subsection labels one face-to-face-time bullet School Psychologists and uses Medicare terminology.",
+      "treatment": "Preserve the literal text; obtain the district's intended role and billing-system interpretation. Do not silently rewrite to Medicaid."
+    },
+    {
+      "id": "LCE02",
+      "source_ids": [
+        "LC02"
+      ],
+      "issue": "Typical workday wording and the addendum's no-minimum-service-hours answer describe different concepts.",
+      "treatment": "Separate standard schedule, authorized quantity and guaranteed billable volume."
+    },
+    {
+      "id": "LCE03",
+      "source_ids": [
+        "LC04"
+      ],
+      "issue": "§C.5.31 describes 95% documentation, while §C.8.1.4 says confirm 100%; the performance table also uses a different Monday deadline and cross-references.",
+      "treatment": "Do not assume a single operative threshold or deadline until the district contract owner resolves their scopes."
+    },
+    {
+      "id": "LCE04",
+      "source_ids": [
+        "LC04",
+        "LC06"
+      ],
+      "issue": "The incorporated 2017 guidance uses SEDS; the 2026 procurement uses PSSP and Frontline.",
+      "treatment": "Confirm current systems, exact field mapping and continued procedural applicability; do not recreate a retired interface."
+    },
+    {
+      "id": "LCE05",
+      "source_ids": [
+        "LC08"
+      ],
+      "issue": "No stored student session data is advertised alongside session-activity reports and minute tracking.",
+      "treatment": "Require a concrete retention/data-flow explanation before selecting or integrating any equivalent vendor."
+    },
+    {
+      "id": "LCE06",
+      "source_ids": [
+        "LC01",
+        "LC02"
+      ],
+      "issue": "Published initial contract terms ended June 30, 2026 and current renewal/execution status is unverified.",
+      "treatment": "Use as historical configuration examples, not active requirements of the pilot."
+    }
+  ],
+  "remaining_discovery_questions": [
+    "Which state, school district type and initial discipline are in scope: SLP only, or a bundled SLP/OT/PT service?",
+    "Are we supplying staff under district direction, contracting to deliver defined therapy services, or both? Who retains service-record and clinical-supervision responsibility?",
+    "Which roles approve requisitions, budgets, candidates, onboarding, schedules, documentation, time and invoices? Obtain the current signed agreement, SOW, amendments and order form.",
+    "Which existing district systems own student records, service schedules, therapist attendance, Medicaid support and accounts payable? What permitted API, export or manual evidence channels exist?",
+    "What direct/indirect workload, travel, meetings and supervision must fit into each provider's contracted time? What constitutes an accepted workload change?",
+    "How do provider absence, student absence, school closure, testing schedules, technology failure and planned leave each affect service recovery, customer billing and worker pay?",
+    "Who decides whether missed services require recovery, which plan is approved and when an exception can be closed?",
+    "Are assistants and clinical fellows permitted, under what supervision, and can a replacement change qualification level?",
+    "When is virtual delivery allowed, who chooses the platform, and what school-side facilitator, room, device and accessibility support is required?",
+    "Which student-linked data are actually necessary in the staffing system, who may see them, and what approved retention/deletion rules apply?",
+    "How are invoice disputes, after-submission corrections and actual cash receipt measured? What is the complete payment trigger, not just the stated number of days?",
+    "Which three recurring exceptions consume the most staff time, and what evidence would let an agent safely prepare the next action?"
+  ],
+  "interview_guides": [
+    {
+      "audience": "District special-education director or therapy program lead, with HR/procurement and finance represented",
+      "format": "Proposed 45–60 minute walkthrough using synthetic or fully de-identified examples; no outreach performed.",
+      "questions": [
+        "Walk through the last therapist vacancy from need identification to first completed service. Where did it wait and why?",
+        "Show the blank forms and approval chain for a new order, candidate, schedule and assignment extension.",
+        "Which services and administrative duties are included in the requested hours, and who checks that the workload fits?",
+        "Which systems must a supplier use? Where do staff currently re-enter the same information?",
+        "Walk through one provider absence, one student absence and one closure. Who makes the recovery and billing decisions?",
+        "What evidence makes a timecard and invoice acceptable? What causes rejection or delayed payment?",
+        "Which actions could a staffing agent execute under a preapproved rule, and which require a named person's decision?"
+      ],
+      "artifacts_to_request": [
+        "Blank requisition and assignment confirmation",
+        "Current signed commercial rule pack",
+        "Blank onboarding checklist",
+        "Blank timecard/service-log/invoice layouts",
+        "System and approval map",
+        "De-identified exception categories and timing counts"
+      ]
+    },
+    {
+      "audience": "School SLP, plus OT/PT comparison participants if those disciplines enter scope",
+      "format": "Proposed 45 minute day-in-the-life walkthrough; no student identities or clinical narratives collected.",
+      "questions": [
+        "Map a normal week across direct service, evaluation, documentation, meetings, consultation and travel.",
+        "What information must you receive before accepting an assignment? Which surprises make an assignment unworkable?",
+        "Where do you record work time versus service delivery? What gets entered twice?",
+        "What happens when a session is missed or only partly delivered? Which decisions require your judgment?",
+        "Which reminders, prefilled administrative forms or reconciliation checks would save time without creating extra review?",
+        "How do you obtain support for access problems, room/equipment issues, workload changes and payroll corrections?",
+        "For virtual work, what happens at the school end before a session can start, and how are outages recorded?"
+      ],
+      "artifacts_to_request": [
+        "Blank weekly activity categories",
+        "Blank administrative documentation templates",
+        "Provider-defined exception taxonomy",
+        "Redacted support-flow example"
+      ]
+    },
+    {
+      "audience": "Recruiter/account manager, credential specialist, clinical supervisor and time/billing operator",
+      "format": "Proposed 60 minute end-to-end tabletop using one synthetic SLP placement; no outreach performed.",
+      "questions": [
+        "Which candidate and client facts must be verified rather than inferred before submission or start?",
+        "Where are district-specific rules stored, who updates them, and how do amendments reach payroll and billing?",
+        "What handoff makes a selected candidate ready to start? What is still unresolved after the client says yes?",
+        "How do you replace a provider while preserving access, qualification, supervision and continuity requirements?",
+        "How do time, documentation and invoice exceptions get reconciled without delaying unrelated obligations?",
+        "What cannot currently be observed through APIs or exports, and who can authorize an approved integration?",
+        "Show the evidence needed to reverse an incorrect agent action and identify who owns the recovery."
+      ],
+      "artifacts_to_request": [
+        "Blank candidate submission packet",
+        "Role-specific clearance checklist",
+        "Rule-change handoff example",
+        "Exception queue schema",
+        "Integration/export inventory",
+        "Approval and escalation roster by role"
+      ]
+    }
+  ],
+  "research_limits": [
+    "No jurisdiction or real district is selected; numerical clauses are examples rather than adopted pilot defaults.",
+    "No interviews were conducted, so frequency, pain severity, current practices and willingness to use a new portal remain hypotheses.",
+    "This research does not determine student service eligibility, clinical treatment, IEP content, employment classification or legal compliance.",
+    "No full proprietary assessment instruments, private portals, personal student records or authenticated tenant data were extracted."
+  ]
+}
